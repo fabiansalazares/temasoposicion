@@ -1,0 +1,1450 @@
+\documentclass{nuevotema}
+
+\tema{3B-15}
+\titulo{Teorías de la determinación del tipo de cambio.}
+
+\begin{document}
+
+\ideaclave
+
+\seccion{Preguntas clave}
+\begin{itemize}
+	\item ¿Por qué es importante el tipo de cambio?
+	\item ¿Cuándo es importante conocer el tipo de cambio?
+	\item ¿Qué teorías tratan de explicar y predecir el TCN?
+	\begin{itemize}
+		\item ¿De qué depende el TCN?
+		\item ¿Cómo influencian otros modelos?
+		\item ¿Qué aplicaciones tienen?
+	\end{itemize}
+	\item ¿En qué medida son capaces de predecir el TCN futuro?
+	\begin{itemize}
+		\item ¿Es posible contrastar sus predicciones?
+		\item ¿Qué anomalías existen al respecto?
+		\item ¿Qué explicaciones se ofrecen ante las anomalías?
+	\end{itemize}
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Importancia del tipo de cambio nominal
+			\3 Cuándo es necesario conocer
+			\3 Contexto de las teorías
+		\2 Objeto
+			\3 ¿Qué teorías tratan de explicar el TCN?
+			\3 ¿En qué medida son capaces de predecir?
+		\2 Estructura
+			\3 Modelos teóricos
+			\3 Contrastación empírica de las teorías
+	\1 \marcar{Modelos teóricos}
+		\2 Modelos de flujos
+			\3 Idea clave
+			\3 Elasticidades
+			\3 Absorción
+			\3 Mundell-Fleming
+		\2 Paridad de poder de compra
+			\3 Idea clave
+			\3 PPA absoluta
+			\3 PPA relativa
+			\3 Implicaciones
+		\2 Modelos de paridad de tipos de interés
+			\3 Idea clave
+			\3 Paridad cubierta de interés
+			\3 Paridad descubierta de interés
+			\3 TCN como predictor del TCN spot futuro
+		\2 Modelos de activos
+			\3 Idea clave
+			\3 Modelo monetario con precios flexibles
+			\3 Modelo monetario con precios flexibles y HER
+			\3 Modelo monetario con precios rígidos
+			\3 Modelos con la regla de Taylor
+			\3 Modelos de cartera
+		\2 Modelos de enfoque microeconómico
+			\3 Idea clave
+			\3 Información imperfecta
+			\3 Order flow
+			\3 Teoría de juegos
+			\3 Modelos DSGE
+		\2 Modelos del mercado financiero
+			\3 Idea clave
+			\3 Gourinchas y Rey (2007)
+			\3 Gabaix y Maggiori (2014)
+		\2 Otros modelos
+			\3 Caos
+			\3 Modelos de equilibrio de largo plazo
+			\3 Modelos behaviorales/conductistas
+	\1 \marcar{Contrastación empírica de las teorías}
+		\2 Desviaciones de la PPA
+			\3 Hipótesis de Balassa-Samuelson
+			\3 Diferencias entre regímenes cambiarios
+			\3 Desviaciones estructurales y coyunturales
+		\2 Paridad de interés
+			\3 Paridad cubierta (CIP)
+			\3 Paridad descubierta (UIP)
+		\2 Anomalía de la prima forward
+			\3 Idea clave
+			\3 Implicaciones
+		\2 Anomalía de la desconexión de los fundamentales
+			\3 Idea clave
+			\3 Implicaciones
+			\3 Valoración
+		\2 Benchmarking con paseo aleatorio
+			\3 Idea clave
+			\3 Meese y Rogoff (1983a,b)
+			\3 Implicaciones
+		\2 Exceso de volatilidad del TCN
+			\3 Idea clave
+			\3 Overshooting
+			\3 Chivo expiatorio
+			\3 Efecto rebaño
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Modelos teóricos
+			\3 Contrastación empírica de las teorías
+		\2 Idea final
+			\3 Complejidad inherente
+			\3 Cita de Edgeworth (1905)
+			\3 Cita de Dornbusch (1983)
+			\3 Cita de Hayek (1974)
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Importancia del tipo de cambio nominal
+				\4 Concepto de TCN
+				\4[] Precio de una divisa en términos de otra
+				\4 Valor de transacciones internacionales
+				\4[] Entre bienes y activos financieros
+				\4[] $\to$ Denominados en distinta divisa
+				\4[] $\then$ Dependen de valor de TCN
+			\3 Cuándo es necesario conocer
+				\4 Regímenes de tipo flexible
+				\4[] TCN fluctúa diariamente
+				\4[] Posibles variaciones fuertes en periodos cortos
+				\4[] $\to$ ¿Cuánto costará transacción futura?
+				\4[] $\to$ ¿Qué medidas tomar?
+				\4[] $\to$ ¿Qué impacto macroeconómico?
+				\4[] $\to$ ¿Qué impacto sobre transmisión de PM?
+				\4 Regímenes de tipo fijo
+				\4[] A priori, TCN no varía
+				\4[] TCN tomaría valor determinado si flexible
+				\4[] $\to$ Diferencia con TCN fijo requiere intervención
+				\4[] $\then$ ¿Hasta cuando intervención será sostenible?
+				\4[] $\then$ ¿Podrá mantenerse el TCN fijado?
+			\3 Contexto de las teorías
+				\4 Aplicación depende de
+				\4[] Regímenes cambiarios
+				\4[] Tecnología financiera
+				\4[] Contexto institucional
+				\4[] Política monetaria
+		\2 Objeto
+			\3 ¿Qué teorías tratan de explicar el TCN?
+				\4 ¿De qué factores depende el TCN?
+				\4 ¿Qué influencia tienen sobre otros modelos?
+				\4 ¿Qué aplicaciones tienen?
+			\3 ¿En qué medida son capaces de predecir?
+				\4 ¿Es posible contrastar sus predicciones?
+				\4 ¿Qué anomalías aparecen?
+				\4 ¿Qué explicaciones de las anomalías?
+		\2 Estructura
+			\3 Modelos teóricos
+				\4 PPA
+				\4 Flujos
+				\4 Activos
+				\4 Enfoque microeconómico
+				\4 Mercado financiero
+				\4 Otros
+			\3 Contrastación empírica de las teorías
+				\4 Desviaciones de la PPA
+				\4 Paridad de interés
+				\4 Anomalía de la prima forward
+				\4 Anomalía de la desviación de los fundamentales
+				\4 Benchmarking con paseo aleatorio
+	\1 \marcar{Modelos teóricos}
+		\2 Modelos de flujos
+			\3 Idea clave
+				\4 Equilibrio de variables flujo
+				\4[] Determinado valor se asocia con equilibrio
+				\4[] $\to$ Cuenta corriente
+				\4[] $\to$ Mercado de divisas
+				\4[] $\to$ Mercado de capital
+				\4[] $\to$ ...
+				\4[] Ejemplo:
+				\4[] $\to$ Demanda y oferta en mercado de divisas
+				\4[] $\to$ Cuenta corriente en balanza de pagos
+				\4 Ajuste hacia equilibrio
+				\4[] Se postula un mecanismo de ajuste
+				\4[] Ejemplo:
+				\4[] $\to$ EDemanda divisa aumenta precio divisa
+				\4[] $\to$ EDemanda bienes induce déficit CC
+				\4[] $\to$ Déficit CC induce EDemanda de divisas
+			\3 Elasticidades
+				\4 TCN depende de:
+				\4[] $\to$ elasticidades de X y M
+				\4[] $\to$ Saldo de CC actual
+				\4 Dados:
+				\4[] $\to$ Saldo de CC considerado de equilibrio
+				\4[] $\to$ Saldo actual de CC
+				\4[] $\to$ CF con saldo constante
+				\4[] $\to$ Elasticidades de X y M
+				\4[] $\to$ Cumplimiento o no de Marshall-Lerner
+				\4[$\then$] ¿Cuánto tendrá que cambiar el TCN?
+				\4 TCN se ajusta hasta alcanzar equilibrio de CC
+				\4[] $\to$ Hasta que eliminar exceso dda. de divisas
+				\4 Condición de Marshall-Lerner
+				\4[] Caracteriza variación de TC necesaria
+				\4[] $\to$ Para ajustar BP
+				\4[] Cumplimiento de Marshall-Lerner:
+				\4[] $\to$ TCN deberá depreciarse para reducir déficit
+				\4[] $\to$ TCN deberá apreciarse para aumentar déficit
+				\4 Ejemplo:
+				\4[] Dado:
+				\4[] $\to$ Marshall-Lerner: $\frac{p_x X}{E p_m M } \eta_X + \left| \eta_M \right| > 1$
+				\4[] Déficit de CC implica exceso dda. divisas
+				\4[] $\to$ Exceso dda. implica depreciación moneda local
+				\4[] $\then$ $\uparrow$ E hasta eliminar exceso de demanda
+			\3 Absorción
+				\4 Dados:
+				\4[] $\to$ Saldo de CC considerado de equilibrio
+				\4[] $\to$ TCN fijo
+				\4[] $\to$ Gasto autónomo
+				\4[] $\to$ Multiplicador del gasto
+				\4[] $\to$ Elasticidades de importaciones y exportaciones al TCN
+				\4[$\then$] ¿Cuánto tendrá que devaluarse el TCN...
+				\4[] ...para reducir exportaciones netas...
+				\4[] ...para que caiga absorción interna...
+				\4[] ...hasta equilibrar balanza de pagos?
+				\4 Multiplicador del gasto
+				\4[] $Y = C_0 + cY + X_0 - M_0 - mY$
+				\4[] $\to$ $Y = \frac{C_0 + X_0 - M_0}{1-c+m}$
+				\4[] $\then$ $X_0 - M_0$ sujeto a $\Delta$ TCN
+				\4 Contexto de régimen TCFijo y devaluaciones
+				\4[] ¿Cuánto hará falta devaluar para eq. de CC?
+				\4 TCN depende de:
+				\4[] $\to$ Multiplicador del gasto
+				\4[] $\to$ Absorción interna y output
+				\4 Absorción condiciona ajuste necesario de TCN
+				\4[] TCN depende de:
+				\4[] $\to$ efecto sobre exportaciones netas
+				\4[] $\to$ multiplicador del gasto
+				\4[] $\then$ TCN que induce determinada absorción
+			\3 Mundell-Fleming
+				\4 Contexto de desempleo y precios rígidos
+				\4[] Posible modelizar TCN fijo y flexible
+				\4 TCN flexible depende de:
+				\4[] $\to$ Política fiscal
+				\4[] $\to$ Política monetaria
+				\4[] $\to$ Libertad de movimiento de K
+				\4 Libre movimiento de K
+				\4[] Mov. de K determinan EDemanda de divisas
+				\4[] $\to$ Prevalecen frente a exportaciones netas
+				\4[] $\then$ $0=\text{NX}(Y,S) - CF(r - r^*)$, $\text{CF}_{r-r^*} \to -\infty$\footnote{Cuanto mayor sea la diferencia entre el tipo de interés nacional y el mundial, más capitales entrarán al país. Así, si la CF es la diferencia entre la variación de activos y la variación de pasivos, un interés por encima del mundial implicará un aumento masivo de los pasivos frente al mundo en relación a los activos frente al mundo. Cuando las exportaciones netas sean negativas, será necesario que entre capital en el país para que $-CF$ tenga signo positivo, de tal manera que será necesario un tipo de interés nacional por encima del mundial.}
+				\4[] PF expansiva:
+				\4[] $\to$ Aumenta interés nacional
+				\4[] $\to$ Aumenta renta
+				\4[] $\to$ Reduce exportaciones netas
+				\4[] $\then$ Entrada de K $\then$ Exceso oferta divisas
+				\4[] $\to$ Apreciación del tipo de cambio
+				\4[] PM expansiva reduce interés nacional
+				\4[] $\to$ Salida de K
+				\4[] $\to$ Exceso de demanda de divisas
+				\4[] $\then$ Depreciación del tipo de cambio
+				\4 Sin movimiento de capital
+				\4[] Export. netas determinan EDemanda de divisas
+				\4[] $\to$ Prevalecen frente a movimientos de K
+				\4[] $\to$ TCN ajusta para anular exp. netas
+				\4[] $\then$ $0=\text{NX}(Y,S)$
+				\4[] PF expansiva:
+				\4[] $\to$ Aumenta interés nacional
+				\4[] $\to$ Aumenta absorción
+				\4[] $\to$ Caen exportaciones netas
+				\4[] $\then$ Exceso de dda. que no se puede cubrir
+				\4[] $\then$ Depreciación del tipo de cambio
+				\4[] PM expansiva:
+				\4[] $\to$ Reduce interés nacional
+				\4[] $\to$ Aumenta absorción
+				\4[] $\to$ Caen exportaciones netas
+				\4[] $\then$ Exceso de dda. que no se puede cubrir
+				\4[] $\then$ Depreciación del tipo de cambio
+		\2 Paridad de poder de compra
+			\3 Idea clave
+				\4 TCN se ajusta para mantener TCR dado
+				\4[] TCR es aproximadamente estable
+				\4[] $\to$ Posible estimar evolución de TCN
+				\4 Supuestos sobre TCR
+				\4[] Más o menos constante/estacionario
+				\4[] Exógeno respecto a TCN
+				\4[] $\to$ TCN es endógeno respecto a TCR
+				\4[] Índice de precios a elegir
+				\4[] $\to$ IPC
+				\4[] $\to$ Deflactor PIB
+				\4[] $\to$ Índice de exportación
+				\4[] $\then$ Problemas habituales de números índice
+				\4[] $\then$ Bienes comerciables y no comerciables
+				\4[] Resultado de arbitraje internacional
+				\4[] $\to$ Variantes de ley de un sólo precio
+				\4 Contexto teórico
+				\4[] Origen muy antiguo
+				\4[] $\to$ Mismo bien debe tener mismo precio
+				\4[] Menciones muy antiguas
+				\4[] $\to$ Escuela de Salamanca
+				\4[] $\to$ Bullionistas
+				\4[]  $\to$ Ricardo, Mill, Marshall
+				\4[] Gustav Cassel formaliza concepto
+				\4[] $\to$ Afirma en general se cumple PPA
+				\4[] $\to$ Debate sobre TCN post-1a GM
+				\4[] $\to$ Afirma TCN deben fijarse para mantener PPA
+				\4[] $\then$ UK necesita devaluar TCN
+				\4[] Big Mac Index de The Economist
+				\4[] $\to$ Precio de BigMac en diferentes países, en \$
+				\4[] $\then$ Precio muy elevado: moneda sobrevalorada
+				\4[] $\then$ Precio muy bajo: moneda infravalorada
+				\4[] Relación más o menos cte. con TCDinero
+				\4 Diferentes versiones
+				\4[] Cómo de restrictivo sea supuesto sobre TCR
+				\4[] $\to$ Igual a 1: ley del mismo precio
+				\4[] $\to$ Igual a constante
+				\4[] $\to$ Qué indice de precios utilizar
+			\3 PPA absoluta
+				\4 Ley de un sólo precio
+				\4[] Aplicado a nivel general de precios
+				\4[] Cesta de bienes en extranjero ($P^*$)
+				\4[] $\to$ Mismo precio que cesta nacional ($P$)
+				\4[] $\to$ En misma moneda
+				\4[] \fbox{$P = S P^*$ $\then$ $\frac{SP^*}{P} = 1$}
+				\4 Dinámica del TCN
+				\4[] Se ajusta para mantener TCR igual a 1
+				\4[] $P_t = S_t P^*_t$
+				\4[] Aplicando logaritmos y derivando:
+				\4[] $\to$ \fbox{$\pi_t = \dot{s}_t + \pi_t^*$}
+				\4[] $\then$ $\dot{s}_t = \pi_t - \pi_t^*$
+				\4[] $\then$ TCN varía con diferencial de inflación
+				\4[] $\then$ Dinámica debe mantener $\frac{SP^*}{P} = 1$
+			\3 PPA relativa
+				\4 Relación constante entre TCR
+				\4[] No tiene por qué ser 1
+				\4[] $\to$ Costes de transporte
+				\4[] $\to$ Impuestos
+				\4[] $\to$ Sustituibilidad imperfecta
+				\4[] $\then$ Generaliza PPA absoluta
+				\4[] $\then$ PPAAbsoluta es caso particular de PPARelativa
+				\4[] \fbox{$P = K \cdot S P^*$ $\then$ $\frac{P}{SP^*} = K$}
+				\4 Dinámica del TCN
+				\4[] Se ajusta para TCR K constante
+				\4[] $P_t = K \cdot S_t P^*_t$
+				\4[] $\then$ $\dot{s}_t = \pi_t - \pi_t^*$
+				\4[] $\then$ Misma dinámica que PPAAbsoluta
+				\4[] $\then$ Dinámica debe mantener $\frac{SP^*}{P} = K$
+				\4[] $\then$ Condición inicial es relevante
+				\4[] $\then$ PPAAbsoluta implica PPARelativa
+				\4[] $\then$ PPARelativa no implica PPAAbsoluta
+			\3 Implicaciones
+				\4 PPA como benchmark de TCN
+				\4[] Permite juzgar nivel de TCN
+				\4[] Posible valorar sobre/infravaloración
+				\4[] $\to$ Costes laborales unitarios
+				\4[] $\to$ Índices de competividad
+				\4[] $\then$ Conclusiones normativas sobre TCN
+				\4 PPA como modelo simple de predicción TCN
+				\4 Política monetaria expansiva
+				\4[] Si PPA no se cumple
+				\4[] $\to$ TCN no se ajusta
+				\4[] $\then$ PM expansiva aumenta output vía dda. de X
+		\2 Modelos de paridad de tipos de interés
+			\3 Idea clave
+				\4 TCN depende de diferencial de interés
+				\4[] Mercados arbitran rendimiento act. financieros
+				\4[] $\to$ Mismo riesgo tiene mismo rendimiento
+				\4[] $\to$ Diferentes divisas, diferente interés
+				\4[] $\to$ Interés exógeno a TCN
+				\4[] $\then$ TCN se ajusta para igualar rendimientos
+				\4 Dos posibles estrategias de inversión
+				\4[] $\to$ Dado capital en moneda local
+				\4[] 1. Invertir en activo doméstico
+				\4[] 2. Comprar divisa, invertir, vender divisa
+				\4[] Rendimiento de ambas debe igualarse
+				\4[] $\to$ TCN es variable de ajuste
+				\4[] $\then$ TCN toma valor en futuro para igualar
+			\3 Paridad cubierta de interés
+				\4 Teoría del TCN forward
+				\4[] Precio presente de divisa entregada en futuro
+				\4[] $\to$ Se ajusta para igualar rendimiento
+				\4 Estrategias de inversión
+				\4[] A. Inversión en activo doméstico
+				\4[] 1. Compra activo en $t$
+				\4[] 2. Recibe $(1+r)$ en $t+1$
+				\4[] $\then$ Rendimiento es $(1+r)$
+				\4[] B Inversión en activo extranjero
+				\4[] 1. Compra divisa por $S_t$
+				\4[] $\to$ Obtiene $\frac{1}{S_t}$ uds. de divisa
+				\4[] 2. Compra activo extranjero en $t$
+				\4[] 3. Vende forward de divisa en $t$ por $F_{t+1}$
+				\4[] 4. Recibe $(1+r^*)$ en $t+1$ y vende por $F_{t+1}$
+				\4[] $\then$ Rendimiento es $\frac{F_{t+1}}{S_t} \cdot (1+r^*)$
+				\4 Igualación de rendimientos
+				\4[] $(1+r) = \frac{F_{t+1}}{S_t} \cdot (1+r^*)$
+				\4[] Aplicando logaritmos y reordenando:
+				\4[] $f_{t+1} - s_t \approx r - r^*$\footnote{En la medida en que los diferenciales sean pequeños, esta expresión aproximará bien. Realmente, la relación es: $\frac{F_{t+1} - S_t}{S_t} = \frac{r- r^*}{1+r^*}$.}
+				\4 Implicaciones
+				\4[] Perfecta movilidad de capitales
+				\4[] $\to$ Distribuyen riqueza entre H y F libremente
+				\4[] $\then$ Arbitran cualquier diferencia de rendimientos
+				\4[] Monedas con interés alto
+				\4[] $\then$ Cotizan al descuento forward\footnote{Es decir, su precio forward es inferior al precio spot. Si asumimos tipo de cambio directo, descuento forward implica $\frac{F-S}{S} >0$.}
+				\4[] Monedas con interés bajo
+				\4[] $\then$ Cotizan con prima forward\footnote{Es decir, su precio forward es superior al precio spot. Si asumimos tipo de cambio directo, descuento forward implica $\frac{F-S}{S} < 0$.}
+			\3 Paridad descubierta de interés
+				\4 Teoría del TCN esperado
+				\4[] Precio de futuro de divisa entregada en futuro
+				\4[] $\to$ Se ajusta para igualar rendimientos
+				\4 Estrategias de inversión
+				\4[] A. Inversión en activo doméstico
+				\4[] $\then$ Rendimiento es $(1+r)$
+				\4[] B. Inversión en activo extranjero
+				\4[] 1. Compra divisa por $S_t$
+				\4[] $\to$ Obtiene $\frac{1}{S_t}$ uds. de divisa
+				\4[] 2. Compra activo extranjero en $t$
+				\4[] 3. Recibe $(1+r^*)$ en $t+1$
+				\4[] 4. Vende por $S^E_{t+1}$ en $t+1$
+				\4[] $\then$ Rendimiento esperado es $\frac{S_{t+1}^E}{S_t} \cdot (1+r^*)$
+				\4 Implicaciones
+				\4[] Además de movilidad de capitales
+				\4[] Activos son sustitutivos perfectos
+				\4[] Agentes estiman sin sesgos y con toda información
+				\4[] $\then$ Se cumple hipótesis de mercados eficientes
+			\3 TCN como predictor del TCN spot futuro
+		\2 Modelos de activos
+			\3 Idea clave
+				\4 TCN es precio relativo de activos
+				\4[] Diferentes activos considerados
+				\4[] $\to$ Modelo monetario: dinero
+				\4[] $\to$ Modelo de cartera: bonos
+				\4 Ajuste de TCN
+				\4[] Equilibrar poder de compra de dinero
+				\4[] $\to$ Basado en PPA
+				\4[] $\to$ Precios flexibles o rígidos es relevante
+				\4[] $\to$ Tipos de interés son relevantes
+				\4[] Equilibrar rendimiento ajustado por riesgo
+				\4[] $\to$ Bonos extranjeros y nacionales
+			\3 Modelo monetario con precios flexibles
+				\4 Frenkel (1976)
+				\4 Relación con modelo monetario de BP
+				\4[] Modelo monetario de BP
+				\4[] $\to$ Stock de dinero es variable de ajuste
+				\4[] Modelo monetario de TCN
+				\4[] $\to$ TCN es variable de ajuste
+				\4 Resultado de dos supuestos:
+				\4[] PPA Absoluto
+				\4[] $\to$ $P_t = S_t P^*_t$
+				\4[] $\then$ (i) $p_t = s_t + p_t^*$
+				\4[] Teoría cuantitativa del dinero
+				\4[] $\to$ $M_t = P_t \cdot \frac{\phi Y_t}{\lambda (1+ i)}$
+				\4[] $\then$ (ii) Nacional: $m_t - p_t = \phi y_t - \lambda i $
+				\4[] $\then$ (iii) Extranjero: $m_t^* - p_t^* = \phi y_t^* - \lambda i^*$
+				\4[] Sustituyendo (ii) y (iii) en (i):
+				\4[] $\to$ \fbox{$s_t = (m_t - m_t^*) - \phi (y_t - y_t^*) + \lambda (i_t - i_t^*)$}
+				\4 Implicaciones
+				\4[] PM expansiva deprecia moneda
+				\4[] Crecimiento de output aprecia moneda
+				\4[] $\to$ Más demanda de dinero $\then$ apreciación
+				\4[] $\to$ M-F: CParibus, $\uparrow$ Y $\to$ $\uparrow$ M $\then$ $\uparrow$ S para equilibrar
+				\4[] $\then$ Contrario a Mundell-Fleming
+				\4[] Interés más alto deprecia moneda
+				\4[] $\to$ Menos demanda de dinero $\then$ Depreciación
+				\4[] $\to$ M-F: más interés, $\uparrow$ ENC y apreciación
+				\4[]  $\then$ Contrario a Mundell-Fleming
+				\4[] Diferencial positivo de interés
+				\4[] $\to$ Menor demanda de dinero
+				\4[] $\then$ Depreciación de moneda
+				\4[] PPA como mecanismo regulador
+				\4[] $\to$ Cuanto + valor pierde moneda en relación a cesta común
+				\4[] $\then$ + valor pierde moneda en relación a otra moneda
+			\3 Modelo monetario con precios flexibles y HER
+				\4 Mussa (1984)
+				\4 TCN depende de expectativas sobre fundamentales
+				\4[] TCN incorpora toda información conocida
+				\4[] $\to$ Variaciones resultan de shocks
+				\4[] $\then$ TCN es paseo aleatorio
+				\4 Modelo monetario de Frenkel (1976) + UIP
+				\4[] (i) $s_t = (m_t - m_t^*) - \phi (y_t - y_t^*) + \lambda (i_t - i_t^*)$
+				\4[] (ii) $\dot{s}_t^e = i_t - i_t^*$
+				\4[] Sustituyendo (ii) en (i) hasta infinito:
+				\4[] \fbox{$s_t = \sum^\infty_{i=t} \psi^i E_t \Omega_{i}$}
+				\4[] $\to$ $\psi = \frac{\lambda}{1-\lambda}$
+				\4[] $\to$ $\Omega_i = (m_i - m_i^*) - \phi (y_i - y_i^*)$
+			\3 Modelo monetario con precios rígidos
+				\4 Dornbusch (1976), Frankel (1979)
+				\4[] Mundell-Fleming dinámico con HER
+				\4 IS
+				\4[] \fbox{$y = g + \delta(e + p^* - p) - \sigma i$}
+				\4 LM
+				\4[] \fbox{$m-p = \phi y - \lambda i$}
+				\4 UIP -- Paridad descubierta de interés
+				\4[] \fbox{$i = i^* + \dot{e}^e$}
+				\4 Curva de Phillips
+				\4[] \fbox{$\dot{p} = \pi(y-\bar{y})$}
+				\4 HER sobre tipo de cambio nominal
+				\4[] \fbox{$\dot{e}^e = \dot{e}$}
+				\4 Diagrama de fase
+				\4[] Espacio $p$--$e$
+				\4[] $p$ en abscisas, $e$ en ordenadas
+				\4 Dos curvas definen cuatro regiones
+				\4[$\dot{p}=0$] -- Curva de precios constantes
+				\4[] Precio constante implica output natural
+				\4[] $\to$ $0=\pi(y-\bar{y})$ $\then$ $y=\bar{y}$
+				\4[] $\then$ Economía produce output natural ($\bar{y}$)
+				\4[] A la derecha de $\dot{p} = 0$ dado TCN
+				\4[] Precios altos
+				\4[] $\to$ Tipo real apreciado
+				\4[] $\to$ Bienes nacionales más caros
+				\4[] $\to$ Menores exportaciones netas
+				\4[] $\then$ Output cae por debajo de natural
+				\4[] $\then$ Precios caen ($\leftarrow$)
+				\4[] A la izquierda de $\dot{p} = 0$
+				\4[] $\then$ Output sube por encima de natural
+				\4[] $\then$ Precios aumentan ($\rightarrow$)
+				\4[$\dot{e} = 0$] -- Curva de TCN constante
+				\4[] TCN cte. implica interés doméstico igual a mundial
+				\4[] $\to$ $\dot{e}=0 \then i = i^*$
+				\4 Al norte de $\dot{e}=0$ dado precio
+				\4[] Tipo de cambio depreciado
+				\4[] $\to$ Tipo de cambio real depreciado
+				\4[] $\to$ Bienes nacionales más baratos
+				\4[] $\to$ Mayores exportaciones netas
+				\4[] $\to$ Mayor renta
+				\4[] $\to$ Mayor demanda de dinero
+				\4[] $\then$ Aumento de $i$ para eq. mercado de dinero
+				\4[] $\then$ $i > i^*$ implica depreciación
+				\4[] $\then$ TCN aumenta ($\uparrow$) (depreciación)
+				\4 Al sur de $\dot{e}=0$ dado precio
+				\4[] $\then$ Caída de $i$ para eq. mercado de dinero
+				\4[] $\then$ $i < i^*$ implica apreciación
+				\4[] $\then$ TCN cae ($\downarrow$) (apreciación)
+				\4 Representación gráfica
+				\4[] Norte: $\uparrow \rightarrow$
+				\4[] Oeste: $\downarrow \rightarrow$
+				\4[] Sur: $\leftarrow \downarrow$
+				\4[] Este: $\leftarrow \uparrow$
+				\4[] \grafica{dornbusch}
+				\4 Precios rígidos en c/p + UIP
+				\4[] $\dot{s}_t^e = i_t - i_t^*$
+				\4[] UIP debe cumplirse:
+				\4[] $\to$ TCN ajusta para UIP en c/p
+				\4[] $\then$ Desviaciones de PPA en corto plazo
+				\4[] $\then$ Ajuste de precios
+				\4[] $\to$ PM afecta interés real
+				\4[] $\then$ TCN depende de interés real
+				\4 Overshooting
+				\4[] TCN sobrerreaciona ante $\Delta M$
+				\4[] $\to$ Necesaria apreciación inmediata para cumplir UIP
+				\4[] $\to$ Necesaria depreciación de l/p para cumplir PPA
+				\4[] $\then$ Depreciación inmediata más allá de PPA en l/p
+				\4[] Ejemplo:
+				\4[] 1. Shock monetario expansivo reduce $i$ nominal
+				\4[] $\to$ $m-\bar{p} = \phi \bar{y} - \lambda i$
+				\4[] $\to$ $\uparrow m$ $\to$ $\downarrow i$
+				\4[] $\to$ Porque precios rígidos $\then$ efecto liquidez
+				\4[] 2. Aparece:
+				\4[] $\to$ Diferencial de interés negativo ($i-i^*$)
+				\4[] $\to$ Presión al alza sobre precios
+				\4[] 3. Necesario:
+				\4[] $\to$ Apreciación para cumplir UIP
+				\4[] $\to$ Depreciación a l/p para cumplir PPA
+				\4[] 4. Solución:
+				\4[] $\to$ Depreciación excesiva instantánea a c/p
+				\4[] $\to$ Apreciación a l/p hasta nivel menor a inicial
+				\4[] $\then$ Overshooting
+				\4[] En diagrama de fase:
+				\4[] \grafica{dornbuschpm}
+				\4[] En relación al tiempo:
+				\4[] \grafica{overshooting}
+				\4 Ausencia de overshooting
+				\4[] TCN no sobrerreacciiona ante $\Delta M$
+				\4[] $\to$ No se produce efecto liquidez
+				\4[] $\then$ No necesaria apreciación para cumplir UIP
+				\4[] Sucede si demanda de dinero
+				\4[] $\to$ Reacciona muy poco ante cambios en interés
+				\4[] $\to$ Reacciona mucho ante cambios en renta
+				\4[] $\to$ Rigidez de precios implica transmisión de $\Delta M$ a $Y$
+				\4[] Ejemplo:
+				\4[] 1. Shock monetario no reduce $i$ nominal
+				\4[] $\to$ Ante $\uparrow m$, $\Delta \phi \bar{y} > \Delta \lambda i$
+				\4[] $\then$ $i$ puede incluso aumentar
+				\4[] 2. Posible cumplir PPA y UIP
+			\3 Modelos con la regla de Taylor
+				\4 Incorporar regla de interés a modelo anterior
+				\4[] $\to$ Múltiples variantes
+				\4 Dinámicas complejas
+				\4 Algunos logran superar a RW
+			\3 Modelos de cartera
+				\4 TCN depende de oferta de bonos
+				\4[] Se ajusta para equilibrar retornos de:
+				\4[] $\to$ Bonos nacionales
+				\4[] $\to$ Bonos extranjeros
+				\4 UIP se cumple con prima
+				\4[] $\dot{s}_t + \delta  = i-i^*$
+				\4[] $\to$ $\delta$: prima de riesgo
+				\4[] $\delta < 0$: preferencia por activos nacionales
+				\4[] $\then$ Necesaria más depreciación para equilibrar rdto.\footnote{Es decir, la depreciación que tiene lugar es superior al diferencial de interés. Inicialmente, los agentes se endeudarán en divisa, cambiarán inmediatamente a moneda local --depreciando la divisa- y en el momento del vencimiento volverán a convertir en divisa depreciando la moneda. Dado que tienen preferencia por la inversión en activo denominado en moneda local aunque tenga menor rendimiento, tomarán prestado más de la cantidad de equilibrio y provocarán una depreciación superior a la del diferencial de interés. Ese exceso de depreciación es lo que captura una prima $\delta$ inferior a cero.}
+				\4[] $\delta > 0$: preferencia por activos extranjeros
+				\4[] $\then$ Necesaria menos depreciación para equilibrar rdto.
+				\4 Equilibrio demanda y oferta
+				\4[] $N_D \equiv W\cdot g(\overbrace{i - i^* - \dot{s}}^{\delta}) = N_S$
+				\4[] $F_D \equiv \frac{W\cdot h(\overbrace{i -i^* -\dot{s}}^\delta)}{S} = F_S$
+				\4[] $\then$ \fbox{$S = \frac{N^S}{F^S} \cdot \phi (\delta)$}
+				\4 Estática comparativa
+				\4[] Asumiendo $\delta$ constante
+				\4[] $\to$ Interés no varía
+				\4[] $\to$ Variación de TCN esperada nula\footnote{Ciertamente, llevando al límite el supuesto de ceteris paribus.}
+				\4[] Aumento de oferta de bonos nacionales
+				\4[] $\to$ Necesario abaratar precio en moneda local
+				\4[] $\then$ Depreciación del TCN $ \left( \dv{S}{\delta} \right)$
+				\4[] Aumento de oferta de bonos extranjeros
+				\4[] $\to$ Necesario abaratar precio en moneda extranjera
+				\4[] $\then$ Apreciación del TCN $\left( \dv{S}{\delta} \right)$
+				\4 Interacción entre cuenta corriente y financiera
+				\4[] Explicar superávit comercial induce apreciación
+				\4[] 1. Superávit en CC debe ser financiado
+				\4[] 2. Superávit en CF para financiar
+				\4[] 3. Aumento de tenencia de activos extranjeros
+				\4[] 4. Necesaria apreciación para aumentar dda. de F
+				\4[] $\to$ Si Marshall-Lerner, tendencia a eq. de CC
+		\2 Modelos de enfoque microeconómico
+			\3 Idea clave
+				\4 Modelos anteriores
+				\4[] Equilibrio depende de variables agregadas
+				\4[] No tienen en cuenta proceso de trading
+				\4[] $\to$ Idiosincracias del trading son relevantes
+				\4 Trading y mercados de FX
+				\4[] Agentes con:
+				\4[] $\to$ Preferencias heterogéneas
+				\4[] $\to$ Información imperfecta y heterogénea
+				\4[] $\to$ Estrategias disponibles distintas
+				\4[] $\then$ Heterogeneidad es importante
+				\4[] $\then$ Agregación puede reducir capacidad predictiva
+				\4 Contexto institucional del trading
+				\4[] Impacto no neutral sobre TCN
+			\3 Información imperfecta
+				\4 Descomposición de factores que determinan TCN
+				\4[] I. Tipos de interés determinados por PM
+				\4[] II. Expectativas sobre fundamentales
+				\4[] III. Expectativas sobre prima de riesgo
+				\4 Modelos macro
+				\4[] Existe agente representativo
+				\4[] $\to$ Todos agentes tienen misma información
+				\4[] $\then$ Mismas expectativas sobre fundamentales y PR
+				\4 Enfoque microeconómico
+				\4[] Información sobre fundamentales
+				\4[] $\to$ BC distinta info que dealers y minoristas
+				\4[] Expectativas sobre prima de riesgo
+				\4[] $\to$ Heterogéneas entre agentes
+				\4[] $\to$ Diferentes fuentes de $\Delta$ respecto a macro
+				\4[] $\to$ Énfasis sobre información privada de dealers
+			\3 Order flow
+				\4 Dealers ofrecen TCN
+				\4[] Incluyen prima de riesgo
+				\4[] Prima de riesgo depende de:
+				\4[] $\to$ Información pública sobre fundamentales
+				\4[] $\to$ Order flows pasados y presentes
+				\4 Order flows
+				\4[] Diferencias entre órdenes de compra y venta
+				\4 Evans y Lyons (2002) y otros posteriores
+			\3 Teoría de juegos
+				\4 Considerar incentivos PM de BC
+				\4[] Caracterizando estrategias óptimas
+				\4[] $\to$ En contexto de teoría de juegos
+			\3 Modelos DSGE
+				\4 Conocido como enfoque HANK
+				\4[] Heterogeneous Agentes New Keynesian
+				\4 Incorporación de heterogeneidad
+				\4[] $\to$ Información heterogénea
+				\4[] $\to$ Estrategias heterogéneas
+				\4 Contexto de equilibrio general
+				\4 Análisis de efecto de shocks
+				\4[] $\to$ Decisiones de PM
+				\4[] $\to$ Descuento subjetivo
+				\4[] $\to$ Efecto de desigualdad
+				\4[] $\then$ Predicciones cuantitativas
+				\4[] $\then$ Posible análisis normativo
+		\2 Modelos del mercado financiero
+			\3 Idea clave
+				\4 TCN depende de estructura de mercado financiero
+				\4[] $\to$ Imperfecciones
+				\4[] $\to$ Restricciones de liquidez
+				\4[] $\to$ Activos no sustitutivos
+				\4[] $\to$ Preferencias heterogéneas
+				\4[] $\to$ Obstáculos a flujos
+				\4[] $\to$ Restricciones de intermediarios financieros
+			\3 Gourinchas y Rey (2007)
+				\4 Modelo del TC efectivo
+				\4 Canales de ajuste externo
+				\4[] Canal comercial
+				\4[] $\to$ Exportaciones netas
+				\4[] Canal financiero
+				\4[] $\to$ Efectos valoración
+				\4[] $\to$ Rendimientos de activos
+				\4[] $\to$ Pasivos exteriores
+				\4 Sistema financiero
+				\4[] Determina capacidad de canal financiero
+				\4 Evidencia empírica
+				\4[] Aparentemente, supera a RW hasta tres años en EEUU
+			\3 Gabaix y Maggiori (2014)
+				\4 TCN depende de imperfecciones en mercados financieros
+				\4 Modelización de flujo de activos financieros
+				\4[] Déficits CC en EEUU, superávits en Japón
+				\4[] Flujos de capital dependen de:
+				\4[] $\to$ Oferta y demanda
+				\4[] $\to$ Interés relativo
+				\4[] $\to$ Tipo de cambio
+				\4[] Contexto DSGE HANK
+				\4[] $\to$ Equilibrio general
+				\4[] $\to$ Agentes heterogéneos
+				\4[] $\to$ Competencia imperfecta
+				\4 Imperfecciones del mercado financiero
+				\4[] Restricciones de oferta y demanda
+				\4[] Obstáculos a movilidad de capital
+				\4[] Intermediarios deben limitar su riesgo
+		\2 Otros modelos
+			\3 Caos
+				\4 Prometedor en 80s y primeros 90s
+				\4 TCN es resultado de:
+				\4[] Procesos determinísticos no lineales
+				\4[] $\to$ Aparentemente estocásticos
+				\4[] $\then$ Pero realmente perfectamente determinísticos
+				\4 Formulación de tests de dinámicas caóticas
+				\4 Algunos apuntan a dinámica caótica
+				\4 ¿Qué hacer después?
+				\4 ¿Cómo caracterizar múltiples equilibrios?
+				\4 ¿Qué implicaciones de política económica extraer?
+				\4 Muy difícil continuación de programa
+				\4 Agents-based models son herederos hoy en día
+			\3 Modelos de equilibrio de largo plazo
+				\4 Caracterizar equilibrio de l/p
+				\4[] Benchmark al que TCN tiende/debería tender
+				\4[] Basados en dfierentes mecanismos
+				\4 DEER -- Desirable Equilibrium Exchange Rate
+				\4[] TCN resultado de cumplir objetivos macro
+				\4[] P.ej.: determinado CC + desempleo
+				\4[] Utilizado en FMI y otros
+				\4[] $\to$ Qué intervención diseñar
+				\4 BEER -- Behavioral Equilibrium Exchange Rate
+				\4[] TCN resultado de supuestos behaviorales
+				\4[] Estimación de eq. forma reducida en base a:
+				\4[] $\to$ Fundamentales
+				\4[] $\to$ Factores transitorios de TCReal
+				\4[] BEER:
+				\4[] $\to$ TCN estimado tras descontar factores transitorios
+				\4 FEER -- Fundamental Equilibrium Exchange Rate
+				\4[] TCR que genera equilibrio de BP y pleno empleo
+				\4[] $\to$ Pleno empleo como objetivo
+				\4[] $\to$ Sin restricciones al comercio
+				\4[] $\then$ Contenido normativo: debe tender a TCN
+				\4[] Definir TCR compatible con eq. interno y externo
+				\4[] Asumiendo determinada rigidez de precios
+				\4[] $\then$ TCN que ajusta a equilirio
+			\3 Modelos behaviorales/conductistas
+				\4 Supuestos más o menos ad-hoc sobre dinámicas TC
+				\4[] $\to$ Decisión cuasi-racional o irracional
+				\4[] $\to$ Expectativas no son racionales
+				\4 Dinámicas muy complejas o incluso caóticas
+				\4 Posibles equilibrios múltiples
+				\4 Difícil valorar capacidad predictiva
+				\4[] Cherry-picking
+				\4[] Data-mining
+				\4[] Problemas habituales de behavioral finance
+	\1 \marcar{Contrastación empírica de las teorías}
+		\2 Desviaciones de la PPA
+			\3 Hipótesis de Balassa-Samuelson
+				\4 IPC incluye comerciables y no comerciables
+				\4[] Comerciables tienen precios iguales entre países
+				\4[] $\to$ Aproximadamente
+				\4[] $\to$ Resultado de competencia
+				\4[] No comerciables pueden tener precios distintos
+				\4[] $\to$ No hay competencia entre peluqueros indios y suecos
+				\4 TCR no es constante usando IPC
+				\4[] Aumenta con PMg en bienes comerciables
+				\4[] $\to$ TCR más alto en países más productivos
+				\4[] $\to$ Desarrollo aumenta TCR
+				\4[] $\then$ Desviación sistemática de TCR
+				\4[] $\then$ PPAAbsoluta no se cumple
+				\4[] $\then$ PPARelativa a cumplir varía con desarrollo/productividad
+				\4[] $\then$ PPA no es robusta a índice de precios utilizado
+				\4 Formulación
+				\4[] Países A y B
+				\4[] Dos sectores
+				\4[] $\to$ Bienes comerciables (T)
+				\4[] $\to$ No comerciables (NT)
+				\4[] Precios de bienes comerciables = en A y B
+				\4[] $\to$ Por ley de único precio
+				\4[] Productividad de no comerciables = en A y B
+				\4[] $\to$ P.ej: peluquerías, taxis
+				\4[] Productividad de comerciables distinta en A y B
+				\4[] Salarios iguales en ambos sectores
+				\4[] $\to$ Movilidad interna de L perfecta
+				\4[] País A:
+				\4[] $\to$ $w_T^A = P_T \cdot \text{PMg}_T^A = P_\text{NT}^A \cdot \text{PMg}_{NT} = w_\text{NT}^A$
+				\4[] País B:
+				\4[] $\to$ $w_T^B = P_T \cdot \text{PMg}_T^B = P_\text{NT}^B \cdot \text{PMg}_{NT} = w_\text{NT}^B$
+				\4[] País A se desarrolla más que B
+				\4[] $\to$ $\text{PMg}_A^T > \text{PMg}_B^T$ $\then$ $P_\text{NT}^A > P_\text{NT}^B$
+				\4[] $\then$ IPC crece más en desarrollados (efecto Penn)
+				\4[] Si TCN mantiene PPA para comerciables
+				\4[] $\then$ TCN no mantiene PPA en no comerciables e IPC
+				\4[] $\then$ Desviaciones permanentes de PPAAbsoluta
+				\4[] $\then$ PPA comerciables compatible con no PPA general
+				\4 Implicaciones
+				\4[] Modelos de TCN basados en PPA
+				\4[] $\to$ Implican TCR constante
+				\4[] Efecto Balassa-Samuelson desestabiliza PPA
+				\4[] $\to$ Modelos de TCN-PPA no robustos a índice de $\pi$
+				\4[] En presencia de:
+				\4[] $\to$ Bienes no comerciables
+				\4[] $\to$ Divergencia en productividad marginal de L
+				\4[] $\then$ PPA no es estable
+				\4[] $\then$ Predicción sobre TCR basada en PPA y TCN no es estable
+
+				\4 Contrastación empírica
+				\4[] Muy difícil contrastación
+				\4[] Evidencia débil a favor
+				\4[] $\to$ Resultados poco robustos a medidas de productividad
+				\4[] $\to$ PPA apenas se cumple entre no comerciables
+				\4[] $\to$ Resultados compatibles pero cuantitativamente pequeños
+			\3 Diferencias entre regímenes cambiarios
+				\4 Mussa (1986)
+				\4[] Régimen cambio y efecto sobre TCR
+				\4[] $\to$ TCNFlexible induce más desviación de PPA
+				\4[] $\to$ TCNFijo reducen desviaciones de PPA
+			\3 Desviaciones estructurales y coyunturales
+				\4 Distinción habitual en literatura
+				\4 Desviaciones estructurales
+				\4[] Desviaciones de PPA debidas a factores reales
+				\4[] Diferencias de PMg: efecto Balassa-Samuelson
+				\4[] $\to$ Confirmadas empíricamente
+				\4[] $\to$ TCR muestra tendencia sistemática
+				\4[] $\then$ PPA absoluta no se cumple en l/p
+				\4[] Costes de transporte
+				\4[] $\to$ Impiden arbitrar comerciables
+				\4[] $\then$ Impiden PPAAbsoluta
+				\4 Desviaciones transitorias
+				\4[] Debidas a factores nominales
+				\4[] $\to$ Tipos flexibles y rigidez de precios
+				\4[] $\then$ Desviaciones transitorias
+				\4[] $\to$ Sustituibilidad imperfecta
+				\4[] Episodios de hiperinflación
+				\4[] $\to$ PPARelativa se cumple más
+				\4[] Conclusión:
+				\4[] $\then$ Desviaciones persistentes de PPARelativa
+				\4[] $\then$ Cierta tendencia a cumplir PPARelativa en l/p
+				\4[] $\then$ TCR + o - estacionario pero persistente
+				\4[] $\then$ Más persistente cuanto más lejos de media
+				\4[] $\then$ A m/p y l/p, PPAR puede ser benchmark para TCN
+		\2 Paridad de interés
+			\3 Paridad cubierta (CIP)
+				\4 Contrastación suele hacerse con:
+				\4[] $\to$ Apertura de cuenta financiera
+				\4[] $\to$ Activos libres de riesgo
+				\4 Cumplimiento de CIP
+				\4[] Generalmente, sí
+				\4[] $\to$ Mercados financieros desarrollados
+				\4[] Distorsiones transitorias si coyuntura inestable
+				\4[] Utilizada a menudo por bancos y dealers
+				\4[] $\to$ Para determinar precios de forwards
+				\4[] Países en desarrollo
+				\4[] $\to$ Cumplimiento más difícil de estimar
+				\4[] $\to$ Probable incumplimiento generalizado
+			\3 Paridad descubierta (UIP)
+				\4 Contrastación empírica muy difícil
+				\4[] $\to$ TCN esperado muy difícil de conocer
+				\4[] $\to$ Activos perfectamente sustitutivos no existen
+				\4[] Generalmente, regresiones del tipo:
+				\4[] $s_{t+1} = b_0 + b_1 (r_t - r_t^*) + u_{t+1}$
+				\4[] $\to$ $u_{t+1}$: término de error asumido 0
+				\4[] $\to$ $b_0 = 0$ y $b_1 = 1$ para cumplimiento
+				\4 Cumplimiento de UIP
+				\4[] Casi siempre no
+				\4[] A menudo, anomalía de la prima forward
+				\4[] $\to$ Más interés induce apreciación
+				\4[] $\to$ Carry-trade descubierto es rentable\footnote{Pedir prestado en moneda con interés bajo, invertir en moneda con interés alto, arbitrando la diferencia.}
+		\2 Anomalía de la prima forward
+			\3 Idea clave
+				\4 Fama (1984)
+				\4 Regularidad empírica:
+				\4[] Diferencial positivo de interés
+				\4[] $\to$ Correlacionado con apreciación
+				\4 Múltiples estudios confirman
+				\4 Debería ser al contrario
+				\4[] Diferencial positivo de interés
+				\4[] $\to$ Cotización al descuento sin prima
+				\4[] $\then$ Anomalía de prima forward
+			\3 Implicaciones
+				\4 UIP no se cumple
+				\4[] Diferencial de interés induce más rendimiento
+				\4 Carry trade es rentable
+				\4[] Invertir en divisa con más interés es rentable
+				\4 TCN forward es indicador sesgado
+				\4[] CIP sí suele cumplirse
+				\4[] UIP no se cumple
+				\4[] $\to$ Mayor interés relacionado con apreciación
+				\4[] $\to$ Forward predice a la inversa spot futuro
+				\4[] ¿Mercado de divisas no es eficiente?
+				\4[] ¿Peso problems?
+		\2 Anomalía de la desconexión de los fundamentales
+			\3 Idea clave
+				\4 Obstfeld y Rogoff (2001)
+				\4 Muy poca relación entre:
+				\4[] $\to$ Fundamentales
+				\4[] $\to$ TCN de corto plazo
+			\3 Implicaciones
+				\4 TCN impredecible con fundamentales
+				\4 TCN se parece a un RW en el corto plazo
+			\3 Valoración
+				\4 Algunos estudios posteriores contradicen
+				\4[] $\to$ Sí es posible batir RW a c/p
+				\4 Especialmente
+				\4[] Modelos con regla de Taylor
+				\4[] Modelos de activos exteriores netos
+				\4 Poca robustez a:
+				\4[] Distintas frecuencias
+				\4[] Distintos países o regiones
+				\4[] Distintos periodos muestrales
+		\2 Benchmarking con paseo aleatorio
+			\3 Idea clave
+				\4 Comparar capacidad predictiva out-of-sample
+				\4[] Estimar TCN dadas vars. explicativas
+				\4[] $\to$ No utilizadas para estimar modelos
+				\4 Predicción ex-post\footnote{Ver pág. 350 de Gandolfo, nota al pie 15.}
+				\4[] Utilizando series de vars. explicativas
+				\4[] $\to$ Que efectivamente se producen
+				\4[] $\then$ Eliminar error derivado de estimación de explicativas
+				\4 Paseo aleatorio
+				\4[] $s_t = s_{t-1} + \epsilon_t$
+				\4 Comparación con benchmark
+				\4[] Generar predicciones de modelos y benchmark
+				\4[] Comparar error medio, varianza...
+			\3 Meese y Rogoff (1983a,b)
+				\4 Modelos a comparar con benchmark
+				\4[] Modelos macroeconométricos estructurales
+				\4[] $\to$ Basados en modelos de activos
+				\4[] Modelos VAR
+				\4[] ARIMA de una variable
+				\4 Resultado:
+				\4[] Ningún modelo predice mejor que RW
+			\3 Implicaciones
+				\4 Confirmado por trabajos posteriores
+				\4[] $\to$ Respecto a mismos modelos
+				\4[] $\to$ Respecto a otros modelos
+				\4 Otros matizan conclusión
+				\4[] Sí es posible a corto plazo
+				\4[] Sí es posible a largo pero no a corto
+				\4[] $\to$ Casi todas las opciones
+				\4[] $\to$ Poco consenso
+				\4 Modelos de forma reducida
+				\4[] $\to$ No son realmente estructurales
+				\4 Problemas econométricos
+				\4[] $\to$ Críticas a contraste y a modelos
+				\4 Búsqueda de modelos que ganen a RW
+				\4[] Logran batir RW a corto plazo
+				\4[] $\to$ Algunos modelos con regla de Taylor
+				\4[] $\to$ Engel y West (2005): TCN como valor descontado
+				\4[] Algunos logran batir cualitativamente
+				\4[] $\to$ Respecto a dirección del cambio
+				\4[] $\to$ No respecto a tamaño del cambio
+		\2 Exceso de volatilidad del TCN
+			\3 Idea clave
+				\4 Tras Bretton Woods, volatilidad muy alta
+				\4 Excesiva en relación a fundamentales
+			\3 Overshooting
+				\4 Primera explicación propuesta
+				\4 Evidencia empírica en contra
+			\3 Chivo expiatorio
+				\4 Tendencia a cambiar de variable explicativa
+				\4 Calidad de modelo predictivo de agentes
+				\4[] Bastante bueno a largo plazo
+				\4[] Muy pobre a corto plazo
+				\4[] $\to$ Incertidumbre sobre verdadero modelo a c/p
+				\4[] $\then$ Cambian modelo con mucha frecuencia
+				\4[] $\then$ Volatilidad muy alta
+				\4 Elección de variables determinantes inestable
+				\4[] Mercados y prensa prestan atención variable
+				\4[] $\to$ ``hypes'' sobre variables determinantes
+				\4[] $\then$ ``Chivos expiatorios'' cambiantes
+				\4 Evidencia empírica
+				\4[] Indicios a favor
+			\3 Efecto rebaño
+				\4 Relacionado con chivo expiatorio + conductismo
+				\4 Grupos de agentes tienden a seguir líderes
+				\4 Evidencia empírica
+				\4[] Poco concluyente, alguna a favor
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Modelos teóricos
+			\3 Contrastación empírica de las teorías
+		\2 Idea final
+			\3 Complejidad inherente
+				\4 Mercado de divisas
+				\4[] $\to$ Mayor volumen del mundo
+				\4[] $\to$ Más liquido del mundo en principales divisas
+				\4[] $\to$ Asimetrías de información muy elevadas
+				\4[] $\then$ Mayor número de factores a predecir
+				\4[] $\then$ Dificultad extrema
+				\4[] $\then$ Mejoras respecto a RW pueden ser temporales
+			\3 Cita de Edgeworth (1905)
+				\4 $\Delta$ de CC es como manillas de reloj
+				\4[] Resultado de muchos engranajes ocultos
+				\4[] $\to$ Cuyo funcionamiento no observamos a priori
+				\4[] $\then$ TC resulta de esos mecanismos ocultos
+			\3 Cita de Dornbusch (1983)
+				\4 Los modelos de TCN son visiones parciales
+				\4[] Cada uno explica aspecto importante
+				\4[] $\to$ En un episodio histórico determinado
+			\3 Cita de Hayek (1974)
+				\4 Salvaguardar el prestigio de la ciencia implica
+				\4[] Evitar utilizar instrumentos de otras ciencias
+				\4[] $\to$ Que pueden superficialmente parecer similares
+				\4[] $\then$ Como las herramientas de las ciencias físicas
+				\4 Esta salvaguardia requerirá grandes esfuerzos
+				\4[] Porque el uso de esos instrumentos
+				\4[] $\to$ Forma parte de intereses de sectores de la academia
+\end{esquemal}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\graficas
+
+\begin{axis}{4}{Modelo de Dornbusch (1976): diagrama de fase}{p}{e}{dornbusch}
+	% Línea de precio constante
+	\draw[-] (0.5,0.5) -- (4,4);
+	\node[above] at (4,4){$\dot{p}=0$};
+	
+	% Línea de tipo de cambio constante
+	\draw[-] (0.5,4) -- (4,0.5);
+	\node[above] at (0.5,4){$\dot{e}=0$};
+	
+	% Senda estable de punto de silla
+	%\draw[-] (0.5,3) -- (4,1.5);
+	\draw[-{Latex}] (0.5,3) -- (1,2.79);
+	\draw[-{Latex}] (1,2.79) -- (1.5,2.57);
+	\draw[-{Latex}] (1.5,2.57) -- (2,2.36);
+	\draw[-{Latex}] (2,2.36)-- (2.25,2.25);
+	\draw[-{Latex}] (4,1.5) -- (3.5,1.71);
+	\draw[-{Latex}] (3.5,1.71) -- (3,1.93);
+	\draw[-{Latex}] (3,1.93) -- (2.5,2.143);
+	\draw[-{Latex}] (2.5,2.143) -- (2.25,2.25);
+	
+	% NORTE: Precio creciente y tipo de cambio que se deprecia 
+	\draw[-{Latex}] (2,3.5) -- (2,4);
+	\draw[-{Latex}] (2,3.5) -- (2.5,3.5);
+	
+	% OESTE: Precio creciente y tipo de cambio que se aprecia
+	\draw[-{Latex}] (0.5,2) -- (0.5,1.5);
+	\draw[-{Latex}] (0.5,2) -- (1,2);
+	
+	% SUR: Precio decreciente y tipo de cambio que se aprecia
+	\draw[-{Latex}] (2.5,1) -- (2,1);
+	\draw[-{Latex}] (2.5,1) -- (2.5,0.5);
+	
+	% ESTE
+	\draw[-{Latex}] (4,2.5) -- (4,3);
+	\draw[-{Latex}] (4,2.5) -- (3.5,2.5);
+	
+	% Tipo de cambio de equilibrio
+	\draw[dotted] (2.25,2.25) -- (0,2.25);
+	\node[left] at (0,2.25){$\bar{e}_0$};
+	
+	% Precio de equilibrio
+	\draw[dotted] (2.25,2.25) -- (2.25,0);
+	\node[below] at (2.25,0){$\bar{p}_0$};
+\end{axis}
+
+\begin{axis}{4}{Modelo de Dornbusch (1976): efecto de un estímulo de política monetaria inesperado.}{p}{e}{dornbuschpm}
+	% Línea de precio constante
+	\draw[-] (0.5,0.5) -- (4,4);
+	\node[above] at (4,4){\tiny $\dot{p}_0=0$};
+	
+	% Línea de tipo de cambio constante
+	\draw[-] (0.5,4) -- (4,0.5);
+	\node[above] at (0.5,4){\tiny $\dot{e}=0$};
+	
+	% Senda estable de punto de silla
+	%\draw[-] (0.5,3) -- (4,1.5);
+	% Hacia abajo y derecha
+	\draw[-{Latex}] (0.5,3) -- (1,2.79);
+	\draw[-{Latex}] (1,2.79) -- (1.5,2.57);
+	\draw[-{Latex}] (1.5,2.57) -- (2,2.36);
+	\draw[-{Latex}] (2,2.36)-- (2.25,2.25);
+	% Hacia arriba e izquierda
+	\draw[-{Latex}] (4,1.5) -- (3.5,1.71);
+	\draw[-{Latex}] (3.5,1.71) -- (3,1.93);
+	\draw[-{Latex}] (3,1.93) -- (2.5,2.143);
+	\draw[-{Latex}] (2.5,2.143) -- (2.25,2.25);
+	
+	% NORTE: Precio creciente y tipo de cambio que se deprecia 
+	\draw[-{Latex}] (2.4,3.5) -- (2.4,4);
+	\draw[-{Latex}] (2.4,3.5) -- (2.9,3.5);
+	
+	% OESTE: Precio creciente y tipo de cambio que se aprecia
+	\draw[-{Latex}] (0.5,2) -- (0.5,1.5);
+	\draw[-{Latex}] (0.5,2) -- (1,2);
+	
+	% SUR: Precio decreciente y tipo de cambio que se aprecia
+	\draw[-{Latex}] (2.5,1) -- (2,1);
+	\draw[-{Latex}] (2.5,1) -- (2.5,0.5);
+	
+	% ESTE
+	\draw[-{Latex}] (4.5,2.5) -- (4.5,3);
+	\draw[-{Latex}] (4.5,2.5) -- (4,2.5);
+	
+	% Tipo de cambio de equilibrio
+	\draw[dotted] (2.25,2.25) -- (0,2.25);
+	\node[left] at (0,2.25){\tiny $\bar{e}_0$};
+	
+	% Precio de equilibrio
+	\draw[dotted] (2.25,2.25) -- (2.25,0);
+	\node[below] at (2.25,0){\tiny $\bar{p}_0$};
+	
+	% Línea de tipo constante tras estímulo de PM
+	\draw[dashed] (1.5,4) -- (5,0.55);
+	\node[above] at (1.5,4){\tiny $\dot{e}_1=0$};
+	
+	% Precio de equilibrio constante en el muy corto plazo tras estímulo
+	\draw[dotted] (2.25,2.25) -- (2.25,3);
+	
+	% Tipo de cambio de overshooting
+	\draw[dotted] (2.25,3) -- (0,3);
+	\node[left] at (0.05,3.1){\tiny $e^*$};
+	
+	% Tipo de cambio de equilibrio tras estímulo
+	\draw[dotted] (2.78,2.78) -- (0,2.78);
+	\node[left] at (0,2.75){\tiny $\bar{e}_1$};
+	
+	% Precio de equilibrio tras estímulo
+	\draw[dotted] (2.78,2.78) -- (2.78,0);
+	\node[below] at (2.78,0){\tiny $\bar{p}_1$};
+	
+	% Nueva senda estable de punto de silla
+	% y = (111/28) - (3/7)x
+	%\draw[-] (0.5,3.75) -- (4,2.25); RESOLVER ECUACIÓN
+	\draw[dashed,-{Latex}] (0.5,3.75) -- (1,3.54);
+	\draw[dashed,-{Latex}] (1,3.54) -- (1.5,3.32);
+	\draw[dashed,-{Latex}] (1.5,3.32) -- (2,3.11);
+	\draw[dashed,-{Latex}] (2,3.11) -- (2.5,2.89);
+	\draw[dashed,-{Latex}] (2.5,2.89) -- (2.78,2.78);
+	
+	\draw[dashed,-{Latex}] (4,2.25) -- (3.5,2.46);
+	\draw[dashed,-{Latex}] (3.5,2.46) -- (3,2.68);
+	\draw[dashed,-{Latex}] (3,2.68) -- (2.5,2.89);
+	\draw[dashed,-{Latex}] (2.5,2.89) -- (2.78,2.78);
+	
+	%	\draw[dashed,-{Latex}] (4,2.25) -- (3.5,2.46);
+	%	\draw[dashed,-{Latex}] (3.5,2.46) -- (3,2.68);
+	%	\draw[dashed,-{Latex}] (3,2.68) -- (2.5,2.89);
+	%	\draw[dashed,-{Latex}] (2.5,2.89) -- (2.25,3);
+\end{axis}
+
+
+\begin{axis}{4}{Overshooting del tipo de cambio ante una expansión monetaria.}{t}{}{overshooting}
+	% Extensión eje de ordenadas
+	\draw[-] (0,4) -- (0,6);
+	\node[left] at (0,6){$M$, $i$, $S$};
+	
+	% Oferta monetaria
+	\draw[-] (0,4) -- (2,4) -- (2,4.5) -- (4,4.5);
+	\node[right] at (4,4.5){\small $M$};
+	
+	% Tipo de interés
+	\draw[-] (0,3) -- (2,3) -- (2,2.5) -- (4,2.5);
+	\node[right] at (4,2.5){\small $i$};
+	
+	% Tipo de cambio
+	\draw[-] (0,1) -- (2,1) -- (2,2) to [out=-30,in=179](5,1.52);
+	\node[right] at (5,1.5){\small $S$};
+	
+	% Tipo de cambio de largo plazo
+	\draw[dashed] (2,1.5) -- (5,1.5);
+	\node[below] at (2.5,1.5){\small $\bar{S}$};
+\end{axis}
+
+La gráfica muestra como shock monetario expansivo que reduce el interés induce una depreciación instantánea superior a la que tiene lugar en el corto plazo (y ahí radica el \textit{overshooting}). Este fenómeno se explica como el ajuste del tipo de cambio que permite cumplir dos restricciones impuestas: i) que en el largo plazo se cumpla la paridad de poder adquisitivo, de tal manera que un aumento del nivel de precios induzca una depreciación de la moneda local, y ii) que se cumpla la paridad descubierta de tipos de interés de tal manera que una bajada del tipo de interés que cree un diferencial con el interés extranjero induzca una apreciación de la moneda local que iguale el rendimiento de la inversión en deuda nacional y extranjera. 
+
+
+\conceptos
+
+\concepto{Forward Premium Puzzle}
+
+Si se cumpliese la paridad descubierta de tipos de interés --UIP- $i - i_f \approx s^e_{t+1} - s_t$), una moneda con un tipo de interés superior (inferior) tendería a depreciarse (apreciarse). Sin embargo, es una regularidad empírica que las monedas con tipos de interés superiores (inferiores) tienden a apreciarse (depreciarse). Y es otra regularidad bastante robusta en países desarrolados, que la paridad cubierta de interés --CIP- se cumple, de tal manera que interés nacional más elevado que extranjero induce descuento forward de la moneda extranjera e interés nacional inferior a interés extranjero induce prima forward de la moneda extranjera. Así, la aparición de prima forward de la moneda extranjera está de hecho empíricamente correlacionada con diferenciales de interés positivos a favor de la moneda nacional. Sin embargo, esta prima forward aparece empíricamente relacionada (y en esto redunda la anomalía de la prima forward) con depreciaciones de la moneda extranjera. Por ello, el carry trade o la inversión en deuda denominada en la divisa con un interés más alto será rentable y no se verá compensada negativamente por el movimiento en sentido contrario del tipo de cambio.
+
+\concepto{Hayek sobre predicción y conocimiento imperfecto}
+
+<< Our capacity to predict will be confined to...general characteristics of the events to be expected and not include the capacityfor predicting particular individual events....[However,] I amanxious to repeat, we will still achieve predictions which can befalsified and which therefore are of empirical significance....Yet the danger of which I want to warn is precisely the belief that inorder to be accepted as scientific it is necessary to achieve more.This way lies charlatanism and more. I confess that I prefer true but imperfect knowledge...toapretence of exact knowledge that is likely to be false. >>
+
+\concepto{Prima (descuento) forward}
+
+Una moneda cotiza con prima (descuento) cuando en el mercado forward su precio es más elevado (bajo) que en el mercado spot.
+
+\preguntas
+
+\seccion{Test 2018}
+
+\textbf{31.} Suponga un tipo de cambio al contado de $0,85$ euros por dólar. Suponga que el tipo de interés anual del euro es del 1\% y el tipo de interés anual del dólar es del 0,8\%. Si se cumpliera la teoría de la paridad de los tipos de interés, en equilibrio y en ausencia de incertidumbre, el tipo de cambio forward a 1 año es:
+
+\begin{itemize}
+	\item[a] $0,8445$
+	\item[b] $0,8483$
+	\item[c] $0,8500$
+	\item[d] $0,8517$
+\end{itemize}
+
+\seccion{Test 2017}
+\textbf{31.} Suponga que el tipo de cambio al contado de la libra es de 1,35 dólares por cada libra, mientras que el tipo de cambio a 1 año es de 1,32 dólares por cada libra. Si se cumplen las condiciones para la paridad cubierta de los tipos de interés, esta diferencia implica que:
+
+\begin{itemize}
+	\item[a] Es más barato comprar dólares en el mercado a plazo que en el mercado al contado.
+	\item[b] El tipo de cambio del mercado a plazo es menor debido a la incertidumbre relativa a un año.
+	\item[c] Los tipos de interés son mayores en el Reino Unido que en Estados Unidos.
+	\item[d] Los tipos de interés son menores en Reino Unido que en Estados Unidos.
+\end{itemize}
+
+\seccion{Test 2016}
+
+\textbf{32.} Según las distintas teorías para explicar la evolución del tipo de cambio indique la respuesta correcta:
+
+\begin{enumerate}
+	\item[a] Según la Paridad del Poder Adquisitivo (relativa), en el corto plazo la variación del tipo de cambio entre las monedas de dos países recogerá las diferencias entre sus niveles de paro.
+	\item[b] Según el \comillas{enfoque de flujos}, una moneda tenderá a apreciarse si se incrementa la demanda de esa moneda como consecuencia de un incremento de las exportaciones de capital ($X_k$).
+	\item[c] Según el modelo de fondos prestables ($S_n - I_n$ versus NX), una moneda tenderá a apreciarse si se incrementa su demanda como consecuencia de un incremento del saldo neto exterior (NX).
+	\item[d] La a) y c) son verdaderas.
+\end{enumerate}
+
+\seccion{Test 2015}
+
+\textbf{32.} En el marco del enfoque monetario del tipo de cambio, suponemos:
+
+\begin{itemize}
+	\item Se cumple la Paridad del Poder Adquisitivo.
+	\item No existen rigideces de precios.
+	\item La demanda de dinero agregada real es la misma para ambos países: $M^d (r, Y)$, siendo $r$ el tipo de interés e $Y$ la producción real.
+\end{itemize}
+
+Señale la respuesta verdadera relativa al tipo de cambio a largo plazo del franco suizo frente a la libra esterlina (\textit{ceteris paribus}):
+\begin{enumerate}
+	\item[a] Un aumento de la producción en Suiza produciría una depreciación del franco suizo.
+	\item[b] Una disminución del tipo de interés de los activos denominados en libras esterlinas provocaría la apreciación del franco suizo.
+	\item[c] Un incremento permanente de la oferta monetaria suiza supondría la apreciación del franco suizo.
+	\item[d] Ninguna de las anteriores.
+\end{enumerate}
+
+\seccion{Test 2014}
+
+\textbf{44.} Señale la respuesta correcta:
+\begin{enumerate}
+	\item[a] El euro puede devaluarse respecto al dólar.
+	\item[b] El dólar puede devaluarse respecto al euro.
+	\item[c] La Libra esterlina puede devaluarse respecto al euro.
+	\item[d] La corona danesa puede devaluarse respecto al euro.
+\end{enumerate}
+
+\seccion{Test 2009}
+\textbf{32.} El efecto Balassa-Samuelson:
+\begin{itemize}
+	\item[a] Se enmarca en un contexto de tipos de cambio fijos.
+	\item[b] Es una teoría de precios relativos, no de precios absolutos.
+	\item[c] No invalida la teoría de la paridad de poder adquisitivo.
+	\item[d] Tiene en cuenta factores por el lado de la demanda.
+\end{itemize}
+
+\seccion{Test 2008}
+
+\textbf{29.}  Los factores determinantes del tipo de cambio real según la condición de paridad de los tipos de interés reales son:
+\begin{enumerate}
+	\item[a] Los diferenciales entre el tipo de interés de un país y el del extranjero y las expectativas de tipo de cambio real futuro.
+	\item[b] Los diferenciales entre el tipo de interés de un país y el del extranjero y el tipo de cambio real futuro.
+	\item[c] Los diferenciales entre la inflación de un país y la del extranjero, la evolución de la renta y el comportamiento del tipo de cambio real.
+	\item[d] La diferencia de renta e inflación de un país y la del extranjero partido entre el tipo de cambio real.
+\end{enumerate}
+
+
+
+\textbf{32.} Según el enfoque monetario de la teoría de los tipos de cambio, un aumento del stock relativo de dinero:
+\begin{enumerate}
+	\item[a] Aprecian el tipo de cambio.
+	\item[b] Tiene el mismo efecto cualitativo que una reducción de la renta real relativa.
+	\item[c] Tiene el mismo efecto cualitativo que un incremento de la renta nominal relativa.
+	\item[d] Ninguna de las anteriores.
+\end{enumerate}
+
+\seccion{Test 2006}
+
+\textbf{27.} Señale la afirmación CORRECTA en relación al mercado de divisas:
+\begin{enumerate}
+	\item[a] La denominada anomalía de la prima o margen a plazo (forward premium) refleja el hecho de que los países con tipos de interés relativamente altos parecen experimentar apreciaciones del tipo de cambio nominal, mientras que la paridad cubierta de interés señalaría que estos altos tipos de interés deberían estar asociados a depreciaciones (esperadas) del tipo de cambio nominal.
+	\item[b] La anomalía desaparece cuando se introduce una prima de riesgo constante en el tiempo.
+	\item[c] La anomalía del margen a plazo (forward premium) refleja el hecho de que los países con tipos de interés relativamente altos parecen experimentar depreciaciones de su tipo de cambio nominal, mientras que la paridad cubierta de intereses señalaría que estos altos tipos de interés deberían estar asociados a apreciaciones (esperadas) del tipo de cambio nominal).
+	\item[d] No existe ninguna anomalía o paradoja en el comportamiento de los tipos de cambio al contado y a plazo. 
+\end{enumerate}
+
+\textbf{30.} En el modelo de determinación del tipo de cambio de Dornbusch (1976), la posibilidad de sobrerreacción (overshooting) del tipo de cambio depende de:
+\begin{enumerate}
+	\item[a] La sensibilidad de la demanda de dinero y de la demanda de inversión ante variaciones del tipo de interés.
+	\item[b] La sensibilidad de la demanda de dinero al tipo de interés y de la sensibilidad de las expectativas ante desviaciones del tipo de cambio nominal respecto a su valor de equilibrio.
+	\item[c] La sensibilidad de las expectativas ante desviaciones del tipo de cambio nominal respecto a su valor de equilibrio.
+	\item[d] La sensibilidad de la demanda de exportaciones netas ante variaciones en el tipo de cambio real.
+\end{enumerate}
+
+\textbf{31.} Suponga que Canadá fija la paridad de su moneda al dólar estadounidense y que no existe riesgo de impago en relación a los bonos de ninguno de los países. Señale la afirmación falsa:
+\begin{enumerate}
+	\item[a] Si se cumple la paridad no cubierta de intereses (PNCI) y el régimen cambiario es creíble (durará para siempre), el tipo de interés de Canadá será igual que en Estados Unidos.
+	\item[b] Bajo el modelo de equilibrio de carteras de tipo de cambio y si el régimen cambiario es creíble, los tipos de interés de Canadá serán mayores que en Estados Unidos si el inversor medio es americano.
+	\item[c] Si se cumple la paridad no cubierta de intereses (PNCI) y el régimen cambiario no es creíble, el tipo de interés en Canadá será mayor que en Estados Unidos.
+	\item[d] El crecimiento relativo de la productividad en el sector exportador canadiense resultará en una mayor tasa de inflación en Canadá.
+\end{enumerate}
+
+\seccion{Test 2005}
+
+\textbf{31.} Suponga un tipo de cambio al contado de 0,90 euros por dólar. Suponga que el tipo de interés anual del euro es del 2,5\% y el tipo de interés anual de dólar es del 1\%. Si se cumpliera la teoría de la paridad de los tipos de interés, en ausencia de incertidumbre, el tipo de cambio \textit{forward} a 1 año es:
+\begin{enumerate}
+	\item[a] 0,9500
+	\item[b] 0,9135
+	\item[c] 0,8865
+	\item[d] 0,9014
+\end{enumerate}
+
+\seccion{Test 2004}
+
+\textbf{29.} De acuerdo con la hipótesis de la paridad del poder adquisitivo, en su versión relativa:
+\begin{enumerate}
+	\item[a] La tasa de variación del tipo de cambio es igual a la tasa de variación de los precios nacionales, más la tasa de variación de los precios extranjeros. 
+	\item[b] La tasa de variación del tipo de cambio es igual a la tasa de variación de los precios nacionales, menos la tasa de variación de los precios extranjeros.
+	\item[c] El logaritmo del nivel del tipo de cambio es igual a logaritmo del nivel de los precios nacionales, menos el logaritmo del nivel de los precios extranjeros.
+	\item[d] El logaritmo del nivel del tipo de cambio es igual al logaritmo del nivel de los precios nacionales, más el logaritmo del nivel de los precios extranjeros. 
+\end{enumerate}
+
+\notas
+
+\textbf{2018}: \textbf{31.} D
+
+\textbf{2017}: \textbf{31.} C
+
+\textbf{2016}: \textbf{32.} C
+
+\textbf{2015}: \textbf{32.} D
+
+\textbf{2014}: \textbf{44.} D
+
+\textbf{2009}: \textbf{32.} B
+
+\textbf{2008}: \textbf{29.} A \textbf{32.} B
+
+\textbf{2006}: \textbf{27.} A \textbf{30.} B \textbf{31.} B
+
+\textbf{2005}: \textbf{31.} B
+
+\textbf{2004}: \textbf{29.} B
+
+\bibliografia
+ 
+Mirar en Palgrave:
+\begin{itemize}
+	\item absorption approach to the balance of payments
+	\item balance of trade, history of
+	\item crawling peg
+	\item covered interest parity
+	\item elasticities approach to the balance of payments
+	\item exchange control
+	\item exchange rates
+	\item exchange rate dynamics
+	\item exchange rate exposure
+	\item exchange rate target zones
+	\item exchange rate volatility
+	\item fixed exchange rates
+	\item flexible exchange rates
+	\item foreign exchange markets, history of
+	\item foreign exchange market microstructure
+	\item foreign exchange reserve management
+	\item foreign trade multiplier
+	\item gold standard
+	\item international finance
+	\item J-curve
+	\item monetary approach to the balance of payments
+	\item nominal exchange rates
+	\item overshooting
+	\item peso problem
+	\item purchasing power parity
+	\item real exchange rates
+	\item specie-flow mechanism
+	\item uncovered interest parity
+\end{itemize}
+
+Gandolfo, G. \textit{International Finance and Open-Economy Macroeconomics}. 
+
+Dornbusch, R. \textit{Expectations and Exchange Rate Dynamics} (1976) Journal of Political Economy -- En carpeta del tema
+
+
+James, J.; Warsh, I. W.; Sarno, L. \textit{Handbook of Exchange Rates} (2012) 
+
+Hayek, F. (1989) \textit{The Pretence of Knowledge} American Economic Review. Nobel Lectures and 1989 Survey of Members. Originalmente pronunciado en 1974.
+
+MacDonald, R. \textit{Exchange Rate Economics. Theories and evidence.} (2007) -- En carpeta de economía internacional
+
+Obstfeld, M.; Rogoff, K. \textit{Exchange Rate Dynamics Redux} (1995) Journal of Political Economy -- En carpeta del tema
+
+Obstfeld, M.; Rogoff, K. \textit{Foundations of International Economics} (1996) -- En carpeta de economía internacional
+
+Obstfeld, M.; Rogoff, K. \textit{The Six Major Puzzles in International Macroeconomics: Is There a Common Cause?} (2000) NBER Macroeconomics Annual -- En carpeta del tema
+
+Sarno, L. \textit{Taylor, M.} \textit{The economics of exchange rates} (2002) -- En carpeta de economía internacional
+
+Shama, S. \textit{A Foreign Exchange Primer} (2008) -- En carpeta de economía internacional
+
+Taylor, M. P. (1995) \textit{The Economics of Exchange Rates} Journal of Economic Literature Vol. XXXIII -- En carpeta del tema
+
+Wang, P. \textit{The Economics of Foreign Exchange and Global Finance} (2005) 2nd Edition -- En carpeta de economía internacional
+
+
+\end{document}

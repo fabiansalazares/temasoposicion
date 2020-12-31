@@ -1,0 +1,1106 @@
+\documentclass{nuevotema}
+
+\tema{3A-12}
+\titulo{Decisiones intertemporales de consumidores y empresas. Modelos de horizonte infinito y modelos de generaciones solapadas.}
+
+\begin{document}
+
+\ideaclave
+
+La microeconomía es la rama de la ciencia económica que trata de entender y predecir el comportamiento de agentes individuales que toman decisiones con contenido económico. Para ello, es habitual la utilización de modelos abstractos formulados en términos matemáticos. La decisión de los agentes microeconómicos tiene casi siempre una dimensión temporal, aunque en ocasiones sea adecuado abstraerse y formular la decisión en términos estáticos. Los agentes deciden hoy pensando en las consecuencias que sus actos tendrán mañana. Por ejemplo, ¿cuánta renta debo consumir hoy si quiero consumir determinada cantidad mañana? ¿cuánto capital debe comprar una empresa hoy si quiere producir determinada cantidad de output mañana?, ¿cómo distribuir el ingreso a lo largo de los diferentes periodos vitales? ¿cómo interaccionan personas con diferentes horizontes temporales de decisión? ¿por qué los jóvenes aceptan transferir rentas a los mayores si los mayores no podrán devolverles lo recibido? La ciencia económica ha formulado diferentes familias de modelos que tratan de representar estos problemas y otros similares. El objeto de esta exposición consiste en responder a preguntas que aparecen cuando el tiempo es un elemento relevante de la realidad a representar tales como: ¿cómo distribuyen intertemporalmente los agentes unos recursos escasos? ¿de qué manera se modeliza ese proceso decisión temporal? ¿qué herramientas matemáticas se utilizan para encontrar soluciones de equilibrio a esos modelos? ¿qué aplicaciones concretas tienen? La estructura de la exposición se divide de acuerdo con las dos grandes familias de modelos económicos en los que la dimensión temporal es relevante. En primer lugar, los modelos de agente representativo que tienen horizonte infinito de decisión o en los cuales todos los agentes tienen el mismo horizonte. En segundo lugar, los modelos de generaciones solapadas en los que los agentes tienen horizontes de decisión finitos y se diferencian entre ellos por los distintos periodos en los que inician su existencia.
+
+Los \marcar{modelos de agente representativo con horizonte infinito} se caracterizan por la presencia, valga la redundancia, de un sólo agente que maximiza una función objetivo tomando decisiones sobre una serie de variables con una dimensión temporal. A diferencia de los problemas de decisión estáticos, en los que el equilibrio se puede caracterizar con un simple vector de variables que represente las asignaciones y los precios de equilibrio, en los modelos de decisión intertemporal los equilibrios se caracterizan en forma de secuencias o funciones del tiempo que representan el valor de equilibrio en cada instante temporal. Las funciones objetivo a maximizar representan las preferencias del agente en cuestión por una trayectoria u otro de las variables relevantes. Así, si tratamos de representar la decisión de un consumidor que decide cuanto gastar y cuanto ahorrar, la función objetivo a maximizar suele tomar la forma de un sumatorio de subfunciones que representan las preferencias respecto al consumo en un periodo determinado. Cuando se trata de representar la decisión de una empresa, la función objetivo representa generalmente el beneficio obtenido por la empresa a partir de un sumatorio de los beneficios obtenidos en cada periodo, ponderándolos (o descontándolos a una tasa determinada). Existe un denominador común a toda la gran variedad de modelos posibles: las decisiones presentes tienen algún tipo de consecuencia sobre el resto de futuros periodos, de tal manera que las decisiones en un periodo dado se ven condicionadas por las que se toman en el resto de periodos. La caracterización del equilibrio resultado de la optimización intertemporal es más compleja que en modelos estáticos, dada la dimensión temporal introducida y el consiguiente aumento de las variables que representan la decisión maximizadora. En general, el óptimo se representa a través de una condición de Euler y una condición de transversalidad. La condición de Euler caracteriza la trayectoria a seguir por las variables de decisión, y la condición de transversalidad restringe el valor terminal de alguna de las variables relevantes.
+
+Los modelos de un sólo agente representativo pueden formularse en términos generales y posteriormente adaptarse a problemas de decisión específicos. Esta exposición toma ese enfoque. Dado el carácter eminentemente matemático de la modelización intertemporal, es interesante plantearlo en términos generales para poder apreciar mejor las particularidades técnicas de la decisión intertemporal que no dependen del modelo concreto. El elemento central de estos modelos es el problema de maximización que el agente resuelve y las restricciones a las cuales está sujeto. El problema de maximización más habitual tiene dos componentes: un funcional objetivo cuyo valor se pretende maximizar respecto de una función que representa los valores en cada instante de una variable de estado, y una serie de restricciones que determinan el conjunto de decisiones posibles que puede tomar la variable de control dado un valor de otra secuencia de valores conocida como variable de estado. Es posible que la variable de estado también afecte al funcional objetivo, así como el instante temporal determinado. Además, es habitual imponer un valor inicial al valor de la variable de estado, así como una condición terminal que toma el nombre de ``condición de no juego de Ponzi'' en contextos económicos en los que la variable de estado representa riqueza neta o capital. 
+
+El funcional objetivo toma como argumento dos funciones: la que define la trayectoria de la variable de control y la que define la trayectoria de la variable de estado. En contextos de tiempo discreto, el funcional objetivo no es sino una función y las funciones de decisión y control son secuencias de valores. Los funcionales o funciones objetivo toman habitualmente la forma de sumatorios de subfunciones indexados al instante temporal. Estas subfunciones suelen ser multiplicaciones de dos términos. El primero de ellos representa un factor de descuento que modula el impacto de la decisión en función de la distancia temporal respecto al momento presente en que se produzca. Muy habitualmente, este factor descuento toma la forma del descuento exponencial. El segundo de ellos representa propiamente la preferencia entre un conjunto de valores y otro referidos a un instante temporal concreto. Este segundo elemento se denomina función de utilidad en contextos de decisión óptima de consumidores. 
+
+La función objetivo puede cumplir una serie de propiedades dependientes de su forma funcional concreta. Entre las más relevantes encontramos la estacionariedad y la consistencia temporal. La estacionariedad se cumple si una secuencia de decisión se prefiere a otra exclusivamente por los valores concretos de las variables de decisión y control, y por la distancia relativa en el tiempo de unos valores y otros, de tal manera que el instante temporal específico en el que una variable tome un valor u otro no tiene importancia en la decisión. La consistencia temporal se encuentra íntimamente ligada a la propiedad de estacionariedad y consiste en el hecho de que si una secuencia de decisión es óptima en un periodo dado, lo seguirá siendo en el futuro a igualdad de información. La propiedad de separabilidad aditiva implica la posibilidad de descomponer el funcional objetivo en sumas de funciones independientes. La familia de funciones CRRA (\textit{constant relative risk aversion}) se utiliza frecuentemente como subfunción de utilidad por su tratabilidad matemática. La elección de una función de descuento es habitualmente favorable al descuento exponencial, aunque el descuento hiperbólico representa más fielmente el proceso de decisión de agentes humanos. La ecuaciones de transformación o de movimiento caracterizan la evolución de la variable de estado y suponen una restricción indirecta a la variable de decisión, ya que la mayoría de problemas restringen las decisiones que los agentes pueden tomar a conjuntos determinados. Es habitual la presencia de restricciones adicionales a la variable de control: por ejemplo, limitar el consumo a una función de producción que depende de la variable de estado. El hecho de que los agentes tengan un horizonte infinito de decisión es el supuesto más habitual y es resultado de distintas interpretaciones del supuesto: altruismo de los hijos respecto de los padres, final muy distante en el futuro, continuidad temporal de las empresas o las economías, etc... Aunque el supuesto de horizonte infinito tiene un impacto sobre la formulación del problema y los métodos de resolución, la complejidad técnica no aumenta en exceso o incluso disminuye. La introducción de incertidumbre en este tipo de modelos es posible, e implica estocasticidad en la ecuación de transformación, así como la incorporación de funciones de von Neumann-Morgenstern u otras funciones asimilables en la función objetivo. 
+
+Hallar la función de decisión óptima implica conocer también la trayectoria de la variable de estado a lo largo del tiempo, y el valor de la función objetivo en el óptimo. Encontrar estos valores es el objetivo último de la formulación de este tipo de modelos, pues en ellos se resume el comportamiento que adoptaría un agente racional sujeto al contexto institucional dado. Para hallarlos, se necesitan una serie de técnicas matemáticas adaptadas al problema concreto. Cuando el problema de maximización se formula en términos de periodos discretos y horizonte finito, es posible hallar el máximo mediante métodos convencionales como el multiplicador de Lagrange. La resolución de modelos en tiempo continuo u horizontes temporales infinitos limita el uso de los multiplicadores de Lagrange en su versión simple. Se trata, en estos casos, de encontrar secuencias con un número infinito de valores, por lo que el método de Lagrange no permite resolver el problema. Para resolver este tipo de problemas, Euler y Lagrange introdujeron el cálculo de variaciones. Sin embargo, éste método no resulta operativo para problemas de optimización dinámica en los que además de condiciones terminales y finales existe una ecuación de transformación y otras restricciones. En los años 50 aparecen dos nuevas técnicas matemáticas que permiten hallar soluciones a los problemas de forma anterior: el control óptimo (Pontryagin) y la programación dinámica (Bellman). El control óptimo consiste en transformar el problema de maximización en otro problema equivalente del cual es posible derivar unas condiciones de óptimo. Para ello, se construye un objeto matemático denominado Hamiltoniano consistente en la suma del beneficio instantáneo y el efecto sobre el beneficio total de una unidad adicional de la variable de control. El principio del óptimo de Pontryagin establece tres ecuaciones diferenciales en relación a este Hamiltoniano que caracterizan las decisiones óptimas de los agentes y a partir de las cuales pueden hallarse estados estacionarios y representar en forma de diagramas de fase. La programación dinámica es un método de resolución consistente en descomponer el problema de optimización en subproblemas recursivos que se resuelven por inducción hacia atrás. En primer lugar se caracteriza la decisión óptima en el periodo terminal dadas todas las decisiones anteriores. Posteriormente se halla el óptimo en el periodo anterior y se repite el proceso sucesivamente hasta el periodo inicial. Los métodos de programación dinámica son en la actualidad los más utilizados por las características deseables de las soluciones en términos de teoría de juegos que señalaron Kydland y Prescott (1977): cada decisión en un periodo determinado es un equilibrio de Nash perfecto en subjuegos. Tienden a utilizarse en problemas discretos aunque son también utilizables en tiempo continuo. La programación dinámica es también especialmente adecuada para hallar soluciones de modelos intertemporales en los que intervienen variables estocásticas. 
+
+Las aplicaciones de este tipo de modelos son numerosas y de hecho incluyen la mayoría de modelos micro y macroeconómicos de la ciencia economía contemporánea. La aplicación más simple es el problema de maximización de la utilidad en dos periodos con el consumo como variable de decisión y una restricción intertemporal que depende de las dotaciones recibidas en cada periodo y de un tipo de interés dado. La resolución de este tipo de problemas es muy sencilla y matemáticamente no difiere de un problema estático con dos bienes. A este problema se puede incorporar fácilmente un sector productivo. A pesar de su simplicidad, resulta útil para caracterizar el efecto de variaciones en el tipo de interés sobre el comportamiento de deudores y acreedores en términos de efecto sustitución y renta. La demanda de inversión es un aplicación más avanzada de los modelos intertemporales de agente representativo. En estos modelos, la función objetivo representa el beneficio de una empresa que debe decidir cuánto producir y cuanto ingreso dedicar a la inversión en capital. El stock de capital determina qué cantidad es producible en momento determinado. La dimensión intertemporal del problema aparece cuando el stock de capital utilizable en un periodo depende de lo invertido en un periodo anterior y de un factor de depreciación del capital. Si la variación del stock de capital no implica en sí misma un coste, la dimensión intertemporal no aporta grandes conclusiones respecto a un modelo estático: una empresa puede variar de forma instantánea el capital en cada periodo para adaptarse a la demanda, convirtiendo el modelo en una secuencia de modelos estáticos en los que la empresa maximiza el beneficio en cada periodo sin atender al resto de periodos. El modelo cobra mayor interés cuando se establece un coste por variar el stock de capital, dando lugar al modelo de la $q$ de Tobin y sus variantes y reflejando las posibilidades de la modelización intertemporal para explicar el comportamiento de agentes económicos. 
+
+Los modelos de crecimiento neoclásico y especialmente el modelo de Ramsey-Cass-Koopmans son uno de las principales herramientas de la macroeconomía de equilibrio general para modelizar el equilibrio de largo plazo de economías de mercado. El problema de maximización tiene como objetivo hallar la trayectoria óptima de consumo de un agente representativo que debe decidir cuanto ahorrar en cada instante para dedicarlo a aumentar un stock de capital. El modelo admite incontables variantes, entre las cuales se encuentra el modelo del ciclo real en el que los consumidores debe también decidir cuánto tiempo dedican a ofertar factor trabajo, que a su vez influye en la utilidad y en la producción de bien de consumo. En este contexto, el agente representativo no sólo optimiza intertemporalmente el consumo, sino también su oferta de trabajo en cada periodo. La literatura del modelo del ciclo real es uno de los más relevantes ejemplos de la modelización intertemporal en la actualidad, y suponen el ejemplo más relevante de modelos DSGE.
+
+El \marcar{modelo de generaciones solapadas} (frecuentemente, modelos OLG) complementa al modelo de agente representativo y junto con éste, es la herramienta de modelización más ampliamente utilizada en teoría macroeconomica. Samuelson (1958) es el representante de esta familia de modelos que posteriormente utilizan y desarrollan autores como Yaari, Diamond, Lucas y Blanchard, entre otros. El objetivo del modelo es caracterizar los efectos de la interacción entre agentes que se diferencian entre ellos por los periodos en los cuales toman decisiones. Generalmente, los agentes son representativos dentro de su generación y tienen una vida limitada en el tiempo. Habitualmente, esta vida consiste en dos periodos o en modelos en tiempo continuo, depende de una variable estocástica. El sorprendente resultado inmediato de estos modelos en su formulación básica es el hecho de que el equilibrio competitivo en ausencia de externalidades y distorsiones no es un óptimo de Pareto. Para mostrar este resultado, basta con plantear un modelo básico de generaciones solapadas. Este modelo asume que conviven en cada periodo de tiempo discreto dos tipos de agentes, y que cada tipo de agente vive durante dos periodos. En el primer periodo de su vida, los agentes son ``jóvenes''. En el segundo periodo, los agentes son ``viejos''. Cada periodo es el primero para los jóvenes y el último para los viejos, de modo que no existe posibilidad de endeudarse entre generaciones porque los viejos no querrán prestar dinero porque no recibirán devolución alguna ni nadie aceptará prestarles dinero porque en el siguiente periodo no estarán presentes. Además, en cada nuevo periodo el número de jóvenes que nacen aumenta a tasa $n$, que representa la tasa de crecimiento demográfico. Dado que el agente joven y el viejo representan a una misma clase de agentes idénticos, no hay tampoco oportunidades de endeudamiento intrageneracional. El modelo tiene horizonte infinito en el sentido de que hay infinitos periodos en los que nacen nuevas generaciones. En cada periodo, viejos y jóvenes reciben una dotación que puede ser distinta. Supongamos que los agentes tienen acceso a una tecnología de traslado intertemporal de la dotación que permite consumir en la vejez toda o parte de la dotación recibida cuando se es joven, pagando un precio $r$ por cada unidad transladada al futuro. Cuando no se utiliza esta tecnología, $r$ es igual a cero. Cuando se traslada riqueza al futuro, $r$ toma un valor negativo que decrece hasta $-1$ con la cantidad trasladada. Cuando se traslada desde el futuro, $r$ toma valores positivos que aumentan hasta infinito. El problema de maximización que cada agente resuelve es simplemente una suma de la utilidad cuando es joven y la utilidad cuando es viejo dependiente del consumo en cada periodo y sujeto a una restricción intertemporal del consumo que iguala el valor presente del consumo total y el valor presente de la dotación total, ambos descontadas a la tasa $r$. 
+
+El equilibrio competitivo muestra el resultado subóptimo cuando los agentes son muy pacientes. Es decir, cuando el consumo en la juventud apenas les reporta utilidad pero el consumo en la vejez sí que tiene valor para ellos. En equilibrio, los jóvenes tratarán de trasladar toda su dotación al futuro, reduciendo el interés hasta $-1$, lo que implica que no son capaces de trasladar nada al periodo de vejez. En este equilibrio, los agentes se limitan a consumir en cada periodo la dotación que reciben. El resultado es claramente subóptimo desde el punto de vista de Pareto porque el bienestar podría aumentar de trasladarse la dotación de los jóvenes a los viejos. Existen múltiples soluciones a este problema de optimalidad. La llamada solución centralizada consiste en la imposición de un impuesto que grave toda la dotación de los jóvenes y la transfiera a los viejos. El resultado es generalizable a todos los contextos en los que el crecimiento demográfico $n$ sea superior a la tasa de traslado intertemporal de la renta $r$. Es posible demostrar que el impuesto puede sustituirse por la emisión de deuda gubernamental y un proceso de \textit{roll-over} perpetuo. Si la tasa $r$ depende de la cantidad de ahorro, la intervención óptima será aquella que reduce el ahorro hasta que $r$ iguale $n$. La solución descentralizada propuesta por Samuelson consiste en la introducción de dinero en el modelo. Los viejos venden a los jóvenes dinero sin valor intrínseco a cambio de su dotación. Los jóvenes se convierten en viejos y hacen lo mismo con los nuevos jóvenes, recibiendo su dotación aumentada por tasa de crecimiento demográfico. El modelo muestra además la existencia de múltiples equilibrios: es posible que los jóvenes no compren los papeles porque no crean que vayan a poder venderlos cuando sean viejos, y el equilibrio alcanzado sea un subóptimo de Pareto. 
+
+Las aplicaciones de los modelos de generaciones solapadas tienden a situarse en el ámbito de la macroeconomía, quizás con mayor intensidad que en el caso de los modelos de un sólo agente representativo. Una de las aplicaciones más conocidas es la modelización de sistemas de seguridad social. En el modelo básico anterior hemos introducido precisamente este tipo de aplicaciones. Los modelos tratan de caracterizar las posibles mejoras de bienestar derivadas de los distintos sistemas de seguridad social y las diferentes soluciones al problema. Los modelos de generaciones solapadas también han servido para fundamentar la demanda de dinero, como se mostró en la presentación simplificada anterior y de hecho constituía el objetivo de Samuelson (1958). La relación entre política fiscal y crecimiento ha utilizado también los modelos de generaciones solapadas, especialmente para examinar el impacto del déficit público en la acumulación de capital, en contextos de crecimiento endógeno. Tirole (1985) utiliza un modelo OLG para racionalizar las burbujas de activos y explicar por qué los agentes pueden estar dispuestos a pagar un precio positivo por un activo sin valor intrínseco. Los conflictos intergeneracionales en materia de inversiones y gasto público son también unos de los puntos fuertes de los modelos de generaciones solapadas. La Nueva Economía Keynesiana ha hecho de los modelos de generaciones solapadas una de sus principales herramientas de modelización, en contraste con la Nueva Macroeconomía Clásica y su tendencia hacia modelizar fluctuaciones macroeconómicas como equilibrios competitivos que son también optimos de Pareto y hacer uso del segundo teorema fundamental del bienestar para derivar unos precios de equilibrio.
+
+La amplia difusión de los modelos de generaciones solapadas es el resultado de su enorme versatilidad y su capacidad para generalizar los modelos de horizonte infinito como un caso particular y explicitar el marco de análisis de los problemas intergeneracionales inherentes a todas las economías. En la actualidad, los modelos OLG ganan tracción creciente como modelos de equilibrio general, aunque en cualquier los modelos derivados de Ramsey (1926) siguen siendo predominantes.
+
+La exposición ha examinado la idea clave, la formulación, las implicaciones y las aplicaciones, así como valorado el impacto de las dos grandes familias de modelos de decisión intertemporal de agentes económicos: el modelo de agente representativo con horizonte infinito, y el modelo de generaciones solapadas. Aunque los modelos analizados son a priori microeconómicos, gran parte de su influencia y utilización concierne la representación de fenómenos macroeconómicos. Es importante también remarcar la muy cercana relación entre matemáticas y modelización intertemporal. Aunque muchos resultados fundamentales pueden derivarse con el uso de técnicas básicas, la formulación de modelos más complejos ha ido ligada a la posibilidad de hallar soluciones de equilibrio. Y esta posibilidad ha sido el resultado de avances en técnicas matemáticas. La modelización de decisiones intertemporales es actualmente y en definitiva, un área de la economía de creciente complejidad técnica pero también creciente capacidad para mejorar la comprensión y la predicción de fenómenos económicos complejos.
+
+\seccion{Preguntas clave}
+\begin{itemize}
+    \item ¿Cómo deciden los agentes económicos en un contexto intertemporal?
+    \item ¿Cómo se modeliza el efecto del tiempo sobre las decisiones de los agentes?
+    \item ¿Qué técnicas matemáticas se utilizan?
+    \item ¿Cuáles son las características principales de los modelos de horizonte infinito?
+    \item ¿En qué consisten los modelos de generaciones solapadas?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción} 3'-3'
+		\2 Contextualización
+			\3 Microeconomía
+			\3 Dimensión temporal de la decisión
+			\3 Macroeconomía y microfundamentación
+		\2 Objeto
+			\3 Qué comportamiento cuando el tiempo es relevante?
+			\3 Cómo se modeliza la decisión intertemporal?
+			\3 Qué familias de modelos son las más relevantes?
+			\3 Qué herramientas matemáticas?
+			\3 Qué aplicaciones tienen los modelos?
+		\2 Estructura
+			\3 Modelos de agente representativo con horizonte infinito
+			\3 Modelos de generaciones solapadas
+	\1 \marcar{Agente representativo con horizonte infinito} 13'-16'
+		\2 Idea clave
+			\3 Un sólo agente
+			\3 Comportamiento óptimo
+			\3 Gran variedad de problemas
+			\3 Caracterización del óptimo
+		\2 Formulación general
+			\3 Problema de maximización
+			\3 Variable de control
+			\3 Variable de estado
+			\3 Ecuación de transformación
+			\3 Restricciones
+			\3 Función objetivo
+			\3 Forma habitual de la función objetivo
+			\3 Propiedades de la función objetivo/preferencias
+			\3 Horizonte infinito
+			\3 Incertidumbre
+		\2 Métodos de resolución
+			\3 Lagrange
+			\3 Control óptimo
+			\3 Programación dinámica
+		\2 Aplicaciones
+			\3 Consumo en dos periodos
+			\3 Consumo y producción en dos periodos
+			\3 Teoría de la inversión de Fisher
+			\3 Teorema de la separación de Fisher
+			\3 Demanda de inversión
+			\3 Crecimiento
+			\3 Modelo del Ciclo Real
+			\3 Modelos DSGE
+	\1 \marcar{Modelo de Generaciones Solapadas }12'-28'
+		\2 Idea clave
+			\3 Autores
+			\3 Funcionamiento básico
+			\3 Bienestar
+			\3 Impacto en economía teórica
+		\2 Formulación general en tiempo discreto
+			\3 Objetivo de la formulación presentada
+			\3 Generaciones
+			\3 Dotaciones
+			\3 Utilidad de los agentes
+			\3 Préstamo intertemporal
+			\3 Problema de maximización
+		\2 Implicaciones
+			\3 Consumidores muy pacientes
+			\3 Solución centralizada
+			\3 Solución descentralizada
+			\3 Consumidores muy impacientes
+			\3 Crecimiento económico
+		\2 Aplicaciones
+			\3 Seguridad social
+			\3 Dinero
+			\3 Política fiscal y crecimiento
+			\3 Burbujas de activos
+			\3 Inversión en infrastructuras
+			\3 Nueva Economía Keynesiana
+		\2 Valoración
+			\3 Generalización de eq. representativo
+			\3 Problemas intergeneracionales
+			\3 Versatilidad
+	\1[] \marcar{Conclusión} 2'-30'
+		\2 Recapitulación
+			\3 Agente representativo con horizonte infinito
+			\3 Modelo de generaciones solapadas
+		\2 Idea final
+			\3 Microfundamentación de la macroeconomía
+			\3 Complejidad técnica
+
+\end{esquema}
+
+\esquemalargo
+
+\begin{esquemal}
+	\1[] \marcar{Introducción} 3'-3'
+		\2 Contextualización
+			\3 Microeconomía
+				\4 Objeto de la microeconomía
+				\4[] Entender y predecir
+				\4[] Comportamiento econ. de agentes individuales
+				\4 Métodos habituales
+				\4[] Formulación de modelos abstractos
+				\4[] Contrastación empírica
+			\3 Dimensión temporal de la decisión
+				\4 Los agentes deciden hoy
+				\4[] Teniendo en cuenta efectos mañana
+				\4 ¿Cuánta renta puedo consumir hoy...
+				\4[] $\to$ ...si quiero consumir tanto mañana?
+				\4 ¿Cuánto debo invertir en capital hoy...
+				\4[] ...si quiero producir tanto output mañana?
+				\4 Modelos teóricos para caracterizar estas decisiones
+			\3 Macroeconomía y microfundamentación
+				\4 Modelos intertemporales
+				\4[] Permitido desarrollo en últimas décadas
+				\4 Macroeconomía como proceso dinámico
+				\4[] Basado en agentes que consideran futuro
+		\2 Objeto
+			\3 Qué comportamiento cuando el tiempo es relevante?
+			\3 Cómo se modeliza la decisión intertemporal?
+			\3 Qué familias de modelos son las más relevantes?
+			\3 Qué herramientas matemáticas?
+			\3 Qué aplicaciones tienen los modelos?
+		\2 Estructura
+			\3 Modelos de agente representativo con horizonte infinito
+			\3 Modelos de generaciones solapadas
+	\1 \marcar{Agente representativo con horizonte infinito} 13'-16'
+		\2 Idea clave
+			\3 Un sólo agente
+				\4 Representativo de:
+				\4[] $\to$ Agentes idénticos
+				\4[] $\to$ Agentes heterogéneos agregables
+			\3 Comportamiento óptimo
+				\4 Secuencias de variables
+				\4[] Expresan decisión en cada periodo
+				\4 Maximizan función de bienestar
+				\4[] $\to$ Compuestas por f. de u. instantánea
+				\4 Maximizan beneficios
+				\4[] $\to$ Compuestas por f. de beneficio en un periodo
+			\3 Gran variedad de problemas
+				\4 Horizonte de decisión es infinito
+				\4 Adaptables a muchas realidades
+				\4[] Empresas
+				\4[] Consumidores
+				\4[] Macroeconomías
+				\4 Denominador común:
+				\4[] Decisiones en cada periodo afectan al resto
+			\3 Caracterización del óptimo
+				\4 Condición de Euler + condición de transversalidad
+				\4 Condición Euler
+				\4[] Caracteriza trayectoria temporal óptima
+				\4[] De primer orden
+				\4[] Necesaria
+				\4[] No necesariamente suficiente
+				\4 Condición de transversalidad
+				\4[] Caracteriza valor terminal óptimo
+		\2 Formulación general\footnote{Notación de De la Fuente.}
+			\3 Problema de maximización
+				\4[] $\underset{ c(t) }{\max} \quad W (c(t), x(t), t)$
+				\4[] $\text{s.a:} \quad \dot{x}(t) = g(x(t), c(t), t)$ $\to$ Ec. de movimiento
+				\4[] $\quad \quad x(0) = \ubar{x}$ $\to$ Condición inicial
+				\4[] $\quad \quad c(t) \in \Gamma (x(t), t)$ $\to$ Restricción f. de control
+				\4[] $\quad \quad \lim_{t \to \infty} x_t = \bar{x}$ $\to$ Condición terminal
+				\4[] Si $x$: representa deuda o capital
+				\4[] $\to$ Cond. terminal llamada ``de no juego de Ponzi''
+			\3 Variable de control
+				\4 Caracteriza decisión optimizadora
+				\4[] Afecta a evolución de variable de estado
+				\4[] Afecta directamente a función objetivo
+				\4 Restringida a conjunto de decisión
+				\4[] $c(t) \in \Gamma(x_(t), t)$
+				\4 Ejemplos
+				\4[] Consumidores
+				\4[] $\to$ Var. control es consumo en $t$
+				\4[] Empresas
+				\4[] $\to$ Var. control es ff.pp. utilizados en $t$
+			\3 Variable de estado
+				\4 Describe estado del sistema
+				\4 Induce un conjunto de decisión
+				\4[] Restringe valores válidos de variable de control
+				\4 Puede afectar a función objetivo
+				\4[] $x(t) \in X$
+			\3 Ecuación de transformación
+				\4 Define movimiento de variable de estado
+				\4 $\dot{x}(t) = g(x(t), c(t), t)$
+				\4 Ejemplos
+				\4[] Consumidores:
+				\4[] $\to$ Stock de riqueza o deuda que genera interés
+				\4[] Empresas:
+				\4[] $\to$ Stock de capital que se deprecia
+			\3 Restricciones
+				\4 Impuestas sobre $x(t)$ y opcionalmente $c(t)$
+				\4 Al menos son necesarias:
+				\4[] Condición inicial
+				\4[] Condición final sobre $\vec{x}_t, \vec{x}_T$\footnote{Es decir, sobre estado inicial y final.}
+			\3 Función objetivo
+				\4 Funcional objeto de optimización
+				\4[] Función que toma funciones como argumento
+				\4[] $W(x(t), c(t), t)$
+				\4 Expresa preferencias entre secuencias temporales
+				\4 Agentes tratan de alcanzar valor máximo
+			\3 Forma habitual de la función objetivo
+				\4[] $W\left( c(t) \right) = \int_0^\infty u_t (c_t) \cdot d \, t$
+				\4[] $u_t ( c_t ) = D(t) \cdot u(c_t)$
+				\4[] $D(t)$ $\to$ factor de descuento
+				\4[] Habitualmente descuento exponencial:
+				\4[] $D(t) = e^{-\rho t}, \rho > 1$
+				\4[] $\to$ Cumple con algunas propiedades deseables (más abajo)
+				\4[] Descuento hiperbólico:
+				\4[] $D(t) = \frac{1}{1+k\cdot t}$
+			\3 Propiedades de la función objetivo/preferencias
+				\4 La función objetivo representa unas preferencias subyacentes
+				\4[] Cumpliéndose un teorema de representación subyacente
+				\4 Propiedades que la función puede mostrar
+				\4[] Algunas de las más importantes
+				\4 Estacionariedad
+				\4[] Las decisiones se toman en función de:
+				\4[] $\to$ Diferencia de valores de estado y decisión
+				\4[] $\to$ Diferencia entre periodos
+				\4[] $\then$ Periodo concreto no importa
+				\4 Consistencia temporal\footnote{Infra.}
+				\4[] Decisiones en $t$ siguen siendo óptimas en $t+n$
+				\4[] $\to$ Teniendo misma información
+				\4[] Inconsistencia
+				\4[] $\to$ Decisión en $t$ no es óptima en $t+n$
+				\4[] $\then$ Si pasado está dado, plan ya no es óptimo
+				\4 Invariabilidad temporal\footnote{Infra.}
+				\4 Separabilidad aditiva\footnote{Infra.}
+				\4[] Aditiva:
+				\4[] posible descomponer función en suma de funciones
+				\4[] Separable:
+				\4[] Suma de subfubciones objetivo antes de $T$
+				\4[] No dependen de suma de subfunciones después de $T$
+				\4[] y viceversa
+				\4 Funciones CRRA
+				\4[] $u(c_t) = \frac{c_t^{1-\theta}}{1-\theta}$
+				\4[] Elasticidad de sustitución temporal ($\sigma$) es constante
+				\4[] $\sigma = \frac{d \, \ln \frac{c_{t+1}}{c_t} }{d \,r} = \frac{1}{\theta}$
+				\4[] Aumento de 1\% en precio de consumo presente
+				\4[] $\to$ Aumento de $\frac{1}{\theta}$ de proporción consumo futuro-presente
+				\4[] Si $\theta$ muy alto:
+				\4[] $\to$ Consumo apenas varía ante aumento de $r$
+				\4[] Aversión relativa al riesgo es constante
+				\4[] Propiedades deseables para tratabilidad de modelos
+				\4 Descuento exponencial vs descuento hiperbólico
+				\4[] Descuento exponencial
+				\4[] $\to$ Induce const. temporal + estacionariedad
+				\4[] Habitualmente asumido en modelos económicos
+				\4[] $D(i) = \frac{1}{(1+\rho)^t}$ Tiempo discreto
+				\4[] $D(i) = e^{-\rho t}$ Tiempo continuo
+				\4[] $\Rightarrow$ Descuento entre dos periodos es constante
+				\4[] Descuento hiperbólico:
+				\4[] $D(i) = \frac{1}{1+ki}$
+				\4[] $\to$ Descuento alto para $t$ próximos a presente
+				\4[] $\to$ Apenas descuento entre $t$ del futuro lejano
+				\4[] $\then$ Descuento entre periodos es variable
+				\4[] $\then$ Preferencias no son temporalmente consistentes
+			\3 Horizonte infinito
+				\4 No hay periodo final T
+				\4 Posible tiempo continuo o discreto
+				\4 Interpretaciones f. objetivo: altruismo, final distante
+				\4 Impacto sobre métodos de resolución
+			\3 Incertidumbre
+				\4 Ecuación de transformación estocástica
+				\4 Incorporación de VNM en funciones objetivo
+		\2 Métodos de resolución
+			\3 Lagrange
+				\4 Mismo método que con problema estático
+				\4 Tiempo discreto
+				\4 Horizonte finito
+				\4 Número finito de variables
+				\4 Costoso número elevado de variables
+			\3 Control óptimo
+				\4 Generalmente aplicable en tiempo continuo
+				\4 Horizonte finito e infinito
+				\4 Origen en guiado de cohetes
+				\4[] Basado en cálculo de variaciones de Euler y otros
+				\4 Facilita resolución de muchos problemas
+				\4 Descomponer problema en:
+				\4[] Maximización beneficio instantáneo
+				\4[] Maximización valor del beneficio futuro
+				\4[] $\to$ Trade-off entre ambos
+				\4[] $\to$ Función que incorpore ambos efectos
+				\4[$\then$] Hamiltoniano como función a maximizar
+				\4[] $H(c_t,k_t,t) = u(c_t,k_t,t) + \lambda (t) \cdot g(k_t,c_t,t)$
+				\4 Principio del máximo
+				\4[] Resume CPO a partir de Hamiltoniano
+				\4[] $\pdv{H}{c} = \pdv{u}{c} + \lambda \cdot \pdv{g}{c}= 0$
+				\4[] $\pdv{H}{k} = \pdv{u}{k} + \lambda \cdot \pdv{g}{k} = -\dot{\lambda} $
+				\4[] $\pdv{H}{\lambda} = g(x_t, c_t, t)$
+				\4[] Caracterizan trayectoria óptima
+				\4[] Posible derivar estado estacionario si existe
+			\3 Programación dinámica
+				\4 Horizonte finito/infinito, tiempo discreto
+				\4 Descomponer problema de optimización
+				\4[] En subproblemas
+				\4[] De adelante hacia atrás
+				\4 Principio de optimalidad de Bellman
+				\4[] Una secuencia de decisión cumple propiedad si:
+				\4[] Todas las políticas a partir de $t$ son óptimas
+				\4[] Independientemente de decisión tomada en $t$
+				\4 Ecuación de Bellman:
+				\4[] $V\left( \{ \vec{x} \}_t^T \right) = \max \left[ u(c_t,x_t) + V\left( \{\vec{x} \}_{t+1}^T \right) \right]$
+				\4 Resolución por métodos numéricos, teoremas de punto fijo...
+				\4 Problemas de maximización con incertidumbre
+				\4[] $\to$ Programación dinámica es método óptimo
+		\2 Aplicaciones
+			\3 Consumo en dos periodos
+				\4 {Control}
+				\4[] Consumo en 1 y 2: $c_1$, $c_2$
+				\4 {Estado}
+				\4[] Dotaciones: $w_1$, $w_2$
+				\4[] Ahorro: $b_1 = w_1 - c_1$
+				\4 {Función objetivo}
+				\4[] Utilidad de dos periodos
+				\4[] $U(c_t, c_{t+1}) = u(c_t) + \beta u(c_{t+1})$
+				\4 {Restricciones}
+				\4[] Consumo y ahorro igualan dotación
+				\4[] $c_1 + b_1 = w_1$
+				\4[] $c_2 = w_2 + (1+r)b_1$
+				\4[] $\then$ $w_1 + \frac{w_2}{(1+r)} = c_1 + \frac{c_2}{(1+r)}$
+			\3 Consumo y producción en dos periodos
+				\4 BP intertemporal con producción
+				\4 Dotación del primer periodo se destina a:
+				\4[] $\to$ Consumo
+				\4[] $\to$ Ahorro/Endeudamiento
+				\4[] $\to$ Capital $\to$ Producción en 2o periodo
+				\4 {Restricción intertemporal}
+				\4[] $c_1 + \frac{c_2}{(1+r)} = \omega_1 - k + \frac{\omega_2+f(k)}{(1+r)}$
+			\3 Teoría de la inversión de Fisher
+				\4 La Teoría del Interés (1930)
+				\4 ¿Cómo distribuir intertemporalmente dotación?
+				\4[] $\to$ Para maximizar utilidad
+				\4 Modelo dinámico formal
+				\4[] Dos periodos
+				\4[] Términos matemáticos
+				\4 Precursor de modelos dinámicos formales
+				\4 Dotación exógena
+				\4[] Cantidad $w_1$ en el periodo 1
+				\4[] Cantidad 0 en e periodo 2
+				\4 Inversión
+				\4[] Cantidad de $w_1$ no consumida en 1
+				\4[] $\to$ Destinada a capital
+				\4 Rentas en periodo 2
+				\4[] Inversión aplicado a f. de prod
+				\4[] Ahorro a tipo de interés $r$
+				\4 Problema de optimización
+				\4[] Maximizar utilidad
+				\4[] $\to$ Eligiendo consumo en periodo 1 y 2
+				\4 Realmente, dos problemas separados
+				\4[I] Problema de optimización de inversión
+				\4[] Maximizar valor presente de flujos netos
+				\4[] $\underset{k}{\max} \quad w-k + \frac{f(k)}{1+r} \quad \text{s.a:} k \leq w$
+				\4[] $\text{CPO:} \quad f'(k) = 1+r$
+				\4[] $\then$ Invertir dotación hasta que $f'(k) = 1+r$
+				\4[] $\then$ Invertir hasta eficiencia marginal de K sea interés
+				\4[] Representación gráfica
+				\4[] \grafica{fisherproblemainversion}
+				\4[II] Problema de optimización de consumo
+				\4 Problema de optimización del consumo
+				\4[] Maximizar utilidad dada restricción intertemporal
+				\4[] $\underset{c_1, c_2}{\max} \quad u(c_1) + v(c_2)$
+				\4[] $\text{s.a:} \quad c_1 + \frac{c_2}{1+r} = w -k^* + \frac{f(k^*)}{1+r}$
+				\4[] Representación gráfica
+				\4[] \grafica{fisherproblemaconsumidor}
+				\4 Optimización intertemporal de empresa y consumidor
+				\4[$\then$] Teorema de la separación de Fisher
+			\3 Teorema de la separación de Fisher
+				\4 Objetivo de la empresa es maximizar valor presente
+				\4[] $\to$ Independientemente de preferencias de accionistas
+				\4 Si mercados de capital perfectos:
+				\4[] $\to$ Financiación independiente de inversión
+				\4 Aplicación microeconómica
+				\4[] $\to$ Punto en FPP independiente de dda. de consumo óptimo
+				\4 Precursor de Modigliani-Miller
+				\4 Dos agentes
+				\4[] Disponen de las mismas funciones de producción
+				\4[] $\to$ Rendimiento de la inversión equivalente
+				\4[] Tienen igual acceso al mercado financiero
+				\4[] $\to$ Pueden prestar y tomar prestado al mismo tipo
+				\4[] Preferencias no tienen por qué ser iguales
+				\4 Decisiones de inversión y consumo óptimas
+				\4[] Ambos tomarán misma decisión de inversión
+				\4[] Decisiones de consumo dependen de prefs. respectivas
+			\3 Demanda de inversión
+				\4 Modelo neoclásico de Jorgenson
+				\4 Modelo de Ramsey-Cass-Koopmans
+				\4[] Maximización consumo-ahorro
+				\4 Modelo de la q de Tobin
+				\4[] Cambio en variable de estado
+				\4[] $\to$ Aumenta beneficio
+				\4[] $\to$ Supone incurrir en un coste
+				\4[] Inversión depende de:
+				\4[] valor de K dentro de empresa respecto a precio
+			\3 Crecimiento
+				\4 Modelo de Solow
+				\4[] Sin optimización de agente representativo
+				\4[] Simple dinámica de capital-producción
+				\4 Modelo de Ramsey
+				\4[] Optimización consumo-ahorro
+				\4[] Sin tasa de descuento
+				\4[] Función de utilidad acotada
+				\4 Modelo de Ramsey-Cass-Koopmans
+				\4[] Similar a Ramsey
+				\4[] Introducción de tasa de descuento
+			\3 Modelo del Ciclo Real
+				\4 Optimización ocio-consumo-ahorro
+				\4 Agente representativo con horizonte infinito
+				\4 Tiempo discreto
+				\4 Resuelto con métodos de programación dinámica
+			\3 Modelos DSGE
+				\4 Basados en ciclo real
+				\4 Introducción de más sectores y restricciones
+				\4[] Sobre fijación de precios
+				\4[] Sobre forma de funciones de producción
+	\1 \marcar{Modelo de Generaciones Solapadas }12'-28'
+		\2 Idea clave
+			\3 Autores
+				\4 Por primera vez:
+				\4[] Allais (1947), Samuelson (1958), Diamond (1965)
+				\4 Desarrollado por:
+				\4[] Yaari, Lucas, Blanchard \ldots
+			\3 Funcionamiento básico
+				\4 Agentes nacen y mueren en diferentes periodos
+				\4[] $\to$ Coexisten diferentes generaciones
+				\4 Generalmente, homogéneos entre generaciones
+				\4[] $\to$ Heterogeneidad dada por diferente generación
+				\4[$\then$] Horizonte vital limitado
+				\4[] Generalmente:
+				\4[] $\to$ Dos periodos
+				\4[] $\to$ continuo
+				\4[$\then$] Horizonte del modelo
+				\4[] Generalmente infinito
+				\4[] $\to$ Nacen y mueren agentes sin final
+			\3 Bienestar
+				\4 Asumiendo:
+				\4[] Supuestos habituales
+				\4[] Sin externalidades
+				\4[] Sin distorsiones
+				\4[] $\to$ \fbox{No se cumple el 1er Teorema del bienestar}
+				\4[] $\to$ Eq. competitivo no es óptimo de Pareto
+				\4[] $\Rightarrow$ Posible mejorar equilibrio competitivo
+			\3 Impacto en economía teórica
+				\4 Modelo central en macroeconomía
+				\4 Junto con R-C-K, principal instrumento
+				\4 Permite representar fenómenos que R-C-K no puede:
+				\4[] Evolución demográfica
+				\4[] Heterogeneidad de agentes
+				\4[] Múltiples equilibrios
+				\4[] Economías no ricardianas
+				\4[] ...
+		\2 Formulación general en tiempo discreto
+			\3 Objetivo de la formulación presentada
+				\4 Mostrar ineficiencia de eq. competitivo
+				\4[] en ausencia de distorsiones
+				\4 Mostrar posibles mejoras de Pareto
+			\3 Generaciones
+				\4 En cada $t$ nace una generación
+				\4[] Generación nueva nacen $(1+n)^t$ ``jóvenes''
+				\4 Cada generación vive en $t$ y en $t+1$
+				\4[] En cada periodo conviven ``jóvenes'' y ``viejos''
+				\4 En el periodo inicial $t=0$
+				\4[] Una generación de viejos que nunca son jóvenes
+				\4 Horizonte temporal
+				\4[] De los agentes: finito
+				\4[] Del modelo: infinito
+			\3 Dotaciones
+				\4 En cada generación agentes reciben dotación
+				\4 Jóvenes reciben $e_1$
+%		        \4[] Dotación recibida por jóvenes crece a tasa $g$
+				\4 Viejos reciben $e_2$
+			\3 Utilidad de los agentes
+				\4 $U = u(c_1) + v(c_2)$
+				\4[] $u''(\cdot)$ y $v''(\cdot) < 0$
+				\4 Dos casos polares:
+				\4[] Muy pacientes:
+				\4[] $\to$ $u'(c_1) = 0$
+				\4[] $\to$ Para valores muy pequeños de $c_1$
+				\4[] $\then$ Tratan de ahorrarlo todo
+				\4[] Muy impacientes:
+				\4[] $\to$ $v'(c_2) = 0$
+				\4[] $\to$ Para valores muy pequeños de $c_2$
+				\4[] $\then$ Tratan de traerlo todo a presente
+			\3 Préstamo intertemporal
+				\4 Permitiría a los agentes:
+				\4[] Trasladar intertemporalmente dotaciones
+				\4[] Consumir en $t+1$ dotación de $t$ y viceversa
+				\4[] $\to$ Si hubiese con quién endeudarse
+				\4[] $\to$ Si hubiese a quién prestar
+				\4[] Problemas del préstamo intertemporal:
+				\4[] $\to$ Jóvenes agregables en agente representativo
+				\4[] $\to$ Demanda agregada de ahorro no nula
+				\4[] $\then$ Préstamo intratemporal no es suficiente
+				\4[] $\then$ Necesario cubrir dda. de ahorro de jóvenes
+				\4[] $\to$ Los viejos no podrán devolver nada
+				\4[] $\then$ No es posible préstamo intertemporal
+				\4[] ECompetitivo único:
+				\4[] $\to$ $r$ que elimina préstamo intertemporal
+				\4[] Si muy pacientes:
+				\4[] $\to$ $r=-1$
+				\4[] $\then$ Para que no tenga sentido prestar nada
+				\4[] Si muy impacientes:
+				\4[] $\to$ $r \to \infty$
+				\4[] $\then$ Para que no tenga sentido endeudarse
+			\3 Problema de maximización
+				\4[] $\underset{c_1, c_2}{\max} \quad U = u(c_1) + v(c_2)$
+				\4[] $\text{s.a:} \quad c_1 + \frac{c_2}{1+r} = e_1 + \frac{e_2}{1+r}$
+				\4 Condición de óptimo:
+				\4[] $u'(c_1) = (1+r) v'(c_2)$
+		\2 Implicaciones
+			\3 Consumidores muy pacientes
+				\4 Tomando valor extremo:
+				\4[] $u(c_1) \to 0$, $u'(c_1) \to 0$
+				\4[] $u'(c_1) = 0 = (1+r) v'(c_2)$
+				\4[] $\to$ Jóvenes querrían ahorrar todo
+				\4[] $\to$ Viejos querrían consumir algo en vejez
+				\4[] $\to$ No puede haber préstamo intertemporal
+				\4[] $\then$ Necesario $r=-1$ para ECompetitivo
+				\4[] $\then$ Trasladan 0 al futuro
+				\4[] $\then$ Consumen todo en $t=1$
+				\4[$\then$] \fbox{Eq. competitivo no es óptimo de Pareto}
+				\4[] Existe asignación que mejora bienestar
+			\3 Solución centralizada
+				\4 Gobierno quita a jóvenes y entrega a viejos
+				\4[] Viejos reciben $e_1 \cdot (1+n)$
+				\4[] Si $n>r$:
+				\4[] $U' = v(e_2 + e_1 \cdot (1+n) ) > U = v(e_2)$
+				\4 Tipo de interés variable
+				\4[] Reducción de dotación reduce ahorro
+				\4[] Crowding-out de inversión aumenta tipo de interés
+				\4[] $\Rightarrow$ Impuesto óptimo cuando que $r=n$
+				\4 Deuda e impuestos
+				\4[] Posible mismo resultado con deuda
+				\4[] Estado se endeuda en vez de gravar con impuestos
+				\4[] Paga interés de la deuda con nueva deuda
+				\4[] Roll-over de deuda posible si $r<n$
+			\3 Solución descentralizada
+				\4 Samuelson propone dinero
+				\4 Viejos iniciales venden $m$ papeles a jóvenes
+				\4 A cambio de sus dotaciones
+				\4[] $\to$ $m_t$ compran $e_1 \cdot (1+n)$
+				\4 Jóvenes vuelven a vender cuando son viejos
+				\4[] $\to$ Venden $m_t$ por $e_1 \cdot (1+n)^2$
+				\4[] $\to$ Cada viejo recibe $e_1 \cdot (1+n)$
+				\4[] $\Rightarrow$ Mismo efecto que impuesto
+				\4 Solución sujeta a múltiples equilibrios
+				\4[] $\to$ Equilibrio no óptimo de Pareto: jóvenes no compran
+				\4[] $\to$ Equilibrio óptimo de Pareto: jóvenes compran y $n>r$
+			\3 Consumidores muy impacientes
+				\4 Tomando caso extremo
+				\4[] $v(c_2) \to 0$, $v'(c_2) \to 0$
+				\4[] Viejos apenas valoran consumo
+				\4[] $u'(c_1) = (1+r) v'(c_2)$
+				\4[] $\Rightarrow$ Necesario $r \to \infty$ para ECompetitivo
+				\4 Tecnología de almacenamiento
+				\4[] No permite trasladar de futuro a presente
+				\4 Jóvenes intentar tomar prestado de viejos
+				\4[] Viejos no prestan porque no estarán para cobrar
+				\4[] $\to$ Interés aumenta a infinito para eq. competitivo
+				\4[] $\to$ Necesario para cumplir condición de óptimo
+				\4[] $\Rightarrow$ Jóvenes consumen dotación presente
+				\4[] $\Rightarrow$ Viejos consumen dotación presente
+				\4 Quitar a viejos para dar a jóvenes
+				\4[] No es mejora de Pareto
+				\4[] Viejos de primera generación reducen bienestar
+				\4[$\Rightarrow$] Caso menos interesante que agentes pacientes
+			\3 Crecimiento económico
+				\4 Posible generalizar con dotaciones crecientes a $g$
+				\4[$\Rightarrow$] Posible mejorar eq. competitivo si $r<(n+g)$
+		\2 Aplicaciones
+			\3 Seguridad social
+				\4 Modelizar transferencias de sistemas de pensiones
+				\4 Sostenibilidad de seg. social
+				\4 Impacto intergeneracional de transiciones PAYG
+			\3 Dinero
+				\4 Modelo original de Samuelson
+				\4 Efectos de shocks nominales
+				\4[] Información imperfecta de Lucas
+			\3 Política fiscal y crecimiento
+				\4 Impacto déficit sobre acumulación de K
+				\4 Impacto gasto público sobre ahorro
+				\4 Modelos de crecimiento endógeno
+				\4[] \ldots
+			\3 Burbujas de activos
+				\4 Tirole (1985)
+				\4 Modelos OLG racionalizan burbujas de activos
+				\4[] Puede ser racional pagar $>0$
+				\4[] Por activo con valor intrínseco 0
+			\3 Inversión en infrastructuras
+				\4 Conflictos intergeneracionales
+				\4 Problemas de economía política
+			\3 Nueva Economía Keynesiana
+				\4 Fundamentar necesidad de intervención
+				\4[] Equilibrios múltiples dejan margen a gobierno
+				\4[] Desde los 80, utilizado ampliamente
+		\2 Valoración
+			\3 Generalización de eq. representativo
+				\4 Agente representativo es caso particular
+				\4[] $\to$ EC óptimo de Pareto es difícil de alcanzar
+				\4 Acota requisitos de optimalidad de R-C-K
+			\3 Problemas intergeneracionales
+				\4 Marco de análisis explícito
+				\4 Muy relevante en la actualidad
+			\3 Versatilidad
+				\4 Muchos fenómenos modelizables
+				\4 Resultado de suboptimalidad bastante robusto
+				\4[] Justifica muchas intervenciones públicas
+				\4 Modelos DSGE basados en OLG
+				\4[] $\to$ Ganan tracción
+	\1[] \marcar{Conclusión} 2'-30'
+		\2 Recapitulación
+			\3 Agente representativo con horizonte infinito
+			\3 Modelo de generaciones solapadas
+		\2 Idea final
+			\3 Microfundamentación de la macroeconomía
+				\4 Modelos analizados son microecómicos a priori
+				\4[] Caracterizan decisiones de agentes individuales
+				\4 Utilizados ampliamente en macroeconomía
+				\4[] Macroeconomía reacciona a:
+				\4[] $\to$ Expectativas sobre futuro
+				\4 Para defenderse frente a crítica de Lucas
+				\4[] Necesario modelizar valorando dimensión intertemporal
+				\4[$\Rightarrow$] Exposición examina instrumentos habituales
+			\3 Complejidad técnica
+				\4 Modelización decisiones
+				\4[] A menudo requiere técnicas matemáticas
+				\4 Modelización decisiones intertemporales
+				\4[] Requiere técnicas matemáticas aún más complejas
+				\4 Desarrollo de modelos intertemporales ligado a:
+				\4[] $\to$ Técnicas matemáticas
+				\4[] $\to$ Mejoras capacidad de proceso y computación
+\end{esquemal}
+
+\graficas
+
+\begin{axis}{4}{Representación gráfica del problema de la inversión en el modelo de inversión de dos periodos de Fisher.}{$Y_1$}{$Y_2$}{fisherproblemainversion}
+	% Dotación inicial
+	\node[below] at (3,0){$E_1$};
+	
+	% FPP
+	\draw[-] (3,0) to [out=95, in=-5](0,3);
+	
+	% Recta presupuestaria
+	\draw[-] (0.5,4) -- (3.8,0);
+	
+	% Inversión y producción de óptimo
+	\draw[dashed] (0,1.9) -- (2.2,1.9) -- (2.2,0);
+	\node[left] at (0,1.9){$Y_2^*$};
+	\node[below] at (2.2,0){$Y_1^*$};
+\end{axis}
+
+
+\begin{axis}{4}{Representación gráfica del problema de la optimización del consumo en el modelo de inversión de dos periodos de Fisher.}{x}{y}{fisherproblemaconsumidor}
+	% Dotación inicial
+	\node[below] at (3,0){$E_1$};
+	
+	% FPP
+	\draw[-] (3,0) to [out=95, in=-5](0,3);
+	
+	% Recta presupuestaria
+	\draw[-] (0.5,4) -- (3.8,0);
+	
+	% Inversión y producción de óptimo
+	\draw[dashed] (0,1.9) -- (2.2,1.9) -- (2.2,0);
+	\node[left] at (0,1.9){$Y_2^*$};
+	\node[below] at (2.2,0){$Y_1^*$};
+	
+	% CI 1
+	\draw[-] (0.5, 4.52) to [out=275, in=175](3.2,2.52);
+	
+	% CI 2
+	\draw[-] (2.5,2.1) to [out=275, in=175](5.2,0.1);
+\end{axis}
+
+\conceptos
+
+
+\concepto{Condición de óptimo con utilidad logarítmica}
+
+Sea una función de utilidad intertemporal de dos periodos $U(c_1, c_2) = \ln c_1 + \beta \ln c_2$. Independientemente de la restricción de consumo intertemporal, es condición necesaria del programa de maximización de la utilidad que se cumpla:
+
+\begin{equation}
+u'(c_1) = \beta (1+r) u'(c_2) \iff c_2 = \beta \cdot (1+r) c_1
+\end{equation}
+
+\concepto{Consistencia temporal}
+
+(Halevy, 2015) una secuencia de relaciones de preferencia $\{ \succeq_t \}_t^T$ exhibe consistencia temporal si la preferencia entre dos rentas temporales es igual para todos los elementos de la secuencia de relaciones de preferencia.
+
+Formalmente: $\{ \succeq_t \}_t^T$ es temporalmente consistente si para todos los periodos $t$ y $t'$, las rentas $\gamma$ y $\psi$ y las diferencias temporales $\Delta_1$ y $\Delta_2$ se cumple que:
+
+\begin{equation}
+\left( \gamma, t + \Delta_1 \right) \sim_t \left( \psi , t + \Delta_2 \right) \iff \left( \gamma , t' + \Delta_1 \right) \sim_t \left( \psi, t' + \Delta_2 \right)
+\end{equation}
+
+Si una secuencia de relaciones de preferencia cumple estacionariedad y time invariance, cumplirá también consistencia temporal.
+
+\concepto{Constant Relative Risk Aversion (CRRA) / Constant Elasticity of Intertemporal Substitution}
+
+Una función $U(\cdot)$ que cumple la propiedad CRRA si pertenece a la familia de funciones:
+
+\begin{equation}
+U(c_t) = \frac{c_t^{1-\theta}}{1-\theta}
+\end{equation}
+
+El parámetro $\theta$ corresponde a la aversión relativa al riesgo, y es constante para todo $c_t$. La elasticidad intertemporal de sustitución corresponde a la inversa de la aversión relativa al riesgo, es decir:
+
+\begin{equation}
+\sigma(x) = \frac{1}{\theta} = - \frac{1}{x} \frac{u'(x)}{u''(x)}
+\end{equation}
+
+Es preciso notar que este resultado sólo se cumple en funciones CRRA. Para demostrarlo, definimos en primer lugar, definimos la elasticidad de sustitución intertemporal como:
+
+\begin{equation}
+\sigma = \frac{d \, \ln \frac{c_{t+1}}{c_t} }{ d \, \ln R} = \frac{d \, \ln \frac{c_{t+1}}{c_t} }{ d \, r}
+\end{equation}
+
+Asumimos que la ecuación de Euler como condición de primer orden del programa de optimización dinámica que resuelven los consumidores toma la forma:
+
+\begin{equation}
+u'(c_t) = \beta R u'(c_{t+1}) \Rightarrow R = \frac{u'(c_t)}{\beta u'(c_{t+1})} \Rightarrow r \approx \ln R^{-1} =  -(\ln u'(c_t) - \ln \beta - \ln u'(c_{t+1})
+\end{equation}
+
+Para funciones CRRA de forma $u(c_t) = \frac{c^{1-\theta}-1}{1-\theta}$ se cumple que $u'(c_t) = c_t^{-\theta}$. Sustituyendo en la ecuación anterior tenemos que:
+
+\begin{equation}
+r \approx -(\ln c_t^{-\theta} - \ln \beta - \ln c_{t+1}^{-\theta}) = - (-\theta \ln c_t + \theta \ln c_{t+1}) = \theta (\ln c_t - \ln c_{t+1}) = \theta  \left( \ln \frac{c_t}{c_{t+1}} \right)
+\end{equation}
+
+Sustituyendo en la definición de la elasticidad de sustitución intertemporal:
+
+\begin{equation}
+\sigma = \frac{d \, \ln \frac{c_{t+1}}{c_t} }{ d \, r} = \frac{d \, \ln \frac{c_{t+1}}{c_t} }{ d \,  \theta  \left( \ln \frac{c_t}{c_{t+1}} \right) } = \frac{1}{\theta} \cdot \frac{d \, \ln \frac{c_{t+1}}{c_t} }{d \, \ln \frac{c_{t+1}}{c_t} } = \frac{1}{\theta}
+\end{equation}
+
+\concepto{Ecuación de Bellman}
+
+La ecuación de Bellman simplemente caracteriza el valor de la función objetivo como la solución de un problema de optimización estático incorporando la propia función objetivo como variable de decisión. 
+
+\begin{equation}
+V(x_t, x_T) = \underset{c_t}{\max} \lbrace u_t(c_t, x_t) +  V(x_{t+1}, x_T) s.a x_{t+1} = m(x_t, c_t) \rbrace 
+\end{equation}
+
+Las soluciones al problema de maximización estático son un valor $c_t$ de la variable de control, y una función $V(x_{t+1}, x_T)$. Así, convertimos un problema con infinitas incógnitas en una secuencia de problemas con dos incógnitas. 
+
+Si la secuencia es finita, es posible resolver mediante inducción hacia atrás: se trata de hallar el valor $c_{T-1}$ que maximiza la función $u_{T-1}$ y que induce el valor terminal $x_T$ de la variable de estado (que viene dado como restricción).
+
+Si el horizonte es infinito, no es posible resolver hacia atrás. Sin embargo, bajo determinados supuestos la resolución es más sencilla que en el caso de horizonte finito.
+
+\concepto{Elasticidad de sustitución intertemporal}
+
+En términos de Hall, la ESI es una medida de la respuesta de la decisión de consumo intertemporal ante variaciones del tipo de interés. Equivalentemente, la ESI es una medida de la aversión a la variabilidad del consumo entre diferentes periodos, un concepto muy cercano al de aversión al riesgo.
+
+Supóngase un consumidor muy averso a la variabilidad en el consumo (asimilable al hecho de ser averso al riesgo). Tal consumidor, ante un encarecimiento del consumo presente por un aumento del tipo de interés no sustituirá apenas consumo presente por futuro, dada esa aversión a la variabilidad. Por tanto, la elasticidad de sustitución intertemporal del consumidor será reducida: es averso a la variabilidad y su consumo responde poco a variaciones del tipo de interés.
+
+\concepto{Estacionariedad}
+
+(Halevy, 2015) una relación de preferencia $\succeq_t$ es estacionaria si ordena rentas temporales teniendo en cuenta \textit{exclusivamente} la diferencia en las cuantías de las rentas, y la diferencia entre los periodos en que se reciben tales rentas.
+
+Formalmente: $\succeq_t$ es estacionaria si para todos los periodos $t$ y $t'$, las rentas $\gamma$ y $\psi$ y las diferencias temporales $\Delta_1$ y $\Delta_2$ se cumple que:
+\begin{equation}
+    \left( \gamma, t + \Delta_1 \right) \sim_t \left( \psi , t + \Delta_2 \right) \iff \left( \gamma , t' + \Delta_1 \right) \sim_t \left( \psi , t' + \Delta_2 \right)
+\end{equation}
+
+En ocasiones se interpreta esta propiedad como: \comillas{una relación de preferencia es estacionaria si la edad del agente no juega ningún papel en la ordenación de elementos}. Si una relación de preferencias cumple time invariance y consistencia temporal, cumplirá también estacionariedad.
+
+\concepto{Invariabilidad temporal}
+
+(Halevy, 2015) una secuencia de relaciones de preferencia $\{ \succeq_t \}_t^T$ exhibe la propiedad de time invariance si todas las relaciones de preferencia de la secuencia cumplen la propiedad de estacionariedad. Si una relación de preferencias cumple consistencia temporal y estacionariedad, cumplirá también invariabilidad temporal/time invariance.
+
+\concepto{Principio de optimalidad}
+
+\textit{<<Roughly speaking, the theorem says that each portion of the optimal plan is optimal in its own right. More precisely, any portion of an optimal trajectory is an optimal trajectory for an appropiate subproblem of (DP) \lbrack \textrm{un problema de forma general habitual} \rbrack in which we constrain the end-point values of the state vecor to be equal to the corresponding terms of the optimal state sequence for the whole problem.>>} (De la Fuente, pág. 551)
+
+Gracias a esta propiedad de la solución óptima de este problema, podemos simplificar un problema de horizonte infinito de tal manera que sea posible resolverlo. El principio de optimalidad es también aplicable a problemas de horizonte finito.
+
+\concepto{Separabilidad aditiva}
+
+(MWG) una función $f(\vec{x})$ es aditiva si existen funciones $g_1(x_1), ..., g_n(x_n)$ que permiten expresar $f(\vec{x})$ como un sumatorio de tales funciones $g_i(\cdot)$. Esta propiedad implica dos propiedades de separabilidad: el orden de preferencias sobre secuencias de rentas a partir de un periodo T es independiente de las rentas recibidas en los periodos $0$ a $T-1$, y que el orden de preferencias sobre rentas entre $0$ y $T$ es independiente de las rentas (fijas) recibidas de $T+1$ en adelante. A su vez, las propiedades de separabilidad implican aditividad. 
+
+
+
+
+
+
+
+
+\preguntas
+
+\seccion{Test 2017}
+\textbf{15.} La incoherencia dinámica de las políticas económicas surge cuando:
+
+\begin{itemize}
+	\item[a] El gobierno las cumple pero no las mantiene en el tiempo.
+	\item[b] El gobierno tiene incentivos a desviarse de la política anunciada cuando tenga que llevarla a cabo.
+	\item[c] El gobierno no tiene en cuenta el comportamiento de los agentes económicos.
+	\item[d] Ninguna de las anteriores.
+\end{itemize}
+
+\seccion{Test 2016}
+\textbf{7.} La función de utilidad correspondiente al periodo $s$ del agente representativo de una economía viene dada por la ecuación:
+\begin{ecuacion}
+	u(C_s) = 2+3C_s
+\end{ecuacion}
+
+El coeficiente de aversión relativa al riesgo será:
+
+\begin{enumerate}
+	\item[a] 1
+	\item[b] 2
+	\item[c] 3
+	\item[d] Ninguna de las anteriores es correcta.
+\end{enumerate}
+
+\seccion{Test 2015}
+
+\textbf{16.} La función de utilidad por periodo del agente representativo de una economía viene dada por la ecuación: $u(c_s) = \frac{c_s^{1-1/\alpha}}{1-1/\alpha}$. El parámetro $\alpha$ se puede interpretar como:
+
+\begin{enumerate}
+    \item[a] El coeficiente de aversión absoluta al riesgo.
+    \item[b] El coeficiente de aversión relativa al riesgo.
+    \item[c] La elasticidad de sustitución intertemporal del consumo.
+    \item[d] Ninguna de las respuestas anteriores es correcta.
+\end{enumerate}
+
+\textbf{17.} Considere una economía de 2 períodos y 2 mercados: el de bienes y el de acciones. Suponga que las acciones (z) constituyen un activo de oferta neta positiva, que la función de utilidad intertemporal del agente representativo es $U(c_t, c_{t+1})$, que el agente prefiere más a menos y que la restricción presupuestaria flujo es:
+
+\begin{equation*}
+    c_s + p_s z_{s+1} \leq (p_s + d_s) z_s, \\
+    s = t, t+1
+\end{equation*}
+
+donde $p$ es el precio de las acciones y $d$ su dividendo.
+
+Respecto al precio de las acciones en $t+1$ se verificará que:
+
+\begin{enumerate}
+    \item[a] $p_{t+1} = d_{t+1}$
+    \item[b] $p_{t+1} = d_t + d_{t+1}$
+    \item[c] $p_{t+1} = 0$
+    \item[d] Ninguna de las respuestas anteriores es correcta.
+\end{enumerate}
+
+\seccion{Test 2013}
+
+\textbf{17.} Considérese una economía intertemporal de dos períodos, $t$ y $t+1$, producción endógena, agentes idénticos y previsión perfecta. El agente representativo parte de una dotación inicial en $t$ que puede consumir o destinarla a la acumulación de capital. El stock de capital acumulado actuará como único factor productivo en $t+1$ y sufrirá una depreciación no nula. La inversión en dicho activo real se supone que es irreversible. Se supone adicionalmente que las preferencias del agente representativo vienen dadas por la función de utilidad intertemporal
+
+\begin{equation*}
+    u(c_t) + \beta u(c_{t+1})
+\end{equation*}
+
+y que la función de producción en $t+1$ es $f(k_{t+1})$, siendo ambas de buen comportamiento. Finalmente, se denotará por $\delta \in (0,1)$, la tasa de depreciación del stock de capital. En esta economía es posible predecir que la inversión bruta en $t+1$ será:
+
+\begin{enumerate}
+    \item[a] Positiva.
+    \item[b] Negativa.
+    \item[c] Nula.
+    \item[d] Cualquiera de las respuestas anteriores podría ser correcta.
+\end{enumerate}
+
+\textbf{18.} Las preferencias del agente representativo de una economía vienen dadas por la función de utilidad intertemporal
+
+\begin{equation*}
+    U(c_t, c_{t+1}) = c_t^\alpha c_{t+1}^{1-\alpha}, \, \alpha \in (0,1)
+\end{equation*}
+
+La elasticidad de sustitución intertemporal del consumo será:
+
+\begin{enumerate}
+    \item[a] Positiva e inferior a la unidad.
+    \item[b] Igual a la unidad.
+    \item[c] Positiva y superior a la unidad.
+    \item[d] Cualquiera de las respuestas anteriores podría ser correcta.
+\end{enumerate}
+
+\textbf{19.} Considérese una economía intertemporal de dos periodos, $t$ y $t+1$, producción endógena, agentes idénticos y previsión perfecta. El agente representativo parte de una dotación inicial en $t$ que puede consumir, destinarla a la acumulación de capital o prestar mediante la compra de bonos. El stock de capital acumulado actuará como único factor productivo en $t+1$ y sufrirá una depreciación no nula. La inversión en dicho activo real se supone que es reversible. Se supone adicionalmente que las preferencias del agente representativo vienen dadas por la función de utilidad intertemporal
+
+\begin{equation*}
+    u(c_t) + \beta u(c_{t+1})
+\end{equation*}
+y que la función de producción en $t+1$ es $f(k_{t+1})$, siendo ambas de buen comportamiento. Finalmente, se denotará por $\delta \in (0,1)$ la tasa de depreciación del stock de capital.
+
+En esta economía es posible predecir que:
+
+\begin{enumerate}
+    \item[a] El tipo de interés de los bonos $r_t$ es menor que la productividad marginal del capital, $f'(k_{t+1})$.
+    \item[b] El tipo de interés de los bonos es mayor que la productividad marginal del capital.
+    \item[c] El tipo de interés de los bonos es igual que la productividad marginal del capital.
+    \item[d] Cualquier de las respuestas anteriores podría ser correcta.
+\end{enumerate}
+
+\seccion{Test 2011}
+
+\textbf{12.} Considere un individuo que vive dos periodos y cuya función de utilidad es la siguiente: $U(c_1, c_2) = \ln c_1 + \beta \ln c_2$, siendo $\beta = 0,6$, tipo de interés real nulo y una renta de 10.000 euros en cada periodo.
+
+\begin{enumerate}
+    \item[a] Dado que el tipo de interés real es nulo, el consumo óptimo en ambos periodos será el mismo e igual a 10.000 euros en cada uno.
+    \item[b] El consumo en el primer periodo será superior a 10.000 euros, mientras que el consumo en el segundo periodo será inferior a 10.000 euros.
+    \item[c] El consumo en el primer periodo será inferior a 10.000 euros, mientras que su consumo en el segundo periodo será superior a 10.000 euros.
+    
+    \item[d] El consumo total del individuo en ambos periodos será superior a 20.000 euros.
+\end{enumerate}
+
+\textbf{18.} En un contexto de un individuo que vive dos periodos, la existencia de restricciones a la liquidez que no le permiten pedir prestado implica que:
+
+\begin{enumerate}
+    \item[a] El individuo no puede ahorrar una cantidad positiva en el primer periodo.
+    \item[b] El consumo en cada periodo tiene que ser siempre igual a la renta que gana el individuo en cada uno de dichos periodos.
+    \item[c] La restricción a la liquidez no tiene ningún efecto si el consumo óptimo del individuo en el primer periodo es igual o inferior a la renta que gana en dicho periodo.
+    \item[d] El consumo del individuo en el segundo periodo será inferior a la renta que gana en dicho periodo.
+\end{enumerate}
+
+\seccion{Test 2009}
+\textbf{15}. Considere un consumidor en dos períodos con preferencias logarítmicas con la siguiente función de utilidad: $U(c_1, c_2) = \ln c_1 + \beta \ln c_2$, que decide óptimamente cuanto consumir, $c_1$ y $c_2$ y cuanto ahorrar $s$, a partir de dotaciones $y_1= y_2$, descontando el futuro a tasa $\beta = 0.95$ (Nota: $1/\beta = 1.053)$
+
+\begin{enumerate}
+    \item[a] Si el rendimiento del ahorro es $r=6\%$, el consumidor es prestatario.
+    \item[b] Si el rendimiento del ahorro es $r=3\%$, el consumidor es prestamista.
+    \item[c] Si el rendimiento del ahorro es $r=3\%$, la restricción de liquidez $s > -\alpha y_1$ es vinculante si la ratio $c_1^* / y_1 > 1 + \alpha$, siendo $c_1^*$ el consumo óptimo en el periodo 1 y $\alpha$ un número mayor que cero.
+    \item[d] Con preferencias logarítmicas, el consumidor es prestatario sólo si $y_2$ es estrictamente mayor que $y_1$.
+\end{enumerate}
+
+\seccion{Test 2006}
+
+\textbf{18.} Sea un modelo de decisión intertemporal entre consumo y ahorro, con riqueza inicial, bajo equilibrio parcial, en el que no existen restricciones financieras, es decir, el consumidor se enfrente al siguiente problema:
+
+
+\begin{ecuacion}
+    \underset{c_1, c_2, s}{\max } \, \ln c_1 + \beta \ln c_2
+\end{ecuacion}
+
+\begin{ecuacion}
+    \text{Sujeto a:} \; c_1 + s = y_1 + r A_0 \\
+    c_2 = y_2 + (1+r) (s + A_0) \\
+\end{ecuacion}
+donde $c_1$ y $c_2$ son el consumo del periodo 1 y del periodo 2, $s$ es el ahorro, $r$ es el tipo de interés real, $\beta$ es la tasa de descuento, $y_1$ e $y_2$ son las rentas exógenas de los periodos 1 y 2 respectivamente y $A_0$ es la riqueza inicial.
+
+Diga qué respuesta es VERDADERA:
+
+\begin{enumerate}
+    \item[a] El tipo de interés real tiene un efecto negativo sobre el consumo presente si la riqueza inicial más su rendimiento es mayor que el valor presente de la renta futura.
+    \item[b] El tipo de interés inicial tiene un efecto positivo sobre el consumo presente si la riqueza inicial más su rendimiento es mayor que el valor presente de la renta futura.
+    \item[c] El tipo de interés real tiene un efecto positivo sobre el consumo presente si la riqueza inicial más su rendimiento es menor que el valor presente de la renta futura.
+    \item[d] El tipo de interés real tiene un efecto negativo sobre el consumo presente si la riqueza inicial más su rendimiento es menor que la renta actual.
+\end{enumerate}
+
+\seccion{Test 2005}
+
+\textbf{19.} Sea el siguiente modelo de decisión intertemporal entre consumo y ahorro, bajo equilibrio parcial
+
+\begin{ecuacion}
+    \underset{ \{ c_1, c_2, s \} }{\max } \; \ln c_1 + \beta \ln c_2 
+\end{ecuacion}
+
+\begin{ecuacion}
+    \text{Sujeto a:} c_1 + s = y_1 \\
+    c_2 = y_2 + (1+r) s \\
+    s \geq -1
+\end{ecuacion}
+
+donde $c_1, c_2$ son el consumo del periodo 1 y del periodo, $s$ es el ahorro, $r$ es el tipo de interés real, $\beta$ es la tasa de descuento, $y_1$, $y_2$ son la renta exógena del periodo 1 y del periodo 2.
+
+Diga qué respuesta es FALSA:
+
+\begin{enumerate}
+    \item[a] $y_1 = 1$, $y_2 = 3$, $\beta = 0.9$, entonces, si el tipo de interés fuera del $5\%$, la restricción financiera ( $s \geq -1$ ) no sería efectiva.
+    \item[b] Si $y_1 = 1$, $y_2 = 3$ , $\beta = 0.9$, entonces, si el tipo de interés fuera del $8\%$, la restricción financiera ($s \geq -1 $) no sería efectiva.
+    \item[c] Si $y_1 = 1$, $y_2=3$, $\beta=0.9$, entonces, si el tipo de interés fuera del 2\%, la restricción financiera sería efectiva.
+    
+    \item[d] Si $y_1=1$, $y_2=3$, $\beta=0.9$, entonces, si el tipo de interés fuera del 10\%, la restricción financiera ($s \geq -1 $ ) no sería efectiva. 
+\end{enumerate}
+
+\seccion{Test 2004}
+
+\textbf{16.} Un consumidor en dos periodos decide óptimamente a partir de: 
+
+\begin{ecuacion}
+    u'(c_1) = \beta (1+r) u'(c_2), \; 0 < \beta < 1
+\end{ecuacion}
+dada su restricción presupuestaria intertemporal. Si $u(c) = \ln c$ y sus dotaciones son $y_1$ e $y_2$ sabemos que una restricción de crédito será vinculante siempre que:
+
+\begin{enumerate}
+    \item[a] $\beta (1+r) y_2 < y_1$
+    \item[b] $(1+r)y_2 > y_1 / \beta$
+    \item[c] $\beta(1+r)y_1 < y_2$
+    \item[d] $y_2 > y_1 (1+r)$
+\end{enumerate}
+
+\notas
+
+\textbf{2017}: \textbf{15}. B
+
+\textbf{2016}: \textbf{7.} D. La función de utilidad es lineal en la renta, por lo que el agente es neutral al riesgo, y el coeficiente de aversión relativa al riesgo sólo puede ser 0.
+
+\textbf{2015}: \textbf{16.} C. \textbf{17.} C
+
+\textbf{2013}: \textbf{17.} C. La inversión en $t+1$ será nula porque el agente no deriva utilidad de lo producido en $t+2$. \textbf{18.} B. En funciones de tipo Cobb-Douglas, la elasticidad de sustitución es constante e igual a 1. \textbf{19.} A. La clave de esta pregunta está en el hecho de que la inversión en activo real (capital) es reversible. Así, una unidad adicional de bono en $t=1$ reporta en $t=2$ una cantidad de $1+r$, y una unidad adicional invertida en capital en $t=1$ reporta en $t=2$ una cantidad $f'(k) + (1-\delta)$. Un agente optimizador invierte en capital hasta que el retorno se iguala con el de la inversión en el bono, por lo que se habrá de cumplir que $r = f'(k) - \delta$ y por tanto la productividad marginal del capital será mayor al tipo de interés del bono.
+
+\textbf{2011} \textbf{12}. B. 18. C
+
+\textbf{2009} \textbf{15}. C. Con preferencias logarítmicas y el valor de $\beta$, los consumos óptimos cumplen: $\frac{c_2}{c_1} = \frac{1+r}{1.053}$. La A y la B son falsas por este motivo. La de D es falsa porque un consumidor puede ser prestamista aun cumpliendose que $y_2 > y_1$, dado que el consumo óptimo depende del cociente anterior y no de las dotaciones. La C es cierta porque para que la restricción sea vinculante, debe cumplirse que $s = y_1 - c_1^* < -\alpha y_1$. Es decir, debe cumplirse que el consumo óptimo en $t=1$ implica una deuda superior a la que la restricción de liquidez permite tomar.
+
+\textbf{2006}: \textbf{18}. B. Derivando el consumo óptimo por periodo mediante el método de Lagrange, se deduce la expresión: $\pdv{c_1}{r} = \frac{A_0}{1+\beta} - \frac{y_2}{1+\beta}\cdot \frac{1}{(1+r)^2}$. Reordenando y extrayendo factores, tenemos que $\pdv{c_1}{r} > 0 \iff (1+r)A_0 > \frac{y_2}{(1+r)}$.
+
+\textbf{2005}: \textbf{19}. C. (En las soluciones, que no son las oficiales del ministerio, se indica incorrectamente que la respuesta correcta es la A) En el óptimo se cumple que $c_2 = (1+r) \beta c_1$. Sustituyendo en la restricción intertemporal, tenemos que $c_ 1 = \frac{ y_1 + \frac{y_2}{1+r}}{2+ \beta}$. Sustituyendo para todos los valores posibles, en todos ellos se cumple que $c_1^* > y_1$, es decir, que el agente es prestatario. Sin embargo, para que la restricción financiera sera efectiva debe cumplirse que $y_1 - c_1 = s > -1 \iff y_1+1>c_1$. Lo cual no sucede en ningún caso, y contradice la respuesta C, según la cual dado $r=2\%$ la restricción financiera sí es efectiva.
+
+\textbf{2004}: \textbf{16.} C. Entendiendo que el enunciado impone una restricción tal que $s > 0$, se cumple que $y_1 - c_1^* < 0$ si $(1+\beta)(1+r) y_1 < y_2$, expresión derivable de $c_1^* = \frac{y_1 + \frac{y_2}{1+r}}{1+\beta}$.
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+    \item adjustment costs
+    \item bubbles
+    \item calculus of variations
+    \item correspondence principle
+    \item dynamic programming and Markov decision processes
+    \item elasticity of intertemporal substitution
+    \item Euler equations
+    \item golden rule
+    \item government budget constraints
+    \item Hamiltonian
+    \item investment (neoclassical)
+    \item intertemporal choice
+    \item intertemporal equilibrium and efficiency
+    \item intergenerational models
+    \item overlapping generations model of general equilibrium
+    \item Pontryagin principle of optimality
+    \item Ramsey model
+    \item speculative bubbles
+    \item sunspot equilibrium
+    \item time consistency of monetary and fiscal policy
+    \item time preference
+    \item transversality condition
+    \item transversality condition and dynamic economic behavior
+\end{itemize}
+
+Adda, J.; Cooper, R. \textit{Dynamic Economics. Quantitative Methods and Applications}
+
+Barro, R; Sala-i-Martín, X., \text{Economic Growth}. 2a Ed
+
+De la Fuente, A. Mathematical Methods and Models for Economists. Ch. 12 Introduction to dynamic optimization
+
+Dorfman, R., \textit{An Economic Interpretation of Optimal Control Theory}. American Economic Review
+
+Eklund, J. \textit{Theories of Investment: A Theoretical Review with Empirical Applications} (2013) -- En carpeta de tema 3A-33 Inversión
+
+Halevy, Y. \textit{Time Consistency: stationarity and time invariance}. Econometrica (2015)
+
+Kamihigashi, T. (2006) \textit{Transversality Conditions and Dynamic Economic Behavior} \url{https://www.rieb.kobe-u.ac.jp/academic/ra/dp/English/dp180.pdf} 
+
+MWG. Ch 20 - Equilibrium and time
+
+Kreps - Ch. 4 \textit{Buen apéndice con métodos matemáticos muy concisos}
+
+
+
+
+
+Tirole, J. Asset Bubbles and Overlapping Generations
+\textit{Leer introducción. Una de las aplicaciones del modelo de generaciones solapadas más influyentes y citadas.}
+
+Weber, E. J. \textit{Optimal control theory for undergraduates} (2005) -- En carpeta de tema
+
+Weil, P. \textit{Overlapping Generations: The First Jubilee} (2008) Journal of Economic Perspectives - Fall 2008 -- En carpeta del tema
+
+\end{document}

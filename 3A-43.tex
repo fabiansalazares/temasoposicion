@@ -1,0 +1,1349 @@
+\documentclass{nuevotema}
+
+\tema{3A-43}
+\titulo{Teorías del crecimiento económico (II). Modelos de crecimiento endógeno: rendimientos crecientes, capital humano e innovación tecnológica}
+
+\begin{document}
+
+\ideaclave
+
+\begin{itemize}
+	\item ¿Cómo se modeliza el crecimiento económico?
+	\item ¿Qué caracteriza al modelo neoclásico de crecimiento?
+	\item ¿Qué diferencia a los modelos de crecimiento endógeno del modelo neoclásico?
+	\item ¿Cuáles son las diferentes formas de modelizar el crecimiento endógeno?
+	\item ¿Qué caracteriza a cada una de ellas?
+	\item ¿Son capaces de replicar los hechos estilizados?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Evolución histórica de la renta per cápita
+			\3 Causas próximas y fundamentales
+			\3 Modelo neoclásico de crecimiento
+			\3 Crecimiento endógeno
+		\2 Objeto
+			\3 ¿Qué diferencias entre neoclásico y de crecimiento endógeno?
+			\3 ¿Qué formas de modelizar el avance tecnológico?
+			\3 ¿Qué caracteriza a cada enfoque?
+			\3 ¿Cómo replican hechos estilizados?
+		\2 Estructura
+			\3 Modelos de acumulación de factores
+			\3 Modelos de cambio tecnológico
+	\1 \marcar{Modelos de acumulación de factores}
+		\2 Idea clave
+			\3 Basados en modelo neoclásico
+			\3 Diferencia fundamental con modelo neoclásico
+			\3 Funciones de producción
+			\3 Rendimientos no decrecientes del capital
+		\2 Modelo AK básico
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+		\2 AK con convergencia
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+		\2 Learning by doing
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+		\2 Spill-over tecnológicos
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Implicaciones
+		\2 Capital humano: un sector
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+		\2 Capital humano: dos sectores
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+		\2 Modelos de gasto público
+			\3 Crecimiento endógeno con gasto público improductivo
+			\3 Crecimiento endógeno con gasto público productivo
+	\1 \marcar{Modelos de cambio tecnológico}
+		\2 Idea clave
+			\3 Modelos de acumulación de factores
+			\3 Progreso tecnológico
+		\2 Variedad de producto
+			\3 Idea clave
+			\3 Formulación
+			\3 Formulación
+			\3 Implicaciones
+			\3 Variantes
+			\3 Grossman y Helpman (1990)
+		\2 Aumento de calidad o crecimiento schumpeteriano
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+		\2 Valoración
+			\3 Ahorro frente a innovación
+			\3 Efectos escala
+			\3 Análisis de política económica
+			\3 Contabilidad de crecimiento
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Modelos de acumulación de factores
+			\3 Modelos de cambio tecnológico
+		\2 Idea final
+			\3 Importancia del contexto de modelización
+			\3 Relaciones con otras ciencias sociales
+			\3 Valoración empírica
+			\3 Causas profundas del crecimiento económico
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Evolución histórica de la renta per cápita
+				\4 A lo largo de historia humana
+				\4[] PIBpc prácticamente estable
+				\4[] Muy similar en todo el mundo
+				\4 Divergencia global
+				\4[] A partir del año 1000 d.C
+				\4[] $\to$ Según algunos autores
+				\4[] A partir de 1800 d.C.
+				\4[] $\to$ Según toda la literatura
+				\4[] Europa occidental + satélites
+				\4[] $\to$ Comienzan a divergir
+				\4[] $\then$ Crecimiento económico sostenido
+				\4[] $\then$ Diferencias de renta actuales
+			\3 Causas próximas y fundamentales
+				\4 Causas próximas:
+				\4[] Factores con influencia directa en crecimiento
+				\4[] $\to$ Acumulación de capital físico
+				\4[] $\to$ Crecimiento demográfico
+				\4[] $\to$ Avances tecnológicos
+				\4 Causas fundamentales:
+				\4[] Causan causas próximas
+				\4[] $\to$ Instituciones
+				\4[] $\to$ Preferencias
+				\4[] $\to$ Cultura
+				\4[] $\to$ Geografía física
+				\4[] $\to$ Azar
+				\4 Objetivo de teoría del crecimiento
+				\4[] Entender relación entre
+				\4[] $\to$ Crecimiento y causas próximas
+				\4[] $\to$ Causas próximas y fundamentales
+				\4[] $\then$ ¿Por qué unos países crecen y otros no?
+			\3 Modelo neoclásico de crecimiento
+				\4 Herramienta básica para:
+				\4[] $\to$ Relacionar crecimiento y causas próximas
+				\4[] $\to$ Contabilizar contribuciones al crecimiento
+				\4[] $\to$ Caracterizar convergencia y divergencia
+				\4[] $\to$ Valorar optimalidad de crecimiento
+				\4 Senda de crecimiento
+				\4[] Converge hacia estado estacionario
+				\4[] $\to$ Crecimiento pc. en EE es proceso exógeno
+				\4[] $\to$ \% de crecimiento no es proceso económico
+				\4[] $\to$ \% de crecimiento no depende de pol. econ.
+				\4[] $\then$ Análisis l/p ajeno a ciencia económica
+			\3 Crecimiento endógeno
+				\4 Procesos económicos relevantes a crec. de l/p
+				\4 Múltiples enfoques de modelización
+				\4[] Dinámicas que dependen de acumulación K y L
+				\4[] Variedades de producto
+				\4[] Procesos competitivos
+				\4[] ...
+				\4 Crecimiento es interno a sistema económico
+				\4[] No hace falta postular procesos exógenos
+		\2 Objeto
+			\3 ¿Qué diferencias entre neoclásico y de crecimiento endógeno?
+			\3 ¿Qué formas de modelizar el avance tecnológico?
+			\3 ¿Qué caracteriza a cada enfoque?
+			\3 ¿Cómo replican hechos estilizados?
+		\2 Estructura
+			\3 Modelos de acumulación de factores
+			\3 Modelos de cambio tecnológico
+	\1 \marcar{Modelos de acumulación de factores}
+		\2 Idea clave
+			\3 Basados en modelo neoclásico
+				\4 Mecanismo similar a neoclásico
+				\4[] Acumulación de K
+				\4[] $\to$ Permite crecimiento sostenido
+				\4[] $\then$ Acumulación es factor clave
+			\3 Diferencia fundamental con modelo neoclásico
+				\4 Acumulación de factores basta para mantener crecimiento
+				\4 No es necesario cambio tecnológico exógeno
+			\3 Funciones de producción
+				\4 Cambios en formas funcionales
+				\4[] Relajar una condición de Inada
+				\4[] $\lim_{K \to \infty} \text{PMgK} \neq 0$
+				\4[] $\then$ Producto medio del capital no tiende a 0
+				\4[] $\then$ PMgK puede mantenerse superior a depreciación
+			\3 Rendimientos no decrecientes del capital
+				\4 K no es cada vez menos productivo
+				\4[] Efectos negativos sobre Kpcápita  de:
+				\4[] -- Depreciación
+				\4[] -- Crecimiento de la población
+				\4[] $\to$ No consiguen compensar acumulación de K
+				\4[] $\then$ K por trabajador sigue creciendo indefinidamente
+				\4[] $\then$ Diferentes formas de fundamentarlo
+		\2 Modelo AK básico
+			\3 Idea clave
+				\4 von Neumann (1939), Knight (1944)\footnote{Según Barro y Sala-i-Martin, pág. 63.}
+				\4 Sin rendimientos decrecientes del K
+				\4[] Interpretable como K en sentido amplio
+				\4[] Incluye capital humano
+				\4 Si $\Delta \%$ inversión pc. > $\Delta \%$ población y depreciación
+				\4[]$\to$ $\Delta \%$ pc. constante sin avance tecnológico
+			\3 Formulación
+				\4 Función de producción
+				\4[] Agregada:
+				\4[] \fbox{$Y(K) = A K$}
+				\4[] $A$: constante $\then$ Sin progreso tecnológico
+				\4[] Per cápita
+				\4[] $\frac{Y}{L} \equiv f(k) =  Ak$
+				\4 Producto medio del capital
+				\4[] $\frac{y}{k} = A$
+				\4[] $\then \frac{\dot{k}}{k} = \frac{\dot{y}}{y}$
+				\4 Crecimiento de capital y producto per cápita
+				\4[] \fbox{$\frac{\dot{y}}{y} = \frac{\dot{k}}{k} = sA - (\delta + n)$}
+				\4[] Si $sA > \delta + n $:
+				\4[] $\to$ No hay estado estacionario
+				\4[] $\then$ Crecimiento endógeno
+				\4 Estado estacionario
+				\4[] $\dot{k} = 0 \iff sA = \delta + n $
+				\4[] $sA > \delta + n \then \frac{\dot{k}}{k} > 0$
+				\4[] $\then$ $y$, $k$ no convergen
+				\4[] \grafica{ak}
+			\3 Implicaciones
+				\4 Crecimiento per cápita de largo plazo
+				\4[] Aunque no haya progreso tecnológico
+				\4[] $\to$ Aunque $A$ sea constante/$g=0$
+				\4 PEconómica efectiva sobre tasa de crecimiento
+				\4[] Tasa de crecimiento depende de $s$
+				\4[] $\to$ Gobierno puede afectar
+				\4[] En Solow-Swann, PEconómica inefectiva
+				\4 Avances tecnológicos puntuales relevantes
+				\4[] Aumento discreto de A
+				\4[] $\to$ Efecto permanente sobre output per cápita
+				\4[] En Solow-Swann, convergencia hacia mismo $k^*$
+				\4 Sin $\beta$-convergencia
+				\4[] Economías con menos output pc. no crecen más
+				\4[] $\to$ Ni siquiera aunque tengan los mismo parámetros
+				\4[] Condiciones iniciales $k(0)$, $y(k(0))$ son relevantes
+				\4[] $\to$ Para determinar output final
+				\4[] $\then$ Economías no acaban convergiendo en renta pc.
+				\4[] $\then$ Sin convergencia absoluta ni condicional
+				\4 Sin transición hacia estado estacionario
+				\4[] Tasa de crecimiento de $k$ e $y$ cte. desde inicio
+				\4[] PMgK, $\frac{y}{k}$ son constantes
+				\4[] $\to$ Tasa de crecimiento constante de inmediato
+		\2 AK con convergencia
+			\3 Idea clave
+				\4 Jones y Manuelli (1990)
+				\4[] En ocasiones llamado ``\textit{sobelow}''
+				\4[] $\to$ Por Solow + Rebelo (1991)
+				\4 Mostrar condiciones necesarias para
+				\4[] $\to$ Crecimiento endógeno
+				\4[] $\to$ Rendimientos decrecientes del capital
+				\4[] $\to$ Convergencia condicional
+				\4 Violación de condición de Inada
+				\4[] Productividad marginal de K
+				\4[] $\to$ Decreciente
+				\4[] $\to$ Pero tiende a valor distinto a cero
+			\3 Formulación
+				\4 Función de producción
+				\4[] Agregada:
+				\4[] \fbox{$F(K,L) = AK + BK^\alpha L^{1-\alpha}$} \quad ($0 < \alpha < 1$)
+				\4[] Per cápita
+				\4[] $f(k) = Ak + Bk^\alpha$
+				\4 Producto medio del capital
+				\4[] $\frac{y}{k} = A + Bk^{\alpha-1}$
+				\4[] $\lim_{k\to \infty}\frac{y}{k} = A$
+				\4[] $\then$ $k \to \infty \then \frac{\dot{y}}{y} = \frac{\dot{k}}{k}$
+				\4 Crecimiento de capital y producto per cápita
+				\4[] \fbox{$\frac{\dot{k}}{k} = s \left( A+Bk^{\alpha-1} \right) - (n+\delta)$}
+				\4 Si $sA > n+\delta$:
+				\4[] Siempre se ahorra más que cae K per cápita
+				\4[] Crecimiento endógeno
+				\4[] No hay estado estacionario
+				\4[] Tasa de crec. decreciente hasta llegar a $sA-n+\delta$
+				\4[] \grafica{jonesmanuelli}
+				\4 Si $sA < n+\delta$:
+				\4[] Sin crecimiento endógeno
+				\4[] Convergencia a estado estacionario
+				\4[] $\to$ Mismo resultado que Solow
+			\3 Implicaciones
+				\4 Incumplimiento de condición de Inada
+				\4[] $ \lim_{k \to \infty} \pdv{F}{K} = A \neq 0$
+				\4[] $\then$ Rendimientos de K adicional no desaparecen
+				\4[] Condiciones de Inada son factor clave para crec. endógeno
+				\4[] $\then$ Posible crecimiento crec. endógeno con R$\downarrow$E
+				\4 $\beta$-Convergencia
+				\4[] Economías con:
+				\4[] -- Mismos parámetros $s$, $A$, $\alpha$
+				\4[] -- Diferentes condiciones iniciales
+				\4[] $\to$ País con $k(0)$ inferior crece más rápido
+				\4[] $\to$ Tienden a igualar tasa de crecimiento
+				\4[] $\then$ Sí tiene lugar $\beta$-convergencia
+				\4[] $\to$ Nivel de output no converge por diferencias $k(0)$
+				\4[] Condiciones de Inada no son necesarias para $\beta$-convergencia
+		\2 Learning by doing
+			\3 Idea clave
+				\4 Contexto
+				\4[] Hecho empírico:
+				\4[] En EEUU y IIGM, otros posteriores
+				\4[] $\to$ Producción de aviones mejora productividad
+				\4[] $\then$ Enorme $\uparrow$ productividad al final de IIGM
+				\4[] Producción como motor de crecimiento a l/p
+				\4[] $\to$ Producción implica experiencia
+				\4[] $\to$ Experiencia aumenta productividad
+				\4[] $\then$ ¿Cómo relacionar experiencia y tecnología?
+				\4 Objetivos
+				\4[] Caracterizar efecto de externalidades tecnológicas
+				\4[] Representar efectos de aprendizaje sobre productividad
+				\4 Resultados
+				\4[] Autores
+				\4[] \underline{Arrow (1962)},
+				\4[] Frankel (1962), Seshinski (1967), Griliches (1979),
+				\4[] Capital como proxy de experiencia
+				\4[] $\to$ Parte de producción se ahorra
+				\4[] $\to$ Más producción implica más capital
+				\4[] $\then$ Más producción es más experiencia
+				\4[] Capital como proxy de experiencia
+				\4[] $\to$ Parte de producción se ahorra
+				\4[] $\then$ Más producción implica más capital
+				\4[] $\then$ Más capital cuando se ha producido más
+				\4[] $\then$ Más capital cuando hay más experiencia
+				\4[] PTF dependiente de capital total
+				\4[] $\to$ Idea original de Arrow y Seshinki (1967)
+			\3 Formulación
+				\4 Asociada a modelo de Lucas
+				\4 Función de producción
+				\4[] $Y=A \cdot K^\alpha L^{1-\alpha} E^\eta$
+				\4 Donde:
+				\4[] E: representa externalidad tecnológica
+				\4[] $\eta$: elasticidad del output a la externalidad
+				\4 Externalidad crece con capital per cápita
+				\4[] Crecimiento de población mayor a inversión per cápita
+				\4[] $\to$ Caída de capital per cápita
+				\4[] $\then$ Menor externalidad
+				\4[] \fbox{$E^\eta = \left( \frac{K}{L} \right)$}
+				\4 Función de producción
+				\4[] $Y=A K^\alpha L^{1-\alpha} \left( \frac{K}{L} \right)^\eta = A \cdot K^{\alpha + \eta} L^{1-\alpha - \eta}$
+				\4 Producto per cápita
+				\4[] $y (k) \equiv Y(K,L) \frac{1}{L} = A k^{\alpha+\eta}$
+				\4 Crecimiento del capital per cápita
+				\4[] $\frac{\dot{k}}{k} = sAk^{\alpha+\eta-1} - (\delta+n)$
+				\4 Con $\alpha + \eta < 1$
+				\4[] Similar a modelo de Solow
+				\4[] Hay externalidad positiva por invertir en capital
+				\4[] $\to$ Pero no es suficiente para que PMgK $\nleftarrow 0$
+				\4[] $\then$ Necesario crecimiento exógeno para crecer en EE
+				\4[] $\then$ Hay convergencia
+				\4[] $\then$ Hay estado estacionario
+				\4 Con $\alpha + \eta = 1$
+				\4[] $\frac{\dot{k}}{k} = sAk - (\delta+n)$
+				\4[] $\to$ Si $sAk > (\delta + n)$
+				\4[] $\then$ Crecimiento endógeno
+				\4[] $\then$ Aumento de ahorro aumenta tasa de crecimiento $k$ e $y$
+				\4[] $\then$ Hay margen para política económica sobre ahorro
+				\4[] Similar a modelo AK
+				\4[] Hay externalidad positiva por invertir en capital
+				\4[] Hay margen para política económica
+				\4[] $\to$ Aumentar tasa de ahorro
+				\4 Con $\alpha + \eta > 1$
+				\4[] $\frac{\dot{k}}{k} = sAk^{\alpha+\eta-1} - (\delta+n)$
+				\4[] Signo de $\frac{\dot{k}}{k}$ depende de $k$
+				\4[] Con $k$ bajo
+				\4[] $\to$ $sAk^{\alpha+\eta-1} < (\delta+n)$
+				\4[] $\then$ $ \frac{\dot{k}}{k} < 0$
+				\4[] $\then$ Cada vez menor capital y renta per cápita
+				\4[] con $k$ elevado
+				\4[] $\to$ $sAk^{\alpha+\eta-1} > (\delta+n)$
+				\4[] $\then$ $\frac{\dot{k}}{k} < 0$
+				\4[] $\then$ Cada vez mayor capital y crecimiento
+				\4[] Doble margen de política económica
+				\4[] $\then$ Aumentar ahorro
+				\4[] $\then$ Aumentar $k$ vía inversión autónoma
+				\4[] Representación gráfica
+				\4[] \grafica{lucasexternalidadgrande}
+			\3 Implicaciones
+				\4 Crecimiento positivo de l/p posible
+				\4[] Sin progreso tecnológico alguno
+				\4[] Necesarios:
+				\4[] $\to$ Ahorro suficientemente elevado
+				\4[] $\to$ Capital per-cápita suficientemente elevado
+				\4 Equilibrio ineficiente
+				\4[] Formulación anterior: ahorro fijo
+				\4[] Modelos originales:
+				\4[] $\to$ Consumo resultado de optimización
+				\4[] ¿Agentes tienen en cuenta externalidad?
+				\4[] ¿Ahorran e invierten capital óptimo?
+				\4[] $\to$ No, por diferente PMgK privado y social
+				\4[] $\then$ Solución centralizada $\neq$ competitiva
+				\4[] Margen de política económica:
+				\4[] $\to$ Planificador decide inversión de empresas
+				\4[] $\to$ Gobierno incentiva fiscalmente inversión
+		\2 Spill-over tecnológicos
+			\3 Idea clave
+				\4 Contexto
+				\4[] Marshall (1920) y anteriores
+				\4[] $\to$ Economías de escala externas a la empresa
+				\4[] $\to$ Economías de escala internas a la industria
+				\4[] $\then$ Reducción de coste medio con más producción
+				\4[] $\then$ Curvas de oferta decrecientes
+				\4[] Aumento del número de empresas y del capital total
+				\4[] $\to$ Mayor densidad en el mercado de trabajo
+				\4[] $\to$ Mayor intercambio de ideas
+				\4[] $\to$ Mayor experiencia de empresas
+				\4 Objetivos
+				\4[] Caracterizar efecto de spill-over entre empresas
+				\4[] $\to$ Sobre output
+				\4[] Racionalizar progreso tecnológico
+				\4[] $\to$ En términos de interacciones entre empresas
+				\4[] Valorar papel de tamaño del mercado
+				\4[] $\to$ En aparición de spill-overs tecnológicos
+				\4 Resultados
+				\4[] Spill-over tecnológicos
+				\4[] $\to$ Romer (1986)
+				\4[] $\to$ Múltiples empresas idénticas
+				\4[] Capital privado tiene rendimientos decrecientes
+				\4[] Inversión privada provoca spill-overs
+				\4[] $\to$ Todas las empresas ganan productividad
+				\4[] $\then$ Externalidad positiva
+			\3 Formulación
+				\4 Asociada a modelo de Romer (1986)
+				\4 Externalidad
+				\4[] $E^\eta = K^\eta = \left( k \cdot L \right)^\eta$
+				\4 Función de producción
+				\4[] $Y=A K^\alpha L^{1-\alpha} K^\eta = A K^\alpha L^{1-\alpha} \left( k \cdot L \right)^\eta $
+				\4 Producto per cápita
+				\4[] $\frac{Y}{L} \equiv y =  A k^\alpha (k \cdot L)^\eta = A k^{\alpha+\eta}L^\eta $
+				\4 Crecimiento del capital per-cápita
+				\4[] $\frac{\dot{k}}{k} = s A k^{\alpha+\eta - 1} - (\delta + n)$
+				\4 Con $\alpha + \eta < 1$
+				\4[] Similar a modelo de Solo
+				\4[] Pero curva $sAk^{\alpha+\eta-1} L^\eta$ se desplaza con $\Delta L$
+				\4[] $\to$ Aumenta capital per cápita con aumento de L
+				\4[] $\then$ Porque capital total aumenta output
+				\4[] Representación gráfica
+				\4[] \grafica{romer1986decreciente}
+				\4 Con $\alpha + \eta > 1$
+				\4[] Similar a modelo de Lucas de LbD
+				\4[] $\to$ Pero curva $sAk^{\alpha+\eta-1} L^\eta$ se desplaza con $\Delta L$
+			\3 Implicaciones
+				\4 Efecto escala posible
+				\4[] Crecimiento depende de tamaño de población
+				\4[] $\to$ No sólo a tasa de crecimiento de población
+				\4[] $\then$ Economías más grandes crecen más
+				\4[] Hecho empírico: más población
+				\4 Sin convergencia
+				\4[] Dadas cond. iniciales cualquiera:
+				\4[] $\to$ País con $k(0)$ menor no crece más rápido\footnote{De hecho, en el modelo con $A_i = K$ la tasa de crecimiento depende del nivel de L. Un país con una tasa de crecimiento la población mayor tenderá a divergir (y no a converger) desde el momento en que su población sea superior a la del otro.}
+				\4[] $\to$ Producto pc. no tiende a mismo nivel
+				\4[] $\then$ Condiciones iniciales son relevantes
+, más productividad
+%			\3 Formulación
+%				\4 Función de producción
+%				\4[] Empresa individual:
+%				\4[] \fbox{$Y_i = F_i(K_i, A_i L_i)$ h.d.g. 1}
+%				\4[] $\to$ $Y_i = L_i F(k_i, A_i) = L_i \cdot y$
+%				\4[] Agregada:
+%				\4[] (asumiendo $k_i=k$, $y_i = y$ $\forall \, i$, $K = k \cdot L)$
+%				\4[] $Y = L \cdot F(k, A_i)$
+%				\4 \underline{Spill-over con $A=K$ (efecto escala):}
+%				\4[] $Y_i = F(K_i, K L_i)$
+%				\4[] \fbox{$Y = L \cdot F(k, K)$}
+%				\4[] $\to$ $y=F(k,K)$
+%				\4[] Producto medio del capital:
+%				\4[] $\frac{y}{k} = F \left( \frac{k}{k}, \frac{K}{k} \right)  = f\left( \frac{K}{k} %\right) = f(L)$
+%				\4[] $\then$ $\frac{\dot{k}}{k} = \frac{\dot{y}}{y}$
+%				\4 Crecimiento de capital y producto per cápita
+%				\4[] $\frac{\dot{y}}{y} = \frac{\dot{k}}{k} = s f(L) - (\delta+n)$
+%				\4 Ejemplo con función Cobb-Douglas
+%				\4[] $Y_i = F(K_i, K \cdot L_i) =  K_i^\alpha (K L_i)^{1-\alpha}$
+%				\4[] $\to$ $Y=L\cdot k^\alpha K^{1-\alpha}$
+%				\4[] $\to$ $y = \frac{Y}{L} = k^\alpha K^{1-\alpha}$
+%				\4[] Producto medio del capital
+%				\4[] $\frac{y}{k} = \left( \frac{K}{k} \right)^{1-\alpha} = L^{1-\alpha}$
+%				\4[] Crecimiento de capital y producto per cápita
+%				\4[] \fbox{$\frac{\dot{y}}{y} = \frac{\dot{k}}{k} = s L^{1-\alpha} - (\delta+n)$}
+%				\4 Estado estacionario
+%				\4[] Si $L$ no es constante (depende de $t$):
+%				\4[] $\to$ $\frac{\dot{y}}{y}$ y $\frac{\dot{k}}{k}$ dependen de $t$
+%				\4[] $\then$ No hay estado estacionario
+%				\4 Ejemplo más sencillo con Cobb-Douglas:
+%				\4[] Producto per cápita general:
+%				\4[] $y=Ak^\alpha$
+%				\4[] Sustituyendo $A=K$
+%				\4[] $y=K\cdot k^\alpha \then y=L\cdot k \cdot k^\alpha$
+%				\4[] Dinámica del capital
+%				\4[] $\dot{k} = s L k^{1+\alpha} -(\delta+n)k$
+%				\4[] \fbox{$\frac{\dot{k}}{k} = s L k^\alpha - (\delta+n)$}
+%				\4[] $\to$ $\frac{\dot{k}}{k} = 0$ $\then$ \fbox{$sL k^\alpha = (\delta+n)$}
+%				\4[] $\to$ Capital depende de población total L
+%				\4[] $\then$ Efecto escala
+%				\4[] $\then$ EE no es estable si L depende del tiempo
+%				\4 \underline{Spill-over con $A=\frac{K}{L}$ (sin efecto escala)}
+%				\4[] \fbox{$Y_i = F\left( K_i, \frac{K}{L} L_i \right)$}
+%				\4[] $Y = L \cdot F \left( k, \frac{K}{L} \right)$
+%				\4[] $\to$ $y = F\left( k, \frac{K}{L} \right) = F\left( k, \frac{k\cdot L}{L} \right%) = F(k)$
+%				\4 Producto medio del capital
+%				\4[] $\frac{y}{k} = F\left( \frac{k}{k} \right) = f(1)$
+%				\4[] Ejemplo con función Cobb-Douglas
+%				\4[] $Y_i = F\left( K_i, \frac{K}{L} \cdot L_i \right) = A K_i^\alpha \left( \frac{K}%{L} L_i \right)^{1-\alpha}$
+%				\4[] $\to$ $Y = L A k^\alpha \left( \frac{K}{L} \right)^{1-\alpha}$
+%				\4[] $\to$ $y = Ak^\alpha \left( \frac{k\cdot L}{L} \right)^{1-\alpha} = A k^\alpha k% ^{1-\alpha} = A k$
+%				\4 Producto medio del capital
+%				\4[] $\frac{y}{k} = A$
+%				\4 Crecimiento de capital y producto per cápita
+%				\4[] \fbox{$\frac{\dot{y}}{y} = \frac{\dot{k}}{k} = sA - (\delta+n)$}
+%				\4[] $\to$ Idéntico a modelo AK
+			\3 Implicaciones
+				\4 Crecimiento positivo de largo plazo
+				\4[] Sin progreso tecnológico alguno
+				\4 Efecto escala posible
+				\4[] Crecimiento depende de tamaño de población
+				\4[] $\to$ No sólo a tasa de crecimiento de población
+				\4[] $\then$ Economías más grandes crecen más
+				\4[] Hecho empírico: más población, más productividad
+				\4 Sin convergencia
+				\4[] Dadas cond. iniciales cualquiera:
+				\4[] $\to$ País con $k(0)$ menor no crece más rápido\footnote{De hecho, en el modelo con $A_i = K$ la tasa de crecimiento depende del nivel de L. Un país con una tasa de crecimiento la población mayor tenderá a divergir (y no a converger) desde el momento en que su población sea superior a la del otro.}
+				\4[] $\to$ Producto pc. no tiende a mismo nivel
+				\4[] $\then$ Condiciones iniciales son relevantes
+				\4 Equilibrio ineficiente
+				\4[] Formulación anterior: ahorro fijo
+				\4[] Modelos originales:
+				\4[] $\to$ Consumo resultado de optimización
+				\4[] ¿Agentes tienen en cuenta externalidad?
+				\4[] ¿Ahorran e invierten capital óptimo?
+				\4[] $\to$ No, por diferente PMgK privado y social
+				\4[] $\then$ Solución centralizada $\neq$ competitiva
+				\4[] Margen de política económica:
+				\4[] $\to$ Planificador decide inversión de empresas
+				\4[] $\to$ Gobierno incentiva fiscalmente inversión
+		\2 Capital humano: un sector
+			\3 Idea clave
+				\4 Marco de análisis
+				\4[] Modelo neoclásico aumentado: capital humano
+				\4 Diferente enfoque a externalidades de K
+				\4[] Endogeneizar crecimiento tecnológico
+				\4[] Resultado de acumulación de tercer factor
+				\4[] $\to$ Capital humano
+				\4 Diferentes enfoques:
+				\4[] ¿Cómo se produce el capital humano?
+				\4[] Un sector:
+				\4[] $\to$ Con mismo proceso que output general
+				\4[] Dos sectores:
+				\4[] $\to$ Con proceso diferenciado
+				\4 Dinámica del capital con un sector
+				\4[] Inversión en capital humano y fijo
+				\4[] $\to$ Detrayendo producción de consumo
+				\4[] Depreciación del capital
+				\4[] $\to$ Tasas diferenciadas para K y H
+				\4[] Distribución de la inversión
+				\4[] $\to$ Igualar rendimientos respectivos en K y H
+				\4[] $\then$ Ratio capital físico--humano constante
+				\4[] Junto con función h.d.g.1 en K y H
+				\4[] $\to$ Equivalente a AK
+			\3 Formulación
+				\4 Función de producción
+				\4[] $Y = F(K,H) = AK^\alpha H^{1-\alpha}$, $0 < \alpha < 1$
+				\4[] En términos de capital humano por capital físico
+				\4[] $\to$ $Y = K \cdot A \left( \frac{H}{K} \right)^{1-\alpha}$
+				\4 Crecimiento del capital físico y humano
+				\4[] \fbox{$\dot{K} + \dot{H} = s A K^\alpha H^{1-\alpha} - \delta_K K - \delta_H H$}
+				\4 Distribución de la inversión\footnote{Asumiendo que el ahorro se distribuye entre capital humano y físico de la forma más eficiente en términos de output producido.}
+				\4[] $r_K = F_K - \delta_K = F_H - \delta_H = r_H$
+				\4[] $\to$ $\alpha \frac{Y}{K} - \delta_K = (1-\alpha) \frac{Y}{H} - \delta_H$
+				\4[] $\to$ $Y \left(  \frac{\alpha}{K} - \frac{1-\alpha}{H} \right) = \delta_K - \delta_H$
+				\4[] $\then$ Ratio $\frac{K}{H}$ constante
+				\4[] Si mismas tasas de depreciación $\delta_K = \delta_H$
+				\4[] $\to$ \fbox{$\frac{H}{K} = \frac{1-\alpha}{\alpha}$}
+				\4[] $\then$ $Y = K \cdot A \left( \frac{1-\alpha}{\alpha} \right)^{1-\alpha} = A K$
+			\3 Implicaciones
+				\4 Capital humano como sustitutivo de K físico
+				\4[] Conclusiones cualitativas inalteradas
+				\4[] $\to$ Simple cambio en elasticidades
+				\4[] $\to$ Asimilable a neoclásico o AK
+				\4[] Conclusiones cuantitativas diferentes
+				\4[] $\to$ P.ej.: Mankiw, Romer y Weil (1992)
+				\4[] $\to$ Incluyendo L creciente a tasa exógena
+				\4[] $\to$ Explicar convergencia lenta observada
+				\4[] $\to$ Fundamentar baja participación del trabajo
+				\4[] $\to$ Capital humano como factor a remunerar
+				\4 Elasticidades de factores
+				\4[] Determinan rendimientos a escala
+				\4[] $\to$ Posible crec. endógeno o no
+				\4 Inversión irreversible entre capital físico y humano
+				\4[] Modelo gana interés si consideramos:
+				\4[] $\to$ No es posible convertir K en H y vv.
+				\4[] $\to$ $\dot{I}_K \geq 0$, $\dot{I}_H \geq 0$
+				\4[] ¿Qué sucede si $H(0)$ y $K(0)$ no cumplen ratio $\frac{1-\alpha}{\alpha}$
+				\4[] $\to$ Existe transición al eq. estacionario $\frac{K^*}{H^*}$
+				\4[] $\to$ Capital más abundante se deja depreciar
+				\4[] $\to$ PMg de capital escaso es más elevada
+				\4[] $\to$ Crecimiento de output alto hasta $\frac{K^*}{H^*}$
+				\4[] \grafica{inversionirreversible}
+				\4[] Guerra:
+				\4[] $\to$ Destrucción de capital físico
+				\4[] $\then$ Fuerte inversión en K post-guerra
+				\4[] $\then$ Crecimiento rápido post-guerra
+				\4[] Epidemia masiva:
+				\4[] $\to$ Destrucción de capital humano
+				\4[] $\then$ Fuerte inversión en H
+				\4[] Razonable asumir $H$ menos ajustable
+				\4[] $\to$ Más costoso acumular capital humano
+				\4[] $\to$ Capital humano crece más despacio
+				\4[] $\then$ Producto crece más despacio
+				\4[] $\then$ Transición más lenta a EE que guerra
+				\4[] $\then$ Salida más lenta de crisis
+				\4[] \grafica{destruccioncapitalhumano}
+		\2 Capital humano: dos sectores
+			\3 Idea clave
+				\4 Uzawa (1965), Lucas (1988)
+				\4[] Dos sectores plenamente diferenciados
+				\4[] Sector manufacturero:
+				\4[] $\to$ Utiliza capital físico y humano
+				\4[] Sector de capital humano/educativo
+				\4[] $\to$ Utiliza sólo capital humano
+				\4 Rebelo (1991)
+				\4[] Generalización de Lucas (1988) con:
+				\4[] $\to$ Presencia de factor no reproducible
+				\4[] $\to$ Impacto de impuestos
+				\4[] Tres modelos posibles:
+				\4[] -- Misma tecnología para K y H
+				\4[] \quad $\to$ Modelo equivalente a un sector y AK
+				\4[] -- K no es factor en producción de H
+				\4[] \quad $\to$ Modelo de Lucas-Uzawa
+				\4[] -- K es necesario para H pero diferentes tec.
+				\4[] \quad $\to$ Modelos intermedios entre AK y Lucas-Uzawa
+			\3 Formulación
+				\4 General:
+				\4[] Bienes de consumo y capital físico:
+				\4[] $Y=C+I = C + \dot{K} + \delta K = A (vK)^{\alpha_1} \cdot (uH)^{\alpha_2}$
+				\4[] Capital humano:
+				\4[] $H = B\left[ (1-v)K \right]^{\eta_1} \cdot \left[(1-u)H \right]^{\eta_2}$
+				\4[] Acumulación de capital físico:
+				\4[] $\to$ $\dot{K} = A (vK)^{\alpha_1} \cdot (uH)^{\alpha_2} -C - \delta K$
+				\4[] Acumulación de capital humano:
+				\4[] $\to$ $\dot{H} = B \left[ (1-v) K \right]^{\eta_1} \cdot \left[ (1-u) H \right]^{\eta_2} -  \delta H$
+				\4 Decisión de economía
+				\4[] A qué dedicar capital físico:
+				\4[] $\to$ $u$: Producir bien físico
+				\4[] $\to$ $1-u$: Producir capital humano
+				\4[] A qué dedicar capital humano:
+				\4[] $\to$ $v$: producir capital bien físico
+				\4[] $\to$ $1-v$: producir capital humano
+				\4[$\then$] Supuestos sobre rdtos. a escala determinan
+				\4 \underline{Rendimientos constantes a escala}
+				\4[] Asumen:
+				\4[] $\to$ $\alpha_2 = 1 - \alpha_1$
+				\4[] $\to$ $\eta_2 = 1 - \eta_1$
+				\4 Caso particular: $\alpha_i = \eta_i$
+				\4[] Inversión en K y H hasta igualar PMg
+				\4[] $\to$ Equivalente a modelo de un sector
+				\4 Caso particular: $\eta_1 = 0$, $\eta_2 = 1$
+				\4[] Modelo de Lucas-Uzawa
+				\4[] Dos sectores diferenciados
+				\4[] Capital físico:
+				\4[] $\to$ Elasticidad nula en producción de H
+				\4[] $\then$ No se utiliza K para producir H
+				\4[] $\then$ $v=1$
+				\4[] Producción de bienes:
+				\4[] $Y = C + \dot{K} + \delta K = AK^\alpha (uH)^{1-\alpha}$
+				\4[] Acumulación de capital:
+				\4[] $\to$ $\dot{K}  = s AK^\alpha (uH)^{1-\alpha} - \delta_K K$
+				\4[] $\to$ $\dot{H} = B \left( 1-u \right) \cdot H - \delta_H H$
+				\4[] Estado estacionario:
+				\4[] $\to$ Tomando: $\phi= \frac{\rho + \delta(1-\theta)}{B \theta}$
+				\4[] $\frac{K^*}{H^*} = \left( \alpha \frac{A}{B} \right)^{1/(1-\alpha)} \cdot \left[ \phi + \frac{\theta - 1}{\theta}\right]$
+				\4[] $\frac{C^*}{K^*} = B \cdot \left( \phi + \frac{1}{\alpha} - \frac{1}{\theta} \right)$
+				\4[] $u^* = \phi + \frac{\theta - 1}{\theta}$
+				\4[] $r^* = B - \delta$
+				\4[] \fbox{$\gamma^* =\left( \frac{1}{\theta} \right) \cdot (B - \delta -\rho) = \gamma^*_C = \gamma_K^* = \gamma^*_H = \gamma^*_Y = \gamma^*_Q$}
+				\4[] $r^* > \gamma^* \then u^* > 0$
+				\4[] $u^* < 1 \then \gamma^* > 0$
+				\4 \underline{Caso general}
+				\4[] Suma de $\alpha_i$ y de $\eta_i$ no tiene por qué ser 1
+				\4[] $\to$ Posibles rendimientos crecientes y decrecientes
+				\4[] ¿Qué condiciones suficiente para crec. endógeno?
+				\4[] \fbox{$\alpha_2 \eta_1 = (1-\alpha_1) \cdot (1-\eta_2) $}
+				\4 Modelo de Lucas-Uzawa
+				\4[] Dos sectores diferenciados
+				\4[] Capital físico:
+				\4[] $\to$ $\eta_1 = 0$
+				\4[] $\then$ Elasticidad nula de K en producción de H
+				\4[] $\then$ No se utiliza K para producir H
+				\4[] $\then$ Todo K dedicado a producir bien físico
+				\4[] $\then$ $v=1$, $1-v=0$
+				\4[] Producción de bienes:
+				\4[] $Y = C + \dot{K} + \delta K = AK^\alpha (uH)^{1-\alpha}$
+				\4[] Acumulación de capital:
+				\4[] $\to$ $\dot{K}  = s AK^\alpha (uH)^{1-\alpha} - \delta_K K$
+				\4[] $\to$ $\dot{H} = B \left( 1-u \right) \cdot H - \delta_H H$
+				\4[] $\to$ $\eta_1=0, \eta_2=1$
+				\4[] $\then$ $\alpha_2 \cdot 0 = (1-\alpha_1 ) \cdot 0$ $\forall \, \alpha_2, \, \alpha_1$
+				\4[] Crecimiento endógeno:
+				\4[] $\to$ $\alpha_2 \eta_1 = (1-\alpha_1)(1-\eta_2)$
+				\4[] $\then$ $ 0 = (1-\alpha_1)(1-\eta_2)$
+				\4[] $\then$ Basta con que $\eta_2=1$ para cumplir
+				\4[] $\then$ No es necesario que $\alpha_1+\alpha_2 = 1$
+				\4[] $\then$ CEndógeno aunque $\alpha_1 + \alpha_2 < 1$
+				\4[] $\then$ CEndógeno con R$\downarrow$E en sector manufacturero
+			\3 Implicaciones
+				\4 $R=E$ o $R \uparrow E$ en manufacturero no es necesario
+				\4[] $\to$ Para que aparezca crecimiento endógeno
+				\4[] $\then$ Basta con $R=E$ en subconjunto de bienes
+				\4 Productividad en sector de capital humano
+				\4[] Determina crecimiento en estado estacionario
+				\4[] $\to$ Sector educativo es relevante en desarrollo
+				\4[] $\to$ Educación afecta a convergencia
+				\4 Efectos desequilibrio
+				\4[] En presencia de:
+				\4[] $\to$ R=E en sector manufacturero
+				\4[] $\to$ Dos factores acumulables K y H
+				\4[] Economía tiende a ratio K--H constante en EE
+				\4[] Si:
+				\4[] i) economía se desvía de K--H de EE
+				\4[] ii) ajuste instantáneo no es posible
+				\4[] $\to$ Economía crece más rápido hasta alcanzar EE
+				\4[] $\to$ Factor escaso más productivo
+		\2 Modelos de gasto público
+			\3 Crecimiento endógeno con gasto público improductivo
+				\4 Formulación
+				\4[] Sector público a financiar
+				\4[] $g = \tau y_t$
+				\4[] Función de producción
+				\4[] $Y = F(K, A) = A K$
+				\4[] $L_t = L_0 \cdot e^{nt}$
+				\4[] $A_t = A_0 \cdot e^{gt}$
+				\4[] En términos por trabajador per cápita
+				\4[] $y_t = A \hat{k}_t$
+				\4[] Dinámica del capital per cápita
+				\4[] $\dot{k}_t =  A {k}_t - (n+\delta){k}_t$
+				\4[] $\to$ $\frac{\dot{{k}}_t}{\hat{k}_t} = s(1-\tau)A - (n+\delta)$
+				\4 Implicaciones
+				\4[] No tiene por qué existir estado estacionario
+				\4[] $\to$ Sólo si: $s(1-\tau)A = \left( n+\delta \right)$
+				\4[] $\then$ Si $s(1-\tau)A > \left( n+\delta \right)$, crecimiento endógeno
+				\4[] Tipo de gravamen sí afecta a crecimiento per cápita
+				\4[] $\to$ Afecta a tasa de crecimiento endógeno
+				\4[] Tamaño óptimo de SP es nulo
+				\4[] $\to$ Dado que gasto público no es productivo
+				\4 Valoración
+				\4[] Simplificación
+				\4[] Caracteriza efecto sobre dinámica de crecimiento
+				\4[] Si el crecimiento es endógeno
+				\4[] $\to$ Sector público sí afecta al crecimiento
+			\3 Crecimiento endógeno con gasto público productivo
+				\4 Sector público a financiar
+				\4[] $g = \tau y_t$
+				\4[] Función de producción
+				\4[] $Y = F(K_t, A, L_t) = A K_t^\alpha G_t^{1-\alpha} L_t$
+				\4[] $L_t = L_0 \cdot e^{nt}$
+				\4[] $A_t = A_0 \cdot e^{gt}$
+				\4[] Función de producción per cápita
+				\4[] $y_t = A k_t^\alpha g_t^{1-\alpha}$
+				\4[] $\to$ $y_t = A k_t^\alpha (\tau y_t)^{1-\alpha}$
+				\4[] $\then$ $y_t = A^{1/\alpha} k_t \tau^{\left( \frac{1-\alpha}{\alpha} \right) }$
+				\4[] Dinámica del capital per cápita
+				\4[] $\dot{k}_t =  s(1-\tau)A^{1/\alpha} {k}_t \tau^{\left( \frac{1-\alpha}{\alpha} \right)} - (n+\delta){k}_t$
+				\4[] $\to$ $\frac{\dot{k}_t}{k_t} = s(1-\tau)A^{1/\alpha}\tau^{\left( \frac{1-\alpha}{\alpha} \right)} - (n+\delta)$
+				\4[] Implicaciones
+				\4[] Tamaño del SPúblico afecta a crecimiento per cápita
+				\4[] $\to$ Positivamente: $\tau^{\left( \frac{1-\alpha}{\alpha} \right)}$
+				\4[] $\to$ Negativamente: $(1-\tau)$
+				\4[] Existe tamaño óptimo del sector público $\tau^*$
+				\4[] $\to$ Puede demostrarse que $\tau^* = 1-\alpha$
+	\1 \marcar{Modelos de cambio tecnológico}
+		\2 Idea clave
+			\3 Modelos de acumulación de factores
+				\4 Supuesto clave
+				\4[] R $\downarrow$ E no tienen lugar
+				\4[] $\to$ Aumentar número de factores
+				\4[] $\to$ Ligar productividad a factores acumulados
+				\4[$\then$] Crecimiento pc. l/p sin progreso tecnológico
+				\4 Críticas:
+				\4[] Más cantidad de factores
+				\4[] $\to$ inevitablemente reducen PMg
+				\4[] $\to$ No pueden generar crecimiento a l/p
+				\4[] $\to$ Aun considerando K en sentido amplio
+			\3 Progreso tecnológico
+				\4 Acumulación no es motor de crecimiento
+				\4[] $\to$ Otros fenómenos necesarios
+				\4 Modelizar evolución de la productividad
+				\4[] Cambio en eficiencia al combinar factores
+				\4[] $\to$ Aumentos de PTF
+				\4 Dos enfoques diferentes:
+				\4[] Variedad de producto:
+				\4[] $\to$ Romer (1990)
+				\4[] $\to$ Influenciado por Dixit y Stiglitz (1977), Ethier (1982)
+				\4[] $\to$ Más variedad de intermedios
+				\4[] $\then$ mejora productividad
+				\4[] $\to$ Sector de I+d
+				\4[] $\then$ Crea patrones nuevas variedades
+				\4[] $\then$ CMonopolística hace rentable explotación
+				\4[] Calidad del producto:
+				\4[] $\to$ Aghion y Howitt (1992)
+				\4[] $\to$ Proceso endógeno de mejora de la calidad
+				\4[] $\to$ Sustitución de variedades peores por mejores
+		\2 Variedad de producto
+			\3 Idea clave
+				\4 Romer (1990)
+				\4 Número de variedades como proxy de innovación
+				\4[] Innovación produce nuevas variedades
+				\4[] Acceso a más variedades de inputs
+				\4[] $\then$ Aumento de productividad
+				\4 Competencia imperfecta
+				\4[] Inspirado en:
+				\4[] $\to$ Dixit y Stiglitz (1977) y Ethier (1982)
+				\4[] Bien compuesto como factor de producción
+				\4[] $\to$ Bien compuesto por variedades de intermedio
+				\4[] $\then$ Más variedades, más factor compuesto
+				\4[] Empresas tienen poder de mercado en su variedad
+				\4[] $\to$ Entrada libre pero costosa
+				\4[] $\to$ Sustituibles hasta cierto punto
+				\4[] $\then$ Rentable producir variedades
+			\3 Formulación
+				\4 Formulación general
+				\4[] Romer (1990) como variante/caso particular
+				\4 Optimización de ahorro--consumo
+				\4[] Proceso habitual de maximización de U
+				\4[] $\to$ Mismo que RCK
+				\4[] $\underset{c}{\max} \quad U= \int_0^\infty \left( \frac{c^{1-\theta}-1}{1-\theta} \right) \cdot e^{-\rho t} \cdot dt$
+				\4 Función de producción
+				\4[] \fbox{$Y_i = A L_i^{1-\alpha} \left[ \int_{j=1}^N X_i(j)^\sigma \, d j \right]^{\alpha/\sigma}$}
+				\4[] Si $\alpha = \sigma$:
+				\4[] $\to$ \fbox{$Y_i = A L_i^{1-\alpha} \left[ \int_{j=1}^N X_i(j)^\alpha \, d j \right]$}
+				\4 Decisión de entrada
+				\4[] Dos etapas
+				\4[] Resolver por inducción
+				\4[] 2. Fijar precio de oferta de bien $j$
+				\4[] $\to$ Maximizar valor de corriente de pagos
+				\4[] $\to$ en función de tipo de interés
+				\4[] $\to$ En función de demanda que depende de L
+				\4[] 1. Decidir entrada
+				\4[] $\to$ Comparar corriente de pagos con $\eta$
+				\4[] $\to$ $\eta$ es coste de desarrollo de variante
+
+				\4 Equilibrio general\footnote{Realmente, $\gamma^* = \frac{1}{\theta} \cdot \left[ \left( \frac{L}{\eta} \right) \cdot A^{1/(1-\alpha)} \cdot \left( \frac{1-\alpha}{\alpha} \right) \cdot \alpha^{2/(1-\alpha)} \right]$}
+				\4[] $\gamma^* = f\left( \overbrace{A}^+, \overbrace{L}^+, \overbrace{\eta}^-, \overbrace{\theta}^-, \overbrace{\rho}^- \right) = \gamma^*_N = \gamma^*_Y = \gamma^*_C $
+			\3 Formulación
+				\4 Basada en D-S y Ethier
+				\4[] Dixit-Stiglitz:
+				\4[] $\to$ Bien compuesto a partir de variedades
+				\4[] Ethier
+				\4[] $\to$ Bien compuesto como factor de producción
+				\4 Producción de bien final
+				\4[] $Y = L^{1-\alpha} \int_0^A x_(i)^\alpha \, di$, $0 < \alpha < 1$
+				\4[] Asumiendo $x_(i)$ es igual para todos
+				\4[] $\to$ $Y = L^{1-\alpha} A \bar{x}(i)^\alpha$
+				\4[] $\then$ Productividad agregada depende de nº de variedades
+				\4[] $\then$ Crecimiento de A
+				\4 Producción de variedades de bienes compuestos
+				\4[] A partir de:
+				\4[] $\to$ Bien final
+				\4[] $\to$ Patrones de nuevas variedades
+				\4 Producción de patrones para nuevas variedades
+				\4[] Capital humano
+				\4[] Stock de conocimiento/variedades ya producidas
+			\3 Implicaciones
+				\4 Instituciones relevantes
+				\4[] Proteger beneficios por producir nuevas variedades
+				\4[] $\to$ Necesario para que sea rentable investigar
+				\4 Educación
+				\4[] Necesario para producir nuevas variedades
+				\4 Ideas no rivales
+				\4[] Ideas no se agotan con uso
+				\4[] Capital humano sí
+				\4[] $\to$ Complementario a ideas
+				\4 Tamaño del mercado
+				\4[] Acceso a capital humano extranjero indirectamente
+				\4[] $\to$ Vía variedades importadas
+				\4[] $\then$ Aumenta productividad
+				\4 Coste de producción de nueva variedad
+				\4[] Más difícil rentabilizar producción de variante
+				\4[] Reduce tasa de crecimiento
+				\4 Posible suboptimalidad
+				\4[] Eq. general competitivo no es óptimo
+				\4[] $\to$ Posible margen de política económica
+				\4[] $\then$ Posible mejorar invirtiendo más en i+D
+				\4[] $\then$ Mejorar acceso a variedades extranjeras
+				\4[] Opciones de política económica:
+				\4[] $\to$ Subsidios a la compra de inputs intermedios
+				\4[] $\to$ Subsidios a la compra de bien final
+				\4[] $\then$ Problemas habituales de impuestos
+			\3 Variantes
+				\4 Costes crecientes de i+D
+				\4[] $\eta$ es función de N
+				\4[] $\to$ Sin efecto escala sobre $\gamma_Y$ en EG
+				\4[] $\then$ Existe siempre estado estacionario
+				\4 Poder de mercado decreciente
+				\4[] Monopolio sobre variedades no es perpetuo
+				\4[] $\to$ Poder de mercado decrece con parámetro $\rho$
+				\4[] Equilibrio igualmente subóptimo
+				\4[] Gobierno debe subvencionar obligatoriamente i+D
+				\4[] $\to$ No basta con subvencionar compra de intermedios
+				\4 Modelo original de Romer (1990)
+				\4[] Sector productor de nuevas variedades
+				\4[] $\to$ No utiliza bienes intermedios
+				\4[] Nuevas variedades dependen de:
+				\4[] $\to$ i+D acumulado
+				\4[] $\to$ Coste de i+D $\eta$
+				\4[] $\to$ Cantidad de trabajo en sector de investigación
+				\4[] $\then$ i+D presente tiene efecto positivo sobre futuro
+				\4[] $\then$ Parámetro A no afecta crecimiento
+				\4[] Resto de factores L, $\eta$, $\theta$, $\rho$
+				\4[] $\to$ Igual que en modelo anterior
+				\4[] $\then$ Conclusiones y efecto escala similar
+			\3 Grossman y Helpman (1990)
+				\4 Idea clave
+				\4[] Crecimiento y comercio
+				\4[] $\to$ Crecimiento afecta crecimiento
+				\4[] $\to$ Comercio afecta crecimiento
+				\4[] $\then$ Estudiar efecto de comercio sobre crecimiento
+				\4[] Comercio como motor de crecimiento endógeno
+				\4 Formulación
+				\4[] Dos países
+				\4[] Un sólo factor de producción
+				\4[] $\to$ Cuantía fija en cada país
+				\4[] Stock de conocimiento inicial
+				\4[] $\to$ Dado exógenamente
+				\4[] Tres sectores
+				\4[] i. I+D
+				\4[] $\to$ Produce nuevos diseños
+				\4[] $\to$ Produce conocimiento
+				\4[] $\to$ Conocimiento reduce coste de nuevos diseños
+				\4[] ii. Bienes intermedios
+				\4[] $\to$ Utilizan diseños producidos por I+D
+				\4[] $\to$ Competencia monopolística
+				\4[] $\to$ No comerciables
+				\4[] iii. Bien de consumo final único de cada país
+				\4[] $\to$ Productividad depende de variedad b. intermedios
+				\4[] $\to$ $Y_i = B \cdot A \cdot L^{1-\gamma} \left(\int_0^n x_i(\omega)^\rho  \right)^{\gamma/\rho}$
+				\4[] Cada país distribuye oferta de trabajo
+				\4[] Países con diferentes condiciones iniciales
+				\4 Aumento de demanda relativa país competitivo I+D
+				\4[] Aumento de trabajo dedicado a bien final
+				\4[] $\to$ Menos trabajo dedicado a I+d
+				\4[] $\to$ Menos trabajo a variedades intermedias
+				\4[] $\then$ Cae crecimiento de esa economía
+				\4 Exportaciones pueden perjudicar innovación
+				\4[] Más trabajo dedicado a sector bienes finales
+				\4 Intervención política económica
+				\4[] Dedicar trabajo a I+D
+				\4[] $\to$ Aumenta conocimiento
+				\4[] $\then$ Puede proporcionar ventaja comparativa futura
+				\4[] Aumentar gasto en bien final
+				\4[] $\to$ Desvía trabajo a industria de bien final
+				\4[] $\then$ Reduce trabajo dedicado a I+D
+				\4[] $\then$ Reduce crecimiento futuro
+		\2 Aumento de calidad o crecimiento schumpeteriano
+			\3 Idea clave
+				\4 Contexto
+				\4[] Cambio tecnológico más allá de nuevas variedades
+				\4[] Dentro de variedades ya conocidas
+				\4[] $\to$ Mejoras de calidad son elemento central de progreso
+				\4[] Ejemplos múltiples
+				\4[] $\to$ Carruaje $\to$ Coches
+				\4[] $\to$ Fax $\to$ Internet
+				\4[] $\to$ Quimioterapia $\to$ Inmunoterapia
+				\4[] $\to$ ...
+				\4 Objetivos
+				\4[] Representar crec. endógeno por mejora de calidad
+				\4[] Caracterizar diferentes mecanismos que incentivan $\uparrow$ calidad
+				\4[] De qué depende de inversión en desarrollo
+				\4[] Cómo influye la distancia a la frontera
+				\4[] Qué tipo de investigación es óptima
+				\4[] Innovar o implementar como alternativas
+				\4 Resultados
+				\4[] Influencia schumpeteriana
+				\4[] $\to$ Importancia de la creación destructiva
+				\4[] $\to$ Economía en constante evolución
+				\4[] $\to$ Nuevos ideas sustituyen a obsoletas
+				\4[] $\to$ Creación aumenta y destruye actividad
+				\4[] Trabajos seminales
+				\4[] $\to$ Aghion y Howitt (1990)
+				\4[] $\to$ Grossman y Helpman (1991)
+				\4[] Muy amplio número de variantes de modelos
+				\4[] $\to$ Explicitar ganadores y perdedores de crecimiento
+				\4[] $\to$ Factores que determinan
+				\4[] Efectos de política económica sobre innovación
+				\4[] $\to$ Y sobre crecimiento como resultado
+				\4[] Disposición de sociedad a cambio tecnológico
+				\4[] $\to$ Factores que influencian
+				\4[] Calidad en vez de variedad
+				\4[] $\to$ Número de variedades fijo
+				\4[] $\to$ Innovación induce mejora de calidad
+				\4[] $\to$ Sustitución de viejas por nuevas variedades
+			\3 Formulación
+				\4 Genérica y simplificada
+				\4 Consumidores
+				\4[] Distribuyen gasto temporalmente
+				\4[] Gastan en cada periodo en mejor variedad
+				\4[] $\to$ Mejorar calidad dado precio
+				\4 Empresas
+				\4[] Compiten en cada una de las variedades
+				\4[] $\to$ Tratan de producir mejor calidad del mercado
+				\4[] Invierten en I+d para aumentar probabilidad de éxito
+				\4[] $\to$ Su variedad resulta ser la mejor variedad
+				\4[] Empresa que tiene éxito
+				\4[] $\to$ Copa toda la demanda
+				\4[] $\then$ Hasta que aparece otra superior
+				\4[] Demandan trabajo para invertir en dos actividades
+				\4[] $\to$ I+D
+				\4[] $\to$ Producción de bienes
+				\4 Producción agregada
+				\4[] $Y = L^{1-\alpha} \left( \int_0^1 A_i x_i \, di \right)^\alpha$
+				\4 Evolución de $A(t)$ como resultado de:
+				\4[] Beneficios de monopolio
+				\4[] $\to$ Menores que en modelos de variedades
+				\4[] $\to$ Nuevos avances eliminan monopolio anterior
+				\4[] Probabilidad de mejorar calidad
+				\4[] $\to$ Depende de distancia con frontera
+				\4[] $\to$ Puede ser preferible implementar frontera
+				\4[] Condiciones de entrada y salida
+				\4[] $\to$ Costes de entrada en mercado
+				\4[] $\to$ Posibilidad de sustituir más por menos calidad
+				\4[] Inversión en i+D
+				\4[] $\to$ Aumenta probabilidad de descubrir
+				\4[] $\to$ Puede tener efectos spill-over
+				\4[] Efectos escala
+				\4[] $\to$ Población total afecta crecimiento
+				\4[] $\to$ En mayoría de formulaciones
+			\3 Implicaciones
+				\4 Más competencia
+				\4[] Menores beneficios de monopolio
+				\4[] Mayores beneficios por entrar en mercado
+				\4[] Mayor facilidad para innovar y entrar en mercado
+				\4[] $\to$ Trade off
+				\4[] $\then$ Posible beneficiosa o perjudicial
+				\4 Orientación de política de I+D
+				\4[] Es relevante
+				\4[] Mecanismo por el que innovar o implementar
+				\4[] $\to$ Afecta al largo plazo
+				\4 Regulación industrial relevante
+				\4[] Entrada y salida son elementos clave
+				\4[] $\to$ Especialmente, cerca de la frontera
+				\4 Capital ausente
+				\4[] Modelo no define claramente capital
+				\4[] Difícil contabilidad de crecimiento
+				\4[] Necesarias modificaciones
+				\4 Resultado de innovación es incierto
+				\4[] Financiación es arriesgada
+				\4[] Mercados financieros necesarios
+				\4[] $\to$ No se modelizan explícitamente
+				\4[] $\to$ Posible introducir restricciones
+		\2 Valoración
+			\3 Ahorro frente a innovación
+				\4 Contrapuestos a modelos de acumulación
+				\4 Ahorro no es factor clave
+				\4[] Crecimiento es fruto de otros factores
+				\4[] Ac. de factores no es clave de crecimiento
+				\4[] $\to$ Procesos de innovación son lo importante
+			\3 Efectos escala
+				\4 Hechos empíricos tienden a rechazar
+				\4 Diferentes estrategias para resolver
+				\4[] Innovación más costosa con más población
+				\4[] $\to$ Esfuerzo innovador más disperso
+				\4[] Ligar coste de innovación
+				\4[] $\to$ A número de variedades/nivel de calidad
+			\3 Análisis de política económica
+				\4 Identificar políticas óptimas de innovación
+				\4[] Modelos de acumulación no analizan
+				\4 Permiten análisis de cuestiones muy necesarias
+			\3 Contabilidad de crecimiento
+				\4 Dificil aplicación en cont. de crecimiento
+				\4 Capital ambiguo o sin definir
+				\4[] ¿Cómo cuantificar innovación?
+				\4[] ¿Cómo cuantificar implementación?
+				\4 Necesarias:
+				\4[] Modificaciones para definir capital
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Modelos de acumulación de factores
+			\3 Modelos de cambio tecnológico
+		\2 Idea final
+			\3 Importancia del contexto de modelización
+				\4 No existe modelo único
+				\4 Modelos analizan aspecto concreto
+				\4[] Necesario aplicar a contexto adecuado
+			\3 Relaciones con otras ciencias sociales
+				\4 Economía política
+				\4 Demografía
+				\4 Ciencia política
+				\4 Sociología
+			\3 Valoración empírica
+				\4 Teoría complementaria con val. empírica
+				\4 Necesarias herramientas complementarias
+				\4[] Formulación de hechos estilizados
+				\4[] Medición del crecimiento
+				\4[] Contabilidad del crecimiento
+			\3 Causas profundas del crecimiento económico
+				\4 Modelos anteriores se centran en:
+				\4[] Capital
+				\4[] Tecnología
+				\4[] $\to$ Análisis de causas directas
+				\4 ¿Por qué se producen:
+				\4[] Decisiones de acumulación de K
+				\4[] PolEcon de estímulo a la innovación
+				\4[] Marcos regulatorios favorables
+				\4[] Sistemas financieros desarrollados
+				\4[] $\to$ Por causas profundas del crecimiento
+				\4 Causas profundas del crecimiento
+				\4[] Geografía
+				\4[] Instituciones
+				\4[] Políticas
+				\4[] Trayectoria histórica
+				\4[] Cultura y preferencias
+\end{esquemal}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\graficas
+
+\begin{axis}{4}{Tasa de crecimiento del capital en un modelo AK simple.}{$k$}{$\dot{k}/k$}{ak}
+	% Inversión
+	\draw[-] (0,2.5) -- (4,2.5);
+	\node[right] at (4,2.5){$s$};
+	
+	% Reducción del capital por trabajador
+	\draw[-] (0,1.5) -- (4,1.5);
+	\node[right] at (4,1.5){$n+g+\delta$};
+	
+	% Crecimiento
+	\draw[{Latex}-{Latex}] (2,2.5) -- (2,1.5);
+	\node[right] at (2,2){$\gamma_k$};
+	
+\end{axis}
+
+\begin{axis}{4}{Tasa de crecimiento del capital en el modelo de Jones y Manuelli (1990).}{$k$}{$\dot{k}/k$}{jonesmanuelli}
+	% Inversión dado k
+	\draw[-] (0.2,4) to [out=300, in=180](4,2.54);
+	\node[right] at (0.5,3.6){$s \cdot \frac{f(k)}{k}$};
+	
+	% Tendencia a largo plazo de la inversión
+	\draw[dashed] (0,2.5) -- (4,2.5);
+	\node[right] at (4,2.5){$sA$};
+	
+	% Reducción del capital por trabajador
+	\draw[-] (0,1.5) -- (4,1.5);
+	\node[right] at (4,1.5){$n+g+\delta$};
+	
+	% Crecimiento con capital bajo
+	\draw[{Latex}-{Latex}] (0.6,1.55) -- (0.6,3.4);
+	\node[right] at (0.6,2){$\gamma_k$};
+	
+	% Crecimiento con capital alto
+	\draw[{Latex}-{Latex}] (3,1.55) -- (3,2.46);
+	\node[right] at (3,2){$\gamma_k$};
+\end{axis}
+
+\begin{axis}{4}{Modelo de Lucas con learning-by-doing tomando como proxy el capital por trabajador, en un contexto de externalidad positiva grande ($\alpha + \eta > 1$.}{$k$}{$\dot{k}/k$}{lucasexternalidadgrande}
+	% Inversión
+	\draw[-] (0,0) to[out=60, in=185] (4,2.5);
+	\node[right] at (4,2.5){$s$};
+	
+	% Reducción del capital por trabajador
+	\draw[-] (0,1.5) -- (4,1.5);
+	\node[right] at (4,1.5){$n+\delta$};
+	
+	
+	% Crecimiento positivo
+	\draw[{Latex}-{Latex}] (3.5,2.3) -- (3.5,1.5);
+	\node[right] at (3.5,2){$\gamma_k>0$};
+	
+	% Crecimiento negativo
+	\draw[{Latex}-{Latex}] (0.5,1.5) -- (0.5,0.8);
+	\node[right] at (0.6,1.2){$\gamma_k<0$};
+
+	% Capital por trabajador que delimita zona de crecimiento y zona de decrecimiento
+	\draw[dashed] (1.25,1.5) -- (1.25,0);
+	\node[below] at (1.25,0){$k^*$};
+	
+\end{axis}
+
+\begin{axis}{4}{Efecto desequilibrio en un modelo de un  sector con capital humano e inversión irreversible y no intercambiable entre capital físico y humano.}{$K/H$}{$\dot{Y}/Y$}{inversionirreversible}
+	% Tasa de crecimiento dado ratio de capital físico y humano
+	\draw[-{Latex}] (0.5,3.5) to [out=290, in=180](2.25,2);
+	\draw[{Latex}-] (2.25,2) to [out=0, in=250](4,3.5);
+	
+	% Ratio de capital físico y humano óptimo
+	\draw[dashed] (2.25,2) -- (2.25,0);
+	\node[below] at (2.25,0){$\frac{K^*}{H^*}$};
+\end{axis}
+
+\begin{axis}{4}{Efecto desequilibrio en un modelo de un sector con capital humano, inversión irreversible y no intercambiable entre capital físico y humano , y costes de ajuste más elevados para el capital humano}{$K/H$}{$\dot{Y}/Y$}{destruccioncapitalhumano}
+	% Tasa de crecimiento dado ratio de capital físico y humano
+	\draw[-{Latex}] (0.5,3.5) to [out=290, in=180](2.25,2);
+	\draw[{Latex}-] (2.25,2) to [out=0, in=210](4.5,2.75);
+	
+	% Ratio de capital físico y humano óptimo
+	\draw[dashed] (2.25,2) -- (2.25,0);
+	\node[below] at (2.25,0){$\frac{K^*}{H^*}$};
+\end{axis}
+
+
+\preguntas
+
+\seccion{Test 2017}
+\textbf{17.} Un aumento del nivel educativo de los trabajadores de un país:
+
+\begin{itemize}
+	\item[a] Incrementa la productividad total de los factores, pero no la productividad del trabajo.
+	\item[b] Incrementa la productividad del trabajo, pero no la productividad total de los factores.
+	\item[c] Incrementa la productividad del trabajo y la productividad total de los factores.
+	\item[d] Ninguna de las dos es correcta.
+\end{itemize}
+
+\textbf{23.} Los modelos de crecimiento endógeno de los años 1990:
+
+\begin{itemize}
+	\item[a] Defienden el carácter decreciente de los rendimientos marginales del capital humano.
+	\item[b] Niegan la exogeneidad del cambio tecnológico.
+	\item[c] Rechazan abiertamente la intervención pública en el libre juego de las fuerzas del mercado.
+	\item[d] Manifiestan que la aplicación de nuevas tecnologías dará lugar a una competitividad progresiva y convergente entre países, entre Norte y Sur.
+\end{itemize}
+
+\seccion{Test 2015}
+\textbf{23.} Suponga una economía de 2 periodos. El agente representativo recurre a una función F para la producción de un bien compuesto a partir de la aplicación de tres factores productivos: un input de conocimiento, un input en cuantía exógenamente dada y una externalidad en el conocimiento agregado empleado por todos los agentes. Se supone que F es cóncava en sus dos primeros argumentos y presenta rendimientos constantes respecto a los mismos. El bien final puede utilizarse tanto para consumir como para invertir en conocimiento. Al comienzo del primer periodo, el agente representativo recibe cierta dotación de dicho bien físico. En equilibrio y bajo estos supuestos:
+
+\begin{itemize}
+    \item[a] La presencia de efectos externos implicará que los agentes privados no percibirán dichos efectos agregados en sus problemas de optimización individuales.
+    \item[b] El valor sombra del activo conocimiento se igualará al valor sombra de la renta en el segundo periodo de vida. 
+    \item[c] Si $k$ es el nivel óptimo de inversión en conocimiento para un agente privado y existen $S$ agentes, $Sk$ resolverá siempre el equilibrio general.
+    \item[d] La obtención de un máximo en el problema de optimización privado es compatible con la productividad marginal creciente de la externalidad en la función de producción.
+\end{itemize}
+
+\seccion{Test 2007}
+\textbf{14.} Señale cuál de las siguientes afirmaciones es, en el contexto del modelo AK, \textbf{FALSA}:
+\begin{itemize}
+	\item[a] La tasa de crecimiento de la producción por trabajador puede ser positiva sin necesidad de que una variable exógena deba crecer de forma constante.
+	\item[b] La economía no exhibe una dinámica de transición hacia el estado estacionario.
+	\item[c] La tasa de crecimiento de la producción por trabajador permanece constante aunque varíe el capital por trabajador.
+	\item[d] El modelo predice inequívocamente la convergencia, tanto absoluta como condicionada.
+\end{itemize}
+
+\seccion{Test 2004}
+\textbf{18.} Entre las siguientes afirmaciones correspondientes a la caracterización del progreso técnico y sus implicaciones para la teoría del crecimiento:
+
+\begin{itemize}
+	\item[i)] Se dice que el progreso técnico es incorporado cuando aumenta la eficiencia del factor trabajo.
+	\item[ii)] Se dice que el progreso técnico es neutral cuando es específico al sector de bienes de inversión.
+	\item[iii)] La desaceleración observada en el crecimiento de la productividad desde mediados de los setenta puede explicarse porque el capital no se corrige por las mejoras de calidad.
+	\item[iv)] La caída observada en el precio relativo de los bienes de inversión puede interpretarse como evidencia de progreso técnico incorporado.
+\end{itemize}
+
+\begin{itemize}
+	\item[a] Solamente la iii) es verdadera.
+	\item[b] Solamente la iv) es verdadera.
+	\item[c] Solamente la iii) y la iv) son verdaderas.
+	\item[d] Solamente la i) y la ii) son verdaderas.
+\end{itemize}
+
+
+\notas
+
+\textbf{2017:} \textbf{17.} C \textbf{23.} B
+
+\textbf{2015:} \textbf{23.} D
+
+\textbf{2007:} \textbf{14.} D
+
+\textbf{2004:} \textbf{18.} B
+
+\bibliografia
+Mirar en Palgrave:
+\begin{itemize}
+	\item balanced growth
+    \item convergence
+    \item economic growth *
+    \item economic growth non-linearities
+    \item economic growth, empirical regularities in *
+    \item endogenous growth theory *
+    \item growth and institutions
+    \item growth and international trade
+    \item growth and learning-by-doing *
+    \item growth models, multisector
+    \item human capital
+    \item human capital, fertility and growth
+    \item infrastructure and growth
+    \item neoclassical growth theory *
+    \item neoclassical growth theory (new perspectives) *
+    \item Schumpeterian growth and growth policy design *
+    \item total factor productivity *
+\end{itemize}
+
+Acemoglu, D. \textit{Introduction to Modern Economic Growth} (2009) -- En carpeta de crecimiento económico
+
+Aghion, P.; Howitt, P. \textit{A Model of Growth Through Creative Destruction} (1992) Econometrica -- En carpeta del tema
+
+Aghion, P.; Akcigit, U.; Howitt, P. \textit{Diapositivas de clase} (2015) \url{https://www.brown.edu/Departments/Economics/Faculty/Peter\_Howitt/2070-2015/} -- En carpeta del tema
+
+Aghion, P.; Howitt, P. \textit{The Economics of Growth} (2009) -- En carpeta de crecimiento económico
+
+Barro, R.; Sala-i-Martín, X. \textit{Economic Growth} 2nd Edition. Ch. 1, 2, 4, 5, 6, 7, 8 -- En carpeta de Crecimiento económico
+
+Lucas, R. E. \textit{On the Mechanics of Economic Development} (1986) Journal of Monetary Economics -- En carpeta del tema
+
+Rebelo, S. \textit{ Long-Run Policy Analysis and Long-Run Growth} (1991) Journal of Political Economy -- En carpeta del tema
+
+Romer, D. \textit{Advanced Macroeconomics (4th ed)}. Ch. 1, 3, 4 -- En carpeta macroeconomía
+
+Romer, P. \textit{Increasing Returns and Long-Run Growth} (1986) Journal of Political Economy --  En carpeta del tema
+
+Romer, P. \textit{Endogenous Technical Change} (1990) Journal of Political Economy -- En carpeta del tema
+
+Romer, P. \textit{The Origins of Endogenous Growth} (1994) Journal of Economic Perspectives -- En carpeta del tema
+
+Whelan, K. (2014) \text{MA Macroeconomics Notes. Endogenous Technological Change: The Romer Model} \href{https://www.karlwhelan.com/MAMacroSem1/Notes12.pdf}{Disponible aquí} -- En carpeta del tema
+
+
+\end{document}

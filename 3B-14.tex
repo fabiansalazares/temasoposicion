@@ -1,0 +1,1139 @@
+\documentclass{nuevotema}
+
+\tema{3B-14}
+\titulo{Mercado de divisas. Operaciones e instrumentos.}
+
+\begin{document}
+
+\ideaclave
+
+Mejorar currency swaps
+
+Ver \href{https://www.dbresearch.com/servlet/reweb2.ReWEB?rwsite=RPS_EN-PROD&rwobj=ReDisplay.Start.class&document=PROD0000000000502442}{Deutsche Bank (2019) sobre evolución del mercado de divisas y perspectivas futuras de centralización y compensación.}
+
+\seccion{Preguntas clave}
+
+\begin{itemize}
+	\item ¿Qué es el mercado de divisas?
+	\item ¿Qué es el tipo de cambio?
+	\item ¿Quiénes actúan en el mercado de divisas?
+	\item ¿Qué instrumentos se negocian?
+	\item ¿Qué operaciones se llevan a cabo?
+	\item ¿Es un mercado eficiente?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Globalización e internacionalización
+			\3 Actualidad
+			\3 Evolución de las características
+		\2 Objeto
+			\3 ¿Qué es el mercado de divisas?
+			\3 ¿Qué es el tipo de cambio?
+			\3 ¿Quiénes actúan en el mercado de divisas?
+			\3 ¿Qué instrumentos se negocian?
+			\3 ¿Qué operaciones se llevan a cabo?
+			\3 ¿Es un mercado eficiente?
+		\2 Estructura
+			\3 Características, convenciones, agentes y eficiencia
+			\3 Instrumentos
+			\3 Operaciones
+	\1 \marcar{Características, convenciones, agentes y eficiencia}
+		\2 Características del mercado de divisas
+			\3 Divisas:
+			\3 Concepto de mercado de divisas
+			\3 Convertibilidad de las divisas
+			\3 Monedas de Libre Uso
+			\3 Volumen de transacción
+			\3 Principales divisas
+			\3 Tiempo de apertura
+			\3 Concentración geográfica
+			\3 Over-the-Counter
+		\2 Convenciones
+			\3 Códigos de divisas
+			\3 Pares
+			\3 Moneda base y moneda de cuenta
+			\3 Convención sobre orden de base y cuenta
+			\3 Apodos de pares de divisas
+			\3 Cotización directa e indirecta
+			\3 Tipos de cambio
+			\3 Bid, ask y spread
+			\3 Pips y ticks
+		\2 Agentes
+			\3 Idea clave
+			\3 Proveedores de liquidez
+			\3 Demandantes de liquidez
+	\1 \marcar{Instrumentos}
+		\2 Spot
+			\3 Idea clave
+			\3 Características
+			\3 Aplicaciones
+		\2 Forwards
+			\3 Idea clave
+			\3 Características
+			\3 Aplicaciones
+		\2 Swaps de tipo de cambio/FX swaps
+			\3 Idea clave
+			\3 Características
+			\3 Aplicaciones
+		\2 Swaps de divisas/currency swaps
+			\3 Idea clave
+			\3 Características
+			\3 Aplicaciones
+		\2 Opciones
+			\3 Idea clave
+		\2 Otros productos
+			\3 Differential swaps
+			\3 Otros instrumentos ``exóticos''
+	\1 \marcar{Operaciones}
+		\2 Operaciones de cuenta corriente
+			\3 Idea clave
+			\3 Oferta de divisas
+			\3 Demanda de divisas
+		\2 Operaciones de cobertura
+			\3 Idea clave
+			\3 Forwards y futuros
+			\3 Cuentas en divisas
+			\3 Opciones sobre tipo de cambio
+		\2 Operaciones de arbitraje
+			\3 Idea clave
+			\3 Arbitraje espacial
+			\3 Arbitraje temporal
+			\3 Arbitraje por latencia
+		\2 Operaciones especulativas
+			\3 Idea clave
+			\3 Segmento spot: paridad descubierta
+			\3 Segmento forward: paridad cubierta
+			\3 Carry trade
+		\2 Intervención
+			\3 Idea clave
+			\3 Instrumentos
+			\3 Factores de éxito de la intervención
+			\3 Valoración
+		\2 Regulación
+			\3 Idea clave
+			\3 Instrumentos
+			\3 Valoración
+	\1 \marcar{Eficiencia del mercado de divisas}
+		\2 Eficiencia del mercado de divisas
+			\3 Factores determinantes de eficiencia
+			\3 Hipótesis de eficiencia
+			\3 Tests de eficiencia
+			\3 Fuerte impacto de digitalización
+		\2 Eficiencia del mercado de divisas
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Características, agentes y convenciones
+			\3 Instrumentos y operaciones
+		\2 Idea final
+			\3 Importancia del mercado de divisas
+			\3 Determinación del tipo de cambio
+			\3 Regímenes cambiarios
+			\3 Cita de Edgeworth (1905)
+			\3 Cita de Dornbusch (1983)
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Globalización e internacionalización
+				\4 Régimen de Bretton Woods
+				\4[] Progresiva liberalización de intercambios comerciales
+				\4[] Progresiva apertura de las cuentas financieras
+				\4[] $\Rightarrow$ Aumento de los intercambios de divisas
+				\4[] $\Rightarrow$ Mercado de divisas: pilar de economía mundial
+			\3 Actualidad
+				\4 Mercado de divisas mayor mercado financiero
+				\4 Media diaria (BIS 2019)
+				\4[] $\sim$ 6.6 billones (españoles) de euros
+				\4 Paul Volcker:
+				\4[] Tipo de cambio es precio más importante
+				\4 Tipo de cambio se determina en mercado de divisas
+				\4[] Efectos sobre:
+				\4[] $\to$ Exportaciones e importaciones
+				\4[] $\to$ Inflación
+				\4[] $\to$ Valor de las obligaciones con el exterior
+				\4[] $\Rightarrow$ Efectos macroeconómicos
+			\3 Evolución de las características
+				\4 Mercado sujeto a continua transformación
+				\4 Factores:
+				\4[] Avances tecnológicos
+				\4[] Contexto legal y político
+				\4[] Intervención de bancos centrales
+				\4[] Evolución de las economías
+				\4[] Papel de los agentes participantes
+				\4 Aumento de la transparencia y velocidad
+				\4[] Redes globales permiten conectar oferta y demanda
+		\2 Objeto
+			\3 ¿Qué es el mercado de divisas?
+			\3 ¿Qué es el tipo de cambio?
+			\3 ¿Quiénes actúan en el mercado de divisas?
+			\3 ¿Qué instrumentos se negocian?
+			\3 ¿Qué operaciones se llevan a cabo?
+			\3 ¿Es un mercado eficiente?
+		\2 Estructura
+			\3 Características, convenciones, agentes y eficiencia
+			\3 Instrumentos
+			\3 Operaciones
+	\1 \marcar{Características, convenciones, agentes y eficiencia}
+		\2 Características del mercado de divisas
+			\3 Divisas:
+				\4 Medios de pago en moneda extranjera
+				\4 Mantenidos por residentes del país
+				\4 Incluye:
+				\4[] $\to$ Billetes y monedas extranjeros
+				\4[] $\to$ Depósitos bancarios en moneda extranjera
+				\4[] $\to$ Derechos a disponer sin restricción (cheques, talones, tarjetas de crédito)
+				\4[] No son divisas:
+				\4[] $\to$ Acciones
+				\4[] $\to$ Obligaciones
+				\4[] $\to$ Otros activos financieros en moneda extranjera
+			\3 Concepto de mercado de divisas
+				\4 Marco organizativo e instituciones que:
+				\4[] Negocian e intercambian divisas extranjeras
+				\4 Incluye:
+				\4[] $\to$ Infraestructura física y humana
+				\4[] $\to$ Conjunto de reglas, convenciones, instituciones
+			\3 Convertibilidad de las divisas
+				\4 Concepto de convertibilidad
+				\4[] Intercambiable por otras sin restricciones
+				\4[] No sujeta a controles cambiarios
+				\4[] Sin restricciones para realizar pagos
+				\4 Convertibilidad externa
+				\4[] únicamente para no residentes
+				\4 Convertibilidad interna
+				\4[] Sólo para residentes en país de emisión
+			\3 Monedas de Libre Uso
+				\4 Definido por el FMI
+				\4[] Monedas que:
+				\4[] $\to$ Ampliamente utilizadas en trans. internacionales
+				\4[] $\to$ Negociadas extensamente
+				\4 Libre Uso es un requisito para cesta de DEG
+				\4[] $\to$ Junto con valor alto de exportaciones
+				\4 Libre uso no implica convertibilidad
+				\4[] $\to$ LUso y restricciones de CFinanciera son posibles
+				\4[] $\to$ Plenamente convertible pero no LUso posible
+			\3 Volumen de transacción
+				\4 Mayor mercado financiero del mundo
+				\4[] En volumen de transacciones diarias
+				\4 Media diaria (BIS 2019)
+				\4[] 6.6 billones (españoles) de euros
+				\4 Crecimiento muy fuerte desde 2003
+				\4 Crisis financiera redujo volumen
+				\4[] $\to$ Recuperación recuperó volúmenes
+			\3 Principales divisas
+				\4 Dólar, euro, yen, libra esterlina, franco suizo
+				\4[] $\to$ Según Informe Trianual BIS 2019\footnote{En carpeta del tema.}
+				\4 Ranking de monedas
+				\4[] USD $\to$ 88\% de los pares intercambiados
+				\4[] EUR $\to$ 32\%
+				\4[] JPY $\to$ 17\%
+				\4[] GBP $\to$ 12\%
+				\4[] AUD $\to$ 6,8\%
+				\4 Crisis de deuda soberana de zona euro
+				\4[] Afectó volumenes del euro
+				\4[] Progresiva recuperación
+			\3 Tiempo de apertura
+				\4 24 horas al día
+				\4 6 días a la semana
+				\4 Siempre hay algún centro financiero abierto
+				\4[] Tokio, Singapur, HK,  Frankfurt, Londres, NY, Sydney
+				\4 Volatilidad elevada en aperturas
+				\4[] Sobre todo en aperturas europeas
+				\4[] 30 mins pre-apertura y dos horas post-apertura
+			\3 Concentración geográfica
+				\4 Principalmente en 5 centros financieros
+				\4[] Londres: 41\%
+				\4[] Estados Unidos: 19\%
+				\4[] Singapur: 5,7\%
+				\4[] Japón: 5,6\%
+				\4[] Hong Kong: 4,1\%
+				\4[] $\then$ Más del 75\%
+			\3 Over-the-Counter
+				\4 Generalmente, contratos bilaterales
+				\4 Sin mercados centralizados
+				\4 Compensación incipiente
+				\4[] Generalmente sin compensar
+				\4[] Cámaras de compensación relativamente recientes
+				\4[] CLS Bank
+				\4[] $\to$ Creado en 2002
+				\4[] $\to$ Mayores entidades del mercado de divisas
+				\4[] $\to$ Volúmenes crecientes
+		\2 Convenciones
+			\3 Códigos de divisas
+				\4 Tres letras
+				\4[] Primeras dos letras:
+				\4[] $\to$ País
+				\4[] Última letra
+				\4[] $\to$ Nombre de la divisa
+				\4[] Ejemplo:
+				\4[] JPY $\to$ JaPanese Yen
+			\3 Pares
+				\4 Pares mayores
+				\4[] Emparejamientos entre USD y divisas principales
+				\4 Pares cruzados
+				\4[] $\to$ entre dos divisas principales sin USD
+				\4[] Generalmente, dólar como intermediario
+				\4 Nuevos desarrollos
+				\4[] ¿Papel futuro del dólar tras aranceles?
+				\4[] ¿Sancionados por USA dejarán de usar USD?
+			\3 Moneda base y moneda de cuenta
+				\4 Pares suelen expresarse como:
+				\4[] EUR/USD, JPY/USD, EUR/JPY
+				\4 Primer código de divisa:
+				\4[] Moneda base/base currency
+				\4 Segundo código de divisa:
+				\4[] Moneda cuenta/quote currency
+				\4 Precio de par XXX / YYY:
+				\4[] Cantidad de YYY para comprar 1 de XXX
+				\4[] Ej.: 1.1 EUR/USD
+				\4[] $\to$ 1.1 USD por EUR
+				\4 También denominadasforeign exchange market efficiency
+				\4[] Base: CCY1/Currency 1
+				\4[] Cuenta: CCY2/Currency 2
+			\3 Convención sobre orden de base y cuenta
+				\4 En mercados internacionales
+				\4 Convenciones habituales sobre pares de divisas
+				\4[] $\to$ Qué moneda debe ser cuenta
+				\4[] $\to$ Qué moneda debe ser base
+				\4 Moneda base es primera de lista
+				\4[] 1. EUR\footnote{El BCE estipuló en 1999 que el EUR debía ser representado como moneda base en las cotizaciones con el resto de monedas.}
+				\4[] 2. GBP
+				\4[] 3. AUD
+				\4[] 4. NZD
+				\4[] 5. USD
+				\4[] 6. CHF
+				\4[] 7. JPY
+				\4 Generalmente, moneda con más valor es base
+				\4[] Más unidades de cuenta si es base
+				\4[] $\to$ No siempre
+				\4 En mercados locales, cambios de convención
+				\4[] En algunos mercados locales
+				\4[] $\to$ Agentes prefieren local sea cuenta
+			\3 Apodos de pares de divisas
+				\4 GBPUSD: cable
+				\4 EURUSD: fiber
+				\4 EURGBP: chunnel
+				\4 EURJPY: yuppy
+			\3 Cotización directa e indirecta
+				\4 Implica definir extranjero y nacional
+				\4 Cotización directa
+				\4[] Precio de extranjera en términos de nacional
+				\4[] En pares XXX/YYY
+				\4[] $\to$ Moneda cuenta es moneda local
+				\4[] Ej.: desde punto de vista de España
+				\4[] $\to$ 1.12 euros/libra
+				\4 Cotización indirecta
+				\4[] Precio de nacional en términos de extranjera
+				\4[] En pares XXX/YYY
+				\4[] $\to$ Moneda base es moneda local
+			\3 Tipos de cambio
+				\4 Tipo de cambio nominal (E)
+				\4[] Precio de una divisa en términos de otra
+				\4 Tipo de cambio real (e)
+				\4[] Precio relativo de los bienes de dos países
+				\4[] $e = E \cdot \frac{P^*}{P}$
+				\4 Tipo de cambio efectivo nominal (TCE)
+				\4[] Ponderación del tipo nominal
+				\4[] $\to$ En función del volumen de comercio/otros criterios
+				\4[] $\text{TCEN} = \sum_i^n E_i \cdot \alpha_i$
+				\4 Tipo de cambio efectivo real (TCER)
+				\4[] Ponderación de tipos reales
+				\4[] $\to$ Criterios similares a TCE
+				\4[] $\text{TCER} = \sum_i^n e_i \cdot \alpha_i$
+				\4[] Habitualmente, TCR en cotización indirecta
+				\4[] $\then$ TCER más alto indica apreciación de moneda local
+			\3 Bid, ask y spread
+				\4 Dos precios diferentes para cada par
+				\4[] Bid y ask
+				\4[] Spread $\to$ Diferencia entre ambos
+				\4 Bid:
+				\4[] Precio al que me compran una divisa
+				\4 Ask:
+				\4[] Precio al que me venden una divisa
+				\4 Spread
+				\4[] $\text{Ask}-\text{Bid} = \text{Spread}$ $\then$ $\text{Spread} > 0$
+				\4[] depende negativamente de liquidez
+				\4[] constituye comisión del broker
+			\3 Pips y ticks
+				\4 Pip:
+				\4[] Variación mínima cuantificable
+				\4[] Milésima de euro en euros
+				\4 Tick
+				\4[] $\Delta$ producida en un intervalo de tiempo
+		\2 Agentes
+			\3 Idea clave
+				\4 Instituciones o individuos que intercambian divisas
+				\4 Causantes últimos de formación de precios
+				\4 Importancia relativa depende de
+				\4[] Agente genera o demanda liquidez
+				\4[] Información de que dispone el agente
+				\4 Generación de liquidez
+				\4[] Estar dispuesto a absorber demanda de liquidez
+				\4[] $\to$ En cualquier momento
+				\4[] $\to$ Volumen flexible
+				\4 Información
+				\4[] Conjunto de datos que permiten a agentes
+				\4[] $\to$ Postular distribución de prob. sobre precios
+				\4[] $\Rightarrow$ Maximizar beneficios
+				\4 Evolución histórica
+				\4[] En primer momento, comerciantes de bienes y servicios
+				\4[] $\to$ Necesario disponer de divisas para importar
+				\4[] $\to$ Necesario colocar divisas recibidas por exportar
+				\4[] Aparición de intermediarios
+				\4[] $\to$ Emparejan vendedores y compradores
+				\4[] $\to$ Proveen liquidez
+				\4[] $\to$ Reducen costes de transacción y búsqueda
+				\4[] $\to$ Intercambio mutuo con fines de especulación
+				\4[] Actualidad
+				\4[] $\to$ Plataformas electrónicas emparejan automáticamente
+				\4[] $\to$ Redes globales mejoran emparejamiento
+			\3 Proveedores de liquidez
+				\4 Dealers/market makers
+				\4[] Siempre preparados para comprar/vender
+				\4[] $\to$ Por prestigio, siempre ofrecen bid/ask
+				\4[] $\to$ Horquillas reducidas para grandes operaciones
+				\4[] $\then$ Principales proveedores de liquidez
+				\4[] Operaciones especulativas de gran volumen
+				\4[] $\to$ En el mercado interdealer (39\% de total)
+				\4[] Fundamentalmente, grandes bancos globales
+				\4[] Agentes mejor informados del mercado
+				\4[] $\to$ Conocen demanda/oferta de muchos clientes
+				\4[] Algunos bancos centrales actúan como dealers
+				\4 Bancos custodios
+				\4[] Gestionan carteras de activos de inversores
+				\4[] Negocian divisas en nombre de inversores
+				\4[] $\to$ Proveen liquidez a clientes
+				\4[] $\to$ Cargan mark-up sobre precio pagado a dealers
+				\4[] $\Rightarrow$ Papel similar a brokerage
+				\4 Plataformas de operadores minoristas
+				\4[] Intermedian entre pequeños inversores
+				\4[] Emparejan oferta y demanda de clientes
+				\4[] Operan en la web
+				\4[] Algunos también crean mercado
+			\3 Demandantes de liquidez
+				\4 Instituciones financieras
+				\4[] Todas aquellas que no actúan como dealers
+				\4[] $\to$ Bancos comerciales regionales o locales
+				\4[] $\to$ Fondos de inversión y hedge funds
+				\4[] $\to$ Gestoras de carteras de valores
+				\4[] $\to$ Compañías de leasing
+				\4[] $\to$ Aseguradoras
+				\4[] $\to$ Bancos centrales (no siempre)
+				\4[] Más informadas que no financieras
+				\4[] Operan con fines:
+				\4[] $\to$ Especulativos
+				\4[] $\to$ Cobertura
+				\4[] $\to$ Inversión a largo plazo
+				\4 Sociedades no financieras
+				\4[] Casi todas transacciones de ByS
+				\4[] $\to$ Requieren transacciones en divisas
+				\4[] Exportadores e importadores clientes de dealers
+				\4[] Compraventa de divisas y cobertura
+				\4 Inversores minoristas
+				\4[] Pequeños volumenes
+				\4[] Progresivo aumento
+				\4[] Contacto con brokers y dealers a través de internet
+				\4 Operadores de alta frecuencia
+				\4[] Programas informáticos que ejecutan estrategias de:
+				\4[] $\to$ Arbitraje
+				\4[] $\to$ Especulación
+				\4[] Ventaja competitiva en periodos muy cortos
+				\4[] $\to$ High-frequency trading
+	\1 \marcar{Instrumentos}
+		\2 Spot
+			\3 Idea clave
+				\4 Transacciones directas de divisas
+				\4[] Dos cantidades de una moneda por otra
+			\3 Características
+				\4 Fecha de liquidación:
+				\4[] Máximo dos días después de cierre de contrato
+				\4 Swaps al contado:
+				\4[] Las que se liquidan de un día para otro
+				\4 Volumen de transacción
+				\4[] Se ha elevado en últimos años
+				\4[] Más de 2 billones de dólares
+			\3 Aplicaciones
+				\4 Segundo instrumento más importante
+				\4 Comercio
+				\4 Intervención
+		\2 Forwards
+			\3 Idea clave
+				\4 Transacciones directas de divisas
+				\4[] Liquidadas más allá de dos días después
+			\3 Características
+				\4 Venta/compra de un par en momento futuro
+				\4 Prima forward
+				\4[] Diferencia positiva entre:
+				\4[] $\to$ Precio de divisa en fecha futura
+				\4[] $\to$ Precio de divisa en spot
+				\4 CIP -- Covered interest parity
+				\4[] Arbitrajistas eliminan posibilidad de:
+				\4[] $\to$ Pedir prestado en divisa con interés más alto
+				\4[] $\to$ Cambiar spot por divisa con interés más alto
+				\4[] $\to$ Vender divisa comprada forward
+				\4[] $\to$ Prestar divisa
+				\4[] $\to$ Obtener interés en divisa
+				\4[] $\then$ Obtener beneficio sin riesgo
+				\4[] $\then$ Necesario $\frac{F_0}{S_0} = \frac{1+i}{1+i^*}$
+				\4[] En mercados suficientemente líquidos
+				\4[] $\to$ Se cumple condición
+			\3 Aplicaciones
+				\4 Cobertura
+				\4 Segundo instrumento más importante
+		\2 Swaps de tipo de cambio/FX swaps
+			\3 Idea clave
+				\4 Intercambio de divisas:
+				\4[] $\to$ En diferentes momentos temporales
+				\4[] $\to$ A precios definidos para cada intercambio
+				\4 Compra y venta de divisas
+				\4[] Acordada simultáneamente
+				\4[] $\to$ Cada una en diferente momento
+			\3 Características
+				\4 Dividido en dos partes:
+				\4[] ``\textit{Spot leg}''
+				\4[] $\to$ A precio spot
+				\4[] $\to$ Cantidad E de divisa XXX por $E^*$ de YYY
+				\4[] ``\textit{Forward leg}''
+				\4[] $\to$ A precio forward
+				\4[] $\to$ Cantidad Divisa YYY por XXX
+				\4 También posible \textit{forward}--\textit{forward}
+				\4[] Dos patas de la operación son forward
+			\3 Aplicaciones
+				\4 Instrumento más utilizado
+				\4[] $>2.5$ billones de volumen medio diario
+				\4[] $\to$ Contabilizada sólo forward leg
+				\4 Ejemplo:
+				\4[] Spot: X USD por Y EUR
+				\4[] Forward: Z EUR por W USD
+				\4 Ejemplo de uso
+				\4[] Empresa europea:
+				\4[] $\to$ recibe pago USD en $t=0$
+				\4[] $\to$ debe pagar en USD en $t+2$
+				\4[] $\then$ Necesita EUR hasta $t+2$
+				\4[] $\then$ Necesitará USD en $t+2$
+				\4[] $\then$ No necesita USD hasta $t+2$
+				\4[] Opciones:
+				\4[] -- Vender USD spot en $t$ y comprar spot en $t+2$
+				\4[] -- Contratar FX Swap
+				\4[] FX Swap a contratar
+				\4[] $\to$ Venta spot de USD por EUR en $t=0$
+				\4[] $\to$ Compra forward de USD en $t+2$
+				\4[] $\then$ Elimina riesgo de tipo de cambio hasta $t+2$
+				\4[] $\then$ Cubre necesidades de USD
+				\4[] $\then$ Dispone de EUR para actividades corrientes
+		\2 Swaps de divisas/currency swaps
+			\3 Idea clave
+				\4 Intercambio de principal y cupones fijos
+				\4[] En distintas divisas
+				\4[] A lo largo de todo el periodo de vida
+				\4[] $\to$ Desde obtención préstamo inicial hasta rendención
+			\3 Características
+			\3 Aplicaciones
+				\4 Ejemplo: inversión en país extranjero
+				\4 Inditex en Europa
+				\4[] $\to$ Quiere llevar a cabo proyecto en Japón
+				\4[] $\then$ Necesita JPY
+				\4 Toyota en Japón
+				\4[] $\to$ Quiere llevar a cabo proyecto en Europa
+				\4[] $\then$ Necesita EUR
+				\4 Inditex se financia más barato en EUR que Toyota
+				\4[] Toyota se financia más baro en JPY que Inditex
+				\4 Currency swap:
+				\4[1.] Emisión de bonos en mercados respectivos
+				\4[] $\to$ Inditex emite bonos EUR en Europa
+				\4[] $\to$ Toyota emite bonos JPY en Japón
+				\4[2.] Intercambio de ingresos por emisión de bonos
+				\4[] $\to$ Inditex Transfiere EUR recibidos a Toyota
+				\4[] $\to$ Toyota Transfiere JPY recibidos a Inditex
+				\4[3.] Intercambio de intereses
+				\4[] $\to$ Inditex paga interés de bonos JPY a Toyota
+				\4[] $\to$ Toyota paga interés de bonos EUR a Inditex
+				\4[4.] Pago de principales
+				\4[] $\to$ Inditex paga principal de bono JPY a Toyota
+				\4[] $\to$ Toyota paga principal de bono EUR a Inditex
+				\4[5.] Resultado neto
+				\4[] $\to$ Inditex se ha endeudado en JPY a coste de Toyota
+				\4[] $\to$ Toyota se ha endeudado en EUR a coste de Inditex
+		\2 Opciones
+			\3 Idea clave
+				\4 Derecho a comprar/vender una divisa
+				\4[] $\to$ A tipo de cambio determinado (strike)
+				\4[] $\to$ En una fecha concreta (vencimiento)
+				\4 Currency warrants
+				\4[] Opciones a muy largo plazo (> 1 año)
+		\2 Otros productos
+			\3 Differential swaps
+				\4[] Swaps con:
+				\4[] $\to$ Principal en una divisa
+				\4[] $\to$ Flujos de interés en otra
+			\3 Otros instrumentos ``exóticos''
+	\1 \marcar{Operaciones}
+		\2 Operaciones de cuenta corriente
+			\3 Idea clave
+				\4 MdDivisas hace posible comercio de ByS
+				\4 Segmento spot principal
+				\4 Sobre todo, sociedades no financieras
+			\3 Oferta de divisas
+				\4 Exportaciones de ByS
+				\4 Entradas de capitales
+				\4 Creciente en TCN directo
+				\4[] TCN directo más alto
+				\4[] $\to$ Exportaciones más baratas en divisa
+				\4[] $\then$ Aumentan exportaciones
+				\4[] $\then$ Compra de moneda local por divisa
+			\3 Demanda de divisas
+				\4 Importaciones de ByS
+				\4 Salidas de capitales
+				\4 Decreciente en TCN directo
+				\4[] TCN directo más alto
+				\4[] $\to$ Importaciones más baratas en moneda local
+				\4[] $\then$ Aumentan importaciones
+				\4[] $\then$ Venta de moneda local por divisa
+		\2 Operaciones de cobertura
+			\3 Idea clave
+				\4 Cubrir riesgo de tipo de cambio
+				\4 Tipo de cambio futuro puede fluctuar
+				\4[] Agente opera en moneda nacional
+				\4[] Realiza cobros/pagos en divisas
+				\4[] $\to$ Necesita eliminar riesgo sobre cuantía del pago/cobro
+				\4 Cobertura total vs parcial
+				\4[] Habitualmente, cobertura parcial
+				\4[] $\to$ Minimiza riesgo de pérdida
+				\4[] $\to$ Mantiene cierto riesgo favorable
+			\3 Forwards y futuros
+				\4 Aseguran tipo de cambio futuro
+				\4[] $\to$ Eliminan riesgo de tipo de cambio
+				\4 Ampliamente utilizados en:
+				\4[] Import/export
+				\4[] Reducción de riesgos de tesorería
+				\4 Cobertura de exportación
+				\4[] Si importadores pagan en su divisa
+				\4[] $\to$ Ponerse corto en forward de la divisa
+			\3 Cuentas en divisas
+				\4 Cuentas bancarias denominadas en divisas
+				\4 Utilizadas por importadores y exportadores
+				\4 Permiten armonizar fluctuaciones de tesorería
+				\4 Junto a forwards, flexibilizan pagos/cobros
+			\3 Opciones sobre tipo de cambio
+				\4 Permiten eliminar riesgo de tipo de cambio
+				\4 Múltiples variedades y estrategias
+				\4 Derecho a comprar/vender una determinada divisa
+				\4 Menor coste que forward
+		\2 Operaciones de arbitraje
+			\3 Idea clave
+				\4 Comprar y vender simultáneamente
+				\4[] Una divisa en dos mercados distintos
+				\4[] $\to$ En los que prevalecen distintos precios
+				\4[] $\then$ Para obtener beneficio sin riesgo
+			\3 Arbitraje espacial
+				\4 Diferente cotización en diferentes plazas
+				\4 Mismo segmento temporal e instrumento
+			\3 Arbitraje temporal
+				\4 Incumplimientos de la Covered Interest Parity
+				\4 Prima de cotización del forward:
+				\4[] Margen forward: $\frac{F-S}{S}$
+				\4[] Asumiendo tipo directo
+				\4[] Si margen > 0 $\then$ moneda local se deprecia
+				\4 Diferencial de tipos de interés:
+				\4[] $i-i^*$ donde $i^*$ es interés de la divisa
+				\4[] Si $i-i^* > 0$, moneda local más rentable
+				\4 Paridad cubierta de tipos se cumple si
+				\4[] $i-i^* \approx \frac{F-S}{S}$
+				\4[] $\to$ = retorno con interés o forwards
+				\4 Si no se cumple:
+				\4[] $\then$ Oportunidad de arbitraje
+			\3 Arbitraje por latencia
+				\4 Retardo en transmisión de precios y quotes
+				\4[] $\to$ Aprovechables por quien accede a info
+				\4[] $\then$ Arbitraje
+		\2 Operaciones especulativas
+			\3 Idea clave
+				\4 Inversores asumen posiciones arriesgadas
+				\4[] Esperando crear valor
+				\4[] $\to$ Utilizando información pública y privada
+			\3 Segmento spot: paridad descubierta
+				\4 Especulador estima tipo spot futuro
+				\4[] Cree en desviación de Uncovered Interest Parity
+				\4[] $\to$ Compran/venden divisa para aprovechar
+			\3 Segmento forward: paridad cubierta
+				\4 Especulador estima tipo spot futuro
+				\4[] Compara con tipo forward
+				\4[] $\to$ Compra/vende spot y forward para aprovechar
+				\4 Ejemplo:
+				\4[] GBP/EUR spot esperado: 1.5
+				\4[] GBP/EUR forward: 1.4
+				\4[] $\to$ Estima GBP estará más caro que forwards
+				\4[] $\then$ Venderá GBP spot y comprará forward
+			\3 Carry trade
+				\4 Aprovechar diferencial de tipos de interés
+				\4 Estrategia
+				\4[] Endeudarse en divisa de interés bajo
+				\4[] Convertir a divisa de interés alto
+				\4[] Prestar en divisa de interés alto
+				\4 Influido por políticas de QE
+				\4 Si carry trade es rentable
+				\4[] $\to$ UIP no se está cumpliendo
+		\2 Intervención
+			\3 Idea clave
+				\4 BCentrales son agentes en mercados financieros
+				\4[] En mercados cambiarios
+				\4[] $\to$ Compran y venden divisas y moneda local
+				\4[] En mercado abierto
+				\4[] $\to$ Compran y venden deuda nacional
+				\4 Actuaciones en mercados financieros internacionales
+				\4[] Afecta TCN que prevalece
+				\4[] $\to$ Intervención afecta regímenes cambiarios
+				\4[] $\then$ Herramienta para implementar régimen cambiario
+				\4[] $\then$ Existen también otras razones para intervenir
+			\3 Instrumentos
+				\4 Compraventa de divisas
+				\4[] Aut. monetaria compra/vende directamente
+				\4[] Ejemplo:
+				\4[] $\to$ BoJ en septiembre de 2010
+				\4[] $\to$ Compra 24 billones de dólares en un día
+				\4 Tipo de interés
+				\4[] Variar interés doméstico
+				\4[] $\to$ Para atraer capital
+				\4[] $\then$ Sostener TCN
+				\4[] Ejemplo: Turquía en verano de 2018
+				\4 Acumulación de reservas
+				\4[] Compra de activos líquidos en divisas
+				\4[] $\to$ A cambio de moneda nacional
+				\4[] $\then$ Presión hacia depreciación moneda nacional
+				\4[] Desde principios años 2000
+				\4[] $\to$ Enorme aumento de reservas en emergentes
+				\4[] ¿Por qué aumentar reservas?
+				\4[] $\to$ Sostener TCN si presión a la baja
+				\4[] $\to$ Mantener acceso a financiación de CC
+				\4[] $\to$ Mantener gasto público en recesión
+				\4 Esterilización
+				\4[] Ante compraventa de divisas
+				\4[] $\to$ ¿Qué sucede con balance de BCentral?
+				\4[] $\to$ ¿Crece? ¿Decrece?
+				\4[] Esterilización es mantener tamaño del balance
+				\4[] $\to$ Aunque varíe la cantidad de reservas
+				\4[] Cómo esterilizar
+				\4[] $\to$ $\Delta$ de crédito doméstico igual a $\Delta$ de activos exteriores netos
+				\4[] Debate sobre efectividad de interv. esterilizada
+				\4 Reputación del banco central
+				\4[] Percepción de agentes del mercado
+				\4[] $\to$ Capacidad para intervenir con éxito
+				\4[] Trayectoria de disciplina monetaria
+				\4[] $\to$ Aumenta reputación
+				\4[] $\then$ Aumenta poder para afectar expectativas
+				\4 Coordinación de política monetaria
+				\4[] Intervención coordinada con otros bancos centrales
+				\4 Expansión cuantitativa
+			\3 Factores de éxito de la intervención
+				\4[i] Percepción fuerte o débil del mercado
+				\4[] Mercados con opiniones ``fuertes'' sobre TCN de equilibrio
+				\4[] $\to$ Muy dificil afectar vía intervención
+				\4[] Mercados tienen opinión débil sobre evolución futura
+				\4[] $\to$ Intervención sirve como ``nudge''
+				\4[] $\then$ Permite fijar opinión de agentes
+				\4[ii] Factor sorpresa de la intervención
+				\4[] Intervención esperada puede haberse descontado ya
+				\4[] Intervenciones inesperadas tienen más efecto
+				\4[] $\to$ Incluso, overshooting
+				\4[iii] Operaciones concertadas con otros bancos centrales
+				\4[] Obviamente, BCNs interviniendo en distinta dirección
+				\4[] $\to$ Tienen menor efecto
+				\4[iv] Expectativas de los agentes respecto futuro
+				\4[] Factor principal de éxito de intervención
+				\4[] Agentes estiman intervención será exitosa
+				\4[] $\to$ Ellos mismos actúan en la dirección de intervención
+				\4[] $\then$ Intervención puede de hecho no ser necesaria
+				\4[v] Cambios en fundamentales
+				\4[] Intervención que no afecta fundamentales
+				\4[] $\to$ Menor probabilidad de éxito a m/p
+			\3 Valoración
+				\4 ¿La intervención funciona?
+				\4[] Debate académico y policy-making
+				\4 Canales de actuación de la intervención
+				\4[] Canal del balance
+				\4[] $\to$ Variación en ofertas relativas
+				\4[] $\to$ Ratio divisas/domésticos cambia aun con esterilización
+				\4[] $\to$ No son sustitutivos perfectos
+				\4[] $\then$ Agentes buscan equilibrar sus carteras
+				\4[] $\then$ Efectos sobre TCN
+				\4[] Canal de las expectativas
+				\4[] $\to$ Qué TCN esperan los agentes dados anuncios
+				\4[] $\to$ Señalización de intervención futura
+				\4[] $\to$ Evitan actuar en contra de intervención
+				\4[] $\to$ Pueden actuar a favor
+				\4[] Canal de la coordinación
+				\4[] $\to$ Intervención es señal para desencadenar flujos
+				\4[] $\to$ Agentes privados y domésticos
+				\4 Efectividad
+				\4[] Generalmente, no esterilizada es efectiva
+				\4[] Esterilizada puede ser efectiva también
+				\4[] $\to$ Aunque resultados ambiguos
+				\4[] $\to$ En el l/p, con algunos países no lo es
+				\4 Efectividad de intervención esterilizada
+				\4[] Debate de largo alcance
+				\4[] Contrarios a efectividad
+				\4[] $\to$ Mercados corrigen intervención rápidamente
+				\4[] $\to$ Como mucho, efecto a corto plazo
+				\4[] Favorables a efectividad
+				\4[] $\to$ Mercados segmentados hacen efecto sea real
+				\4[] $\to$ Efectos de c/p pueden inducir efectos l/p
+		\2 Regulación
+			\3 Idea clave
+				\4 Mercado de divisas determina TCN
+				\4 Gobierno puede ejercer coerción
+				\4[] Imponer límites o prohibiciones:
+				\4[] $\to$ Qué transacciones en divisas
+				\4[] $\to$ A qué tasa pueden venderse divisas
+				\4[] $\to$ Cuánto se puede comprar/vender
+			\3 Instrumentos
+				\4 Controles de capital
+				\4[] Restricciones en cuenta financiera
+				\4[] $\to$ Qué activos financieros pueden intercambiarse
+				\4[] $\to$ Quién puede obligarse con no residentes
+				\4[] $\to$ Quién puede comprar activos financieros en divisas
+				\4[] $\to$ Cuánto capital puede circular
+				\4[] $\to$ Impuestos a entradas de capital
+				\4[] Permitidos en BW y FMI
+				\4[] Años 80 y hasta crisis de 90s
+				\4[] $\to$ Liberalización de mov. de K es necesaria
+				\4[] Actualidad
+				\4[] $\to$ Algunas experiencias positivas con control de K
+				\4[] $\to$ Aumentan costes de financiación de empresas
+				\4[] $\to$ Reducen volatilidad de TC
+				\4[] $\to$ Pueden reducir coste de ajuste en crisis monetarias
+				\4 Control de cambio
+				\4[] Restricciones en mercado de divisas
+				\4[] $\to$ Caso particular de control de K
+				\4[] Muy habituales en el pasado
+				\4[] Actualidad:
+				\4[] $\to$ Persisten en formas muy débiles
+				\4[] $\to$ Notificación a BC
+				\4[] $\to$ Otros
+				\4 Tipos de cambio múltiples
+				\4[] Distintos TC según uso
+				\4[] $\to$ Importación
+				\4[] $\to$ Turismo
+				\4[] $\to$ ...
+				\4[] Objetivos habituales
+				\4[] $\to$ Subvencionar sector exportador
+				\4[] $\to$ Limitar salida de divisas
+			\3 Valoración
+				\4 Efectividad de la regulación
+				\4[] Depende de:
+				\4[] $\to$ Desarrollo de sistema financiero
+				\4[] $\to$ Rigidez de regulación
+				\4[] $\to$ Desajuste fundamental
+				\4[] $\to$ Voluntad política y economía política
+				\4[] Largo plazo
+				\4[] $\to$ Aumenta dificultad para regular flujos
+				\4[] $\to$ Aparición de nuevas formas de mov. K
+				\4[] $\to$ Ejemplo: bitcoin en Venezuela
+				\4 Aplicaciones efectivas
+				\4[] China
+				\4[] $\to$ Aislamiento de crisis asiática
+				\4[] Malasia
+				\4[] $\to$ Salida rápida tras crisis
+				\4[] Chipre
+				\4[] $\to$ Controles de corto plazo tras crisis bancaria
+				\4 Aplicaciones fallidas
+				\4[] Aumentan incentivos a no reformar
+				\4[] Reducen disciplina fiscal
+				\4[] Tentación de políticas monetarias expansivas
+				\4[] $\to$ Que acaban disminuyendo efectividad de regulación
+	\1 \marcar{Eficiencia del mercado de divisas}
+		\2 Eficiencia del mercado de divisas\footnote{Ver \href{https://web.stanford.edu/class/msande247s/2008/fourth\%20week\%20posting/2008chap07a\%200716\%202008.pdf} y \href{https://www.athensjournals.gr/business/2018-1-X-Y-Kallianiotis.pdf}{Kallianiotis: How efficient is the foreign exchange market.}.}
+			\3 Factores determinantes de eficiencia
+				\4 Amplitud
+				\4[] Mayor gama de valores negociados
+				\4[] $\to$ Mayor posibilidad de cubrir estados de naturaleza
+				\4 Profundidad
+				\4[] Depende de volumen de negociación
+				\4[] Capacidad de absorción de órdenes de compra/venta
+				\4[] Volumen que puede ser ejecutado
+				\4[] $\to$ Sin afectar significativamente al precio
+				\4 Libertad
+				\4[] Entrada y salida libre
+				\4[] Coste reducido de transacción
+				\4 Transparencia
+				\4[] Obtención de información no es costosa
+				\4[] Agentes conocen precios de oferta y demanda
+				\4[] Intermediarios tienen poca información privada que aprovechar
+				\4 Liquidez
+				\4[] Emparejamiento de comprador y vendedor poco costosa
+				\4[] Fácil encontrar contrapartida de operaciones
+				\4[$\then$] Implican que el mercado se acerca a eficiencia
+			\3 Hipótesis de eficiencia
+				\4 Concepto relativamente antiguo
+				\4[] Bachelier (1900), Samuelson (1965),
+				\4[] Fama, Black...
+				\4 ¿El tipo de cambio refleja info. disponible?
+				\4[] ¿Qué es reflejar?
+				\4[] $\to$ Elimina beneficio econ. ajustando por riesgo
+				\4[] ¿Qué información está disponible?
+				\4[] $\to$ Privada, semipública, pública
+				\4 Difícil respuesta
+				\4[] Muy difícil test empírico
+				\4[] Testar eficiencia implica
+				\4[] $\to$ Test de varios supuestos accesorios
+				\4[] $\then$ Imposible saber qué se cumple realmente
+			\3 Tests de eficiencia
+				\4 Forex es uno de los que más se acerca
+				\4 Covered Interest Parity
+				\4[] Se cumple generalmente
+				\4[] $\to$ Especialmente, pares más frecuentes
+				\4[] Oportunidades de arbitraje eliminadas
+				\4 Uncovered Interest Parity
+				\4[] En ocasiones, no se cumple
+				\4[] $\to$ De hecho, diferencial de interés
+				\4[] $\then$ Predictor de apreciación
+				\4[] Posibles explicaciones
+				\4[] $\to$ Mercado sí se acerca a eficiencia
+				\4[] $\then$ Asigna prima de riesgo al con más interés
+				\4 Comparación con paseo aleatorio
+				\4[] Paseo aleatorio suele ser mejor predictor
+				\4[] $\to$ Indicativo de eficiencia
+				\4[] Especialmente, EURUSD
+				\4 Test de eficiencia básico
+				\4[] Muy numerosos tests, con otros supuestos
+				\4[] Testar uncovered interest parity
+				\4[] $\to$ Comparar margen forward y $\Delta$ de spots
+				\4[] Estimar: $S_{t+n} - S_t = \beta_0 + \beta_1 (F_t^{t+n} - S_t) + u_{t+n}$
+				\4[] $\to$ $\beta_1 \neq 0$ $\then$ Margen forward predice
+				\4[] Resultados empíricos habituales: $\beta_1 < 0$
+				\4[] $\then$ Paradoja del margen forward
+				\4[] $\then$ Forward es estimador sesgado
+				\4 Explicaciones a paradoja
+				\4[] Inversores son aversos al riesgo
+				\4[] $\then$ Aplican prima de riesgo
+				\4[] Expectativas formadas ineficientemente
+				\4[] ...
+			\3 Fuerte impacto de digitalización
+				\4 Aumento de transparencia
+				\4[] $\to$ Más fácil y barato descubrimiento de precios
+				\4 Reducción de coste de transacción
+				\4[] Más fácil encontrar oferta y demanda
+				\4 Mayor número de agentes y mejor matching
+				\4[] Reducciones de costes operativos
+				\4[] Negociación y ejecución vía electrónica
+				\4[] $\then$ Reducción de spreads
+				\4[] $\then$ Reducción spreads relativos dealer--minoristas
+				\4 Concentración de dealers
+				\4[] Mayores dealers aumentan cuota de mercado
+				\4[] Bancos regionales especializados en divisas pequeñas
+				\4 Menor importancia del mercado interdealer
+				\4[] Acceso más fácil de minoristas
+				\4[] Plataformas de operadores minoristas
+				\4[] Agregadores de liquidez
+				\4[] $\to$ Recopilan información sobre bid/ask
+				\4[] $\to$ Ofrecen mejores precios a todas plataformas
+				\4 Big data
+				\4[] Grandes plataformas analizan datos de transacciones
+				\4[] $\to$ Customer profiling
+				\4 Trading automatizado
+				\4[] Trading algorítimico
+				\4[] High frequency trading
+				\4[] $\to$ \% elevado de mercados spot
+				\4[] $\to$ Aumentan liquidez
+				\4[] $\to$ Debate sobre si aumentan volatilidad
+		\2 Eficiencia del mercado de divisas
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Características, agentes y convenciones
+			\3 Instrumentos y operaciones
+		\2 Idea final
+			\3 Importancia del mercado de divisas
+				\4 Importancia capital en economías abiertas
+				\4 Determina:
+				\4[] Precio de exportación/importación
+				\4 Canal de transmisión de política monetaria
+				\4[] Mecanismo de intervención de BC
+				\4 Prestigio internacional
+				\4 Crisis financieras internacionales
+				\4[] FX es pieza fundamental
+				\4[] Factor de crisis y contagio
+			\3 Determinación del tipo de cambio
+				\4 Gran problema teórico y empírico
+				\4[] Más importante tras fin de BWoods
+				\4[] ¿De qué depende el tipo de cambio?
+				\4[] ¿Qué tipo de cambio mañana?
+				\4[] ¿Qué conclusiones de política económica?
+			\3 Regímenes cambiarios
+				\4 ¿Cómo deben intervenir las autoridades?
+				\4 ¿Tipo de cambio debe ser fijo o libre?
+				\4 ¿Cómo mantener un tipo de cambio fijo?
+				\4[$\then$] Todo estado debe preguntarse
+				\4[] Conocimiento de mercado de divisas
+				\4[] $\to$ Respuestas acertadas
+			\3 Cita de Edgeworth (1905)
+				\4 $\Delta$ de CC es como manillas de reloj
+				\4[] Resultado de muchos engranajes ocultos
+				\4[] $\to$ Cuyo funcionamiento no observamos a priori
+				\4[] $\then$ TC resulta de esos mecanismos ocultos
+			\3 Cita de Dornbusch (1983)
+				\4 Los modelos de TCN son visiones parciales
+				\4[] Cada uno explica aspecto importante
+				\4[] $\to$ En un episodio histórico determinado
+\end{esquemal}			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+%	\1 Tipo de cambio
+%		\2 Idea clave
+%		\2 Tipo de cambio nominal
+%		\2 Tipo de cambio real
+%		\2 Tipo de cambio efectivo
+%	\1 Mercados de divisas
+%		\2 Definición
+%	\1 Agentes
+%		\2 Institucional\footnote{Extraido de Handbook of Foreign Exchange Rates Ch. 1 - Who needs and who provides liquidity?}
+%			\3 Dealers
+%			\3 Bancos custodios
+%			\3 Plataformas de operadores minoristas\footnote{Conocidos como \textit{retail aggregators}.}
+%			\3 Instituciones financieras
+%			\3 Sociedades no financieras
+%			\3 Inversores no minoristas
+%			\3 Operadores de alta frecuencia
+%		\2 Funcional\footnote{Extraido de Gandolfo - Ch. 2.}
+%			\3 Especuladores
+%			\3 No especuladores
+%			\3 Instituciones financieras
+%	\1 Instrumentos
+%		\2 Spot
+%		\2 Forward
+%		\2 Swaps de tipo de cambio
+%		\2 Currency swaps
+%		\2 Opciones
+%		\2 otros
+%	\1 Operaciones
+%	\1 Eficiencia
+%	\1[] Conclusión
+%		\2 Recapitulación
+%		\2 Idea final
+%\end{esquema}
+%\end{multicols}
+
+\preguntas
+
+\seccion{Test 2013}
+
+\textbf{32.} Un especulador de divisas espera que el tipo de cambio al contado del euro respecto al dólar dentro de tres meses (desde hoy) sea menor que el tipo de cambio a futuros del dólar con entrega en tres meses (desde hoy). El especulador:
+\begin{enumerate}
+	\item[a] Comprará euros en el mercado al contado a partir de hoy, durante tres meses.
+	\item[b] Comprará euros a futuros y los revenderá en el mercado al contado en tres meses (a partir de hoy).
+	\item[c] Venderá euros en el mercado al contado (a partir de hoy) durante tres meses.
+	\item[d] Venderá euros a futuros hoy y los comprará en el mercado al contado en tres meses, contados a partir de hoy.
+\end{enumerate}
+
+\textbf{35.} Indique qué sentencia es \textbf{FALSA} sobre el riesgo de cambio:
+
+\begin{enumerate}
+	\item[a] Si un banco español concede un préstamo en coronas a una empresa sueca, se beneficiará si la corona se deprecia contra el euro.
+	\item[b] Si una empresa española vende ordenadores en España que previamente compra en Estados Unidos, le perjudicará que el dólar se aprecie contra el euro.
+	\item[c] Si una compañía matriz española avala un préstamo en yenes a una empresa filial radicada en Japón, saldrá perjudicada si el euro se deprecia contra el yen.
+	\item[d] Marque d) si no ha marcado ninguna de las anteriores. 
+\end{enumerate}
+
+\seccion{Test 2011}
+
+\textbf{34.} Suponiendo dos países, País A y País B. El tipo de cambio spot es de 1 Moneda A/Moneda B, el tipo forward a un año es 2 Moneda A/Moneda B, el país A tiene un tipo de interés anual del 10\% y el país B tiene un tipo de interés anual del 5\%. ¿Qué beneficio neto obtendría al cabo de un año un arbitrajista que obtiene un préstamo de 100 Monedas A en el momento actual?
+\begin{enumerate}
+	\item[a] 200 Monedas A.
+	\item[b] 210 Monedas A.
+	\item[c] 100 Monedas A.
+	\item[d] No existen posibilidades de arbitraje.
+\end{enumerate}
+
+\notas
+
+Ver Wang y Sarno más allá de Gandolfo.
+
+\textbf{2013}: \textbf{32.} B. \textbf{35.} A
+
+\textbf{2011}: \textbf{34.} C
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+    \item foreing exchange market microstructure
+    \item foreign exchange markets, history of
+\end{itemize}
+
+Aguilar García. \textit{Temario de CECO 2016}. Tema 14: Mercado de divisas: operaciones e instrumentos.
+
+Dornbusch, R. (1986) \textit{Exchange Rate Economics: 1986)} NBER Working Paper Series -- En carpeta del tema
+
+Gandolfo, G. \textit{International Finance and Open-Economy Macroeconomics}. Ch. 2, 3
+
+James, J.; Warsh, I. W.; Sarno, L. \textit{Handbook of Exchange Rates} (2012) Ch. 1 Foreign Exchange Market Structure, Players and Evolution
+
+MacDonald, R. \textit{Exchange Rate Economics. Theories and evidence.} (2007) -- En carpeta de economía internacional
+
+Sarno, L. \textit{Taylor, M.} \textit{The economics of exchange rates} (2002) -- En carpeta de economía internacional
+
+Shama, S. \textit{A Foreign Exchange Primer} (2008) -- En carpeta de economía internacional
+
+Taylor, M. P. (1995) \textit{The Economics of Exchange Rates} Journal of Economic Literature Vol. XXXIII -- En carpeta del tema
+
+Wang, P. \textit{The Economics of Foreign Exchange and Global Finance} (2005) 2nd Edition -- En carpeta de economía internacional
+
+\end{document}

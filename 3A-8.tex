@@ -1,0 +1,1061 @@
+\documentclass{nuevotema}
+
+\tema{3A-8}
+\titulo{La dualidad en la teoría de la demanda del consumidor y sus aplicaciones.}
+
+\begin{document}
+
+\ideaclave
+
+La teoría de la demanda se centra en describir y predecir el comportamiento de un tipo concreto de agentes: los consumidores. En un primer momento, el comportamiento de los consumidores se modelizó como un problema de maximización de la utilidad dada una restricción presupuestaria: ¿cuánto consumir de cada bien para alcanzar la cesta más preferida que no implique gastar más que una cantidad dada? Este enfoque permite extraer una serie de conclusiones fundamentales tales como el efecto total de variaciones en los precios y la renta sobre la demanda de bienes, pero implica requisitos de información que en la práctica resultan prohibitivos, tales como el conocimiento de la relación de preferencia asociada al agente en cuestión, o de la función de utilidad representa la misma en la recta real.
+
+El desarrollo de determinadas técnicas matemáticas en la primera mitad del siglo XX dio lugar al concepto de dualidad en programas de maximización. Bajo determinados supuestos, la solución del problema de maximización de la utilidad sujeto a una restricción de gasto coincide con la solución de un programa de minimización del gasto sujeto a una restricción de la utilidad. Denominamos al problema de maximización como problema primal y a su complementario problema de minimización como problema dual. Tenemos que es posible extraer la misma cesta óptima como resultado de ambos procesos de decisión, pero en función de distintos parámetros: mientras que el problema primal induce las llamadas funciones de demanda marshalliana en función de precios y renta, la resolución del problema dual induce las funciones de demanda hicksiana o compensada que relacionan cantidad demandada con precios y niveles de utilidad. Además, la utilización del teorema del sobre permite derivar la llamada función de gasto del problema dual, de la misma forma que del problema primal se puede derivar la función de utilidad indirecta. 
+
+De estas funciones se deducen una serie de resultados complementarios de enorme importancia a la hora de realizar estimaciones econométricas, análisis de bienestar y clasificar los bienes en base a su complementariedad o sustituibilidad. Así, la ecuación de Slutsky relaciona las derivadas de las funciones hicksianas y marshallianas, el lema de Shephard/teorema de Hotelling muestra la relación entre la función de gasto y las funciones de demanda hicksianas y la identidad de Roy pone en relación las funciones de demanda marshalliana con la función de utilidad indirecta. De estos resultados se extrae además un teorema de gran importancia a la hora de racionalizar funciones de demanda observadas, gracias al cual se puede afirmar (o negar) su origen en una función de utilidad y por tanto, en una relación de preferencias racional y continua. Es la llamada \textbf{condición de integrabilidad}, que vincula la existencia de una función de utilidad que genera una función de demanda a dos propiedades de la matriz hessiana de la función de gasto: que sea simétrica y que sea semidefinida negativa.
+
+El mero conocimiento de las preferencias del consumidor permite ordenar cestas de consumo, pero no permite realizar valoraciones acerca de \textit{cuánto} mejor son unas cestas de consumo en relación a otras. El enfoque de la dualidad permite introducir dos medidas cuantitativas de bienestar comparado: la \textbf{variación equivalente} y la \textbf{variación compensatoria}. La primera expresa la cantidad a transferir a un agente que sufriría los efectos de una hipótetica variación de precios para que alcance la utilidad resultado de la variación, aunque esta no se produzca efectivamente. La segunda expresa la cantidad que debe sustraerse a un agente para que su utilidad, una vez producida la variación de precios, sea la misma que obtenía antes del cambio. Ambas medidas arrojan valores diferentes --salvo en presencia de utilidades cuasilineales-, y constituyen diferentes medidas de variación de bienestar, dejando la elección entre una u otra a criterio del economista.
+
+A pesar de estas aplicaciones de la teoría de la utilidad, ni la función de gasto ni las funciones de demanda compensada son directamente observables, dada la presencia de un nivel dado de utilidad como variables. Por ello, se hace necesario encontrar medidas de variación de bienestar expresadas en relación a  a variables observables tales como precios y renta --esto es, medidas de bienestar que no tengan en cuenta la utilidad. En este punto aparecen los índices de precios, tales como el índice de Paasche y Laspeyres. Sin embargo, el primero infraestima el efecto sobre el bienestar de aumentos del nivel de precios, mientras que el segundo lo sobreestima. La dualidad permite, una vez más, comparar ambas medidas con el llamado índice verdadero, que no es sino el cociente de los valores de la función de gasto para distintos vectores de precios y misma utilidad, que si bien inobservable, sirve como referencia teórica.
+
+En la exposición se analiza también, y por último, el efecto de una variación en un sólo precio mediante la llamada cuantificación del excedente del consumidor. Mientras que el excedente del consumidor marshalliano cuantificaba simplemente el área debajo de la función de demanda marshalliana, los conceptos de VE y VC permiten cuantificar la verdadera variación de bienestar por medio de la integración de la función de demanda hicksiana entre los dos valores del precio del bien en cuestión (algo que equivale respectivamente a la VE y VC, o al área debajo de la curva).
+
+
+\seccion{Preguntas clave}
+
+\begin{itemize}
+	\item ¿Qué es la dualidad?
+	\item ¿Qué papel juega en la teoría del consumidor?
+	\item ¿Para qué sirve?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Microeconomía
+			\3 Teoría de la demanda
+			\3 Maximización de utilidad
+			\3 Teoría de la dualidad
+		\2 Objeto
+			\3 Qué es la dualidad
+			\3 Qué papel juega en la teoría de la demanda
+			\3 Para qué sirve, qué aplicaciones
+		\2 Estructura
+			\3 Dualidad de la demanda
+			\3 Análisis de bienestar
+	\1 \marcar{Dualidad aplicada a la demanda}
+		\2 Idea clave
+			\3 Equivalencia entre dos optimizaciones
+			\3 Resultados derivados de problema de minimización
+		\2 Formulación
+			\3[(i)] Problema primal: maximización de utilidad
+			\3[(ii)] Problema dual: minimización del gasto
+			\3 Resolución
+			\3 Teorema de la dualidad
+		\2 Implicaciones
+			\3 Función de demanda
+			\3 Función de utilidad indirecta
+			\3 Función de demanda compensada/hicksiana
+			\3 Función de gasto
+			\3 Lema de Shephard / Hotelling
+			\3 Ecuación de Slutsky
+			\3 Identidad de Roy
+			\3 Efecto renta y efecto sustitución
+			\3 Descomposición de Hicks
+			\3 Descomposición de Slutsky
+			\3 Cuantificar sustituibilidad y complementariedad
+		\2 Integrabilidad
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Valoración
+		\2 Aplicaciones de la dualidad
+			\3 Caracterizar bienes Giffen
+			\3 Racionalizar demanda observada
+			\3 Caracterizar demanda compensada
+			\3 Análisis de bienestar
+			\3 Estimación econométrica de sistemas de demanda
+	\1 \marcar{Análisis de bienestar}
+		\2 Idea clave
+			\3 ¿Qué situaciones son preferibles a otras?
+			\3 ¿Cuánto mejores unas que otras?
+		\2 Variación equivalente
+			\3 Idea clave
+			\3 Formulación
+			\3 Representación gráfica
+		\2 Variación compensatoria
+			\3 Idea clave
+			\3 Formulación
+			\3 Representación gráfica
+		\2 Excedente del consumidor
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+		\2 Relación entre VC, VE y EC
+			\3 Impacto del efecto renta
+			\3 Bienes normales
+			\3 Bienes inferiores
+			\3 Bienes sin efecto renta
+		\2 Índices de precios
+			\3 Idea clave
+			\3 Índice verdadero
+			\3 Laspeyres
+			\3 Paasche
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Dualidad de la demanda
+			\3 Análisis del bienestar
+		\2 Idea final
+			\3 Dualidad como desarrollo teórico
+			\3 Enorme impacto economía aplicada
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+
+%\begin{multicols}{2}
+\begin{esquemal}
+%\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Microeconomía
+				\4 Cómo deciden los agentes
+				\4 Qué decidirán
+			\3 Teoría de la demanda
+				\4 Qué demandan los agentes?
+				\4 Cuánto?
+				\4 De qué depende?
+			\3 Maximización de utilidad
+				\4 Primer enfoque
+				\4 Cantidades que maximizan utilidad
+				\4 Dado conjunto de cantidades posibles
+			\3 Teoría de la dualidad
+				\4 Desarrollo matemático primera mitad del siglo
+				\4 En economía:
+				\4[] Hotelling, Shephard, Roy, Diewert
+				\4 Resolver otro problema de minimización
+				\4[] $\to$ Vector que maximiza también minimiza
+				\4[] $\then$ Nuevas caracterizaciones del comportamiento
+				\4 Múltiples aplicaciones económicas
+				\4[] Permite caracterizar mejor el comportamiento
+				\4 Análisis empírico facilitado
+		\2 Objeto
+			\3 Qué es la dualidad
+			\3 Qué papel juega en la teoría de la demanda
+			\3 Para qué sirve, qué aplicaciones
+		\2 Estructura
+			\3 Dualidad de la demanda
+			\3 Análisis de bienestar
+	\1 \marcar{Dualidad aplicada a la demanda}
+		\2 Idea clave
+			\3 Equivalencia entre dos optimizaciones\footnote{Para que la equivalencia se produzca efectivamente, los problemas deben cumplir una serie de requisitos en cuyo detalle no es necesario entrar en la exposición.}:
+				\4 Maximizar utilidad dados costes
+				\4 Minimizar costes dada utilidad
+				\4[$\Rightarrow$] Solución ambos problemas:
+				\4[] Mismo vector / cesta de consumo
+			\3 Resultados derivados de problema de minimización
+				\4 Evitar postular forma funcional de $u(\vec{x})$
+				\4 Separar efectos renta y sustitución
+				\4 Racionalizar demandas observadas
+				\4 Aplicaciones empíricas
+		\2 Formulación
+			\3[(i)] Problema primal: maximización de utilidad
+				\4[] $\max \, u(\vec{x})$
+				\4[] $\, \, s.a: \vec{p} \cdot \vec{x} \leq w$
+				\4[] \grafica{problemaprimal}
+			\3[(ii)] Problema dual: minimización del gasto
+				\4[] $\min \, \vec{p} \cdot \vec{x}$
+				\4[] $\, \, s.a: u(\vec{x}) \geq u_0$
+				\4[] \grafica{problemadual}
+			\3 Resolución
+				\4 Método de Lagrange, diferenciales, sustitución, etc...
+				\4[] CPO: (general): $\vec{p} = \lambda \nabla u(\vec{x})$
+				\4[] CPO: (dos bienes) $\left| \text{RMS}_{xy} \right| \equiv \frac{u_x}{u_y} = \frac{p_x}{p_y}$
+				\4[$\Rightarrow$] $x^*=h_x(p_x,p_y, u_0)$
+				\4[$\Rightarrow$] $y^*=h_y(p_x,p_y, u_0)$
+			\3 Teorema de la dualidad
+				\4 Dado $u_0$ como óptimo de problema primal
+				\4[] Soluciones de primal y dual son idénticas
+				\4 Mismo vector $\vec{x}^*$ solución de (i) y (ii)
+		\2 Implicaciones
+			\3 Función de demanda
+				\4 Cantidad óptima de bien $i$ dados $\vec{p}$ y $u_1$
+				\4[] \fbox{$x^* = \vec{x}(\vec{p}, w)$}
+				\4 Propiedades
+				\4[(i)] \textit{Homogénea de grado 0 en $\left( \vec{p}, w \right)$}
+				\4[(ii)] \textit{Cumple ley de Walras: $\vec{p} \cdot \vec{x} = w$}
+				\4[(iii)] \textit{Conjunto convexo}
+				\4[] Si $\succsim$ es convexa, $x(\vec{p},w)$ es conjunto convexo
+				\4[(iii')] \textit{Unicidad}
+				\4[] Si $\succsim$ es estrictamente convexa,
+				\4[] $x(\vec{p},w)$ tiene un sólo elemento.
+			\3 Función de utilidad indirecta
+				\4[] $u (x, y) = u\left( x(p_x,p_y, w), y(p_x, p_y, w) \right)$
+				\4[] $ =v(p_x, p_y, w)) = v(\vec{p}, w)$
+				\4[] \fbox{$u(\vec{x}) = v (\vec{p}, w)$}
+				\4 Propiedades
+				\4[(i)] \textit{Homogénea de grado 0 en $\left( \vec{p}, w \right)$}
+				\4[(ii)] \textit{Estrictamente creciente en w}
+				\4[(iii)] \textit{No creciente en todo $p_i \in \vec{p}$}
+				\4[(iv)] \textit{Cuasiconvexa}
+				\4[] $\left\lbrace (\vec{p}, w): v( \vec{p},w) \leq \bar{v} \right\rbrace$ es convexo
+				\4[(v)] \textit{Continua en $\vec{p}$ y $w$.}
+			\3 Función de demanda compensada/hicksiana
+				\4 Cantidad óptima de bien i dados $\vec{p}$ y $u_0$
+				\4[] \fbox{$\vec{x}^* = \vec{h}(\vec{p}, u_0)$}
+				\4 {Relación con demanda marshalliana}
+				\4[] $\vec{h}(\vec{p},u_0) = \vec{h} \left( \vec{p}, v(\vec{p},w ) \right) = \vec{x}(\vec{p},w)$
+				\4 \underline{Propiedades}
+				\4[(i)] \textit{Homogénea de grado 0 en $\vec{p}$}
+				\4[(ii)] \textit{Sin exceso de utilidad}
+				\4[] $u( \vec{h} (\vec{p}, u_0)) = u_0$
+				\4[(iii)] \textit{Conjunto convexo}
+				\4[] Si $\succsim$ es convexa,
+				\4[] $h_i(\vec{p},u_0)$ es un conjunto convexo $\forall \, i$
+				\4[(iii')] \textit{Unicidad}
+				\4[] Si $\succsim$ es estrictamente convexa
+				\4[] $h_i(\vec{p}, u_0)$ es una función, no una correspondencia.
+			\3 Función de gasto
+				\4 Función de valor del problema dual
+				\4[$\rightarrow$] Renta mínima necesaria para obtener utilidad $u_0$
+				\4[] \fbox{$e(\vec{p}, u_0) = \vec{p} \cdot h(\vec{p}, u_0)$}
+				\4 \underline{Propiedades}
+				\4[(i)] \textit{Homogénea de grado 1 en $\vec{p}$}
+				\4[(ii)] \textit{Estrictamente creciente en $u$}
+				\4[(iii)] \textit{No decreciente en $\vec{p}$}
+				\4[(iv)] \textit{Cóncava en $p_i$}
+				\4[(v)] \textit{Continua en $\vec{p}$ y $u$}
+			\3 Lema de Shephard / Hotelling
+				\4 \fbox{$\pdv{e(\vec{p}, u_0)}{p_i} = h_i (\vec{p}, u_0) $}
+				\4 \underline{Demostración}\footnote{Versión de Jehle and Reny, pgs. 37-39.}:
+				\4[(1)] $\mathcal{L}(\vec{x}, \lambda, \vec{p}, u_0)=\vec{p} \vec{x} - \lambda \left( u(\vec{x}) - u_0 \right)$
+				\4[(2)] Teorema del sobre:
+				\4[] $\pdv{e(\vec{p}, u_0) }{p_i} = \pdv{\mathcal{L}\left( \vec{x}^*(\vec{p}, u_0), \lambda^*(\vec{p}, u_0) \right)}{p_i}=h_i(\vec{p},u_0)$
+			\3 Ecuación de Slutsky
+				\4 \fbox{$\pdv{x_i}{p_j} = \underbrace{\pdv{h_i}{p_j}}_{\text{ES}} - \underbrace{h_j \pdv{x_i}{w}}_{\text{ER}}$}
+				\4 \underline{Demostración}
+				\4[(1)] $\vec{h}(\vec{p}, u_0) = \vec{x}\left( \vec{p}, e(\vec{p}, u_0) \right)$
+				\4[$\Rightarrow$] $h_i(\vec{p}, u_0) = x_i \left( \vec{p}, e(\vec{p}, u_0) \right)$
+				\4[(2)] $\pdv{h_i(\vec{p},u_0)}{p_j} = \pdv{x_i}{p_j} + \pdv{x_i}{e} \pdv{e}{p_j}$
+				\4[(3)] $\pdv{h_i}{p_j} = \pdv{x_i}{p_j} + \pdv{x_i}{w} h_j $
+				\4[(4)] $\pdv{x_i}{p_j} = \pdv{h_i}{p_j} - \pdv{x_i}{w} h_j$
+				\4 Forma de elasticidades \fbox{$\epsilon_{ij} = \epsilon_{ij}^h - s_j \cdot \eta_i$}
+				\4[] Derivación:
+				\4[] $\to$ Multiplicar Ec. Slutsky por $\frac{p_j}{x_i}$
+				\4[] $\to$ Multiplicar $\text{ER}=h_j \cdot \pdv{x_i}{w}$ por $\dfrac{w}{w}$
+				\4[] $\Rightarrow$ $ \pdv{x_i}{p_j} \cdot \dfrac{p_j}{x_i} = \pdv{h_i}{p_j} \cdot \dfrac{p_j}{x_i} - x_j \cdot \dfrac{p_j}{x_i} \pdv{x_i}{w} \cdot \dfrac{w}{w} $
+			\3 Identidad de Roy
+				\4 \fbox{$x_i(\vec{p},w) = \frac{ - \partial V / \partial p_i }{ \partial V / \partial w }$}
+				\4 \underline{Demostración}
+				\4[(1)] $V(\vec{p}, e(\vec{p}, u_0)) = u_0$
+				\4[(2)] $ \frac{d V(\vec{p}, e(\vec{p}, u_0))}{d p_i} = \frac{d u_0}{d p_i}=0$
+				\4[(3)] $ \frac{\partial V}{\partial p_i} + \frac{\partial V}{\partial e} \frac{\partial e}{\partial p_i} = 0$
+				\4[(4)] $ \frac{\partial V}{\partial p_i} + \frac{\partial V}{\partial w} x_i = 0$
+				\4[(5)] $x_i = \frac{- \partial V / \partial p_i}{\partial V / \partial w}$
+			\3 Efecto renta y efecto sustitución
+				\4 Descomponer variación de demanda de un bien
+				\4[] Ante cambios en precio del mismo u otro bien
+				\4[] En efecto sustitución y efecto renta
+				\4 Efecto sustitución
+				\4[] Como afecta variación de precio
+				\4[] $\to$ Mantiendo constante la utilidad
+				\4[] $\then$ ¿Cómo sustituye bien por otro?
+				\4[] Respecto a propio precio
+				\4[] $\to$ Siempre efecto negativo
+				\4[] Respecto a precio de otro bien
+				\4[] $\to$ Posible sustitutivo neto
+				\4[] $\to$ Posible sustitutivo bruto
+				\4 Efecto renta indirecto
+				\4[] Cómo afecta variación del precio
+				\4[] $\to$ A través de renta de renta real
+				\4[] $\then$ ¿Cómo cambia consumo por variación de renta?
+				\4[] Bienes normales
+				\4[] $\to$ Aumentan con renta
+				\4[] Bienes inferiores
+				\4[] $\to$ Caen con renta
+				\4[] Bienes giffen
+				\4[] $\to$ Caen con renta más que ES negativo
+				\4[] $\then$ Demanda incondicional $\uparrow$ aunque aumente precio
+			\3 Descomposición de Hicks
+				\4 Descomponer ES y ER
+				\4 Descomposición de ES
+				\4[] Manteniendo constante la utilidad inicial
+				\4 Representación gráfica
+				\4[] \grafica{descomposicionhicks}
+			\3 Descomposición de Slutsky
+				\4 Descomponer ES y ER
+				\4 Descomposición de ES
+				\4[] Manteniendo constante el poder adquisitivo inicial
+				\4 Comparación con descomposición de Hicks
+				\4[] Mayor efecto sustitución
+				\4 Representación gráfica
+				\4[] \grafica{descomposicionslutsky}
+			\3 Cuantificar sustituibilidad y complementariedad
+				\4 \underline{Brutos}: teniendo en cuenta ER
+				\4[] Complementarios brutos: $\pdv{x_i}{p_j} < 0$
+				\4[] Sustitutivos brutos: $\pdv{x_i}{p_j} > 0$
+				\4\underline{Netos}: sin tener en cuenta ER
+				\4[] Complementarios netos: $\pdv{h_i}{p_j} < 0$
+				\4[] Sustitutivos netos: $\pdv{h_i}{p_j} > 0$
+		\2 Integrabilidad
+			\3 Idea clave
+				\4 Contexto
+				\4[] Preferencias no son observables
+				\4[] $\to$ Ni siquiera bien conocidas por agentes
+				\4[] $\then$ Debate de largo plazo sobre introspección
+				\4[] Evidencia empírica disponible
+				\4[] $\to$ Decisiones observadas de demanda
+				\4[] $\then$ Compra de bienes dado presupuesto
+				\4[] $\then$ Cambios en dda. dadas variaciones de precios
+				\4 Objetivos
+				\4[] Caracterizar condiciones mínimas
+				\4[] $\to$ Para racionalizar demanda observada
+				\4[] Extraer $\succeq$ a partir de $\vec{x}(\vec{p}, w)$
+				\4 Resultado
+				\4[] Condiciones suficientes para:
+				\4[] $\to$ Existencia de preferencias
+				\4[] $\to$ Obtención de preferencias subyacentes
+				\4 Revertir proceso
+				\4[] Preferencias racionales
+				\4[] A partir de función de demanda
+				\4[$\Rightarrow$] Extraer $\succsim$ a partir de $\vec{x}(\vec{p},w)$
+			\3 Formulación
+				\4 Matriz de Slutsky
+				\4[] Matriz hessiana de la función de gasto
+				\4[] $\to$ Segundas derivadas de función de gasto
+				\4[] $\to$ Derivadas de demandas hicksianas respecto precios
+				\4[i] Función de gasto
+				\4[] No negativa
+				\4[] Estrictamente Creciente en $u_0$
+				\4[] No decreciente en $\vec{p}$
+				\4[ii] Si matriz de Slutsky
+				\4[] Simétrica
+				\4[] Semidefinida negativa
+				\4[] $\to$ Función de gasto es cóncava
+				\4[$\then$] Posible derivar función de utilidad
+				\4[$\then$] Posible derivar preferencias subyacentes
+			\3 Implicaciones
+				\4 WARP
+				\4[] Cumplimiento de WARP para 2 bienes
+				\4[] $\to$ Si y solo si integrable
+				\4 SARP
+				\4[] Cumplimiento de SARP para 3 bienes
+				\4[] $\to$ Si y sólo si es integrable
+			\3 Valoración
+				\4 Resultado central de teoría de demanda
+				\4 Aplicación esencial de teoría de dualidad
+		\2 Aplicaciones de la dualidad
+			\3 Caracterizar bienes Giffen
+				\4 Definición
+				\4[] Bien cuya demanda aumenta
+				\4[] $\to$ Cuando aumenta su precio
+				\4[] $\pdv{x_i}{p_i} >0$
+				\4 Explicación:
+				\4[] $\pdv{x_i}{p_i} = \underbrace{\pdv{h_i}{p_i}}_{<0} - x_i \pdv{x_i}{w} > 0$
+				\4[] Dda. compensada siempre $\downarrow$ con $\uparrow$ precio propio
+				\4[] $\to$ ES propio siempre negativo
+				\4[] Pero ER puede compensar:
+				\4[] $\pdv{h_i}{p_i} - x_i \pdv{x_i}{w} > 0$, $ES <0$ $\then$ $\pdv{h_i}{p_i} > h_i \pdv{x_i}{w}$
+				\4[] $\then$ $ \left| h_i \frac{x_i}{w} \right| > \left| \pdv{h_i}{p_i} \right|$
+				\4[] $\then$ VAbsoluto de ER debe ser mayor a ES
+			\3 Racionalizar demanda observada
+				\4 Vía integrabilidad
+				\4 Necesario para realizar análisis de bienestar
+			\3 Caracterizar demanda compensada
+				\4 Extraer derivadas de función de demanda hicksiana
+				\4 A partir de observables: $\pdv{x_i}{p_j}$, $x_j$, $\pdv{x_i}{m}$
+			\3 Análisis de bienestar
+				\4 Vía función de gasto
+			\3 Estimación econométrica de sistemas de demanda
+				\4 Podemos observar:
+				\4[] $\vec{x}(\vec{p},w)$
+				\4 Podemos estimar
+				\4[] Derivadas de demanda compensada
+				\4[] $\to$ Vía ecuación de Slutsky
+				\4[$\then$] Podemos estimar función de gasto
+				\4[$\then$] Podemos estimar utilidad y preferencias
+				\4[$\then$] Posible estimar bienestar de agentes
+	\1 \marcar{Análisis de bienestar}
+		\2 Idea clave
+			\3 ¿Qué situaciones son preferibles a otras?
+				\4 $\succsim$: ordenación de asignaciones
+			\3 ¿Cuánto mejores unas que otras?
+				\4 $\succsim$ no lo permite
+				\4 $u(x)$ no incorpora información cardinal
+				\4[] Dado teorema de representación
+				\4[] Que relaciona $\succeq$ y $u(x)$
+				\4[] $\to$ Sólo se interpreta como ordinal
+				\4 Necesarias otras medidas
+				\4 Dualidad propone herramientas
+		\2 Variación equivalente
+			\3 Idea clave
+				\4 Cantidad \underline{a dar a} consumidor para obtener:
+				\4[] $\then$ Utilidad tras cambio hipotético
+				\4[] $\then$ Sin que se produzca cambio
+				\4[] $\to$ Es decir, manteniendo precios iniciales
+				\4 Más cantidad a dar
+				\4[] $\to$ Más mejora de bienestar induce la variación
+			\3 Formulación
+				\4 $\text{VE} = e(p_0, u_1) - e(p_0, u_0) = $
+				\4[] $= e(p_0, u_1) - e(p_1, u_1) = $
+				\4[] $= e(p_0, u_1) - w = $
+				\4[] $=\text{EV} = \int_{p^x_1}^{p^x_0} h(p_x, p_{-x}, u_1) dp_x$
+				\4 Alternativa:
+				\4[] \fbox{$u_1 = v(p_0, w + \text{VE})$}
+				\4 $\text{EV}>0 \Rightarrow \uparrow$ Bienestar
+			\3 Representación gráfica
+				\4 Representación gráfica en espacio x-y
+				\4[] \grafica{variacionequivalente}
+				\4 Representación gráfica en espacio $p_x$-x
+				\4[] \grafica{excedenteev}
+		\2 Variación compensatoria
+			\3 Idea clave
+				\4 Cantidad \underline{a pagar por} consumidor para:
+				\4[] $\rightarrow$ Utilidad antes de cambio
+				\4[] $\rightarrow$ A precios finales
+				\4 Más cantidad a pagar
+				\4[$\to$] Más mejora de bienestar induce la variación
+			\3 Formulación
+				\4[] $\text{VC} = e(p_1, u_1) - e(p_1, u_0) =$
+				\4[] $= e(p_0, u_0) - e(p_1, u_0)$
+				\4[] $=\text{CV} = \int_{p^x_1}^{p^x_0} h(p_x, p_{-x}, u_0) dp_x$
+				\4 $\text{CV}>0 \Rightarrow \uparrow$ Bienestar
+				\4 Alternativa
+				\4[] \fbox{$u_0 = v(p_1, w - \text{CV})$}
+			\3 Representación gráfica
+				\4 Representación gráfica en espacio x-y
+				\4[] \grafica{variacioncompensatoria}
+				\4 Representación gráfica en espacio $p_x$-x
+				\4[] \grafica{excedentecv}
+		\2 Excedente del consumidor
+			\3 Idea clave
+				\4 Cuantificar variación de bienestar
+				\4[] Ante variación de un precio\footnote{Por ejemplo, debido a la implementación de un impuesto.} $\to$ equilibrio parcial
+				\4[] En términos de renta que induce indiferencia
+				\4 Área bajo la curva de demanda marshalliana
+				\4[] Cantidad que induce indiferencia
+				\4[] $\to$ Sin tener en cuenta efecto renta
+				\4
+			\3 Formulación
+				\4[] $\underset{x,m}{\max} \quad u(x,m) = \phi(x) + m$
+				\4[] s.a: $p_x \cdot x + m < w$
+				\4[] $\then$ Sin efecto renta sobre $x$
+				\4[] $\then$ $\pdv{x(p_x,w)}{w} = 0$
+				\4 Ante caída de $p_x$
+				\4[] Aumento de consumo de $x$
+				\4[] Aumento de bienestar
+				\4 Devolver bienestar a situación inicial
+				\4[] Posible restando $m$ restante
+				\4[] $\to$ No provoca efecto renta
+				\4[] $\to$ No altera consumo de $x$
+				\4 Área bajo curva de demanda marshalliana
+				\4[] Caracteriza cantidad necesaria a retirar
+			\3 Implicaciones
+				\4 Distorsión si hay efecto renta
+				\4[] EConsumidor sesgado
+				\4[] $\to$ Por no tener en cuenta efecto renta
+				\4 Si no hay efecto renta
+				\4[] VE = EC = VC
+		\2 Relación entre VC, VE y EC\footnote{Ver concepto \textit{Relación entre variación compensatoria, variación equivalente y excedente del consumidor en presencia de bien inferior.}}
+			\3 Impacto del efecto renta
+				\4 Si $\pdv{x_i}{w} > 0 \, (\text{Bien normal}) \then \text{EV} > \text{CV}$
+				\4 Si $\pdv{x_i}{w} < 0 (\text{Bien inferior}) \then \text{CV} > \text{EV}$
+				\4 Si $\pdv{x_i}{w} = 0 = \text{ER}$
+				\4[]$\then$ $\pdv{x_i}{p_j} = \pdv{h_i}{p_j}$
+				\4[] $\Rightarrow$ EV = CV = Excedente marshalliano
+			\3 Bienes normales
+				\4 Aumento de precios
+				\4[] $\left| \text{CV} \right| > \left| \text{EC} \right| > \left| \text{EV} \right|$
+				\4 Bajada de precios
+				\4[] $\left| \text{EV} \right| > \left| \text{EC} \right| > \left| \text{CV} \right|$
+			\3 Bienes inferiores
+				\4 Aumento de precios
+				\4[] $\left| \text{EV} \right| > \left| \text{EC} \right| > \left| \text{CV} \right|$
+				\4 Bajada de precios
+				\4[] $\left| \text{CV} \right| > \left| \text{EC} \right| > \left| \text{EV} \right|$
+			\3 Bienes sin efecto renta
+				\4[] $\left| \text{CV} \right| = \left| \text{EC} \right| = \left| \text{EV} \right|$
+		\2 Índices de precios
+			\3 Idea clave
+				\4 Función de gasto no observable
+				\4 Precios y cantidades demandas \underline{observables}
+				\4[] Utilizadas para aproximar gasto no observable
+			\3 Índice verdadero
+				\4 Si función de gasto se conociese
+				\4 $\text{Índice}_{\text{Verdadero}} = \frac{e(\vec{p}_1, u_0)}{e(\vec{p}_0, u_0)}$
+			\3 Laspeyres
+				\4 $\text{Índice}_{\text{Laspeyres}} =  \frac{\sum_i p_i^t q_i^0 }{\sum_i p_i^0 q_i^0}$
+				\4 No tiene en cuenta cambios en patrón de consumo
+				\4 Sobreestima pérdida de bienestar ante $\uparrow$ precios
+			\3 Paasche
+				\4 $\text{Índice}_{\text{Paasche}} = \frac{\sum_i p_i^t q_i^t}{\sum_i p_i^0 q_i^t}$
+				\4 Infraestima pérdida de bienestar ante variación del precio
+
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Dualidad de la demanda
+			\3 Análisis del bienestar
+		\2 Idea final
+			\3 Dualidad como desarrollo teórico
+				\4 Desarrollo matemáticas
+				\4 Relación con otros conceptos
+				\4[] Convexidad
+				\4[] Programación lineal
+			\3 Enorme impacto economía aplicada
+				\4 Aplicaciones empíricas que permite
+				\4 Reduce información e introspección necesaria
+				\4 No sólo teoría de la demanda
+\end{esquemal}
+
+\conceptos
+
+\concepto{Relación entre variación compensatoria, variación equivalente y excedente del consumidor en presencia de bien inferior.}
+
+Supongamos un bien $x$, sobre cuyo precio se plantea la posibilidad de una bajada. Si la bajada se lleva efectivamente a cabo, ¿cómo habrá que compensar a un consumidor en términos de su renta para que la utilidad se mantenga al nivel inicial? La bajada del precio necesariamente lleva aparejada un aumento de la utilidad, ya sea porque el consumidor puede ahora consumir más unidades del bien en cuestión o porque puede consumir más unidades de otros bienes que le reportan utilidad, o por ambas razones. Así, si la bajada del precio tiene lugar, habrá que detraer renta del consumidor para inducirle su utilidad inicial. Sin embargo, las variaciones en la renta tienen efectos sobre la utilidad a través del consumo de bienes. En relación al consumo del bien $x$ cuyo precio se ha reducido, hay tres posibles efectos ante una detracción de su renta, que determinan la cuantía necesaria que hay que detraer (la \textit{variación compensatoria} o VC) para mantener la utilidad al nivel precio a la bajada de precios.
+
+\begin{itemize}
+	\item La detracción de renta no tiene efecto alguno sobre el consumo de $x$. Estamos ante un bien con demanda cuasilineal en otro bien, de tal manera que se demanda una cantidad fija de bien $x$ y todo el resto de la renta se destina a otro bien, que contribuye linealmente a aumentar la utilidad. Para reducir la utilidad al nivel inicial, bastará con detraer la cantidad que ha dejado de gastarse en bien $x$ tras la bajada de su precio y que había quedado libre para consumir en el otro bien. Esta cantidad a detraer no es sólo la variación compensatoria, si no también el llamado excedente del consumido (EC), o el área a la izquierda de la curva de demanda inversa marshalliana. Luego en términos formales tenemos que $\text{VC}=\text{EC}$.
+	\item La detracción de renta tiene un efecto negativo sobre el consumo de $x$. Estamos ante un bien \textbf{normal}. En este caso, la utilidad no cae sólo por el menor consumo del otro bien (como en el caso anterior sin efecto renta), sino también por el menor consumo del bien $x$. Así, para reducir la utilidad al nivel inicial previo a la bajada del precio de $x$, será necesaria una menor reducción de renta que en el caso anterior. La variación compensatoria será así en este caso inferior al excedente del consumidor anterior. Luego en términos formales tenemos que $\text{VC} < \text{EC}$.
+	\item La detracción de renta tiene un efecto positivo sobre el consumo de $x$. Estamos ante un bien \textbf{inferior}. En este caso, la bajada del precio provoca un aumento del consumo de $x$ menor que el que tendría lugar si no existiese este efecto positivo sobre el consumo de $x$. Ello resulta en un aumento de la utilidad inferior ante la caída de precio. Para reducir la utilidad al nivel inicial tras la caída en el precio, tendremos que detraer una cantidad de renta de igual forma que en el resto de los casos. Pero dado que los aumentos/detracciones de renta aumentan/reducen el el consumo de bien $x$ menos que en el primer caso sin efecto renta, será necesaria una mayor reducción de la renta. Luego en términos formales tenemos que $\text{VC} > \text{EC}$.
+\end{itemize}
+
+Si el objetivo es, mediante transferencias de renta, igualar la utilidad que se obtendría tras la potencial bajada de precio, pero sin que ésta llegue a producirse, estaremos tratando de caracterizar la variación equivalente o VE. Los resultados serán inversos a los obtenidos anteriormente para la variación compensatoria. Así, tendremos que $\text{VE} = \text{EC}$ si el bien no sufre efecto renta. Si el bien es normal y transferencias de renta aumentan el consumo del bien x, el gasto total en $x$ aumentará con la transferencia y estará disponible menos cantidad para el otro bien. Ello implica que serán necesarias transferencias de renta mayores para compensar esa desviación hacia $x$ y por tanto, $\text{VE} > \text{EC}$ con bienes normales. Si el bien es inferior, transferencias de renta reducirán el consumo de $x$, liberándose recursos para el consumo del otro bien adicionales a la propia transferencia de renta. Así, será necesario aumentar en menor cantidad la renta respecto al caso sin efecto renta en $x$ y por tanto, $\text{VE} < \text{EC}$ con bienes inferiores.
+
+Poniendo en común ambos conjuntos de resultados, obtenemos la siguiente taxonomía:
+
+\begin{itemize}
+	\item Con bienes normales:
+	\begin{itemize}
+		\item Subidas de precio:
+		\begin{itemize}
+			\item $\left| \text{VE} \right|< \left| \text{EC} \right|< \left| \text{VC} \right| $
+		\end{itemize}
+		\item Bajadas de precio:
+		\begin{itemize}
+			\item $\left| \text{VE} \right|> \left| \text{EC} \right|> \left| \text{VC}\right|$
+		\end{itemize}
+	\end{itemize}
+	\item Con bienes inferiores:
+	\begin{itemize}
+		\item Subidas de precio:
+		\begin{itemize}
+			\item $\left| \text{VE} \right| >\left| \text{EC} \right|>\left| \text{VC}\right|$
+		\end{itemize}
+		\item Bajadas de precio:
+		\begin{itemize}
+			\item  $\left|\text{VE} \right|< \left|\text{EC} \right|< \left|\text{VC}\right|$
+		\end{itemize}
+	\end{itemize}
+	\item Con bienes sin efecto renta:
+	\begin{itemize}
+		\item $\left| \text{VE} \right| = \left|\text{EC} \right|= \left|\text{VC}\right|$
+	\end{itemize}
+\end{itemize}
+
+\graficas
+
+\begin{axis}{4}{Maximización de la utilidad dada una restricción presupuestaria.}{$a_1$}{$a_2$}{problemaprimal}
+	\draw[-] (.5,4) to [out=270, in=180](4,.5);
+	
+	\draw[-] (1,4.5) to [out=270, in=180](4.5,1);
+	
+	\draw[-] (1.5,5) to [out=270, in=180](5,1.5);
+	
+	\draw[-{Latex}] (1.75,1.75) -- (3,3);
+	
+	\node [above] at (3.2,3.2) {\small Mayor utilidad};
+	
+	\draw [blue, fill=yellow, opacity=0.2] (0,3.05) -- (0,0) -- (3.05,0) -- (0,3.05);
+	
+	\node [above right] at (0.1,0.1) {\small Conjunto factible};
+	
+	\draw [fill] (1.5,1.5) circle [radius=0.05];
+\end{axis}
+
+\begin{axis}{4}{Minimización del coste dado un nivel de utilidad.}{$a_1$}{$a_2$}{problemadual}
+	
+	\draw[blue, opacity=0.2] (.5,4) to [out=270, in=180](4,.5);
+		
+	\draw [-] (0,3.05) -- (3.05,0);
+	
+	\draw [-] (0, 2.05) -- (2.05,0);
+	
+	\draw [-] (0, 1.05) -- (1.05,0);
+	
+	\draw[-{Latex}] (1.25,1.25) -- (0.25,0.25);
+		
+	\node [right] at (0.50,0.25) {\small Menor coste};
+	
+	\path [fill=yellow, opacity=0.2] (.5,4) to [out=270,in=180] (4,.5) -- (4,4) -- (.5,4);
+	
+	\node [above right] at (1.4,2.6) {\small Conjunto factible};
+
+	\draw [fill] (1.5,1.5) circle [radius=0.05];
+
+\end{axis}
+
+
+\begin{axis}{4}{Descomposición de Hicks: efecto renta y efecto sustitución tras una caída del precio de un bien.}{$x$}{$y$}{descomposicionhicks}
+	% curva de indiferencia u_0
+	\draw[-] (0.5,4) to [out=270, in=180](4,0.5);
+	\node [right] at (4,0.5) {$u_0$};
+			
+	% curva de indiferencia u_1
+	\draw[-] (1.1,4) to [out=270, in=180](4,1.1);
+	\node [right] at (4,1.1) {$u_1$};
+	
+	% recta presupuestaria con p_0
+	\draw[-] (0,3.9) -- (2.265,0);
+	\node [below] at (2.265,0) {\tiny $\frac{w}{p_x}$};
+
+	% recta presupuestaria con p_1
+	\draw[-] (0,3.9) -- (3.9,0);
+	\node [below] at (3.9,0) {\tiny $\frac{w}{p_x'}$};
+
+	% recta presupuestaria con p_1 y tangencia a u_0
+	\draw[dashed] (0,3.05) -- (3.05,0);
+	\node [below] at (3.9,0) {\tiny $\frac{w}{p_x'}$};
+
+	% tangencia u_0, p_0
+	\draw [fill] (1,2.2) circle [radius=0.03];
+	\node [above right] at (1,2.1) {\tiny 1};
+
+	% tangencia u_0, recta presupuestaria con p_1
+	\draw [fill] (1.52,1.52) circle [radius=0.03];
+	\node [above right] at (1.52,1.52) {\tiny 1'};
+
+	% tangencia u_0, recta presupuestaria con p_1
+	\draw [fill] (1.95,1.95) circle [radius=0.03];
+	\node [above right] at ((1.95,1.95) {\tiny 2};
+
+	% Efecto sustitución
+	\draw[dotted] (1,2.2) -- (1,0);
+	\draw[dotted] (1.52,1.52) -- (1.52,0);
+	\draw[decorate,decoration={brace, mirror,amplitude=3pt},xshift=0pt,yshift=-0.1cm] (1,-0.1) -- (1.52,-0.1) node[black,midway,xshift=2pt, yshift=-0.33cm] {\tiny ES};
+
+	% Efecto renta
+	\draw[dotted] (1.95,1.95) -- (1.95,0);
+	\draw[decorate,decoration={brace, mirror,amplitude=3pt},xshift=0pt,yshift=-0.1cm] (1.52,-0.1) -- (1.95,-0.1) node[black,midway,xshift=2pt, yshift=-0.33cm] {\tiny ER};
+
+\end{axis}
+
+El gráfico muestra como descomponer en efecto sustitución y efecto renta la variación de la demanda de un bien $x$ ante una disminución de su precio. El efecto sustitución se obtiene como la diferencia entre la demanda del bien $x$ respecto a dos puntos de tangencia. El primero, entre la recta presupuestaria inicial y la curva de indiferencia inicial. El segundo, entre la curva de indiferencia inicial y una recta presupuestaria con la pendiente correspondiente al nuevo precio de $x$. Esto es, para hallar el efecto sustitución tomamos dos rectas presupuestarias tangentes a la utilidad inicial. El efecto renta corresponde a la diferencia en la demanda del bien $x$ entre el segundo punto de tangencia y el punto de tangencia entre la curva de indiferencia final y la recta presupuestaria final. 
+
+
+\begin{axis}{4}{Descomposición de Slutsky: efecto renta y efecto sustitución manteniendo constante el poder adquisitivo tras un aumento del precio de un bien.}{$x$}{$y$}{descomposicionslutsky}
+	% curva de indiferencia u_0
+	\draw[-] (0.5,4) to [out=270, in=180](4,0.5);
+	\node [right] at (4,0.5) {$u_0$};
+			
+	% curva de indiferencia u_1
+	\draw[-] (1.1,4) to [out=270, in=180](4,1.1);
+	\node [right] at (4,1.1) {$u_1$};
+	
+	% curva de indiferencia u_0' tangente a recta que mantiene poder adquisitivo, con p_1
+	\draw[dashed] (0.6,4) to [out=270, in=180](4,0.6);
+	\node [right] at (4,1.1) {$u_1$};
+	
+	% recta presupuestaria con p_0
+	\draw[-] (0,3.9) -- (2.265,0);
+	\node [below] at (2.265,0) {\tiny $\frac{w}{p_x}$};
+
+	% recta presupuestaria con p_1
+	\draw[-] (0,3.9) -- (3.9,0);
+	\node [below] at (3.9,0) {\tiny $\frac{w}{p_x'}$};
+
+	% recta presupuestaria que mantiene poder adquisitivo inicial con p_1
+	\draw[dashed] (0,3.19) -- (3.19,0);
+	\node [below] at (3.9,0) {\tiny $\frac{w}{p_x'}$};
+
+	% tangencia u_0, p_0
+	\draw [fill] (1,2.2) circle [radius=0.03];
+	\node [below left] at (1,2.2) {\tiny 1};
+	\draw[dotted] (1,2.2) -- (1,0);
+
+	% tangencia u_0', recta presupuestaria que mantiene poder adquisitivo con p_1
+	\draw [fill] (1.59,1.59) circle [radius=0.03];
+	\node [above right] at (1.56,1.56) {\tiny 1'};
+	\draw[dotted] (1.59,1.59) -- (1.59,0);
+
+	% tangencia u_0, recta presupuestaria con p_1
+	\draw [fill] (1.95,1.95) circle [radius=0.03];
+	\node [above right] at ((1.95,1.95) {\tiny 2};
+	\draw[dotted] (1.95,1.95) -- (1.95,0);
+
+	% Efecto sustitución
+	\draw[decorate,decoration={brace, mirror,amplitude=3pt},xshift=0pt,yshift=-0.1cm] (1,-0.1) -- (1.59,-0.1) node[black,midway,xshift=2pt, yshift=-0.33cm] {\tiny ES};
+
+	% Efecto renta
+	\draw[decorate,decoration={brace, mirror,amplitude=3pt},xshift=0pt,yshift=-0.1cm] (1.59,-0.1) -- (1.95,-0.1) node[black,midway,xshift=2pt, yshift=-0.33cm] {\tiny ER};
+
+\end{axis}
+
+El gráfico muestra como descomponer la cantidad demandada en efecto sustitución y efecto renta mediante la descomposición de Slutsky. Para obtener el efecto sustitución, se traza una nueva recta presupuestaria con el nuevo precio del bien $x$ que pasa por el equilibrio inicial. Es decir, una recta presupuestaria que mantiene el poder adquisitivo inicial aun habiendo cambiado el precio. El punto de tangencia entre esta recta presupuestaria y la curva de indiferencia correspondiente, muestra el efecto sustitución. Dado que el nuevo punto de tangencia está necesariamente más arriba y a la derecha de lo que estaría si se hubiese mantenido fija la utilidad, el efecto sustitución es mayor en el caso de la descomposición de Slutsky que en la de Hicks.
+
+Es necesario tener en cuenta que la descomposición de Slutsky no corresponde a la ecuación de Slutsky. En la ecuación de Slutsky, el parámetro $\pdv{h_i}{p_j}$ correspondiente al efecto sustitución hace referencia al efecto sustitución de la descomposición de Hicks, en el que se mantiene la utilidad constante.
+
+
+\begin{axis}{4}{Variación equivalente con dos bienes}{$ $}{$ y $}{variacionequivalente}
+	% curva de indiferencia u_0
+	\draw[-] (0.5,4) to [out=270, in=180](4,0.5);
+	\node [right] at (4,0.5) {$u_0$};
+			
+	% curva de indiferencia u_1
+	\draw[-] (1.1,4) to [out=270, in=180](4,1.1);
+	\node [right] at (4,1.1) {$u_1$};
+	
+	% recta presupuestaria con p_0, u_0
+	\draw[-] (0,3.04) -- (3.04,0);
+	
+	% recta presupuestaria con p_1, u_1
+	\draw[dashed] (3.04,0) -- (0.6,4);
+	
+	% recta presupuestaria con p_0, u_1
+	\draw[-] (0,3.9) -- (3.9,0);
+
+	% tangencia u_0, recta presupuestaria con p_0
+	\draw [fill] (1.52,1.52) circle [radius=0.03];
+	\node [above right] at (1.52,1.52) {\tiny 1};
+	
+	% tangencia u_1, recta presupuestaria con p_1
+	\draw [fill] (1.50,2.52) circle [radius=0.03];
+	\node [above right] at (1.50,2.52) {\tiny 2};
+	
+	% tangencia u_1, recta presupuestaria con p_0
+	\draw [fill] (1.95,1.96) circle [radius=0.03];
+	\node [above right] at (1.96,1.96) {\tiny 2'};
+	
+	% precios sobre el eje de abscisas
+	\node [below left] at (3.4,0) {\tiny  $\frac{e(\vec{p_0}, u_0)}{p_x}$};
+	
+	\node [below right] at (3.5,0) {\tiny  $\frac{e(\vec{p_0}, u_0)+\text{VE}}{p_x}$};
+\end{axis}
+
+El equilibrio inicial se encuentra en el punto $2$. Si se produjese una variación del precio del bien $y$ (en este caso, una bajada del precio), el nuevo equilibrio correspondería al punto $2$, que corresponde al punto de tangencia entre la curva de indiferencia $u_1$ y la línea intermitente. 
+
+Si no se produjese la variación de precio, pero el agente recibiese una aportación de renta que indujese la misma utilidad que si se hubiera producido, el equilibrio se encontraría en el punto $2'$.
+
+\begin{axis}{4}{Variación equivalente a partir de la integral bajo la curva de demanda compensada.}{$ q_1 $}{$ p_1 $}{excedenteev}
+	% curva de demanda marshalliana
+	
+	\draw[-] (0.3,4) to [out=290, in=150] (3.8,0.5); 
+	
+	\node[right] at (3.8,0.5) {\tiny $x_1(p_1, p_{-1}, w)$};
+	
+	% curva de demanda hicksiana para u_0
+	
+	\draw[-] (0.8,4) to [out=280, in=110] (1.9,0.3);
+	
+	\node[above] at (0.8,4) {\tiny $h_1(p_1, p_{-1}, u_0)$};
+	
+	% curva de demanda hicksiana para u_1
+	
+	\draw[-] (2,4) to [out=280, in=110] (3.1,0.3);
+	
+	\node[right] at (2,4) {\tiny $h_1(p_1, p_{-1}, u_1)$};
+	
+	% cantidad de equilibrio con p_0 y u_0
+	
+	\node[below] at (1.15,0) {\tiny $ q_1^0 $};
+	
+	\draw[dashed] (1.15,0) -- (1.15,2.48);
+	
+	% precio de equilibrio con p_0 y u_0
+	
+	\node[left] at (0,2.48) {\tiny $ p_1^0$ }; 
+	
+	\draw[dashed] (0,2.48) -- (2.34,2.48);
+	
+	% punto con demandas marshalliana y hicksiana iguales para p_0 y u_0
+	
+	\draw [fill] (1.14,2.48) circle [radius=0.03];
+	
+	% cantidad de equilibrio con p_1 y u_1
+	
+	\draw[dashed] (0,1.08) -- (2.81,1.08);	
+	
+	\node[left] at (0,1.08) {\tiny $ p_1^1$ };
+	
+	% precio de equilibrio con p_1 y u_1
+	
+	\draw[dashed] (2.81,0) -- (2.81,1.08);
+	
+	\node[below] at (2.81,0) {\tiny $ q_1^1$ };
+	
+	% punto con demandas marshalliana y hicksiana iguales para p_0 y u_0
+	
+	\draw [fill] (2.81,1.08) circle [radius=0.03];
+	
+	% variación equivalente
+	
+	\path [fill=yellow, opacity=0.2] (2.34,2.48) to [out=283,in=109] (2.81,1.08) -- (0,1.08) -- (0,2.48) -- (2.34,2.48);
+	
+	\draw [-{Latex}] (2,2) -- (3.5,2.9);
+	
+	\node[right] at (3.5,2.9) {VE};
+\end{axis}
+
+
+\begin{axis}{4}{Variación compensatoria con dos bienes.}{$ $}{$ y $}{variacioncompensatoria}
+		% curva de indiferencia u_0
+		\draw[-] (0.5,4) to [out=270, in=180](4,0.5);
+		\node [right] at (4,0.5) {$u_0$};
+		
+		% curva de indiferencia u_1
+		\draw[-] (1.1,4) to [out=270, in=180](4,1.1);
+		\node [right] at (4,1.1) {$u_1$};
+		
+		% recta presupuestaria con p_0, u_0
+		\draw[-] (0,3.04) -- (3.04,0);
+		
+		% recta presupuestaria con p_1, u_1
+		\draw[dashed] (3.04,0) -- (0.6,4);
+		
+		% recta presupuestaria con p_1, u_0
+		\draw[-] (2.34,0) -- (0,3.83);
+		
+		% recta presupuestaria con p_0, u_1
+		%\draw[-] (0,3.9) -- (3.9,0);
+		
+		% tangencia u_0, recta presupuestaria con p_0
+		\draw [fill] (1.52,1.52) circle [radius=0.03];
+		\node [above right] at (1.52,1.52) {\tiny 1};
+		
+		% tangencia u_1, recta presupuestaria con p_1
+		\draw [fill] (1.50,2.52) circle [radius=0.03];
+		\node [above right] at (1.50,2.52) {\tiny 2};
+		
+		% tangencia u_0, recta presupuestaria con p_1
+		\draw [fill] (1.03,2.15) circle [radius=0.03];
+		\node [above right] at (1.03,2.15) {\tiny 2'};
+		
+		% tangencia u_1, recta presupuestaria con p_0
+		%\draw [fill] (1.95,1.96) circle [radius=0.03];
+		%\node [above right] at (1.96,1.96) {\tiny 2'};
+		
+		% precios sobre el eje de abscisas
+		\node [below left] at (3.8,0) {\tiny  $\frac{e(\vec{p_1}, u_1)}{p_x}$};
+		
+		\node[below left] at (2.8,0) {\tiny $\frac{e(\vec{p_1},u_1) - \text{VC}}{p_x}$};
+		
+		%\node [below right] at (3.5,0) {\tiny  $\frac{e(\vec{p_0}, u_0)+\text{VE}}{p_x}$};
+\end{axis}
+
+Inicialmente, el consumidor demanda la cesta representada por el punto 1. Se produce una variación del precio del bien $y$ (en este caso, una bajada), y el consumidor pasa a demandar una cesta $2$ que le reporta una utilidad $u_1$. Tras la detracción de la VC de su renta, el consumidor demanda una cesta $2'$ y obtiene una utilidad $u_0$.
+
+
+\begin{axis}{4}{Variación compensatoria a partir de la integral bajo la curva de demanda compensada.}{$ q_x $}{$ p_x $}{excedentecv}
+	% curva de demanda marshalliana
+	
+	\draw[-] (0.3,4) to [out=290, in=150] (3.8,0.5); 
+	
+	\node[right] at (3.8,0.5) {\tiny $x_1(p_1, p_{-1}, w)$};
+	
+	% curva de demanda hicksiana para u_0
+	
+	\draw[-] (0.8,4) to [out=280, in=110] (1.9,0.3);
+	
+	\node[above] at (0.8,4) {\tiny $h_1(p_1, p_{-1}, u_0)$};
+	
+	% curva de demanda hicksiana para u_1
+	
+	\draw[-] (2,4) to [out=280, in=110] (3.1,0.3);
+	
+	\node[right] at (2,4) {\tiny $h_1(p_1, p_{-1}, u_1)$};
+	
+	% cantidad de equilibrio con p_0 y u_0
+	
+	\node[below] at (1.15,0) {\tiny $ q_1^0 $};
+	
+	\draw[dashed] (1.15,0) -- (1.15,2.48);
+	
+	% precio de equilibrio con p_0 y u_0
+	
+	\node[left] at (0,2.48) {\tiny $ p_1^0$ }; 
+	
+	\draw[dashed] (0,2.48) -- (2.34,2.48);
+	
+	% punto con demandas marshalliana y hicksiana iguales para p_0 y u_0
+	
+	\draw [fill] (1.14,2.48) circle [radius=0.03];
+	
+	% cantidad de equilibrio con p_1 y u_1
+	
+	\draw[dashed] (0,1.08) -- (2.81,1.08);	
+	
+	\node[left] at (0,1.08) {\tiny $ p_1^1$ };
+	
+	% precio de equilibrio con p_1 y u_1
+	
+	\draw[dashed] (2.81,0) -- (2.81,1.08);
+	
+	\node[below] at (2.81,0) {\tiny $ q_1^1$ };
+	
+	% punto con demandas marshalliana y hicksiana iguales para p_0 y u_0
+	
+	\draw [fill] (2.81,1.08) circle [radius=0.03];
+	
+	% variación compensatoria
+	
+	\path [fill=yellow, opacity=0.2] (1.14,2.48) to [out=285,in=109] (1.61,1.08) -- (0,1.08) -- (0,2.48) -- (1.14,2.48);
+	
+	\draw [-{Latex}] (0.5,1.8) -- (-1,1.8);
+	
+	\node[left] at (-1,1.8) {VC};
+\end{axis}
+
+\preguntas
+
+\seccion{Test 2018}
+
+\textbf{5.} Si las preferencias de un consumidor vienen representadas por la función de utilidad Cobb-Douglas, $U(x_1, x_2) = x_1 x_2$, los precios son $p_1 = p_2 = 10$ y la renta es $m=100$. Si se establece un impuesto unitario sobre el consumo de $x_1$ de $2,5$ unidades monetarias, la pérdida de bienestar para el consumidor producida por el impuesto y medida a través de la variación equivalente es, en valor absoluto:
+
+\begin{itemize}
+	\item[a] $\text{VE} = 17,2$
+	\item[b] $\text{VE} = 11,8$
+	\item[c] $\text{VE} = 11,6$
+	\item[d] $\text{VE} = 10,6$
+\end{itemize}
+
+\seccion{Test 2015}
+
+\textbf{4.} Una consumidora tiene la siguiente función indirecta de utilidad $V(p, M) = \frac{M}{(p_1^{1/2} + p_2^{1/2})^2}$ donde M es la renta y $\textbf{p}=(p_1, p_2)$ es el vector de precios de los bienes 1 y 2. En ese caso, la demanda compensada de bien $x_1$ es:
+
+\begin{enumerate}
+	\item[a] $x_1^c(p,U) = \frac{U \left( p_1^{1/2} + p_2^{1/2} \right) }{p_1^{1/2}}$.
+	\item[b] $x_1^c(p,U) = \frac{U \left( p_1^2 + p_2^2 \right) }{p_1^2}. $
+	\item[c] $x_1^c(p,U) = \frac{U \left( p_1 + p_2 \right) }{p_1}. $
+	\item[d] $x_1^c(p,U) = \frac{U p_1^{1/2}}{ \left( p_1^{1/2} + p_2^{1/2} \right)}. $
+\end{enumerate}
+
+\seccion{Test 2014}
+\textbf{8.} Suponga que los precios en 2007 fueron $(p_x, p_y) = (2,3)$ y en 2008 $(p'_x, p'_y) = (3,4)$. Si la cesta de bienes de un consumidor en 2007 fue $(2,2)$; entonces su IPC verdadero es:
+\begin{enumerate}
+	\item[a] Menor del 40\%.
+	\item[b] Exactamente el 40\%.
+	\item[c] Mayor del 40\%.
+	\item[d] Indeterminado.
+\end{enumerate}
+
+
+\seccion{Test 2009}
+\textbf{4.} Al analizar la relación entre dos bienes 1 y 2 para un consumidor dado, se define el bien 1 como:
+\begin{itemize}
+	\item complementario bruto del bien 2 si: $\pdv{x_1}{p_2} < 0$
+	\item complementario neto del bien 2 si: $\pdv{h_1}{p_2} < 0$
+\end{itemize}
+
+siendo $x_1$ y $h_1$ las demandas marshalliana y hicksiana, respectivamente, y se define el bien 1 como sustitutivo bruto o neto del bien 2 si las derivadas anteriores tienen signos positivos. Considerando que 1 sea un bien normal, a partir de la ecuación de Slutsky podemos afirmar que:
+
+\begin{enumerate}
+	\item[a] Si el bien 1 es sustitutivo neto del bien 2, necesariamente también debe ser sustitutivo bruto.
+	\item[b] Si el bien 1 es sustitutivo bruto del bien 2, necesariamente también debe ser sustitutivo neto.
+	\item[c] Si el bien 1 es complementario bruto del bien 2, necesariamente también es sustitutivo neto.
+	\item[d] Ninguna de las anteriores. 
+\end{enumerate}
+
+\seccion{Test 2008}
+
+\textbf{4.} La demanda marshalliana u ordinaria de un bien x es tal que $x^M(R, p_x, p_y)$, mientras que la demanda hicksiana o compensada es $x^H(U, p_x, p_y)$. Si varía el precio de dicho bien, y la pendiente de la función inversa de demanda es $\left( \frac{ dp}{dx} \right)$, 
+\begin{enumerate}
+    \item[a] Sólo si el bien es inferior respecto de la renta, las curvas inversas de demanda ordinaria y compensada tiene la misma pendiente en todos sus puntos.
+    \item[b] Sea como sea la pendiente de la curva de Engel del bien x, la curva inversa de demanda ordinaria tiene, en valor absoluto, más pendiente que la demanda compensada.
+    \item[c] Por la teoría de la dualidad del consumidor, se puede afirmar que si bien ambas funciones dependen de variables distintas, tienen la misma pendiente en todos los puntos.
+    \item[d] Si el bien es normal la función inversa de demanda ordinaria tiene, en valor absoluto, menos pendiente que la de demanda compensada.
+\end{enumerate}
+
+\seccion{Test 2007}
+\textbf{7.} Suponga un consumidor con preferencias estrictamente convexas que consume dos bienes. Si a partir de una situación inicial de equilibrio se incrementa el precio de uno de los bienes, es \textbf{FALSO} que:
+\begin{enumerate}
+	\item[a] Si su renta se actualiza con un índice de precios Paasche, en la nueva situación de equilibrio obtendrá menor utilidad que en la situación inicial.
+	\item[b] Si su renta se actualiza con un índice de variación compensada, en la nueva situación de equilibrio obtendrá igual utilidad que en la situación inicial.
+	\item[c] Si su renta se actualiza con un índice de precios Laspeyres, en la nueva situación de equilibrio obtendrá mayor utilidad que en la situación inicial.
+	\item[d] Si su renta se actualiza con un índice de precios de Paasche, en la nueva situación de equilibrio obtendrá igual utilidad que en la situación inicial.
+\end{enumerate}
+
+\seccion{Test 2006}
+\textbf{6.} Indique la respuesta \textbf{falsa}. El hecho de que la función de gasto $G(\bar{p}, U)$ sea cóncava respecto a los precios de los bienes implica que:
+\begin{enumerate}
+	\item[a] Los efectos sustitución cruzados son simétricos.
+	\item[b] La matriz de efectos sustitución es semidefinida negativa.
+	\item[c] Si el bien $x_1$ es sustituto bruto de $x_2$, entonces seguro que $x_2$ será también sustituto bruto de $x_1$.
+	\item[d] El efecto sustitución propio precio es no positivo.
+\end{enumerate}
+
+\seccion{Test 2005}
+\textbf{5.} Sea la función indirecta de utilidad de un consumidor $V(\bar{p}, M) = \frac{M}{p_1} + 2 \ln (2p_1) - 2 \ln p_2 - 2$, donde $M$ es la renta del consumidor y $\bar{p} = (p_1, p_2)$ los precios de los bienes $x_1$ y $x_2$, respectivamente. Haciendo uso de la teoría de la dualidad, las funciones de demanda compensada del consumidor serían:
+
+\begin{enumerate}
+	\item[a] $x_1^c (\bar{p}, U) = U -2 \ln (2p_1); x_2^c(\bar{p}, U) = \frac{p_1}{2p_2}$
+	\item[b] $x_1^c (\bar{p}, U) = \frac{M}{p_1} - 2 ; x_2^c(\bar{p}, U) = \frac{2p_1}{p_2} $
+	\item[c] $x_1^c (\bar{p}, U) = \frac{M}{p_1} - 2 ; x_2^c(\bar{p}, U) = \frac{M}{p_2} - 2 $
+	\item[d] $x_1^c (\bar{p}, U) = U - 2 \ln (2p_1) + 2 \ln p_2 ; x_2^c(\bar{p}, U) = \frac{2p_1}{p_2} $
+\end{enumerate}
+
+\seccion{Test 2004}
+\textbf{5.} Dada la función indirecta de utilidad $v(p_1, p_2, M) = \frac{M}{p_1+p_2}$, donde $p_1$, $p_2$, son, respectivamente, los precios de los bienes 1 y 2, y M es la renta del individuo, utilizando la ley de Roy, la demanda del bien 1 es:
+\begin{enumerate}
+	\item[a] $x_1(p_1, p_2, M) = \frac{M}{p_1}$
+	\item[b] $x_1(p_1, p_2, M) = \frac{Mp_1}{p_1+p_2}$
+	\item[c] $x_1(p_1, p_2, M) = \frac{M}{p_1 p_2}$
+	\item[d] $x_1(p_1, p_2, M) = \frac{M}{p_1 + p_2}$
+\end{enumerate}
+
+\notas
+
+\textbf{2018}: \textbf{5.} D
+
+\textbf{2015}: \textbf{4.} A
+
+\textbf{2014}: \textbf{8.} A
+
+\textbf{2009}: \textbf{4.} B
+
+\textbf{2008}: \textbf{4.} D
+
+\textbf{2007}: \textbf{7.} D
+
+\textbf{2006}: \textbf{6.} C
+
+\textbf{2005}: \textbf{5.} D
+
+\textbf{2004}: \textbf{5.} D
+
+El tema de CECO y el de Juan incluyen un apartado sobre compensación, en el que desarrollan las características de los índices de Paasche y Laspeyres. Sin embargo, el tema 22 se refiere a los criterios de compensación, y puede haber solapamiento. Da la impresión de que el análisis de bienestar se incluye en este tema por efecto del capítulo 3 del MWG. Escribir en conceptos la definición de índices de Laspeyres y Paasche y las implicaciones del uso de uno u otro.
+
+Mirar en qué consisten los chain-linked indexes.
+
+Falta reformar la parte de excedente del consumidor, VC y VE. VC y VE deben incluir excedente como integral, y excedente del consumidor explicarse como excedente marshalliano que resulta de tomar función de utilidad cuasilineal, y propiedades.
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+	\item compensating principle
+	\item demand theory
+	\item duality
+	\item Hicksian and Marshallian demand functions
+	\item integrability of demand
+	\item Slutsky, Eugen
+\end{itemize}
+
+LUISS. \textit{Microeconomia}. \url{http://static.luiss.it/hey/microeconomia/book/Ch19.pdf}
+
+MWG Ch. 3
+
+Rosas, F.; Lence, S. H. \textit{Duality theory econometrics: How reliable is it with real-world data?} (2015) Selected Papers for the 2015 Agricultural \& Applied Economics Association and Western Agricultural Economics Association Anual Meeting, San Francisco -- En carpeta del tema
+
+
+\end{document}

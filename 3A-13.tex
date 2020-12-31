@@ -1,0 +1,1167 @@
+\documentclass{nuevotema}
+
+\tema{3A-13}
+\titulo{Economía de la información y teoría de la agencia: selección adversa y riesgo moral.}
+
+\begin{document}
+
+\ideaclave
+
+Lionel Robbins y Paul Samuelson definieron la economía como el estudio del comportamiento humano a la hora de gestionar recursos escasos con usos alternativos para satisfacer una serie de necesidades. En ese contexto de estudio de la decisión humana, la microeconomía es la rama de la ciencia económica que trata de entender y predecir el resultado de decisiones económicas de agentes individuales: ¿qué decisiones toman? ¿cómo reaccionan a las decisiones de otros agentes? El Primer Teorema Fundamental del Bienestar es uno de los principales resultados de la ciencia microeconómica, y de él se derivan la mayoría de los programas de investigación. Someramente, el teorema afirma que en presencia de información perfecta, preferencias racionales no saturadas y ausencia de externalidades, los equilibrios que alcanzan un conjunto de agentes microeconómicos son equilibrios de Pareto. Expresado de otro modo, el teorema afirma que cuando no hay externalidades y los agentes microeconómicos se comportan racionalmente, existe un conjunto de precios y asignaciones para cada individuo que maximiza sus preferencias individuales, son factibles dadas unas dotaciones iniciales, y resulta imposible mejorar el bienestar de un agente dado sin empeorar el de al menos algún otro agente. Aunque este resultado tiene un gran valor en sí mismo, los supuestos que requiere son muy restrictivos. Detengámonos en el supuesto de información perfecta. El concepto de información incompleta hace referencia al hecho de que los agentes no conozcan las preferencias de otros agentes o las características de los bienes que intercambian. La información asimétrica hace referencia al hecho de que al menos un agente tenga información incompleta mientras que otros tienen información completa, de tal manera que algunos agentes tengan más información que otros acerca de las preferencias de los agentes, las características de los bienes o el propio marco institucional en el que tiene lugar la decisión microeconómica. La economía de la información examina los efectos de la presencia de información incompleta y asimétrica: ¿qué sucede cuando los agentes no disponen de toda la información relevante, y algunos de ellos disponen de más información que otros? La presencia de información asimétrica implica que el PTFB no se cumple. Así, los equilibrios alcanzados son en muchas ocasiones subóptimos desde el punto de vista de Pareto. Dos manifestaciones especialmente relevantes de esta suboptimalidad son la selección adversa y el problema de agencia y en particular el riesgo moral. El \textbf{objeto} de esta exposición es dar respuesta a las preguntas fundamentales en relación a todo lo anterior: ¿qué es la selección adversa? ¿qué es el problema de agencia? ¿qué el riesgo moral? ¿cómo se modelizan formalmente estos fenómenos? ¿qué propiedades tienen los equilibrios competitivos alcanzados? ¿cómo pueden mitigarse los efectos indeseables que aparecen? ¿es posible mejorar en el sentido de Pareto los equilibrios competitivos con información incompleta y asimétrica? ¿qué aplicaciones prácticas tiene la economía de la información? ¿qué programas de investigación están relacionados? La \textbf{estructura} de la exposición se divide en dos partes. En la primera, examinamos el fenómeno de la \underline{selección adversa}. En la segunda, tratamos el \underline{problema de agencia} y su manifestación más importante, el riesgo moral. 
+
+La \marcar{selección adversa} es generalmente definida como un sesgo negativo en la calidad de los bienes y servicios intercambiados en un mercado cuando existen variaciones significativas en la calidad que sólo el oferente conoce con certeza, de tal manera que la otra parte no conoce realmente lo que está comprando. En casos extremos de selección adversa, el sesgo a la baja en la calidad acaba provocando un cese total de los intercambios y la desaparición del mercado. Así, es un elemento necesario de la selección adversa el hecho de que exista una asimetría de información previa al contrato de intercambio. El agente desinformado decide el precio al que demandar el bien teniendo en cuenta una expectativa de la calidad que recibirá, así como los incentivos de los agentes informados a ofrecer el bien o no hacerlo. Los agentes informados, por su parte, conocen la calidad del bien concreto que ofrecen, saben que la otra parte ignora la calidad, y conocen el beneficio que obtendrán de la venta teniendo en cuenta la utilidad que derivarán de la posesión del bien en caso de no intercambiarlo (la utilidad de reserva). Así, el resultado del intercambio y la aparición de selección adversa dependerá en gran medida de la utilidad de reserva de los agentes informados. Éstos maximizarán su beneficio aprovechando la ventaja informacional de que disponen, y ofrecerán el bien sólo si el precio de demanda es superior a su utilidad de reserva. Los agentes desinformados ofrecerán un precio que maximice su beneficio esperado teniendo en cuenta que la calidad esperada depende de la distribución de probabilidad de los bienes ofertados, que a su vez depende del precio ofrecido y de la utilidad de reserva. Si la utilidad de reserva crece con la calidad, un mayor precio de demanda aumentará la calidad esperada de una unidad de bien. Sin embargo, el precio de oferta puede ser inferior a la calidad esperada, y los agentes desinformados lo bajarán hasta que el beneficio esperado no sea negativo. Se trata de un fenómeno microeconómico conocido desde antiguo. La Ley de Gresham formulada en el siglo XVI y que afirma que el dinero ``malo'' sustituye al bueno es una de las primeras expresiones conocidas de este fenómeno. Más recientemente, Akerlof (1970) fue el trabajo seminal que formalizó matemáticamente el fenómeno y abrió el camino para una muy extensa literatura posterior. Aunque utilizó el mercado de coches de segunda mano como ejemplo, las conclusiones son fácilmente generalizables y muchos trabajos posteriores se centraron en el mercado laboral, el mercado de seguros o la oferta de crédito, como veremos más adelante. A continuación se plantea el fenómeno en términos del mercado de trabajo, siguiendo a Mas-Colell, Whinston y Green (1995).
+
+En el contexto del mercado de trabajo, cabe asimilar la calidad del servicio intercambiado con la productividad, y asumir que los demandantes son empresas que utilizan el trabajo como input de un proceso productivo. La calidad que ofrecen los trabajadores puede describirse por una función de distribución $F(\theta)$. Los trabajadores conocen perfectamente la productividad del trabajo que ofrecen individualmente y tienen un salario de reserva que depende positivamente de la productividad. Así, aceptarán trabajar cuando el salario que reciben sean al menos igual al salario de reserva. Este supuesto de salario de reserva creciente en la productividad es de hecho el supuesto clave de la selección adversa, como veremos a continuación. Para hacer el modelo lo más simple posible, asumimos que el ingreso que las empresas derivan del trabajo es igual a la productividad del trabajo que contrata. Aunque no pueden verificar la productividad, sí conocen la distribución de probabilidad de la productividad y de los salarios de reserva de los trabajadores. Si las empresas compiten à la Bertrand por el trabajo, el beneficio será nulo de tal manera que ofrecerán salarios iguales a la productividad esperada. 
+
+Para analizar la optimalidad del equilibrio en este contexto de información asimétrica, es adecuado caracterizar también el equilibrio que se alcanzará en presencia de información perfecta. Es decir, cuando las empresas conocen perfectamente la productividad que tiene cada individuo. En este contexto, ofrecerán salarios exactamente iguales a la productividad de cada individuo. Cuando la productividad es superior a la productividad de cada individuo, el trabajador aceptará el empleo. Cuando esto no suceda, preferirá no trabajar y obtener el salario de reserva. Así, el resultado será un óptimo de Pareto porque no será posible aumentar la utilidad de ningún agente sin empeorar la de ningún otro. El trabajo más productivo que el salario de reserva efectivamente producirá de forma acorde con su productividad, y el trabajo improductivo será sustituido por el salario de reserva. La productividad media será la máxima posible y no habrá selección adversa en grado alguno.
+
+¿Qué equilibrio se alcanzará cuando existe información asimétrica? Las empresas estimarán el valor de la productividad esperada dado el salario ofrecido, teniendo en cuenta que los trabajadores sólo aceptan si el salario ofrecido es superior al de reserva. Conocida esa productividad esperada, el salario ofrecido de equilibrio en competencia perfecta será igual a la productividad esperada dado el salario. Este equilibrio puede representarse gráficamente en un eje de coordenadas en el que las abscisas representen el salario ofrecido y las ordenadas la productividad. La bisectriz del plano representa la igualdad entre productividad y salario. Una curva deberá representar la productividad esperada en función del salario ofrecido. Esta curva parte del punto correspondiente a la productividad mínima y el salario de reserva asociado, y se extiende hasta la productividad máxima y su salario de reserva correspondiente. En el punto de intersección entre la bisectriz y esta curva se encuentra el equilibrio competitivo de este mercado. El equilibrio es así el salario para el que las empresas no obtienen pérdidas pero tampoco beneficios dada la competencia que llevan a cabo por contratar el trabajo más productivo. En un caso extremo en el que el salario de reserva sólo sea igual a la productividad para los trabajadores menos productivos, la selección adversa es tal que sólo aceptan trabajar los peores trabajadores, y en términos de optimalidad de Pareto la existencia del mercado es igual de deseable como su desaparición completa. En otros casos menos extremos, en los que el salario de reserva de los menos productivos es claramente inferior a su productividad, el equilibrio es tal que no sólo trabajan los menos productivos y el equilibrio induce una productividad media inferior a la de la distribución en su conjunto pero en cualquier caso superior a la productividad mínima. En estas situaciones, que en la práctica son las más habituales, la productividad media del trabajo contratado desciende respecto a la productividad media de toda la distribución, pero no es tan baja como para que la desaparición del mercado sea indiferente desde el punto de vista de la optimalidad de Pareto. En cualquier caso, estamos ante selección adversa porque se produce una disminución de la productividad (calidad) respecto a la que prevalecería en presencia de información completa. Anteriormente se mencionó también que el salario de reserva creciente en la productividad es el supuesto clave para la aparición de selección adversa. Esto es así porque si el salario de reserva fuese igual para todos los agentes e inferior a la productividad del agente menos productivo, las empresas podrían ofrecer un salario igual a ese salario de reserva y todos los agentes trabajarían, independientemente de la presencia o ausencia de información asimétrica.
+
+Una vez establecida la suboptimalidad de la selección adversa y más generalmente, de esta forma de asimetría informacional previa a la contratación, es posible examinar las posibles soluciones al problema. La \textbf{señalización} (\textit{signaling}) propuesta formalmente por primera vez por Spencer (1973) consiste en la transmisión creíble de información privada desde las partes informadas a las partes desinformadas haciendo uso de una tecnología relativamente más costosa para los agentes con un bien de calidad baja. Es precisamente ese mayor coste para los agentes con baja productividad lo que permite que la señal sea creíble para la parte no informada. Si enviar una señal a la parte informada no tuviese coste alguno, todos los agentes informados tratarían de informar a los desinformados de que su calidad es alta y por supuesto, éstos últimos no otorgarían racionalmente ningún valor a esa señal. 
+ 
+Para ilustrar el papel de la señalización en la mitigación de los efectos indeseables de la selección adversa, podemos continuar el modelo del mercado de trabajo, asimilando la adquisición de educación con la tecnología de señalización. Para centrarnos en lo esencial e ilustrar con más claridad el fenómeno de la señalización, asumamos que sólo existen dos niveles de productividad: alto y bajo. Asumimos también que el salario de reserva es nulo, lo cual elimina la posibilidad de desaparición completa del mercado pero permite en todo caso comparar el efecto de la señalización y su ausencia en presencia de información asimétrica. La educación de cada agente depende exclusivamente de su decisión individual y suponemos también que la educación sirve sólo para señalizar y que no tiene efecto alguno sobre la productividad del agente que decide educarse más. El coste de la educación depende de dos variables: productividad del agente y grado de educación obtenido. El coste es creciente y convexo en la cantidad de educación. Es decreciente en la productividad, y el coste marginal de la educación es decreciente también en la productividad, de manera que adquirir una unidad adicional de educación es más barato cuanto mayor sea la productividad. En cuanto a las empresas, tenemos un marco similar al anterior en el que obtienen un ingreso igual a la productividad individual y no pueden verificar la productividad ex-ante. Sin embargo, sí pueden verificar con certeza la educación y por ello, pueden ofrecer salarios ligados al grado de educación observado. Las empresas conocen además los incentivos de los trabajadores. La decisión de los trabajadores concierne el grado de educación que maximizará su beneficio, teniendo en cuenta que la educación es costosa pero puede permitirles obtener un salario mayor: ¿cuántos años de educación adquirir? Atendiendo al mercado en general, la pregunta relevante es ¿todos los trabajadores elegirán la misma educación, o niveles diferentes? ¿el nivel elegido depende de la productividad? La respuesta a estas preguntas dependerá del coste marginal relativo de la educación para trabajadores con productividad alta, y del salario ofrecido por las empresas. Existe así, para los trabajadores, un evidente trade-off entre salario recibido y educación obtenida. Cuanto más se eduquen, más pueden ganar por su trabajo señalizando a las empresas su productividad verdadera o no, pero mayor será el coste en que incurrirán. La decisión de las empresas concierne las combinaciones de salario y educación que ofrecen a los trabajadores. ¿Cuánto salario deben ofrecer respecto a la educación observada? ¿Deben ofrecer el mismo salario para todos? ¿o diferentes salarios para cada nivel de educación? ¿a cuánto debe ascender el salario? Responder a estas preguntas y las relativas a la decisión del trabajador consiste en caracterizar los posibles equilibrios que puedan aparecer. En este contexto, un equilibrio será un conjunto de combinaciones salario--educación para los que las empresas obtienen beneficios nulos, ninguna empresa puede mejorar su beneficio y los trabajadores maximizan su ingreso individual. Existen generalmente dos tipos de equilibrios en este contexto. Equilibrios separadores (\textit{separating equilibria}) en los que los trabajadores eligen diferentes niveles de educación en función de su productividad, y equilibrios agrupadores (\textit{pooling equilibria}) en los que los todos los trabajadores eligen el mismo nivel de educación independientemente de su productividad. 
+
+Los \underline{equilibrios separadores} se caracterizan por la presencia de dos tipos de contrato de trabajo. En uno de ellos, las empresas ofrecen un salario igual a la productividad más baja, y no exigen educación alguna a los trabajadores. En el otro contrato, las empresas pagan un salario igual a la productividad alta y exigen un nivel de educación positivo. ¿Cuál será el nivel educativo que exigirán las empresas para pagar el salario más elevado? Es éste el elemento clave del equilibrio separador. Las empresas deben exigir un nivel de educación lo suficientemente elevado como para que los trabajadores con productividad baja prefieran el contrato con salario bajo y educación nula, pero suficientemente bajo como para que los trabajadores con productividad alta no prefieran el contrato con salario bajo y educación nula. Existe así un nivel de educación mínimo para el que el equilibrio es viable. Además, este nivel mínimo de educación será Pareto-superior a niveles más elevados que sólo implicarán un coste adicional para los trabajadores productivos sin añadir capacidad de señalización alguna. Los equilibrios separadores pueden ser Pareto-superiores respecto a la ausencia de tecnología de señalización, pero pueden también no serlo. En ausencia de señalización, las empresas ofrecerán un salario para todos los trabajadores y dado que no tienen salario de reserva, la productividad media contratada será igual a la productividad esperada. Esta productividad media de no señalización será en todo caso superior a la productividad de los trabajadores poco productivos, mientras que será siempre inferior a la de los trabajadores productivos. Así, los trabajadores poco productivos \textit{siempre} perderán con la aparición de señalización. Los trabajadores productivos, sin embargo, pueden ganar o perder con la señalización. Si el coste de señalizar es lo suficientemente elevado como para que el beneficio sea inferior a la productividad esperada que recibirían en ausencia de señalización, la presencia de señalización será netamente inferior a su ausencia en términos de bienestar para los trabajadores productivos. Si el coste de señalizar es bajo, sucederá lo contrario y los trabajadores productivos ganarán con la posibilidad de señalizar su productividad alta. La interpretación de este resultado es que la señalización es beneficiosa cuando existe un número relativamente reducido de trabajadores con productividad alta. Cuando casi todos los trabajadores tienen alta productividad, tratar de distinguir entre productivos y no productivos aporta poco pero resulta muy costoso en relación a la alternativa de contratar ``a ciegas''.
+
+Los \underline{equilibrios agrupadores} aparecen cuando los agentes eligen un mismo contrato, independientemente de su productividad. Para que este equilibrio sea viable, el nivel de educación exigida por las empresas no debe superar un cierto máximo. Este máximo es aquel que hace indiferentes a los poco productivos entre recibir un salario bajo y no educarse, y recibir un salario más elevado e incurrir en cierto coste. Los trabajadores de productividad alta elegirán también ese mismo contrato porque prefieren en todo caso recibir un salario más elevado con ese nivel bajo de educación, ya que a ellos les resulta menos costoso educarse que a los de baja productividad. En cuanto a la optimalidad del equilibrio respecto a la ausencia de señalización, el resultado es inequívoco: la ausencia de señalización es superior a todo equilibrio agrupador salvo aquel en el que los agentes no obtengan educación alguna. La interpretación de este resultado es que, si la educación no va a poder ser utilizada para distinguir entre niveles de productividad y no sirve para aumentar la productividad, más vale no exigir educación alguna.
+
+Las \underline{aplicaciones de la señalización} son especialmente relevantes en el mercado de trabajo y la decisión de los trabajadores a la hora de educarse. Este tipo de modelos compiten con otras teorías acerca de la educación, como la teoría del capital humano. La señalización ha sido también aplicada en modelos de emisión de activos financieros en los que las empresas tratan de señalizar información privada de tipo contable o industrial para obtener mejores condiciones de acceso al capital. En el ámbito de la organización industrial, algunos modelos han planteado el uso de la señalización por parte de empresas incumbentes para señalizar su estructura de costes a posibles competidores.
+
+El \textbf{filtrado} (screening) es el mecanismo de transmisión de información privada relacionado con el de señalización. Fue planteado formalmente por primera vez en Rothschild y Stiglitz (1976) y Wilson (1977). En este caso, la parte desinformada trata de incentivar a la parte informada para que revele su información privada ofreciendo un menú de contratos. La diferencia entre señalización y filtrado radica en quién decide primero. Mientras que en la señalización eran los agentes informados los que elegían primero un nivel de educación, en los modelos de filtrado son las partes desinformadas las que plantean primero un conjunto de contratos y posteriormente las informadas se autoseleccionan. Aunque no entraremos en el detalle, las diferencias entre los equilibrios de señalización y filtrado pueden caracterizarse en términos de teoría de juegos de manera precisa. Para ilustrar el filtrado, partamos del mismo contexto del mercado de trabajo anterior. Sin embargo, sustituyamos la educación obtenida ex-ante por el esfuerzo, también observable pero elegido ex-post, de tal manera que las empresas pagan un salario en función del esfuerzo que los trabajadores hallan mostrado. La decisión de las empresas consiste en decidir cuanto esfuerzo observado exigir para pagar un determinado salario. La de los trabajadores, decidir cuanto esfuerzo aplicar, teniendo en cuenta que es costoso en los mismos términos que la educación en el modelo de señalización. En este tipo de modelos los equilibrios agrupadores no existen bajo supuestos generales. Los trabajadores tenderán a elegir diferentes niveles de esfuerzo, y obtener diferentes salarios. Sin embargo, es posible que no exista tampoco un equilibrio separador, y que las empresas siempre tengan incentivos a ofrecer un contrato diferente que capture toda la oferta de trabajo cualificado. Cuanto más elevado sea el número de trabajadores productivos, más posible será la inexistencia de cualquier equilibrio. En cuanto a la optimalidad, la posibilidad de filtrar trabajadores perjudica siempre a los poco productivos. Los productivos sí pueden beneficiarse del filtrado, en la medida en que exista efectivamente un equilibrio separador. Si no existe el equilibrio separador, las empresas no utilizan la posibilidad de filtrar y el resultado para los productivos acaba siendo similar al de inexistencia de filtrado. 
+
+El \marcar{problema de agencia} es uno de los problemas más antiguos y con más relevancia práctica que la economía de la información ha tratado de entender y representar formalmente. Ya en las crónicas romanas se hace referencia a las dificultades de los comerciantes de trigo para conseguir que los capitanes de los barcos que lo transportaban a lo largo del Mediterráneo se comportasen de manera diligente y lograsen transportarlo hasta Italia sin incurrir en pérdidas. En términos modernos, fueron Ross (1973), Mirrlees (1974) y Stiglitz (1974) los que sentaron las bases del análisis microeconómico del problema. El problema de agencia aparece cuando un principal contrata a un agente para que lleve a cabo una determinada tarea cuya realización afecta positivamente al resultado del principal pero resulta costosa para el agente, de modo que los intereses de ambas partes son contrarios. Si la acción del agente fuese totalmente conocida y verificable para el principal, el problema de agencia no tendría lugar ya que ambas partes podrían acordar un precio por realizar determinada acción y el principal estaría legitimado para tomar acciones contra el agente si éste no cumpliese con su parte del contrato. El problema aparece porque el resultado del principal es una variable estocástica que depende de una función de probabilidad, y la acción del agente simplemente afecta a esa distribución pero no puede establecerse una relación causal indubitada entre los resultados y las acciones del agente (es decir, la acción del agente no convierte la distribución de probabilidad de los resultados en una lotería degenerada). Así, si al agente le resulta costoso llevar a cabo la acción para la que ha sido contratado por el principal, y el principal no puede saber qué acción ha llevado a cabo el agente es evidente que aparece una externalidad negativa el agente sobre el principal que difícilmente conducirá a un óptimo de Pareto. Este conflicto de intereses derivado de la asimetría de información ex-post se denomina riesgo moral o problema de las acciones ocultas. El riesgo moral no es el único tipo de fallo de mercado que puede aparecer en presencia de asimetría informativa ex-post. Se suele denominar problema de la información oculta cuando la acción que lleva a cabo el agente es perfectamente conocida, pero el principal no dispone de la información necesaria para saber qué acción es la adecuada. 
+
+De acuerdo con el objeto de la exposición, examinemos en detalle el \textbf{riesgo moral}. Aunque el problema se ha planteado ya en términos generales más arriba, cabe definirlo en términos más concretos para ejemplificar el problema de forma clara, y examinar el diseño de contratos que mitiguen el riesgo moral. Supongamos que una empresa --el principal- que contrata a un trabajador --el agente- para llevar a cabo un determinado trabajo. El agente incurre en un coste por el hecho de ejecutar el trabajo. El principal aumenta la probabilidad de obtener un buen resultado si el agente efectivamente realiza la tarea. ¿Qué contrato deberá ofrecer el principal al agente para maximizar su beneficio esperado? Los contratos óptimos en presencia de riesgo moral deberán cumplir dos condiciones necesarias de forma general. La \textit{condición de participación} implica que la aceptación del contrato deberá proporcionar al agente al menos su utilidad de reserva. Por su parte, la \textit{restricción de incentivos} requiere que para el agente sea al menos tan preferible realizar el esfuerzo máximo como no realizarlo. 
+
+La transferencia de riesgo es el elemento central para concretar esas condiciones genéricas. Si el agente no sufre los efectos negativos de no llevar a cabo la tarea que se le ha encomendado, no tendrá incentivos a ejecutarla. El principal dispone de una herramienta para incentivar al agente a llevar a cabo la tarea: transferirle el riesgo de obtener un resultado poco favorable. Es decir, ligar el salario del agente al resultado, que sí es verificable para el principal. Así, si el resultado es arriesgado, el salario deberá ser arriesgado también para que el agente tenga incentivos a ejecutar las acciones que le han sido encomendadas. Sin embargo, no todos los agentes están dispuestos a aceptar el riesgo de la misma forma y al mismo precio, y de ahí que su actitud frente al riesgo sea el elemento determinante del contrato óptimo. 
+
+Para caracterizar mejor el problema, examinemos en primer lugar la decisión óptima cuando el esfuerzo es verificable. En esta situación, el principal determina el esfuerzo que optimiza su beneficio y le encomienda al agente la realización de ese esfuerzo a cambio de un salario. Si el agente es averso al riesgo, el principal pagará el salario fijo mínimo que inducirá al agente a aceptar el contrato y llevar a cabo el esfuerzo óptimo. Sin embargo, si el agente es neutral al riesgo, el principal podrá transferirle parte de riesgo siempre que el salario esperado no sea inferior a su utilidad de reserva.
+
+Comparemos ahora con situaciones en las que el esfuerzo es inobservable. Asumimos que el principal es neutral al riesgo para centrarnos en la especificación del contrato que cumpla las dos condiciones del agente. Concretamente y en primer lugar, cuando el \underline{agente es neutral al riesgo}. Dado que los agentes neutrales al riesgo sólo tienen en cuenta el salario esperado en su condición de partipación, bastará con ofrecer un salario en función del resultado cuya esperanza menos el coste de llevar a cabo el esfuerzo sea igual o superior a la utilidad de reserva. ¿Qué relación entre resultado y salario será necesario establecer para cumplir la restricción de incentivos? Dado que el esfuerzo no es verificable y sin transferencia de riesgo el agente tendría incentivos a ejecutar el mínimo esfuerzo para maximizar sus ingresos, es necesario ligar totalmente su remuneración de al resultado obtenido. Así, el contrato óptimo para el principal implica ``vender'' el proyecto al agente, de modo que el salario sea igual al resultado menos una cantidad fija que maximice el beneficio del principal. Respecto a la situación de esfuerzo verificable, este contrato induce el mismo bienestar para los agentes. Cuando el \underline{agente es averso al riesgo}, el problema es ligeramente más complejo. La herramienta de que disponen los principales para incentivar al esfuerzo óptimo a los agentes ya no es gratuita: mayor riesgo significa menos utilidad para los agentes y exigirán por ello un esquema de remuneración con mayor salario esperado y posiblemente una transferencia de riesgo tan sólo parcial. Si con un agente neutral al riesgo el principal podía permitirse transmitir todo el riesgo sin incurrir en costes adicionales, en este caso cabe plantearse si pagar una mayor salario esperado para transferir el riesgo es preferible a pagar un salario fijo y que el agente ejerza el mínimo esfuerzo posible. La comparación con respecto a la situación de esfuerzo observable depende de lo que fuese óptimo en este último caso. Si cuando el esfuerzo es observable lo óptimo para el principal es un esfuerzo alto, la implementación de cualquier contrato (de esfuerzo alto o esfuerzo bajo) es Pareto-inferior a la situación de esfuerzo observable. Sin embargo, si en presencia de esfuerzo observable lo óptimo era pagar al agente para que realizase el mínimo esfuerzo, el principal ofrecerá el mismo contrato en presencia de esfuerzo inobservable y ambas situaciones serán indiferentes desde el punto de vista de Pareto. 
+
+La gran conclusión que se puede extraer de este tipo de modelos de riesgo moral es que es necesario que los agentes se jueguen algo a la hora de decidir cuánto esfuerzo o diligencia pondrán en su trabajo. El escritor Nassim Taleb ha popularizado reciente el término ``skin in the game'' para resumir este concepto. Hemos extraído también otra conclusión importante: las preferencias del agente son relevantes para el diseño del contrato óptimo, y a partir de cierto grado de aversión al riesgo, puede que no sea rentable para el principal tratar de incentivar niveles de esfuerzo altos. Por último, hemos visto cómo la presencia de riesgo moral da lugar a resultados subóptimos de Pareto cuando un esfuerzo alto sería deseable en presencia hipotética de esfuerzo observable y sin embargo, la imposibilidad de observar el esfuerzo y la aversión al riesgo del agente implican costes añadidos en términos de bienestar para el principal o el agente.
+
+El \textbf{riesgo moral y la selección adversa} pueden aparecer al mismo tiempo y provocar resultados interesantes desde el punto de vista teórico. Stiglitz y Weiss (1981) formularon un modelo de racionamiento en el mercado de crédito basado en los modelos anteriores de selección adversa y riesgo moral. El modelo permite racionalizar el fenómeno del racionamiento de forma explícita, sin postular restricciones exógenas a la cantidad intercambiada o recurrir a problemas de emparejamiento. En el modelo interactúan dos partes: los bancos y los demandantes de crédito. Para ofertar crédito, los bancos tienen en cuenta el rendimiento esperado, que es a su vez función del tipo de interés exigido y la probabilidad de quiebra y consecuente impago de la deuda. A pesar de que los demandantes estarían dispuestos a pagar un interés más alto por mayores cantidades de crédito, los bancos restringen la cantidad ofertada de modo que la demanda es superior a la oferta y aparece el racionamiento. ¿Por qué es óptimo restringir la oferta en vez de aumentar el interés exigido? Un aumento del interés tiene tres efectos para los bancos: \textit{i)} los bancos obtienen mayores ingresos por interés de los proyectos que no incurren en impago; \textit{ii)} el riesgo aumenta porque los proyectos muy seguros salen del mercado al no poder cubrir costes cuando el interés supera cierto nivel: selección adversa, \textit{iii)} el riesgo aumenta porque los deudores toman mayores riesgos para aumentar el rendimiento y poder devolver los intereses exigidos más elevados. Estos efectos combinados determinan un rendimiento esperado que los bancos maximizan en un nivel de oferta e interés determinado. Así, aunque la demanda de crédito sea superior a ese nivel de oferta e interés, los bancos preferirán mantener la restricción de oferta y el mercado estará racionado. Este modelo dio lugar a una amplia literatura e introdujo la economía de la información en el análisis macroeconómico de las fluctuaciones de crédito.
+
+A lo largo de la exposición hemos introducido la economía de la información y examinado dos fenómenos empíricos de especial importancia para esta disciplina: la selección adversa y el problema de agencia manifestado como riesgo moral. Para concluir la exposición, cabe reflexionar sobre el impacto práctico y teórico del estudio de estos fenómenos. A nivel práctico, el análisis del problema de agencia y el riesgo moral goza de enorme aplicabilidad en el ámbito de la empresa y las finanzas. En lo que respecta a la selección adversa, aunque los avances tecnológico-industriales han contribuido a homogeneizar en gran medida la calidad de un gran número de mercados, los contextos en los que la calidad es heterogénea y difícil de discernir siguen siendo predominantes y dan lugar a resultados subóptimos que tanto el sector público como los agentes privados tienen margen para mejorar. El \underline{diseño de mecanismos} es un programa de investigación derivado de la economía de la información cuyo objeto es encontrar formas de inducir decisiones óptimas en presencia de asimetrías informacionales. A lo largo de la exposición hemos planteado algunas aplicaciones del diseño de mecanismos como teoría general que trata de dar respuesta a preguntas tales como ¿qué contratos deben ofrecer los principales sujetos al problema de agencia? ¿qué coste tienen este tipo de mecanismos? ¿es rentable incentivar a los agentes a revelar información privada? La economía de la información y el diseño de mecanismos son el muy necesario complemento al modelo de competencia perfecta e información completa del cual se deriva gran parte de la microeconomía actual.
+
+
+\seccion{Preguntas clave}
+\begin{itemize}
+	\item ¿Qué es la economía de la información?
+	\item ¿Qué es la teoría de la agencia?
+	\item ¿Qué es la selección adversa?
+	\item ¿En qué consiste el problema de agencia?
+	\item ¿Qué es el riesgo moral?
+	\item ¿Cómo se modelizan estos fenómenos?
+	\item ¿Qué propiedades tienen los equilibrios?
+	\item ¿Pueden mejorarse desde el punto de vista del criterio de Pareto?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Definición de economía de Robbins y Samuelson
+			\3 Microeconomía
+			\3 Información incompleta y asimétrica
+			\3 Economía de la información
+		\2 Objeto
+			\3 ¿Qué es la selección adversa?
+			\3 ¿Qué es el problema de agencia?
+			\3 ¿Qué es el riesgo moral?
+			\3 ¿Cómo se modelizan estos fenómenos?
+			\3 ¿Qué propiedades tienen los equilibrios competitivos?
+			\3 ¿Cómo pueden mitigarse los efectos indeseables?
+			\3 ¿Es posible Pareto-mejorar los equilibrios competitivos?
+			\3 ¿Qué aplicaciones prácticas tiene la economía de la información?
+			\3 ¿Qué programas de investigación tienen relación con ella?
+		\2 Estructura
+			\3 Selección adversa
+			\3 El problema de agencia
+	\1 \marcar{Selección adversa}
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivo
+			\3 Resultado
+		\2 Formulación
+			\3 Contexto de mercado de coches de segunda mano
+			\3 Contexto de mercado de trabajo
+			\3 Equilibrio información perfecta
+			\3 Equilibrio con información incompleta y asimétrica
+			\3 Optimalidad del eq. con inf. incompleta y asimétrica
+		\2 Signalling/Señalización -- Spence (1973)
+			\3 Idea clave
+			\3 Formulación
+			\3 Equilibrio separador (separating equilibrium)
+			\3 Equilibrio agrupador (pooling equilibrium)
+			\3 Aplicaciones
+		\2 Filtrado/screening -- Rotschild y Stiglitz (1976), Wilson (1977)
+			\3 Idea clave
+			\3 Formulación
+			\3 Equilibrios separadores y agrupadores
+		\2 Intervención de precios
+			\3 Subsidios a vendedores
+			\3 Fijación de precios mínimos
+		\2 Aplicaciones
+			\3 Bienes de segunda mano
+			\3 Mercado de trabajo
+			\3 Dinero
+			\3 Seguros
+			\3 Dividendos y equity
+	\1 \marcar{Riesgo moral}
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivo:
+			\3 Resultados
+		\2 Riesgo moral: acciones ocultas
+			\3 Idea clave
+			\3 Esfuerzo observable
+			\3 Esfuerzo inobservable: agente neutral al riesgo
+			\3 Esfuerzo inobservable: agente averso al riesgo
+		\2 Aplicaciones
+			\3 Salarios de eficiencia
+			\3 Mercados de seguros
+			\3 Empresas
+			\3 Criminalidad
+			\3 Racionamiento de crédito
+		\2 RM y SA a la vez: Stiglitz y Weiss (1981)
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Selección adversa
+			\3 Problema de agencia
+		\2 Idea final
+			\3 Importancia práctica
+			\3 Behavioral economics
+			\3 Diseño de mecanismos
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Definición de economía de Robbins y Samuelson
+				\4 Economía estudio de comportamiento humano
+				\4[] Gestionando recursos escasos con usos alternativos
+				\4[] Para satisfacer una serie de necesidades
+				\4[] $\Rightarrow$ Economía es ciencia de decisiones económicas
+			\3 Microeconomía
+				\4 Decisiones individuales afectan a otros agentes
+				\4[$\to$] ¿Cómo les afectan?
+				\4[$\to$] ¿Cómo reaccionan a las decisiones de otros?
+				\4 Concepto de equilibrio
+				\4[] En términos económicos:
+				\4[] Estado de un sistema en que:
+				\4[] $\to$ Decisiones son compatibles unas con otras
+				\4[] $\to$ Agentes no desean cambiar su decisión
+				\4 Primer Teorema Fundamental del Bienestar:
+				\4[] Dados:
+				\4[] $\to$ Información perfecta
+				\4[] $\to$ Preferencias racionales
+				\4[] $\to$ Ausencia de externalidades
+				\4[] $\Rightarrow$ Eq. competitivo es óptimo de Pareto
+				\4 Información perfecta:
+				\4[] Los agentes conocen exactamente
+				\4[] $\to$ qué compran
+				\4[] $\to$ qué venden
+				\4 ¿Qué sucede si no hay información perfecta?
+				\4[] Varios posibilidades
+				\4[] Consideramos inf. incompleta y asimétrica
+			\3 Información incompleta y asimétrica\footnote{Por supuesto, en presencia de información incompleta y asimétrica existe también información imperfecta, porque los agentes no conocen con certeza las decisiones de los demás agentes.}
+				\4 Información incompleta
+				\4[] Agentes no conocen preferencias, tipos, propiedades de bienes...
+				\4 Información imperfecta
+				\4[] Agentes no conocen realizaciones de incertidumbre
+				\4[] Pero conocen todas las preferencias, distribuciones
+				\4 Relación entre inf. incompleta e imperfecta
+				\4[] Incompleta $\then$ Imperfecta
+				\4[] Imperfecta $\nRightarrow$ Incompleta
+				\4 Información asimétrica
+				\4[] Al menos un agente tiene información incompleta
+				\4[] $\then$ Algunos agentes tienen
+				+ información que otros
+				\4 Suboptimalidad
+				\4[] Los contratos no incorporan todas contingencias
+				\4[] $\to$ Porque hay información imposible de conocer
+				\4[] Los eq. competitivos pueden no ser Pareto-óptimos
+				\4[] $\Rightarrow$ Fallos de mercado
+				\4[] Diferentes suboptimalidades en función de:
+				\4[] $\to$ Cómo se distribuye la asimetría informacional
+				\4[] $\to$ Respecto a qué existe asimetría informacional
+				\4[] $\Rightarrow$ Selección adversa, riesgo moral y otros
+			\3 Economía de la información
+				\4 Entender y predecir resultado de interacción
+				\4[] Cuando aparecen asimetrías informacionales
+				\4 Soluciones a suboptimalidad
+				\4[] Diseño de contratos que permitan alcanzar:
+				\4[] $\to$ First-best si posible
+				\4[] $\to$ Second-best si posible
+				\4[] $\then$ Diseño de mecanismos
+		\2 Objeto
+			\3 ¿Qué es la selección adversa?
+			\3 ¿Qué es el problema de agencia?
+			\3 ¿Qué es el riesgo moral?
+			\3 ¿Cómo se modelizan estos fenómenos?
+			\3 ¿Qué propiedades tienen los equilibrios competitivos?
+			\3 ¿Cómo pueden mitigarse los efectos indeseables?
+			\3 ¿Es posible Pareto-mejorar los equilibrios competitivos?
+			\3 ¿Qué aplicaciones prácticas tiene la economía de la información?
+			\3 ¿Qué programas de investigación tienen relación con ella?
+		\2 Estructura
+			\3 Selección adversa
+			\3 El problema de agencia
+	\1 \marcar{Selección adversa}
+		\2 Idea clave
+			\3 Contexto
+				\4 Concepto
+				\4[] Sesgo negativo en la calidad de bienes y servicios
+				\4[] $\to$ Cuando existen variaciones en la calidad
+				\4[] $\to$ Sólo oferente conoce calidad con certeza
+				\4[] $\then$ Características inciertas para una de las partes
+				\4[] Desaparición completa del mercado
+				\4[] $\to$ Caso extremo
+				\4 Fenómeno conocido desde antiguo:
+				\4[] Ley de Gresham: dinero ``malo'' sustituye al bueno
+				\4 Akerlof (1970):
+				\4[] ``\textit{The Market for <<Lemons>>: Quality Uncertainty and the Market Mechanism}''
+				\4[] Primera formulación matemática
+				\4[] Mercado de coches de segunda mano como ejemplo
+				\4 Agente desinformado:
+				\4[] Decide dada expectativa de calidad/características
+				\4[] Conoce preferencias del otro agente
+				\4[] $\to$ Conoce incentivos a vender ``bueno'' por malo
+				\4 Agente informado:
+				\4[] Conoce la calidad del bien que ofrece
+				\4[] Sabe que otra parte no conoce calidad
+				\4[] Conoce con certeza el beneficio de la venta
+				\4[] $\to$ Conoce características de lo que va a vender
+				\4[] $\to$ Evidentemente, conoce precio al que vende
+				\4[] $\then$ Puede tomar decisión sobre valores ciertos
+				\4 Asimetría informacional ex-ante:
+				\4[] Una de las partes tiene menos información
+				\4[] Una parte dispone de información privada
+				\4[] $\to$ Antes de concluir el contrato
+			\3 Objetivo
+				\4 Caracterizar factores determinantes de la SA
+				\4 Determinar optimalidad de equilibrio con SA
+				\4 Diseñar mecanismos para evitar suboptimalidad
+			\3 Resultado
+				\4 Agentes informados maximizan utilidad individual
+				\4[] Aprovechando ventaja informativa
+				\4[] Ofrecen bien sólo si:
+				\4[] --Precio de venta del bien compensa...
+				\4[] ...pérdida de utilidad por perder acceso al bien
+				\4 Agentes desinformados:
+				\4[] Ofrecen precio teniendo en cuenta:
+				\4[] $\to$ Distribución probabilidad de calidad
+				\4[] $\to$ Incentivos del agente informado
+				\4[$\then$] Informados tienen incentivos a ``engañar''
+				\4[] Informados utilizan información privada para su beneficio
+				\4[] $\to$ Pueden hacer pasar baja calidad por buena
+				\4[] $\then$ Incentivos a exigir precio > utilidad aportada
+				\4[] Desinformados no conocen verdadera calidad de lo comprado
+				\4[] $\to$ No pueden comprar bienes de la calidad que desean
+				\4[] $\then$ Desinformados obtienen resultado subóptimo
+				\4[$\then$] Algunos informados también pierden
+				\4[] Si tienen bien de calidad muy alta
+				\4[] $\to$ Desinformado no podrá saberlo
+				\4[] $\to$ Desinformados no tendrán incentivos a creer
+				\4[] $\then$ No podrán vender a precio acorde
+				\4 Mecanismos de mitigación de la asimetría
+				\4[] Signalling y screening
+				\4[] Informar a parte desinformada de características
+				\4[] Implican costes para ambas partes
+				\4[] Intervención en precios
+				\4[] $\to$ Fijar precios mínimos
+				\4[] $\to$ Subvencionar a vendedores
+				\4[] $\then$ Evitar bien de calidad salga de mercado
+		\2 Formulación
+			\3 Contexto de mercado de coches de segunda mano
+				\4 Akerlof (1970) -- Market for lemons
+			\3 Contexto de mercado de trabajo
+				\4 Mercado de trabajo
+				\4[] Productividad del trabajo $\to$ ``calidad''
+				\4 Trabajadores:
+				\4[] Venden trabajo con productividad $\theta$
+				\4[] Conocen distribución de productividad $F(\theta)$
+				\4[] Conocen su productividad $\theta$ antes de contratar
+				\4[] Tienen salario de reserva $\bar{r}(\theta) < \theta$
+				\4[] $\to$ Depende positivamente de productividad
+				\4[] $\to$ Menor a productividad
+				\4[] Si $w \geq \bar{r}(\theta)$, aceptan trabajar
+				\4 Empresas:
+				\4[] Ofrecen salario $w$ a cambio de trabajo
+				\4[] Competencia à la Bertrand por el trabajo
+				\4[] Obtienen ingreso $\theta$ igual a productividad $\theta$
+			\3 Equilibrio información perfecta
+				\4 Útil como benchmark
+				\4[] Respecto a asimetría de información
+				\4 Empresas
+				\4[] conocen productividad individual
+				\4[] compiten à la Bertrand por trabajadores
+				\4[$\then$] Ofrecen salarios iguales $w^*(\theta) = \theta$
+				\4[] Individualizados para cada agente
+				\4[] $\to$ Porque pueden verificar utilidad
+				\4[$\to$] Si $w^*(\theta) \geq \bar{w}(\theta)$, trabaja
+				\4[$\to$] Si $w^*(\theta) \leq \bar{w}(\theta)$, no trabaja
+				\4[$\Rightarrow$] Resultado es óptimo de Pareto
+				\4[] Se maximiza excedente total
+				\4[] $\to$ Trabajadores productivos trabajan y producen $\theta$
+				\4[] $\to$ Trabajadores productivos obtienen reserva $w(\theta)$
+				\4[] Productividad media es la máxima posible
+				\4[] $\to$ Todos los trabajadores trabajan
+				\4[] $\to$ Los trabajadores más productivos trabajan
+			\3 Equilibrio con información incompleta y asimétrica
+				\4 Empresas conocen:
+				\4[] Conocen:
+				\4[] $\to$ distribución $F(\theta)$ de productividad
+				\4[] $\to$ Con extremos: $\theta \, \in \, (\ubar{\theta}, \bar{\theta})$
+				\4[] $\to$ distribución de salarios de reserva
+				\4[] $\to$ No pueden verificar $\theta$ antes de contratar
+				\4[] $\then$ Pueden estimar $E(\theta|w\geq \bar{r}(\theta))$
+				\4[] $\then$ En equilibrio, $w = E( \theta)$
+				\4[] $\then$ Beneficios nulos
+				\4 Empresas deben estimar productividad dado salario
+				\4[] Saben que trabajadores solo aceptan si $w\geq r(\theta)$
+				\4[] $\to$ Productividad media depende de salario ofrecido
+				\4[] $\to$ Cuanto menor $w$, menos trabajadores aceptan
+				\4[] $\then$ Menor $\theta$ media cuanto menor salario
+				\4[] $\then$ Expectativa de prod. depende de salario ofrecido
+				\4[] $\then$ $E(\theta) = E\left( \theta | w \geq r(\theta) \right)$
+				\4 Maximizan beneficio
+				\4[] $\to$ Si salario mayor a prod. media, pierden dinero
+				\4[] $\then$ Sólo contratan si $w \leq E\left( \theta | w \geq r(\theta) \right)$
+				\4[] En equilibrio de beneficio nulo:
+				\4[] $\to$ $w^* = E(\theta | w \geq r(\theta)$
+				\4 Representación gráfica
+				\4[] En espacio salario-productividad
+				\4[] Bisectriz representa $w=\theta$
+				\4[] Intersecciones entre $E(\theta | w \geq r(\theta))$ y bisectriz
+				\4[] $\to$ Equilibrios de beneficio nulo
+				\4[] Caso extremo: sólo trabajan los menos productivos
+				\4[] \grafica{seleccionadversa}
+				\4[] Posibles múltiples equilibrios con diferentes salarios
+				\4[] $\to$ Depende de utilidad de reserva
+				\4[] $\then$ Implicaciones de teoría de juegos
+				\4[] \grafica{saeqmultiples}
+			\3 Optimalidad del eq. con inf. incompleta y asimétrica
+				\4 Si empresas fijan salarios individualizados tal que:
+				\4[] Trabajan todos los trabajadores para los que
+				\4[] $\to$ Productividad es mayor que salario de reserva
+				\4[] Empresas no pierden dinero/beneficios se anulan
+				\4[] $\Rightarrow$ Equilibrio será óptimo de Pareto
+				\4 En caso contrario, empresas fijan un salario único
+				\4[] Para que sea de equilibrio debe anular beneficio
+				\4[] Si para el salario de equilibrio
+				\4[] $\to$ No trabajan todos los que $\theta > r(\theta)$
+				\4[] $\Rightarrow$ Equilibrio Pareto-inferior respecto inf. completa
+				\4 Disminución de la calidad/productividad
+				\4[] Con información completa, todos trabajan
+				\4[] $\to$ Productividad media es igual a $E(\theta)$
+				\4[] Con información incompleta, no todos trabajan
+				\4[] $\to$ Salario único too low for the very productive
+				\4[] $\to$ Sólo poco productivos aceptan salario único
+				\4[] $\then$ Cae productividad media
+				\4[] $\then$ Se pierden oportunidades de beneficio
+		\2 Signalling/Señalización -- Spence (1973)
+			\3 Idea clave
+				\4 Spence (1973)
+				\4 Medidas para mejorar eq. competitivo
+				\4[] Informados tratan de informar a desinformados
+				\4[] $\to$ Enviando señales sobre su información privada
+				\4 La señal debe informar de forma creíble
+				\4[] Agentes con bien de baja calidad
+				\4[] $\to$ Tienen incentivo a señalizar falsamente + calidad
+				\4[] $\then$ Para obtener mayor precio
+				\4 Garantizar credibilidad
+				\4[] Para los que tienen incentivo a señalizar falsamente
+				\4[] $\to$ Coste de enviar señal debe ser más alto
+			\3 Formulación
+				\4 Mismo contexto de mercado de trabajo
+				\4 Dos niveles de productividad
+				\4[] Sin pérdida de generalidad
+				\4[] $\theta_H$ y $\theta_L$
+%				\4 Salario de reserva nulo
+%				\4[] Para todos los trabajadores
+%				\4[] Sin pérdida de generalidad
+%				\4[] $\to$ Para explicar señalización
+%				\4[] $\to$ Sí quita generalidad para SAdversa
+%				\4[] $\to$ Sin salarios de reserva no habría SAdversa
+				\4 Educación para señalizar productividad
+				\4[] Suponemos sólo sirve para señalizar
+				\4[] $\Rightarrow$ No aumenta productividad
+				\4[] Cada agente decide cuanta educación obtener
+				\4[] $\to$ Educación es conocida por ag. desinformado
+				\4 CMg de educación depende de productividad
+				\4[] Más productividad $\Rightarrow$ Menor CMg de educación
+				\4[] Educación mínima/nula cuesta 0 a todos
+				\4[] $c_e(e, \theta) > 0, c_{ee}(e,\theta) > 0$
+				\4[] $c_\theta (e,\theta) < 0, c_{e\theta}(e,\theta) < 0$
+				\4[] $c(0, \theta) = 0$
+				\4 Empresas
+				\4[] Obtienen ingreso $\theta$
+				\4[] Salario ofrecido depende de educación observada
+				\4[] Salario ofrecido será igual a productividad estimada
+				\4[] Conocen incentivos de trabajadores
+				\4 Decisión de trabajadores
+				\4[] Educación que maximiza el ingreso considerando:
+				\4[] $\to$ Coste de adquirir más educaión
+				\4[] $\to$ Salario que pueden obtener
+				\4[] A = ingreso total ($w-c(e)$, prefiere menos educación
+				\4[] ¿Cuánta educación comprar?
+				\4[] $\to$ ¿Es rentable educarse para ganar más salario?
+				\4[] ¿Los trabajadores eligen misma educación?
+				\4[] $\to$ ¿Trabajadores eligen educaión según prod.?
+				\4[] Dependerá de:
+				\4[] $\to$ CMg relativo de educación entre $\theta_H$ y $\theta_L$
+				\4[] $\to$ Salario ofrecido
+				\4[] $\Rightarrow$ Trade-off entre salario recibido y educación
+				\4 Decisión de empresas
+				\4[] ¿Cuánto salario ofrecer?
+				\4[] ¿Debe depender de educación del trabajador?
+				\4[] $\to$ ¿Mismo salario para todos?
+				\4[] $\to$ ¿Diferentes salarios para cada trabajador?
+				\4[] $\to$ ¿Cuánto para cada trabajador?
+			\3 Equilibrio separador (separating equilibrium)
+				\4 Diferente $w$ y $e$ en función de productividad
+				\4 Empresas ofrecen:
+				\4[] Salario $w_L = \theta_L$ sin educación
+				\4[] Salario $w_H = \theta_H$ para educación $\tilde{e}$
+				\4[] $\to$ $\tilde{e}$ tal que $w_H - c(\tilde{e}, \theta_L) < w_L - c(0, \theta_L)$
+				\4[] $\then$ Educarse no compense a trabs. con prod. baja
+				\4[] $\to$ $\tilde{e}$ tal que $w_H - c(\tilde{e}, \theta_H) = w_L - c(0, \theta_H)$
+				\4[] $\then$ Educarse compense a trabs. con prod. alta
+				\4[] Educación $\tilde{e}$ tal que $\theta_H$ quieren educación y $\theta_L$ no
+				\4[] $\Rightarrow$ Educación mínima necesaria $\tilde{e}$ es elemento clave
+				\4 Trabajadores deciden:
+				\4[] Productividad alta:
+				\4[] $\to$ Nivel de educación $\tilde{e}$
+				\4[] Productividad baja:
+				\4[] $\to$ Nivel de educación nulo
+				\4 Representación gráfica
+				\4[] \grafica{equilibrioseparador}
+				\4 Optimalidad respecto a ausencia de señalización
+				\4[] En ausencia de señalización:%\footnote{Recuérdese que el salario de reserva se ha asumido nulo, por lo que todos trabajan para cualquier salario no negativo.}
+				\4[] $w^* = E(\theta)$
+				\4[] Con señalización:
+				\4[] Productividad baja:
+				\4[] $\to$ Reciben ingreso $\theta_L - c(0, \theta_L) = \theta_L \leq w^* = E(\theta)$
+				\4[] $\Rightarrow$ siempre pierden con señalización
+				\4[] Productividad alta:
+				\4[] $\to$ Reciben ingreso $\theta_H - c(\tilde{e}, \theta_H)$
+				\4[] $\Rightarrow$ Pierden si $E(\theta) > \theta_H - c(\tilde{e}, \theta_H)$
+				\4[] $\Rightarrow$ Optimalidad depende de distribución de $\theta$
+				\4[] $\to$ Si muchos con $\theta_H$, mejor sin señalizar
+				\4[] $\to$ Si pocos con $\theta_H$, mejor señalizando
+				\4[$\then$] Trabs. con $\theta_H$ prefieren señalización si son pocos
+				\4[$\Rightarrow$] Útil señalizar cuando son pocos los que señalizan
+			\3 Equilibrio agrupador (pooling equilibrium)
+				\4 Mismo nivel de educación $e^*$ para todos
+				\4 Empresas fijan salario que anula beneficios
+				\4[] $\to$ $w^*(e^*) = E(\theta)$
+				\4 ¿Qué nivel de educación $e^*$ hace viable el equilibrio?
+				\4[] Cualquiera entre 0 y un nivel máximo $\bar{e}$
+				\4[] Nivel máximo $\bar{e}$ es aquel que:
+				\4[] $\to$ $\theta_L$ indiferentes entre $e=0$ y $\bar{e}$
+				\4 Optimalidad respecto a no señalización
+				\4[] Mismo salario independientemente de señalización
+				\4[] $\to$ $w^* = E(\theta)$
+				\4[] Óptimo de Pareto implica educación nula:
+				\4[] $\to$ Si mismo equilibrio $\forall \, e \in \, (0, \bar{e})$
+				\4[] $\Rightarrow$ Preferible $e=0$ para ahorrar coste
+				\4[$\Rightarrow$] Mejor equilibrio agrupador es educación nula
+				\4[$\then$] Eq. agrupador se produce si:
+				\4[] $\to$ Educación muy costosa
+				\4[] $\to$ Salario de reserva de productivos es bajo
+				\4[] $\to$ Poco beneficio por señalizar
+				\4[] $\then$ No señalizarán pero salario suficientemente alto
+			\3 Aplicaciones
+				\4 Educación universitaria
+				\4[] Universidades de prestigio como señalización
+				\4[] Prestigio universitario basado en dificultad
+				\4[] $\to$ De acceso
+				\4[] $\to$ Para graduarse
+				\4[] Compatibilidad con modelo de capital humano
+				\4[] $\to$ ¿Es posible distinguir empíricamente los modelos?
+				\4 Emisiones de activos financieros
+				\4[] Gestores tienen información privada
+				\4[] $\to$ Contabilidad de la empresa
+				\4[] $\to$ Perspectivas de futuro
+				\4[] Necesario señalizar a inversores/proveedores de K
+				\4[] Dividendos frecuentes para señalizar
+				\4 Organización industrial
+				\4[] Limitar entrada de competidores
+				\4[] $\to$ Señalizando estructura de costes bajos
+		\2 Filtrado/screening -- Rotschild y Stiglitz (1976), Wilson (1977)
+			\3 Idea clave
+				\4 Rotschild y Stiglitz (1976), Wilson (1977)
+				\4 Desinformados tratan de distinguir informados
+				\4[] $\to$ Exigiendo observable correlado con prod.
+				\4 Ofrecer menús de contratos
+				\4[] Precio creciente con observable
+				\4[] Observable más costoso para informado
+				\4[] $\to$ Si bien tiene menor calidad
+			\3 Formulación
+				\4 Mismo contexto de mercado de trabajo
+				\4 Dos niveles de productividad
+				\4[] Sin pérdida de generalidad
+				\4[] $\theta_H$ y $\theta_L$
+				\4 Salario de reserva nulo
+				\4[] Sin pérdida de generalidad
+				\4[] $\to$ Para explicar señalización
+				\4[] $\to$ Sí quita generalidad para SAdversa
+				\4[] $\to$ Sin salarios de reserva no habría SAdversa
+				\4[] Para todos los trabajadores
+				\4 Exigir esfuerzo $t$ para señalizar productividad
+				\4[] Similar a educación pero elegido ex-post
+				\4[] $\to$ Una vez conocido menú
+				\4[] Suponemos sólo sirve para señalizar
+				\4[] $\Rightarrow$ No aumenta productividad
+				\4 Decisión de empresas
+				\4[] Ofrecen $w$ dependiendo de esfuerzo $t$
+				\4[] $\to$ Menús $(w, t)$
+				\4[] ¿Cuánto esfuerzo $t$ exigir?
+				\4 Decisión de consumidores
+				\4[] Eligen un contrato
+			\3 Equilibrios separadores y agrupadores
+				\4 No existen equilibrios agrupadores en general
+				\4 Empresas ofrecen
+				\4[] Dados $\theta_H$ y $\theta_L$
+				\4[] $1.$ Salario $\theta_L$ y esfuerzo nulo
+				\4[] $2.$ Salario $\theta_H$ y esfuerzo $\tilde{t}$
+				\4[] ¿Cuánta esfuerzo $\tilde{t}$ exigen?
+				\4[] $\to$ Improductivos deben preferir menú con sueldo bajo
+				\4[] $\to$ Productivos deben preferir menú con sueldo alto
+				\4[] $\Rightarrow$ $\tilde{t}$ elevado para disuadir improductivos
+				\4[] $\Rightarrow$ $\tilde{t}$ no demasiado elevado por competencia entre empresas
+				\4[] $\Rightarrow$ $\tilde{t}: \theta_H - c(\tilde{t}, \theta_L) = \theta_L - c(0,\theta_L)$
+				\4 Existencia del equilibrio
+				\4[] En general no existen equilibrios agrupadores
+				\4[] Equilibrio separador puede existir o no
+				\4[] Es posible que no haya equilibrio alguno
+				\4[] $\to$ Si hay muchos con $\theta_H$, + probable que no exista
+				\4 Optimalidad respecto a no filtrado
+				\4[] Improductivos siempre pierden
+				\4[] $\to$ Ganan $\theta_L$ en vez de $E(\theta)$
+				\4[] $\to$ Parte desinformada es capaz de distinguirlos
+				\4[] Productivos pueden beneficiarse de filtrado
+				\4[] $\to$ Cuando existe equilibrio separador, mejoran
+		\2 Intervención de precios\footnote{Ver \textit{adverse selection} en Palgrave.}
+			\3 Subsidios a vendedores
+				\4 Agente externo p.ej. gobierno
+				\4[] Transfiere cantidad incondicional a todos
+				\4[] $\to$ No depende de productividad
+				\4 Más vendedores aceptan entrar en mercado
+				\4 Más posibilidad de alcanzar eq. estable P-superior
+			\3 Fijación de precios mínimos
+				\4 Fijación administrativa de precios
+				\4 Evitar caigan por debajo de eq. estable P-superior
+		\2 Aplicaciones
+			\3 Bienes de segunda mano
+			\3 Mercado de trabajo
+			\3 Dinero
+				\4 Agentes conocen verdadero valor de dinero
+				\4[] Corresponden a compradores
+				\4[] $\to$ Entregan dinero por bienes y servicios
+				\4 Vendedores no conocen verdadero valor de dinero
+				\4 Dos tipos de dinero
+				\4[] Dinero bueno
+				\4[] Dinero malo
+				\4 Ejemplos
+				\4[] Plata y oro en Inglaterra con Newton
+				\4[] $\to$ Newton sobrevalora oro vs plata en ceca
+				\4[] $\to$ En mercado, oro compra menos plata que en ceca
+				\4[] $\then$ Oro pasa a ser dinero malo
+				\4[] $\then$ Se vende más caro a ceca que en mercado
+				\4[] $\then$ Precio de mercado pasa a ser el de ceca
+				\4[] $\then$ Plata pasa a ser dinero bueno
+				\4[] $\then$ Hay menos oferta relativa pero infravalorado
+				\4[] $\then$ Nadie quiere recibir oro
+				\4[] $\then$ Preferible exportar plata y pagar con oro
+				\4[] $\then$ Plata desaparece de circulación
+				\4[] Dinero desgastado a propósito
+				\4[] $\to$ Valor legal igual a monedas nuevas
+				\4[] $\to$ Obligación legal de aceptar como monedas nuevas
+				\4[] $\to$ Contenido de metal de desgastadas menor
+				\4[] $\then$ Todos entregan monedas desgastadas
+				\4[] $\then$ Preferible fundir monedas nuevas a entregar
+				\4[] $\then$ Desaparecen monedas nuevas
+			\3 Seguros
+				\4 Agentes conocen verdadero riesgo de accidente
+				\4[] Dos tipos de agentes
+				\4[] $\to$ Elevada probabilidad de catástrofe
+				\4[] $\to$ Baja probabilidad de catástrofe
+				\4 Empresas aseguradoras no conocen riesgo
+				\4 Soluciones
+				\4[] Obligación de contratar seguro a toda la población
+				\4[] $\to$ Así, los de poca probabilidad no desaparecen
+				\4[] Subvención pública de seguros a no asegurables
+				\4[] $\to$ Primas no aumentan por desaparición de agentes baja prob.
+				\4 Seguros de salud
+				\4[] Problema en Estados Unidos
+				\4[] Obamacare:
+				\4[] $\to$ Obligación de contratar seguro
+				\4[] $\then$ Evitar desaparición de mercado de jóvenes
+				\4[] $\then$ Mantener oferta de seguros
+			\3 Dividendos y equity
+				\4 Agentes tienen información sobre flujos futuros
+				\4 Potenciales accionistas no tienen información interna
+				\4 Política de dividendos sirve para señalizar
+				\4 Caída brusca del dividendo
+				\4[] Inversores interpretan como engaño
+				\4[] Información privada obliga a reducir dividendo
+				\4[] $\to$ Perspectiva de crisis
+				\4 Mantenimiento o aumento del dividendo
+				\4[] Señaliza información privada positiva
+				\4[] Si posteriormente necesario reducir
+				\4[] $\to$ Empresa pagará un coste muy elevado
+				\4[] $\then$ Prefiere no señalizar información falsa
+				\4[] $\then$ Sólo dividendo cuando realmente existe info.
+	\1 \marcar{Riesgo moral}
+		\2 Idea clave
+			\3 Contexto
+				\4 Información incompleta y asimétrica
+				\4[] Respecto a acciones no verificables tras contratar
+				\4[] Acciones pueden asimilarse a ``esfuerzo''
+				\4 En contexto de información incompleta y asimétrica
+				\4[] Maximización de utilidad de un agente (agente)
+				\4[] $\to$ Que no recibe todos los beneficios/daños de sus actos
+				\4[] Resulta en perjuicio a otro agente (principal)
+				\4[] $\then$ Externalidad informacional
+				\4 Principal:
+				\4[] Desconoce esfuerzo de agente tras contratar
+				\4[] Beneficio depende de esfuerzo del agente:
+				\4[] $\to$ Beneficio de principal es estocástico
+				\4[] $\to$ $\uparrow$ esfuerzo de agente, $\uparrow$ posibilidad de $\uparrow$ beneficio
+				\4[] $\Rightarrow$ Relación decisión-resultado no es inequívoca
+				\4 Problema conocido desde antiguo
+				\4[] Imperio Romano: comercio de trigo
+				\4[] $\to$ ¿Cómo garantizar lealtad de capitanes?
+				\4[] Edad media:
+				\4[] $\to$ ¿Cómo garantizar lealtad de señores feudales?
+				\4[] $\to$ ¿Lealtad de virreyes a corona?
+				\4 Problema habitual en empresas gestión-propiedad separada
+				\4[] Accionistas encargan managers la dirección
+				\4[] Objetivo de los accionistas
+				\4[] $\to$ Maximizar valor
+				\4[] Objetivo de los managers
+				\4[] $\to$ Conservar empleo
+				\4[] $\to$ Maximizar remuneración
+				\4[] $\then$ No estan perfectamente alineados
+				\4 Otros ejemplos muy frecuentes
+				\4[] Paciente vs médico
+				\4[] Cliente vs abogado
+				\4[] Sociedad vs potenciales criminales
+				\4 Ross (1973), Mirrlees (1974), Stiglitz (1974)
+				\4[] Problema de agencia en términos modernos
+				\4 Hurwicz, Maskin, Myerson: Premio Nobel 2007
+				\4[] Diseño de mecanismos
+				\4 Agente:
+				\4[] Decide esfuerzo que afecta a resultado del principal
+				\4[] Esfuerzo $e$:
+				\4[] $\to$ reduce su utilidad de forma $g(e)$
+				\4[] $\to$ aumenta prob. de beneficio alto de principal
+				\4 Ejemplos:
+				\4[] Empresario desconoce trabajo de comerciales
+				\4[] Banco no puede verificar acciones de deudores
+				\4[] Aseguradora desconoce riesgos que toma asegurado
+				\4 Consecuencias negativas
+				\4[] Si principales conocen incentivos de agente
+				\4[] $\to$ Entienden que son contrarios a los suyos
+				\4[] $\Rightarrow$ Ninguna razón para contratar
+				\4[] $\Rightarrow$ Deben diseñar contrato adecuado
+			\3 Objetivo:
+				\4 ¿Qué coste tiene asimetría informacional en este contexto?
+				\4 ¿Cómo alinear incentivos de principal y agente?
+				\4 ¿Cómo lograr máximo esfuerzo del agente?
+				\4 ¿Qué tipo de contratos pueden lograrlo?
+				\4 ¿Cómo diseñarlos?
+			\3 Resultados
+				\4 Diseño de mecanismos
+				\4 Dos condiciones generales de contrato óptimo
+				\4[] Condición de participación
+				\4[] $\to$ Contrato debe hacer óptima la participación para el agente
+				\4[] Restricción de incentivos
+				\4[] $\to$ Contrato debe hacer óptimo realizar acción deseada
+				\4 Dos tipos de riesgo moral
+				\4[] Acciones ocultas
+				\4[] $\to$ Principal no conoce esfuerzo de agente
+				\4[] $\to$ Acciones ocultas
+				\4[] Información oculta
+				\4[] $\to$ Principal sí conoce acciones del agente
+				\4[] $\to$ No tiene información para saber cuales son óptimas
+		\2 Riesgo moral: acciones ocultas
+			\3 Idea clave
+				\4 Incentivos no alineados
+				\4[] Principal y agente tienen distintos objetivos
+				\4 Acciones del agente no son verificables
+				\4[$\Rightarrow$] Acciones pueden no beneficiar a principal
+				\4 Diseñar contrato con salario $w(\pi)$
+				\4[] (donde $\pi$ es resultado de principal)
+				\4[] Objetivo: alinear incentivos principal-agente
+				\4[] Requisitos:
+				\4[] $\to$ Agente acepte contrato
+				\4[] $\to$ Acciones maximicen beneficio de principal
+				\4 Requisitos del contrato óptimo
+				\4[] $\to$ Maximizar beneficio esperado
+				\4[] $\then$ Inducir esfuerzo óptimo por parte de agente
+				\4[] $\then$ Minimizar coste para el principal
+				\4[$\then$] Necesario cumplir dos condiciones
+				\4[] (P) $\to$ \fbox{``Condición de participación''}
+				\4[] $\to$ Igualar utilidad de reserva $\bar{u}$ de agente
+				\4[] (I) $\to$ \fbox{``Restricción de incentivos''}
+				\4[] $\to$ Inducir máximo esfuerzo en agente
+				\4 Actitud frente al riesgo de agente
+				\4[] Elemento clave del riesgo moral
+				\4[] Si agente no sufre riesgo alguno
+				\4[] $\to$ No tiene incentivos a aplicar esfuerzo alguno
+				\4[] $\then$ Salario de agente debe ligarse a resultado
+				\4[] $\then$ Si resultado arriesgado, salario arriesgado
+			\3 Esfuerzo observable
+				\4 No hay riesgo moral
+				\4[] Útil para formular problema
+				\4[] Sirve de comparación cuando sí hay RM
+				\4[] $\to$ Cuando beneficio depende de $e$
+				\4[] $\to$ Cuando principal no determina $e$
+				\4[] $\to$ cuando relación imperfecta entre $e$ y resultado
+				\4 Principal determina esfuerzo óptimo $e^*$
+				\4 Elige contrato que induce esfuerzo óptimo
+				\4[] $w : u(w) -g(e) \ge \bar{u}$
+				\4[] Necesaria condición de participación
+				\4[] $\to$ Para que agente acepte contrato
+				\4[] No es necesaria condición de incentivos
+				\4[] $\to$ Porque esfuerzo es conocido
+				\4[] $\then$ Simplemente no pagar nada si no se cumple
+				\4 Opcionalmente, puede ligar salario a $\pi$
+				\4[] Implica transferencia de riesgo al agente
+				\4[] $\to$ Apropiado si principal más averso que agente
+				\4[] Salario $w$ función del beneficio $\pi$
+				\4[] $\to$ Maximiza beneficio $\to$ Minimiza salario
+				\4[] $\to$ Agente debe aceptar contrato
+				\4[] $\then$ $u(w(\pi)) - g(e) \ge \bar{u}$
+				\4 Agentes aversos al riesgo
+				\4[] Pagar salario arriesgado tiene un coste adicional
+				\4[] $E(u(w(\pi)) < u(E(w(\pi)))$
+				\4[] Alternativa 1: eliminar riesgo para el agente
+				\4[] $\to$ Para pagar salario más bajo posible
+				\4[] $\then$ Salario fijo que no depende de $\pi$
+				\4[] Alternativa 2: pagar salario arriesgado con prima
+				\4[] $\to$ Para cumplir condición de participación
+			\3 Esfuerzo inobservable: agente neutral al riesgo
+				\4 Aparición de riesgo moral
+				\4[] Principal no conoce esfuerzo del agente
+				\4[] Agente tiene incentivo a esforzarse poco
+				\4[$\then$] Contrato debe inducir condiciones P y R
+				\4 Agente sólo considera salario esperado
+				\4[] $u(w(\pi)) = E(w(\pi))$
+				\4[] $E(w(\pi)) - g(e) \ge \bar{u}$
+				\4[] $\then$ Salario esperado debe ser $\bar{u}$
+				\4[] $\then$ Riesgo para el agente es irrelevante
+				\4 Contrato óptimo
+				\4[] Transferir todo el riesgo del proyecto al agente
+				\4[] $\to$ Ligar salario completamente a beneficios
+				\4[] Salario es beneficio menos cantidad fija
+				\4[] $\to$ Cantidad fija depende de $u$ de reserva
+				\4[] $\then$ Equivale a ``vender'' el proyecto al agente
+				\4[] $w(\pi) = \pi - \alpha$
+				\4[] $\to$ Agente compra proyecto a cambio de $\alpha$
+				\4[] $\to$ Salario depende de beneficio $\pi$
+				\4[] $\to$ Tiene incentivo a aplicar esfuerzo óptimo
+				\4 Optimalidad frente a esfuerzo verificable
+				\4[] Mismo resultado para ambos agentes
+				\4[] Agente es indiferente a riesgo
+				\4[] $\to$ Si salario esperado es suficiente
+				\4[] Principal recibe beneficio esperado con certeza
+			\3 Esfuerzo inobservable: agente averso al riesgo
+				\4 Problema más complejo
+				\4[] Necesario transferir riesgo al agente
+				\4[] $\to$ Porque en caso contrario, no ejerce esfuerzo
+				\4[] $\then$ Cumplir restricción de incentivos
+				\4[] No se puede transferir riesgo completamente
+				\4[] $\to$ Porque agente averso al riesgo
+				\4[] $\then$ Transferencia de riesgo reduce su utilidad
+				\4[] $\then$ Necesario compensar al agente por riesgo
+				\4[] $\then$ Principal obtiene menos beneficio
+				\4 Agente tiene en cuenta riesgo de salario
+				\4[] Mayor riesgo implica menos utilidad
+				\4[] $\then$ Necesario más salario esperado
+				\4 Contrato óptimo
+				\4[] Principal transfiere riesgo parcialmente
+				\4[] Salario asociado a resultado:
+				\4[] $\to$ $\uparrow$ w si resultado más probable con $e$ alto
+				\4[] $\to$ $\downarrow$ w si resultado más probable con $e$ bajo
+				\4[] Riesgo reduce utilidad del agente
+				\4[] $\Rightarrow$ Salario esperado debe ser más alto
+				\4[] $\Rightarrow$ Más costoso para principal
+				\4[] $\Rightarrow$ Puede que no le compense
+				\4[] Principal debe comparar:
+				\4[] A. Contrato transfiriendo riesgo
+				\4[] $\to$ Salario esperado más alto
+				\4[] B. Contrato con salario fijo mínimo
+				\4[] $\to$ Salario esperado inferior sin riesgo
+				\4[] $\Rightarrow$ Principal elige beneficio esperado más alto
+				\4 Optimalidad frente a esfuerzo observable
+				\4[] Si esfuerzo alto es óptimo cuando observable:
+				\4[] $\to$ Debe pagar más que si $e$ es observable
+				\4[] $\to$ Esfuerzo alto puede dejar de ser óptimo
+				\4[] $\then$ Principal siempre peor respecto a observable
+				\4[] Si esfuerzo bajo es óptimo cuando verificable:
+				\4[] $\to$ Debe pagar igual que cuando observable
+				\4[] $\then$ Principal no pierde respecto a observable
+		\2 Aplicaciones
+			\3 Salarios de eficiencia
+			\3 Mercados de seguros
+			\3 Empresas
+			\3 Criminalidad
+			\3 Racionamiento de crédito
+		\2 RM y SA a la vez: Stiglitz y Weiss (1981)
+			\3 Idea clave
+				\4 Racionamiento
+				\4[] Cantidad intercambiada menor que dda./oferta
+				\4[] $\to$ Aunque una parte dispuesta a $\uparrow \downarrow$ precio
+				\4 Mercado de crédito
+				\4[] Bancos y demanda de crédito
+				\4[] Bancos consideran:
+				\4[] $\to$ Tipo de interés exigido
+				\4[] $\to$ Probabilidad de devolver el crédito
+				\4[] $\then$ Rendimiento esperado
+				\4 Desajuste entre demanda y oferta
+				\4[] Demanda > Oferta
+				\4[] Demandantes dispuestos a pagar más
+				\4[] $\to$ Bancos no aumentan oferta a pesar de ello
+				\4 SA y RM
+				\4[] Determinan interés óptimo para banco
+				\4[] Bancos fijan interés y oferta
+				\4[] $\then$ Aunque demandantes quieran pagar más
+			\3 Formulación
+				\4 Aumento del interés provoca:
+				\4[] i) Proyectos muy seguros salen del mercado
+				\4[] $\to$ Riesgo aumenta
+				\4[] $\then$ Selección adversa: baja calidad de proyectos
+				\4[] ii) Deudores toman mayores riesgos
+				\4[] $\to$ Necesitan mayores rendimientos para pagar
+				\4[] $\then$ Riesgo moral: agentes perjudican principal
+				\4[] iii) Mayores ingresos por interés
+				\4[] $\to$ De los proyectos que no quiebran
+				\4[] Efecto combinado sobre rendimiento esperado
+				\4[] $\then$ Existe interés óptimo $r^*$ para el banco
+				\4[] $\then$ Banco fija ese interés aunque D > S
+				\4[] $\then$ Subir interés cuando D > S no siempre interesa
+				\4[] $\then$ Racionamiento aunque competencia perfecta entre bancos
+				\4[] \grafica{interesoptimo}
+			\3 Implicaciones
+				\4 SA y RM pueden explicar racionamiento en cantidad
+				\4[] Explicación alternativa a:
+				\4[] $\to$ ``desequilibrio'' temporal
+				\4[] $\to$ Restricciones legales: salario mínimo, usura...
+				\4 Ejemplo de SA y RM la mismo tiempo
+				\4 Nueva Economía Keynesiana
+				\4[] Otra explicación de rigideces reales
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Selección adversa
+			\3 Problema de agencia
+		\2 Idea final
+			\3 Importancia práctica
+				\4 Enorme aplicabilidad
+				\4 Toda empresa está sujeta al problema de agencia
+				\4[] Dueños del capital ordenando trabajo
+				\4 Selección adversa
+				\4[] En la práctica, calidad heterogénea
+				\4[] $\to$ Especialmente pre-industriales
+			\3 Behavioral economics
+				\4 Sesgos y limitaciones cognitivos
+				\4[] Decisión humana en la práctica
+				\4[] $\to$ No siempre es racional
+				\4[] $\to$ Si racional, no puede computar todas posibilidades
+				\4 Premisa de behavioral economics
+				\4[] Desviaciones de decisión óptima
+				\4[] $\to$ No tienen media cero
+				\4[] $\then$ Hay
+			\3 Diseño de mecanismos
+				\4 Mecanismos
+				\4[] Especificaciones de decisión económica
+				\4[] $\to$ En función de la información conocida
+				\4[] Mecanismos para lograr determinadas decisiones
+				\4[] $\to$ Implican costes para principal
+				\4 DdMecanismos:
+				\4[] Cómo inducir decisiones dependientes de información
+				\4[] $\to$ Teniendo en cuenta costes informativos
+				\4[] $\Rightarrow$ ¿Qué mecanismo es óptimo?
+				\4 Generalización de explicación anterior
+				\4[] ¿Qué contratos deben ofrecer los principales?
+				\4[] ¿Qué costes tienen?
+				\4[] ¿Es rentable que revelen información?
+				\4 Importancia creciente
+				\4[] Competencia perfecta e informacion completa:
+				\4[] $\to$ Margen limitado de explicación
+\end{esquemal}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\graficas
+
+\begin{axis}{4}{Representación gráfica de un equilibrio competitivo con selección adversa: el mercado tiende a desaparecer y sólo trabajan los trabajadores menos productivos.}{$w$}{$\theta$}{seleccionadversa}
+	% bisectriz
+	\draw[-] (0,0) -- (4,4);
+	\node[above] at (4,4){\tiny $\theta = w$};
+	
+	% productividad esperada de toda la distribución de productividades
+	%\draw[dashed] (0,2) -- (4,2);
+	%\node[left] at (0,2){\tiny  $E(\theta)$};
+	
+	% productividad esperada dado un salario w
+	%\draw[-] (0.5,0.65) to [out=70, in=190](1.6,1.35) to [out=10, in=250](2.2,2.6) to [out=70, in=185](2.7,3) -- (4,3);
+	\draw[-] (0.5,0.5) to [out=20, in=210](3.5,2.5);
+	\node[right] at (3.5,2.5){\tiny $E(\theta|w \geq \bar{w}(\theta))$};
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (3.5,2.5) {};
+	
+	% salario mínimo
+	\draw[dashed] (0,0.5) -- (0.5,0.5) -- (0.5,0);
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (0.5,0.5) {};
+	\node[below] at (0.5,0){\tiny $\bar{w}(\ubar{\theta})$};
+	\node[left] at (0,0.5){\tiny $\ubar{\theta}$};
+	
+	% salario máximo
+	\draw[dashed] (0,2.5) -- (3.5,2.5) -- (3.5,0);
+	\node[below] at (3.5,0){\tiny $\bar{w}(\bar{\theta})$};
+	\node[left] at (0,2.5){\tiny $\bar{\theta}$};
+	
+	% equilibrios
+	%\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (1.27,1.27) {};
+	%\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (2.08,2.08) {};
+	%\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (3,3) {};
+\end{axis}
+
+El punto de intersección entre la curva $E(\theta|w>\bar{w}(\theta))$ y la bisectriz es el equilibrio competitivo en el que las empresas maximizan sus beneficios y los trabajadores aceptan trabajar cuando el salario es igual o mayor que su salario de reserva dependiente de la productividad que sólo ellos conocen, de tal manera que se elimina toda posibilidad de obtener beneficios positivos. La gráfica muestra un caso extremo en el que sólo se contratan trabajadores de la peor calidad o el mercado desaparece por completo.
+
+\begin{axis}{4}{Representación gráfica de un equilibrio competitivo con selección adversa: múltiples equilibrios posibles.}{$w$}{$\theta$}{saeqmultiples}
+	% bisectriz
+	\draw[-, color=gray] (0,0) -- (4,4);
+	\node[above] at (4,4){\tiny $\theta = w$};
+	
+	% productividad esperada de toda la distribución de productividades
+	%\draw[dashed] (0,2) -- (4,2);
+	%\node[left] at (0,2){\tiny  $E(\theta)$};
+	
+	% productividad esperada dado un salario w
+	\draw[-] (0.5,0.5) to [out=70, in=190](1.6,1.35) to [out=10, in=250](2.2,2.6) to [out=70, in=185](2.95,3);% to[out=10, in=210](4,3.5); % to [out=20, in=120](4,3);
+	%\draw[-] (0.5,0.5) to [out=20, in=210](3.5,2.5);
+	\node[right] at (4,3.5){\tiny $E(\theta|w \geq r(\theta))$};
+	
+	% Equilibrios
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (3,3) {};
+	\node[left] at (3,3.1){\tiny 4};
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (2.1,2.1) {};
+	\node[left] at (2.1,2.2){\tiny 3};
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (1.3,1.3) {};
+	\node[left] at (1.3,1.4){\tiny 2};
+	
+	% salario mínimo
+	\draw[dashed] (0,0.5) -- (0.5,0.5) -- (0.5,0);
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (0.5,0.5) {};
+	\node[left] at (0.55,0.65){\tiny 1};
+	\node[below] at (0.5,0){\tiny $r(\ubar{\theta})$};
+	\node[left] at (0,0.5){\tiny $\ubar{\theta}$};
+	
+	% salario máximo
+	\draw[dashed] (0,3) -- (3,3) -- (3,0);
+	\node[below] at (2.95,0){\tiny $r(\bar{\theta})$};
+	\node[left] at (0,3){\tiny $\bar{\theta}$};
+	
+	% equilibrios
+\end{axis}
+
+
+La gráfica muestra un mercado con diferentes equilibrios competitivos y selección adversa. La recta negra representa la productividad esperada $E(\theta)$ dado un salario $w$, de tal manera que trabajan todos los trabajadores cuyo salario de reserva es igual o superior al $w$ fijado. En los puntos de intersección entre la bisectriz (en gris) y la curva de productividad esperada, el salario ofrecido es igual a la productividad esperada de los trabajadores que aceptan trabajar. Así, en estos puntos ni las empresas entran en pérdidas por pagar un salario superior a la productividad media (lo que sucedería si la recta de $E(\theta)$ estuviese a la derecha de la bisectriz, ni pagar un salario demasiado bajo de tal manera que las empresas pudiesen obtener beneficios económicos y apareciese la posibilidad de que entrasen nuevas empresas. Los equilibrios 2 y 4 son estables, ya que una perturbación puntual entre 1 y 2 que aumentase el salario induciría la aparición de beneficios económicos, que a su vez inducirían sueldos más altos, y la incorporación al mercado laboral de trabajadores con productividad más alta, que aumentarían a su vez la productividad media de los trabajadores. De igual modo, una perturbación del equilibrio en 3 induciría la aparición de pérdidas por salarios más altos que la productividad esperada, de tal manera que caería el salario medio de manera progresiva al tiempo que salen del mercado trabajadores más productivos y cae la productividad media hasta alcanzarse el equilibrio estable 2. 
+
+
+\begin{axis}{4}{Equilibrio separador en contexto de información asimétrica: contratos ofertados y curvas de indiferencia de trabajadores con productividad alta y baja.}{$e$}{$\theta$}{equilibrioseparador}
+	% productividad alta
+	\draw[-] (0,3) -- (-0.2,3);
+	\node[left] at (-0.2,3){$\theta_H$};
+	\draw[dashed] (0,3) -- (4,3);
+	
+	% productividad baja
+	\draw[-] (0,1) -- (-0.2,1);
+	\node[left] at (-0.2,1){$\theta_L$};
+		% curva de indiferencia
+	\draw[-] (0,1) to [out=35, in=250](2.3,4);
+
+	% productividad alta
+	\draw[-] (0,1.8) to [out=30,in=220] (3.1,4);
+	\draw[dashed] (0,1.3) to [out=30,in=220] (3.1,3.5);
+	
+	% educación mínima
+	\draw[dashed] (1.87,0) -- (1.87,3);
+	
+	% contratos
+	\draw[-] (0,1) -- (1.87,1);
+	\draw[-] (1.87,3) -- (4,3);
+	\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (0,1) {\small A};
+	\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (1.87,3) {\small B};
+	\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (2.5,3) {\small C};
+	
+\end{axis}
+
+Los puntos rojos muestran los dos contratos elegidos. En el contrato A, los trabajadores con productividad baja eligen el contrato con salario bajo y educación nula. Aunque están indiferentes entre A y B (su curva de indiferencia pasa por ambos), prefieren A y B porque se asume que prefieren menos educación a igualdad de beneficio. Los trabajadores con productividad alta prefieren el contrato B. La curva de indiferencia de de trabajadores con productividad alta dibujada con trazado discontinuo muestra como podría existir un equilibrio separador con mayor educación exigida para el contrato con salario alto, representado por el punto C. Sin embargo, este otro equilibrio con contrato C sería Pareto-inferior al equilibrio en el que los trabajadores productivos eligen B.
+
+\begin{axis}{4}{Existencia de un tipo de interés que maximiza el rendimiento esperado para el banco.}{Interés exigido}{Rendimiento esperado}{interesoptimo}
+	% Curva interés-rendimiento esperado
+	\draw[-] (0,0) to [out=60, in=180](2.5,2) to [out=0, in=120](4,1);
+	
+	% interés óptimo
+	\draw[dashed] (2.5,2) -- (2.5,0);
+	\node[below] at (2.5,0){\tiny $r^*$};
+	\draw[dashed] (2.5,2) -- (0,2);
+	\node[left] at (0,2){\tiny Rdto. máximo};
+\end{axis}
+
+\conceptos 
+
+\preguntas
+
+\seccion{Test 2018}
+
+\textbf{7.} Un comercial (agente) puede realizar su trabajo haciendo un esfuerzo alto ($E_1=8$) o bajo ($E_2=4$), y el resultado económico que obtiene con su actividad, X, se valora en 10.000 euros o 5.000 euros, respectivamente. La función de utilidad del principal es $B(X,W) = X-W^2$, y la del agente es $U(W,E) = W - E$, siendo $W$ el pago que recibe el agente. La utilidad de reserva, $U^0$, viene dada por el subsidio de desempleo si el agente no trabaja que es 100 euros. Si suponemos que las probabilidades de fracaso, con relación al esfuerzo realizado, son $p_1 =0,4$ y $p_2 = 0,6$, el esquema de pagos óptimo si existe información simétrica y el principal puede incurrir en pérdidas es: 
+
+\begin{itemize}
+	\item[a] $W_1 = 108; W_2=108$
+	\item[b] $W_1 = 216; W_2 = 216$
+	\item[c] $W_1=108; W_2 = 216$
+	\item[d] $W_1=216; W_2=108$
+\end{itemize}
+
+\seccion{Test 2015}
+
+\textbf{8.} Considere un modelo de información asimétrica, en el que los propietarios de la empresa tienen menos información que los gestores, en el sentido de que el esfuerzo que realizan los gestores, que puede ser alto o bajo, no es observable por parte de los propietarios. Hay dos resultados posibles: bueno o malo. Suponga que el esfuerzo alto de los gestores aumenta la probabilidad de la realización del resultado bueno y aumenta a su vez la desutilidad de los gestores. Suponga también que la realización del esfuerzo alto conlleva un mayor beneficio esperado. El diseño óptimo de la remuneración de los gestores por parte de los propietarios requiere satisfacer la restricción de compatibilidad de incentivos, que consiste en que (señale la respuesta verdadera):
+
+\begin{itemize}
+	\item[a] La utilidad esperada de los gestores de realizar el esfuerzo alto debe ser mayor que la utilidad de reserva.
+	\item[b] La utilidad esperada de los gestores de realizar el esfuerzo alto debe ser superior a la de realizar el esfuerzo bajo.
+	\item[c] La misma restricción que debería cumplirse con información asimétrica, es decir, cuando el esfuerzo es observable.
+	\item[d] La misma restricción que debería cumplirse en situaciones de incertidumbre, es decir, cuando se puede asignar una probabilidad a cada estado de la naturaleza.
+\end{itemize}
+
+\seccion{Test 2011}
+
+\textbf{4.} Una característica del mercado de billetes de lotería es que la gente compra los billetes de lotería sin saber si el número será premiado.
+
+\begin{itemize}
+	\item[a] Podemos deducir de este hecho que hay selección adversa.
+	\item[b] Podemos deducir de este hecho que hay riesgo moral.
+	\item[c] Podemos deducir de este hecho que hay selección adversa y riesgo moral.
+	\item[d] Este hecho no indica que haya selección adversa o riesgo moral.
+\end{itemize}
+
+\seccion{Test 2005}
+
+\textbf{6.} En el contexto de la Teoría de la Agencia con información incompleta y simétrica:
+
+\begin{itemize}
+	\item[a] Si el principal es neutral y el agente es averso, el contrato óptimo consiste en establecer un pago fijo independiente del resultado.
+	\item[b] Si el principal es neutral y el agente es averso, el contrato óptimo es un contrato de franquicia.
+	\item[c] Si tanto el principal como el agente son aversos, el contrato óptimo consiste en establecer un pago fijo independiente del resultado.
+	\item[d] Si el principal es averso y el agente es neutral, en el contrato óptimo el principal asume todo el riesgo.
+\end{itemize}
+
+\seccion{Test 2004}
+
+\textbf{8.} Considere el siguiente modelo de agente-principal. Una empresa tiene que contratar a un trabajador. El trabajador puede ser de dos tipos: más eficaz o menos eficaz. Después de la firma del contrato, el trabajador puede esforzarse, lo que tiene un coste para él, o no esforzarse.
+
+Señale la respuesta CORRECTA:
+
+\begin{itemize}
+	\item[a] Hay un problema de selección adversa cuando la empresa no puede observar si el trabajador se esfuerza o no.
+	\item[b] Hay un problema de riesgo moral cuando la empresa no puede observar el tipo de trabajador antes de la firma del contrato.
+	\item[c] Si hay un problema de riesgo moral, éste se podría resolver si cada tipo de trabajador envía una señal, como por ejemplo su nivel de educación, a la empresa.
+	\item[d] Si hay un problema de selección adversa, la empresa podría solucionarlo ofreciendo dos tipos de contrato, uno para cada tipo de trabajador.
+\end{itemize}
+
+\notas
+
+\textbf{2018.} \textbf{7.} A
+\textbf{2015.} \textbf{8.} B
+\textbf{2011.} \textbf{4.} D
+\textbf{2005.} \textbf{6.} A
+\textbf{2004.} \textbf{8.} D
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+	\item adverse selection *
+	\item agency problems *
+	\item cheap talk * 
+	\item contract theory *
+	\item contracting in firms *
+	\item corporate law, economic analysis of
+	\item credit rationing *
+	\item implicit contracts
+	\item incentive compatibility *
+	\item incomplete contracts
+	\item mechanism design *
+	\item mechanism design (new developments) *
+	\item moral hazard *
+	\item pooling and separating equilibria (Money \& Finance)
+	\item selection bias and self-selection
+	\item signalling and screening *
+\end{itemize}
+
+Akerlof, J. \textit{The Market for <<Lemons>>: Quality Uncertainty and the Market Mechanism} (1970) The Quarterly Journal of Economics -- En carpeta del tema
+
+Rothschild, M.; Stiglitz, J. \textit{Equilibrium in Competitive Insurance Markets: An Essay on the Economics of Imperfect Information} (1976) The Quarterly Journal of Economics -- En carpeta del tema
+
+Stiglitz, J. E.; Andrew, W. \textit{Credit Rationing in Markets with Imperfect Information} (1981) American Economic Review -- En carpeta del tema
+
+Wilson, C. \textit{A Model of Insurance Markets with Incomplete Information} (1977) Journal of Economic Theory -- En carpeta del tema
+
+Jehle y Reny. Ch. 8
+
+Kreps. Ch. 16,17, 18
+
+MWG. Ch. 13-14 
+
+Varian. Ch. 25
+
+\end{document}

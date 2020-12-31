@@ -1,0 +1,1826 @@
+\documentclass{nuevotema}
+
+\tema{3A-16}
+\titulo{Teorías del oligopolio. Análisis estático y dinámico. Teoría de los juegos.}
+
+\begin{document}
+
+\ideaclave
+
+Lionel Robbins y Paul Samuelson definieron la economía como el estudio de las decisiones relativas a bienes escasos con usos alternativos destinados a satisfacer una serie de necesidades humanas. La microeconomía es la rama de la economía que estudia esas decisiones a nivel individual de agentes tales como empresas, consumidores y gobiernos. La microeconomía comienza a desarrollarse en el siglo XIX, de forma a menudo paralela a la aparición de técnicas matemáticas más avanzadas que permiten representar la decisión humana en términos abstractos y tratables. Es en pleno siglo XX, en los años 40, cuando se desarrolla una disciplina matemática cuyo objetivo es la modelización de la decisión en presencia de interdependencia estratégica. Es decir, aquellas decisiones que se toman teniendo en cuenta el efecto que provocarán en otros agentes decisores, y el efecto que provocará su respuesta a la decisión considerada. Se trata de la Teoría de Juegos, bautizada así por John Von Neumann y Oskar Morgenstern en 1944 y desarrollada posteriormente por muchos otros autores entre los que destacan John Nash y John Harsanyi. La Teoría de Juegos se encuentra íntimamente ligada a la microeconomía y en especial, al estudio de los oligopolios. Cuando las empresas toman decisiones en un contexto de mercado tales como ¿cuánto producir?, ¿a qué precio vender? o ¿cómo reaccionar a una decisión de un competidor?, la presencia de interdependencia estratégica convierte a la Teoría de Juegos en la herramienta matemática ideal para modelizar las decisiones que responden a aquellas preguntas. El \textbf{objeto} de la exposición es responder así a preguntas tales como: ¿qué es la teoría de juegos? ¿qué fenómenos trata de explicar? ¿con qué herramientas? ¿qué es un oligopolio? ¿cómo se modelizan los oligopolios en economía? ¿qué resultados predice la teoría del oligopolio? ¿en qué se diferencia el análisis estático del dinámico? La \textbf{estructura} de la exposición es simple. En primer lugar se exponen la Teoría de juegos y posteriormente se presenta la teoría del oligopolio, atendiendo a sus resultados más relevantes y a la relación con la teoría de juegos. 
+
+Aunque su colorido nombre no lo indica a priori, la \marcar{teoría de juegos} no es sino la teoría de la decisión interactiva. Esto es, un conjunto de modelos matemáticos y resultados derivados que tienen por objeto entender y predecir el comportamiento de un agente cuando toma decisiones en un contexto en que otros agentes también toman decisiones y responden recíprocamente. Esto es, situaciones en las que se toman decisiones en presencia de interdependencia estratégica. El nombre tiene su origen en la similitud de los modelos con los juegos de mesa, ya que las posibles decisiones están claramente acotadas y los resultados son predecibles dada una decisión de los demás agentes. Así, la pregunta a la que responde: ¿cómo decidir cuando la decisión de otros agentes me afecta, y ellos toman decisiones teniendo en cuenta mi decisión? La teoría de juegos es una disciplina trasversal, en el sentido de que no es una rama de la economía ni se aplica exclusivamente a la modelización económica. Se trata de una herramienta matemática de carácter general aplicable en disciplinas tales como la ciencia política, la doctrina y estrategia militar, la biología, la ciencia de la computación, la gestión empresarial y por supuesto, la economía. Algunos autores  como Cournot, Bertrand, Edgeworth o Ramsey introdujeron conceptos económicos que servirían de base para Von Neumann y Morgenstern (1944). Fueron éstos, sin embargo, los que explicitaron los resultados individuales en términos cuantitativos, los que definieron los planes de decisión como conjuntos matemáticos denominados estrategias y los juegos como conjuntos de los elementos anteriores.
+
+La \textbf{descripción general de un juego} empieza con la enumeración de los \underline{jugadores}, que no son sino los agentes que toman decisiones eligiendo entre conjuntos de alternativas. Los \underline{resultados} caracterizan las posibles alternativas que acontecen a los jugadores en función de las estrategias que lleven a cabo. Las \underline{estrategias} son las descripciones formales de la decisión del agente caracterizadas como subconjuntos del conjunto exhaustivo de alternativas sobre las que decidir en cada instante considerado. Las \underline{creencias} son la generalización de los resultados. En tanto que los agentes conocen con certeza total la reacción que sus decisiones provocarán, las creencias se corresponden con distribuciones de probabilidad degeneradas que describen lo que se producirá efectivamente de tomarse una u otra decisión. Sin embargo, es preciso a menudo modelizar situaciones en las que no existen razones para postular que los agentes conocen con certeza absoluta el resultado de sus decisiones. En estos casos, la caracterización de las creencias que formulan en relación a las respuestas de otros agentes es uno de los rasgos definitorios de un juego. 
+
+El \textbf{concepto de solución} encarna el objeto último de la teoría de juegos: ¿qué resultados obtendrán los agentes? o equivalentemente ¿a qué situación dará lugar un juego? La respuesta a estas preguntas es el concepto de solución. La solución de un juego no es un concepto único ni inequívoco. En primer lugar, depende de los supuestos adoptados respecto a la racionalidad de los agentes. Como primera y más habitual aproximación, es habitual asumir que los agentes son racionales de tal manera que toman decisiones que maximizan su bienestar utilizando toda la información de la que disponen. El concepto de solución se encuentra íntimamente ligado en estos casos al de equilibrio, entendiendo éste como aquellos conjuntos de estrategias que ninguno de los agentes desea cambiar. El primer concepto de solución que conviene presentar, por su simplicidad conceptual y su carácter de caso particular de otros conceptos es el de \underline{solución en estrategias dominantes}. Una estrategia dominante es una estrategia que induce mejor resultado que cualquier otra para el agente que la lleva a cabo, de modo tal que es evidente que debe ser la estrategia escogida por el agente en cuestión. Cuando ambos agentes tienen una estrategia dominante, es evidente que deben escogerlas y la solución es el conjunto formado por ambas. Si sólo un agente tiene a priori una estrategia dominante, es posible que tras eliminar el resto, el otro agente pase a tener también una estrategia dominante y aparezca una solución en estrategias dominantes hallada por iteración. En cualquier caso, puede no existir ningún equilibrio en estrategias dominantes. Las \underline{soluciones en estrategias dominadas} son aquellas soluciones en estrategias dominantes que que aparecen tras eliminar los conjuntos de estrategias que son inferiores a cualquier otra para cada uno de los jugadores. Igualmente, las soluciones en estrategias dominadas no tienen por qué existir. Los \underline{equilibrios de Nash en estrategias puras} (ENEP) son aquellos vectores de estrategias con probabilidades degeneradas tales que para cada jugador, tomando como dadas las estrategias adoptadas por los demás jugadores, la estrategia del jugador dado es la óptima, de tal manera que ningún jugador tiene incentivos unilaterales a cambiar de estrategia. Todos las soluciones en estrategias dominantes y dominadas son ENEP, pero no necesariamente al revés, por lo que se trata de un concepto generalizador. A semejanza de aquellas, la existencia de al menos un ENEP no está garantizada. El \underline{equilibrio de Nash en estrategias mixtas} (ENEM) es el concepto de solución que generaliza todos los anteriores. Un ENEM es un conjunto de estrategias especificado como una distribución de probabilidad sobre el conjunto de acciones en cada nodo de decisión. Aunque el término ENEM se aplica cuando estas distribuciones de probabilidad son no degeneradas, es posible de hecho caracterizar los ENEP como ENEM con probabilidades degeneradas. El objetivo de los agentes a la hora de formular una estrategia como una distribución de probabilidad sobre las acciones disponibles es hacer indiferente al otro agente respecto de sus decisiones. Así, los ENEM son aquellos conjuntos de estrategias para los cuales ningún agente tiene incentivos unilaterales a cambiar la distribución de probabilidades/estrategias que caracteriza su decisión. A diferencia de las soluciones anteriores, sí puede demostrarse que \underline{existe al menos un ENEM} en todos los juegos finitos en forma estratégica.
+
+Una vez caracterizados los elementos básicos de un juego y los principales conceptos de solución, es apropiado examinar las clases más habituales de juegos. Los \textbf{juegos estáticos de información completa} se caracterizan porque la toma de decisiones de los agentes es simultánea, de tal manera que los agentes deciden irrevocablemente a partir de la misma información, al mismo tiempo y una sola vez con el objetivo de maximizar su bienestar individual y sin poder establecer acuerdos previos con otros jugadores que puedan ser ejecutables (``enforceable''). La \underline{representación en forma estratégica o normal} hace referencia es una forma de caracterización de un juego consistente en definir una tupla para cada jugador $i$ que contiene las estrategias posibles para cada agente y los resultados obtenidos para cada combinación de estrategias de cada agente, de tal manera que para juegos con dos agentes puede representarse en forma de matriz en la que filas y columnas corresponden respectivamente a las decisiones de cada agente y las celdas son los resultados asociados. El \underline{dilema del prisionero} es un ejemplo de juego en forma estratégica en el que existen dos acciones para cada jugador: cooperar o no cooperar. Si ambos cooperan o si uno de ellos coopera y otro no el resultado es un óptimo de Pareto. Si ninguno lo hace, el resultado es subóptimo. Sin embargo, el ENEP existente consiste precisamente en ese resultado no cooperativo. Esto sucede porque respecto del resultado en que ambos cooperan, ambos agentes tienen incentivos a no cooperar. El dilema del prisionero es aplicable a un gran número de situaciones tanto en economía como en otras disciplinas. Un ejemplo reciente concierne la imposición de aranceles iniciada por Estados Unidos y que amenaza con desembocar en una subida generalizada de los impuestos a la importación. Aunque el óptimo sería la eliminación de los aranceles, todos los países involucrados tienen incentivos a aumentarlos para obtener una ganancia unilateral, de forma que el equilibrio tiende hacia la subida generalizada del arancel. Otro ejemplo relevante de juego estático de información perfecta son los llamados \underline{juegos de coordinación}. En estos juegos existen dos ENEP y un ENEM. Los ENEP son óptimos de Pareto pero el ENEM no lo es. Si bien los agentes tienen interés en alcanzar cualquiera de los ENEPs, no tienen a priori modo alguno para coordinarse y alcanzar uno en concreto, de modo tal que el resultado puede acabar siendo uno subóptimo. Además, cada agente puede preferir un ENEP distinto al que prefiere el otro agente, de modo tal que aunque incluso el ENEP no preferido sea superior a cualquiera de los otros resultados subóptimos de Pareto, es posible que jugando una estrategia mixta se alcance alguno de estos últimos.
+
+Los \textbf{juegos dinámicos o secuenciales} con información perfecta se caracterizan porque en ellos los agentes deciden siguiendo un orden determinado de modo tal que cada agente conoce las decisiones que se han tomado en el pasado. La \underline{representación en forma extensiva} es especialmente apropiada para este tipo de juegos. En estas representaciones, los conjuntos de decisiones aparecen asociados a nodos o puntos de información que caracterizan la información de que dispone cada agente sobre las decisiones tomadas con anterioridad por los demás agentes. Los nodos finales definen los pagos que recibe cada agente como resultado de todas las decisiones respectivas. La representación gráfica de los juegos en forma extensiva toma la forma de árbol en el que los nodos son los puntos a partir de los cuales las diferentes ``ramas'' que caracterizan cada decisión se dividen. En este tipo de juegos existe un concepto de solución propio denominado \underline{equilibrio de Nash perfecto en subjuegos} (ENPS). Un subjuego es el juego que aparecería si en un nodo determinado, los agentes no tuviesen conocimiento de las decisiones que han sido tomadas con anterioridad. Así, un ENPS es un conjunto de estrategias tales que para cualquier subjuego definido a partir del juego en cuestión, los agentes no tienen incentivos unilaterales a cambiar la estrategia que implementarían en el juego completo. Para hallar los ENPS de un juego secuencial es posible aplicar el método de inducción hacia atrás. La inducción hacia atrás consiste en hallar las estrategias que maximizan la utilidad en cada nodo final y a partir de ahí, hallar las estrategias óptimas para cada nodo decisión anterior hasta llegar al primer nodo de decisión. Es posible demostrar que este tipo de juegos dinámicos con información perfecta (también denominados de ``memoria perfecta'' o \textit{perfect recall}) siempre existe al menos un ENPS. Cuando sólo existe un subjuego, que se corresponde con el juego principal, existe al menos un ENEM, de forma tal que los juegos dinámicos pueden entenderse como generalizaciones de los juegos estáticos. Un ejemplo de situación representable mediante un juego en forma dinámica son las situaciones en las que una \underline{empresa decide si entrar o no} en un mercado determinado en el que opera ya otra empresa, denominada incumbente. En forma extensiva, el juego tiene dos nodos. En el primero, la entrante decide si entrar o no. En el segundo y final, el incumbente decide si adoptar o no represalias contra la entrada. Si las adopta, ambas empresas sufren pérdidas. Si no las adopta, ambas obtienen un pequeño beneficio positivo, que es en cualquier caso inferior al que obtiene el incumbente si el entrante potencial decide no hacerlo. En este tipo de situaciones, los incumbentes tienden a amenazar con adoptar represalias si se produce la entrada. Sin embargo, si la decisión de adoptar la represalia ha de tomarse una vez la decisión sobre la entrada es irrevocable, el incumbente no tendrá incentivo unilateral alguno a adoptarla. En tal caso, la adopción de represalias no será un ENPS. La representación en forma extensiva permite caracterizar este hecho y determinar que el ENPS será tal que el entrante decidirá entrar y el incumbente no adoptará represalia alguna. Sin embargo, si el juego se representase en forma normal, el carácter secuencial de la decisión se tendría en cuenta y aparecerían dos ENEP tales que i) una empresa entraría y la otra no adoptaría represalias, ii) la incumbente adoptaría represalias ante la entrada y no lo haría si no, y la entrante decidiría no entrar. Así, la forma extensiva permite representar todo juego en forma normal sin pérdida de información pero no al revés. Cuando se pretende caracterizar una decisión simultánea en forma extensiva, es habitual dibujar un elipse que abarque dos nodos de información, señalando así que el decisor ignora qué decisión se tomó en el nodo anterior y por ende, que ignora en qué nodo de decisión se encuentra. 
+
+Los \textbf{juegos con información incompleta} se diferencian de los anteriores por la ignorancia de uno o varios agentes respecto del impacto de sus acciones sobre los resultados de otros agentes. Es decir, por el hecho de que un agente no sepa qué implicaciones tiene su decisión para los resultados del resto de agentes y por tanto, de él mismo. Un ejemplo paradigmático de este tipo de juegos es aquel en el que dos empresas deciden sobre los precios a los que vender un producto homogéneo, pero una empresa ignora la estructura de costes de la otra. En este tipo de juegos, las creencias acerca de los resultados que obtienen las otras empresas son el elemento determinante del equilibrio. De forma general, agentes racionales formularán creencias en términos de la regla de Bayes, aunque esto no es siempre posible. Los \textit{equilibrios de Bayes-Nash} (EBN) son el concepto de solución general de este tipo de juegos. Un EB se concreta como un conjunto de estrategias y creencias sobre los resultados de los otros agentes tales que ningún agente tiene incentivos unilaterales a desviar su comportamiento. Es posible demostrar que todo juego finito de información incompleta tiene al menos un EBN. La información incompleta puede combinarse además con contextos secuenciales o dinámicos. 
+
+Los \textbf{juegos cooperativos} constituyen una rama de la teoría de juegos diferenciada de todos los juegos anteriores, que pertenecen a la teoría de los juegos no cooperativos. Los juegos cooperativos fueron caracterizados por Von-Neumann y Morgenstern como juegos ``coalicionales'' cuyo elemento principal es la posibilidad de llegar a acuerdos vinculantes entre jugadores que hacen posible diferentes expresiones de negociación y cooperación. Así, el estudio de los juegos cooperativos es el estudio de las coaliciones, entendidas estas como subconjuntos de agentes que acuerdan adoptar una estrategia determinada. El concepto de solución en juegos cooperativos es más complejo que en los juegos no cooperativos. El concepto de \textit{núcleo} y valor de Shapley son algunos de los principales. El núcleo hace referencia a aquellas estrategias que no pueden ser mejoradas para el conjunto de agentes que forman una coalición. El \textit{valor de Shapley} se aplica a situaciones en las que la utilidad es transferible entre los miembros de una coalición. Cuando esto sucede, la utilidad asignada a cada miembro de la coalición depende básicamente del valor total de la coalición y de la contribución marginal de cada miembro a la coalición. Esa utilidad asignada a un miembro es el valor de Shapley de la coalición para el agente. Las aplicaciones de la teoría de juegos cooperativos se ha aplicado en el análisis de equilibrio general en microeconomía, en el análisis de pactos entre partidos políticos, alianzas empresariales, fusiones y adquisiciones, asociaciones de consumidores y un largo etcétera. El llamado \textit{programa de investigación de Nash} trata de eliminar la distinción entre juegos cooperativos y no cooperativos a través del desarrollo de conceptos que generalicen ambas disciplinas.
+
+La \marcar{teoría del oligopolio} tiene por objeto entender y predecir el resultado de situaciones de mercado en los que está presente la interdependencia estratégica y que se encuentran a medio camino entre los dos casos polares de la microeconomía: la competencia perfecta y el monopolio. La competencia perfecta se caracteriza por la ausencia de poder de mercado, de tal manera que ningún agente puede influir de forma unilateral sobre el precio al que se intercambia el bien en cuestión. En el monopolio (y el monopsonio) sucede al contrario: existe un sólo agente que oferta o demanda el bien y que decide a qué precio se vende. La competencia monopolística y el oligopolio se encuentran a medio camino, aunque existen diferencias de calado entre ambos. La competencia monopolística se caracteriza por la ausencia de interdependencia estratégica al tiempo que cada productor enfrenta una demanda que no es perfectamente elástica y tiene por ello cierto poder de mercado. En el oligopolio, la interdependencia estratégica se fundamenta en el reducido número de agentes que interaccionan. En cuanto al poder de mercado en los oligopolios, los resultados son diversos y requieren del análisis de la estructura del mercado en cuestión. Es precisamente esta especificidad de cada mercado lo que caracteriza al análisis del oligopolio. Por ello, la literatura ha formulado diferentes modelos de oligopolio que tratan de caracterizar resultados muy diferentes que en función de factores tales como la variable estratégica sobre la que las empresas deciden, la reacción que las empresas esperan de sus competidores o la presencia de decisiones secuenciales. 
+
+En los modelos de \textbf{oligopolio estático}, varias empresas enfrentan una demanda conocida de antemano y fijan una sola vez y al mismo tiempo el precio o la cantidad. La variable que fijen tienen consecuencias relevantes. La decisión se toma teniendo en cuenta las decisiones de las otras empresas, lo cual incluye su reacción ante la decisión de la empresa en cuestión. Así, las conjeturas acerca de las reacciones de otras empresas son un factor relevante que puede caracterizar un tipo de juego frente a otro, como veremos a continuación. Para presentar los diferentes tipos de juego y poder comparar sus equilibrios, es apropiado definir un \underline{marco común} lo más simple posible caracterizado por la presencia de dos empresas, una demanda inversa lineal y negativa en las cantidades producidas tal que $P = A - (q_1 + q_2)$, así como asumir que las empresas tienen costes marginales fijos y que no existen costes fijos. Posteriormente estos supuestos se pueden modificar para generalizar los resultados. En todos las realizaciones concretas de los modelos de oligopolio se asume que las empresas resuelven un problema de maximización de los beneficios respecto de las cantidades producidas cuya condición de primer orden define una función de reacción. Las funciones de reacción definen la decisión óptima dada una decisión del resto de agentes y una reacción de éstos ante cambios en la decisión adoptada. Esa reacción de las otras empresas se denomina variación conjetural y en términos diferenciales consiste en la primera derivada de la función de reacción de las otras empresas respecto a la decisión tomada por la empresa en cuestión.
+
+El \underline{oligopolio de Cournot} fue el primer modelo formal de oligopolio. Aparece en 1838 por el autor que da nombre al modelo. La característica básica es que la variable estratégica es la cantidad producida, de tal manera que el precio al que se vende el bien es aquel que vacía el mercado dadas las cantidades fijadas. En términos de variaciones conjeturales, el modelo de Cournot se caracteriza por que las empresas asumen una variación conjetural de 0 en términos de cantidades. Es decir, aunque ellos toman sus decisiones de cantidad teniendo en cuenta la decisión de las otras empresas, asumen que las otras empresas no reaccionarán a su decisión en modo alguno. En términos del modelo base, las funciones de reacción de cada empresa son iguales al parámetro A menos el coste marginal y la cantidad producida por la otra empresa, y todo ello dividido entre dos ($q_i(q_j) = \frac{A-c-q_j}{2}$). A partir de estas dos funciones de reacción es posible caracterizar el equilibrio como aquellos niveles de producción para los que ninguna de las dos empresas tiene incentivos unilaterales a cambiar su decisión, en lo que se denomina un equilibrio de Cournot-Nash. Si representamos gráficamente las funciones de reacción en el eje de coordenadas, el equilibrio se corresponde con el punto de intersección entre las dos rectas. En el modelo básico anterior, la cantidad de equilibrio para cada empresa es igual al parámetro A menos el coste marginal, dividido todo ello entre 3 ($q_1^c = q_2^c = \frac{A-c}{3}$). El precio de equilibrio es igual al parámetro A más dos veces el coste marginal, dividido todo ello entre 3 ($p^C = \frac{A + 2c}{3}$). El resultado se puede generalizar a $J$ empresas, de tal manera que la cantidad de equilibrio de cada empresa depende negativamente del número de empresas ($q_i^C = \frac{A-c}{(J+1)b}$) y el precio de equilibrio se aproxima al coste marginal cuando el número de empresas se aproxima al infinito ($P^C = A+J \frac{A-c}{J+1}$). Es interesante \underline{comparar resultados con los de competencia perfecta y monopolio} a partir de las fórmulas generales de equilibrio. Una situación de monopolio es equivalente a un oligopolio con una sola empresa. A partir de las fórmulas que generalizan precio y cantidades de equilibrio, se muestra como un oligopolio de Cournot resulta en más cantidad producida y menor precio que en monopolio, así como un beneficio menor para cada empresa. La competencia perfecta puede caracterizarse postulando que la cantidad de empresas tiende a infinito. En este caso, la cantidad producida por cada empresa se aproxima a 0 y el precio de equilibrio se aproxima asintóticamente al precio marginal. Comparando con un oligopolio de Cournot con un número arbitrariamente reducido de empresas, puede concluirse que el oligopolio de Cournot implica mayor cantidad producida por cada empresa pero menor cantidad producida total y un precio superior, así como mayores beneficios para las empresas. Si las empresas tienen \textit{costes marginales asimétricos}, la empresa con menores costes producirá más cantidad y obtendrá mayores beneficios. En un contexto de \textit{repetición secuencial del oligopolio}, es posible aplicar el folk theorem para caracterizar un equilibrio colusivo que maximice los beneficios conjuntos de tal manera que el beneficio por periodo sea mayor que el de Cournot en una sola etapa.
+
+El \textbf{oligopolio de Bertrand} fue presentado por el autor que da nombre al modelo, en 1883. El objetivo era criticar el modelo de Cournot por tomar la cantidad producida como variable relevante, y mostrar que un equilibrio en el que precio iguale el coste marginal es también posible en un contexto de oligopolio con sólo dos firmas. En el modelo de Bertrand, las empresas fijan el precio al que están dispuestas a vender su producción y después cubren cualquier demanda que enfrenten a ese precio (se asume que tienen la suficiente capacidad como para que cualquier restricción de producción máxima no llegue a ser vinculante). Si una empresa fija un precio más barato que la competencia, enfrentará toda la demanda. Si produce más caro que la competencia, la demanda de su producto será nula. Si las empresas participantes fijan el mismo precio, se repartirán la demanda a partes iguales (esta fórmula de reparto puede ser diferente en otras variantes del modelo). En este contexto de demanda, las empresas fijan precios tomando como dado el precio fijado por las demás empresas y asumiendo que éstas no reaccionan a su precio, la variación conjetural respecto al precio es 0. En términos de cantidades, la variación conjetural del modelo de Bertrand es equivalente a la del modelo de competencia perfecta: cada empresa asume que ante un aumento de su cantidad producida, la otra empresa reaccionará reduciendo su producción en la cuantía en la que haya sido aumentada. El equilibrio en el modelo de Bertrand en su versión tradicional es tal que las empresas fijan precios iguales al coste marginal. Este sorprendente resultado de equilibrio se denomina habitualmente la ``\textit{paradoja de Bertrand}''. Dado que el equilibrio corresponde con los precios para los que las empresas no tienen incentivos unilaterales a cambiar su decisión, el equilibrio de estos modelos se denomina también equilibrio de Bertrand-Nash. La cantidad producida total se corresponde con la cantidad de competencia perfecta. Para comprender mejor el porqué del equilibrio, es posible detenerse sobre el hecho de que si los precios fuesen iguales y superiores al coste marginal, una empresa tendría incentivos a bajar arbitrariamente su precio, capturando toda la demanda y expulsando a la otra empresa del mercado. Por otra parte, si algún precio fuese inferior al coste marginal, las empresas obtendrían un beneficio negativo por cada unidad vendida y este resultado sería subóptimo respecto no vender nada. La comparación con el equilibrio de Cournot es sencilla: el resultado es idéntico al de competencia perfecta cuya comparación ya hicimos anteriormente. Así, tenemos que la competencia à la Bertrand implica mayor cantidad total vendida a un precio inferior al de Cournot, y beneficios nulos para las empresas. Algunas variaciones respecto del modelo simple son relevantes. Cuando los costes marginales son asimétricos y constantes, la empresa con menores costes captura el mercado a un precio superior al de competencia perfecta y obtiene beneficios positivos. Cuando los costes marginales son crecientes es posible encontrar múltiples equilibrios en los que el precio es igual al coste marginal pero en los que los beneficios positivos son posibles. La competencia de \textbf{Edgeworth-Bertrand} (denominada así por el análisis que Edgeworth hizo de las restricciones de capacidad vinculantes en contextos de competencia à la Bertrand) se caracteriza porque las empresas no son capaces de cubrir toda la demanda que enfrentan. En este contexto, el precio no se iguala al coste marginal y los beneficios obtenidos son positivos. Una variante del modelo de Bertrand en el que las empresas elijan en una etapa previa su capacidad y posteriormente el precio resultará en equilibrios similares a los de Cournot. Cuando los bienes producidos por las empresas no son sustitutivos perfectos y existe un cierto grado de diferenciación, las funciones que representan la demanda enfrentada por cada empresa no es discontinua y bajo condiciones generales el precio se sitúa por encima del coste marginal. La conclusión a extraer de estas variantes es que tanto la estructura de los mercados como el reparto de la demanda son relevantes para determinar los equilibrios.
+
+Los modelos de \textbf{demanda quebrada} son una formulación alternativa del oligopolio estático en el que las empresas igualan aumentos de cantidad pero no reaccionan ante bajadas de la cantidad producida, de manera que la demanda marginal enfrentada por cada empresa es continua pero tiene un ``pico'' (\textit{kink}) y el ingreso marginal muestra una discontinuidad en el punto de equilibrio. Este tipo de modelos se caracterizan por mostrar múltiples equilibrios entre el equilibrio de monopolio y el de Cournot.
+
+Previamente expusimos la modelización de juegos en los que se toman decisiones secuencialmente y los agentes conocen las decisiones tomadas anteriormente. Estas herramientas son aplicables a la modelización de \underline{oligopolios dinámicos o secuenciales} en los que una empresa líder decide primero sobre una variable estratégica y a continuación las empresas seguidoras toman una decisión conociendo la decisión de la empresa líder. Stackelberg (1934) fue pionero en el análisis de este tipo de juegos secuenciales. Su trabajo examinó el liderazgo en cantidades, en el que dos empresas enfrentan la misma demanda y una de ellas decide primero que cantidad ``enviar'' al mercado, a lo que sigue después otra empresa seguidora que conoce la decisión del líder. En términos conjeturales, la empresa líder conjetura que la seguidora reaccionará a su decisión reduciendo la cantidad producida. Así, tomando el modelo simple anterior, la variación conjetural en cantidades será igual a menos un medio. La empresa seguidora por otro lado, sabe que la empresa líder ya ha decidido y que no puede reaccionar a su decisión, por lo que la variación conjetural de la empresa seguidora será nula. El equilibrio de Stackelberg-Cournot-Nash resultante para dos empresas con costes simétricos y correspondiente a las cantidades para las que no hay incentivos unilaterales a desviarse, es tal que la empresa líder producirá más que en competencia estática à la Cournot pero menos que en monopolio, mientras que la seguidora producirá menos que en Cournot estático pero más que en competencia perfecta. La cantidad producida total será superior a la de Cournot y por ello, el precio será inferior. Los beneficios de la empresa líder son mayores que compitiendo à la Cournot. Los de la empresa seguidora son sin embargo inferiores. 
+
+Respecto al \underline{liderazgo en precios}, existen diferentes posibilidades de modelización. Una de las variantes más habituales en la literatura es la siguiente. En una primera etapa, la empresa líder decide un precio. La empresa seguidora enfrenta una demanda horizontal a ese precio fijado por la líder, de manera que vende tanto como desee a ese precio. La empresa líder enfrenta la demanda residual, respecto de la que se comporta como un monopolista. La empresa líder elegirá el precio que le permita maximizar el beneficio extraído de la demanda residual. En este tipo de modelos es habitual asumir costes marginales crecientes para obtener resultados más significativos.
+
+El modelo de \underline{Kreps y Scheinkman (1983)} tiene por objeto mostrar la equivalencia entre competencia de Cournot y Bertrand cuando se introducen determinadas formas de competencia en etapas, y como el equilibrio de Cournot puede obtenerse sin necesidad de postular un subastador walrasiano que halle el precio de equilibrio. En una primera etapa las empresas eligen la capacidad productiva máxima. En la segunda, las empresas compiten en precios à la Bertrand. Bajo supuestos generales, el resultado es idéntico al de competencia de Cournot. 
+
+En los modelos anteriores se asume que el número de empresas está exógenamente fijado. Es posible sin embargo endogeneizar esta variable y modelizar explícitamente la \underline{decisión de entrada}. Para ello es preciso responder a preguntas como ¿es posible obtener beneficios positivos entrando en el mercado? ¿entrar en el mercado tiene un coste explícito? ¿cómo reacciona la empresa incumbente a la entrada de competidores? Varios factores influyen en la decisión de entrada. La presencia de costes fijos elevados que aumenten el coste medio y reduzcan el beneficio potencial de entrar pueden ser un factor disuasorio para las potenciales entrantes. La presencia de información perfecta impide amenazas creíbles de las incumbentes. Sin embargo, cuando las potenciales no conocen los costes de la incumbente con certeza, esta última puede llevar a cabo estrategias de señalización que traten de señalizar costes más bajos de los que realmente prevalecen para disuadir a la potencial entrante de hacerlo. Así, en presencia de información imperfecta las decisiones pasadas son relevantes para la decisión de entrada. El modelo de mercados contestables de Baumol (1982) caracteriza los supuestos necesarios para que una o varias empresas que se reparten un mercado se comporten como si estuviesen en un contexto de competencia perfecta de largo plazo cuando no hay barreras de entrada y es posible llevar a cabo una estrategia de tipo hit-and-run. Las estrategias hit-and-run consisten en entrar en el mercado y salir tan pronto como sea posible obtener un beneficio positivo. Para desincentivar este tipo de estrategias por parte de las entrantes potenciales, las empresas pueden fijar precios iguales al coste medio que eliminen el beneficio. 
+
+El fenómeno de la \textbf{colusión} se produce cuando las empresas ejecutan estrategias que maximizan el beneficio conjunto de tal manera que se comportan como un monopolio y posteriormente reparten los beneficios. Dado que este tipo de prácticas están generalmente prohibidas por la legislación, las empresas pueden llegar a acuerdos secretos explícitos o a acuerdos tácitos. La dificultad consiste en asegurar el cumplimiento de este tipo de acuerdos. Para solucionar este obstáculo, pueden utilizar diferentes mecanismos de coordinación. En contextos de horizonte infinito y juegos repetidos las empresas pueden aplicar estrategias de tipo disparador. Cuando las empresas son capaces de distinguir entre shocks exógenos de demanda y shocks debidos a rupturas del acuerdo colusivo por el que una empresa captura toda la demanda, hablamos de colusión perfecta. Existen en la literatura algunos modelos que representan un fenómeno habitual en ciertos mercados oligopólicos: la guerra de precios. Green y Porter (1984) formulan un modelo tal que la demanda puede tomar bien un valor de 0, bien un valor positivo. El valor 0 indica bien un shock exógeno de demanda que afecta a todas las empresas, bien que un competidor no ha cooperado. Las empresas no son capaces de distinguir un shock de otro, por lo que la colusión perfecta no es posible. Para coordinarse, llevarán a cabo guerras de precios tras observar una demanda nula en un periodo. Las guerras de precios se extenderán un número de periodos determinado por el trade-off entre disuadir de desviarse y limitar pérdidas derivadas de la guerra de precios. 
+
+A lo largo de la exposición hemos examinado los principales elementos de la teoría de juegos y la teoría del oligopolio. La teoría de juegos sirve como marco general de la modelización de la decisión racional en presencia de interdependencia, mientras que la teoría del oligopolio es un área de la microeconomía que, si bien precede a la teoría de juegos, se ha servido de ésta para formalizar sus resultados y dotarles de mayor rigor conceptual. La teoría del oligopolio ha sido una de los programas de investigación que más relevancia práctica han tenido. A medida que los mercados aumentan de tamaño, los monopolios naturales tienden a volverse inestables y a desaparecer. A este fenómeno se añade también el proceso liberalizador que se ha llevado a cabo en la gran mayoría de economías desarrolladas y numerosas emergentes en las últimas décadas. La teoría del oligopolio sirve también como base para diseñar marcos regulatorios de la competencia que constituyen en la actualidad aspectos centrales de la política económica y que deben dar respuesta a preguntas tales como: ¿debe permitirse la concentración empresarial? ¿cómo se puede medir el poder de mercado? ¿qué efectos negativos tiene sobre la sociedad?
+
+\seccion{Preguntas clave}
+
+\begin{itemize}
+	\item ¿Qué es la teoría de juegos?
+	\item ¿Para qué sirve?
+	\item ¿Qué es la solución de un juego?
+	\item ¿Cómo puede hallarse?
+	\item ¿Qué diferencia al análisis dinámico del estático?
+	\item ¿Qué es un oligopolio?
+	\item ¿Qué modelos de oligopolio son habituales?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Economía y microeconomía
+			\3 Teoría de juegos
+			\3 Teoría del oligopolio
+		\2 Objeto
+			\3 ¿Qué es la teoría de juegos?
+			\3 ¿Qué es un oligopolio?
+		\2 Estructura
+			\3 Teoría de juegos
+			\3 Teoría del oligopolio
+	\1 \marcar{Teoría de juegos}
+		\2 Idea clave
+			\3 Teoría de la decisión interactiva
+			\3 Disciplina trasversal
+			\3 Historia
+			\3 Representación formal
+		\2 Descripción de un juego
+			\3 Jugadores
+			\3 Estrategias
+			\3 Resultados
+			\3 Creencias
+		\2 Concepto de solución
+			\3 Idea clave
+			\3 Solución en estrategias dominantes
+			\3 Solución en estrategias dominadas
+			\3 Equilibrio de Nash en estrategias puras (ENEP)
+			\3 Equilibrio de Nash en estrategias mixtas (ENEM)
+			\3 Existencia del equilibrio de Nash
+		\2 Juegos estáticos
+			\3 Idea clave
+			\3 Representación en forma estratégica o normal
+			\3 Ejemplo: Dilema del prisionero
+			\3 Ejemplo: juego de coordinación
+		\2 Juegos dinámicos o secuenciales
+			\3 Idea clave
+			\3 Forma extensiva
+			\3 Equilibrio de Nash Perfecto en Subjuegos (ENPS)
+			\3 Ejemplo: entrada y represalia
+			\3 Ejemplo: dilema del prisionero en forma extensiva
+		\2 Juegos repetidos
+			\3 Idea clave
+			\3 Juegos repetidos finitos
+			\3 Folk theorem
+			\3 Ejemplo: dilema del prisionero repetido
+		\2 Juegos con información incompleta
+			\3 Idea clave
+			\3 Equilibrio de Bayes-Nash (EBN)
+			\3 Ejemplo: fijación de precios y costes desconocidos
+		\2 Juegos cooperativos
+			\3 Idea clave
+			\3 Solución
+			\3 Valor de Shapley
+			\3 Aplicaciones
+		\2 Aplicaciones
+			\3 Economía
+			\3 Otras disciplinas
+	\1 \marcar{Oligopolio}
+		\2 Idea clave
+			\3 Competencia perfecta y monopolio
+			\3 Oligopolio
+			\3 Aplicación de la teoría de juegos
+		\2 Oligopolios estáticos
+			\3 Idea clave
+			\3 Modelo base
+			\3 Cournot
+			\3 Bertrand
+			\3 Bertrand con diferenciación
+			\3 Demanda quebrada (kinked demand)
+		\2 Oligopolios secuenciales o dinámicos
+			\3 Idea clave
+			\3 Stackelberg en cantidades / Liderazgo en cantidades
+			\3 Stackelberg en precios / Liderazgo en precios
+			\3 Kreps y Scheinkman (1983)
+		\2 Entrada
+			\3 Idea clave
+			\3 Formulación
+			\3 Gasto hundido en I+d
+			\3 Gasto publicitario
+			\3 Costes fijos elevados que se convierten en hundidos
+			\3 Información perfecta
+			\3 Información imperfecta
+			\3 Mercados contestables
+		\2 Colusión entre oligopolios
+			\3 Idea clave
+			\3 Mecanismos de coordinación
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Teoría de juegos
+			\3 Teoría del oligopolio
+		\2 Idea final
+			\3 Aplicación general
+			\3 Regulación de la competencia
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Economía y microeconomía
+				\4 Definición de Robbins
+				\4[] Decisiones respecto a bienes escasos
+				\4[] $\to$ Con usos alternativos
+				\4[] $\to$ Para satisfacer necesidades humanas
+				\4 Microeconomía
+				\4[] Estudio de decisiones a nivel individual
+				\4[] $\to$ Empresas
+				\4[] $\to$ Consumidores
+				\4[] $\to$ Gobiernos
+			\3 Teoría de juegos
+				\4 Estudio de la decisión interactiva
+				\4[] Decisiones individuales tienen efectos recíprocos
+				\4[] Respuestas de agentes a decisión propia
+				\4[] $\to$ Condicionan resultado de decisión propia
+				\4[] $\Rightarrow$ Interdependencia estratégica
+				\4 Generalización de decisión individual
+				\4[] P.ej.: teoría de la demanda
+				\4[] $\to$ Decisión de agente sólo le afecta a él
+			\3 Teoría del oligopolio
+				\4 Decisiones de empresas en contexto de mercado
+				\4[] ¿Cuánto producir?
+				\4[] ¿A qué precio vender?
+				\4[] ¿Cómo reaccionar a una decisión anterior?
+				\4[] $\to$ Respuestas sujetas a interdep. estratégica
+				\4[] $\Rightarrow$ Teoría de juegos para modelizar
+		\2 Objeto
+			\3 ¿Qué es la teoría de juegos?
+				\4 ¿Qué fenómenos trata de explicar?
+				\4 ¿Qué herramientas utiliza?
+				\4 ¿Qué predice?
+				\4 ¿Para qué se utiliza?
+			\3 ¿Qué es un oligopolio?
+				\4 ¿Cómo se modelizan los oligopolios en economía?
+				\4 ¿Qué resultados predice la teoría de oligopolio?
+				\4 ¿Qué diferentes modelos existen?
+				\4 ¿Qué diferencia los modelos estáticos de los dinámicos?
+		\2 Estructura
+			\3 Teoría de juegos
+			\3 Teoría del oligopolio
+	\1 \marcar{Teoría de juegos}
+		\2 Idea clave
+			\3 Teoría de la decisión interactiva
+				\4 Teoría de juegos es nombre habitual
+				\4[] Origen en similitud con juegos de mesa
+				\4[] $\to$ Agentes eligen decisión dado conjunto acotado
+				\4[] $\to$ Resultados conocidos o estimables
+				\4 Elemento clave es interdependencia estratégica
+				\4[] Acciones individuales
+				\4[] $\to$ Tienen efectos directos sobre otros agentes
+				\4[] $\to$ Y viceversa
+				\4 ¿Cómo decidir cuando decisión de otros me afecta?
+				\4 ¿Cómo decidir cuando otros reaccionan a mi decisión?
+			\3 Disciplina trasversal
+				\4 No es una rama de la economía
+				\4 Herramienta matemática general
+				\4[] Utilizable en muchas otras disciplinas
+				\4[] $\to$ Economía
+				\4[] $\to$ Ciencia política
+				\4[] $\to$ Planificación y estrategica militar
+				\4[] $\to$ Biología
+				\4[] $\to$ Ciencia de la computación
+				\4[] $\to$ Negociación bilateral
+				\4 Metodología general
+				\4[] Aplicable a toda clase de decisión interactiva
+				\4[] Elementos básicos son aplicables en general
+				\4[] $\to$ No dependen del caso concreto
+			\3 Historia
+				\4 Precursores:
+				\4[] Cournot, Bertrand, Edgeworth, Ramsey
+				\4 Von Neumann y Morgernstern (1944)
+				\4[] \textit{Theory of Games and Economic Behaviour}
+				\4[] Reconoce explícitamente y formaliza:
+				\4[] $\to$ Agentes económicos deben valorar interacción
+				\4 John Nash
+				\4[] Premio Nobel en 1994
+				\4[] Desarrollos esenciales
+				\4[] $\to$ Concepto de solución
+				\4[] $\to$ Juegos cooperativos y negociación
+			\3 Representación formal
+				\4 Situaciones reales representadas en términos matemáticos
+				\4[] Resultados individuales
+				\4[] $\to$ Cuantitativamente
+				\4[] Planes de decisión
+				\4[] $\to$ Como conjuntos denominados estrategias
+				\4[] Juegos o contextos de decisión
+				\4[] $\to$ Como conjuntos de los elementos anteriores
+		\2 Descripción de un juego
+			\3 Jugadores
+				\4 Agentes que toman decisiones
+				\4 Eligen entre conjuntos de alternativas
+			\3 Estrategias
+				\4 Descripción formal de la decisión del agente
+				\4 Descripción es siempre:
+				\4[] $\to$ Subconjuntos del conjunto de alternativas
+				\4[] $\to$ Conjunto exhaustivo de alternativas
+				\4[] $\to$ En cada punto de información
+			\3 Resultados
+				\4 Consecuencias de las estrategias elegidas
+				\4 Caracterizado como vector numérico
+				\4[] Permite ordenación de alternativas
+				\4[] $\to$ Posible interpretación cardinal
+			\3 Creencias
+				\4 Agentes racionales consideran efectos de sus actos
+				\4[] Tienen en cuenta resultados de otros agentes
+				\4[] $\to$ Deciden en función de decisión del otro
+				\4 Resultados de otros agentes pueden conocerse o no
+				\4[] Información imperfecta:
+				\4[] $\to$ Los resultados de otros no son conocidos
+				\4[] $\Rightarrow$ Necesario formular creencias
+				\4[] Información perfecta:
+				\4[] $\to$ Todos agentes conocen todos los resultados
+				\4[] $\Rightarrow$ Creencias coinciden con resultados reales
+		\2 Concepto de solución
+			\3 Idea clave
+				\4 ¿Qué resultados obtendrán los agentes?
+				\4 ¿A qué situación da lugar un juego?
+				\4 Concepto de solución no es único ni inequívoco
+				\4[] Supuestos sobre racionalidad son clave
+				\4 Agentes racionales
+				\4[] Maximizan su resultado
+				\4[] $\to$ Utilizando toda información disponible
+				\4 Ligado a concepto de equilibrio
+				\4[] Estrategias que agentes no quieren cambiar
+			\3 Solución en estrategias dominantes
+				\4 Estrategia dominante:
+				\4[] Induce mejor resultado que cualquier otra
+				\4[] $\Rightarrow$ Es evidente que debe llevarse a cabo
+				\4 Si ambos agentes tienen estrategias dominantes:
+				\4[] Solución es resultado de aplicarlas
+				\4 Si sólo un agente tiene estrategias dominantes:
+				\4[] Posible eliminar resultados no dominantes
+				\4[] $\to$ Y buscar EDominantes iterativamente
+				\4 Puede no existir solución en EDominantes
+			\3 Solución en estrategias dominadas
+				\4 Estrategia dominada:
+				\4[] Induce peor resultado que cualquier otra\footnote{Puede también distinguirse entre estrictamente y débilmente dominadas. Las débilmente dominadas son aquellas que no inducen mejor resultado para ninguna acción.}
+				\4[] $\Rightarrow$ Evidente que no debe llevarse a cabo
+				\4 Tras eliminar estrategias dominadas
+				\4[] Pueden aparecer estrategias dominantes
+				\4[] $\to$ Buscar iterativamente
+				\4 Puede no existir solución en EDominadas
+			\3 Equilibrio de Nash en estrategias puras (ENEP)
+				\4 Vector de estrategias con prob. 100\% tal que:
+				\4[] Manteniendo fijas las estrategias del resto
+				\4[] $\to$ Estrategia para $i$ es óptima
+				\4[] $\Rightarrow$ No existen incentivos unilaterales a desviarse
+				\4 Todos los equilibrios en estrategias dominantes
+				\4[] $\to$ Son equilibrios de Nash
+				\4[] $\to$ No necesariamente al revés
+			\3 Equilibrio de Nash en estrategias mixtas (ENEM)
+				\4 Estrategia mixta es:
+				\4[] Dist. de probabilidad no degenerada
+				\4[] $\to$ Sobre acciones posibles
+				\4 ENEM es vector de estrategias mixtas tal que:
+				\4[] Ningún agente tiene incentivos unilaterales
+				\4[] $\to$ A cambiar distribución de probabilidad/estrategia
+			\3 Existencia del equilibrio de Nash
+				\4[] Todo juego finito en forma estratégica
+				\4[] $\to$ Tiene al menos un ENEM
+		\2 Juegos estáticos
+			\3 Idea clave
+				\4 Situaciones donde decisión es simultánea
+				\4 Agentes deciden irrevocablemente
+				\4[] $\to$ Con la misma información
+				\4[] $\to$ al mismo tiempo
+				\4[] $\to$ Una sola vez
+				\4[] Maximizando su bienestar individual
+				\4[] Sin poder establecer acuerdos ejecutables
+			\3 Representación en forma estratégica o normal
+				\4 Tupla para cada jugador $i$ que contiene
+				\4[] Estrategia del agente: $S_i$
+				\4[] Resultado obtenido: $u_i$
+				\4[] $\Rightarrow$ $G=(S_i, u_i) \, \forall \, i$
+				\4 Representable en forma de matriz
+				\4[] Para juegos con dos agentes
+				\4[] Columnas y filas son decisión de cada agente
+				\4[] Celdas son resultados respectivos de agentes
+			\3 Ejemplo: Dilema del prisionero
+				\4 Fácil representación en forma normal
+				\4 Agentes pueden tomar decisiones subóptimas
+				\4[] $\to$ Si no pueden coordinarse de forma creíble
+				\4 Dos decisiones para cada agente
+				\4[] $\to$ Cooperar
+				\4[] $\to$ No cooperar
+				\4 Pagos:
+				\4[] \grafica{prisionerogeneral}
+				\4 Si ambos cooperan
+				\4[] $\to$ Óptimo de Pareto
+				\4 Si sólo uno coopera
+				\4[] $\to$ Óptimo de Pareto
+				\4[] $\to$ El que no coopera maximiza resultado
+				\4[] $\Rightarrow$ Ambos tienen incentivo a no cooperar
+				\4[] $\Rightarrow$ Resultado subóptimo es ENEP
+				\4 Aplicaciones
+				\4[] Muy numerosos fenómenos representables
+				\4[] Ejemplo económico: carrera armamentística
+				\4[] $\to$ Resultado óptimo es no competir
+				\4[] $\Rightarrow$ Ahorro en gasto
+				\4[] $\to$ Incentivos a armarse
+				\4[] $\Rightarrow$ Posibilita aumentar poder sobre competidor
+				\4[] Ejemplo económico: guerra comercial
+				\4[] $\to$ Óptimo es eliminar aranceles
+				\4[] $\to$ Pero aranceles unilaterales mejoran óptimo
+				\4[] $\to$ Aranceles recíprocos empeoran inequívocamente
+			\3 Ejemplo: juego de coordinación
+				\4 Juego con dos ENEP y un ENEM
+				\4 ENEPs son óptimo de Pareto
+				\4 ENEM no es óptimo
+				\4 Ambos tienen interés en alcanzar ENEP
+				\4[] Pero cómo coordinarse para decidir cual?
+				\4 Cada agente puede preferir un ENEP distinto
+				\4[] y aún así, peor ENEP es mejor que otra opción
+				\4 Pagos:
+				\4[] \grafica{coordinaciongeneral}
+		\2 Juegos dinámicos o secuenciales
+			\3 Idea clave
+				\4 Decisión dependen de historia
+				\4[] Decisiones anteriores son conocidas
+				\4 Unos agentes deciden antes que otros
+				\4[] $\to$ Agentes reaccionan conocida decisión ajena
+				\4[] $\to$ No deciden simultáneamente como en estáticos
+			\3 Forma extensiva
+				\4 Permite representar decisión secuencial
+				\4[] $\to$ Agentes no deciden simultáneamente
+				\4[] $\to$ Decisiones tienen en cuenta decisiones pasadas
+				\4[] Permite generalizar forma normal
+				\4[] $\to$ F. normal siempre representable en f. extensiva
+				\4[] $\to$ No necesariamente al revés
+				\4 Grupos de nodos que:
+				\4[] Caracterizan decisiones pasadas
+				\4[] $\to$ Cada nodo es conjunto de decisiones anteriores
+				\4[] Determinan a quién corresponde decidir
+				\4[] Determinan qué información conoce cada agente
+				\4[] $\to$ Respecto de decisiones pasadas
+				\4 Nodos finales
+				\4[] Determinan resultado de acciones pasadas
+				\4 Estrategias en forma extensiva
+				\4[] Vector que caracteriza todas las decisiones
+				\4[] $\to$ Un elemento para cada nodo de decisión
+				\4 Representación gráfica en forma de árbol
+				\4[] \grafica{juegoenformaextensiva}
+			\3 Equilibrio de Nash Perfecto en Subjuegos (ENPS)
+				\4 Subjuego
+				\4[] Conjunto de nodos de decisión
+				\4[] $\to$ Con sólo un nodo en el nivel superior
+				\4 Conjunto de estrategias tal que:
+				\4[] Las estrategias definen EN en cada subjuego
+				\4 Inducción hacia atrás
+				\4[] Método para hallar ENPS sistemáticamente
+				\4[] Construir estrategias de agentes
+				\4[] Partiendo de nodo más cerca de resultado final
+				\4[] $\to$ Acciones que maximizan $u(\cdot)$ en cada nodo
+				\4 Existencia
+				\4[] Si agentes tienen memoria perfecta
+				\4[] $\to$ Saben siempre en qué nodo se encuentran
+				\4[] $\Rightarrow$ Existe siempre un ENPS
+				\4[] Si sólo hay un subjuego
+				\4[] $\Rightarrow$ Existe siempre un ENEM al menos
+				\4[] \grafica{sinmemoriaperfecta}
+			\3 Ejemplo: entrada y represalia
+				\4 Idea clave
+				\4[] Caracterizar decisión de entrada en mercado
+				\4[] y respuesta de incumbente
+				\4[] $\to$ Incumbente amenaza con represalia
+				\4[] $\to$ Represalia es perjudicial para ambos
+				\4[] Mostrar problema de forma normal
+				\4[] $\to$ Necesita credibilidad de amenaza
+				\4 ENPS es diferente de ENEP
+				\4[] ENPS tiene en cuenta amenaza no es creíble
+				\4[] $\to$ Resultado de secuencialidad
+				\4[] ENEP no tiene en cuenta amenaza no es creíble
+				\4[] $\to$ No tiene en cuenta información
+				\4 Representación en forma extensiva
+				\4[] \grafica{entradayrepresaliaextensiva}
+				\4 Representación en forma normal
+				\4[] \grafica{entradayrepresalianormal}
+			\3 Ejemplo: dilema del prisionero en forma extensiva
+				\4[] \grafica{prisioneroextensiva}
+		\2 Juegos repetidos
+			\3 Idea clave
+				\4 ``Superjuego'' que es repetición de subjuegos
+				\4 Decisiones en juegos anteriores son relevantes
+				\4 Estrategias describen acción en todos los juegos
+				\4 Número de repeticiones puede ser relevante
+				\4[$\Rightarrow$] Pueden aparecer distintos equilibrios
+			\3 Juegos repetidos finitos
+				\4 Número determinado y conocido de repeticiones
+				\4 Soluciones análogas a juegos en forma extensiva
+				\4[] $\Rightarrow$ Inducción hacia atrás encuentra ENPS
+				\4[] $\Rightarrow$ Siempre hay un ENPS
+			\3 Folk theorem
+				\4 Conocido en los años 50
+				\4[] Sin autor conocido
+				\4[] Sin haberse publicado formalmente
+				\4 Juegos con horizonte infinito
+				\4 Cualquier ENPS es posible
+				\4[] Existe una tasa de descuento $\delta$ para todo ENPS
+				\4[] $\to$ Que lo hace posible
+			\3 Ejemplo: dilema del prisionero repetido
+				\4 Horizonte finito
+				\4[] Inducción hacia atrás
+				\4[] Último periodo:
+				\4[] $\to$ ENEP de juego de un periodo
+				\4[] $\to$ Equilibrio no cooperativo
+				\4[] Cada periodo hacia atrás
+				\4[] $\to$ Mismo resultado
+				\4[] $\Rightarrow$ ENPS resultado subóptimo no cooperativo
+				\4 Horizonte infinito
+				\4[] Folk theorem:
+				\4[] $\to$ $\exists$ descuento que permite cualquier ENPS
+				\4[] Estrategia disparador
+				\4[] $\to$ Cooperar si otro jugador coopera
+				\4[] $\to$ No cooperar para siempre si otro no coopera
+				\4[] $\to$ Existe descuento suficientemente bajo
+				\4[] $\then$ $\exists$ descuento tal que ENPS cooperativo es óptimo
+				\4[] $\then$ Con descuento alto, disparador puede no ser ENPS
+		\2 Juegos con información incompleta
+			\3 Idea clave
+				\4 Juegos anteriores
+				\4[] Todos los resultados son conocidos
+				\4[] $\to$ Jugadores conocen pagos de los demás
+				\4[] $\Rightarrow$ ¿Qué sucede si no se conocen?
+				\4 Agentes deben formular creencias
+				\4[] Sobre información que no conocen
+				\4[] $\to$ Pagos de otros jugadores
+				\4[] $\to$ Nodos en que se encuentran
+				\4[] Utilizando información que sí conocen
+				\4[] $\to$ Acciones anteriores de jugadores
+				\4[] $\to$ Pagos que sí conocen
+				\4 Agentes racionales
+				\4[] Aplican regla de Bayes para formular creencias
+				\4[] $\to$ Cuando sea posible
+			\3 Equilibrio de Bayes-Nash (EBN)
+				\4[] Conjunto de:
+				\4[] $\to$ Estrategias
+				\4[] $\to$ Creencias sobre otros agentes
+				\4[] $\Rightarrow$ Ninguno tiene incentivo unilateral a desviarse
+				\4 Posible combinar con juegos dinámicos
+				\4 Existencia
+				\4[] Todo juego finito de información incompleta
+				\4[] $\to$ Tiene al menos un EBN
+			\3 Ejemplo: fijación de precios y costes desconocidos
+				\4 Empresa 1 conoce:
+				\4[] $\to$ Sus propios costes
+				\4[] $\to$ Costes de empresa 2
+				\4 Empresa 2 conoce:
+				\4[] $\to$ Sus propios costes
+				\4[] $\to$ Emp. 1 costes bajos al 30\%
+				\4[] $\to$ Emp. 1 costes altos al 70\%
+				\4 Creencias coinciden con prob. real
+				\4[$\Rightarrow$] Existe al menos un EBN
+		\2 Juegos cooperativos
+			\3 Idea clave
+				\4 Von-Neumann y Morgenstern (1944)
+				\4[] Juegos estratégicos y ``coalicionales''
+				\4 Decisiones sujetas a interdep. estratégica
+				\4[] Con acuerdos posibles vinculantes
+				\4[] $\to$ Cooperación y negociación son posibles
+				\4[] $\Rightarrow$ Estudio de coaliciones entre agentes
+				\4 Coalición
+				\4[] Dados N agentes
+				\4[] $\to$ Coalición es subconjunto de agentes
+			\3 Solución
+				\4 Mayor complejidad que en no cooperativos
+				\4 Núcleo
+				\4[] Coaliciones pareto-óptimas
+				\4[] $\to$ Ninguna otra coalición puede mejorar
+				\4 Refinamientos del concepto de núcleo
+			\3 Valor de Shapley
+				\4 Si la utilidad es transferible
+				\4[] Entre participantes de una coalición
+				\4 Valor de Shapley
+				\4[] Cantidad asignada a cada miembro de coalición
+				\4 Factores
+				\4[] Valor total de coalición
+				\4[] Contribución marginal a coalición
+			\3 Aplicaciones
+				\4 Pactos entre partidos políticos
+				\4 Alianzas empresariales
+				\4 Fusiones y adquisiciones
+				\4 Asociaciones de consumidores
+				\4 Negociaciones entre trabajadores y sindicatos
+		\2 Aplicaciones
+			\3 Economía
+				\4 Organización industrial
+				\4 Modelización macroeconómica
+				\4 Comercio internacional
+				\4 Regulación
+				\4[] ...
+			\3 Otras disciplinas
+				\4 Biología
+				\4 Estrategia militar
+				\4 Ciencia política
+	\1 \marcar{Oligopolio}
+		\2 Idea clave
+			\3 Competencia perfecta y monopolio
+				\4 Casos polares del análisis neoclásico
+				\4 Competencia perfecta
+				\4[] Un sólo agente no perturba equilibrio
+				\4[] $\Rightarrow$ Sin poder de mercado
+				\4 Monopolio
+				\4[] Un sólo vendedor
+				\4[] $\to$ Decide precio sujeto a cantidad
+				\4 Casos intermedios:
+				\4[] $\to$ Oligopolio
+				\4[] $\to$ Competencia monopolística
+				\4 Competencia monopolística
+				\4[] Empresas tienen poder de mercado
+				\4[] Pero no afectan individualmente a otras
+				\4[] $\Rightarrow$ No hay interdependencia estratégica
+			\3 Oligopolio
+				\4 Interdependencia es elemento característico
+				\4 Decisiones de producción y fijación de precios
+				\4[] Afectan a beneficios de otras empresas
+				\4 Habitualmente, número reducido de agentes
+				\4[] Número muy elevado de competidores
+				\4[] $\to$ Competencia perfecta
+				\4 Numerosos fenómenos de oligopolio que modelizar
+				\4[] Análisis estático vs dinámico
+				\4[] Decisión sobre precios vs cantidades
+				\4[] Cooperación entre empresas
+			\3 Aplicación de la teoría de juegos
+				\4 Herramienta básica para oligopolio
+				\4 Representación matemática de la decisión
+				\4 Equilibrios de mercado como solución de juegos
+				\4 Análisis de oligopolio
+				\4[] Precede a teoría de juegos
+				\4[] Siglo XIX
+				\4[] $\to$ Cournot: oligopolio de cantidades
+				\4[] $\to$ Bertrand: oligopolio de precios
+		\2 Oligopolios estáticos
+			\3 Idea clave
+				\4 Varias empresas enfrentan demanda conocida
+				\4 Fijan una sola vez una variable
+				\4[] $\to$ Precio
+				\4[] $\to$ Cantidad
+				\4[] Variable fijada tiene consecuencias
+				\4[] $\to$ Distintos resultados
+				\4 Decisión de otros condiciona decisión
+				\4 Conjetura sobre reacciones de otros
+				\4[] $\to$ Es factor relevante
+			\3 Modelo base
+				\4 Dos empresas 1 y 2
+				\4 Demanda de mercado:
+				\4[] $P = A - q_1 - q_2$
+				\4 Costes
+				\4[] Coste marginal fijo $c$
+				\4[] Sin costes fijos
+				\4 Problema de maximización
+				\4[] $\underset{q_1}{\max} \quad \pi = P \cdot q_1 - c\cdot q_1 = (A-q_1 - q_2) q_1 - c q_1 $
+				\4[] $\text{CPO:} \quad A - q_1 - (q_2'q_1 + q_2) -c =0$
+				\4 Función de reacción
+				\4[] ¿Cuánto producir dada producción del otro?
+				\4[] $q_1(q_2) = \frac{A - q_2 - c}{2 + q_2'(q_1)}$
+				\4[] $\to$ Producción $q_1$ que máx. $\pi$ dado $q_2$
+				\4 Variación conjetural $q_2'(q_1)$
+				\4[] $\to$ ¿Qué reaccionan esperan de otra empresa?
+				\4[$\then$] Modelos de oligopolio estático
+				\4[] $\to$ Caracterizables en términos de v. conjetural
+			\3 Cournot
+				\4 Cournot (1838)
+				\4 Empresas fijan cantidad a producir
+				\4[] $\to$ Precio es el que vacíe mercado
+				\4 Variación conjetural
+				\4[] $\to$ Empresa $i$ asume $j$ no reacciona
+				\4[] $\then$ Variación conjetural es 0
+				\4[] $\then$ $q_2'(q_1) = 0$
+				\4 Función de reacción
+				\4[] $q_1(q_2) = \frac{A - c - q_2}{2}$
+				\4[] $q_2(q_1) = \frac{A - c - q_1}{2}$
+				\4[] \grafica{reaccioncournot}
+				\4 Equilibrio
+				\4[] Niveles de producción $q_1$, $q_2$
+				\4[] $\to$ Sin incentivos unilaterales a cambiar
+				\4[] $\then$ Intersección funciones de reacción
+				\4[] $\then$ Equilibrio de Cournot-Nash
+				\4[] Para este modelo con dos empresas simétricas:
+				\4[] \fbox{$q_1^C = q_2^C = \frac{A-c}{3}$}
+				\4[] \fbox{$P^C  = \frac{A}{3} + \frac{2}{3}c$}
+				\4[] \fbox{$\pi^C_1 = \pi^C_2 = \frac{1}{9}(A-c)^2$}
+				\4[] Generalización para $n$ empresas, $P=A-b\sum_i^n q_i$, $A>c$
+				\4[] \fbox{$q_i(\sum_j q_j) = \frac{\frac{A-c}{B} - \left( \sum_{j=0}^J q_j \right) }{2}$}
+				\4[] \fbox{$q_i^C = \frac{A-c}{(n+1)b}$}
+				\4[] \fbox{$Q^C = n\cdot q_i^C = \frac{n}{n+1} \frac{A-c}{b}$ }
+				\4[] \fbox{$P^C = A - \frac{n(A-c)}{n+1} = \frac{A+nc}{n+1}$}
+				\4[] \fbox{$P-c = \frac{A - c}{n+1}$}
+				\4[] \fbox{$\pi_i^C = \frac{(A-c)^2}{b(n+1)^2} $}
+				\4 Comparación con CP y monopolio
+				\4[] Monopolio: $n = 1$
+				\4[] $\then$ $Q_C = \frac{2}{3} (A-c) > q_M = \frac{A-c}{2} > q_1^C = q_2^C = \frac{A-c}{3}$
+				\4[] $\then$ $P_M = \frac{A+c}{2} > P^C = \frac{A+2c}{3} $
+				\4[] $\then$ Más cantidad a menor precio que en monopolio
+				\4[] $\then$ Cada empresa menor beneficio que monopolio
+				\4[] Competencia perfecta: $n \to \infty$
+				\4[] $\then$ $q_i^C \to 0 < \frac{A-c}{3b}$
+				\4[] $\then$ $Q^C \to \frac{A-c}{b} > \frac{2}{3} \frac{A-c}{b}$
+				\4[] $\then$ $\lim_{n \to \infty} P = A - n \cdot \frac{A-c}{n+1} = c = P^* < P_C$
+				\4[] $\then$ Menor cantidad por empresa, mayor en total
+				\4[] $\then$ a mayor precio que en CP
+				\4[] $\then$ Mayores beneficios que en competencia perfecta
+				\4 Variantes
+				\4[] Costes marginales asimétricos
+				\4[] $\to$ Menores costes $\then$ Más producción
+				\4[] Cournot repetido
+				\4[] $\to$ Folk theorem aplicable
+				\4[] $\to$ Posible eq. colusivo que máx. $\pi$ conjuntos
+			\3 Bertrand
+				\4 Bertrand (1883)
+				\4[] Crítica a Cournot
+				\4[] $\to$ Por tomar cantidad como variable estratégica
+				\4[] Muestra que equilibrio con $P=\text{CMg}$
+				\4[] $\to$ Es también posible en oligopolio
+				\4[] $\Rightarrow$ Bastan 2 firmas para disipar poder de mercado
+				\4 Empresas fijan precio
+				\4[] Cubren cualquier demanda a ese precio
+				\4[] $\to$ Si produce a más barato se llevan toda demanda
+				\4[] $\to$ Si producen más caro no se llevan nada
+				\4[] $\to$ Si producen a = precio se reparten demanda
+				\4 Demanda
+				\4[] Demanda agregada:
+				\4[] $\to$ $Q(P) = A - P$
+				\4[] Demanda individual de empresa 1
+				\4[] $\to$ $Q(P)$ si $p_1 < p_2$
+				\4[] $\to$ $Q(P)/2$ si $p_1 = p_2$
+				\4[] $\to$ $0$ si $p_1 > p_2$
+				\4 Variación conjetural
+				\4[] Cada empresa cree que otra no reacciona en precio
+				\4[] $\to$ $p_j'(p_i) = 0$
+				\4[] En cantidades, equivale a $q_2'(q_1) = -1$
+				\4[] $\to$ Mirar abajo
+				\4 Equilibrio
+				\4[] Precios $p_1 = p_2 = c$
+				\4[] $\to$ Sin incentivos unilaterales a cambiar
+				\4[] $\Rightarrow$ Maximizan beneficio dado precio del otro
+				\4[] $\Rightarrow$ Equilibrio de Bertrand-Nash
+				\4[] Para este modelo con dos empresas simétricas
+				\4[] \fbox{$P_1 = P_2 = P_B = c$}
+				\4[] \fbox{$Q(P_B) = A - c$}
+				\4[] \fbox{$\pi_1=\pi_2 = 0$}
+				\4[] Precios no pueden ser iguales y > que CMg
+				\4[] $\to$ Una empresa podría $\downarrow$ p y capturar demanda
+				\4[] $\to$ Empresa con precio mayor que CMg no vendería nada
+				\4[] Ningún precio puede ser menor a CMg
+				\4[] $\to$ Empresas tendría beneficio negativo
+				\4[] Número $n$ de empresas
+				\4[] $\to$ Mismo resultado
+				\4 Representación gráfica
+				\4[] \grafica{bertrandestandard}
+				\4 Comparación con Cournot y CP
+				\4[] $P_B = c = P^* < p_C$
+				\4[] $Q(P_B) = Q^* > q_1^C + q_2^C $
+				\4[] $\Rightarrow$ Mayor cantidad a menor precio que Cournot
+				\4[] $\Rightarrow$ Misma cantidad y precio que CP
+				\4 Variantes
+				\4[] Costes marginales asimétricos y constantes
+				\4[] $\to$ Empresa con menores costes captura mercado
+				\4[] $\then$ Cantidad > que monopolio, < que CP
+				\4[] $\then$ Sin paradoja de Bertrand
+				\4[] Costes marginales crecientes
+				\4[] $\to$ Múltiples equilibrios
+				\4[] $\to$ Precio igual a coste marginal
+				\4[] $\to$ Pero beneficios positivos posibles
+				\4[] Restricciones de capacidad/Edgeworth-Bertrand
+				\4[] $\to$ Restricciones de capacidad vinculantes
+				\4[] $\to$ Empresas no cubren toda la demanda
+				\4[] $\to$ Equilibrio no implica $P=\text{CMg}$
+				\4[] $\to$ Beneficios positivos
+				\4[] $\then$ Sin paradoja de Bertrand
+				\4[] Elección de capacidad y precio en dos etapas
+				\4[] $\to$ Equilibrio similar a Cournot
+				\4[] Diferenciación de productos
+				\4[] $\to$ No son sustitutos perfectos
+				\4[] $\to$ Demanda no es discontinua
+				\4[] $\to$ Precio > CMg bajo condiciones generales
+				\4[] $\then$ Sin paradoja de Bertrand
+				\4[$\then$] Estructura del mercado es relevante
+				\4[$\then$] Reparto de la demanda pasa a ser relevante
+			\3 Bertrand con diferenciación
+				\4 Idea clave
+				\4[] Bienes no son totalmente homogéneos
+				\4[] Diferencias de precios de diferentes bienes
+				\4[] $\to$ No implica captura total de la demanda
+				\4 Formulación
+				\4[] Dos empresas 1 y 2
+				\4[] Asumiendo $\phi_1, \phi_2 >0$
+				\4[] $\to$ Bienes sustitutivos
+				\4[] Enfrentan demandas:
+				\4[] $Q_1 = A -\phi_1 P_1 + \phi_2 P_2$
+				\4[] $\to$ Demanda de 1 cae con precio de 1
+				\4[] $\to$ Demanda de 1 aumenta con precio de 2
+				\4[] $Q_2 = A +\phi_2 P_1 - \phi_2 P_2$
+				\4 Equilibrio
+				\4[] Si son suficientemente pequeños:
+				\4[] $\to$ Efecto de precio de 1 sobre demanda de 2
+				\4[] $\to$ Efecto de precio de 2 sobre demanda de 1
+				\4[] Bajada de precio no captura toda la demanda del otro
+				\4[] $\to$ No compensa caída de beneficios
+				\4[] $\then$ Ambos mantienen precios más elevados
+				\4[] Funciones de reacción crecientes en precios
+				\4 Implicaciones
+				\4[] Ruptura de paradoja de Bertrand
+				\4[] $\to$ Precio no es igual a coste marginal
+				\4[] Empresas obtienen beneficios
+				\4 Representación gráfica
+				\4[] \grafica{bertranddiferenciado}
+			\3 Demanda quebrada (kinked demand)
+				\4 Partiendo de un equilibrio $\tilde{x}_1, \tilde{x}_2$
+				\4[] Empresas igualan aumentos de cantidad
+				\4[] No reaccionan ante bajadas de cantidad
+				\4 Múltiples equilibrios posibles
+				\4[] Todos entre monopolio y Cournot
+		\2 Oligopolios secuenciales o dinámicos
+			\3 Idea clave
+				\4 Una empresa decide primero
+				\4[] $\to$ Sobre producción
+				\4[] $\to$ Sobre precio
+				\4[] $\to$ Sobre capacidad
+				\4 Otra empresa reacciona conocida la otra decisión
+				\4 Juego dinámico
+				\4[$\then$] Equilibrio es ENPS
+			\3 Stackelberg en cantidades / Liderazgo en cantidades
+				\4 Stackelberg (1934)
+				\4 Misma demanda y dos empresas
+				\4[] Empresa L decide primero $\to$ líder
+				\4[] Empresa S decide después $\to$ seguidora
+				\4 En términos conjeturales
+				\4[] Empresa 2 sabe que 1 no reaccionará
+				\4[] $\to$ Porque 1 ya ha decidido
+				\4[] $\then$ Variación conjetural de 2 es 0
+				\4[] $\then$ $q_L'(q_S) = 0 $
+				\4[] Empresa 1 sabe que 2 reaccionará
+				\4[] $\to$ Porque 2 decide después y conoce su producción
+				\4[] $\then$ V. conjetural es derivada de f. de reacción
+				\4[] $\then$ $q_S'(q_L) = -\frac{1}{2}$
+				\4 Función de reacción
+				\4[] $q_L(q_S) = \frac{A-c-q_S}{2+q_S'(q_L)} = \frac{A-c-q_S}{3/2}$
+				\4[] $q_S(q_L) = \frac{A-c-q_L}{2}$
+				\4[] \grafica{reaccioncournotstackelberg}
+				\4 Equilibrio
+				\4[] Producciones $q_L$, $q_S$
+				\4[] $\to$ Sin incentivos unilaterales a cambiar
+				\4[] $\then$ Máximo isobeneficio de 1 dado 2
+				\4[] $\then$ Equilibrio de Cournot-Nash P en S
+				\4[] Para este modelo con dos empresas simétricas:
+				\4[] \fbox{$q_{L}^C = \frac{A-c}{2}$}
+				\4[] \fbox{$q_{S}^C = \frac{A-c}{4}$}
+				\4[] \fbox{$Q_S = \frac{3}{4} \cdot (A-c)$}
+				\4[] \fbox{$P^C_S = \frac{1}{4} A + \frac{3}{4} c$}
+				\4 Comparación con Cournot estático
+				\4[] Cournot estático:
+				\4[] $\then$ $q_{L}^C = \frac{A-c}{2} > q_1^C = q_2^C = \frac{A-c}{3} > \frac{A-c}{4} = q_{S}^* $
+				\4[] $\then$ Líder produce más que en Cournot, seguidora menos
+				\4[] $\then$ $q_{L}^* + q_{S}^* = \frac{3}{4} (A-c) > \frac{2}{3} (A-c) = q_1^* + q_2^*$
+				\4[] $\then$ Más cantidad en Stackelberg que Cournot
+				\4[] $\then$ $P_{STCK} = \frac{A}{4} + \frac{3}{4}c > \frac{A}{3} + \frac{2}{3}c = P^C $
+				\4[] $\then$ $ P_{STCK} < P^*_C $ $\iff$ $A > c$
+				\4[] $\then$ Para $A<c$, menor precio en Stackelberg-Cournot que Cournot
+				\4[] $\then$ $\pi_{L} = \frac{(A-c)^2}{8} > \frac{(A-c)^2}{9} = \pi_C > \frac{(A-c)^2}{16} = \pi_{S}$
+				\4[] $\then$ Líder mejor con que en Cournot, seguidora peor
+			\3 Stackelberg en precios / Liderazgo en precios
+				\4 Misma demanda y dos empresas
+				\4[] Empresa 1 decide primero precio $\to$ líder
+				\4[] Empresa 2 decide después precio $\to$ seguidora
+				\4[] Ambas deciden cuanto vender a precio elegido
+				\4 Diferentes versiones
+				\4[] Reparto de demanda es relevante
+				\4[] Aquí, versión basada en Varian
+				\4[] $\to$ Seguidora toma precio como dado
+				\4[] $\then$ Seguidora se comporta como CP
+				\4[] $\then$ Líder enfrenta demanda residual como monopolista
+			\3 Kreps y Scheinkman (1983)
+				\4 Idea clave
+				\4[] Mostrar equivalencia entre Cournot y Bertrand
+				\4[] $\to$ Cuando se introducen etapas
+				\4[] Eq. de Cournot sin necesitar subastador
+				\4 Formulación
+				\4[] Resultado de Cournot obtenible como:
+				\4[] 1a etapa: empresas eligen capacidad de Cournot
+				\4[] 2a etapa: compiten en precios
+				\4[] $\then$ Cantidad y precio de Cournot es equilibrio
+		\2 Entrada
+			\3 Idea clave
+				\4 Contexto
+				\4[] Modelos anteriores
+				\4[] $\to$ Número de empresas dado
+				\4[] Endogeneización del número de empresas
+				\4[] $\to$ ¿Cuándo y por qué entran nuevas empresas?
+				\4[] Decisión de entrada
+				\4[] $\to$ ¿Es posible obtener beneficios positivos?
+				\4[] $\to$ ¿Es costoso entrar?
+				\4[] $\to$ ¿Cómo reacciona incumbente a entrada?
+				\4[] Decisión del empresa establecida/incumbente
+				\4[] $\to$ Acomodar entrada
+				\4[] $\then$ Reducir producción para evitar pérdidas
+				\4[] $\to$ Aumentar/mantener producción
+				\4[] $\then$ Inducir pérdidas en entrante potencial
+				\4[]
+				\4 Objetivos
+				\4[] Caracterizar decisiones de entrada en oligopolios
+				\4[] Representar estrategias óptimas de incumbentes y entrantes
+				\4[] Valorar optimalidad de equilibrios
+				\4 Resultados
+				\4[] Familia de modelos de entrada
+				\4[] Múltiples formulación
+				\4[] Programa de investigación de la contestabilidad
+				\4[] $\to$ Condiciones para que $P=CMe$
+				\4[] $\then$ Óptimos de segundo orden aún con monopolio
+				\4[] Comercio internacional
+				\4[] $\to$ Política arancelaria afecta decisiones de entrada
+				\4[]
+			\3 Formulación
+				\4 Contexto dinámico
+				\4[] Interacciones repetidas
+				\4[] Decisión secuencial
+				\4[] $\to$ Incumbente toma decisión primero
+				\4 Empresa entrante
+				\4[] Decide si entrar o no
+				\4[] $\to$ Posteriormente, decide cuanto producir
+				\4[] Debe afrontar costes fijos de entrada
+				\4[] $\to$ Pueden ser o no recuperables
+				\4[] Maximiza beneficios dada producción de incumbente
+				\4[] $\to$ Asumiendo posibles costes fijos de entrada
+				\4[] $\to$ Considerando respuesta de incumbente tras entrada
+				\4 Empresa incumbente
+				\4[] Ya ha incurrido en costes fijos de entrada
+				\4[] $\to$ A efectos de decisión de producción, son hundidos
+				\4[] Decide producción dada:
+				\4[] $\to$ Entrada de potenciales incumbentes
+				\4[] $\to$ Función de reacción de potenciales entrantes
+				\4[] Posibles estrategias de incumbente:
+				\4[] -- Acomodar entrada
+				\4[] $\to$ Aceptar entrada de incumbentes
+				\4[] $\to$ Producción que maximiza beneficios dada su entrada
+				\4[] -- Represaliar entrada
+				\4[] $\to$ Aumentar/mantener producción tras entrada
+				\4[] $\to$ Evitar entrante potencial obtenga beneficios
+				\4[] $\to$ Inducir no entrada no como estrategia óptima para entrante
+				\4[] $\then$ Evitar entrada de otros
+				\4[] $\then$ Posibles pérdidas/menor beneficio para incumbente
+				\4[] $\then$ ¿Es creíble represalia?
+				\4 Commitment/amenaza creíble
+				\4[] Elemento clave de solución
+				\4[] Capacidad de comprometerse a estrategia de represalia
+				\4[] $\to$ Puede evitar entrada de entrantes
+				\4[] ¿Cómo comprometerse?
+				\4[] $\to$ ¿Qué instrumentos para ``atarse al mástil''?
+				\4[] $\to$ ¿Qué instrumentos para aumentar coste fijo de entrada?
+				\4 Contexto de Stackelberg
+				\4[] Empresa líder decide producción óptima
+				\4[] $\to$ Tangencia de isobeneficio con reacción de seguidora
+				\4[] Punto de tangencia
+				\4[] $\to$ Puede serlo en isobeneficio = 0 de seguidora
+				\4[] $\then$ Seguidora no entra
+				\4[] ¿Cómo mover isobeneficios de seguidora a la izquierda?
+				\4[] $\to$ Aumentando sus costes fijos de entrada
+				\4 Falta aquí una representación gráfica de esto
+				\4 Representación gráfica
+				\4[] \grafica{stackelbergentrada}
+			\3 Gasto hundido en I+d
+				\4 inversión en I+D no recuperable que reduce CMg
+				\4 Incumbente lleva a cabo fuerte inversión no recuperable
+				\4 Garantiza reducción de costes marginales
+				\4 Aumenta coste de entrada para potenciales entrantes
+				\4[] Mucho más difícil que le resulte óptimo entrar
+			\3 Gasto publicitario
+				\4 Aumenta conocimiento de incumbente
+				\4 Aumenta demanda para incumbente
+				\4 Entrantes deben incurrir en más gasto publicitario
+				\4[] Aumenta su coste fijo de entrada
+				\4[] $\to$ Más probable mantener
+			\3 Costes fijos elevados que se convierten en hundidos
+				\4 Costes fijos elevados
+				\4[] $\to$ Aumentan coste medio
+				\4[] $\then$ Reducen beneficio potencial por entrar
+			\3 Información perfecta
+				\4 Empresas entrarán si beneficio positivo
+				\4 Todos conocen resultado de todas acciones
+				\4[$\then$] Incumbentes no pueden amenazar creíblemente
+				\4[$\then$] Decisiones pasadas son irrelevantes
+			\3 Información imperfecta
+				\4 Entrantes potenciales no conocen incumbente
+				\4[] Desconocen costes de incumbente con certeza
+				\4[] Asignan distribución de probabilidad
+				\4 Decisiones previas de incumbente
+				\4[] Señalizan verdaderos costes
+				\4[] $\then$ Decisiones previas de incumbente son relevantes
+			\3 Mercados contestables
+				\4 Baumol (1982)
+				\4 Oligopolio puede comportarse como CP
+				\4 Si no hay barreras de entrada
+				\4[] Posible estrategia hit-and-run
+				\4 Incumbentes tratan de desincentivar h-a-r
+				\4[] $\to$ Fijando precios que eliminan beneficio
+				\4[] $\Rightarrow$ Precio igual a coste medio
+		\2 Colusión entre oligopolios
+			\3 Idea clave
+				\4 Empresas preferirían comportarse como monopolio
+				\4[] $\to$ Y repartirse las ganancias
+				\4 Pero hay incentivos unilaterales a competir
+				\4[] $\to$ ¿Cómo coordinarse?
+				\4 Colusión
+				\4[] Acuerdo secreto entre empresas
+				\4[] $\to$ Producir cantidad que máx. beneficios
+				\4 ¿Cómo asegurar cumplimento del acuerdo?
+			\3 Mecanismos de coordinación
+				\4 Horizonte infinito
+				\4[] Posibles estrategias de tipo disparador
+				\4 Colusión perfecta
+				\4[] Empresas se coordinan perfectamente
+				\4[] Distinguen entre:
+				\4[] $\to$ Shocks de demanda exógenos
+				\4[] $\to$ Rupturas del acuerdo colusivo
+				\4 Información imperfecta
+				\4[] Green and Porter (1984)
+				\4[] Empresas observan demanda propia
+				\4[] $\to$ No demanda del competidor
+				\4[] Demanda propia puede ser 0 o positiva
+				\4[] Demanda 0 puede indicar
+				\4[] $\to$ Competidor no coopera, rompe colusión
+				\4[] $\to$ Shock exógeno de demanda
+				\4[] $\then$ Colusión perfecta no es posible
+				\4[] Solución:
+				\4[] $\to$ Guerra de precios tras observar 0
+				\4[] $\to$ Limitar duración de guerra de precios
+				\4[] $\to$ Trade-off entre represalia y pérdidas
+				\4[] $\to$ Suficiente para disuadir
+				\4[] $\to$ Limitar pérdidas si shock de demanda
+				\4[] $\then$ Guerra de precios periódicas necesarias
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Teoría de juegos
+			\3 Teoría del oligopolio
+		\2 Idea final
+			\3 Aplicación general
+				\4 Teoría de juegos como marco general
+				\4 Oligopolio
+				\4[] En la práctica, situación más habitual
+				\4[] Monopolios menos frecuentes
+				\4[] $\to$ Tienden a desaparecer
+				\4[] Competencia perfecta
+				\4[] $\to$ Supuestos muy restrictivos
+			\3 Regulación de la competencia
+				\4 Aspecto central de política económica
+				\4 ¿Permitir concentración?
+				\4 ¿Cómo medir poder de mercado y efecto?
+				\4 Teoría del oligopolio
+				\4[] $\to$ Permite abordar el problema
+\end{esquemal}
+
+\graficas
+
+\begin{tabla}{Matriz de pagos de un juego del dilema del prisionero genérico de forma que $c > a > d > b$}{prisionerogeneral}
+		\begin{tabular}{l || c | c}
+			& \textbf{C} & \textbf{NC} \\ \hline \hline
+			\textbf{C} & $(a,a)$ & $(b,c)$  \\ \hline
+			\textbf{NC} & $(c,b)$ & $(d, d)$ \\ \hline
+		\end{tabular}
+\end{tabla}
+
+\begin{tabla}{Matriz de pagos de un juego de coordinación con pagos genéricos que cumplen $a>b>c$}{coordinaciongeneral}
+		\begin{tabular}{l || c | c}
+			& \textbf{1} & \textbf{2} \\ \hline \hline
+			\textbf{1} & $(a,b)$ & $(c,c)$  \\ \hline
+			\textbf{2} & $(c,c)$ & $(b,a)$ \\ \hline
+		\end{tabular}
+\end{tabla}
+
+\begin{dibujo}{4}{Representación gráfica de un juego en forma extensiva con un nodo inicial y dos nodos de decisión.}{}{}{juegoenformaextensiva}
+	\node[above] at (0,2.1){1};
+	
+	% nodo primer nivel
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (0,2) {};
+	
+	% De primer nodo a lado izquierdo y nodo izquierdo
+	\draw[-] (0,2) -- (-2,0);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-2,0) {};
+	\node[left] at (-2.1,0){2};
+	
+	% De primer nodo a lado derecho y nodo derecho
+	\draw[-] (0,2) -- (2,0);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (2,0) {};
+	\node[right] at (2.1,0){2};
+	
+	% De nodo secundario izquierdo a nodo terciario izquierdo
+	\draw[-] (-2,0) -- (-3.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-3.5,-2) {};
+	
+	% De nodo secundario izquierdo a nodo terciario derecho
+	\draw[-] (-2,0) -- (-0.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-0.5,-2) {};
+	
+	% De nodo secundario derecho a nodo terciario izquierdo
+	\draw[-] (2,0) -- (0.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (0.5,-2) {};
+
+	% De nodo secundario derecho a nodo terciario derecho
+	\draw[-] (2,0) -- (3.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (3.5,-2) {};
+	
+	% resultados primer nodo
+	\node[below] at (-3.5,-2.3){a};
+	\node[below] at (-3.5,-2.6){b};
+
+	% resultados segundo nodo
+	\node[below] at (-0.5,-2.3){c};
+	\node[below] at (-0.5,-2.6){d};
+
+	% resultados tercer nodo
+	\node[below] at (0.5,-2.3){e};
+	\node[below] at (0.5,-2.6){f};
+	
+	% resultados cuarto nodo
+	\node[below] at (3.5,-2.3){g};
+	\node[below] at (3.5,-2.6){h};
+\end{dibujo}
+
+\begin{dibujo}{4}{Representación en forma extensiva de un juego sin memoria perfecta en el que el agente 2 no sabe en qué nodo de decisión se encuentra.}{x}{y}{sinmemoriaperfecta}	
+	% nodo primer nivel
+	\node[above] at (0,2.1){1};
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (0,2) {};
+	
+	% De primer nodo a lado izquierdo y nodo izquierdo
+	\draw[-] (0,2) -- (-2,0);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-2,0) {};
+%	\node[left] at (-2.1,0){2};
+	
+	% De primer nodo a lado derecho y nodo derecho
+	\draw[-] (0,2) -- (2,0);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (2,0) {};
+%	\node[right] at (2.1,0){2};
+	
+	% De nodo secundario izquierdo a nodo terciario izquierdo
+	\draw[-] (-2,0) -- (-3.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-3.5,-2) {};
+	
+	% De nodo secundario izquierdo a nodo terciario derecho
+	\draw[-] (-2,0) -- (-0.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-0.5,-2) {};
+	
+	% De nodo secundario derecho a nodo terciario izquierdo
+	\draw[-] (2,0) -- (0.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (0.5,-2) {};
+	
+	% De nodo secundario derecho a nodo terciario derecho
+	\draw[-] (2,0) -- (3.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (3.5,-2) {};
+	
+	% resultados primer nodo
+	\node[below] at (-3.5,-2.3){a};
+	\node[below] at (-3.5,-2.6){b};
+	
+	% resultados segundo nodo
+	\node[below] at (-0.5,-2.3){c};
+	\node[below] at (-0.5,-2.6){d};
+	
+	% resultados tercer nodo
+	\node[below] at (0.5,-2.3){e};
+	\node[below] at (0.5,-2.6){f};
+	
+	% resultados cuarto nodo
+	\node[below] at (3.5,-2.3){g};
+	\node[below] at (3.5,-2.6){h};
+	
+	\draw[dashed] (-2.5,0.5) -- (2.5,0.5) to [out=0, in=0](2.5,-0.5) -- (-2.5,-0.5) to [out=180, in=180](-2.5,0.5);
+	
+	\node[] at (0,0){2};
+\end{dibujo}
+
+\begin{dibujo}{4}{Representación gráfica de un juego de entrada y represalia secuencial en forma extensiva.}{x}{y}{entradayrepresaliaextensiva}
+	\node[above] at (0,2.1){1};
+	
+	% nodo primer nivel
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (0,2) {};
+	
+	% De primer nodo a lado izquierdo y nodo izquierdo
+	\draw[-] (0,2) -- (-2,0);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-2,0) {};
+	\node[left] at (-1.1,1){E};
+	\node[left] at (-2.1,0){2};
+	
+	% De primer nodo a lado derecho y nodo derecho
+	\draw[-] (0,2) -- (2,0);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (2,0) {};
+	\node[right] at (1.1,1){NE};
+	\node[right] at (2.1,0){2};
+	
+	% De nodo secundario izquierdo a primer nodo final
+	\draw[-] (-2,0) -- (-3.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-3.5,-2) {};
+	\node[left] at (-2.8,-1){R};
+	
+	% De nodo secundario izquierdo a segundo nodo final
+	\draw[-] (-2,0) -- (-0.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-0.5,-2) {};
+	\node[right] at (-1.20,-1){NR};
+	
+	% De nodo secundario derecho a tercer nodo final
+	\draw[-] (2,0) -- (0.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (0.5,-2) {};
+	\node[left] at (1.2,-1){R};
+	
+	% De nodo secundario derecho a cuarto nodo final
+	\draw[-] (2,0) -- (3.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (3.5,-2) {};
+	\node[right] at (2.8,-1){NR};
+	
+	% resultados primer nodo
+	\node[below] at (-3.5,-2.3){-5};
+	\node[below] at (-3.5,-2.6){-5};
+	
+	% resultados segundo nodo
+	\node[below] at (-0.5,-2.3){2};
+	\node[below] at (-0.5,-2.6){2};
+	
+	% resultados tercer nodo
+	\node[below] at (0.5,-2.3){0};
+	\node[below] at (0.5,-2.6){3};
+	
+	% resultados cuarto nodo
+	\node[below] at (3.5,-2.3){0};
+	\node[below] at (3.5,-2.6){6};
+	
+	
+	% ENPS
+	% decisión de incumbente
+	\draw[-{Latex}, color=red, thick] (-0.5,-2) -- (-2,0);
+	% decisión de entrante
+	\draw[-{Latex}, color=red, thick] (-2,0) -- (0,2);
+\end{dibujo}
+
+Existe un sólo ENPS caracterizado por la entrada y posterior no represalia por parte de la empresa incumbente. La amenaza de imponer represalias no es creíble porque una vez el entrante potencial decide entrar, el incumbente no tiene incentivo alguno a efectivamente implementar la represalia. 
+
+\begin{tabla}{Matriz de pagos de un juego de entrada y represalia en forma normal.}{entradayrepresalianormal}
+		\begin{tabular}{l || c | c | c | c}
+			& \textbf{R,R} & \textbf{R,NR} & \textbf{NR,NR} & \textbf{NR,R} \\ \hline \hline
+			\textbf{E} & $(-5,-5)$ & $(-5,-5)$ & \marcar{$(\ubar{2},\ubar{2})$} & $(\ubar{2},2)$ \\ \hline
+			\textbf{NE} & $(\ubar{0},3)$ & \marcar{$(\ubar{0},\ubar{6})$ }& $(0,\ubar{6})$ & $(0,3)$ \\ \hline
+		\end{tabular}
+\end{tabla}
+
+Se aprecian dos ENEP: (NE, (R,NR)) y (E, (NR,NR)). El segundo equilibrio es compatible con el ENEP en el que la empresa incumbente no tiene razón alguna para implementar la represalia una vez el entrante ha tomado la decisión de entrar. Aparece además un segundo ENEP que no es compatible con la solución del juego en forma extensiva. En este equilibrio, el entrante potencial decide no entrar porque el entrante no tiene en cuenta el hecho de que la amenaza no sea creíble una vez tomada la decisión de entrar.
+
+\begin{dibujo}{4}{Juego del dilema del prisionero en forma extensiva.}{x}{y}{prisioneroextensiva}
+	\node[above] at (0,2.1){1};
+	
+	% nodo primer nivel
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (0,2) {};
+	
+	% De primer nodo a lado izquierdo y nodo izquierdo
+	\draw[-] (0,2) -- (-2,0);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-2,0) {};
+	\node[left] at (-1.1,1){C};
+	%\node[left] at (-2.1,0){2};
+	
+	% De primer nodo a lado derecho y nodo derecho
+	\draw[-] (0,2) -- (2,0);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (2,0) {};
+	\node[right] at (1.1,1){NC};
+	%\node[right] at (2.1,0){2};
+	
+	% De nodo secundario izquierdo a primer nodo final
+	\draw[-] (-2,0) -- (-3.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-3.5,-2) {};
+	\node[left] at (-2.8,-1){C};
+	
+	% De nodo secundario izquierdo a segundo nodo final
+	\draw[-] (-2,0) -- (-0.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (-0.5,-2) {};
+	\node[right] at (-1.20,-1){NC};
+	
+	% De nodo secundario derecho a tercer nodo final
+	\draw[-] (2,0) -- (0.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (0.5,-2) {};
+	\node[left] at (1.2,-1){C};
+	
+	% De nodo secundario derecho a cuarto nodo final
+	\draw[-] (2,0) -- (3.5,-2);
+	\node[circle,fill=black,inner sep=0pt,minimum size=5pt] (a) at (3.5,-2) {};
+	\node[right] at (2.8,-1){NC};
+	
+	% resultados primer nodo
+	\node[below] at (-3.5,-2.3){a};
+	\node[below] at (-3.5,-2.6){a};
+	
+	% resultados segundo nodo
+	\node[below] at (-0.5,-2.3){b};
+	\node[below] at (-0.5,-2.7){c};
+	
+	% resultados tercer nodo
+	\node[below] at (0.5,-2.3){c};
+	\node[below] at (0.53,-2.63){b};
+	
+	% resultados cuarto nodo
+	\node[below] at (3.5,-2.3){d};
+	\node[below] at (3.5,-2.65){d};
+	
+	% elipse que define un sólo conjunto de información
+	\draw[dashed] (-2.5,0.5) -- (2.5,0.5) to [out=0, in=0](2.5,-0.5) -- (-2.5,-0.5) to [out=180, in=180](-2.5,0.5);
+	
+	\node[] at (0,0){2};
+\end{dibujo}
+
+\begin{axis}{4}{Funciones de reacción en un oligopolio de Cournot con dos competidores y una función de demanda inversa $P=A - x_1 - x_2$}{$x_1$}{$x_2$}{reaccioncournot}
+	% Función de reacción de la empresa 1
+	\draw[-] (0,3) -- (1.5,0);
+	\node[below] at (1.6,0){\tiny $\frac{A-c}{2}$}; % x1 cuando x2 es 0
+	\node[left] at (0,3){\tiny $A-c$};
+	\node[right] at (.3,2.3){\tiny $x_1(x_2)$};
+	
+	% Isobeneficio de empresa 1: función de reacción de 1 une los puntos más hacia arriba (con x_2 más alto)
+	\draw[dashed] (0,2) -- (4,2);
+	\draw[-] (0.1,0.9) to [out=85, in=180](0.5,2) to [out=0, in=130](2.5,0.9);
+	\draw[-] (0.2,0.7) to [out=85, in=180](0.6,1.8) to [out=0, in=130](2.3,0.7);
+	\draw[-] (0.3,0.5) to [out=85, in=180](0.8,1.6) to [out=0, in=130](2.2,0.5);
+	
+	% Función de reacción de la empresa 2
+	\draw[-] (0,1.5) -- (3,0);
+	\node[below] at (3,0){\tiny $A-c$};
+	\node[left] at (0,1.5){\tiny $\frac{A-c}{2}$};
+	\node[right] at (2.5,0.3){\tiny $x_2(x_1)$};
+
+	% Equilibrio
+	\draw[dashed] (0,1) -- (1,1) -- (1,0);
+	% cantidad de empresa 1
+	\node[left] at (0,1){\tiny $\frac{A+c}{3}$};
+	\node[below] at (1,0){\tiny $\frac{A+c}{3}$};
+\end{axis}
+
+
+\begin{axis}{4}{Representación gráfica de las funciones de reacción de los precios en un contexto de Bertrand estándar con costes marginales fijos e iguales y sin diferenciación.}{$P_1$}{$P_2$}{bertrandestandar}
+	% Empresa 1
+	\node[below] at (1,0){c};
+	\draw[thick] (1,0) -- (1,1) -- (4,4);
+	
+	% Empresa 2
+	\node[left] at (0,1){c};
+	\draw[thick, color=red] (0,1) -- (0.96,1) -- (3.96,4);
+		
+\end{axis}
+
+\begin{axis}{4}{Representación gráfica de las funciones de reacción de los precios en un contexto de Bertrand diferenciado con costes marginales fijos e iguales y con diferenciación.}{$P_1$}{$P_2$}{bertranddiferenciado}
+	% Empresa 1
+	\node[below] at (1,0){c};
+	\draw[thick] (1,0) -- (3,4);
+	
+	% Empresa 2
+	\node[left] at (0,1){c};
+	\draw[thick, color=red] (0,1) -- (4,3);
+	
+	% Equilibrio
+	\draw[dashed] (0,2) -- (2,2) -- (2,0);
+	\node[below] at (2,0){$P_1^*$};
+	
+	\node[left] at (0,2){$P_2^*$};
+		
+\end{axis}
+
+
+
+\begin{axis}{4}{Función de reacción de la empresa seguidora 2 y curvas isobeneficio de la empresa líder en un contexto de Stackelberg-Cournot.}{$x_1$}{$x_2$}{reaccioncournotstackelberg}
+	% Isobeneficio de empresa 1: función de reacción de 1 une los puntos más hacia arriba (con x_2 más alto)
+	%\draw[dashed] (0,2) -- (4,2);
+	%\draw[-] (0.1,0.9) to [out=85, in=180](0.5,2) to [out=0, in=130](2.5,0.9);
+	%\draw[-] (0.2,0.7) to [out=85, in=180](0.6,1.8) to [out=0, in=130](2.3,0.7);
+	%\draw[-] (0.3,0.5) to [out=85, in=180](0.8,1.6) to [out=0, in=130](2.2,0.5);
+	\draw[-] (0.2,0) to [out=85, in=180](1,1) to [out=0, in=130](2.4,0.0);
+	\draw[-] (0.4,0) to [out=85, in=180](1.2,0.8) to [out=0, in=130](2.2,0.0);
+	
+	% Función de reacción de la empresa 2
+	\draw[-] (0,1.5) -- (3,0);
+	\node[below] at (3,0){\tiny $A-c$};
+	\node[left] at (0,1.5){\tiny $\frac{A-c}{2}$};
+	\node[right] at (2.5,0.3){\tiny $x_2(x_1)$};
+	
+	% Equilibrio
+	\draw[dashed] (0,0.75) -- (1.5,0.75) -- (1.5,0);
+	% cantidad de empresa 1
+	\node[left] at (0,0.75){\tiny $\frac{A-c}{4}$};
+	\node[below] at (1.5,0){\tiny $\frac{A-c}{2}$};
+\end{axis}
+
+Se aprecia en la gráfica que sólo la curva de reacción de la empresa 2 es relevante, porque la empresa 1 no reacciona al elegir primero. El objetivo de la empresa 1 es elegir su producción teniendo en cuenta que el equilibrio que se sitúe sobre la curva de reacción de la empresa 2 debe situarse sobre la curva isobeneficio más hacia abajo.
+
+\conceptos
+
+\concepto{Diferencia entre juegos cooperativos y no cooperativos}
+
+\concepto{Dilema del prisionero}: se conoce por tal nombre a un ejemplo estándar de situación en la cual dos agentes racionales que participan en un juego estático alcanzan un equilibrio no cooperativo. Así, aún pudiendo alcanzar un equilibrio pareto-superior, los agentes adoptan estrategias que conducen a un equilibrio ineficiente.
+
+Si asumimos $c > a > d > b$, la matriz de pagos genérica que da lugar tal equilibrio de Nash ineficiente es la siguiente:
+
+\begin{table}[htbp]
+    \centering
+    \caption{Matriz de pagos genérica que induce un \comillas{dilema del prisionero}}
+    \label{prisionerogenerico}
+    \begin{tabular}{lllll}
+        \cline{1-3}
+        \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{C}   & \multicolumn{1}{l|}{NC}  &  &  \\ \cline{1-3}
+        \multicolumn{1}{|l|}{C}  & \multicolumn{1}{l|}{a,a} & \multicolumn{1}{l|}{b,c} &  &  \\ \cline{1-3}
+        \multicolumn{1}{|l|}{NC} & \multicolumn{1}{l|}{c,b} & \multicolumn{1}{l|}{d,d} &  &  \\ \cline{1-3}
+        &                          &                          &  & 
+    \end{tabular}
+\end{table}
+
+Un ejemplo concreto de este tipo de matriz de pagos que cumple la condición anterior es el siguiente:
+
+\begin{table}[htbp]
+    \centering
+    \caption{Ejemplo de matriz de pagos asociada al \comillas{dilema del prisionero}}
+    \label{prisioneroejemplo}
+    \begin{tabular}{lllll}
+        \cline{1-3}
+        \multicolumn{1}{|l|}{}   & \multicolumn{1}{l|}{C}   & \multicolumn{1}{l|}{NC}  &  &  \\ \cline{1-3}
+        \multicolumn{1}{|l|}{C}  & \multicolumn{1}{l|}{8,8} & \multicolumn{1}{l|}{0,10} &  &  \\ \cline{1-3}
+        \multicolumn{1}{|l|}{NC} & \multicolumn{1}{l|}{10,0} & \multicolumn{1}{l|}{5,5} &  &  \\ \cline{1-3}
+        &                          &                          &  & 
+    \end{tabular}
+\end{table}
+
+\concepto{Cuotas de mercado e índices de Lerner en competencia à la Cournot}
+
+Cuando varias empresas compiten à la Cournot, el margen que aplicarán sobre el coste marginal en relación al precio o el índice de Lerner ($\frac{p-c}{p}$) será igual al producto entre la cuota de mercado de la empresa en cuestión y la inversa de la elasticidad de la demanda. 
+
+\begin{equation*}
+	\frac{p_i - c_i}{p_i} = \frac{s_i}{\left| \epsilon_{q-p} \right|}
+\end{equation*}
+
+Por ello, se cumple que la inversa de la elasticidad de demanda en equilibrio es igual a la suma de los índices de Lerner individuales ponderados por la cuota de mercado de la empresa:
+
+\begin{equation*}
+\frac{1}{\left| \epsilon_{q-p} \right| } = \sum_i s_i \cdot \frac{1}{\left| \epsilon_{q-p} \right| } 
+\end{equation*}
+
+De ello se puede deducir que cuando todas las empresas tienen los mismos costes y por tanto, producen las mismas cantidades y tienen la misma cuota de mercado $s_i$, esta cuota de mercado será igual a la inversa del número de empresas. Y por ello, el índice de Lerner de una empresa será igual a la inversa del producto entre la elasticidad de la demanda y el número de empresas:
+
+\begin{equation*}
+	L_i = \frac{1}{n \cdot \left| \epsilon_{q-p} \right|} = \frac{p - c}{p}
+\end{equation*}
+
+\concepto{Juegos de coordinación}
+
+\concepto{Resolución de juegos bayesianos}
+
+\preguntas
+
+\seccion{28 de marzo de 2017}
+\begin{itemize}
+    \item Ha expuesto los modelos de oligopolio en base a la existencia de dos empresas. ¿Qué sucede cuando compiten más de dos empresas?
+    \item ¿Sabe lo que es la \comillas{colusión perfecta}?
+    \item Amplíe la idea de las barreras de entrada.
+    \item En juegos a largo plazo existen barreras de entrada. Piense en un sector real que opera en todos los países en el que existe un monopolio natural que se liberaliza y pasa a una situación de equilibrio. Según la teoría de juegos, ¿podría existir un equilibrio estable?
+    \item En el corto plazo, ¿predomina la competencia de Cournot o de Bertrand?
+    \item ¿En qué modelo se produce más? ¿Cournot o Bertrand?
+    \item Diferencie entre juegos de horizonte finito e infinito en un contexto de cártel.
+\end{itemize}
+
+
+\seccion{Test 2018}
+\textbf{9.} En un mercado de un bien homogéneo con elasticidad precio de la demanda constante $e=-2$, operan $n$ empresas iguales con unos costes $C(x_i) = 19x_i$, $(i=1,...,n)$. Si el precio de equilibrio del mercado es $p=20$ y las empresas se comportan como oligopolistas de Cournot, calcule el número de empresas en el mercado:
+
+\begin{itemize}
+	\item[a] $n=10$
+	\item[b] $n=25$
+	\item[c] $n=50$
+	\item[d] $n=100$
+\end{itemize}
+
+\textbf{12.} Una tienda de telefonía móvil y una de juegos para ordenador están situadas en el mismo centro comercial una junto a la otra. La tienda de telefonía móvil gasta en publicidad $x_1$ euros, mientras la tienda de juegos para ordenador gasta en el mismo concepto $x_2$ euros. Los beneficios totales netos en función del gasto en publicidad de cada una de las tiendas vienen dados por las siguientes funciones:
+
+\begin{align*}
+	B_{TM} (x_1, x_2) = (60+x_2)x_1 - 2(x_1)^2 \\
+	B_{JO}(x_1, x_2) = (105 + x_1) x_2 - 2 (x_2)^2
+\end{align*}
+
+En el equilibrio descentralizado, cuando cada tienda decide de forma unilateral cuánto dedica a gastos en publicidad (equilibrio de Nash) es:
+
+\begin{itemize}
+	\item[a] $x_1 = 60$; $x_2 =105$
+	\item[b] $x_1 = 23$; $x_2 = 32$
+	\item[c] $x_1 = 32$; $x_2 =23$
+	\item[d] $x_1 = 105$; $x_2 = 60$
+\end{itemize}
+
+\seccion{Test 2017}
+\textbf{13.} Considere el caso de un duopolio de Cournot, con dos empresas $E_1$ y $E_2$ que escogen de forma simultánea e independiente las cantidades $q_1$ y $q_2$, respectivamente, de un producto homogéneo. La demanda del mercado viene dada por la función $p=A-Q$, donde A es un número positivo y $Q = q_1 + q_2$. Suponga que no existen costes fijos y que los costes marginales de las empresas no cambian con la producción, siendo respectivamente $c_1$ y $c_2$, con $c_1 < c_2$, pero suficientemente pequeños en comparación con A, de forma que $A > c_1 + c_2$. ¿Cuál es el equilibrio de este duopolio?
+
+\begin{itemize}
+	\item[a] $E_1$ expulsará del mercado a $E_2$ y se quedará como monopolista.
+	\item[b] $E_2$ vende menos que $E_1$ y $E_1$ obtiene más beneficios que $E_2$.
+	\item[c] $E_1$ tiene un mayor volumen de ventas que $E_2$ pero $E_2$ obtiene más beneficios que $E_1$. 
+	\item[d] $E_2$ vende más que $E_1$ y $E_1$ obtiene menos beneficios que $E_2$.
+\end{itemize}
+
+
+\seccion{Test 2016}
+
+\textbf{4.} Un juego de coordinación de dos jugadores se caracteriza por:
+\begin{enumerate}
+	\item[a] Tener un único equilibrio de Nash.
+	\item[b] Tener múltiples equilibrios de Nash.
+	\item[c] No tener equilibrio de Nash.
+	\item[d] Alcanzar el equilibrio de Nash sólo cuando los dos jugadores obtienen el mismo beneficio.
+\end{enumerate}
+
+\textbf{10.} Suponga un juego de información incompleta entre de dos agentes A y B, de modo que el agente A no sabe de qué tipo (I ó II) es el agente B. Las estrategias posibles son cooperar (C) o No Cooperar (NC) y, dependiendo del tipo que sea B, las matrices de pagos posibles son:
+
+\medskip 
+
+\begin{center}
+	
+	\textbf{Agente B Tipo I:}
+	
+	
+	\begin{tabular}{c  c  c  c}
+		%\multirow{2}{*}{Multirow}&X\\
+		%&X\\
+		
+		& & \multicolumn{2}{c}{Jugador B}\\ \hline
+		
+		& & C A & NC\\ \hline
+		
+		
+		\multirow{2}{*}{Jugador A}& C & (2,2) & (0,3) \\
+		& NC & (3,0) & (1,1) \\ \hline
+		
+	\end{tabular}
+	
+\end{center}
+
+\bigskip
+
+\begin{center}
+	
+\textbf{Agente B Tipo II:}
+
+
+	\begin{tabular}{c  c  c  c}
+		%\multirow{2}{*}{Multirow}&X\\
+		%&X\\
+		
+		& & \multicolumn{2}{c}{Jugador B}\\ \hline
+		
+		& & C A & NC\\ \hline
+		
+		
+		\multirow{2}{*}{Jugador A}& C & (3,3) & (1,2) \\
+		& NC & (2,1) & (0,0) \\ \hline
+		
+	\end{tabular}
+	
+\end{center}
+
+
+\medskip 
+
+Si $p$ es la probabilidad de que el agente B sea del Tipo I, entonces elegir la estrategia C es un Equilibrio de Bayes-Nash cuando:
+
+\begin{enumerate}
+	\item[a] $p < 1/2$
+	\item[b] $p < 1/3$
+	\item[c] $p > 1/2$
+	\item[d] $p > 1/3$
+\end{enumerate}
+
+\textbf{11.} En un mercado duopólico si las empresas se reparten el mercado al 50\% y cada empresa responde a las variaciones en la cantidad producidad/vendida de la otra de una manera estrictamente mimética, entonces el Índice de Lerner o margen de precios sobre los costes de cada una de ellas es:
+\begin{enumerate}
+	\item[a] $1/2e$ (donde $e$=elasticidad precio de la demanda de mercado).
+	\item[b] $1,5/e$
+	\item[c] $2/e$
+	\item[d] $1/e$
+\end{enumerate}
+
+\seccion{Test 2015}
+
+\textbf{10.} Considere los modelos de Cournot y de Bertrand con productos diferenciados con 2 empresas sin costes de producción y demandas lineales. Si comparamos los precios de equilibrios de los dos modelos, podemos afirmar que:
+\begin{enumerate}
+	\item[a] Los precios de los dos modelos son siempre iguales.
+	\item[b] Los precios de los dos modelos convergen cuando disminuye la diferenciación de producto. 
+	\item[c] Los precios de los dos modelos convergen cuando aumenta la diferenciación de producto.
+	\item[d] La diferencia entre el precio de Cournot y de Bertrand es siempre positiva, y de la misma cuantía, que no cambia con el grado de diferenciación de producto.
+\end{enumerate}
+
+\seccion{Test 2014}
+
+\textbf{10.} Considera un mercado con N empresas cuya variable estratégica de decisión es el precio de sus productos. Cada empresa $n$ produce un único producto y el coste unitario de este producto es $c_n$. No hay restricciones de capacidad ni costes fijos.
+
+La demanda de este mercado va íntegramente a la empresa que fija un menor precio. En caso de que un cierto número de empresas fije un mismo precio inferior al de todas las demás, estas empresas se reparten la demanda del mercado de modo uniforme.
+
+¿Cuál de las siguientes afirmaciones especifica condiciones suficientes para que el equilibrio de Nash en precios en este mercado produzca el mismo nivel de beneficios que el equilibrio en competencia perfecta?
+
+\begin{enumerate}
+	\item[a] $N \to \infty$ con el coste del producto de la empresa igual a $c_n = 1 + 1/n$.
+	\item[b] $N=5$ con los costes de las empresas dados por $c_1=c_2=c_3=c_4=c_5$.
+	\item[c] $N=100$ con los costes de las empresas dados por $c_1=...=c_{50}=0<c_{51}=...=c_{100}=1 $.
+	\item[d] $N=2$ con los costes de las empresas dados por $c_1=0< c_2 =10$.
+\end{enumerate}
+
+\textbf{11.} El economista alemán Von Stackelberg propone un modelo de competencia estratégica con acciones secuenciales de las empresas presentes en un determinado mercado. Considera la siguiente función de demanda:
+
+\begin{equation}
+P(Q) = a - bQ
+\end{equation}
+
+donde $Q=q_1 + q_2$, $q_1$ y $q_2$ son las cantidades ofertadas por las empresas 1 y 2 y P es el precio de mercado. Los costes de ambas empresas son idénticos y dados por la función: $C(q_i) = c q_i$ with $c>0$.
+
+La empresa 1 es el líder de Stackelberg.
+
+¿Cuál de las siguientes afirmaciones es compatible con un equilibrio de Stackelberg en este mercado?
+
+\begin{enumerate}
+	\item[a] La empresa 2 elige su precio en primer lugar y la empresa 1 reacciona fijando su cantidad de acuerdo con la regla $q_1 = (a-c)/2b -(1/2) q_2$. El beneficio de la empresa 2 es inferior al de la empresa 1.
+	\item[b] La empresa 1 elige su cantidad en primer lugar y la empresa 2 reacciona fijando su cantidad de acuerdo con la regla $q_2 = (n -c)/4b - (1/4)q_1$. El beneficio de la empresa 2 es inferior al de la empresa 1.
+	\item[c] La empresa 1 elige su cantidad en primer lugar y la empresa 2 reacciona fijando su cantidad de acuerdo con la regla $q_2 = (a-c)/2b - (1/2) q_1$. El beneficio de la empresa 1 es inferior al de la empresa 2.
+	\item[d] La empresa 1 elige su cantidad en primer lugar y la empresa 2 reacciona fijando su cantidad de acuerdo con la regla $q_2 = (a-c)/2b - (1/2) q_1$. El beneficio de la empresa 2 es inferior al de la empresa 1.
+\end{enumerate}
+
+\seccion{Test 2013}
+
+
+(Pregunta movida a 3A-17 DIFERENCIACIÓN DE PRODUCTO Y COMPETENCIA MONOPOLISTICA)
+
+\textbf{11.} Considere el modelo de ciudad lineal de Hotelling asentada en el intervalo cerrado [0,1] y donde hay dos establecimientos (A y B) localizados en los extremos A en 0 y B en 1. Los consumidores está distribuidos uniformemente y tienen un coste de desplazamiento para comprar o de transporte igual a 2 por unidad de distancia (X) recorrida al cuadrado.
+Si el precio $P(A)=1$ y el precio de $P(B)=3$, ¿en qué tramo de la ciudad lineal se asentará el consumidor que es indiferente entre comprar en A o en B?
+
+\begin{enumerate}
+	\item[a] 1/3
+	\item[b] 1/2
+	\item[c] 2/3
+	\item[d] 3/4
+\end{enumerate}
+
+
+(Pregunta movida a 3A-11 ANÁLISIS TEÓRICO DE LA EMPRESA)
+
+\textbf{12.} Señale la respuesta correcta en relación con el índice Hirschmann-Herfindahl (H):
+\begin{enumerate}
+	\item[a] Solo tiene relación con el número de empresas que hay en un mercado.
+	\item[b] Sirve para definir el mercado relevante.
+	\item[c] Depende del número de empresas y del coeficiente de variación.
+	\item[d] No sirve para definir el número equivalente de empresas de igual tamaño.
+\end{enumerate}
+
+
+\seccion{Test 2011}
+
+\textbf{7.} Suponga el siguiente juego. Dos generales tienen que decidir simultánea e independientemente cuántos soldados enviar a la guerra (el número de soldados ha de ser un número natural). La guerra la gana el general que lleva más soldados al frente. Si ambos generales llevan el mismo número de soldados se tira una moneda al aire para decidir quién gana. Los pagos para el general que gana son iguales a 100 menos el número de soldados que decidió llevar a la guerra. Los pagos para el general que pierde son iguales a cero menos el número de soldados que decidió llevar a la guerra. 
+
+\begin{enumerate}
+	\item[a] Es un equilibrio de Nash que ambos generales lleven 50 soldados a la guerra.
+	\item[b] Es un equilibrio de Nash que un general lleve 100 soldados a la guerra y el otro ninguno.
+	\item[c] Es un equilibrio de Nash que un general lleve 100 soldados y el otro 99.
+	\item[d] El juego no tiene equilibrio de Nash en estrategias puras.
+\end{enumerate}
+
+\textbf{8.}
+
+Suponga un mercado con dos empresas que compiten en precios y en el que la demanda es de una unidad a precios menores a uno y cero unidades a precios mayores que uno. El mercado funciona un número infinito de periodos. Suponiendo que la desviación de la colusión tácita se castiga con reversión al equilibrio del modelo de un periodo, ¿cuál es el tipo de descuento mínimo que permite a las empresas coludir de forma tácita a precio 1?
+
+\begin{enumerate} 
+	\item[a] 1
+	\item[b] 3/4
+	\item[c] 1/3
+	\item[d] 1/2
+\end{enumerate}
+
+\seccion{Test 2009}
+
+\textbf{9.} Las empresas $E_1$ y $E_2$ venden un producto homogéneo en un mercado en el que la demanda total viene dada por la función $p=a - Q$ y compiten \textit{à la Cournot} en cantidades. Si no existen costes fijos y los costes marginales de las empresas son $c_1$ y $c_2$, respectivamente, con $c_1 < c_2$, entonces:
+
+\begin{enumerate}
+	\item[a] $E_1$ expulsará del mercado a $E_2$, y se quedará como monopolista.
+	\item[b] $E_2$ vende menos que $E_1$ y $E_1$ obtiene más beneficios que $E_2$.
+	\item[c] $E_1$ tiene un mayor volumen de ventas que $E_2$ y $E_2$ obtiene más beneficios que $E_1$.
+	\item[d] $E_2$ vende más que $E_1$ y $E_1$ obtiene menos beneficios que $E_2$.
+\end{enumerate}
+
+\seccion{Test 2008}
+\textbf{8.} Tenemos un juego simultáneo, definido por dos jugadores, cada cual contando con dos estrategias puras, resumidas a través de la siguiente matriz de pagos:
+
+\medskip
+
+\begin{center}
+\begin{tabular}{c  c  c  c}
+%\multirow{2}{*}{Multirow}&X\\
+%&X\\
+
+& & \multicolumn{2}{c}{Jugador 1}\\ \hline
+
+& & Estrategia A & Estrategia B\\ \hline
+
+
+\multirow{2}{*}{Jugador 2}& Estrategia A & (2,1) & (0,0) \\
+& Estrategia B & (0,0) & (2,4) \\ \hline
+
+\end{tabular}
+
+\end{center}
+
+\medskip
+
+Si se permite que los jugadores jueguen estrategias mixtas, señale de las siguientes opciones la respuesta correcta:
+
+\begin{enumerate}
+	\item[a] Existe solamente un equilibrio de Nash, porque por el teorema de Nash siempre existirá un equilibrio de Nash.
+	\item[b] Existen solamente dos equilibrios de Nash, que pueden resumirse intuitivamente en la siguiente afirmación: o bien ambos juegan la estrategia A o bien ambos juegan la estrategia B.
+	\item[c] Pueden existir más de dos equilibrios de Nash, los dos equilibrios de Nash de la respuesta B y el equilibrio en estrategias mixtas que resultase de la intersección de las funciones de reacción.
+	\item[d] No existe ningún equilibrio de Nash, porque sólo encontramos un equilibrio de estrategias dominantes.
+\end{enumerate}
+
+\textbf{12.} Para el caso de un oligopolio de Cournot con N empresas idénticas, la solución de equilibrio del mercado será más próxima a competencia perfecta:
+
+\begin{enumerate}
+	\item[a] Cuanto menor sea el coste marginal.
+	\item[b] Cuanto más elástica sea en valor absoluto la demanda del mercado.
+	\item[c] Cuanto menor sea el número de empresas.
+	\item[d] Cuanto mayor responsabilidad social tenga la junta directiva.
+\end{enumerate}
+
+\seccion{Test 2007}
+
+
+\textbf{12.} En un mercado de Oligopolio formado por dos empresas que producen el bien $x$ con funciones de costes distintas $C_1(x_1)$ y $C_2(x_2)$ respectivamente, tales que los costes marginales no son constantes, siendo la demanda del mercado una función con pendiente decreciente, es \textbf{FALSO} que:
+\begin{enumerate}
+	\item[a] Si las empresas compiten en precios, la más eficiente tendrá una mayor cuota de mercado.
+	\item[b] Si las empresas forman un oligopolio de Cournot la más eficiente tendrá una mayor cuota de mercado.
+	\item[c] Si las empresas forman un cártel, sólo produce la empresa más eficiente del mercado.
+	\item[d] Si las empresas forman un cártel, los beneficios del mercado son máximos y corresponden a los del mercado de monopolio.
+\end{enumerate}
+
+\seccion{Test 2006}
+
+\textbf{12.} Suponga un duopolio formado por las empresas 1 y 2, que producen con costes marginales $c_1$ y $c_2$, respectivamente, y que se enfrentan a una curva de demanda de mercado decreciente. En el equilibrio es falso que:
+
+\begin{enumerate}
+	\item[a] Si compiten según Cournot y $c_1 < c_2$, la empresa 1 produce más que la empresa 2.
+	\item[b] Si $c_1 = c_2$ y la empresa 1 actúa como líder cuando la variable de decisión es la cantidad, produce más que la empresa 2.
+	\item[c] Si constituyen un cártel y $c_1 < c_2$, la empresa 1 no debe producir.
+	\item[d] Si constituyen un cártel y $c_1 = c_2$, el precio y la cantidad de equilibrio del mercado no dependen de cómo se reparta la producción entre las empresas.
+\end{enumerate}
+
+\textbf{14.} La solución de un oligopolio de Cournot con N empresas iguales:
+\begin{enumerate}
+	\item[a] Converge a la solución de Stackelberg si N tiende a 2.
+	\item[b] Converge al equilibrio de Bertrand si N tiende a 2.
+	\item[c] Converge a la solución competitiva si N tiende a infinito.
+	\item[d] Converge a la solución del Cartel si N tiende a 2.
+\end{enumerate}
+
+\seccion{Test 2004}
+\textbf{7.} Considere una industria con dos empresas, que denominamos 1 y 2, que producen un bien homogéneo, cada una de las cuales tiene costes marginales iguales a 0. La función (inversa) de demanda de la industria es $P(Y) = 150 - Y$, donde $Y$ es el output total, $Y = y_1 + y_2$, y $y_1, y_2$ las cantidades que producen, respectivamente, la empresa 1 y la 2.
+
+La cantidad que cada una de las empresas producen en el equilibrio de Cournot es:
+
+\begin{enumerate}
+	\item[a] 75.
+	\item[b] 25.
+	\item[c] 50.
+	\item[d] 20.
+\end{enumerate}
+
+\notas
+
+\textbf{2018:} \textbf{9.} A \textbf{12.} C
+
+\textbf{2017:} \textbf{16.} B
+
+\textbf{2016:} \textbf{4.} B \textbf{10.} A \textbf{11.} D Cuando la reacción de la cantidad producida es perfectamente mimética, tenemos que la variación conjetural de las cantidades es 1: $q_i(q_j)=1$. Esto equivale a un monopolio, y por ello el índice de Lerner debe ser exactamente idéntico al de monopolio. La respuesta C sería correcta si $e$ fuese la elasticidad-precio de la demanda de una empresa, no del mercado. Esta elasticidad es necesariamente la mitad de la del mercado, porque ante un aumento de una unidad vendida --dados los supuestos del enunciado-, la empresa aumenta su producción en media unidad y por ello la elasticidad sería el doble de del mercado. El 2 del denominador compensaría esto, induciendo un mismo ratio $\frac{p-c}{p}$.
+
+\textbf{2015:} \textbf{10.} C
+
+\textbf{2014:} \textbf{10.} B \textbf{11.} D
+
+\textbf{2013:} \textbf{11.} D %\textbf{12.} C
+
+\textbf{2011:} \textbf{7.} D \textbf{8.} Anulada
+
+\textbf{2009:} \textbf{9.} B
+
+\textbf{2008:} \textbf{8.} C \textbf{12.} B
+
+\textbf{2007:} \textbf{11.} B \textbf{12.} C
+
+\textbf{2006:} \textbf{12.} C \textbf{14.} C
+
+\textbf{2004:} \textbf{7.} C
+
+Ojo con el concepto de variación conjetural. 
+
+Comprobar que la literatura se refiere a las situaciones de competencia de Stackelberg como juegos dinámicos. Manu Muñoz negaba que este tipo de juegos se pudiesen denominar como dinámicos.
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+	\item bargaining
+	\item barriers to entry
+    \item Bertrand competition *
+    \item conjectural equilibria
+    \item core convergence
+    \item cores
+    \item Cournot competition *
+	\item epistemic game theory: an overview
+	\item epistemic game theory: beliefs and types
+	\item epistemic game theory: complete information
+	\item epistemic game theory: incomplete information
+    \item exchange *
+    \item game theory * 
+    \item game theory in economics, origins of *
+    \item games in coalitional form * 
+    \item kinked demand curve *
+    \item Morgenstern, Oskar
+	\item Nash equilibrium, refinements of
+	\item Nash program
+    \item Nash, John Forbes
+    \item non-cooperative games (equilibrium existence)
+    \item oligopoly *
+    \item rational behaviour
+    \item rationality
+    \item repeated games
+    \item Shapley value
+    \item Stackelberg, Heinrich von
+    \item von Neumann, John
+\end{itemize}
+
+Bresnahan, T. (1981) \textit{Duopoly Models with Consistent Conjectures} American Economic Review -- En carpeta del tema
+
+Burget, R.; Sakovics, J.; \textit{Bertrand and the long-run} (2017) International Journal of Industrial Organization
+
+Delbono, F.; Lambertini, L. \textit{Bertrand versus Cournot with Convex Variable Costs} (2015) \url{http://ssrn.com/abstract=2570865} -- En carpeta del tema
+
+Dixit, A. (1979) \textit{A Model of Duopoly Suggesting a Theory of Entry Barriers} Bell Journal of Economics. Vol. 10. No. 1 -- En carpeta del tema
+
+Economides, N. \textit{bundling and tying} Palgrave Encyclopedia of Strategic Management (En carpeta del tema)
+
+Kreps, D. \textit{A Course in Microeconomic Theory} Ch. 10, 11, 12, 13, 14, 15
+
+Kreps, D.; Scheinkman, J. \textit{Quantity Precommitment and Bertrand Competition Yield Cournot Outcomes} (1983) Bell Journal of Economics -- En carpeta del tema
+
+MWG. Ch. 7,8,9,12
+
+Ricart, J. \textit{Una introducción a la teoría de juegos} (1988) Documento de investigación IESE -- En carpeta del tema
+
+Tassano, F. \textit{Game Theory and Equilibria. A short primer on terminology} (2008) Oxford Forum. Economics Paper No. 2008-1 -- En carpeta del tema
+
+Varian. Ch. 15 y 16
+
+\end{document}

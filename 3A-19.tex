@@ -1,0 +1,1564 @@
+\documentclass{nuevotema}
+
+\tema{3A-19}
+\titulo{Extensiones de las teorías de oferta y demanda de trabajo: información, búsqueda, costes de ajuste y dinámica de la demanda de trabajo.}
+
+\begin{document}
+
+\ideaclave
+
+El mercado de trabajo es, en toda economía, un sector de especial importancia. El trabajo remunerado no sólo constituye la principal fuente de renta de las familias, sino que condiciona en gran medida la vida de los seres humanos a través de su impacto en la gestión del tiempo y por ende, en el bienestar y la realización personal. La ciencia económica enfoca el análisis del mercado de trabajo desde diferentes perspectivas. Los análisis macroeconómicos del mercado de trabajo examinan los cambios en las variables agregadas para tratar de entender y predecir su evolución. Los modelos microeconómicos del mercado de trabajo examinan el proceso de decisión de agentes individuales, habitualmente representándolo como un problema de optimización matemática de una función objetivo como la utilidad o los beneficios. En las últimas décadas se ha producido un progresivo acercamiento entre estos dos enfoques de manera tal que el comportamiento de las variables agregadas es resultado de un programa de optimización de agentes microeconómicos representativos de una economía agregada. El modelo neoclásico del mercado de trabajo ha sido, como en muchos otros mercados, el punto de partida del análisis. Por un lado, se modeliza la oferta de trabajo como resultado de la optimización respecto al ocio y el consumo. Por otro, se plantea la demanda de trabajo como el resultado de la maximización de los beneficios de la empresa respecto a una serie de factores de producción que incluyen el trabajo. En ausencia de externalidades, impuestos, bienes públicos y otras distorsiones, demandantes y ofertantes intercambiarán trabajo a un precio único que inducirá un equilibrio agregado --igualdad de oferta y demanda- e individual --cumplimiento de las restricciones presupuestarias-. En el equilibrio, el aumento del bienestar social correspondiente a una unidad adicional de trabajo intercambiado igualará el coste marginal y la sociedad alcanzará un óptimo de Pareto.
+
+Sin embargo, la realidad arroja varias anomalías respecto de lo que cabría esperar a partir de las predicciones del modelo neoclásico. La principal anomalía es la presencia de desempleo. Es decir, de trabajadores que buscan activamente empleo en el mercado de trabajo pero sin embargo, no consiguen encontrarlo. De esta anomalía surgen varias preguntas: ¿por qué algunos trabajadores no encuentran empleo? ¿por qué las empresas abren vacantes que tardan en cubrirse? ¿por qué algunas empresas mantienen contratados trabajadores que no necesitan? ¿por qué algunas empresas no contratan a más trabajadores cuando la demanda del bien que producen lo requiere? ¿por qué algunos trabajadores no encuentran empleo aunque acepten salarios más bajos? Para explicar estas anomalías, han aparecido varias familias de modelos, de entre las cuales destacan el los modelos de búsqueda y emparejamiento aplicados al modelo de trabajo y el análisis dinámico de la demanda en presencia de costes de ajuste. Así, el \textbf{objeto de la exposición} es contestar a una preguntas tales como: ¿qué papel juega la información en el proceso de emparejamiento entre trabajadores y empresas? ¿qué aplicación tiene la teoría de la búsqueda al mercado de trabajo? ¿cómo se modeliza la demanda de trabajo en un contexto dinámico? ¿qué papel juegan los costes de ajuste y la incertidumbre? La \textbf{estructura} de la exposición se divide en dos partes. En la primera, analizamos la teoría de la búsqueda aplicada al mercado de trabajo, examinando los modelos más relevantes. En la segunda, presentamos los principales modelos dinámicos de la demanda de trabajo y valoramos la importancia de los costes de ajuste. 
+
+\seccion{Preguntas clave}
+\begin{itemize}
+	\item ¿Cómo influyen las asimetrías de información en el mercado de trabajo?
+	\item ¿Qué aplicaciones al mercado de trabajo tiene la teoría de la búsqueda?
+	\item ¿Cómo se modeliza la demanda de trabajo en un contexto dinámico?
+	\item ¿Cómo afecta la presencia de costes de ajuste?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Mercado de trabajo
+			\3 Enfoques de análisis
+			\3 Extensiones del modelo neoclásico
+		\2 Objeto
+			\3 ¿Qué efecto tienen las asimetrías de información?
+			\3 ¿Qué aplicación tiene la teoría de la búsqueda?
+			\3 ¿Cómo se modeliza la demanda de trabajo en contexto dinámico?
+			\3 ¿Qué papel juegan los costes de ajuste?
+		\2 Estructura
+			\3 Teoría de la búsqueda y mercado de trabajo
+			\3 Dinámica de la demanda de trabajo
+	\1 \marcar{Información en el mercado de trabajo}
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivos
+			\3 Resultados
+		\2 Formulación
+			\3 Equilibrio información perfecta
+			\3 Equilibrio con información incompleta y asimétrica
+			\3 Optimalidad del eq. con inf. incompleta y asimétrica
+		\2 Signalling/Señalización -- Spence (1973)
+			\3 Idea clave
+			\3 Formulación
+			\3 Equilibrio separador (separating equilibrium)
+			\3 Equilibrio agrupador (pooling equilibrium)
+		\2 Filtrado/screening -- Rotschild y Stiglitz (1976), Wilson (1977)
+			\3 Idea clave
+			\3 Formulación
+			\3 Equilibrios separadores y agrupadores
+		\2 Intervención de precios
+			\3 Subsidios a vendedores
+			\3 Fijación de precios mínimos
+	\1 \marcar{Teoría de la búsqueda y mercado de trabajo}
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivos
+			\3 Resultados
+		\2 Curva de Beveridge
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+		\2 Modelo del salario de reserva
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Extensiones
+		\2 Modelos de búsqueda con emparejamiento (DMP)
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Valoración
+	\1 \marcar{Dinámica de la demanda de trabajo}
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivos
+			\3 Resultados
+		\2 Formulación con costes netos
+			\3 Problema de maximización
+			\3 Costes de ajuste cuadráticos
+			\3 Costes de ajuste lineales
+			\3 Costes fijos
+			\3 Costes brutos
+			\3 Incertidumbre
+			\3 Dinámica
+		\2 Implicaciones
+			\3 Retardo medio
+			\3 Gradualidad del ajuste
+			\3 Nivel de empleo
+			\3 Ajuste total o parcial
+		\2 Valoración
+			\3 Gradualidad y retardo en la práctica
+			\3 Forma funcional adecuada
+			\3 Otros inputs
+			\3 Velocidad de ajuste por economías
+			\3 Grado de sindicación
+			\3 Importancia del grado de cualificación
+			\3 Creación y desaparición de empresas
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Teoría de la búsqueda y mercado de trabajo
+			\3 Dinámica de la demanda de trabajo
+		\2 Idea final
+			\3 Alternativas del marco walrasiano
+			\3 Mejores explicaciones de fenómenos comunes
+			\3 Relevancia práctica
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Mercado de trabajo
+				\4 Especial importancia
+				\4[] Trabajo remunerado es principal fuente de renta
+				\4[] Condiciona actividad humana
+				\4[] $\to$ Fracción importante del tiempo
+			\3 Enfoques de análisis
+				\4 Macroeconómico
+				\4[] A partir de variables agregadas
+				\4 Microeconómico
+				\4[] Decisiones de agentes individuales
+				\4 Modelo neoclásico del mercado de trabajo
+				\4[] Análisis micro de oferta y demanda
+				\4[] Conclusiones habituales de mod. neoclásicos
+				\4[] $\to$ Ley de único precio en un mercado
+				\4[] $\to$ Existencia de equilibrio único
+				\4[] $\to$ Ingreso marginal iguala coste marginal
+			\3 Extensiones del modelo neoclásico
+				\4 Resolver anomalía principal del mod. neoclásico
+				\4[] ¿por qué existe el desempleo?
+				\4[] ¿por qué algunos trabajadores no encuentran empleo?
+				\4[] ¿por qué algunas vacantes no se cubren?
+				\4[] ¿por qué las empresas contratan menos de necesario?
+				\4 Tres fenómenos que desvían de modelo neoclásico:
+				\4[] Información
+				\4[] Búsqueda y emparejamiento
+				\4[] Dinámica y costes de ajuste de la dda. de trabajo
+		\2 Objeto
+			\3 ¿Qué efecto tienen las asimetrías de información?
+			\3 ¿Qué aplicación tiene la teoría de la búsqueda?
+			\3 ¿Cómo se modeliza la demanda de trabajo en contexto dinámico?
+			\3 ¿Qué papel juegan los costes de ajuste?
+		\2 Estructura
+			\3 Teoría de la búsqueda y mercado de trabajo
+			\3 Dinámica de la demanda de trabajo
+	\1 \marcar{Información en el mercado de trabajo}
+		\2 Idea clave
+			\3 Contexto
+				\4 Asimetrías de información
+				\4[] Impiden PTFB
+				\4 Mercado de trabajo también sometido a asimetrías
+				\4 Empresas
+				\4[] Desconocen características intrínsecas trabajadores
+				\4[] Contratan sin conocer realmente características
+			\3 Objetivos
+				\4 Caracterizar fallos de mercado por inf. asimétrica
+				\4 Representar posibles soluciones a problema
+			\3 Resultados
+				\4 Selección adversa
+				\4[] Deterioro de calidad de trabajador medio
+				\4[] $\to$ Dependiente de salario de reserva
+				\4[] $\then$ Elasticidad de oferta de trabajo
+				\4 Signalling
+				\4[] Mecanismo para señalizar productividad
+				\4[] Más costoso cuanto menos productividad
+				\4[] $\to$ Engañar sobre productividad es costoso
+		\2 Formulación
+			\3 Equilibrio información perfecta
+				\4 Útil como benchmark
+				\4[] Respecto a asimetría de información
+				\4 Empresas
+				\4[] conocen productividad individual
+				\4[] compiten à la Bertrand por trabajadores
+				\4[$\then$] Ofrecen salarios iguales $w^*(\theta) = \theta$
+				\4[] Individualizados para cada agente
+				\4[] $\to$ Porque pueden verificar utilidad
+				\4[$\to$] Si $w^*(\theta) \geq \bar{w}(\theta)$, trabaja
+				\4[$\to$] Si $w^*(\theta) \leq \bar{w}(\theta)$, no trabaja
+				\4[$\Rightarrow$] Resultado es óptimo de Pareto
+				\4[] Se maximiza excedente total
+				\4[] $\to$ Trabajadores productivos trabajan y producen $\theta$
+				\4[] $\to$ Trabajadores productivos obtienen reserva $w(\theta)$
+				\4[] Productividad media es la máxima posible
+				\4[] $\to$ Todos los trabajadores trabajan
+				\4[] $\to$ Los trabajadores más productivos trabajan
+			\3 Equilibrio con información incompleta y asimétrica
+				\4 Empresas conocen:
+				\4[] Conocen:
+				\4[] $\to$ distribución $F(\theta)$ de productividad
+				\4[] $\to$ Con extremos: $\theta \, \in \, (\ubar{\theta}, \bar{\theta})$
+				\4[] $\to$ distribución de salarios de reserva
+				\4[] $\to$ No pueden verificar $\theta$ antes de contratar
+				\4[] $\then$ Pueden estimar $E(\theta|w\geq \bar{r}(\theta))$
+				\4[] $\then$ En equilibrio, $w = E( \theta)$
+				\4[] $\then$ Beneficios nulos
+				\4 Empresas deben estimar productividad dado salario
+				\4[] Saben que trabajadores solo aceptan si $w\geq r(\theta)$
+				\4[] $\to$ Productividad media depende de salario ofrecido
+				\4[] $\to$ Cuanto menor $w$, menos trabajadores aceptan
+				\4[] $\then$ Menor $\theta$ media cuanto menor salario
+				\4[] $\then$ Expectativa de prod. depende de salario ofrecido
+				\4[] $\then$ $E(\theta) = E\left( \theta | w \geq r(\theta) \right)$
+				\4 Maximizan beneficio
+				\4[] $\to$ Si salario mayor a prod. media, pierden dinero
+				\4[] $\then$ Sólo contratan si $w \leq E\left( \theta | w \geq r(\theta) \right)$
+				\4[] En equilibrio de beneficio nulo:
+				\4[] $\to$ $w^* = E(\theta | w \geq r(\theta)$
+				\4 Representación gráfica
+				\4[] En espacio salario-productividad
+				\4[] Bisectriz representa $w=\theta$
+				\4[] Intersecciones entre $E(\theta | w \geq r(\theta))$ y bisectriz
+				\4[] $\to$ Equilibrios de beneficio nulo
+				\4[] Caso extremo: sólo trabajan los menos productivos
+				\4[] \grafica{seleccionadversa}
+				\4[] Posibles múltiples equilibrios con diferentes salarios
+				\4[] $\to$ Depende de utilidad de reserva
+				\4[] $\then$ Implicaciones de teoría de juegos
+				\4[] \grafica{saeqmultiples}
+			\3 Optimalidad del eq. con inf. incompleta y asimétrica
+				\4 Si empresas fijan salarios individualizados tal que:
+				\4[] Trabajan todos los trabajadores para los que
+				\4[] $\to$ Productividad es mayor que salario de reserva
+				\4[] Empresas no pierden dinero/beneficios se anulan
+				\4[] $\Rightarrow$ Equilibrio será óptimo de Pareto
+				\4 En caso contrario, empresas fijan un salario único
+				\4[] Para que sea de equilibrio debe anular beneficio
+				\4[] Si para el salario de equilibrio
+				\4[] $\to$ No trabajan todos los que $\theta > r(\theta)$
+				\4[] $\Rightarrow$ Equilibrio Pareto-inferior respecto inf. completa
+				\4 Disminución de la calidad/productividad
+				\4[] Con información completa, todos trabajan
+				\4[] $\to$ Productividad media es igual a $E(\theta)$
+				\4[] Con información incompleta, no todos trabajan
+				\4[] $\to$ Salario único too low for the very productive
+				\4[] $\to$ Sólo poco productivos aceptan salario único
+				\4[] $\then$ Cae productividad media
+				\4[] $\then$ Se pierden oportunidades de beneficio
+		\2 Signalling/Señalización -- Spence (1973)
+			\3 Idea clave
+				\4 Spence (1973)
+				\4 Medidas para mejorar eq. competitivo
+				\4[] Informados tratan de informar a desinformados
+				\4[] $\to$ Enviando señales sobre su información privada
+				\4 La señal debe informar de forma creíble
+				\4[] Agentes con bien de baja calidad
+				\4[] $\to$ Tienen incentivo a señalizar falsamente + calidad
+				\4[] $\then$ Para obtener mayor precio
+				\4 Garantizar credibilidad
+				\4[] Para los que tienen incentivo a señalizar falsamente
+				\4[] $\to$ Coste de enviar señal debe ser más alto
+			\3 Formulación
+				\4 Mismo contexto de mercado de trabajo
+				\4 Dos niveles de productividad
+				\4[] Sin pérdida de generalidad
+				\4[] $\theta_H$ y $\theta_L$
+				\4 Educación para señalizar productividad
+				\4[] Suponemos sólo sirve para señalizar
+				\4[] $\Rightarrow$ No aumenta productividad
+				\4[] Cada agente decide cuanta educación obtener
+				\4[] $\to$ Educación es conocida por ag. desinformado
+				\4 CMg de educación depende de productividad
+				\4[] Más productividad $\Rightarrow$ Menor CMg de educación
+				\4[] Educación mínima/nula cuesta 0 a todos
+				\4[] $c_e(e, \theta) > 0, c_{ee}(e,\theta) > 0$
+				\4[] $c_\theta (e,\theta) < 0, c_{e\theta}(e,\theta) < 0$
+				\4[] $c(0, \theta) = 0$
+				\4 Empresas
+				\4[] Obtienen ingreso $\theta$
+				\4[] Salario ofrecido depende de educación observada
+				\4[] Salario ofrecido será igual a productividad estimada
+				\4[] Conocen incentivos de trabajadores
+				\4 Decisión de trabajadores
+				\4[] Educación que maximiza el ingreso considerando:
+				\4[] $\to$ Coste de adquirir más educaión
+				\4[] $\to$ Salario que pueden obtener
+				\4[] A = ingreso total ($w-c(e)$, prefiere menos educación
+				\4[] ¿Cuánta educación comprar?
+				\4[] $\to$ ¿Es rentable educarse para ganar más salario?
+				\4[] ¿Los trabajadores eligen misma educación?
+				\4[] $\to$ ¿Trabajadores eligen educaión según prod.?
+				\4[] Dependerá de:
+				\4[] $\to$ CMg relativo de educación entre $\theta_H$ y $\theta_L$
+				\4[] $\to$ Salario ofrecido
+				\4[] $\Rightarrow$ Trade-off entre salario recibido y educación
+				\4 Decisión de empresas
+				\4[] ¿Cuánto salario ofrecer?
+				\4[] ¿Debe depender de educación del trabajador?
+				\4[] $\to$ ¿Mismo salario para todos?
+				\4[] $\to$ ¿Diferentes salarios para cada trabajador?
+				\4[] $\to$ ¿Cuánto para cada trabajador?
+			\3 Equilibrio separador (separating equilibrium)
+				\4 Diferente $w$ y $e$ en función de productividad
+				\4 Empresas ofrecen:
+				\4[] Salario $w_L = \theta_L$ sin educación
+				\4[] Salario $w_H = \theta_H$ para educación $\tilde{e}$
+				\4[] $\to$ $\tilde{e}$ tal que $w_H - c(\tilde{e}, \theta_L) \leq w_L - c(0, \theta_L)$
+				\4[] $\then$ Trabs. con $\theta_L$ prefieran no educarse
+				\4[] $\to$ $\tilde{e}$ tal que $w_H - c(\tilde{e}, \theta_H) \geq w_L - c(0, \theta_H)$
+				\4[] $\then$ Trabs. con $\theta_H$ prefieran educarse
+				\4[] $\Rightarrow$ Educación $\tilde{e}$ tal que $\theta_H$ quieren educación y $\theta_L$ no
+				\4[] $\Rightarrow$ Educación mínima necesaria $\tilde{e}$ es elemento clave
+				\4 Trabajadores deciden:
+				\4[] Productividad alta:
+				\4[] $\to$ Nivel de educación $\tilde{e}$
+				\4[] Productividad baja:
+				\4[] $\to$ Nivel de educación nulo
+				\4 Representación gráfica
+				\4[] \grafica{equilibrioseparador}
+				\4 Optimalidad respecto a ausencia de señalización
+				\4[] En ausencia de señalización:%\footnote{Recuérdese que el salario de reserva se ha asumido nulo, por lo que todos trabajan para cualquier salario no negativo.}
+				\4[] $w^* = E(\theta)$
+				\4[] Con señalización:
+				\4[] Productividad baja:
+				\4[] $\to$ Reciben ingreso $\theta_L - c(0, \theta_L) = \theta_L \leq w^* = E(\theta)$
+				\4[] $\Rightarrow$ siempre pierden con señalización
+				\4[] Productividad alta:
+				\4[] $\to$ Reciben ingreso $\theta_H - c(\tilde{e}, \theta_H)$
+				\4[] $\Rightarrow$ Pierden si $E(\theta) > \theta_H - c(\tilde{e}, \theta_H)$
+				\4[] $\Rightarrow$ Optimalidad depende de distribución de $\theta$
+				\4[] $\to$ Si muchos con $\theta_H$, mejor sin señalizar
+				\4[] $\to$ Si pocos con $\theta_H$, mejor señalizando
+				\4[$\Rightarrow$] Útil señalizar cuando son pocos los que señalizan
+			\3 Equilibrio agrupador (pooling equilibrium)
+				\4 Mismo nivel de educación $e^*$ para todos
+				\4 Empresas fijan salario que anula beneficios
+				\4[] $\to$ $w^*(e^*) = E(\theta)$
+				\4 ¿Qué nivel de educación $e^*$ hace viable el equilibrio?
+				\4[] Cualquiera entre 0 y un nivel máximo $\bar{e}$
+				\4[] Nivel máximo $\bar{e}$ es aquel que:
+				\4[] $\to$ $\theta_L$ indiferentes entre $e=0$ y $\bar{e}$
+				\4 Optimalidad respecto a no señalización
+				\4[] Mismo salario independientemente de señalización
+				\4[] $\to$ $w^* = E(\theta)$
+				\4[] Óptimo de Pareto implica educación nula:
+				\4[] $\to$ Si mismo equilibrio $\forall \, e \in \, (0, \bar{e})$
+				\4[] $\Rightarrow$ Preferible $e=0$ para ahorrar coste
+				\4[$\Rightarrow$] Mejor equilibrio agrupador es educación nula
+				\4[$\then$] Eq. agrupador se produce si:
+				\4[] $\to$ Educación muy costosa
+				\4[] $\to$ Salario de reserva de productivos es bajo
+				\4[] $\to$ Poco beneficio por señalizar
+				\4[] $\then$ No señalizarán pero salario suficientemente alto
+		\2 Filtrado/screening -- Rotschild y Stiglitz (1976), Wilson (1977)
+			\3 Idea clave
+				\4 Rotschild y Stiglitz (1976), Wilson (1977)
+				\4 Desinformados tratan de distinguir informados
+				\4[] $\to$ Exigiendo observable correlado con prod.
+				\4 Ofrecer menús de contratos
+				\4[] Precio creciente con observable
+				\4[] Observable más costoso para informado
+				\4[] $\to$ Si bien tiene menor calidad
+			\3 Formulación
+				\4 Mismo contexto de mercado de trabajo
+				\4 Dos niveles de productividad
+				\4[] Sin pérdida de generalidad
+				\4[] $\theta_H$ y $\theta_L$
+				\4 Salario de reserva nulo
+				\4[] Sin pérdida de generalidad
+				\4[] $\to$ Para explicar señalización
+				\4[] $\to$ Sí quita generalidad para SAdversa
+				\4[] $\to$ Sin salarios de reserva no habría SAdversa
+				\4[] Para todos los trabajadores
+				\4 Exigir esfuerzo $t$ para señalizar productividad
+				\4[] Similar a educación pero elegido ex-post
+				\4[] $\to$ Una vez conocido menú
+				\4[] Suponemos sólo sirve para señalizar
+				\4[] $\Rightarrow$ No aumenta productividad
+				\4 Decisión de empresas
+				\4[] Ofrecen $w$ dependiendo de esfuerzo $t$
+				\4[] $\to$ Menús $(w, t)$
+				\4[] ¿Cuánto esfuerzo $t$ exigir?
+				\4 Decisión de consumidores
+				\4[] Eligen un contrato
+			\3 Equilibrios separadores y agrupadores
+				\4 No existen equilibrios agrupadores en general
+				\4 Empresas ofrecen
+				\4[] Dados $\theta_H$ y $\theta_L$
+				\4[] $1.$ Salario $\theta_L$ y esfuerzo nulo
+				\4[] $2.$ Salario $\theta_H$ y esfuerzo $\tilde{t}$
+				\4[] ¿Cuánta esfuerzo $\tilde{t}$ exigen?
+				\4[] $\to$ Improductivos deben preferir menú con sueldo bajo
+				\4[] $\to$ Productivos deben preferir menú con sueldo alto
+				\4[] $\Rightarrow$ $\tilde{t}$ elevado para disuadir improductivos
+				\4[] $\Rightarrow$ $\tilde{t}$ no demasiado elevado por competencia entre empresas
+				\4[] $\Rightarrow$ $\tilde{t}: \theta_H - c(\tilde{t}, \theta_L) = \theta_L - c(0,\theta_L)$
+				\4 Existencia del equilibrio
+				\4[] En general no existen equilibrios agrupadores
+				\4[] Equilibrio separador puede existir o no
+				\4[] Es posible que no haya equilibrio alguno
+				\4[] $\to$ Si hay muchos con $\theta_H$, + probable que no exista
+				\4 Optimalidad respecto a no filtrado
+				\4[] Improductivos siempre pierden
+				\4[] $\to$ Ganan $\theta_L$ en vez de $E(\theta)$
+				\4[] $\to$ Parte desinformada es capaz de distinguirlos
+				\4[] Productivos pueden beneficiarse de filtrado
+				\4[] $\to$ Cuando existe equilibrio separador, mejoran
+		\2 Intervención de precios\footnote{Ver \textit{adverse selection} en Palgrave.}
+			\3 Subsidios a vendedores
+				\4 Agente externo p.ej. gobierno
+				\4[] Transfiere cantidad incondicional a todos
+				\4[] $\to$ No depende de productividad
+				\4 Más vendedores aceptan entrar en mercado
+				\4 Más posibilidad de alcanzar eq. estable P-superior
+			\3 Fijación de precios mínimos
+				\4 Fijación administrativa de precios
+				\4 Evitar caigan por debajo de eq. estable P-superior
+	\1 \marcar{Teoría de la búsqueda y mercado de trabajo}
+		\2 Idea clave
+			\3 Contexto
+				\4 Marco walrasiano
+				\4[] Agentes intercambian en mercado centralizado
+				\4[] $\to$ Todos a un precio
+				\4[] $\to$ Precio cambia hasta equilibrio indiv. y agregado
+				\4 Información perfecta
+				\4[] Todos conocen demanda y oferta de otros agentes
+				\4[] No dedican tiempo a descubrir ofertas
+				\4[] $\to$ No hay proceso de búsqueda
+				\4[] $\then$ Proceso de obtención de info. no es importante
+				\4 Aplicación al mercado de trabajo
+				\4[] Todos agentes pagan/cobran un salario
+				\4[] $\to$ Ley del Único Precio
+				\4[] Equilibrio competitivo
+				\4[] $\to$ Empresas cubren todas vacantes a salario dado
+				\4[] $\to$ Trabajadores encuentran empleo a salario dado
+				\4 Explicación del desempleo
+				\4[] Rigideces en salarios nominales
+				\4[] $\to$ Costes de ajuste nominal de salarios
+				\4[] $\to$ Rigideces nominales ad-hoc
+				\4[] $\to$ ...
+				\4[] Rigideces reales
+				\4[] $\to$ Salarios de eficiencia
+				\4[] $\to$ Contratos implícitos
+				\4[] $\to$ ...
+				\4[] $\to$ No se alcanza equilibrio
+				\4[] $\then$ Excesos de demanda y oferta
+				\4[] $\then$ Paro como proceso de ajuste
+				\4 Anomalías del modelo walrasiano
+				\4[] Trabajo intercambiado a diferentes precios
+				\4[] Excesos de demanda y oferta persistentes
+				\4[] $\to$ Sin ajuste hacia equilibrio
+				\4[] Búsqueda es costosa
+				\4[] $\to$ Información sobre contrapartes
+				\4[] $\then$ Cuesta tiempo y recursos
+			\3 Objetivos
+				\4 ¿Cómo buscan vacantes los trabajadores?
+				\4 ¿Hasta cuándo buscan?
+				\4 ¿Cómo se encuentran dos partes de un contrato?
+				\4 ¿Qué papel juega la información disponible?
+				\4 ¿Por qué tratan de encontrarse?
+				\4 ¿Hasta cuando merece la pena buscar?
+				\4 ¿Qué implicaciones se derivan?
+				\4 Explicar y predecir anomalías de modelo walrasiano
+				\4[] Representar proceso de búsqueda y emparejamiento
+				\4[] $\to$ ¿Hasta cuando buscar trabajo?
+				\4[] $\to$ ¿Hasta cuando mantener vacante?
+				\4[] $\to$ ¿Qué salario ofrecer?
+				\4[$\then$] Explicar desempleo friccional
+			\3 Resultados
+				\4 Familia muy general de modelos
+				\4[] Aplicaciones muy variadas:
+				\4[] $\to$ Demanda de dinero
+				\4[] $\to$ Emparejamiento familiar
+				\4[] $\to$ Mercado de trabajo
+				\4[] $\to$ Organización industrial
+				\4 Explicaciones a anomalías del modelo neoclásico
+				\4[] $\to$ Desempleo positivo y persistente
+				\4[] $\to$ Heterogeneidad de salarios
+				\4[] $\to$ Parados en búsqueda activa de empleo
+				\4[] $\to$ Empresas que tardan en cubrir vacantes
+				\4 Cambio en concepción del desempleo
+				\4[] No tanto un problema de rigideces
+				\4[] Más un problema de información y de fricciones
+				\4 Elemento central de modernos modelos macro desempleo
+		\2 Curva de Beveridge
+			\3 Idea clave
+				\4 Contexto
+				\4[] Regularidad empírica
+				\4[] $\to$ Consistente en tiempo y diferentes economías
+				\4[] $\to$ Anomalía de modelo convencional
+				\4[] Relación consistente entre parados y vacantes
+				\4[] $\to$ Más desempleados $\then$ Menos vacantes
+				\4[] $\to$ Menos desempleados $\then$ Más vacantes
+				\4[] \grafica{beveridge}
+				\4[] Paro sin exceso de oferta
+				\4[] $\to$ Puede aparecer que:
+				\4[] $\then$ Más vacantes que desempleados
+				\4[] Y sigan existiendo desempleados
+				\4[] $\then$ No aumente salario y se vacíe mercado
+				\4 Objetivos
+				\4[] Caracterizar dinámica vacantes-desempleados
+				\4[] Definir estado estacionario de desempleados
+				\4[] Marco de análisis de desempleo
+				\4 Resultados
+				\4[] Formulación de la dinámica del empleo
+				\4[] $\to$ A partir de vacantes disponibles
+				\4[] $\to$ A partir de tasa de emparejamiento
+				\4[] Explicación basada en ED sectoriales
+				\4[] $\to$ Lipsey (1960), David (1966), Hansen (1970)
+				\4[] $\to$ Relacionado con curva de Phillips
+				\4[] $\to$ Distintos mercados de trabajo que interaccionan
+				\4[] $\to$ Desequilibrios en alguno de ellos
+				\4[] $\then$ Inducen desequilibrios en otros
+				\4[] Cambios en velocidad de ajuste en un mercado
+				\4[] $\then$ Excesos de oferta generales
+				\4[] Valores de u--v observados son resultado de:
+				\4[] $\to$ Cambios estructurales de la curva
+				\4[] $\to$ Variaciones cíclicas
+				\4[] Explicación basada en emparejamiento
+				\4[] $\to$ Agentes no se emparejan inmediatamente
+				\4[] $\to$ Descubren ofertas a frecuencias endógenas
+				\4[] $\to$ Pierden empleo a frecuencias arbitrarias
+				\4[] $\then$ Dinámica del empleo
+			\3 Formulación
+				\4 Explicación basada en emparejamiento
+				\4 Variación del paro:
+				\4[] $dU = \delta_m (1-u)N \cdot d t - f(\theta) u N \cdot d t$
+				\4[] Donde:
+				\4[] \quad $u$: tasa de desempleo
+				\4[] \quad $\delta_m$: tasa de despidos
+				\4[] \quad $N$: población total
+				\4[] \quad $f(\theta)$: probabilidad de salir de paro
+				\4[] \quad $\theta = \frac{V}{U}$: tensión mercado laboral
+				\4[] \quad $f_\theta > 0$: más tensión aumenta contratación
+				\4[] Dos flujos opuestos:
+				\4[] $\to$ Destrucción de empleo: $\delta_m (1-u)N \cdot d t$
+				\4[] $\to$ Creación de empleo: $f(\theta) u N \cdot d t$
+				\4 Estado estacionario:
+				\4[] Tasa de paro que induce desempleo constante
+				\4[] $\frac{d \, U}{d \, t} = 0 = \delta_m (1-u^*) N - f(\theta) u^*N$
+				\4[] $\then$ \fbox{$u^* = \frac{\delta_m}{\delta_m + f(\theta)}$}
+			\3 Implicaciones
+				\4 Puede existir paro sin EOferta
+				\4[] Más vacantes que parados
+				\4[] $\to$ Todavía existe desempleo
+				\4 Emparejamiento es importante
+				\4[] Capacidad para emparejarse es $f(\theta)$
+				\4[] Capacidad para encontrarse
+				\4[] $\to$ Entre parados y vacantes
+				\4[] $\then$ Determina desempleo de equilibrio
+				\4 Destrucción de empleo
+				\4[] Condiciona desempleo de equilibrio
+				\4[] Aumenta desempleo de equilibrio
+				\4[] $\to$ Modelización puede ser relevante
+				\4 Para entender equilibrio/estado estacionario
+				\4[] Necesario entender:
+				\4[] $\to$ Cómo buscan empleo los parados
+				\4[] $\to$ Cómo abren y cierran vacantes las empresas
+				\4[] $\then$ ¿De qué depende $f(\theta)?$
+				\4[] $\then$ ¿De qué depende $\delta_m$?
+		\2 Modelo del salario de reserva
+			\3 Idea clave
+				\4 Contexto
+				\4[] Problema de descubrimiento de información
+				\4[] $\to$ Cuánto tiempo/esfuerzo dedicar?
+				\4[] $\then$ Aplicación obvia a búsqueda de trabajo
+				\4[] $\then$ Mercado de trabajo fuertemente descentralizado
+				\4[] Stigler (1961)
+				\4[] $\to$ Problema de consumidor que debe elegir entre empresas
+				\4[] $\to$ Hasta cuando buscar ofertas de precios
+				\4[] $\to$ Aplicar a mercado de trabajo
+				\4[] Búsqueda acarrea costes:
+				\4[] $\to$ Salario perdido
+				\4[] $\to$ Tiempo
+				\4[] $\to$ Desplazamientos
+				\4[] $\to$ Esfuerzos
+				\4[] $\to$ ...
+				\4[] Búsqueda acarrea beneficios
+				\4[] $\to$ Descubrimiento de ofertas con más salario
+				\4[] Estrategia óptima
+				\4[] $\to$ Contactar N empresas
+				\4[] $\to$ Igualar CMg de contactar con BMg en salario esperado
+				\4[] $\then$ Elegir empresa que ofrezca mayor salario
+				\4[] McCall (1965): salario de reserva
+				\4[] $\to$ Renta mínima aun no aceptando ofertas
+				\4[] $\then$ Búsqueda secuencial es preferible a simultánea
+				\4[] $\then$ Buscar hasta igualar/superar salario de reserva
+				\4[] $\then$ Mayores costes laborales
+				\4 Objetivo
+				\4[] Caracterizar proceso de búsqueda
+				\4[] Explicar duración de la búsqueda
+				\4[] Explicar heterogeneidad de salarios
+				\4[] Valorar determinantes del proceso
+				\4 Resultados
+				\4[] Modelos estáticos del salario de reserva
+				\4[] $\to$ Comparación estática de ofertas
+				\4[] Modelo de Mortensen (1970)
+				\4[] $\to$ Análisis dinámico y estocástico de búsqueda
+			\3 Formulación
+				\4 Agente maximiza rentas esperadas
+				\4 Proceso secuencial:
+				\4[] Recibir ofertas de trabajo
+				\4[] Rechazar ofertas hasta recibir oferta óptima
+				\4[$\then$] Agente estima salario de reserva
+				\4[$\then$] Rechaza ofertas hasta recibir una > reserva
+				\4 Oferta óptima debe compensar por:
+				\4[] Pérdida de subsidio por desempleo
+				\4[] Posible empleo mejor continuando búsqueda
+				\4 VA esperado de ofertas con $w>R$
+				\4[] $\lambda \int_R^{\bar{w}} \left( \frac{w - R}{r + \delta} \right) \, d F(w)$
+				\4[] $\to$ $R$: salario de reserva
+				\4[] $\to$ $\lambda$: tasa de recepción de ofertas
+				\4[] $\to$ $\delta$: posibilidad de destrucción del empleo
+				\4[] $\to$ $F(w)$: función de distribución de $w$
+				\4[] $\to$ $r$: tasa de descuento
+				\4 Rentas exógenas y coste de la búsqueda
+				\4[] $z=b - c$
+				\4[] $\to$ $b$: rentas exógenas
+				\4[] $\to$ $c$: coste de mantener la búsqueda
+				\4 Salario de reserva debe superar suma de:
+				\4[] Rentas exógenas menos coste
+				\4[] Valor esperado de mantener la búsqueda
+				\4[$\then$] Salario aceptable mínimo/salario de reserva:
+				\4[$\then$] \fbox{$R = b-c + \lambda \int_R^{\bar{w}} \left( \frac{w - R}{r + \delta} \right) \, d F(w)$}
+				\4[$\then$] Trabajador espera hasta oferta con $w>R$
+			\3 Implicaciones
+				\4 Optimalidad del desempleo
+				\4[] Mantenerse parado es óptimo
+				\4[] $\to$ Sigue buscando hasta recibir oferta deseable
+				\4 Tasa de salida del paro
+				\4[] Agente deja desempleo cuando $w>R$
+				\4[] Conocida dist. de prob. de $w$ ofertados
+				\4[] $\to$ Estimable probabilidad de $w>R$
+				\4[] $\then$ Estimable tasa de oferta satisfactoria
+				\4 Duración media del periodo de desempleo
+				\4[] Derivable a partir de tasa de salida de paro
+				\4[] Depende de:
+				\4[] $\to$ Rentas exógenas $b$ (+)
+				\4[] $\to$ Distribución de ofertas de empleo $F(w)$
+				\4[] $\to$ Tasa de recepción de ofertas $\lambda$
+				\4 Mayores rentas exógenas $b$
+				\4[] $\to$ $\uparrow$ b $\to$ Salario de reserva $R$ aumenta
+				\4[] $\to$ Menor probabilidad de $w>R$
+				\4[] $\then$ Mayor tiempo de búsqueda
+				\4[] $\then$ Mayor tiempo en desempleo
+				\4[] $\then$ Mayor dificultada para cubrir vacantes
+				\4 Mayor coste de la búsqueda $c$
+				\4[] Más probabilidad de aceptar ofertas
+				\4[] $\then$ Menos salario de reserva
+				\4 Tipo de interés $r$ más alto
+				\4[] Reduce VA de continuar búsqueda
+				\4[] $\then$ Prefiere aceptar empleo antes
+				\4[] $\then$ Menor salario de reserva
+				\4 Mayor tasa de destrucción de empleo $\delta$
+				\4[] Reduce VA de continuar búsqueda
+				\4[] $\then$ Prefiere aceptar empleo antes
+				\4 Paradoja de Diamond (1971)
+				\4[] Si todos los consumidores calculan R
+				\4[] $\to$ Las empresas ofrecerán salario R
+				\4[] $\then$ No habrá heterogeneidad salarial
+				\4 Soluciones a Paradoja:
+				\4[] Burdett y Judd (1983)
+				\4[] Existe otro equilibrio en el que
+				\4[] $\to$ Una fracción busca + de 1 oferta
+				\4[] $\then$ Fracción de empresas ofrece salario > R
+				\4[] Heterogeneidad de trabajadores
+				\4[] $\to$ Aparecen incentivos a seguir buscando
+				\4[] Búsqueda continua
+				\4[] $\to$ Empleados siguen buscando
+				\4[] $\to$ Empresas pagan más para $\downarrow$ rotación
+			\3 Extensiones
+				\4 Intensidad del esfuerzo de búsqueda
+				\4[] Tasa de recepción de ofertas
+				\4[] $\to$ Depende de esfuerzo aplicado
+				\4[] Esfuerzo aplicado es costoso
+				\4[] Cuanto más costoso sea el esfuerzo
+				\4[] $\to$ Menos incentivo a buscar
+				\4[] $\to$ Menor recepción de ofertas
+				\4[] $\then$ Menor VA de seguir buscando
+				\4[] $\then$ Menor salario de reserva
+				\4 Rentas exógenas decrecientes
+				\4[] $z$ depende negativamente de $t$
+				\4[] Cuanto más tiempo espere
+				\4[] $\to$ Menos rentas recibe
+				\4[] $\then$ Menor VA de continuar búsqueda
+				\4[] Implicación clara de política económica
+				\4[] $\to$ Prestaciones por desempleo decrecientes
+				\4 Determinantes no salariales
+				\4[] Blau (1991)
+				\4[] Agentes no estiman salario de reserva
+				\4[] $\to$ Sino utilidad de reserva
+				\4[] Utilidad de reserva tiene en cuenta:
+				\4[] $\to$ Horas de trabajo
+				\4[] $\to$ Otros factores
+				\4[] $\then$ Otras dinámicas posibles
+				\4[] (Mirar en Sahuquillo)
+				\4 Endogeneizar distribución de salarios
+				\4[] Burdett y Mortensen (1998)
+				\4[] Empresas deciden salario a ofertar
+				\4[] $\to$ Contexto de teoría de juegos
+				\4[] Trabajadores buscan trabajo
+				\4[] $\to$ Cuando están empleados y cuando no
+				\4[] $\then$ Supuesto clave
+				\4[] Empresas también sufren costes de búsqueda
+				\4[] $\to$ Salario bajo hace probable trabajador cambie
+				\4[] Dos estrategias alternativas para empresas
+				\4[] i. Salario elevado y mantener trabajadores, más. trabs.
+				\4[] ii. Salario bajo y elevada rotación, menos trabs.
+				\4[] Distribución de probabilidad no degenerada y continua
+				\4[] $\to$ Resultado robusto si parados y empleados buscan
+				\4[] $\then$ No ocurre paradoja de Diamond
+		\2 Modelos de búsqueda con emparejamiento (DMP)
+			\3 Idea clave
+				\4 Contexto
+				\4[] Empresas y trabajadores interaccionan
+				\4[] Empresas abren vacantes hasta cubrir
+				\4[] Trabajadores buscan trabajo hasta encontrar
+				\4[] Modelos anteriores modelizan búsqueda secuencialmente
+				\4[] Relaciones se destruyen por causas exógenas
+				\4[] Gobiernos aplican políticas de empleo
+				\4[] $\to$ Políticas activas de empleo
+				\4[] $\to$ Subsidios por desempleo
+				\4[] $\to$ Empresas públicas de colocación
+				\4[] $\to$ ...
+				\4 Objetivo
+				\4[] Caracterizar evolución agregada de empleo
+				\4[] Considerar efecto de diferentes shocks
+				\4[] $\to$ Productividad/Oferta
+				\4[] $\to$ Matching trabajadores-empresas
+				\4[] $\to$ Tasa de destrucción exógena de trabajo
+				\4[] $\to$ Aumento de subsidios para desempleo
+				\4 Resultados
+				\4[] Familia DMP de modelos
+				\4[] $\to$ Diamond (1982), Mortensen (1982),
+				\4[] $\to$ Pissarides (1985)
+				\4[] Representar interacción de procesos a ambos lados
+				\4[] $\to$ Trabajadores y empresas
+				\4[] $\then$ Caracterizar desempleo de equilibrio
+				\4[] Modelo central de modelos macro con mercado de trabajo
+			\3 Formulación
+				\4 Trabajadores
+				\4[] Maximizan valor esperado de búsqueda de empleo
+				\4[] $\to$ Determinan su salario de reserva
+				\4[] Negocian salario à la Nash entre extremos:
+				\4[] $\to$ Salario de reserva R
+				\4[] $\to$ Renta por emparejamiento
+				\4 Empresas
+				\4[] Comparan entre:
+				\4[] $\to$ Valor de mantener vacante abierta
+				\4[] $\to$ Valor de no abrir vacante
+				\4[] $\then$ Abren vacantes hasta que valor vacantes = 0
+				\4[] Beneficio de cubrir vacante depende de:
+				\4[] $\to$ Coste de mantener abierta
+				\4[] $\to$ Producto que obtienen del trabajo
+				\4[] $\to$ Probabilidad de romper relación
+				\4[] Coste de mantener vacante abierta:
+				\4[] $\to$ Coste de mantener abierta
+				\4[] $\to$ Probabilidad de cubrir vacante
+				\4[] $\then$ Coste instantáneo $x$ duración esperada
+				\4[] Libre entrada:
+				\4[] $\to$ Empresas entran y abren hasta anular beneficio
+				\4 Emparejamiento de parados y vacantes
+				\4[] Representado por función de emparejamiento $f(\theta)$
+				\4[] $\to$ Probabilidad de que un parado deje de serlo
+				\4[] Número de emparejamientos en un periodo
+				\4[] Depende positivamente de:
+				\4[] $\to$ Parados y vacantes
+				\4[] Cóncava en ambas variables
+				\4[] Habitual asumir homogénea de grado 1
+				\4[] $\to$ P.ej: Cobb-Douglas
+				\4[] $f(U,V) = A U^\alpha \cdot V^\beta$
+				\4[] Con rdtos. constantes a escala
+				\4[] $\to$ Mayor tamaño de mercado no dificulta emparejamiento
+				\4[] $\to$ Representable respecto tensión $\theta=\frac{V}{U}$
+				\4[] $\then$ Habitual por conveniencia analítica
+				\4[] Con rdtos. decrecientes a escala
+				\4[] $\to$ Mercado se congestiona con mayor tamaño
+				\4[] Con rdtos. crecientes a escala
+				\4[] $\to$ Mercado funciona mejor cuanto más tamaño
+				\4 Dinámica del empleo
+				\4[] Curva de Beveridge
+				\4[] Cuánta tensión en el mercado laboral
+				\4[] $\to$ Qué relación entre vacantes y paro
+				\4[] Teniendo en cuenta:
+				\4[] $\to$ Tasa de destrucción de empleo
+				\4[] $\to$ Posibilidad de cubrir una vacante
+				\4 Tres ecuaciones fundamentales
+				\4[] WS: wage-setting
+				\4[] ZP: zero-profit
+				\4[] BV: Beveridge curve
+				\4 Tres variables endógenas:
+				\4[] $\to$ Salario $w$
+				\4[] $\to$ Tensión en el mercado laboral $\theta$
+				\4[] $\to$ desempleo de equilibrio $U$
+				\4[WS] Salarios negociados à la Nash
+				\4[] \fbox{$w=(1-\beta)R + \beta(p+\frac{c}{q(\theta)})$}
+				\4[] $\to$ $\beta$ Poder de negociación de trabajador
+				\4[] $p$: producto del trabajo
+				\4[] $\frac{1}{q(\theta)}$: tiempo hasta encontrar oferta
+				\4[] $\to$ Inversa de matches por vacante $q(\theta)$
+				\4[] $\theta c$: coste de búsqueda esperado ahorrado
+				\4[] $c$: parámetro exógeno que define coste
+				\4[] $\quad$ $\to$ Renta informacional para empresa
+				\4[ZP] Costes y beneficio de mantener vacantes se igualan
+				\4[] Supuesto de libre entrada:
+				\4[] $\to$ Beneficio ha de anularse
+				\4[] \fbox{$\frac{p-w}{r+\delta_m} = \frac{c}{q(\theta)}$}
+				\4[] $\delta_m$: probabilidad de romper contrato
+				\4[] $\to$ $q(\theta)$: probabilidad de cubrir vacante, $q_\theta(\theta) <0$
+				\4[] $\to$ $\frac{1}{q(\theta)}$: duración esperada de vacante
+				\4[] $\to$ $\frac{c}{q(\theta)}$: coste esperado de vacante
+				\4[BV] Estado estacionario del empleo
+				\4[] \fbox{$U^* = \frac{\delta_m}{\delta_m + f(\theta)}$}
+				\4[] $\to$ $f(\theta)$: probabilidad de que parado deje de estarlo
+				\4[] $\to$ Equivale a $\theta q(\theta) U$\footnote{$V \cdot q(\theta)$ equivale a la cantidad de vacantes cubiertas, dado que $V$ es la cantidad de vacantes y $q(\theta)$ la probabilidad de cubrir una vacante en función de la tensión. Multiplicando y dividiendo por los empleados, tenemos $\frac{V \cdot q(\theta)}{U} \cdot U$ de tal manera que $\theta \cdot q(\theta) = f(\theta)$. Lógicamente, la cantidad de vacantes cubiertas es igual a la cantidad de desempleados que dejan de estarlo y por ello ($\theta q(\theta) = f(\theta) U$.}
+				\4 Representación gráfica
+				\4[] Espacio $w$--$\theta$: WS y ZP
+				\4[] \grafica{wszp}
+				\4[] Espacio $v$-$u$: BV y $\theta$
+				\4[] \grafica{bvtheta}
+			\3 Implicaciones
+				\4 Shock de oferta
+				\4[] Aumento de $p$: trabajo más productivo
+				\4[] Negociación salarial
+				\4[] $\to$ Trabajadores pueden exigir más salario
+				\4[] $\to$ Modulado por poder de negociación $\beta$
+				\4[] $\then$ WS se desplaza hacia arriba
+				\4[] Apertura de vacantes por empresas
+				\4[] $\to$ Más valor por cubrir vacante
+				\4[] $\to$ Más empresas que abren vacantes
+				\4[] $\then$ ZP se desplaza hacia la derecha
+				\4[] $\then$ Desplazamiento de ZP mayor que WS
+				\4[] $\then$ Aumento de tensión en el mercado laboral
+				\4[] Nuevo equilibrio con:
+				\4[] $\to$ Mayor salario
+				\4[] $\to$ Menos desempleo
+				\4[] $\to$ Más vacantes
+				\4[] Representación gráfica
+				\4[] \grafica{shockdeoferta}
+				\4 Aumento del subsidio por desempleo
+				\4[] Aumenta el salario de reserva R
+				\4[] $\to$ Salario aumenta para cualquier tensión
+				\4[] $\to$ Trabajadores pueden ``amenazar'' más creíblemente
+				\4[] $\then$ WS se desplaza a la izquierda
+				\4[] Empresas obtienen menos beneficio por vacante
+				\4[] $\to$ Menos empresas abren vacantes
+				\4[] $\to$ Se reduce tensión en mercado laboral
+				\4[] $\to$ Aumenta probabilidad de cubrir vacantes
+				\4[] $\then$ Desplazamiento a lo largo de ZP
+				\4[] $\then$ $\uparrow w$, $\downarrow \theta$, $\uparrow u^*$
+				\4[] Nuevo equilibrio con:
+				\4[] $\to$ Mayor salario
+				\4[] $\to$ Menor tensión
+				\4[] $\to$ Más desempleo
+				\4[] $\to$ Menos vacantes
+				\4[] Representación gráfica
+				\4[] \grafica{aumentosubsidio}
+				\4 Aumento de tasa de destrucción de empleo
+				\4[] Disminuye beneficio por vacante
+				\4[] $\to$ A igual salario y tensión
+				\4[] $\then$ ZP se desplaza hacia abajo
+				\4[] Se reduce renta informacional por cubrir vacante
+				\4[] $\to$ Menos renta a repartir con trabajadores
+				\4[] $\then$ Desplazamiento a lo largo de WS
+				\4[] $\then$ $\downarrow w$, $\downarrow \theta$, $\uparrow u^*$
+				\4[] Representación gráfica
+				\4[] \grafica{aumentodestruccion}
+				\4 Impuesto sobre las rentas del trabajo
+				\4[] Aumenta el valor relativo de renta no salarial
+				\4[] Aumento del poder de negociación de los trabajadores
+				\4[] $\to$ Aumenta $\beta$
+				\4[] Curva WS se desplaza hacia arriba
+				\4[] $\to$ Mayor salario para cualquier $\theta$
+				\4[] Desplazamiento a lo largo de ZP
+				\4[] $\to$ Caen beneficios luego debe caer coste
+				\4[] $\then$ Cae tensión $\theta$
+				\4[] Nuevo equilibrio con:
+				\4[] $\to$ Mayor salario
+				\4[] $\to$ Menor tensión
+				\4[] $\to$ Más desempleo
+				\4[] $\to$ Menos vacantes
+				\4[] Representación gráfica
+				\4[] \grafica{aumentoimpuestotrabajo}
+				\4 Políticas activas de empleo efectivas
+				\4[] Aumenta $q(\theta)$ para cualquier $\theta$
+				\4[] Emparejamiento más efectivo
+				\4[] $\to$ Vacantes y desempleados se encuentran más
+				\4[] $\then$ Menor duración de vacante
+				\4[] Caen costes por mantener vacantes abiertas
+				\4[] $\to$ Entran más empresas en el mercado por beneficio
+				\4[] $\then$ Suben salarios por competencia
+				\4[] $\then$ ZP a la derecha
+				\4[] $\to$ Caen costes que se ahorran empresas si cubren
+				\4[] $\then$ Aumenta $P+\frac{c}{q(\theta)}$
+				\4[] $\then$ Menos coste a ahorrar cubriendo vacante
+				\4[] $\then$ Cae parte de renta que extraen trabajadores
+				\4[] $\then$ Caen salarios
+				\4[] $\then$ WS a la derecha
+				\4[] Nuevo equilibrio con:
+				\4[] $\to$ Mayor tensión en mercado laboral
+				\4[] $\then$ Se abren más vacantes
+				\4[] $\then$ Salen más desempleados del paro
+				\4[] $\to$ Efecto ambiguo sobre salarios
+				\4[] $\then$ Aumentan por mayor competencia por trabajo
+				\4[] $\then$ Cae por menor incentivo a subir salario
+				\4[] Representación gráfica
+				\4[] \grafica{politicasactivas}
+				\4 Eficiencia
+				\4[] ¿Es el paro de equilibrio eficiente?
+				\4[] ¿Pueden inducirse mejoras de Pareto?
+				\4[] ¿Qué tensión en el mercado es óptima?
+				\4[] Comparación coste-beneficio de empresas no considera:
+				\4[] $\to$ Externalidad negativa por aumento de congestión
+				\4[] $\to$ Externalidad positiva por aumento de matches
+				\4[] Condición de Hosios caracteriza optimalidad
+				\4[] $\to$ En función de poder de negociación de la empresa
+				\4[] Porción que obtiene la firma ($\beta$) debe ser = a:
+				\4[] $\to$ Elasticidad de matches respecto a vacantes
+				\4[] $\then$ Muy dificil cumplimiento
+				\4[] $\then$ Eficiencia sobre ``filo de navaja''
+				\4[] $\then$ Eficiencia muy improbable
+				\4 Comportamiento cíclico de la Curva de Beveridge
+				\4[] Fase de expansión
+				\4[] $\to$ Aumentan vacantes
+				\4[] $\to$ Desempleados salen de paro
+				\4[] $\then$ Aumenta la tensión
+				\4[] Fase recesiva
+				\4[] $\to$ Se abren menos vacantes
+				\4[] $\to$ Aumentan los despidos/caen renovaciones
+				\4[] $\then$ Cae la tensión
+				\4[] Aumentan las rigideces/empeora el matching
+				\4[] $\to$ Dada = cantidad de vacantes, más parados
+				\4[] $\then$ Desplazamiento de toda la curva hacia fuera
+			\3 Valoración
+				\4 Premio Nobel 2010
+				\4[] Diamond, Mortensen y Pissarides
+				\4 Fricciones del proceso de búsqueda
+				\4[] Consolidación como elemento relevante
+				\4[] Desarrollo de 'tasa natural de paro'
+				\4[] Contexto de creciente microfundamentación
+				\4 Contraste empírico
+				\4[] Aplicando shocks de productividad
+				\4[] $\to$ Posible replicar desempleo a lo largo de ciclo
+				\4[] Problemas:
+				\4[] $\to$ Calibración de $\theta$ cíclica no se verifica
+				\4[] $\to$ $\theta$ empírica varía mucho más que calibrada
+				\4[] Comparación favorable con cuantía subsidio
+				\4[] $\to$ Europa y España subsidios y paro altos
+				\4 Aplicación en política económica
+				\4[] Marco DMP es herramienta habitual
+				\4[] Análisis de políticas de empleo
+				\4[] $\to$ Subsidios
+				\4[] $\to$ Movilidad del trabajo
+				\4[] $\to$ Impuestos mercado de trabajo
+				\4[] $\to$ Políticas activas
+				\4[] $\to$ Legislación laboral
+				\4 Extensiones
+				\4[] Muy numerosas
+				\4[] $\to$ Endogeneización de la tasa de despidos
+				\4[] $\to$ Rdtos. crecientes a escala en f. de matching
+				\4[] $\to$ Rigidez salarial y diferente negociación
+	\1 \marcar{Dinámica de la demanda de trabajo}
+		\2 Idea clave
+			\3 Contexto\footnote{Ver Hamermesh (1995) \textit{Labour demand and the Source of Adjustment costs}.}
+				\4 Justificación de existencia de costes
+				\4[] Ajuste de procesos de producción
+				\4[] Inversión en capital humano específico
+				\4[] Costes de búsqueda de trabajadores
+				\4[] Costes de oportunidad de tiempo de managers
+				\4 Coste de ajuste según origen
+				\4[] -- Internos
+				\4[] $\to$ No separables de cambios en producción
+				\4[] -- Externos
+				\4[] $\to$ Independientes de cambio en producción
+				\4[] $\to$ Ligados habitualmente a regulación
+				\4 Coste de ajuste fijos o variables
+				\4[] -- Fijos
+				\4[] $\to$ Independientes de variación de demanda
+				\4[] -- Variables
+				\4[] $\to$ Cuantía total dependiente de demanda
+				\4 Costes de ajuste netos o brutos
+				\4[] -- Brutos
+				\4[] $\to$ Tienen lugar cuando se contrata o despide
+				\4[] $\to$ Independientes de cambio en empleo total
+				\4[] $\to$ Ligados a identidad del individuo
+				\4[] -- Netos
+				\4[] $\to$ Tiene lugar cuando cambia empleo total
+				\4[] $\to$ Ligados a cambios en escala
+				\4 Modelo neoclásico de demanda de trabajo
+				\4[] Predice demandas óptimas de factores
+				\4[] No predice:
+				\4[] $\to$ Tiempo que tardan en demandar
+				\4[] $\to$ Cómo ajustan demanda en el tiempo
+				\4[] $\to$ Respuesta temporal a cambios en parámetros
+				\4 Modelos dinámicos
+				\4[] Representar ajuste a lo largo del tiempo
+				\4[] Entender evolución temporal de empleo
+			\3 Objetivos
+				\4 Caracterizar secuencia dinámica de decisión
+				\4[] $\to$ Demanda de trabajo por empresas
+				\4 Considerar efecto de costes de ajuste
+				\4 Valorar posible efecto sobre el ciclo
+				\4 Comparar con evidencia empírica
+			\3 Resultados
+				\4 Sin costes de ajuste
+				\4[] Empresas maximizan beneficios en cada periodo
+				\4[] $\to$ Demandando trabajo óptimo cada periodo
+				\4[] $\then$ Dimensión temporal del problema es irrelevante
+				\4[] $\then$ Modelo dinámico es sucesión de equilibrios estáticos
+				\4 Con costes de ajuste
+				\4[] Variar demanda de trabajo es costoso
+				\4[] Empresas deben tomar decisiones sobre:
+				\4[] $\to$ ¿Es rentable variar demanda de trabajo?
+				\4[] $\to$ ¿Cuánto $\Delta$ en cada periodo?
+				\4[] $\to$ ¿Es mejor distribuir $\Delta$ a lo largo de tiempo?
+				\4[] $\to$ ¿Es mejor concentrar $\Delta$ en un sólo periodo?
+				\4 Formulación de costes de ajuste
+				\4[] Determina predicciones del modelo
+				\4[] $\to$ Elemento clave de la representación
+				\4[] $\then$ ¿Qué formulación refleja ajuste en realidad?
+				\4[] Regulación laboral difiere entre economías
+				\4[] $\to$ Necesario adaptar formulación por países
+				\4 Evolución de formas funcionales postuladas
+		\2 Formulación con costes netos
+			\3 Problema de maximización
+				\4 Función objetivo
+				\4[] $\sum_{i=0}^\infty \left[ R(L_t) - WL_t - C(\Delta{L}) - I(| \Delta{L} |)\cdot F ) \right] \frac{1}{(1+r)^i}$
+				\4 Donde:
+				\4[] $R(L)$: ingresos de la empresa
+				\4[] $C(\Delta L)$: costes de ajuste
+				\4[] $I(| \Delta{L} |)$: función indice (=1 si $\Delta{L} \neq 0$)
+				\4[] $F$: costes fijos de despido/contratación
+			\3 Costes de ajuste cuadráticos
+				\4 Cuadráticos simétricos
+				\4[] $C(\Delta{L}) = a \Delta{L} ^2$
+				\4 Cuadráticos asimétricos
+				\4[] $C(\Delta{L}) = a (\Delta{L} - b)^2$
+				\4[] $\to$ Si $b>0$: más barato contratar que despedir
+				\4 Dinámica general
+				\4[] $L(t) = L^* + (L(0) - L(t)) e^{\lambda_2 t}$
+				\4[] $\lambda_2$ es $<0$ y depende de $r$
+			\3 Costes de ajuste lineales
+				\4 Generalmente para asimetría
+				\4 Definidos por partes:
+				\4[] $C(\Delta L) = c_h \Delta L$ Si $\Delta L \geq 0$
+				\4[] $\quad \quad \quad = -c_f \Delta L$ Si $\Delta L \leq 0$
+			\3 Costes fijos
+				\4 Caracterizar coste fijo por variar plantilla
+				\4 Representar fenómeno habitual:
+				\4[] Firmas prefieren contratar/despedir en grupos
+			\3 Costes brutos
+				\4 No considerados en función anterior
+				\4 Incluibles cambiando formulación de f. objetivo
+				\4 Añadiendo componentes por cambios brutos
+				\4[] Contrataciones: $-C(\Delta L_h) - I(\Delta L_h)$
+				\4[] Despidos: $-C(\Delta L_f) - I(\Delta L_f)$
+			\3 Incertidumbre
+				\4 Ingresos $R(L)$ sufren shocks aleatorios
+				\4[] Shocks de productividad
+				\4[] Shocks de demanda
+				\4 Empresa debe discernir entre:
+				\4[] Shocks permanentes
+				\4[] Shocks temporales
+				\4 Si shock permanentes
+				\4[] Ajuste a óptimo puede compensar costes
+				\4 Si shock es temporal
+				\4[] Puede ser preferible mantener trabajo
+			\3 Dinámica
+				\4 Objetivo del análisis:
+				\4[] Encontrar ecuación de dinámica
+				\4[] $\to$ Que representa decisión óptima de empresa
+				\4[] $L(t) = f(L(0), C(\Delta L), F(L))$
+				\4 Dinámica general
+				\4[] Si $L(0)$ menor a $L_h$
+				\4[] $\to$ Empresa contrata hasta $L_h$
+				\4[] Si $L(0)$ mayor a $L_f$
+				\4[] $\to$ Empresa despide hasta $L_f$
+				\4[] Si $L(0)$ entre $L_f$ y $L_h$
+				\4[] $\to$ Empresa mantiene empleo
+				\4[] $L_h$ y $L_f$ dependen de:
+				\4[] $\to$ coste fijos de contratación/despido
+		\2 Implicaciones
+			\3 Retardo medio
+				\4 Tiempo requerido para que empleo alcance:
+				\4[] Punto equidistante entre
+				\4[] $\to$ Valor inicial $L_0$
+				\4[] $\to$ Valor estacionario de óptimo $L^*$
+				\4 Costes convexos
+				\4[] Mayor retardo cuanto mayor coste
+				\4 Costes lineales
+				\4[] Retardo es indiferente al coste
+			\3 Gradualidad del ajuste
+				\4 Costes convexos
+				\4[] Ajuste más gradual cuanto mayor coste
+				\4 Costes lineales
+				\4[] Sin retardo en el ajuste
+				\4[] $\to$ = coste aunque $\Delta$ se concentre en 1 periodo
+				\4[] Efecto de los costes de ajuste
+				\4[] $\to$ Desincentivar despido/contratación
+				\4 Costes fijos
+				\4[] Incentivo a ajustar menos gradualmente
+			\3 Nivel de empleo
+				\4 Costes lineales
+				\4[] Si empresa iba a contratar:
+				\4[] $\to$ $\uparrow$ de coste de contratar reduce empleo
+				\4[] Si empresa iba a despedir:
+				\4[] $\to$ $\uparrow$ coste de despedir aumenta empleo
+				\4[] Otros casos:
+				\4[] $\Delta$ costes despido/contratación no tienen efecto
+			\3 Ajuste total o parcial
+				\4 Depende de estimación de empresa sobre shock
+				\4[] $\to$ ¿Es temporal? ¿Es permanente?
+				\4 Shock temporal
+				\4[] Empresa ajusta parcialmente
+				\4 Shock permanente
+				\4[] Empresa ajusta totalmente de forma gradual
+		\2 Valoración
+			\3 Gradualidad y retardo en la práctica
+				\4 Prociclicidad de la productividad
+				\4[] $\to$ Puede explicarse por efecto del retardo
+				\4[] En crecimiento, empresas contratan despacio
+				\4[] En recesión, empresas no despiden del todo
+				\4 Despidos masivos y en grupo
+				\4[] Costes convexos y retardo en ajuste
+				\4[] $\to$ No ofrecen explicación satisfactoria
+				\4[] Costes fijos posible explicación
+			\3 Forma funcional adecuada
+				\4 Hasta finales de los 80
+				\4[] Estudios asumen costes cuadráticos y simétricos
+				\4 Principios de los 90
+				\4[] Rechazo de costes cuadráticos y simétricos
+				\4 Hamermesh (1993), Hamermesh y Pfann (1996), Abowd y Kramarz (2003)
+				\4[] Defienden costes fijos + lineales asimétricos
+				\4[] $\then$ Explican mejor series reales
+			\3 Otros inputs
+				\4 No hemos examinado otros costes de ajuste
+				\4 $\Delta$ de capital también tiene efecto
+			\3 Velocidad de ajuste por economías
+				\4 Estados Unidos > Europa > Japón
+				\4 Controversia:
+				\4[] ¿Grado de protección del empleo reduce velocidad?
+			\3 Grado de sindicación
+				\4 Resultados ambiguos
+			\3 Importancia del grado de cualificación
+				\4 Generalmente, ajuste menos costoso
+				\4[] Cuanto menor sea grado de sindicación
+			\3 Creación y desaparición de empresas
+				\4 No se ha examinado
+				\4 Impacto importante sobre niveles de empleo
+				\4 Impacto de costes de despido sobre cierre de empresas
+				\4[$\then$] Relación por examinar
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Teoría de la búsqueda y mercado de trabajo
+			\3 Dinámica de la demanda de trabajo
+		\2 Idea final
+			\3 Alternativas del marco walrasiano
+				\4 Modelos walrasianos
+				\4[] Punto de partida
+				\4 Mercado de trabajo
+				\4[] Particularidades y complejidades específicas
+				\4 Impulso a desarrollo de nuevos modelos
+				\4[] Origen en otras áreas
+				\4[] Extendidos a otras áreas
+			\3 Mejores explicaciones de fenómenos comunes
+				\4 Paro friccional
+				\4[] Modelos de búsqueda
+				\4[] Proceso de búsqueda es costoso pero necesario
+				\4 Infraempleo y sobreempleo
+				\4[] Costes de ajuste de demanda de empleo
+				\4[] Incertidumbre sobre costes y productividad
+			\3 Relevancia práctica
+				\4 Economía española
+				\4[] Ejemplo cercano de mercado disfuncional
+				\4[] $\to$ Importantes fricciones de búsqueda
+				\4[] $\to$ Costes de ajuste elevados
+				\4 Modelos analizados
+				\4[] Permiten caracterizar problemas
+				\4[] Diseñar soluciones más efectivas
+\end{esquemal}
+
+\graficas
+
+\begin{axis}{4}{Representación gráfica de un equilibrio competitivo con selección adversa: el mercado tiende a desaparecer y sólo trabajan los trabajadores menos productivos.}{$w$}{$\theta$}{seleccionadversa}
+	% bisectriz
+	\draw[-] (0,0) -- (4,4);
+	\node[above] at (4,4){\tiny $\theta = w$};
+	
+	% productividad esperada de toda la distribución de productividades
+	%\draw[dashed] (0,2) -- (4,2);
+	%\node[left] at (0,2){\tiny  $E(\theta)$};
+	
+	% productividad esperada dado un salario w
+	%\draw[-] (0.5,0.65) to [out=70, in=190](1.6,1.35) to [out=10, in=250](2.2,2.6) to [out=70, in=185](2.7,3) -- (4,3);
+	\draw[-] (0.5,0.5) to [out=20, in=210](3.5,2.5);
+	\node[right] at (3.5,2.5){\tiny $E(\theta|w \geq \bar{w}(\theta))$};
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (3.5,2.5) {};
+	
+	% salario mínimo
+	\draw[dashed] (0,0.5) -- (0.5,0.5) -- (0.5,0);
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (0.5,0.5) {};
+	\node[below] at (0.5,0){\tiny $\bar{w}(\ubar{\theta})$};
+	\node[left] at (0,0.5){\tiny $\ubar{\theta}$};
+	
+	% salario máximo
+	\draw[dashed] (0,2.5) -- (3.5,2.5) -- (3.5,0);
+	\node[below] at (3.5,0){\tiny $\bar{w}(\bar{\theta})$};
+	\node[left] at (0,2.5){\tiny $\bar{\theta}$};
+	
+	% equilibrios
+	%\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (1.27,1.27) {};
+	%\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (2.08,2.08) {};
+	%\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (3,3) {};
+\end{axis}
+
+El punto de intersección entre la curva $E(\theta|w>\bar{w}(\theta))$ y la bisectriz es el equilibrio competitivo en el que las empresas maximizan sus beneficios y los trabajadores aceptan trabajar cuando el salario es igual o mayor que su salario de reserva dependiente de la productividad que sólo ellos conocen, de tal manera que se elimina toda posibilidad de obtener beneficios positivos. La gráfica muestra un caso extremo en el que sólo se contratan trabajadores de la peor calidad o el mercado desaparece por completo.
+
+\begin{axis}{4}{Representación gráfica de un equilibrio competitivo con selección adversa: múltiples equilibrios posibles.}{$w$}{$\theta$}{saeqmultiples}
+	% bisectriz
+	\draw[-, color=gray] (0,0) -- (4,4);
+	\node[above] at (4,4){\tiny $\theta = w$};
+	
+	% productividad esperada de toda la distribución de productividades
+	%\draw[dashed] (0,2) -- (4,2);
+	%\node[left] at (0,2){\tiny  $E(\theta)$};
+	
+	% productividad esperada dado un salario w
+	\draw[-] (0.5,0.5) to [out=70, in=190](1.6,1.35) to [out=10, in=250](2.2,2.6) to [out=70, in=185](2.95,3);% to[out=10, in=210](4,3.5); % to [out=20, in=120](4,3);
+	%\draw[-] (0.5,0.5) to [out=20, in=210](3.5,2.5);
+	\node[right] at (4,3.5){\tiny $E(\theta|w \geq r(\theta))$};
+	
+	% Equilibrios
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (3,3) {};
+	\node[left] at (3,3.1){\tiny 4};
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (2.1,2.1) {};
+	\node[left] at (2.1,2.2){\tiny 3};
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (1.3,1.3) {};
+	\node[left] at (1.3,1.4){\tiny 2};
+	
+	% salario mínimo
+	\draw[dashed] (0,0.5) -- (0.5,0.5) -- (0.5,0);
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (0.5,0.5) {};
+	\node[left] at (0.55,0.65){\tiny 1};
+	\node[below] at (0.5,0){\tiny $r(\ubar{\theta})$};
+	\node[left] at (0,0.5){\tiny $\ubar{\theta}$};
+	
+	% salario máximo
+	\draw[dashed] (0,3) -- (3,3) -- (3,0);
+	\node[below] at (2.95,0){\tiny $r(\bar{\theta})$};
+	\node[left] at (0,3){\tiny $\bar{\theta}$};
+	
+	% equilibrios
+\end{axis}
+
+
+La gráfica muestra un mercado con diferentes equilibrios competitivos y selección adversa. La recta negra representa la productividad esperada $E(\theta)$ dado un salario $w$, de tal manera que trabajan todos los trabajadores cuyo salario de reserva es igual o superior al $w$ fijado. En los puntos de intersección entre la bisectriz (en gris) y la curva de productividad esperada, el salario ofrecido es igual a la productividad esperada de los trabajadores que aceptan trabajar. Así, en estos puntos ni las empresas entran en pérdidas por pagar un salario superior a la productividad media (lo que sucedería si la recta de $E(\theta)$ estuviese a la derecha de la bisectriz, ni pagar un salario demasiado bajo de tal manera que las empresas pudiesen obtener beneficios económicos y apareciese la posibilidad de que entrasen nuevas empresas. Los equilibrios 2 y 4 son estables, ya que una perturbación puntual entre 1 y 2 que aumentase el salario induciría la aparición de beneficios económicos, que a su vez inducirían sueldos más altos, y la incorporación al mercado laboral de trabajadores con productividad más alta, que aumentarían a su vez la productividad media de los trabajadores. De igual modo, una perturbación del equilibrio en 3 induciría la aparición de pérdidas por salarios más altos que la productividad esperada, de tal manera que caería el salario medio de manera progresiva al tiempo que salen del mercado trabajadores más productivos y cae la productividad media hasta alcanzarse el equilibrio estable 2. 
+
+
+
+\begin{axis}{4}{Ejemplo de una curva de Beveridge.}{$u$}{$v$}{beveridge}
+	% Curva de Beveridge
+	\draw[-] (0.5,4) to [out=280, in=170](4,0.5);
+\end{axis}
+
+Habitual representar desempleados en eje de abscisas y vacantes en eje de ordenadas. Desplazamientos a lo largo de la curva suelen asimilarse a cambios en la posición cíclica. Desplazamientos de la curva se entienden en ocasiones como cambios estructurales.
+
+\begin{axis}{4}{Representación gráfica de la tensión de equilibrio como intersección entre curva de fijación de salarios y curva de beneficios nulos.}{$\theta$}{$w$}{wszp}
+	% Curva ZP - zero-profit
+	\draw[-] (0.5,4) -- (4,0.5);
+	\node[right] at (4,0.5){ZP};
+	
+	% Curva WS - wage setting
+	\draw[-] (0.5,0.5) -- (4,4);
+	\node[right] at (4,4){WS};
+	
+	% Theta de equilibrio
+	\draw[dashed] (2.25,2.25) -- (2.25,0);
+	\node[below] at (2.25,0){$\theta^*$};
+\end{axis}
+
+\begin{axis}{4}{Representación gráfica del desempleo de equilibrio como punto en la curva de Beveridge con una tensión dada. }{$U$}{$V$}{bvtheta}
+	% Curva de Beveridge
+	\draw[-] (0.5,4) to [out=280, in=170](4,0.5);
+	
+	% Tensión de equilibrio como pendiente de rayo desde origen
+	\draw[-] (0,0) -- (4,3);
+	\draw[dashed] (1.91,1.4) -- (1.91,0);
+	\node[below] at (1.91,0){$U^*$};
+	\node[right] at (4,3){$\theta^*$};
+\end{axis}
+
+
+\begin{dibujo}{4}{Efecto de un shock de oferta positivo sobre el equilibrio del mercado laboral en el modelo DMP.}{}{}{shockdeoferta}
+	% ejes para WS-ZP
+	\draw[-] (0,4) -- (0,0) -- (4,0);
+	\node[left] at (0,4){$w$};
+	\node[below] at (4,0){$\theta$};
+	
+	% ejes para BV y theta
+	\draw[-] (6,4) -- (6,0) -- (10,0);
+	\node[left] at (6,4){$v$};
+	\node[below] at (10,0){$u$};
+	
+	% Curva ZP - zero-profit PRE-cambio
+	\draw[-] (0.5,4) -- (4,0.5);
+	\node[right] at (4,0.5){ZP};
+	
+	% Curva WS - wage setting PRE-cambio
+	\draw[-] (0.5,0.5) -- (4,4);
+	\node[right] at (4,4){$\text{WS}_0$};
+	
+	% Theta de equilibrio pre-cambio
+	\draw[dashed] (2.25,2.25) -- (2.25,0);
+	\node[below] at (2.25,0){$\theta_0$};
+
+	% Curva ZP - zero-profit POST-cambio
+	\draw[dashed] (2,4) -- (5.5,0.5);
+	\node[right] at (5.5,0.5){ZP};
+	
+	% Curva WS - wage setting POST-cambio
+	\draw[dashed] (0.5,1.5) -- (4,5);
+	\node[right] at (4,5){$\text{WS}_1$};
+	
+	% Theta de equilibrio post-cambio
+	\draw[dashed] (2.5,3.5) -- (2.5,0);
+	\node[right] at (2.5,-0.3){$\theta_1$};
+	
+	% Curva de Beveridge
+	\draw[-] (6.5,4) to [out=280, in=170](10,0.5);
+	
+	% Tensión de equilibrio como pendiente de rayo desde origen POST-CAMBIO
+	\draw[dashed] (6,0) -- (9,4);
+	\draw[dashed] (7.43,1.9) -- (7.43,0);
+	\node[below] at (7.43,0){$U^*$};
+	\node[right] at (9,4){$\theta_1$};
+	
+	% Tensión de equilibrio como pendiente de rayo desde origen Pre-CAMBIO
+	\draw[-] (6,0) -- (10,3);
+	\draw[dashed] (7.91,1.4) -- (7.91,0);
+	\node[below] at (7.96,0){$U_0$};
+	\node[right] at (10,3){$\theta_0$};
+\end{dibujo}
+
+\begin{dibujo}{4}{Efecto de un aumento del subsidio de desempleo o del poder de negociación de los trabajadores en el salario, la tensión y el desempleo de equilibrio.}{}{}{aumentosubsidio}
+	% ejes para WS-ZP
+	\draw[-] (0,4) -- (0,0) -- (4,0);
+	\node[left] at (0,4){$w$};
+	\node[below] at (4,0){$\theta$};
+	
+	% ejes para BV y theta
+	\draw[-] (6,4) -- (6,0) -- (10,0);
+	\node[left] at (6,4){$v$};
+	\node[below] at (10,0){$u$};
+	
+	% Curva ZP - zero-profit
+	\draw[-] (0.5,4) -- (4,0.5);
+	\node[right] at (4,0.5){ZP};
+	
+	% Curva WS - wage setting PRE-cambio
+	\draw[-] (0.5,0.5) -- (4,4);
+	\node[right] at (4,4){$\text{WS}_0$};
+	
+	% Theta de equilibrio pre-cambio
+	\draw[dashed] (2.25,2.25) -- (2.25,0);
+	\node[below] at (2.25,0){$\theta_0$};
+	
+	% Curva WS - wage setting POST-cambio
+	\draw[-,dashed] (0.5,2) -- (4,5.5);
+	\node[right] at (4,5.5){$\text{WS}_1$};
+	
+	% Theta de equilibrio post-cambio
+	\draw[dashed] (1.5,2.95) -- (1.5,0);
+	\node[below] at (1.5,0){$\theta_1$};
+
+	% Curva de Beveridge
+	\draw[-] (6.5,4) to [out=280, in=170](10,0.5);
+	
+	% Tensión de equilibrio como pendiente de rayo desde origen PRE-CAMBIO
+	\draw[-] (6,0) -- (9,4);
+	\draw[dashed] (7.43,1.9) -- (7.43,0);
+	\node[below] at (7.43,0){$U_0$};
+	\node[right] at (9,4){$\theta_0$};
+
+	% Tensión de equilibrio como pendiente de rayo desde origen POST-CAMBIO
+	\draw[dashed] (6,0) -- (10,3);
+	\draw[dashed] (7.91,1.4) -- (7.91,0);
+	\node[below] at (7.96,0){$U_1$};
+	\node[right] at (10,3){$\theta_1$};
+\end{dibujo}
+
+
+\begin{dibujo}{4}{Efecto de un aumento de la tasa de destrucción de empleo sobre salario, tensión y desempleo de equilibrio.}{}{}{aumentodestruccion}
+	% ejes para WS-ZP
+	\draw[-] (0,4) -- (0,0) -- (4,0);
+	\node[left] at (0,4){$w$};
+	\node[below] at (4,0){$\theta$};
+	
+	% ejes para BV y theta
+	\draw[-] (6,4) -- (6,0) -- (10,0);
+	\node[left] at (6,4){$v$};
+	\node[below] at (10,0){$u$};
+	
+	% Curva ZP - zero-profit PRE-cambio
+	\draw[-] (0.5,4) -- (4,0.5);
+	\node[right] at (4,0.5){$\text{ZP}_0$};
+	
+	% Curva ZP - zero-profit POST-cambio
+	\draw[dashed] (0.5,2.5) -- (2.5,0.5);
+	\node[right] at (2.5,0.5){$\text{ZP}_1$};
+
+	% Curva WS - wage setting PRE-cambio
+	\draw[-] (0.5,0.5) -- (4,4);
+	\node[right] at (4,4){$\text{WS}_0$};
+	
+	% Theta de equilibrio pre-cambio
+	\draw[dashed] (2.25,2.25) -- (2.25,0);
+	\node[below] at (2.25,0){$\theta_0$};
+	
+	% Theta de equilibrio post-cambio
+	\draw[dashed] (1.5,1.5) -- (1.5,0);
+	\node[below] at (1.5,0){$\theta^*$};
+	
+	% Curva de Beveridge PRE-cambio
+	\draw[-] (6.5,4) to [out=280, in=170](10,0.5);
+	\node[right] at (10,0.5){$\text{BV}_0$};
+
+	% Tensión de equilibrio como pendiente de rayo desde origen PRE-CAMBIO
+	\draw[-] (6,0) -- (9,4);
+	\draw[dashed] (7.43,1.9) -- (7.43,0);
+	\node[below] at (7.43,0){$U_0$};
+	\node[right] at (9,4){$\theta_0$};
+	
+	% Tensión de equilibrio como pendiente de rayo desde origen intermedio POST-CAMBIO
+	\draw[dashed] (6,0) -- (10,3);
+	\draw[dashed] (7.91,1.4) -- (7.91,0);
+	\node[below] at (7.96,0){$U_0'$};
+	\node[right] at (10,3){$\theta^*$};
+
+	% Tensión de equilibrio como pendiente de rayo desde origen definitivo POST-CAMBIO
+	\draw[dashed] (8.49,1.85) -- (8.49,0);
+	\node[below] at (8.55,0){$U_1$};
+	
+	% Curva de Beveridge POST-cambio
+	\draw[dashed] (7,4.5) to [out=280, in=170](10.5,1);
+	\node[right] at (10.5,1){$\text{BV}_1$};
+\end{dibujo}
+
+
+\begin{dibujo}{4}{Efecto de una mejora en la función de matching como resultado de políticas activas de empleo más efectivas.}{}{}{politicasactivas}
+	% ejes para WS-ZP
+	\draw[-] (0,4) -- (0,0) -- (4,0);
+	\node[left] at (0,4){$w$};
+	\node[below] at (4,0){$\theta$};
+	
+	% ejes para BV y theta
+	\draw[-] (6,4) -- (6,0) -- (10,0);
+	\node[left] at (6,4){$v$};
+	\node[below] at (10,0){$u$};
+	
+
+	% Curva WS - wage setting PRE-cambio
+	\draw[-] (0.5,0.5) -- (4,4);
+	\node[right] at (4,4){$\text{WS}_0$};
+	
+	% Curva ZP - zero-profit PRE-cambio
+	\draw[-] (0.5,2.5) -- (2.5,0.5);
+	\node[left] at (2.5,0.5){$\text{ZP}_0$};
+	
+	% Curva WS - wage setting POST-cambio
+	\draw[dashed] (1.5,0.5) -- (5,4);
+	\node[right] at (5,4){$\text{WS}_1$};
+
+	% Curva ZP - zero-profit POST-cambio
+	\draw[dashed] (0.5,4) -- (4,0.5);
+	\node[right] at (4,0.5){$\text{ZP}_1$};
+
+	% Theta de equilibrio pre-cambio
+	\draw[-] (1.5,1.5) -- (1.5,0);
+	\node[below] at (1.5,0){$\theta_0$};
+	
+	% Theta de equilibrio post-cambio
+	\draw[dashed] (2.75,1.75) -- (2.75,0);
+	\node[below] at (2.75,0){$\theta_1$};
+	
+	% Salario de equilibrio post-cambio
+	\draw[dashed] (0,1.75) -- (2.75,1.75);
+	\node[left] at (0,1.75){$w_1$};
+	
+	
+	% Curva de Beveridge POST-cambio
+	\draw[dashed] (6.5,4) to [out=280, in=170](10,0.5);
+	\node[right] at (10,0.5){$\text{BV}_1$};
+	
+	% Tensión de equilibrio como pendiente de rayo desde origen POST-CAMBIO
+	\draw[-] (6,0) -- (9,4);
+	\draw[dashed] (7.43,1.9) -- (7.43,0);
+	\node[below] at (7.43,0){$U_1$};
+	\node[right] at (9,4){$\theta_1$};
+	
+	% Tensión de equilibrio como pendiente de rayo desde origen intermedio POST-CAMBIO
+	\draw[dashed] (6,0) -- (10,3);
+	\draw[dashed] (7.91,1.4) -- (7.91,0);
+	\node[below] at (7.96,0){$U_0'$};
+	\node[right] at (10,3){$\theta_0$};
+	
+	% Tensión de equilibrio como pendiente de rayo desde origen definitivo PRE-CAMBIO
+	\draw[dashed] (8.49,1.85) -- (8.49,0);
+	\node[below] at (8.55,0){$U_0$};
+	
+	% Curva de Beveridge PRE-cambio
+	\draw[-] (7,4.5) to [out=280, in=170](10.5,1);
+	\node[right] at (10.5,1){$\text{BV}_0$};
+\end{dibujo}
+
+\preguntas
+
+\notas
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+	\item adjustment costs
+	\item Beveridge curve
+	\item involuntary unemployment
+	\item labour economics
+	\item labour economics (new perspective)
+	\item labour market search
+	\item labour supply
+	\item layoffs
+	\item matching
+	\item Mortensen, Dale T. (Born 1939)
+	\item Pissarides, Christopher (Born 1948)
+	\item search models of unemployment
+	\item search theory
+	\item search theory (new perspectives)
+	\item underemployment equilibria
+	\item unemployment insurance
+\end{itemize} 
+
+Survey de Georgetown en carpeta del tema
+
+Albrecht, J. \textit{The 2010 Nobel Memorial Prize in Search Theory} (2011) Georgetown University -- En carpeta del tema
+
+Cahuc, P.; Zylberberg, A. \textit{Labor Economics} (2004) Ch. 1--Ch. 4
+
+Hamermesh, D. S. (1995) \textit{Labour Demand and the Source of Adjustment Costs} The Economic Journal, Vol. 105, No. 430 -- En carpeta del tema
+
+Heijdra, B. J. \textit{Foundations of Modern Macroeconomics} (2017) 3rd ed. -- En carpeta Macro
+
+Romer, D. \textit{Advanced Microeconomics} (2011) Ch. 10 -- Unemployment
+
+Smith, S. \textit{Labour Economics, 2nd Edition} (2003) 2nd Edition -- En carpeta del tema
+
+Shimer, R. \textit{The Diamond-Mortensen-Pissarides contribution to Economics} University of Chicago -- En carpeta del tema
+
+\end{document}

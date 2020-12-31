@@ -1,0 +1,334 @@
+%%%% TO DO:
+% Arreglar páginas índice
+% Arreglar enlaces a secciones
+% Extraer esquemas
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{oposicion}[2014/08/24 Example LaTeX package]
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{savesym}
+\usepackage{pdflscape}
+\usepackage{psfrag}
+
+\usepackage{colortbl}
+
+\usepackage{multirow}
+
+\usepackage{adforn}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage[explicit]{titlesec}
+\usepackage{adjustbox}
+\usepackage{titling}
+
+\usepackage{microtype}
+
+\usepackage{outlines}
+
+\usepackage[table]{xcolor}
+\usepackage{cancel}
+
+% REPRESENTACIONES GRÁFICAS
+\usepackage{tikz}
+
+\usetikzlibrary{decorations.pathreplacing,angles,quotes}
+\usetikzlibrary{arrows.meta,calc,decorations.markings,math,arrows.meta}
+
+\usetikzlibrary{patterns}
+
+\usepackage{xparse}
+\newcommand{\rgcaption}[1]{ {\small \RG\;: \textit{#1}}}
+\newcommand{\rgcaptioneq}{Yes}
+\newcounter{rgcounter}
+\stepcounter{rgcounter}
+
+% tabla args: {Caption} {labelref}
+\NewDocumentEnvironment{tabla}{m m}
+	{
+    \label{fig:#2}
+	\renewcommand{\rgcaptioneq}{\\ \rgcaption{#1}}
+%	\begin{center}
+	}
+	{
+	%\bigskip
+    \rgcaptioneq
+%    \end{center}
+	}
+
+% tablanc args: {Caption} {labelref}
+\NewDocumentEnvironment{tablanc}{m m}
+{
+	\label{fig:#2}
+	\renewcommand{\rgcaptioneq}{\\ \rgcaption{#1}}
+	%\begin{center}
+	}
+	{
+		%\bigskip
+		\rgcaptioneq
+	%\end{center}
+}
+
+\newenvironment{rg}[2]
+    {
+    \renewcommand{\rgcaptioneq}{\rgcaption{#1}}
+    \begin{center}
+    \begin{tikzpicture}[xscale=#2]
+    }
+    {
+    \end{tikzpicture}\\
+    \rgcaptioneq
+    \end{center}
+    }
+
+% axis args: [*: show grid]{SIZE: (n)} {Caption} {X-axis caption} {Y-axis caption} {labelref} [xscale] [xsize]
+\NewDocumentEnvironment{axis}{s m m m m m O{1} O{4} }
+    {
+    	
+        \label{fig:#6}
+    \begin{rg}{#3}{#7}
+        \IfBooleanTF{#1}{\draw [help lines](0,0) grid (#8,#2);}{}
+        \draw[-] (0,#2) -- (0,0) -- (#8,0);
+        \node[below right] at (#2,0) {#4};
+        \node[left, align=left] at (0, #2) {#5};
+    }
+    {
+    \end{rg}
+
+    }
+% axis args: [*: show grid]{Size}{Caption}{x-axis caption}{y-axis caption}[xsize]
+
+\NewDocumentEnvironment{axisa}{s m m m m O{4}}
+{
+	
+	
+	\begin{tikzpicture}
+	%     \IfBooleanTF{#1}{\draw [help lines](0,0) grid (#8,#2);}{}
+	\draw[-] (0,#2) -- (0,0) -- (#6,0);
+	\node[below right] at (#6,0) {#4};
+	\node[left, align=left] at (0, #2) {#5};
+}
+{
+	\end{tikzpicture} 	
+	\textbf{\\ #3}
+}
+
+% axis args: [*: show grid]{SIZE: (n)} {Caption} {X-axis caption} {Y-axis caption} {labelref} [xscale] [xsize]
+\NewDocumentEnvironment{dibujo}{s m m m m m O{1} O{4} }
+{
+	
+	\label{fig:#6}
+	\begin{rg}{#3}{#7}
+
+	}
+	{
+	\end{rg}
+	
+}
+
+
+%edgeworth args: [*: show grid]{SIZE: (n+2xn)} {Caption} [X: first good][Y: second good][A: first agent][B: second agent]
+\NewDocumentEnvironment{edgeworth}{s m m O{X} O{Y} O{A} O{B}}
+    {
+    \begin{rg}{#3}{#6}
+        \IfBooleanTF{#1}{\draw [help lines](0,0) grid (#2,#2);}{}
+        \draw(0,#2) -- (0,0) -- (#2+2,0);
+        \draw[-] (0,#2) -- (#2+2,#2) -- (#2+2,0);
+        \node[left] at (0,#2) {$#5_#6$};
+        \node[above right] at (0,#2) {$#4_#7$};
+        \node[below left] at (#2+2,0) {$#4_#6$};
+        \node[right] at (#2+2,0) {$#5_#7$};
+    }
+    {
+    \end{rg}
+    }
+
+
+% comando para insertar referencia a gráfica en los esquemas largos
+% sigue siendo necesario escribir en \graficas las graficas en orden de aparición
+% en el esquema largo, pero permite no tener en cuenta la numeración en el esquema
+\newcounter{rgesquemacounter}
+%\stepcounter{rgcounter}
+\newcommand{\grafica}[1]{ \hyperref[fig:#1]{Gráfica \Roman{rgcounter}} \stepcounter{rgcounter}}
+
+% FIRASANS
+\usepackage{FiraSans}
+
+% FOURIER
+\usepackage{fourier}
+
+% TIMES NEW ROMAN
+%\savesymbol{iint}
+%\savesymbol{openbox}
+%\usepackage{txfonts}
+%\usepackage[T1]{fontenc}
+%\restoresymbol{TXF}{iint}
+%\restoresymbol{TXF}{openbox}
+
+% TABLA DE CONTENIDOS
+\usepackage{tocloft}
+\setlength{\cftbeforepartskip}{1ex}
+\setlength{\cftbeforesecskip}{.8ex}
+\setlength{\cftbeforesubsecskip}{.4ex}
+\setlength{\cftsecindent}{1cm}
+\setlength{\cftsubsecindent}{2cm}
+\setlength{\cftpartnumwidth}{5em}
+\renewcommand{\cftpartfont}{\firamedium}
+\renewcommand{\cfttoctitlefont}{\Large \firamedium}
+\renewcommand{\cftaftertoctitle}{\firamedium \hfill Página}
+\renewcommand{\cftsubsecdotsep}{\cftnodots}
+
+% OTROS PAQUETES
+\usepackage{graphicx}
+%\usepackage{lmodern}
+\usepackage{enumitem, color, amssymb}
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage[fit]{truncate}
+
+\author{Miguel Fabián Salazar}
+
+% MACROS ÚTILES DE FORMATO
+
+\newcommand{\marcar}[1]{ \colorbox{black}{\color{white} #1}} % marcar con fondo negro y texto blanco. Usar en títulos nivel \1 
+
+\newcommand{\concepto}[1]{\bigskip \bigskip
+	{\large \textbf{#1}} \\ }
+
+\newcommand{\Lim}[1]{\raisebox{0.5ex}{\scalebox{0.8}{$\displaystyle \lim_{#1}\;$}}}
+
+\newcommand{\argmax}[1]{\underset{#1}{\operatorname{arg}\,\operatorname{max}}\;}
+
+\newcommand{\ubar}[1]{\b{$#1$}}
+
+\newcommand{\notatema}[1]{\renewcommand{\maketitlehookd}{\footnote{#1}}}
+
+\newcommand{\then}{\Rightarrow}
+
+\usepackage[most]{tcolorbox}
+\usepackage{empheq}
+\newtcbox{\mymath}[1][]{%
+    nobeforeafter, math upper, tcbox raise base,
+    enhanced, colframe=blue!30!black,
+    colback=blue!30, boxrule=1pt,
+    #1}
+
+\newcommand{\resultado}[1]{\begin{empheq}[box={\mymath[colback=red!30,drop lifted shadow, sharp corners]}]{equation*}
+    #1
+\end{empheq}}
+\newcommand{\dv}[2]{\dfrac{\text{d} \, #1}{\text{d} \, #2}}
+\newcommand{\pdv}[2]{\dfrac{\partial \, #1}{\partial \, #2}}
+\newcommand{\RG}{%
+    \colorlet{currentcolor}{.}%
+    {\color{red}%
+    \fbox{\color{currentcolor} \textbf{Figura \Roman{rgcounter}}}}%
+    \stepcounter{rgcounter}
+}
+
+\newcommand{\clave}[1] {\textbf{#1}}
+\newcommand{\comillas}[1]{\textit{``#1''}}
+\newcommand{\obra}[1]{\comillas{#1}}
+\newcommand\sinromper{\par\nobreak\@afterheading} 
+
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newenvironment{enumroman}{\begin{enumerate}[label=\Roman*]}{\end{enumerate}}
+\newenvironment{supuestos}{Los \clave{supuestos} del modelo son: \begin{enumerate}[label=\Roman*]}{\end{enumerate}}
+\newtheorem*{definicion}{Definici\'{o}n}
+
+\newenvironment{relacion}{\begin{equation*}\begin{aligned}}{\end{aligned} \end{equation*}}
+\newcommand{\rt}{\quad \rightarrow \quad}
+\newcommand{\lt}{\quad \leftarrow \quad}
+\newenvironment{ecuacion}{\begin{equation*}\begin{aligned}}{\end{aligned} \end{equation*}}
+
+\NewDocumentEnvironment{opcional}{s}{
+\marginpar{Opcional} \small \color{blue}
+\medskip
+}
+{
+\normalsize \color{black}
+\medskip
+}
+
+
+% mirar aquí http://tex.stackexchange.com/questions/172452/caption-for-align-environment
+\NewDocumentEnvironment{ecucap}{s m}
+{
+\begin{figure}
+\[
+}
+{
+\]
+\caption{#1}
+\end{figure}
+}
+
+% Se usan como entornos. En el primer argumento, el título de la duda/bloque opcional.
+
+\usepackage[most]{tcolorbox}
+\definecolor{darkseagreen}{rgb}{0.56, 0.74, 0.56}
+\definecolor{block-gray}{gray}{0.85}
+\definecolor{britishracinggreen}{rgb}{0.0, 0.26, 0.15}
+
+\newtcolorbox{opcionalb}[2]{colback=block-gray,grow to right by=-10mm,grow to left by=-10mm, boxrule=0pt,boxsep=5pt,breakable,fonttitle=\firamedium, title=\textbf{Opcional:} #1}
+
+\newtcolorbox{duda}[2]{colbacktitle=red, colback=block-gray,grow to right by=-10mm,grow to left by=-10mm, boxrule=0pt,boxsep=5pt,breakable,fonttitle=\firamedium, title=\textbf{Duda:} #1}
+
+\newtcolorbox{explicacion}[2]{colbacktitle=britishracinggreen, colback=darkseagreen,grow to right by=-10mm,grow to left by=-10mm, boxrule=0pt,boxsep=5pt,breakable,fonttitle=\firamedium, title=\textbf{Explicación:} #1}
+
+\newcommand\hcancel[2][black]{\setbox0=\hbox{$#2$}%
+    \rlap{\raisebox{.50\ht0}{\textcolor{#1}{\rule{\wd0}{1pt}}}}#2} 
+
+
+% CONTABILIDAD
+\usepackage{longtable}
+
+\newenvironment{cuentat2}[1]%
+{%
+\begin{longtable}[c]{cc|cc}
+\multicolumn{4}{c}{#1} \\ \hline
+%% Line to fix widths
+(99) & \makebox[2.5cm][r]{} & \makebox[2.5cm][r]{} & (99) \\ \kill
+}%
+{
+\end{longtable}
+}
+
+\newenvironment{cuentat}[2]{
+\begin{center}
+\begin{tabular}{l|l}
+    \centering \textbf{#1}  &\textbf{#2} \\ 
+    \hline
+}  
+{ \end{tabular} \end{center}}
+
+\newenvironment{cuentanacional}
+{\begin{cuentat}{Empleos}{Recursos}}
+{\end{cuentat}}
+
+\newcommand{\saldo}{\cline{1-1}}
+
+%% HIPERVÍNCULOS
+%\usepackage{hyperref}
+%\hypersetup{
+%	pdfpagelabels=false,
+%	pdfpagelabels=false,
+%	hyperindex=false,
+%	colorlinks,
+%	citecolor=black,
+%	filecolor=black,
+%	linkcolor=black,
+%	urlcolor=black
+%}
+
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}

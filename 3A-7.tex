@@ -1,0 +1,891 @@
+\documentclass{nuevotema}
+
+\tema{3A-7}
+\titulo{Teoría de la elección del consumidor en situaciones de riesgo e incertidumbre.}
+
+\begin{document}
+
+\ideaclave
+
+La microeconomía tiene como objetivo principal modelizar el comportamiento de los agentes microeconómicos de forma que éste pueda ser explicado y predicho. El comportamiento se reduce en último término a la toma de decisiones entre alternativas. Estas alternativas conducen a resultados que pueden ser conocidos con certeza de antemano, o no. Cuando no son conocidos hablamos de incertidumbre y la modelización de la decisión en estas condiciones tiene características peculiares. 
+
+Esa incertidumbre respecto a los resultados de las decisiones puede ser objetiva o subjetiva. Cuando la incertidumbre es objetiva se denomina generalmente como riesgo. Es objetiva, porque depende del objeto, no del sujeto: las probabilidades de cada estado de la naturaleza son perfectamente conocidas y dependen de la lotería en cuestión, no del agente decisor. Por ejemplo, la incertidumbre asociada al resultado del lanzamiento de una moneda es objetiva: una moneda tiene dos caras y sólo una de ellas aparece boca arriba tras lanzarla al aire (asumiendo evidentemente que la probabilidad de que caiga de canto es despreciable). La palabra riesgo procede del veneciano \comillas{rischio}. Los \comillas{rischios} eran protuberancias rocosas a la entrada de los puertos que hundían barcos con una probabilidad estimable de antemano. Contrapuestas a estas situaciones en las que la probabilidad es subjetiva y en las que existe, por tanto, riesgo, se encuentran los contextos de incertidumbre. Knight (1920) fue pionero en distinguir entre riesgo e incertidumbre. Es habitual sin embargo utilizar el término incertidumbre para referirse a ambos fenómenos cuando no se pretende distinguir explícitamente.
+
+La Teoría de la Utilidad Esperada fue la primera aplicación del modelo de decisión neoclásico --que empezaba a concretarse en la primera mitad del siglo XX- a la elección bajo incertidumbre. Von Neumann y Morgenstern desarrollaron los pilares en los que sostendrían posteriormente las finanzas modernas, el equilibrio general de Arrow-Debreu o la modelización de fenómenos como la selección adversa o el riesgo moral. Así, establecieron la existencia de una función de representación en el espacio real de una relación de preferencia en base a dos axiomas de carácter normativo pero aceptables en general: independencia y continuidad. Apenas unos años después, Savage aportó a la teoría de la utilidad esperada el análisis con probabilidades subjetivas, que generalizaba el modelo de Von Neumann-Morgenstern para contextos en los que los agentes no conocen las distribuciones objetivas de probabilidad de los diferentes resultados posibles. El modelo de Savage establece las condiciones que debe cumplir la relación de preferencia entre actas (funciones que relacionan el conjunto de estados de la naturaleza con el de resultados posibles --o equivalentemente, variables aleatorias-) para que el agente se comporte como si estuviese estimando implícitamente una probabilidad para cada estado de la naturaleza. Es decir, para que existan probabilidades \textit{subjetivas}. 
+
+Casi inmediatamente después de la aparición del trabajo de Von Neumann y Morgenstern, el modelo de la Utilidad Esperada empezó a ser objeto de estudios empíricos que trataban de encontrar discordancias entre el comportamiento de agentes reales y lo predicho por el modelo. Las paradojas de Allais, Machina o Ellsberg abrieron un debate acerca de la capacidad predictiva del modelo, y lo apropiado de su uso en un número creciente de trabajos. El debate conectaba en gran medida con la controversia de los supuestos, a la que Milton Friedman realizaría su aportación en su trabajo \obra{Ensayos de Economía Positiva}. Como fruto de este debate y desde un campo hasta el momento tangencialmente conectado con la economía, la psicología, Kahneman y Tversky publican en 1979 el trabajo seminal del llamado \textit{behavioral economics} o economía conductista (trabajo por el que Kahneman recibió en 2002 el Premio Nobel. Tversky había fallecido para entonces). Esta rama de la teoría de la decisión enfoca sus esfuerzos en la explicación de comportamientos humanos que se desvían sistemáticamente de lo predicho por la teoría de la Utilidad Esperada. Aunque algunos de sus desarrollos han avanzado notablemente la comprensión de los procesos de decisión, el coste en términos de tratabilidad y fragmentación de los modelos ha resultado a menudo prohibitivo. En 2017, Richard Thaler recibe el premio Nobel de economía por su trabajo en el área del behavvioral economics. Sus contribuciones teóricas y empíricas (algunas de ellas conjuntamente con Kahneman y Tversky) exploran las regularidades del comportamiento de los agentes en las finanzas, y ponen de manifiesto la importancia del marco en el que se planteen las decisiones entre diferentes activos financieros.
+
+Si bien la Teoría de la Utilidad Esperada no es capaz en muchas ocasiones de predecir qué decisiones tomarán agentes reales concretos, sí constituye una referencia básica a la hora de determinar qué decisión \text{deberán} tomar. De esta forma, adquiere una dimensión normativa que sobrepasa la dimensión positiva inicial y asume contenido normativo. Así, parece razonable pensar que en la medida en que los agentes estén plenamente informados y estén dispuestos a asumir el coste de utilizar esa información para tomar decisiones racionales, se comportarán siguiendo en muchos casos los dictados de la Teoría de la Utilidad Esperada.
+
+\seccion{Preguntas clave}
+\begin{itemize}
+    \item ¿Qué es el riesgo?
+    \item ¿Qué es la incertidumbre?
+    \item ¿Qué modelos de decisión bajo incertidumbre existen?
+    \item ¿Cómo deciden los agentes bajo riesgo o incertidumbre?
+    \item ¿Existe una forma ``correcta'' de tomar decisiones bajo incertidumbre?
+    \item ¿Para qué se utilizan los modelos de decisión bajo incertidumbre?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción} 3-3
+		\2 Contextualización
+			\3 Decisiones agentes económicos
+			\3 Decisión bajo incertidumbre
+		\2 Objeto
+			\3 Cómo decidir bajo incertidumbre
+			\3 Cómo se decide bajo incertidumbre
+			\3 Qué limitaciones de los modelos
+			\3 Qué aplicaciones
+		\2 Estructura
+			\3 Teoría de la Utilidad Esperada
+			\3 Otras teorías
+	\1 \marcar{Teoría de la Utilidad Esperada} 20-23
+		\2 Idea clave
+			\3 Modelo básico
+			\3 Representación de preferencias
+			\3 Importancia
+		\2 Formulación
+			\3 Axiomas y definiciones
+			\3 Teorema de la Utilidad Esperada
+			\3 Loterías monetarias
+		\2 Implicaciones
+			\3 Aversión al riesgo
+			\3 Dominancia estocástica
+		\2 Variaciones
+			\3 Utilidad subjetiva
+			\3 Utilidad dependiente del estado
+		\2 Valoración
+			\3 Aplicaciones
+			\3 Paradojas
+	\1 \marcar{Otros modelos de elección en incertidumbre} 5-28
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivos
+			\3 Resultados
+		\2 Desviaciones persistentes
+			\3 Efecto marco / framing effect
+			\3 Preferencias no lineales
+			\3 Dependencia del origen de la incertidumbre
+			\3 Preferencia por el riesgo
+			\3 Aversión a la pérdida
+		\2 Racionalidad limitada
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Valoración
+		\2 Reglas heurísticas y sesgos -- Kahneman y Tversky (1974)
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Valoración
+		\2 Prospect theory
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Valoración
+		\2 Behavioral finance
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Valoración
+		\2 Nudges/empujones -- Thaler
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Valoración
+		\2 Valoración
+			\3 Implicaciones generales
+			\3 Críticas
+			\3 Conjetura de Becker
+	\1[] \marcar{Conclusión} 2-30
+		\2 Recapitulación
+			\3 Teoría de la Utilidad Esperada
+			\3 Otras
+		\2 Idea final
+			\3 Primera aproximación: UE
+			\3 Anomalías: otras teorías
+			\3 Normatividad vs descripción de realidad
+			\3 Campo fértil investigación
+
+\end{esquema}
+
+\esquemalargo
+
+\begin{esquemal}
+	\1[] \marcar{Introducción} 3-3
+		\2 Contextualización
+			\3 Decisiones agentes económicos
+				\4 Objetivo de la microeconomía:
+				\4 Explicar
+				\4 Predecir
+			\3 Decisión bajo incertidumbre
+				\4 Decisiones tienen consecuencias inciertas
+				\4 ¿Proceso de decision en este caso?
+		\2 Objeto
+			\3 Cómo decidir bajo incertidumbre
+			\3 Cómo se decide bajo incertidumbre
+			\3 Qué limitaciones de los modelos
+			\3 Qué aplicaciones
+		\2 Estructura
+			\3 Teoría de la Utilidad Esperada
+				\4 Idea clave
+				\4 Desarrollo
+				\4 Variaciones
+				\4 Valoración
+			\3 Otras teorías
+	\1 \marcar{Teoría de la Utilidad Esperada} 20-23
+		\2 Idea clave
+			\3 Modelo básico
+				\4 Primera aproximación general
+				\4 Base de numerosas áreas
+			\3 Representación de preferencias
+				\4 Por función continua en $\mathbb{R}$
+				\4 Existencia requiere axiomas:
+				\4[] Independencia
+				\4[] Continuidad
+				\4 Ponderación de utilidades de los outcomes
+				\4[] Por probabilidad
+			\3 Importancia
+				\4 Tratabilidad matemática
+				\4 Capacidad predictiva notable
+				\4 Enorme número de aplicaciones
+		\2 Formulación
+			\3 Axiomas y definiciones
+				\4 \underline{Conjunto X de resultados}
+				\4[] Exhaustivos e incompatibles entre sí
+				\4 \underline{Lotería simple}
+				\4[] Lista de probabilidades $(p_1, ..., p_N)$
+				\4[] Con soporte en X
+				\4[] Complejas $\rt$ simples
+				\4[] Conjunto $\mathcal{L}$ de loterías posibles
+				\4 \underline{Relación binaria $\succeq_{UE}$}
+				\4[] Definida sobre $\mathcal{L}$
+				\4[] Cumple cuatro axiomas
+				\4[Axioma I] \textit{Completitud}\footnote{El axioma de reflexividad puede derivarse del axioma de completitud.}
+				\4[] $\forall \, x, y \in \mathcal{L}: x \succeq y \quad \text{o} \quad y \succeq x$
+				\4[Axioma II] \textit{Transitividad}\footnote{La relación binaria $\succeq$ cumple el axioma de transitividad si para todo $x, y, z \in \mathcal{L}$ tal que $x \succeq y \succeq z$ se cumple que $x \succeq z$.}
+				\4[] $\forall \, x, y, z \in \mathcal{L}: \, x \succ y, \, y \succ z \then x \succ z$
+				\4[Axioma III] \textit{Independencia} %\footnote{La relación de preferencia $\succeq$ cumple el axioma de independencia si para todo $x, y, z \in \mathcal{L}$ y $\alpha \in (0,1)$ se cumple que:
+                    %\begin{equation}
+                    %x \succeq y \iff \alpha \cdot x + (1-\alpha) \cdot z \succeq \alpha \cdot y + (1-\alpha) \cdot z
+                    %\end{equation}
+                    
+                    %La idea es que la preferencia entre dos loterías es independiente de la preferencia sobre otras loterías en el conjunto $\mathcal{L}$, y por ello si \comillas{complementamos} dos loterías con una tercera, en las mismas proporciones, la relación de preferencia permanece constante.
+                %}
+				\4[] $\forall \, x, y, z \, \in X, \, \alpha \in (0,1):$
+				\4[] $x \succ y \then \alpha x + (1-\alpha) z \succ \alpha y + (1-\alpha) z$
+				\4[] Las preferencias entre dos loterías
+				\4[] $\to$ Son independientes de preferencias sobre otra
+				\4[] $\then$ Complementar con mismas proporciones no tiene efecto
+				\4[Axioma IV] \textit{Continuidad}
+				\4[] $\forall x, y \, \in \mathcal{L} \, / \, x \succ y \succ z:$
+				\4[] $\exists \, \alpha \, \in \, (0,1) \, / \, \alpha x + (1-\alpha) z \sim y$
+                
+%                \footnote{De acuerdo con Stanford Encyclopedia of Philosophy ( \url{https://plato.stanford.edu/entries/decision-theory/\#CarUti} ), una relación de preferencias es continua si para todos $a, b, c \in X$ tal que $a \succeq b \succeq c$ existe $p\in[0,1]$ tal que:
+%                	
+%                	\begin{equation}
+%                	\left\lbrace  pA, (1-p) C \right\rbrace \sim B
+%                	\end{equation}
+%
+%                	De acuerdo con Kreps (1992), la relación de preferencia $\succeq$ cumple el axioma de continuidad (o el axioma de Arquímedes) si dados $p, q, r \in X$ tal que $p \succeq q \succeq r$, existe $\alpha \in (0,1)$ tal que:
+%                \begin{equation}
+%                \alpha p + (1 - \alpha) r \succeq q 
+%                \end{equation} }
+            
+				\4 \underline{Función U de UEsperada de VNM}
+				\4[] Funcion de utilidad $U: \mathcal{L} \to \mathbb{R}$
+				\4[] Tiene forma VNM si es linear en las probabilidades:
+				\4[] $U(x) = u_1 p_1 + ... + u_N p_N$
+			\3 Teorema de la Utilidad Esperada
+				\4 $\succeq_{UE}$ cumple Axiomas I-IV
+				\4[] $\iff$
+				\4[] Existe $U: \mathcal{L} \rightarrow \mathbb{R}$ con forma VNM
+				\4[] Tal que: $\forall x, y \in \mathcal{L} / \, x \succeq y \iff U(x) \geq U(y)$
+			\3 Loterías monetarias
+				\4 El conjunto de resultados X es subconjunto de $\mathbb{R}$.
+				\4 Loterías: funciones de distribución\footnote{Una función de distribución $F: \mathbb{R} \to [0,1]$ sobre una variable continua $X$ describe la probabilidad de que la variable $X$ tome valores iguales o inferiores a x. Si existe una función de densidad, la función de distribución se define como $F(x) = \int_{-\infty}^x f(t) \text{dt}$. La función de distribución es más general que la función de densidad ya que no excluye a priori la posibilidad de un conjunto discreto de resultados (MWG, pág. 183).}
+				\4 \underline{Función de utilidad de Bernoulli}\footnote{Utilizando terminología de MWG y dada $U(x) = \int u(x) \, dF(x)$, U(x) se denomina como \comillas{función de utilidad esperada de von Neumann-Morgenstern} y u(x) como \comillas{función de utilidad de Bernoulli}.}
+				\4[] $u: \mathbb{R} \to \mathbb{R}$
+				\4[] $U(x) = \int_{-\infty}^{\infty} u(x) \, dF(x) = \int_{-\infty}^{\infty} u(x) \, f(x) dx $
+		\2 Implicaciones
+			\3 Aversión al riesgo
+				\4 Propiedad de f. de UE sobre loterías monetarias
+				\4 Captura preferencia por certidumbre
+				\4 Averso al riesgo si:
+				\4[] $\int_{-\infty}^{\infty} u(x) \, dF(x) \leq u \left( \int_{-\infty}^{\infty} x \, dF(x) \right)$
+				\4[] $\iff$ $u(x)$ es cóncava
+				\4 \underline{Equivalente de certidumbre} (EC)
+				\4[] Cantidad cierta que iguala utilidad de lotería dada
+				\4[] Más aversión a riesgo $\to$ Menor EC
+				\4[] Aversión al riesgo $\to$ $\text{EC} < E(x)$
+				\4[] \grafica{equivalentecertidumbre}
+				\4 \underline{Prima de riesgo}
+				\4[] Diferencia entre esperanza de lotería y EC
+				\4[] Más aversión a riesgo $\Rightarrow$ Mayor PR
+				\4[] \grafica{primaderiesgo}
+				\4 \underline{Coef. de aversión absoluta al riesgo/Arrow--Pratt}%\footnote{También conocido como coeficiente de aversión al riesgo de Arrow-Pratt.}
+				\4[] Aversión a variaciones absolutas de riqueza\footnote{La evidencia empírica muestra que la aversión absoluta al riesgo tiende a decrecer con la renta recibida.}
+				\4[] \fbox{$r_A(x) = - \frac{u''(x)}{u'(x)}$}
+				\4[] Función CARA:
+				\4[] $\to$ $U(x) = -\alpha e^{-\alpha x} + \beta$
+				\4[] $\then$ Aversión absoluta al riesgo es constante
+				\4 \underline{Coef. de aversión al riesgo relativa}
+				\4[] Preferencia por certidumbre ante variaciones riqueza relativa
+				\4[] \fbox{$r_R(x) = - x \frac{u''(x)}{u'(x)}$}
+				\4[] Función CRRA:
+				\4[] $\to$ $u(x) = \dfrac{x^{1-\theta}-1}{1-\theta}$, $u'(x) = x^{-\theta}$, $u''(x) = -\theta x^{-\theta - 1}$
+				\4[] $\then$ $r_R(x) = \theta$
+				\4[] $\then$ Aversión relativa al riesgo es constante
+				\4[] $\then$ ESI es inversa de $r_R$: $\sigma = \frac{1}{\theta}$
+			\3 Dominancia estocástica
+				\4 Mínimos supuestos sobre funciones de UEs.
+				\4[] ¿Qué loterías son preferidas?
+				\4[] $\to$ Aquellas con mayor $U(\cdot)$
+				\4[] $\Rightarrow F \succeq G$ si $\int_{-\infty}^\infty u(x) \, dF(x) \geq \int_{-\infty}^\infty u(x) \, dG(x)$
+				\4 ¿Cuando sucede?
+				\4[] ¿Qué características tienen loterías preferidas?
+				\4 \underline{Dominancia de 1er grado}
+				\4[] Se cumple si $F(x) \leq G(x) \; \forall x$
+				\4[] \grafica{domprimergrado}
+				\4 \underline{Dominancia de 2o grado}
+				\4[] Asumiendo F y G misma media
+				\4[] Asumiendo aversión al riesgo
+				\4[] F domina a G si:
+				\4[] $\to$  $G(x)$ es una \textit{mean-preserving spread}\footnote{Una \textit{mean-preserving spread} de una lotería x es una lotería y resultado de añadir a cada realización de x el resultado de una variable aleatoria z con E(z) = 0. Es decir, una MPS es el resultado de añadir \comillas{ruido} manteniendo la media de la distribución.}
+				\4[] $\to$ Se cumple: $\int_0^t G(x) \, dx \geq \int_0^t F(x) \, dx \; \forall \, t$
+				\4[] $\to$ Con al menos un $x$ que induzca $>$ y no $\geq$
+		\2 Variaciones
+			\3 Utilidad subjetiva\footnote{Modelo de Savage (1954), Anscombe y Aumann (1963).}
+				\4 Agente no conoce probabilidades
+				\4 Espacio de estados de la naturaleza S
+				\4 Espacio de resultados $\mathbb{R}$
+				\4 Espacio de variables aleatorias $G = \{ g: S \to \mathbb{R} \}$\footnote{También denominadas ``actas'' (\textit{acts}).}
+				\4 Relación de preferencia $\succeq_S$ sobre espacio G
+				\4 Ejemplo:
+				\4[] Carreras de caballos
+				\4[] Apuesta es acta:
+				\4[] $\to$ Asigna resultados a vars. aleatorias
+				\4[] Agentes desconocen probabilidades
+				\4[] Si prefs. sobre apuestas cumplen I-IV
+				\4[] $\to$ Existe dist. de prob. que racionaliza
+				\4 \underline{Teorema UE subjetiva}
+				\4[] $\succeq_S$ cumple axiomas I-IV $\Rightarrow$
+				\4[] $\exists \, (\pi_1, ..., \pi_S)$ única:
+				\4[] $x \succeq_S x' \iff (x_1, ..., x_S) \succeq_S (x'_1,...,x'_s) \iff \sum_s \pi_S u(x_s) \geq \sum_s \pi_s u(x_s')$\footnote{Siendo $(x_1, ..., x_S)$ la lista de resultados asociados a cada estado de la naturaleza del conjunto S.}
+				\4 {Doctrina de Harsanyi}
+				\4[] Mismo conjunto de información
+				\4[] $\iff$
+				\4[] = probs. subjetivas\footnote{Controvertido. Ver Kreps.}
+			\3 Utilidad dependiente del estado
+				\4 Generalización del modelo
+				\4 F. de Bernoulli por cada $s \in S$
+				\4 Aplicaciones
+				\4[] Mismo pago monetario puede generar distinta utilidad
+				\4[] $\to$ En función del estado de la naturaleza
+				\4 Ejemplo:
+				\4[] Ganar 1 M de euros no genera la misma utilidad
+				\4[] $\to$ Si es resultado de ganar euromillón
+				\4[] $\to$ Si es indemnización por quedar paralítico
+		\2 Valoración
+			\3 Aplicaciones
+				\4 {Paradoja de San Petersburgo}
+				\4[] Si f.u. de Bernoulli no está acotada por arriba
+				\4[] Existen lotería tal que $E\left( U(x) \right) = +\infty$
+				\4[] Ej. $2^n$, n=cruces/caras
+				\4 {Mercados de seguros}\footnote{Ver pág. 187 de MWG.}
+				\4[] Agente averso al riesgo:
+				\4[] Objetivo: eliminar dispersión de resultados
+				\4[] $\then$ seguro completo
+				\4[] $\underset{\alpha}{\max} \; (1-\pi)u(w-\alpha q) + \pi u(w - \alpha q - L + \alpha)$
+				\4[] $s.a: \quad q = \pi$
+				\4[] Donde:
+				\4[] $\pi$: probabilidad de pérdida
+				\4[] $w$: riqueza inicial
+				\4[] $\alpha$: cantidad asegurada
+				\4[] $q$: coste de asegurar una unidad
+				\4[] Precio actuarialmente justo: $q=\pi$
+				\4[] $\to$ precio asegurar 1 ud. = probabilidad de pérdida: $q=\pi$
+				\4[] $\then$ CPO: $\alpha^* = L$
+				\4 {Teoría de juegos}
+				\4 {Arrow-Debreu}
+				\4 {Selección adversa}
+				\4 {Riesgo moral}
+				\4 {Finanzas}
+			\3 Paradojas
+				\4 {Allais}
+				\4[] Violación ax. independencia
+				\4[] $X = (25; 5, 0)$
+				\4[] $L_1 = (0; \, 1; \, 0)$, $L'_1 = (0.10; \, 0.89; \, 0.01)$
+				\4[] Empíricamente: $L_1 \succ L'_1$
+				\4[] $\then$ Prefieren ganar cantidad menor con seguridad
+				\4[] $\then$ Que poder ganar más pero arriesgarse a perder
+				\4[] $L_2 = (0; \, 0.11; \, 0.89)$, $L'_2=(0.10; \, 0; \, 0.90)$
+				\4[] Empíricamente: $L'_2 \succ L_2$
+				\4[] $\then$ Si ganar nada es probable, se arriesgan más
+				\4[] $\then$ Prefieren que ganar nada sea más probable
+				\4[] $\then$ A cambio de probabilidad de ganar más
+				\4[] Si $L_1 \succ L'_1$: $u_{5} > 0.10 u_{25} + (0.89) u_{5} + (0.01) u_0$
+				\4[] Añadir $0.89 u_0 - 0.89 u_{5}$ a ambas loterías
+				\4[] $\then$ $0.11 u_{5} + 0.89 u_0 > 0.10 u_{25} + 0.90 u_0$
+				\4[] Es decir $L_2 \succ L'_2$
+				\4[] Lo contrario viola independencia
+				\4 {Ellsberg}
+				\4[] Aversión a la incertidumbre
+				\4[] Violación empírica  del TU Subjetiva
+				\4[] Urnas R y H: 100 bolas/urna
+				\4[] R: 49 blancas, 51 negras
+				\4[] H: proporción desconocida
+				\4[] Decisión 1: si negra 1000 dolares
+				\4[] Decisión 2: si blanca 1000 dólares
+				\4[] Empíricamente: elige R en 1 y 2
+				\4[] Si probs. subjetivas:
+				\4[] Elegir R en 1 $\Rightarrow \pi^H_{\text{blancas}} > 0.49$
+				\4[] Debería elegir H en 2
+				\4 Machina
+				\4[] Empíricamente, agentes tienen en cuenta pérdida
+				\4[] $\to$ Violando axioma de independencia
+				\4[] Lotería 1:
+				\4[] $\to$ Viaje a Venecia con 99\% de prob
+				\4[] $\to$ Película sobre Venecia con 1\%
+				\4[] Lotería 2:
+				\4[] $\to$ Viaje a Venecia con 99\% de prob
+				\4[] $\to$ Quedarse en casa sin película
+				\4[] Preferencias por separado:
+				\4[] Viaje a Venecia $\succ$ Película $\succ$ Casa
+				\4[] Empíricamente:
+				\4[] $\to$ Muchos prefieren lotería 2
+				\4[] $\then$ Violación de axioma de independencia
+				\4[] $\then$ Agentes anticipan posible pérdida
+				\4[] $\then$ Relación entre ganancia perdida y suceso
+	\1 \marcar{Otros modelos de elección en incertidumbre} 5-28
+		\2 Idea clave
+			\3 Contexto
+				\4 Anomalías persistentes del comportamiento
+				\4[] No concuerdan con preferencias que cumplen TUE
+				\4 Probabilidades objetivas rara vez se conocen
+				\4 Comportamiento económico en incertidumbre
+				\4[] Basado fundamentalmente en probabilidades subjetivas
+				\4 Decisiones a menudo incompatibles con TUSubjetiva
+			\3 Objetivos
+				\4 Contrastar capacidad predictiva TUE y TUSubjetiva
+				\4[] Respecto comportamiento empíricamente observado
+				\4 Caracterizar regularidades de decisión en incertidumbre
+				\4 Explicar desviaciones sistemáticas respecto TUE y TUS
+				\4 Entender decisión real de humanos sobre incertidumbre
+			\3 Resultados
+				\4 Intersección entre psicología y economía
+				\4 Descripción positiva de decisión en incertidumbre
+				\4 Desplazamiento de TUE como referencia normativa
+				\4[] Debemos comportarnos así
+				\4[] $\to$ Pero de hecho se decide diferente
+		\2 Desviaciones persistentes\footnote{Ver Tversky y Kahneman (1992).}
+			\3 Efecto marco / framing effect
+				\4 Decisiones equivalentes entre loterías
+				\4[] Mismas utilidades esperadas y distribución
+				\4[] Distinta presentación verbal
+				\4[] $\to$ Distintas elecciones
+				\4 Especialmente relevante
+			\3 Preferencias no lineales
+				\4 En funciones VNM
+				\4[] Utilidad es lineal en las probabilidades
+				\4 Empíricamente, no sucede
+				\4[] Diferencia entre 0.99 y 1
+				\4[] $\to$ Mayor que entre 0.1 y 0.11
+			\3 Dependencia del origen de la incertidumbre
+				\4 No sólo importa el grado de incertidumbre
+				\4 También importa el origen
+				\4 Agentes suelen preferir riesgos cuantificables
+				\4[$\then$] Ellsberg es ejemplo
+			\3 Preferencia por el riesgo
+				\4 Generalmente, se asume aversión al riesgo
+				\4 En determinados clases de problemas reales
+				\4[] Agentes muestran preferencia por asunción de riesgos
+				\4[] $\to$ Prefieren pequeña probabilidad de gran premio
+				\4[] $\to$ Frente a probabilidad segura de pequeño
+				\4[] $\then$ Loterías y apuestas comerciales
+			\3 Aversión a la pérdida
+				\4 Pérdidas causan más desutilidad que ganancias
+				\4 Valores muy extremos en la práctica
+				\4[] Difícilmente explicables:
+				\4[] $\to$ Con aversión decreciente
+				\4[] $\to$ Efectos renta
+		\2 Racionalidad limitada
+			\3 Idea clave
+				\4 Contexto
+				\4[] Descubrimiento de alternativas es costosa
+				\4[] Estimación de probabilidades también
+				\4[] Existen límites cognitivos del cerebro humano
+				\4[] Computabilidad de probabilidades
+				\4[] $\to$ Muy costoso en mayoría de casos
+				\4[] Mayoría de agentes sí tratan de alcanzar sus fines
+				\4[] $\to$ Elemento central de racionalidad
+				\4[] $\then$ Pero no disponen de recursos ilimitados para lograrlo
+				\4 Objetivo
+				\4[] Identificar patrones de limitación cognitiva
+				\4[] Marco general para comprender racionalidad limitada
+				\4[] $\to$ No solo identificar desviaciones persistentes de TUE/TUS
+				\4 Resultados
+				\4[] Herbert Simon (1950)
+				\4[] $\to$ Inicia programa de investigación
+				\4[] Programa pionero
+				\4[] Fundamento esencial de programas posteriores
+				\4[] Presenta objetivos a economía experimental
+			\3 Formulación
+				\4 Supuesto fundamental se mantiene
+				\4[] $\to$ Agentes actúan racionalmente
+				\4[] $\then$ Tratan de conseguir sus fines de manera eficiente
+				\4 Relajación de supuestos de TUSubjetiva
+				\4 Conjuntos de alternativas posibles no son invariables
+				\4[] Agentes varían con información computada
+				\4 Probabilidades implícitas a decisión pueden no existir
+				\4[] Postular procedimientos de estimación
+				\4 Maximización global de utilidad no disponible
+				\4[] Maximizaciones de problemas parciales
+			\3 Implicaciones
+				\4 Procesos de búsqueda de información son relevantes
+				\4[] Existen sesgos consistentes
+				\4 Límites cognitivos impactan en decisión
+				\4 Mejor utilización de información disponible
+				\4[] $\to$ Implica también incertidumbre
+				\4[] $\then$ Ej.: modelos de tiempo atmosférico
+				\4[] $\then$ Decisión humana limitada por límites de ciencia
+			\3 Valoración
+				\4 Germen de muchos otros programas de investigación
+				\4[] Behavioral economics
+				\4[] Prospect theory
+				\4[] Nudges
+				\4[] Behavioral finance
+				\4[] Modelos macro: costes de menú, racionalidad limitada..
+				\4[] ...
+				\4 Especialmente relevante en contexto de incertidumbre
+				\4[] Requiere estimación intensiva de probabilidades
+		\2 Reglas heurísticas y sesgos -- Kahneman y Tversky (1974)
+			\3 Idea clave
+				\4 Kahneman y Tversky (1974) en Science
+				\4 Artículo seminal
+			\3 Formulación
+				\4 Cerebro tiene dos sistemas
+				\4 Sistema intuitivo
+				\4[] Decisiones rápidas
+				\4[] Reglas heurísticas
+				\4[] Resultados relativamente buenos en tareas poco complejas
+				\4[] $\to$ Aparecen sesgos en tareas complejas
+				\4 Sistema deliberativo
+				\4[] Costoso en tiempo y energía
+				\4[] Capacidad cognitiva más elevada
+				\4[] Se acerca a predicciones TUS/TUE
+			\3 Implicaciones
+				\4 Decisión en incertidumbre susceptible a sesgos
+				\4
+			\3 Valoración
+				\4 Base conceptual para prospect theory
+		\2 Prospect theory\footnote{Habitualmente traducido como ``\textit{teoría de las perspectivas}''.}-- Kahneman y Tversky (1979)
+			\3 Idea clave
+				\4 Kahneman y Tversky (1979)
+				\4 Tversky y Kahneman (1992)
+				\4 Contexto
+				\4[] Acumulación de anomalías de TUE constatadas
+				\4[] Avances en psicología cognitiva
+			\3 Formulación
+				\4 Utilidad respecto a nivel de base
+				\4[] No respecto a riqueza total
+				\4[] $\to$ Necesario explicitar nivel básico
+				\4 Función de utilidad de Bernoulli asimétrica
+				\4[] Cóncava para ganancias
+				\4[] Convexa para pérdidas
+				\4[] $\to$ Crece más para ganancias que pérdidas
+				\4 Transformación no linear de probabilidades
+				\4[] Más peso a probabilidades pequeñas
+				\4[] Menos peso a probabilidades moderadas y grandes
+			\3 Implicaciones
+				\4 Posible explicar:
+				\4[] $\to$ Preferencias no lineales
+				\4[] $\to$ Búsqueda de riesgo
+				\4[] $\to$ Preferencias no lineales
+			\3 Valoración
+		\2 Behavioral finance
+			\3 Idea clave
+				\4 Fama (1970): HME
+				\4[] Los mercados financieros son eficientes
+				\4[] $\to$ Precios incorporan toda la información disponible
+				\4[] $\then$ Rendimientos
+				\4 Conjunto de test y regularidades empíricas
+				\4[] Muestran oportunidades de beneficio persistentes
+			\3 Formulación
+				\4 Límites al arbitraje
+				\4[] P. ej. imposibles posiciones cortas
+				\4 Sobrerreacción a noticias
+				\4[] Inversores asignan más importancia a noticias recientes
+				\4 Desviaciones de ley de un solo precio
+				\4[] Información costosa
+				\4[] Transmisión lenta
+			\3 Implicaciones
+				\4 Desviaciones persistentes posibles
+				\4 Capacidad de aprendizaje de mercados es importante
+				\4 Existen oportunidades de inversiónº
+				\4[] Posible obtener rendimientos > CdOportunidad
+			\3 Valoración
+				\4 En corto plazo, pocos mercados son eficientes
+				\4 Muy difícil extraer conclusiones generales
+				\4[] Mayoría de modelos son ad-hoc
+				\4 Importancia de regularidades descubiertas
+				\4[] Tiende a desaparecer
+				\4[] $\to$ Cuando conocimiento se generaliza
+		\2 Nudges/empujones -- Thaler
+			\3 Idea clave
+				\4 Paternalismo
+				\4[] Poder público considera agentes no optimizan
+				\4[] $\to$ Fuerzan decisiones consideradas mejoras
+				\4 Libertarianismo
+				\4[] Maximizar libertad de elección
+				\4 Límites cognitivos y sesgos generalizados
+				\4[] Agentes no son homo economicus
+				\4 Políticas públicas en estados democráticos
+				\4[] Respetar libertad de elección
+				\4[] Tratar de inducir equilibrios superiores
+				\4[] $\to$ Aprovechar sesgos para ello
+			\3 Formulación
+				\4 Agentes desatienden en cierta medida
+				\4 Susceptibles a aceptar decisiones propuestas
+				\4[$\then$] Posible inducir decisiones sin coacción
+				\4[$\then$] Opt-outs generalmente inducen opción por defecto
+			\3 Implicaciones
+				\4 Aprovechar sesgos cognitivos en diseño de políticas públicas
+				\4 Opt-outs generales
+				\4[] Permitido no tomar una decisión
+				\4[] Por defecto, se toma la decisión por el agente
+				\4 Políticas de ahorro
+				\4[] Proponer ahorro por defecto
+			\3 Valoración
+				\4 Fuerte impacto en políticas públicas
+				\4 Creación de unidades de nudges
+				\4 Pueden ser peor que laissez-faire o planificación
+				\4[] Si están mal diseñados
+				\4[] $\to$ Si inducen decisiones subóptimas
+		\2 Valoración
+			\3 Implicaciones generales
+				\4[] Si experimentos y regularidades son reproducibles
+				\4[] $\to$ Errores no se compensan mutuamente
+				\4[] $\then$ Media de desviaciones de TUE no es 0
+			\3 Críticas
+				\4[] -- Desviaciones sistemáticas acaban disipándose
+				\4[] -- Aprendizaje reduce desviaciones
+				\4[] -- No todas las desviaciones tienen efectos relevantes
+				\4[] $\to$ Agentes profesionales no se desvían tanto
+				\4[] $\then$ Skin in the game reduce desviaciones
+			\3 Conjetura de Becker
+				\4[] No importa que el 90\% no pueda actuar racionalmente
+				\4[] Lo que importa es el 10\% que sí puede
+				\4[] $\to$ Realizan el trabajo cuando hace falta
+				\4[] $\then$ Resultados acaban siendo ``racionales''
+	\1[] \marcar{Conclusión} 2-30
+		\2 Recapitulación
+			\3 Teoría de la Utilidad Esperada
+				\4 Teorema Utilidad Esperada
+				\4 Loterías continuas
+				\4 Incertidumbre: probabilidades subjetivas
+				\4 Utilidad dependiente del estado
+				\4 Paradojas
+			\3 Otras
+				\4 Desviaciones persistentes
+				\4 Reglas heurísticas y sesgos
+				\4 Prospect theory
+				\4
+		\2 Idea final
+			\3 Primera aproximación: UE
+				\4 Marco general
+				\4 Primer desarrollo sistemático
+				\4 Punto de partida
+			\3 Anomalías: otras teorías
+				\4 Tratar de acercarse a realidad empírica
+			\3 Normatividad vs descripción de realidad
+				\4 Savage: TUE es normativa
+				\4 Friedman vs. behavioral economics\footnote{Ensayos de economía positiva, 1953.}
+			\3 Campo fértil investigación
+				\4 Economía + biología + psicología
+\end{esquemal}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\graficas
+
+\begin{axis}{4}{El concepto de equivalente de certidumbre en el marco de una función de utilidad de von Neumann-Morgernstern}{x}{u(x)}{equivalentecertidumbre}
+	% función de utilidad
+	\draw[thick] (0,0) to [out=85, in=185](4,4);
+	
+	% resultado a
+	\draw[dashed] (1.1,0) -- (1.1,2.6);
+	\node[below] at (1.1,0){\tiny a};
+	
+	% resultado b
+	\draw[dashed] (3.3,0) -- (3.3,3.8);
+	\node[below] at (3.3,0){\tiny b};
+	
+	% esperanza de combinaciones convexas de a y b
+	\draw[-] (3.3,3.87) -- (1.1,2.6);
+
+	% esperanza de loteria dada compuesta por a y b
+	\draw[-] (2.8,0) -- (2.8, 3.57 );
+	\node[below] at (2.85,0){\tiny E(x)};
+	
+	% utilidad de lotería dada compuesta por a y b
+	\draw[-] (2.8,3.57) -- (0,3.57);
+	\node[left] at (0,3.57){\tiny u(x)};
+	
+	% equivalente de certidumbre
+	\draw[-] (2.4, 3.57) -- (2.4,0);
+	\node[below] at (2.4,0){\tiny EC};
+\end{axis}
+	
+\begin{axis}{4}{Prima de riesgo necesaria para que un agente averso al riesgo prefiera una lotería en vez de un pago cierto.}{x}{u(x)}{primaderiesgo}
+	% función de utilidad
+	\draw[thick] (0,0) to [out=85, in=185](4,4);
+	
+	% resultado a
+	\draw[dashed] (1.1,0) -- (1.1,2.6);
+	\node[below] at (1.1,0){\tiny a};
+	
+	% resultado b
+	\draw[dashed] (3.3,0) -- (3.3,3.8);
+	\node[below] at (3.3,0){\tiny b};
+	
+	% esperanza de combinaciones convexas de a y b
+	\draw[-] (3.3,3.87) -- (1.1,2.6);
+	
+	% esperanza de loteria dada compuesta por a y b
+	\draw[-] (2.8,0) -- (2.8, 3.57 );
+	\node[below] at (2.85,0){\tiny E(x)};
+	
+	% utilidad de lotería dada compuesta por a y b
+	\draw[-] (2.8,3.57) -- (0,3.57);
+	\node[left] at (0,3.57){\tiny u(x)};
+	
+	% equivalente de certidumbre
+	\draw[-] (2.4, 3.57) -- (2.4,0);
+	\node[below] at (2.4,0){\tiny EC};
+	
+	\draw[decorate,decoration={brace, mirror,amplitude=3pt},xshift=0pt,yshift=-0.3cm] (2.4,0) -- (2.85,0) node[black,midway,xshift=2pt, yshift=-0.33cm] {\tiny Prima};
+\end{axis}
+
+\begin{axis}{4}{Ejemplo de dominancia estocástica de primer grado, con $F \succ G$}{x}{P(x)}{domprimergrado}
+	\draw[-] (0,0) to [out=70, in=210](2,3);
+	\draw[-] (2,3) to [out=30, in=260](4,4);
+	
+	\draw[-] (0,0) to [out=70, in=210](2,1.5);
+	\draw[-] (2,1.5) to [out=30, in=260](4,4);
+	\node[below right] at (2,1.5){$F(x)$};
+	\node[above left] at (2,3){$G(x)$};
+	
+	
+	\draw[-] (0,4) -- (4,4);
+	\node[right] at (4,4){$1$};
+\end{axis}
+
+\conceptos
+
+\concepto{Desigualdad de Jensen}: se cumple la d. de J. si el valor de la función evaluado en el valor esperado es igual o mayor a la expectativa del valor:
+
+\begin{equation}
+	f\left( \int_{-\infty}^{+\infty}x dF(x) \right) > \int_{-\infty}^{+\infty} f(x) dF(x)
+\end{equation}
+
+\concepto{Criterio minimax}: regla de decisión basada en la \textit{minimización} de la \textit{máxima} pérdida.
+
+
+\preguntas
+
+\seccion{Test 2018}
+\textbf{4.} En un entorno de incertidumbre, si un individuo tiene unas preferencias por la riqueza cierta, $w$, representadas por la función de utilidad $U(w) = w^{1/2}$, es \textbf{FALSO} que: 
+
+\begin{itemize}
+	\item[a] El individuo es averso al riesgo.
+	\item[b] El individuo es más averso al riesgo cuanto mayor es la riqueza.
+	\item[c] El individuo es menos averso al riesgo cuanto mayor es su riqueza.
+	\item[d] El coeficiente de aversión al riesgo es $R = \frac{1}{2w}$.
+\end{itemize}
+
+\seccion{Test 2017}
+\textbf{5.} El coeficiente de aversión absoluta al riesgo de un individuo con función de utilidad $U(m)$, siendo $m$ su renta, se define como $\rho_A = - U''(m) / U'(m)$. Si Juan obtiene utilidad de su renta de acuerdo con la función $U(m) = \ln (m)$, ¿cómo podríamos definir su actitud frente al riesgo y cómo cambia esta actitud al aumentar su renta?
+
+\begin{itemize}
+	\item[a] Es una personal neutral al riesgo y mantiene la misma actitud al aumentar su renta.
+	\item[b] Es una persona aversa al riesgo y su coeficiente de aversión $\rho_A$ disminuye según aumenta su renta.
+	\item[c] Es una persona amante del riesgo, pero esta actitud cambia al aumentar su renta.
+	\item[d] Es una persona aversa al riesgo y su coeficiente de aversión $\rho_a$ se mantiene constante aunque aumente su renta.
+\end{itemize}
+
+\seccion{Test 2015}
+
+\textbf{6}. Considere un consumidor con riqueza inicial \textbf{W=1000} que siempre eligen la opción que le da una utilidad esperada mayor. Esta persona suele desplazarse en coche con una probabilidad $\pi = 2/3$ de tener un accidente, en cuyo caso tiene una pérdida L = 300. Una compañía de seguros le ofrece la posibilidad de asegurarse totalmente a cambio de pagar a la compañía una cantidad fija K, tenga o no un accidente. Se sabe que el consumidor está dispuesto a pagar una cantidad estrictamente mayor que K por el seguro. Indique cual es el mínimo valor que debería tener K para que el consumidor se pueda considerar averso al riesgo:
+
+\begin{enumerate}
+	\item[a] 100.
+	\item[b] 200.
+	\item[c] 300.
+	\item[d] No se sabe la cantidad, pues no conocemos su función de utilidad.
+\end{enumerate}
+
+\seccion{Test 2014}
+
+\textbf{5}. Las preferencias de un consumidor están representadas por la función de utilidad de Bernoulli $u(x) = x^2$. Identifique la utilidad esperada y la prima de riesgo de la lotería $L=(x,p)$ que paga los premios $x=(0, 2, 4)$ con probabilidades $p = (3/8, 1/2, 1/8)$:
+
+\begin{enumerate}
+	\item[a] $Eu(L) = 2, \text{PR}(L) = 1$
+	\item[b] $Eu(L) = 2, \text{PR}(L) = 1/2$
+	\item[c] $Eu(L) = 4, \text{PR}(L) = -1/2$
+	\item[d] $Eu(L) = 4, \text{PR}(L) = -1$
+\end{enumerate}
+
+\seccion{Test 2011}
+
+\textbf{5}. Suponga una lotería que tiene dos posibles resultados, 0 y 1, y un individuo con una función de utilidad esperada. Si la diferencia entre la utilidad del pago de 1 y la utilidad del equivalente cierto de la lotería es mayor que la diferencia entre la utilidad del equivalente cierto de la lotería y el pago de 0, podemos concluir que:
+\begin{enumerate}
+	\item[a] El individuo es averso al riesgo.
+	\item[b] El individuo es preferente por el riesgo.
+	\item[c] La probabilidad del pago 1 es mayor que la probabilidad del pago 0.
+	\item[d] La probabilidad del pago 0 es mayor que la probabilidad del pago 1.
+\end{enumerate}
+
+\seccion{Test 2008}
+
+\textbf{9.} En un contexto de incertidumbre, dadas dos loterías una cierta $L_1$ y otra incierta $L_2$ ambas con igual valor esperado. Si denotamos con $U(L_1)$ a la utilidad de la lotería cierta, $\text{UE}(L_2)$ la utilidad esperada de la lotería incierta, $E(L_2)$ al valor esperado de la lotería incierta y $U(E(L_2))$ a la utilidad del valor esperado de una lotería incierta, es cierto que:
+
+\begin{enumerate}
+	\item[a] Un individuo es averso al riesgo cuando $U(L_1) < \text{UE} (L_2)$.
+	\item[b] Un individuo es averso al riesgo cuando $E(L_2) > U(E(L_2))$.
+	\item[c] Un individuo es averso al riesgo cuando $\text{UE}(L_2) < U(E(L_2))$.
+	\item[d] Un individuo es averso al riesgo cuando $\text{UE}(L_2) < E(L_2)$.
+\end{enumerate}
+
+
+\seccion{Test 2007}
+\textbf{4.} En un entorno de incertidumbre, un individuo tiene unas preferencias por la riqueza cierta, $w$, representadas por la función de utilidad $U(x)$. Si parte de su riqueza viene dada por un coche, y ante la probabilidad de sufrir un percance (robo, incendio, pérdida, etc...) lo asegura,
+
+\begin{enumerate}
+	\item[a] Si el individuo es averso al riesgo, asegurará el coche totalmente (seguro a todo riesgo).
+	\item[b] Si el individuo es neutral al riesgo asegura el coche parcialmente (seguro obligatorio).
+	\item[c] Si el individuo es amante del riesgo no asegura el coche.
+	\item[d] Ninguna de las respuestas anteriores.
+\end{enumerate}
+
+
+\seccion{Test 2006}
+
+\textbf{9.} El equivalente cierto de una lotería es una cantidad de renta cuya utilidad es:
+
+\begin{enumerate}
+	\item[a] Igual a la utilidad esperada de la lotería si el individuo es averso al riesgo.
+	\item[b] Mayor que la utilidad esperada de la lotería si el individuo es averso al riesgo.
+	\item[c] Menor que la utilidad esperada de la lotería si el individuo es neutral al riesgo.
+	\item[d] Menor que la utilidad esperada de la lotería si el individuo es amante del riesgo.
+\end{enumerate}
+
+\seccion{Test 2004}
+\textbf{4.} Considere una lotería en la que los premios son cantidades de dinero. Señale cuál/es de las siguientes afirmaciones, referidas al equivalente cierto de la lotería, es/son correcta/s:
+
+\begin{enumerate}
+	\item[(i)] Para un individuo estrictamente averso al riesgo, el equivalente cierto de la lotería es menor que el valor esperado de la misma.
+	\item[(ii)] El equivalente cierto de la lotería es la cantidad de dinero que hace a un individuo indiferente entre jugar a la lotería y recibir esa cantidad de dinero con probabilidad 1.
+	\item[(iii)] Para un individuo neutral ante el riesgo, el equivalente cierto de la lotería es mayor que el valor esperado de la misma.
+\end{enumerate}
+
+\begin{enumerate}
+	\item[a] Todas.
+	\item[b] Ninguna.
+	\item[c] Sólo la (i) y la (ii).
+	\item[d] Sólo la (ii) y la (iii).
+\end{enumerate}
+
+\seccion{15 de marzo de 2017}
+\begin{itemize}
+    \item ¿Qué relación hay entre el coeficiente de aversión relativa al riesgo de Arrow-Pratt y la elasticidad de la utilidad marginal? (el catedrático)
+    
+    \textit{La elasticidad $\epsilon_{x-f(x)}$ de una función $f(x)$ respecto a la variable independiente $x$ es igual a: $\epsilon_{x-f(x)} = \frac{f'(x)}{f(x)} \cdot x = \frac{df(x)}{dx} \cdot \frac{x}{f(x)} = \frac{f'(x)}{f(x)} \cdot x$. El coeficiente de aversión relativa al riesgo $r_R$ es: $r_R = -x \frac{u''(x)}{u'(x)}$. Si sustituimos $f(x)$ por $u'(x)$, tenemos que el coeficiente de aversión relativa al riesgo no es sino la elasticidad de la utilidad marginal respecto a la renta multiplicada por $-1$. }
+    
+    \item Markowitz se hizo popular por una aplicación de la hipótesis de la utilidad esperada. De hecho, esta aplicación le valió el premio Nobel. ¿Qué aplicación es esa? ¿puede relacionarla con este tema? (el catedrático)
+\end{itemize}
+
+\notas
+
+\textbf{2018}. \textbf{4.} B
+
+\textbf{2017}. \textbf{5.} B
+
+\textbf{2015}. \textbf{6.} B
+
+\textbf{2014}. \textbf{5.} C
+
+\textbf{2011}. \textbf{5.} D
+
+\textbf{2008}. \textbf{9.} C
+
+\textbf{2007}. \textbf{4.} D. Depende del coste del seguro.
+
+\textbf{2006}. \textbf{9.} A
+
+\textbf{2004}. \textbf{4.} C
+
+Mirar paradoja de Allais en el Diccionario de Teoremas (en carpeta General)
+
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+    \item Allais paradox
+    \item behavioural economics and game theory
+    \item behavioural finance
+    \item Bernoulli, Daniel
+    \item expected utility hypothesis
+    \item non-expected utility theory
+    \item prospect theory
+    \item rationality
+    \item rationality, bounded
+    \item rationality, history of the concept
+    \item risk
+    \item risk aversion 
+    \item Savage's subjective expected utility model
+    \item state-dependent preferences
+    \item uncertainty
+    \item utility
+\end{itemize}
+
+MWG. \textit{Microeconomic Theory}. Ch. 6
+
+Kahneman, D. (2002) \textit{Maps of bounded rationality: a perspective on intuitive judgment and choice} Nobel Prize Lecture
+
+Kreps. ch 3
+
+Stanford Encyclopedia of Philosophy. \url{https://plato.stanford.edu/entries/decision-theory/\#CarUti}
+
+Thaler, R. (2017) \textit{From Cashews to Nudges: The Evolution of Behavioral Economics} Nobel Prize Lecture 2017 -- En carpeta del tema
+
+Tversky, A.; Kahneman, D. (1992) \textit{Advances in prospect theory: cumulative representation of Uncertainty} Journal of Risk and Uncertainty -- En carpeta del tema
+
+
+\end{document}

@@ -1,0 +1,1021 @@
+\documentclass{nuevotema}
+
+\tema{3B-27}
+\titulo{Análisis de los instrumentos y de los mercados de derivados.}
+
+\begin{document}
+
+\ideaclave
+
+Los derivados financieros son al mismo una de las causas y manifestaciones de la transformación de los mercados financieros en el último medio siglo. Previamente a la Gran Crisis de 2008, los derivados fueron señalados como una posible causa amplificadora de turbulencias cíclicas. El papel de algunos derivados de crédito fue efectivamente crucial en las numerosas quiebras e intervenciones de entidades financieras de todo el mundo. Sin embargo, los derivados financieros juegan un papel fundamental a la hora de transferir riesgo de unos agentes a otros, reducir costes de transacción y aumentar la eficiencia de los mercados financieros. Las posibilidades de inversión y gestión del riesgo que han generado y continúan generando hacen del conocimiento y el uso de los derivados un requisito básico en la actualidad para comprender los mercados financieros. El \textbf{objeto} de la presente exposición es responder a las preguntas fundamentales: ¿cómo funciona el mercado de derivados? ¿qué clases de derivados existen? ¿cómo funcionan las distintas clases? ¿para qué se utilizan? La \textbf{estructura} de la exposición comienza con el análisis del mercado de derivados. Posteriormente, se expondrán la características básicas de opciones, futuros y swaps, sus posibilidades de uso, sus respectivas variedades y los métodos de valoración.
+
+Los \marcar{mercados de derivados} han sido utilizados para gestionar el riesgo desde el momento en que el ser humano ha necesitado gestionar corrientes de ingresos en el futuro. Los \textbf{primeros usos} documentados corresponden a contratos forward mediante los cuales productores y compradores de productos agrícolas acordaban el precio futuro y reducían así la incertidumbre de sus ingresos futuros. Con el objetivo de estandarizar y centralizar tales contratos surgen en el siglo XIX el Chicago Board of Trade y el Chicago Mercantile Exchange. En los años 70, la caída de Bretton Woods y el aumento asociado de la volatilidad de los tipos de cambio, y la aparición de las computadoras modernas suponen un impulso definitivo a la aparición de derivados financieros, introducidos en Chicago a lo largo de la década. Posteriormente, y hasta la actualidad, los derivados aumentan espectacularmente su volumen nominal y el número de títulos intercambiados, y alcanzan un pico en la fase inmediatamente anterior a la crisis. En el mercado de derivados existe una clara distinción entre los \textbf{mercados centralizados y los mercados over-the-counter}. Los primeros se definen por el carácter bilateral y ad-hoc de los contratos intercambiados, que resulta lógicamente en una ausencia de estandarización. Los mercados centralizados, por el contrario, son el punto de intercambio de contratos plenamente estandarizados. Algunos ejemplos son el CME Group, el ICE, el Eurex o el Tokyo Financial Exchange. Los volúmenes de los mercados OTC son muy superiores a los centralizados en cuanto a cuantías totales de los valores nominales, pero en los mercados centralizados se intercambia un número mayor de títulos de menor valor nominal medio. El fenómeno de la compresión consiste en reestructurar las obligaciones respectivas entre dos partes de tal manera que se tengan en cuenta las obligaciones netas respectivas y se reduzca el volumen global, lo que ha tenido un impacto sobre las estadísticas que el Banco Internacional de Pagos compila cada seis meses.
+
+La práctica de la \textbf{compensación} consiste en la interposición de una institución financiera entre dos partes de un derivado financiero de tal manera que el riesgo de contrapartida se reduzca al riesgo de quiebra de la institución que se interpone entre las partes, denominada cámara de compensación. Estas instituciones reducen a su vez su exposición al riesgo gracias a su participación en un muy elevado número de contratos con exposiciones a riesgos similares pero de distinto signo. Las cámaras de compensación requieren el depósito de unas cantidades denominadas margen que se calculan como fracciones de las obligaciones potenciales a las que los agentes contratantes deben potencialmente hacer frente. Estos depósitos se agregan y se rentabilizan por parte de las cámaras de compensación, permitiéndoles hacer frente a posibles incumplimientos de los pagos que generan los derivados y obteniendo un beneficio suficiente para mantener su actividad. En los mercados centralizados, las cámaras de compensación actúan para todos los contratos intercambiados. En el caso de los mercados OTC, su presencia depende de la regulación vigente. De forma creciente, se obliga a las partes a contratar los servicios de las llamadas \underline{central counterparties} (CCPs), que equivalen a las cámaras de compensación de los mercados centralizados.
+
+La \textbf{liquidación} de un derivado hace referencia al intercambio efectivo de los flujos económicos a los que el derivado da lugar, y se distinguen diferentes tipos de liquidación en función de la naturaleza de tales flujos. Cuando los flujos toman forma de dinero en efectivo, hablamos de liquidación por diferencias. Cuando consisten en el subyacente en sí mismo, como por ejemplo una acción, un bono o una cantidad determinada de commodity, hablamos de liquidación por entregas. 
+
+Los \textbf{agentes} que actúan en los mercados de derivados pueden clasificarse básicamente en tres. Los especuladores asumen riesgo a cambio de una prima y estiman que el mercado se moverá a favor de la posición que han tomado. Los hedgers pagan un prima por reducir su exposición a un determinado riesgo. Por último, los arbitrajistas tratan de encontrar diferencias de precio de un mismo activo que se intercambia en dos mercados diferentes para obtener beneficio sin riesgo.
+
+Aunque la gama de posibles derivados es casi tan amplia como la inventiva humana, es habitual clasificarlos en tres grandes familias: opciones financieras, futuros y forwards, y swaps. Las \marcar{opciones financieras} otorgan a sus compradores el derecho a comprar o a vender un activo determinado, en un intervalo de tiempo o en una fecha futura, por un precio determinado en el momento de la emisión de la opción denominado \textit{precio de ejercicio}. Por otro lado, obligan a los vendedores de opciones a vender o comprar un activo subyacente por la cantidad fijada si el comprador de la opción decide ejercer su derecho. Existen dos modalidades básicas de opciones financieras. Las opciones que otorgan al comprador un derecho de compra se denominan \underline{calls}, y las que otorgan un derecho de venta se denominan \underline{puts}. La diferencia entre el precio del activo subyacente y el precio de ejercicio determina el pago que genera la opción para su tenedor y constituye el valor intrínseco de la opción. Si es positivo, la opción se encuentra \underline{in the money}. Si es negativo \underline{out of the money} y si es próximo a cero, \underline{at the money}. Una opción de compra estará in-the-money cuando el valor del activo subyacente sea mayor al strike de la opción. De forma contraria, una opción de venta estará in-the-money cuando el valor de strike (al que tiene derecho a vender) sea superior al valor del subyacente.
+
+De forma similar a otros derivados financieros, las opciones permiten a sus usuarios múltiples \textbf{usos} y un apalancamiento elevado, de forma que el desembolso necesario para lograr una determinada exposición al activo subyacente sea muy inferior al que sería necesario si se invirtiese directamente en tal activo. Sin embargo, para un comprador de opciones el riesgo de pérdida se encuentra perfectamente acotado. Este hecho determina la estrategia básica de utilización de las opciones, que no es otra que la reducción del riesgo. Además de esta estrategia de uso existen otras tales como \textit{covered call}, \textit{collar}, \textit{straddle}, \textit{strip/strap}... que permiten acotar el riesgo manteniendo la posibilidad de extraer un beneficio. 
+
+Existen diferentes \textbf{variantes} de opciones put y call, en función del periodo temporal en que sea posible el ejercicio (americanas, europeas, bermudas...), el hecho de que el vendedor sea también el emisor del subyacente (warrants), o en función de la determinación del pago de ejercicio. Las diferentes combinaciones dan lugar a las llamadas opciones 'exóticas'. La valoración de las opciones financieras es un problema que ha generado una enorme literatura. Sin entrar en detalles técnicos, es posible caracterizar el valor de una acción como la suma de su valor intrínseco (derivado del pago en el momento de ejercicio) y el valor extrínseco, derivado de la posibilidad de ejercer o no. Además, es posible derivar límites teóricos que acotan intervalos que el precio de una opción no podría en teoría sobrepasar. Las técnicas de valoración de opciones son muy diversas y matemáticamente complejas. Los dos métodos principales son el modelo binomial, y el modelo de Black-Scholes-Merton que dio lugar al Premio Nobel de 1997. 
+
+Los \marcar{futuros y forwards} son derivados que generan sendas obligaciones de comprar y vender el activo subyacente en un momento futuro a un precio determinado en el presente. La diferencia principal entre los futuros y los forwards es la estandarización y venta en mercados organizados de los primeros, y el carácter over-the-counter de los segundos. De ello se deriva que el valor de los futuros se liquiden \textit{mark-to-market} diariamente, mientras que los forwards se liquiden en el momento de su extinción. A continuación se utilizará el término ``futuros'' de forma general cuando las diferencias con los forwards no sean relevantes. Un inversor tiene una posición larga en un futuro cuando se obliga a comprar, y corta cuando se obliga a vender. El \textbf{uso} de los futuros es fundamentalmente de cobertura cuando se pretende asegurar la cuantía del flujo de caja a pagar o recibir, y de especulación cuando se estima una evolución del precio del subyacente susceptible de ser explotada mediante la venta o la compra del derivado. Por ejemplo, si los futuros para septiembre se cotizan en enero a 150 €, y un agente estima que en septiembre el \textit{spot} del subyacente será de 100 €, tomará una posición corta en el futuro. De esa forma, llegado septiembre y si se cumple su estimación, comprará el subyacente a 100 € e inmediatamente lo venderá a 150 €, obteniendo un beneficio positivo. Un futuro puede liquidarse en cualquier momento adoptando una posición inversa: si un inversor está largo en un futuro, puede cancelar la posición adoptando una posición corta en ese mismo futuro. La valoración de los futuros se basa en esta posibilidad. Así, cuando se compra un futuro su valor es cero porque sólo puede cancelarse al mismo precio por el que se ha comprado. A medida que el precio de los futuros para un mismo momento de ejercicio diverge del precio de ejercicio del futuro original, su valoración se diferencia de cero y toma un valor igual para lado largo y corto de la transacción pero con signos opuestos. El \textbf{valor} iguala la diferencia descontada al presente entre el precio al que se contrató el futuro y el precio de los futuros equivalentes en el momento de la valoración. La valoración de los futuros resulta en dos relaciones con el precio spot y el precio spot esperado. Con el precio spot los futuros guardan la llamada \underline{paridad spot-forward}. Dado que una posición larga en un futuro implica poder disponer del precio de ejercicio hasta el vencimiento del futuro, el precio de un forward debe teóricamente igualarse con el valor actualizado al momento de ejercicio del precio spot presente al interés libre de riesgo. La relación con el precio esperado es compleja y linda con uno de los interrogantes fundamentales de la economía financiera: ¿son los mercados eficientes? En la medida en que se cumpla la paridad spot-forward y el mercado sea eficiente, el precio forward será un estimador insesgado del precio spot futuro.
+
+El tercer gran grupo de derivados financieros corresponde a los \marcar{swaps}. De forma genérica, un swap es un acuerdo entre dos partes para intercambiar una serie de flujos económicos futuros, generalmente flujos de caja. Los swaps se presentan tanto en forma estandarizada y negociada en mercados electrónicos centralizados, como en forma OTC. La primera \textbf{modalidad} es la habitual o incluso la obligatoria cuando se trata de dos instituciones financieras. El swap más conocido y habitual es el llamado \underline{swap de interés}, en virtud de los cuales dos partes se comprometen a pagarse mutuamente el interés de un nominal dado que no se intercambia. Una de las partes abona a la otra un interés variable, y la otra abona un interés fijo. Así, los swaps de interés pueden entenderse también como \underline{forward rate agreements} encadenados, que no son sino contratos forward en virtud de los cuales dos partes se intercambian dos flujos de caja respectivos, en un sólo momento temporal. Los posibles \textbf{usos} de estos derivados son, como es habitual, de especulación y de cobertura. Además, permiten aprovechar ventajas comparativas en diferentes segmentos del mercado de crédito. Así, dado un prestatario con ventaja comparativa en el mercado de interés variable y otro prestatario con ventaja en el interés fijo podrán acordar un swap que les permita obtener financiación más barata de lo que habrían podido obtener por separado. Existen otras \textbf{variantes} de swaps también los llamados \underline{swap de divisas} (\textit{currency swaps}), de acuerdo a los cuales dos partes intercambian un principal y unos cupones fijos en distintas divisas con el objetivo de transformar una obligación en una divisa en otra y aprovechar, de nuevo, las posibles ventajas comparativas de las que disfruten los agentes. Los \underline{swaps de tipo de cambio} (\textit{FX swaps}, no confundir con los anteriores currency swaps) consisten en intercambios de divisas en diferentes momentos temporales a precios definidos a priori para cada intercambio, y son de hecho el instrumento derivado más utilizado en los mercados de divisas. Los \textit{stock swaps} son otra modalidad frecuente de swap. La valoración de los swaps concuerda con su carácter de FRA encadenados: un swap se puede valorar simplemente como la suma del valor de esos FRAs, descontando de acuerdo con los tipos de la Estructura Temporal de los Tipos de Interés. De forma más genérica, la valoración de los swaps no es sino la suma descontada de una serie de flujos de caja netos esperados.
+
+Más allá de los derivados presentados, existe una inmensa gama de \marcar{otros derivados} y combinaciones posibles entre ellos. Los \textbf{collateralized debt obligations} fueron especialmente relevantes en la etapa pre-crisis y basan sus pagos en los flujos de caja generados por un activo \textit{asset-backed security}. Los \textbf{credit default swaps} establecen una corriente de pagos constante y un pago eventual en caso de que se produzca un evento de crédito en un activo subyacente asimilable a una deuda.
+
+En \marcar{conclusión}, los activos derivados son a menudo un arma de doble filo. Permiten reducir el riesgo y transferirlo a agentes con mayor capacidad o mayor deseo de afrontarlo, reducir los costes de transacción y en general, aumentar la eficiencia de los mercados financieros. Sin embargo, su complejidad relativamente elevada, la inevitable predominancia --a pesar de los esfuerzos regulatorios- de los mercados OTC y la tendencia natural de los agentes en determinados contextos a asumir riesgos excesivos son motivos de precaución a la hora de valorar el efecto de los derivados sobre el conjunto del sistema financiero e indirectamente, la economía real.
+
+\seccion{Preguntas clave}
+\begin{itemize}
+    \item ¿Qué son los derivados? 
+    \item ¿Por qué existen? 
+    \item ¿Qué tipos de derivados existen? 
+    \item ¿Para qué se usan? 
+    \item ¿Cómo funcionan los mercados de derivados? 
+    \item ¿Cómo se valoran los derivados? 
+    \item ¿Qué papel juega la política económica en relación a los derivados?
+\end{itemize}
+
+\comillas{There is no need to manage risk when there is no risk}. Los derivados tienen sentido sólo en la medida en que haya un riesgo que gestionar. En un mundo de certidumbre absoluta, no existiría el mercado de derivados.
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Activos financieros
+			\3 Derivados
+			\3 Explosión a partir de años 70
+		\2 Objeto
+			\3 Cómo funciona el mercado de derivados
+			\3 Qué clases de derivados existen
+			\3 Cómo funcionan las distintas clases
+			\3 Para qué se utilizan los derivados
+		\2 Estructura
+			\3 Mercados
+			\3 Opciones
+			\3 Futuros y forwards
+			\3 Swaps
+			\3 Otros
+	\1 \marcar{Mercados de derivados}
+		\2 Historia
+			\3 Antigüedad
+			\3 Siglo XIX
+			\3 Años 70
+			\3 Décadas posteriores
+		\2 Mercados OTC vs. centralizados
+			\3 OTC
+			\3 Centralizados
+		\2 Volúmenes
+			\3 Definición de volumen
+			\3 Volumen total
+			\3 Títulos intercambiados
+			\3 Compresión
+			\3 Banco Internacional de Pagos
+		\2 Compensación
+			\3 Idea clave
+			\3 Mercados centralizados
+			\3 Mercados OTC
+		\2 Liquidación
+			\3 Idea clave
+			\3 Por entregas
+			\3 Por diferencias
+		\2 Agentes
+			\3 Especuladores
+			\3 Cubrir riesgos (\textit{hedgers})
+			\3 Arbitrajistas
+		\2 Regulación de los derivados
+			\3 Europa
+			\3 Estados Unidos
+	\1 \marcar{Opciones}
+		\2 Idea clave
+			\3 Concepto
+			\3 Put
+			\3 Call
+			\3 In-the-money
+			\3 At-the-money
+			\3 Out-of-the-money
+			\3 Apalancamiento aumentado
+			\3 Costes de transacción inferiores
+		\2 Uso
+			\3 Reducción del riesgo o cobertura
+			\3 Covered call
+			\3 Collar
+			\3 Straddle
+			\3 Strip y strap
+		\2 Variantes
+			\3 Americanas vs europeas
+			\3 Opciones asiáticas
+			\3 Warrants
+			\3 Binarias
+			\3 Barrera
+			\3 Opciones sobre futuros
+		\2 Valoración
+			\3 Componentes del precio
+			\3 Determinantes del valor y \textit{greeks}
+			\3 Paridad put-call
+			\3 Límites al precio de las opciones
+			\3 Modelo binomial
+			\3 Black-Scholes-Merton
+			\3 Otros métodos y extensiones
+			\3 Sonrisa de volatilidad
+	\1 \marcar{Futuros y forwards}
+		\2 Idea clave
+			\3 Long
+			\3 Short
+			\3 Futuros
+			\3 Forwards
+		\2 Uso
+			\3 Cobertura
+			\3 Especulación
+		\2 Variantes
+			\3 Financieros
+			\3 Commodities
+			\3 Forward-rate agreements
+		\2 Valoración
+			\3 Idea clave
+			\3 Posición larga
+			\3 Posición corta
+			\3 Paridad spot-forward
+			\3 Precio forward, precio esperado y HMEficientes
+	\1 \marcar{Swaps}
+		\2 Idea clave
+			\3 Intercambio de secuencia de flujos futuros
+			\3 Regulación
+			\3 Mercado de swaps
+		\2 Uso (swaps de interés)
+			\3 Fines de cobertura y especulación
+			\3 Aprovechar ventaja comparativa
+			\3 Market-makers
+		\2 Variantes
+			\3 Swaps de tipos de interés
+			\3 FX swaps (swaps de tipo de cambio)
+			\3 Currency swaps (swaps de divisas)
+			\3 Stock swaps
+			\3 Credit Default Swaps
+		\2 Valoración
+			\3 Swaps de interés
+			\3 Swaps de divisas interés fijo
+	\1 \marcar{Otros}
+		\2 Collateralized Debt Obligation
+			\3 Idea clave
+		\2 Credit Default Swaps
+			\3 Idea clave
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Mercados
+			\3 Opciones
+			\3 Futuros
+			\3 Swaps
+		\2 Idea final
+			\3 Instrumento clave sistema financiero
+			\3 Relativa complejidad
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Activos financieros
+				\4 Contratos que especifican flujos financieros
+				\4 Renta fija
+				\4 Renta variable
+				\4 Derivados
+			\3 Derivados
+				\4 Activo financiero
+				\4 Valor depende de variable subyacente
+				\4 Cualquier tipo de variable
+				\4[] $\to$ Más habitual: precio de otro activo
+			\3 Explosión a partir de años 70
+				\4 Enormes volúmenes
+				\4 Impacto en crisis y bancarrotas
+				\4 Pero más posibilidades de gestión del riesgo
+				\4[$\Rightarrow$] Pilar de mercados financieros actuales
+		\2 Objeto
+			\3 Cómo funciona el mercado de derivados
+			\3 Qué clases de derivados existen
+			\3 Cómo funcionan las distintas clases
+			\3 Para qué se utilizan los derivados
+		\2 Estructura
+			\3 Mercados
+			\3 Opciones
+			\3 Futuros y forwards
+			\3 Swaps
+			\3 Otros
+	\1 \marcar{Mercados de derivados}
+		\2 Historia
+			\3 Antigüedad
+				\4 Especialmente futuros
+				\4 Transferir riesgos productores agrícolas
+			\3 Siglo XIX
+				\4 Creación del Chicago Board of Trade
+				\4 Cración del Chicago Mercantile Exchange
+				\4[] $\to$ Previamente, derivados eran generalmente OTC
+				\4[] $\to$ Más fácil contratar derivados
+			\3 Años 70
+				\4 Introducción de derivados financieros
+				\4[] Subyacente ligado a tipo de cambio GBP
+				\4[] Futuros ligados a activos financieros
+				\4[] Derivados de tipos de interés
+				\4[] ...
+				\4 Fin de Bretton Woods
+				\4[] Mayor volatilidad tipos de cambio
+				\4 Innovaciones computadoras
+				\4[] Abaratamiento del cálculo
+			\3 Décadas posteriores
+				\4 Enormes aumentos de volumen
+				\4 Pico previo a la crisis
+				\4 Señalados como causante de crisis
+		\2 Mercados OTC vs. centralizados
+			\3 OTC
+				\4 Las partes acuerdan los términos del contrato
+				\4 Condiciones ad-hoc
+			\3 Centralizados
+				\4 Se intercambian contratos estandarizados
+				\4[] $\to$ Términos del contrato normalizados
+				\4[] $\to$ Definidos por el mercado centralizador
+				\4[] $\to$ Cuantías, fechas, condiciones estándar
+				\4[] $\Rightarrow$ Misma clase $\to$ sustitutos perfectos
+				\4 Ejemplos
+				\4[] (Ordenados por número de contratos en 2019\footnote{\href{https://www.bloomberg.com/news/articles/2020-01-21/india-now-has-world-s-largest-derivatives-exchange-by-volume}{Bloomberg (2020)}.}
+				\4[] NSE -- National Stock Exchange (India)
+				\4[] CME Group\footnote{Formado tras la adquisición del \textit{New York Mercantile Exchange} y el \textit{Chicago Board of Trade} por el \textit{Chicago Mercantile Exchange}.}
+				\4[] B3 (Bovespa Brasil)
+				\4[] ICE - Intercontinental Exchange (ligado a NYSE)
+				\4[] Eurex (ligado a bolsa alemana)
+				\4[] Tokyo Financial Exchange (TFX)
+				\4[] CBOE -- Chicago Board Options Exchange
+				\4[] $\to$ Centrado en opciones
+				\4[] MEFF -- Mercado Español de Futuros Financieros
+				\4[] $\to$ Principal mercado oficial español
+				\4[] $\to$ Futuros IBEX, acciones, opciones
+		\2 Volúmenes
+			\3 Definición de volumen
+				\4 Habitualmente, valor nominal de la transacción
+				\4[] Flujos realmente intercambiados
+				\4[] $\to$ Habitualmente muy inferiores
+				\4 Ejemplo:
+				\4[] Opción put sobre 10 millones de títulos a 10\$
+				\4[] $\to$ Valor nominal 100 millones de \$
+				\4[] Precio cambia a 9 \$
+				\4[] $\to$ Subyacente (10M de títulos) vale ahora 90 M de \$
+				\4[] $\Rightarrow$ opción se liquida por 10 millones de \$
+			\3 Volumen total
+				\4 Mercados OTC mucho mayores que centralizados
+			\3 Títulos intercambiados
+				\4 Mayor en centralizados que en OTC
+				\4[] $\to$ Centralizados tienen menor volumen medio
+			\3 Compresión
+				\4 Tendencia creciente en mercado de derivados
+				\4 Partes reestructuran obligaciones bilaterales
+				\4[] $\to$ Reducción del nominal
+			\3 Banco Internacional de Pagos
+				\4 Compilación de estadísticas semianuales
+		\2 Compensación
+			\3 Idea clave
+				\4 Reducir riesgo de contrapartida
+				\4[] ¿La otra parte del contrato lo cumplirá?
+				\4 Interponerse entre partes
+				\4[] Cámara de compensación es contrapartida de ambos
+				\4[] $\to$ Asume riesgo de contrapartida
+				\4[] Partes depositan margen
+				\4[] $\to$ Cámara se cubre frente a riesgo de contrapartida
+				\4[] Cámara liquida posiciones
+			\3 Mercados centralizados
+				\4[] $\to$ actúan como cámara de compensación
+			\3 Mercados OTC
+				\4 Compensación bilateral
+				\4[] Condiciones ad-hoc entre las partes
+				\4 Central Counterparty
+				\4[] Entidad que asume riesgo de contrapartida
+				\4[] Equivalente a cámara en mercados centralizados
+		\2 Liquidación
+			\3 Idea clave
+				\4 ¿Cómo se liquidan los beneficios/pérdidas?
+			\3 Por entregas
+				\4 Se entrega el subyacente al precio acordado
+			\3 Por diferencias
+				\4 Se intercambia el beneficio/pérdida en efectivo
+		\2 Agentes
+			\3 Especuladores
+				\4 Asumen riesgo a cambio de una prima
+				\4 Estiman que el mercado se moverá a su favor
+			\3 Cubrir riesgos (\textit{hedgers})
+				\4 Venden riesgo a cambio de una prima
+				\4 Quieren reducir variación de flujos de caja
+			\3 Arbitrajistas
+				\4 Buscan oportunidades de beneficio
+				\4[] sin asumir riesgos
+				\4 Aprovechan desviaciones de la ley de un solo precio
+				\4[] $\to$ posición simultánea y opuesta en 2 mercados
+		\2 Regulación de los derivados
+			\3 Europa\footnote{Ver \href{https://ec.europa.eu/info/business-economy-euro/banking-and-finance/financial-markets/post-trade-services/derivatives-emir_en}{Comisión Europea: Derivatives/EMIR} y \href{https://www.europarl.europa.eu/RegData/etudes/BRIE/2017/603983/EPRS_BRI(2017)603983_EN.pdf}{EPRS (2019) Briefing: Regulation of OTC derivatives. }.}
+				\4 EMIR -- European Market Infrastructure Regulation
+				\4[] Aprobado en 2012
+				\4[] Reformado en 2019
+				\4 Obligación de transparencia en OTC
+				\4[] Debe reportarse información detallada a supervisores
+				\4[] $\then$ Evitar acumulación de obligaciones off-balance
+				\4[] $\then$ Mejorar capacidad de mercado valorar riesgo
+				\4 Incentivar utilización de CCP
+				\4[] Derivados OTC deben compensarse en CCP
+				\4[] Si no se compensan en OCP
+				\4[] $\to$ Técnicas de mitigación del riesgo obligatorias
+				\4[] Regulación de CCPs
+				\4 Reducción del riesgo operativo
+				\4[] Control de riesgos humanos y fraudes
+				\4[] Supervisión y estándares de negociación electrónica
+				\4 Reconocimiento de CCPs y contrapartidas fuera de UE
+				\4[] Entidades residentes UE
+				\4[] $\to$ Pueden utilizar CCPs extranjeras reconocidas
+				\4[] Necesaria aprobación de ESMA
+			\3 Estados Unidos
+	\1 \marcar{Opciones}
+		\2 Idea clave
+			\3 Concepto
+				\4 Otorga derecho a comprador de opción:
+				\4[] $\to$ Comprar
+				\4[] $\to$ Vender
+				\4 A precio determinado de antemano
+			\3 Put
+				\4 Long:
+				\4[] Derecho a vender
+				\4[] Pago\footnote{Donde $S_0$ es el precio del activo subyacente en el momento 0 y $X$ es el precio de ejercicio de la opción. El beneficio implica sumar/restar el precio de la opción. No confundir el pago recibido en el momento del strike con el valor de la opción.}: $\max \left\lbrace X - S_0, 0 \right\rbrace$
+				\4[] \grafica{beneficioputlong}
+				\4 Short:
+				\4[] Obligación de comprar subyacente
+				\4[] Pago: $\min \left\lbrace 0, S_0 - X \right\rbrace$
+				\4[] \grafica{beneficioputshort}
+			\3 Call
+				\4 Long:
+				\4[] Derecho a comprar
+				\4[] Pago: $\max \left\lbrace S_0 - X , 0 \right\rbrace$
+				\4[] \grafica{beneficiocalllong}
+				\4 Short:
+				\4[] Obligación de vender
+				\4[] Pago: $\min \left\lbrace 0, X - S_0 \right\rbrace$
+				\4[] \grafica{beneficiocallshort}
+			\3 In-the-money
+				\4 Pago para lado long > 0
+				\4 Call:
+				\4[] Subyacente más caro que strike
+				\4 Put:
+				\4[] Subyacente más barato que striken
+			\3 At-the-money
+				\4 Beneficio para lado long $\sim 0$
+				\4 Subyacente y strike al mismo precio
+			\3 Out-of-the-money
+				\4 Beneficio para lado short > 0
+				\4 Call:
+				\4[] Subyacente más barato que strike
+				\4 Put:
+				\4[] Subyacente más caro que strike
+			\3 Apalancamiento aumentado
+				\4 Misma exposición
+				\4[] $\to$ Necesario menos capital
+			\3 Costes de transacción inferiores
+				\4 Para misma exposición
+				\4[] Necesario número menor de transacciones
+				\4[] $\Rightarrow$ Menores costes
+		\2 Uso
+			\3 Reducción del riesgo o cobertura
+				\4 Si long en subyacente:
+				\4[] $\to$ Compra de opción put
+				\4 Si short en subyacente:
+				\4[] $\to$ Compra de opción call
+			\3 Covered call
+				\4 Rentabilización acción sin movimiento
+				\4[$\to$] Posición larga en subyacente
+				\4[+] Venta de opción call OTM
+				\4 Disciplina recogida de beneficios
+				\4 Muy ligera protección a bajada
+				\4[] Por la prima obtenida por la venta de la call
+			\3 Collar
+				\4 Protección frente a volatilidad
+				\4 Recogida de beneficios: fuerza disciplina
+				\4[] Tras posición long en subyacente y subidas
+				\4[$\to$] Covered call
+				\4[+] Compra de put OTM
+			\3 Straddle
+				\4 Beneficio por volatilidad
+				\4[$\to$] Compra de put + Compra de call
+				\4 Variación de precios > primas $\Rightarrow$ beneficio
+				\4 Riesgo limitado
+				\4 Beneficio potencial ilimitado
+			\3 Strip y strap
+				\4 Beneficio por volatilidad + movimiento mercado
+				\4 Compra de puts y calls
+				\4 Strip:
+				\4[$\to$] Puts > calls
+				\4[] Beneficio de volatilidad sesgado a la baja
+				\4 Strap:
+				\4[$\to$] Puts < calls
+				\4 Beneficio de volatilidad sesgado al alza
+		\2 Variantes
+			\3 Americanas vs europeas
+				\4 Americanas:
+				\4[] Ejercicio posible en un intervalo
+				\4 Europeas:
+				\4[] Ejercicio posible en una fecha determinada
+				\4 Opciones bermudas
+				\4[] Ejercicio posible en una serie de fechas determinadas
+			\3 Opciones asiáticas
+				\4 Pago depende de precio medio hasta ejercicio
+			\3 Warrants
+				\4 Vendidas por agente emisor del subyacente
+				\4 Generan flujo de caja para emisor:
+				\4[] $\to$ Por venta del warrant
+				\4[] $\to$ Por precio de ejercicio
+			\3 Binarias
+				\4 Pago igual a 0 o a cantidad fija
+			\3 Barrera
+				\4 Posible ejercer si $S_0$ se mantiene en intervalo
+				\4[] $\Rightarrow$ menos posibilidades para comprador
+				\4[] $\Rightarrow$ más baratas
+			\3 Opciones sobre futuros
+				\4 Futuros a menudo más líquidos que subyacente spot
+				\4 Menores costes de transacción
+				\4 Futuros pueden liquidarse antes de vencimiento
+				\4[] $\to$ No necesaria entrega
+				\4 Precio del futuro conocido de inmediato
+				\4[] Por intercambio en mercado organizado
+				\4[] Precio spot menos definido
+		\2 Valoración
+			\3 Componentes del precio
+				\4 Valor intrínseco
+				\4[] Derivado del ejercicio de la opción
+				\4[] Valor presente de diferencia:
+				\4[] $\to$ Precio de subyacente
+				\4[] $\to$ Precio de ejercicio
+				\4 Valor extrínseco o temporal
+				\4[] Valor del derecho a no ejercer
+				\4[] $\to$ Beneficio restringido a $\geq 0$
+			\3 Determinantes del valor y \textit{greeks}
+				\4 Precio de subyacente:
+				\4[] $\Delta = \pdv{V}{S_0}$
+				\4[] $\gamma = \frac{\partial^2 V}{\partial S^2}$
+				\4 Tipo de interés:
+				\4[] $\rho = \pdv{V}{r}$
+				\4 Volatilidad:
+				\4[] $\text{vega}=\nu = \pdv{V}{\sigma}$
+				\4 Tiempo hasta ejercicio:
+				\4[] $\Theta = \pdv{V}{T}$
+			\3 Paridad put-call
+				\4 Relación entre precio de calls y puts
+				\4 Búsqueda de mismos payoffs con put o call
+				\4 \fbox{$X\cdot e^{-rt}+C=S_0+P$}
+			\3 Límites al precio de las opciones
+				\4 Límite superior
+				\4[] Opción call: < precio del subyacente\footnote{Si el precio de la call fuese superior al del precio del subyacente, un arbitrajista podría vender la call, comprar subyacente e invertir la diferencia a tasa libre de riesgo. Si a vencimiento de la opción su teneder la ejerciese, sólo tendría que entregar el subyacente y el beneficio sería el margen invertido a tasa libre de riesgo.}
+				\4[] Opción put americana: < $X$
+				\4[] Opción put europea: < $X\cdot e^{-rT}$
+				\4 Límite inferior
+				\4[] No negatividad en todo caso
+				\4[] $\to$ No impone obligaciones a tenedor
+				\4[] $\to$ Preferible no hacer nada y obtener 0
+				\4[] Derivable a partir de paridad-put call
+				\4[] $\to$ $P + S_0 = C + X\cdot e^{-rT}$
+				\4[] $\to$ $P \geq 0$, $C_0 \geq 0$
+				\4[] $\Rightarrow$ \fbox{$C \geq S_0 - X\cdot e^{-rT}$}
+				\4[] $\Rightarrow$ \fbox{$P \geq X\cdot e^{-rT} - S_0$}
+				\4 Valen más \comillas{vivas} que \comillas{muertas}
+				\4[] Relevante para opciones americanas
+				\4[] $\to$ Posible ejecutar en cualquier momento
+				\4[] Opción contiene valor extrínseco+intrínseco
+				\4[] Si se quiere recoger beneficio
+				\4[] $\to$ Preferible vender opción que ejecutar
+				\4[] $\Rightarrow$ Se recoge extrínseco+intrínseco
+			\3 Modelo binomial
+				\4 Cox
+				\4 Supuesto:
+				\4[] Subyacente precio inicial 20 €
+				\4[] Subyacente toma valores 22 € y 18 € en T
+				\4[] Con igual probabilidad
+				\4[] Call con strike 21 €
+				\4 Construcción de cartera:
+				\4[] Short call
+				\4[] Long subyacente en cantidad $\Delta$
+				\4 Objetivo:
+				\4[] Hallar $\Delta$ tal que cartera vale igual
+				\4[] Si subyacente en T es 22€ o 18 €
+				\4[] $\to$ Si 22: valor de cartera: $\Delta \cdot 22 - 1 = 21$
+				\4[] $\to$ Si 18: valor de cartera: $\Delta \cdot 18$
+				\4[] $\to$ $\Delta \cdot 22 - 1 = \Delta \cdot 18 \Rightarrow \Delta = \frac{1}{4}$
+				\4 Con $\Delta = \frac{1}{4}$:
+				\4[] Carteras valen 4.5 en T
+				\4[] En 0 deberán valer $4,5 \cdot e^{-rT}$
+				\4[] El valor de la cartera en 0 es $\frac{1}{4} 20 - c$
+				\4[] $\Rightarrow$ $4,5 \cdot e^{-rT} = 5 - c$
+				\4[] $\Rightarrow$ $c = 5 - 4.5 \cdot e^{-rT}$
+				\4 Construir árboles y recorrer hacia atrás
+			\3 Black-Scholes-Merton\footnote{Mencionar premio Nobel 1997}
+				\4 Modelo binomial converge a Black-Scholes
+				\4[] $\to$ cuando intervalos de estados tienden a 0
+				\4 $C_0 = S_0 \cdot N(d_1) - X\cdot e^{-rT}\cdot N(d_2)$
+				\4 $d_1 = \frac{ln(\frac{S_0}{X}) + (r+\sigma^2/2)T}{\sigma \sqrt{T}}$
+				\4 $d_2 = d_1 - \sigma \sqrt{T}$
+				\4 Supuestos:
+				\4[] Rendimientos log-normales
+				\4[] Sin pago de dividendos
+				\4[] Interés y volatilidad determinísticas
+				\4[] Precios continuos
+				\4 Volatilidad implícita
+			\3 Otros métodos y extensiones
+				\4 Campo muy fértil de la literatura
+				\4 Especialmente exigente a nivel matemático
+			\3 Sonrisa de volatilidad
+				\4 Idea clave
+				\4[] Vega positiva en opciones
+				\4[] $\to$ Precio aumenta con volatilidad
+				\4[] Precio implica volatilidad
+				\4[] $\to$ Más precio, más volatilidad implícita
+				\4[] Relación consistente entre:
+				\4[] $\to$ Desviación de strike respecto spot
+				\4[] $\to$ Volatilidad implícita en precio
+				\4 Relación empírica consistente entre:
+				\4[] $\to$ Precio de strike de opción
+				\4[] $\to$ Volatilidad implícita en precio de opción
+				\4[] $\then$ Forma de U
+				\4[] $\then$ Valle en precio spot de subyacente
+				\4[] $\then$ Más volatilidad cuanto más OtM o ItM
+				\4[] $\then$ Más $\sigma$ implícita cuanto más ItM o OtM
+				\4[] $\then$ OtM y ItM más volatilidad que AtM
+				\4[] Representación gráfica
+				\4[] \grafica{volatilitysmile}
+				\4[] No siempre presente
+				\4[] $\to$ Aparece en últimas décadas
+				\4 Implicaciones
+				\4[] Black-Scholes lleva implícito volatilidad plana
+				\4[] $\to$ Sin relación entre volat. implícita y strike
+				\4[] $\to$ No debería haber sonrisa si B-S modelo subyacente
+				\4[] $\then$ Necesario ajustar modelo B-S
+				\4 Historia de la sonrisa de volatilidad
+				\4[] Por primera vez, tras crash de 1987
+	\1 \marcar{Futuros y forwards}
+		\2 Idea clave
+			\3 Long
+				\4 Obligación de comprar subyacente
+				\4 Intercambio del subyacente en fecha futura
+				\4 Pago del precio en fecha futura
+			\3 Short
+				\4 Obligación de vender subyacente
+				\4 Intercambio del subyacente en fecha futura
+				\4 Recibe el precio en fecha futura
+			\3 Futuros
+				\4 Estandarizados: cuantías y fecha de ejercicio
+				\4 Mark-to-market: liquidación diaria
+				\4 Cámara de compensación
+			\3 Forwards
+				\4 Términos a medida
+				\4 Cámara de compensación opcional
+				\4 $\to$ Central Counterparties
+		\2 Uso
+			\3 Cobertura
+				\4 Eliminar variación flujos de caja futuros
+				\4 Commodities
+				\4 Tipos de cambio
+				\4 Índices
+				\4 Otros
+				\4 Interés
+				\4 Argumentos a favor y en contra
+			\3 Especulación
+				\4 Recorrido alcista: posición larga
+				\4 Recorrido bajista: posición corta
+				\4 Basis (variación $F-S$)
+				\4[] Especuladores esperan cambio en prima forward
+				\4[] Ejemplo: estiman prima forward debe caer
+				\4[] $\to$ Prima forward: $F-S$
+				\4[] $\to$ F caer y S debe subir
+				\4[] $\to$ Posición larga en spot
+				\4[] $\to$ Posición corta en futuros
+				\4[] $\then$ Beneficio por subida de S y caída de $F_0$
+				\4 Spreads (variación $F_t - F_{t+1}$)
+				\4[] Variación de precio de futuros
+				\4[] Cuando variación esperada se realiza
+				\4[] $\to$ Ponerse corto/largo si antes largo/corto
+				\4[] $\then$ Compensar transacciones
+		\2 Variantes
+			\3 Financieros
+				\4 El activo subyacente es un valor financiero
+			\3 Commodities
+				\4 El activo subyacente es una commodity
+				\4 Más habituales son petróleo y bienes agrícolas
+			\3 Forward-rate agreements
+				\4 Intercambio de dos flujos de interés
+				\4[] $\to$ Sin principal
+				\4 Ejemplo:
+				\4[] A paga LIBOR+2\% en T sobre principal X
+				\4[] B paga 3\% en T sobre principal X
+		\2 Valoración
+			\3 Idea clave
+				\4 El contrato en sí no tiene precio
+				\4[] $\to$ Partes se comprometen a intercambio futuro
+				\4 Valor $f$ determinado por diferencias entre:
+				\4[] Precio de ejercicio del forward: X
+				\4[] Precio forward en periodo presente: $F_0$
+				\4 Inicialmente, $X = F_0$
+				\4[] $\Rightarrow$ Valor inicial de un forward es nulo
+			\3 Posición larga
+				\4 $f = (F_0 - X) \cdot e^{-rT}$
+			\3 Posición corta
+				\4 $f = (X - F_0) \cdot e^{-rT}$
+			\3 Paridad spot-forward
+				\4 $F_0 = S_0 \cdot e^{rT}$
+				\4 Si dividendos: $F_0 = (S_0 - I)\cdot e^{rT}$
+				\4 Incumplimiento posibilita arbitraje\footnote{La rentabilidad de una posición larga en spot y corta en forward es $R_t = \frac{F}{S_0}$. Si $R_t \neq 1 + r_f$ existirá la posibilidad de pedir prestado a tipo $r_f$ y aplicar esa estrategia para obtener rentabilidad con una inversión nula.}
+				\4[] Y no se cumplirá la CIP
+			\3 Precio forward, precio esperado y HMEficientes
+				\4 Futuros como predictores del precio spot futuro
+				\4[] $\to$ Sucede si se cumple HME
+				\4[] $\then$ Spot futuro resulta de HME y coste de tenencia
+				\4 Paridad spot-forward:
+				\4[] $F_0 = S_0 \cdot e^{rT}$
+				\4 HME:
+				\4[] $S_0 = E(S_T) \cdot e^{-kT}$
+				\4[$\then$] $F_0 = E(S_T) \cdot e^{(r-k)T}$
+				\4 Si $r <k$: NORMAL BACKWARDATION
+				\4[] $\then$ $F_0 < E(S_T)$:
+				\4[] Se exige mayor rentabilidad que activo libre de riesgo
+				\4[] Vendedores pagan prima por asegurar venta futura
+				\4[] Si subyacente es divisa:
+				\4[] $\to$ Divisa cotiza con descuento
+				\4 Si $r > k$: CONTANGO
+				\4[] $\then$ $F_0 > E(S_T)$
+				\4[] Situación normal si coste tenencia/almacenaje
+				\4[] $\to$ Compradores pagan prima por comprar tarde
+				\4[] Si subyacente es divisa:
+				\4[] $\to$ Divisa cotiza con prima forward
+				\4[] $\to$ Contango
+	\1 \marcar{Swaps}
+		\2 Idea clave
+			\3 Intercambio de secuencia de flujos futuros
+				\4 Todo tipo de flujos
+				\4[] Divisas
+				\4[] Acciones
+				\4[] Interés
+				\4[$\to$] Generalizacion de forward rate agreements\footnote{Ver conceptos.}
+				\4[] FRA es swap con un sólo flujo a intercambiar
+				\4[] Swap es serie de FRA encadenados
+			\3 Regulación
+				\4 Swaps estandarizados
+				\4[] Mercados electrónicos
+				\4[] Ambas partes son agentes financieros
+				\4[] Liquidados en Central Counterparty
+				\4 Swaps OTC
+				\4[] Posible si una parte no es financiero
+			\3 Mercado de swaps
+				\4 Principalmente interés y divisas
+		\2 Uso (swaps de interés)
+			\3 Fines de cobertura y especulación
+				\4 Parte de variable a fijo:
+				\4[] $\to$ Eliminar riesgo de interés
+				\4 Parte de fijo a variable:
+				\4[] $\to$ Espera que tipo variable sea menor
+			\3 Aprovechar ventaja comparativa
+				\4 Ventaja comparativa en segmento con menor diferencial\footnote{AAA pide prestado a fijo al 5\% y a LIBOR+2\% a float. BBB pide prestado a fijo al 9\% y a LIBOR+4\%. El diferencial es mayor en fijo, luego BBB tiene ventaja comparativa en el segmento variable. AAA pedirá prestado a fijo y BBB a variable, y acordarán un swap.}
+				\4 Ejemplo:
+				\4[] AAA puede pedir a 5\% fijo y LIBOR+2\% en float
+				\4[] BBB puede pedir a 9\% fijo y LIBOR+4\% en float
+				\4[] AAA pide a fijo
+				\4[] BBB pide a float
+				\4[] Acuerdan swap:
+				\4[] $\to$ AAA paga a BBB: LIBOR
+				\4[] $\to$ BBB paga a AAA: 4\%
+				\4[] Neto:
+				\4[] $\to$ AAA: LIBOR+1\%
+				\4[] $\to$ BBB: 8\%
+				\4[] $\Rightarrow$ AAA paga menos a tipo variable
+				\4[] $\Rightarrow$ BBB paga menos a tipo fijo
+			\3 Market-makers
+				\4 Instituciones financieras
+				\4 Swaps opuestos
+				\4[] $\to$ Extracción de márgenes
+				\4 Ejemplo:
+				\4[] Banco AAA contrata dos swaps:
+				\4[] SWAP 1: Paga LIBOR, recibe 3\%
+				\4[] SWAP 2: Recibe LIBOR, paga 2,97\%
+				\4[] $\Rightarrow$ Margen extraído: 0,07\%
+		\2 Variantes
+			\3 Swaps de tipos de interés
+				\4 Anteriormente
+			\3 FX swaps (swaps de tipo de cambio)
+				\4 No confundir con currency swaps
+				\4 Intercambios de divisas en dif. momentos
+				\4 Ej.:
+				\4[] Presente: X € por Y USD
+				\4[] Futuro: Z USD por W €
+				\4 Ejemplo de uso:
+				\4[] Exportador europeo a EEUU
+				\4[] Recibe pago en USD en t+2
+				\4[] Contrata forward corto EURUSD en t+2
+				\4[] $\to$ Vender USD por EUR en t+2
+				\4[] Cuando llega t+1, pago a recibir se extiende
+				\4[] $\to$ Se traslada de t+2 a t+4
+				\4[] Forward corto contratado con tercero
+				\4[] $\to$ Exportador debe pagar USD
+				\4[] $\then$ Desea pagar pero mantener cobertura para t+4
+				\4[] Exportador contrata FX swap
+				\4[] $\to$ Forward largo en t+2
+				\4[] $\then$ Para cerrar posición de forward corto en t+2
+				\4[] $\to$ Forward corto en t+4
+				\4[] $\then$ Para vender dólares que recibirá en t+4
+			\3 Currency swaps (swaps de divisas)
+				\4 Intercambio de principal y cupones fijos
+				\4[] En distintas divisas
+				\4[] A lo largo de todo el periodo de vida
+				\4[] $\to$ Desde obtención préstamo inicial hasta rendención
+				\4 Ejemplo:
+				\4[] Inditex en Europa
+				\4[] $\to$ Quiere llevar a cabo proyecto en Japón
+				\4[] $\then$ Necesita JPY
+				\4[] Toyota en Japón
+				\4[] $\to$ Quiere llevar a cabo proyecto en Europa
+				\4[] $\then$ Necesita EUR
+				\4[] Inditex se financia más barato en EUR que Toyota
+				\4[] Toyota se financia más baro en JPY que Inditex
+				\4[] Currency swap:
+				\4[] 1. Emisión de bonos en mercados respectivos
+				\4[] $\to$ Inditex emite bonos EUR en Europa
+				\4[] $\to$ Toyota emite bonos JPY en Japón
+				\4[] 2. Intercambio de ingresos por emisión de bonos
+				\4[] $\to$ Inditex Transfiere EUR recibidos a Toyota
+				\4[] $\to$ Toyota Transfiere JPY recibidos a Inditex
+				\4[] 3. Intercambio de intereses
+				\4[] $\to$ Inditex paga interés de bonos JPY a Toyota
+				\4[] $\to$ Toyota paga interés de bonos EUR a Inditex
+				\4[] 4. Pago de principales
+				\4[] $\to$ Inditex paga principal de bono JPY a Toyota
+				\4[] $\to$ Toyota paga principal de bono EUR a Inditex
+				\4[] 5. Resultado neto
+				\4[] $\to$ Inditex se ha endeudado en JPY a coste de Toyota
+				\4[] $\to$ Toyota se ha endeudado en EUR a coste de Inditex
+			\3 Stock swaps
+				\4 Intercambio de:
+				\4[] Retornos totales de un índice de acciones
+				\4[] A cambio de interés fijo
+			\3 Credit Default Swaps
+				\4 Parte A realiza pagos periódicos
+				\4 Parte B paga sólo si ocurre evento de crédito
+				\4[$\to$] Pago tendente a igualar valor de principal
+		\2 Valoración
+			\3 Swaps de interés
+				\4 Descuento de flujos netos esperados
+				\4 Suma de forward-rate agreements
+				\4[] A partir de ETTI
+				\4[] Asumiendo tipos forward se realizan
+			\3 Swaps de divisas interés fijo
+				\4 Pagos equivalen a bono emitido
+				\4[] $\to$ Valor es diferencia de valor de bonos equiv.
+				\4 $V_{\text{SWAP}} = B_D - S_0 B_F$
+				\4[] $B_D$: bono en moneda nacional
+				\4[] $B_F$: bono en moneda extranjera
+				\4[] $S_0$: tipo de cambio directo (nacional/extranjera)
+	\1 \marcar{Otros}
+		\2 Collateralized Debt Obligation
+			\3 Idea clave
+				\4 Subyacente: ABS
+				\4 Flujos dependen de flujos de ABS
+		\2 Credit Default Swaps
+			\3 Idea clave
+				\4 Pagos dependen de evento de crédito de subyacente
+				\4 Subyacente es cualquier forma de deuda
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Mercados
+			\3 Opciones
+			\3 Futuros
+			\3 Swaps
+		\2 Idea final
+			\3 Instrumento clave sistema financiero
+				\4 Reducción del riesgo
+				\4 Fiscalidad
+				\4 Impacto discutible sobre volatilidad
+			\3 Relativa complejidad
+				\4 Difícil regulación
+				\4 Falta de transparencia
+				\4 Riesgos para el sistema financiero
+\end{esquemal}
+
+
+
+\graficas
+
+En azul, el pago que recibe el agente. En rojo discontinuo, el beneficio una vez descontado o añadido el precio de la opción.
+
+\begin{axis}{2}{Beneficio y pagos de una posición larga en opción put.}{$X$}{}{beneficioputlong}
+	\draw[-] (0,0) -- (0,-2);
+	\draw[-] (0,2) -- (0,2.5);
+	\node[left] at (0,2.5){$\pi$};	
+
+	\draw[-,color=blue, thick] (0,2.2) -- (2.2,0) -- (4,0);
+	\draw[dashed, color=red] (0,1.7) -- (2.2,-0.5) -- (4,-0.5);
+
+	\draw[decorate,decoration={mirror,brace,amplitude=3pt},xshift=-1pt,yshift=0pt] (0,2.2) -- (0,1.7) node[black,midway,xshift=-0.3cm] {\footnotesize $P_0$};
+\end{axis}
+
+\begin{axis}{2}{Beneficio y pagos de una posición corta en opción put.}{$X$}{$\pi$}{beneficioputshort}
+	\draw[-] (0,0) -- (0,-2);
+	\draw[-] (0,-2) -- (0,-2.5);
+	
+	\draw[decorate,decoration={mirror,brace,amplitude=3pt},xshift=-1pt,yshift=0pt] (0,-1.7) -- (0,-2.2) node[black,midway,xshift=-0.3cm] {\footnotesize $P_0$};
+	
+	% pago
+	\draw[-,color=blue, thick] (0,-2.2) -- (2.2,0) -- (4,0);
+	
+	% beneficio
+	\draw[dashed, color=red] (0,-1.7) -- (2.2,0.5) -- (4,0.5);
+	
+\end{axis}
+
+\begin{axis}{2}{Beneficio y pagos de una posición larga en opción call.}{$X$}{$\pi$}{beneficiocalllong}
+	\draw[-] (0,0) -- (0,-2);
+	
+	\draw[-, color=blue, thick] (0,0) -- (2.2,0) -- (4,2.2);
+	
+	\draw[dashed, color=red] (0,-0.5) -- (2.2,-0.5) -- (4,1.7);
+	
+	\draw[decorate,decoration={mirror,brace,amplitude=3pt},xshift=-1pt,yshift=0pt] (0,0) -- (0,-0.5) node[black,midway,xshift=-0.3cm] {\footnotesize $C_0$};
+	
+\end{axis}
+
+\begin{axis}{2}{Beneficio y pagos de una posición corta en opción call.}{$S_0$}{$\pi$}{beneficiocallshort}
+	\draw[-] (0,0) -- (0,-2);	
+	
+	\draw[-,color=blue, thick] (0,0) -- (2.2,0) -- (4,-2.2);
+	
+	\draw[dashed, color=red] (0,0.5) -- (2.2, 0.5) -- (4,-1.7);
+	
+	\draw[decorate,decoration={brace,amplitude=3pt},xshift=-1pt,yshift=0pt] (0,0) -- (0,0.5) node[black,midway,xshift=-0.3cm] {\footnotesize $C_0$};
+	
+\end{axis}
+
+
+\begin{axis}{4}{Sonrisa de volatilidad como relación positiva entre volatilidad implícita y alejamiento de strike desde At-the-Money hacia Out-of-the-Money e In-the-money.}{$X$}{$\sigma$}{volatilitysmile}
+	\draw[-] (0.5,3.5) to [out=280, in=180](2,1) to [out=0, in=260](3.5,3.5);
+
+\end{axis}
+
+
+
+\conceptos
+
+\concepto{Forward-rate agreement (FRA)}
+
+Un forward-rate agreement es un acuerdo entre dos partes en virtud del cual una de ellas se compromete a pagar a la otra una cantidad fija sobre un principal dado a cambio de recibir el interés variable fijado por un índice como el LIBOR. De esta forma, un deudor puede eliminar la variabilidad del interés sobre un préstamo que hubiese contraído con un tercero. Los swaps de interés son generalizaciones de los FRA en el sentido de son carteras de FRAs.
+
+\concepto{Optimalidad de ejecutar opciones americanas sobre acciones que no pagan dividendo}
+
+La optimalidad de la ejecución de opciones americanas es diferente para las \textit{calls} y las \textit{puts}. En el caso de las opciones \textit{call}, nunca es óptimo ejercer una opción americana aunque se encuentre \textit{in-the-money}. Es siempre preferible vender la opción a otro inversor si se considera que el subyacente está sobrevalorado. En el caso de las opciones \textit{put}, sí es óptimo ejercerlas cuando la opción se encuentra suficientemente \textit{in-the-money}, ya que cuando el precio del subyacente se aproxima a 0, la put no puede aumentar su valor pero sin embargo sí puede perderlo. En el caso de la opción \textit{call} no existe límite a la ganancia posible, y tan sólo debe venderse la opción en la medida en que se considere que el activo está sobrevalorado. Ver páginas 245-249 en Hull.
+
+\preguntas
+
+\seccion{Test 2017}
+\textbf{35.} Si una opción \textit{call} está ``\textit{out the money}'' y su prima es positiva, entonces:
+
+\begin{itemize}
+	\item[a] El valor intrínseco de la opción es positivo y decreciente con el tiempo.
+	\item[b] El valor intrínseco de la opción es positivo y creciente con el tiempo.
+	\item[c] El valor temporal de la opción es positivo y decreciente con el tiempo.
+	\item[d] El valor temporal de la opción es positivo y creciente con el tiempo.
+\end{itemize}
+
+\seccion{Test 2016}
+
+\textbf{36.} En el mercado de opciones, comprar una put option equivale a:
+
+\begin{itemize}
+	\item[a] Comprar una call y comprar un forward.
+	\item[b] Comprar una call y vender un forward.
+	\item[c] Vender una call y vender un forward.
+	\item[d] Vender una call y comprar un forward.
+\end{itemize}
+
+\seccion{Test 2015}
+
+\textbf{39}. Señale la respuesta correcta sobre los mercados de futuros:
+
+\begin{enumerate}
+    \item[a] La parte compradora del futuro está obligada a depositar unos fondos en concepto de garantía (\textit{margin}) ante la cámara de compensación mientras que la parte vendedora puede también depositarlos, aunque no está obligada a ello.
+    \item[b] La parte compradora en los contratos de futuros no asume riesgo de contrapartida gracias a la existencia de la cámara de compensación, que se interpone entre las partes. La parte vendedora no asume riesgo de contrapartida únicamente si deposita los fondos en concepto de garantía ante la cámara de compensación.
+    \item[c] El depósito de una garantía ante la cámara de compensación reduce el nivel de apalancamiento de las partes intervinientes en el contrato de futuros.
+    \item[d] La cámara de compensación puede exigir el depósito de garantías adicionales a alguna de las partes en función de la evolución de su posición respecto al contrato.
+\end{enumerate}
+
+\seccion{Test 2013}
+
+\textbf{25.} Seleccione la definición correcta de una operación de venta de un futuro sobre un activo financiero:
+
+\begin{itemize}
+	\item[a] Operación por la que el vendedor se compromete a vender, en una fecha futura, un activo financiero a un precio que será fijado y pagado en dicha fecha futura.
+	\item[b] Operación por la que el vendedor se compromete a vender, en una fecha futura, un activo financiero a un precio que se fija y paga en el momento de la contratación.
+	\item[c] Operación por la que le vendedor se compromete a vender, en una fecha futura, un activo financiero a un precio fijado en el momento de la contratación, que será pagado en dicha fecha futura.
+	\item[d] Operación por la que el vendedor tiene la opción de vender, en una fecha futura, un activo financiero a un precio que será fijado y pagado en dicha fecha futura.
+\end{itemize}
+
+\seccion{Test 2007}
+
+\textbf{36.} Indique la respuesta correcta referente a las siguientes afirmaciones:
+
+\begin{itemize}
+	\item[1] El valor mínimo de una opción call comprada (de tipo europeo) en un momento t es cero mientras que su valor máximo es el precio del activo subyacente.
+	\item[2] El valor mínimo de una opción call comprada (de tipo europeo) en un momento t es cero mientras que su valor máximo es infinito.
+	\item[3] El valor de un swap es cero (sin tener en cuenta comisiones) en el momento de su contratación.
+	\item[4] El valor de un swap de intereses (sin tener en cuenta comisiones) si que es cera en su momento de contratación, no así en el caso de un swap de divisas ya que como hay intercambio final e inicial de principales el valor necesariamente tiene que ser distinto de cero.
+\end{itemize}
+
+\begin{itemize}
+	\item[a] 1 y 3 son correctas.
+	\item[b] 2 y 4 son correctas.
+	\item[c] 1 y 4 son correctas.
+	\item[d] 2 y 3 son correctas.
+\end{itemize}
+
+\seccion{Test 2006}
+
+\textbf{32.} Indique cuál de las siguientes afirmaciones es CORRECTA:
+
+\begin{itemize}
+	\item[a] Las posibles pérdidas originadas por la compraventa de opciones están limitadas por el monto de las primas correspondientes.
+	\item[b] El valor de una opción decae de manera lineal con el tiempo de vida residual hasta su vencimiento.
+	\item[c] Un incremento de la volatilidad implícita incrementa, ceteris paribus, el precio de las opciones ``call'' y también el precio de las opciones ``put''.
+	\item[d] Las opciones no se negocian en mercados regulares. 
+\end{itemize}
+
+\seccion{Test 2005}
+
+\textbf{33.} Las opciones son contratos que dan la posibilidad de comprar o vender un activo a un precio acordado en el presente, pero con entrega y pago en el futuro. Con respecto a la fórmula de valoración de estos derivados propuesta por Black y Scholes (1973) diga cuál de las siguientes afirmaciones es verdadera:
+
+\begin{itemize}
+	\item[a] El valor de la opción, al igual que en el modelo CAPM, depende de la cartera de mercado.
+	\item[b] El valor de la opción crece con el precio de la acción y con el tipo de interés, independientemente de la actitud ante el riesgo de los agentes.
+	\item[c] La función de valoración de las opciones es una extensión del método binomial de valoración, aproximando el valor de una call con una venta apalancada.
+	\item[d] El valor de la opción es menor cuanto mayores son el precio de ejercicio y la aversión al riesgo de los agentes, medida por el coeficiente de Arrow-Pratt.
+\end{itemize}
+
+\notas
+
+\textbf{2017:} \textbf{35.} C
+
+\textbf{2016:} \textbf{36.} B
+
+\textbf{2015:} \textbf{39.} D
+
+\textbf{2013:} \textbf{25.} C
+
+\textbf{2007:} \textbf{36.} A
+
+\textbf{2006:} \textbf{32.} C
+
+\textbf{2005:} \textbf{33.} B
+
+Los dos primeros capítulos del libro de McDonald tienen buen nivel para servir de introducción.
+
+¿Primero swaps, o primero forwards y futuros?
+
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+	\item Bachelier, Louis
+	\item backwardation
+    \item finance
+    \item finance (new developments)
+    \item futures market, hedging and speculation
+    \item hedging
+    \item history of forward contracts
+    \item options
+    \item options (new perspectives)
+    \item present value
+    \item spot and forward markets
+\end{itemize}
+
+Bodie, Z.; Marcus, A.; Kane. A. \textit{Investments}. 10th edition. Capítulos 20, 21, 22, 23
+
+Instituto BME. \textit{Glosario de productos derivados}. \url{http://www.institutobme.es/esp/QuienesSomos/Tutoriales/GlosarioProductosDerivados.aspx}
+
+Hull, J. C. \textit{Options, Futures and Other Derivatives} (2018) 10th Edition
+
+
+
+\end{document}

@@ -1,0 +1,1244 @@
+\documentclass{nuevotema}
+
+\tema{3A-21}
+\titulo{La teoría del equilibrio general}
+
+\begin{document}
+
+\ideaclave
+
+Lionel Robbins y Posteriormente Samuelson definieron la ciencia económica como el estudio de las decisiones de gestión de bienes escasos con usos alternativos para satisfacer necesidades humanas. En el contexto de esta decisión, la microeconomía es la rama de la ciencia económica que tiene por objetivo explicar y predecir las decisiones de agentes individuales tales como consumidores, empresas o gobiernos. La microeconomía se sirve habitualmente de modelos matemáticos que formalizan el proceso de decisión de los agentes en un contexto de intercambios voluntarios de mercado. Este proceso de decisión se caracteriza como un problema de optimización del bienestar individual o colectivo dado un conjunto de alternativas posibles. En la búsqueda de la mayor capacidad explicativa y predictiva posible al menor coste en términos informacionales, computacionales y de desarrollo del modelo, la microeconomía debe restringir el alcance de sus representaciones de tal manera que éstas tengan en cuenta sólo aquello que se considera suficientemente relevante. La dicotomía entre equilibrio parcial y equilibrio general es el resultado de esa restricción. Los modelos de equilibrio parcial se caracterizan por examinar un aspecto determinado de una economía que se reconoce compuesta por otros mercados o sectores que, sin embargo, se asumen invariantes a las fluctuaciones de fenómeno o aspecto que se quiere analizar. El equilibrio general se caracteriza por todo lo contrario. Así, los modelos de equilibrio general analizan la interacción entre todas las fluctuaciones que acontecen a una economía compuesta por todos los mercados o sectores cuya existencia se considera relevante. La diferencia entre equilibrio general y parcial no es el hecho de analizar al tiempo varios mercados frente a uno sólo, sino el hecho de suponer o no que la economía analizada mantiene constante las variables relativas a otros mercados ante cambios en el mercado a analizar. El análisis de equilibrio general trata de analizar los efectos recíprocos de cambios en unos mercados y otros, de tal manera que todo lo relevante depende de la interacción consigo mismo, y aquellos elementos que se toman como dados se asumen totalmente externos e invariables a las decisiones económicas. El análisis de fenómenos económicos en términos de equilibrio general tiene una larga trayectoria que se remonta al \textit{Tableau Économique} de Quesnay y otros trabajos anteriores. En la segunda mitad del siglo XIX y siguiendo una estela de trabajos previos de otros autores, Léon Walras formaliza y define explícitamente el concepto de equilibrio general con su obra seminal \textit{Éléments d'économie politique}. Aparece así el llamado equilibrio general walrasiano, que será el concepto central de la teoría del equilibrio general desarrollado en el siglo XX y hasta la actualidad.
+
+El \textbf{objetivo} de la exposición es así dar respuesta a las principales preguntas relativas a la teoría del equilibrio general: ¿qué es el equilibrio general walrasiano? ¿qué propiedades positivas tienen los equilibrios generales walrasianos? ¿existen? ¿son únicos? ¿son estables? ¿cómo cambian ante cambios en las variables exógenas? ¿qué propiedades normativas tienen? ¿son óptimos de Pareto? ¿cualquier óptimo de Pareto puede alcanzarse como un equilibrio general walrasiano? ¿cómo puede extenderse y aplicarse el modelo walrasiano? ¿puede modelizarse la producción? ¿cómo se modeliza y qué efectos tiene la presencia de dinero? ¿qué es el enfoque del núcleo? ¿qué aplicaciones tiene la teoría del equilibrio general? La exposición se \textbf{estructura} en dos partes. En la primera, analizamos las propiedades positivas y negativas del modelo de equilibrio general de intercambio puro con el objetivo de caracterizar los resultados que son propios al equilibrio general y sin introducir complejidades adicionales innecesarias y que reducen la generalidad de los conceptos. En la segunda parte, planteamos las modificaciones y extensiones más relevantes que se formulan en relación al modelo anterior tales como el equilibrio general en presencia de procesos productivos que transforman bienes y factores de producción, el enfoque del núcleo, la presencia de la dimensión temporal y la incertidumbre, así como el papel del dinero en los modelos de equilibrio general.
+
+El \marcar{modelo de equilibrio general de intercambio puro} es el modelo microeconómico más simple que permite mostrar los principales resultados de la teoría del equilibrio general. Este tipo de modelos fue formulado matemáticamente de forma completa por Walras (1871) por primera vez. Walras construyó el modelo a partir de ideas tales como la función de demanda postulada por Gossen y Dupuit, el análisis de los flujos monetarios internacionales de Cournot (1838), el análisis del comercio internacional que había llevado a cabo Mill (1848) y el análisis marginal de la demanda y la utilidad que el propio autor había desarrollado paralelamente a Jevons y Menger. El objetivo de Walras es representar de forma abstracta las interacciones mutuas que tienen lugar en una economía completa y extraer resultados generales respecto de las propiedades del equilibrio. Aunque sentó las bases de todos los modelos de equilibrio general posteriores, en algunos aspectos su análisis fue erróneo o incompleto. Así, la caracterización de la existencia del equilibrio de Walras era errónea y la ciencia económica tuvo que esperar a Wald (1951), MacEnzie (1954) y Arrow y Debreu (1954) para obtener las primeras demostraciones generales. El Primer Teorema Fundamental de Bienestar, la propiedad normativa fundamental del equilibrio general, fue demostrada por primera vez en Arrow (1951).
+
+El modelo postula un conjunto de agentes que interaccionan ofertando y demandando un conjunto finito de bienes de los cuales disponen en cantidades limitadas exógenamente determinadas denominadas dotaciones iniciales. El apelativo ``intercambio puro'' trae causa en la imposibilidad de transformar unos bienes en otros, de tal manera que una vez producido el intercambio, la cantidad final de cada bien debe ser igual a la cantidad inicial. Para decidir cuánto ofrecer y cuánto demandar de cada bien, cada agente observa un vector de precios relativos. A continuación, optimiza una función de utilidad sujeta a una restricción presupuestaria construida a partir de la dotación inicial y el vector de precios. De este proceso de optimización se deriva un vector de funciones de demanda que caracterizan la demanda y la oferta de bienes de cada individuo. Asumimos que la función de utilidad representa preferencias completas transitivas y continuas que no se saturan. Para que la demanda sea una función y no una correspondencia, es preciso asumir también que las preferencias sean estrictamente convexas. Para que haya demanda positiva de todos los bienes, es necesario asumir que las preferencias son estrictamente monótonas, de tal manera que los precios relativos sean siempre estrictamente positivos. Estos dos últimos supuestos no son esenciales para obtener los resultados principales pero aumentan la tratabilidad matemática del problema. 
+
+De las funciones de demanda individuales se pueden derivar las \underline{funciones de exceso de demanda individuales}. Éstas son simplemente la diferencia entre la demanda individual de un bien y la dotación del bien de que se dispone. Así, cuando el exceso de demanda sea positivo el agente estará efectivamente \textit{demandando} el bien. Cuando el exceso de demanda sea negativo, el agente estará efectivamente \textit{ofertando} una parte de su dotación inicial del bien en cuestión. Las funciones de exceso de demanda individual dependen únicamente del vector de precios relativos, dado que las dotaciones iniciales se asumen dadas exógenamente. El \underline{exceso de demanda agregado} en un mercado es simplemente la suma de los excesos de demanda individuales de un bien determinado, y depende por tanto del vector de precios relativos que era a su vez la variable de las funciones de exceso de demanda individual. Las funciones de exceso de demanda agregada cumplen, dados los supuestos anteriores, algunas propiedades relevantes: son continuas, homogéneas de grado 0 en el vector de precios absolutos (del cual se deriva el vector de precios relativos) y cumplen la Ley de Walras.
+
+La \underline{Ley de Walras} es una propiedad que aparece en numerosas áreas de la ciencia económica pero que se puede mostrar en su expresión más definida en el contexto del análisis de equilibrio general: el producto del vector de precios relativos y el vector de funciones de exceso de demanda agregados ha de ser igual a cero si las restricciones presupuestarias se cumplen. Este resultado deriva simplemente de agregar las restricciones presupuestarias individuales de cada agente. Si se postula que cada agente demanda bienes cumpliendo con una restricción presupuestaria, habrá de cumplirse que cada agente gasta una cantidad total (en términos de un bien elegido como numerario) igual o inferior al valor de la dotación de que dispone. Si las preferencias son estrictamente monótonas y todos los precios positivos, la restricción presupuestaria habrá de cumplirse con igualdad y cada agente gastará una cantidad exactamente igual al valor de la dotación de la que dispone. Esto implica a su vez que los valores de las demandas y ofertas individuales serán exactamente iguales, de tal manera que el valor de los excesos de demanda individuales son cero. Si sumamos estos valores de los excesos de demanda individuales, y cada uno de ellos es igual a cero, la suma resultante no puede ser sino también cero y estamos ante el resultado característico de la Ley de Walras. Es preciso notar que la Ley de Walras no implica en absoluto que todos los mercados de bienes se encuentren en equilibrio de tal manera que no existan excesos de demanda, sino simplemente que la suma de todos los excesos de demanda ha de ser cero. Otro resultado de gran importancia derivado de la Ley de Walras señala que cuando todos los mercados menos uno están en equilibrio, no existen bienes gratuitos (con precio nulo) y se cumple la Ley de Walras, el último mercado también estará necesariamente en equilibrio. Este resultado se demuestra expresando la ley de Walras como una suma de valores de excesos de demanda que igualan cero. Si todos menos uno de esos componentes de la suma son cero porque los excesos de demanda son todos nulos, y el total de la suma es cero, el componente que falta necesariamente ha de igualar cero también y esto sólo puede producirse porque el exceso de demanda correspondiente es también nulo.
+
+A partir de los conceptos anteriores puede caracterizarse de forma sencilla el \underline{equilibrio general competitivo} (o walrasiano) del modelo de intercambio puro. Un EGC es un vector de precios y un conjunto de asignaciones individuales que anulan los excesos de demanda agregados de todos los mercados e inducen el equilibrio individual de todos los individuos. El concepto de equilibrio individual hace referencia al hecho de que las demandas individuales sean el resultado de la maximización de la utilidad que cumple con la restricción presupuestaria respectiva. Es preciso tener en cuenta que la definición de equilibrio no implica ninguna referencia al proceso mediante el que se encuentra ese equilibrio o los participantes en el mercado acuerdan intercambiar bienes al precio indicado por el vector de precios. Gráficamente, el equilibrio competitivo con dos bienes y dos agentes puede representarse en un caja de Edgeworth en la que todos los puntos son asignaciones factibles. Un equilibrio competitivo interior a partir de una dotación inicial se representa como una recta que indica los precios relativos de equilibrio y las restricciones presupuestarias respectivas (porque pasa por la dotación inicial), y como un punto sobre esa recta en el cual las curvas de indiferencia respectivas son tangentes. Las llamadas soluciones de esquina se producen cuando no existen puntos de tangencia de las curvas de indiferencia dadas las preferencias individuales, y la asignación de equilibrio se sitúa en uno de los lados de la caja.
+
+Los equilibrios competitivos pueden cumplir (o no) con tres \textbf{propiedades positivas} fundamentales: existencia, unicidad y estabilidad. La propiedad de \underline{existencia} es relevante precisamente porque un equilibrio competitivo no tiene por qué existir a priori, y es preciso caracterizar de forma precisa las condiciones necesarias y/o suficientes que implican la existencia. La demostración de la existencia del equilibrio general se basa en los teoremas del punto fijo. Los teoremas del punto fijo caracterizan las condiciones necesarias para que en una relación entre elementos de un mismo conjunto, exista al menos un elemento que se relacione a sí mismo. Cuando las funciones de exceso de demanda son i) continuas, ii) homogéneas en grado 0 y iii) cumplen la Ley de Walras, se cumple que efectivamente existe un vector de precios que elimina todos los excesos de demanda y por ende, existe el equilibrio competitivo. La intuición detrás de la demostración se basa en postular un mecanismo de ajuste que asigna a cada vector de precios otro vector de precios, en función del exceso de demanda al que dé lugar. Cuando existe exceso de demanda en un mercado, se le asigna un nuevo precio más elevado. Cuando existe exceso de oferta, se le asigna un precio más bajo. Este mecanismo es así una aplicación de un conjunto sobre sí mismo. Cuando se alcance un vector de precios que anule todos los excesos de demanda, el mecanismo asignará el vector de precios a sí mismo, porque no será necesario variar ningún precio relativo para eliminar ningún exceso de demanda y estaremos ante un punto fijo del sistema que es un equilibrio competitivo. Así, si es posible demostrar la existencia de un punto fijo, se estará también demostrando la existencia de un equilibrio competitivo. El teorema del punto fijo de Brouwer permite demostrar esta existencia cuando no existen precios no positivos y las demandas son funciones y no correspondencias. Cuando esto no sucede, es necesario aplicar versiones más generales del teorema como el Teorema del Punto Fijo de Kakutani, así como técnicas matemáticas más avanzadas como la topología diferencial.
+
+La \underline{unicidad} del equilibrio competitivo concierne la existencia de un sólo equilibrio. La existencia no implica unicidad, y pueden existir múltiples vectores de precios que anulen la función de exceso de demanda. La unicidad es deseable porque implica determinismo dadas unas preferencias, unas dotaciones o una tecnología conocidas. Si hay varios equilibrios posibles dadas unas primitivas, existen factores ajenos al modelo que determinan cual de los equilibrios efectivamente tiene lugar, lo cual debilita enormemente su capacidad explicativa por sí mismo y es necesario introducir otros elementos tales como la historia o aleatoriedad que reducen significativamente la parsimonia del modelo (es decir, aumentan la cantidad de información necesaria para llegar a una conclusión). Para delimitar la unicidad del equilibrio existen varios teoremas que muestran condiciones suficientes. En general, se requiere la aplicación de técnicas matemáticas complejas, por lo que basta con presentar algunos de estos teoremas brevemente y en lo fundamental. El primero y más sencillo muestra que cuando todos los bienes son sustitutivos brutos para todos los precios, el equilibrio que exista será además único. El teorema del índice muestra que determinadas condiciones relativas al determinante de la matriz de derivadas de la función de exceso de demanda pueden implicar la unicidad del equilibrio. Cuando la unicidad no es posible, es deseable que se cumpla al menos la unicidad local. Es decir, que no existan equilibrios inmediatamente adyacentes los unos a los otros.
+
+Las propiedades de existencia y unicidad no implican que un equilibrio se alcance efectivamente. Cabe preguntarse: dados una dotación y unos precios iniciales, ¿qué mecanismos de variación de los precios en función de los excesos de demanda permiten reducir los excesos de demanda hasta anularlos completamente, induciendo el equilibrio? O de forma equivalente: si se aplica una perturbación a un equilibrio en forma de una variación exógena en los precios o las asignaciones, ¿las fuerzas del mercado restablecerán el equilibrio? ¿el sistema tenderá a algún otro equilibrio, o a ninguno en absoluto? Un equilibrio cumple la propiedad de \underline{estabilidad} cuando ante una perturbación que desvía el sistema del equilibrio en cuestión, el mecanismo tiende a restablecerlo. La estabilidad es global si el equilibrio se restablece para cualquier perturbación, y local si se restablece sólo ante perturbaciones comprendidas en un entorno finito del equilibrio en cuestión. Así, la característica de estabilidad no es sólo una característica de cada equilibrio por sí mismo, sino que está ligada al mecanismo de ajuste postulado. El mecanismo de \textit{tâtonnement} de precios propuesto por Walras (1974) define las variaciones de los precios que se deben aplicar en función de los excesos de demanda para alcanzar el equilibrio agregado. Cuando existe exceso de demanda en un mercado, el precio aumenta, y cuando existe exceso de oferta el precio disminuye (de hecho, ya hemos descrito anteriormente este mecanismo cuando se ha tratado la demostración de la existencia por medio de los teoremas de punto fijo). Este tipo de mecanismos de ajuste cumplen la propiedad de estabilidad cuando aumentos del precio efectivamente provocan reducciones del exceso de demanda, y viceversa. En caso contrario, un mecanismo de tâtonnement en precios definido en los términos anteriores no cumplirá la propiedad de estabilidad. El mecanismo de tâtonnement en cantidades habitualmente asociado a Alfred Marshall no es aplicable al modelo de intercambio puro anterior porque requiere variaciones en las dotaciones o en la producción. En ejemplo anterior vimos que cuando los precios no son los de equilibrio, las ofertas y las demandas no se igualan. En el modelo de tâtonnement en cantidades de Marshall, los precios se ajustan automáticamente para equilibrar una oferta y una demanda determinadas que se consideran dadas en un momento dado. Sin embargo, en la medida en que las cantidades ofertadas y demandadas no sean las de un equilibrio determinado ``de largo plazo'', la oferta aumentará si el precio de demanda de largo plazo es superior al de oferta para esa cantidad, y disminuirá en caso contrario. Este modelo de tâtonnement no es directamente comparable con el tâtonnement de precios de Walras, y debe entenderse en el contexto del modelo marshalliano de periodos de mercado que no es objeto de esta exposición. 
+
+Hemos caracterizado hasta ahora las tres propiedades positivas fundamentales de los equilibrios generales competitivos, asumiendo implícitamente que las preferencias y las dotaciones son fijas y exógenas. Cabe sin embargo interrogarse sobre las variaciones en el equilibrio ante cambios en los parámetros exógenos: ¿qué nuevos equilibrios se alcanzan? ¿cómo afectan las variaciones en los parámetros a los equilibrios? La forma de las funciones de exceso de demanda son la clave para caracterizar estas variaciones. Aunque no entraremos en las propiedades concretas por ser dependientes de las formas funcionales concretas, es posible señalar dos propiedades de estática comparativa deseables en cualquier modelo. En primer lugar, que variaciones en los parámetros induzcan equilibrios únicos. Si esto no es posible, que al menos induzcan equilibrios localmente únicos, de manera que sea posible individualizar el efecto del cambio en varios equilibrios determinados y no un intervalo con infinitos equilibrios cuya realización concreta sea imposible de individualizar.
+
+Una propiedad positiva adicional y en cierta medida accesoria a la teoría económica concierne la computabilidad del equilibrio. Se trata de una propiedad que concierne a la frontera de la investigación en teoría del equilibrio general y trata caracterizar las condiciones que deben cumplirse para que sea posible computar el equilibrio general. Aunque en el marco de modelos simples de equilibrio general puede parecer una cuestión superflua o trivial, a medida que se plantean modelos más complejos que tratan de acercarse a las condiciones de economías reales con muchos agentes y bienes, es necesario delimitar los requisitos computacionales necesarios para hallar los equilibrios del modelo.
+
+Las \textbf{propiedades normativas} de los modelos de equilibrio general conciernen su deseabilidad o ausencia de ella. El \underline{Primer Teorema Fundamental del Bienestar} --uno de los resultados matemáticos fundamentales de la microeconomía- establece las condiciones necesarias y suficientes para los que los equilibrios generales competitivos sean óptimos en el sentido de Pareto. El teorema establece que cuando las preferencias de los consumidores no se saturan localmente, no hay externalidades ni bienes públicos y existe un mercado y por tanto un precio para todos los bienes considerados, cualquier equilibrio walrasiano que exista será también un óptimo de Pareto. Existen varias estrategias de demostración de este Teorema. Las más simples muestran simplemente como cualquier mejora Paretiana del equilibrio implica la violación de alguna restricción presupuestaria. Las demostraciones basadas en el cálculo diferencial caracterizan en primer lugar los óptimos de Pareto a partir de un programa de maximización del bienestar agregado y después comparan con las condiciones de óptimo derivadas de los programas individuales de optimización. Si se verifica que las condiciones de óptimo individuales coinciden con las de óptimo agregado queda así demostrado el Primer Teorema Fundamental del Bienestar.
+
+El \underline{Segundo Teorema Fundamental del Bienestar} --de especial importancia en la economía del bienestar y en la familia RBC de modelos macroeconómicos- es la cara opuesta del Primer Teorema. Establece las condiciones necesarias para que cualquier óptimo de Pareto sea también un equilibrio walrasiano, dadas unas dotaciones adecuadas que pueden alcanzarse redistribuyendo dotaciones iniciales mediante impuestos de suma fija. De forma equivalente, el Segundo Teorema define las condiciones para las que, dado cualquier óptimo de Pareto, exista una dotación inicial que lo induce como equilibrio walrasiano. Las condiciones necesarias para el cumplimiento del Teorema son: i) que las preferencias no se saturen localmente y ii) que sean convexas. Si se introduce un sector productivo, los conjuntos de producción deberán también ser convexos. El teorema tiene una interpretación doble. Por un lado, ha sido utilizado para justificar los mercados competitivos en conjunción con impuestos de suma fija como marco institucional en el que alcanzar cualquier óptimo de Pareto que se considere deseable aplicando un criterio de bienestar social determinado. A \textit{contrario sensu}, ha sido interpretado como prueba de lo enormemente restrictivo de las condiciones requeridas para alcanzar óptimos de Pareto interpretados como deseables: es necesario garantizar la existencia de precios de equilibrio, conocer suficientemente las preferencias individuales y poder computar el impuesto de suma fija apropiado. En la medida en que no se disponga de toda esta información, surgirán inevitablemente trade-offs entre equidad y eficiencia entendida como optimalidad Paretiana.
+ 
+Al modelo básico de equilibrio general competitivo pueden introducirse numerosas \marcar{extensiones} que aumentan su capacidad para entender y explicar la realidad económica. La incorporación de un \textbf{sector productivo} es una de ellas. En el modelo anterior los agentes intercambian dotaciones cuyas cuantías vienen dadas de forma exógena y no admiten cambio en su cuantía total. Estos modelos pueden incorporar un sector productivo que se concreta en la posibilidad de transformar vectores de bienes en otros vectores, interpretándose esta transformación como un proceso productivo. Existen también modelos de equilibrio general que contemplan sólo la transformación de bienes, sin presencia alguna de consumidores, conocidos como modelos 2x2. Examinemos con más detalle algunas de estas variantes.
+
+El \underline{modelo 2x2x2x2} es una extensión del modelo básico con dos consumidores y dos bienes que se caracteriza por introducir dos empresas que transforman dos factores de producción en cantidades variables de los dos bienes anteriores. En este tipo de modelos, los consumidores son propietarios de las empresas y de los factores de producción. Los factores de producción no son argumentos de las funciones de utilidad de los consumidores. Esta función de utilidad depende de dos bienes de los cuales los consumidores no poseen dotación alguna pero que sin embargo pueden obtenerse por medio de la transformación que las empresas aplican a los factores de producción. En estos modelos, los programas de maximización de la utilidad individual y de los beneficios de cada empresa dan lugar a una condición de óptimo tal que las relaciones marginales de sustitución de los bienes de cada consumidor respecto de cada bien se igualan entre sí y con la relación marginal de transformación de los bienes producidos. Esta condición de óptimo es también la condición de óptimo de Pareto, sirviendo como prueba del Primer Teorema Fundamental del Bienestar. Además, la relaciones marginales de sustitución técnica de cada empresa habrán también de igualarse para lograr una producción en la frontera de posibilidades de producción. 
+
+El \underline{modelo de ocio-consumo} es una reducción y modificación del modelo básico en el que existe un sólo productor y un sólo consumidor que es además el dueño del factor de producción entendido como el tiempo disponible para el trabajo. El consumidor-productor distribuye este factor en dos bienes: ocio y bien de consumo. Este familia de modelos de equilibrio general extremadamente simplificado son piezas fundamentales de los modelos del ciclo real ampliamente utilizados en macroeconomía, así como del análisis neoclásico del mercado de trabajo.
+
+El \underline{modelo 2x2 de producción pura} contempla dos empresas y dos factores de producción. Las empresas producen respectivamente sendos bienes cuyos precios están dados exógenamente, a partir de cantidades variables de los factores de producción. Cada empresa dispone de un vector de cantidades de factor de producción. En este contexto, el equilibrio general es un vector de precios relativos de los factores de producción compatible con la maximización del beneficio de cada empresa y la igualdad entre la oferta y la demanda de factores de producción. La condiciones de óptimo serán tales que las relaciones marginales de sustitución técnica habrán de igualarse entre empresas y serán a su vez iguales al precio relativo de los factores de producción. Este tipo de modelos de equilibrio general de producción pura son el componente básico de los modelos neoclásicos de comercio internacional. 
+
+Las \underline{propiedades positivas} de estos modelos son similares al modelo básico considerado inicialmente, ya que su estructura matemática no difiere en lo esencial. Cuando se incorporan sectores productivos al modelo simple, la existencia de un equilibrio requiere de conjuntos de producción cerrados, estrictamente convexos y acotados por arriba, con demostraciones similares. Respecto a la unicidad del equilibrio, la demostración es también similar aunque se requiere el cumplimiento de algunas condiciones adicionales en la función de exceso de demanda. La estabilidad del equilibrio requiere también de condiciones similares, aunque es preciso tener en cuenta que en presencia de producción, los excesos de demanda no dependen sólo de los precios de los bienes sino también de los factores de producción y de los beneficios de las empresas. 
+
+Las \underline{propiedades normativas} son también similares a las del modelo de equilibrio general en intercambio puro. En el caso del Segundo Teorema Fundamental del Bienestar, se añade también el requisito de que los conjuntos de producción sean convexos.
+
+El \textbf{enfoque del núcleo} es una generalización del concepto de equilibrio general presentado anteriormente como un vector de precios. Edgeworth (1891) introdujo el concepto y posteriormente Debreu y Scarf (1963) y Vind (1964), entre otros, estabilizaron el enfoque del núcleo como un modelo diferenciado del modelo walrasiana pero que lo generaliza y lo pone en relación la teoría de juegos cooperativos. El objetivo es caracterizar el intercambio y el equilibrio como el resultado de una serie de coaliciones e intercambios directos entre agentes sin la presencia hipotética o postulada de un subastador que proponga vectores de precios en función de los excesos de demanda que observe. El elemento básico del enfoque del núcleo son las coaliciones de agentes. Una coalición es un subconjunto del total de agentes que \textit{mejora o bloquea} una asignación de bienes para cada agente cuando es posible hallar otra asignación resultante de reasignar las asignaciones de los miembros de tal manera que todos los miembros prefieren la reasignación o al menos son indiferentes. Una asignación para la que no coalición que pueda mejorarla pertenece al núcleo. El núcleo es así el conjunto de asignaciones para las que los agentes de un modelo no podrían ponerse de acuerdo para reasignar de forma que todos prefiriesen la reasignación o al menos fuesen indiferentes a ella. 
+
+De acuerdo con esta definición, todos los equilibrios generales walrasianos pertenecen al núcleo. Sin embargo, no todas las asignaciones del núcleo tienen por qué ser equilibrios generales walrasianos. El llamado teorema de la equivalencia del núcleo define las condiciones necesarias para que todas las asignaciones sean equilibrios generales. Expongamos las líneas generales del teorema. Supongamos que en la economía existe un número N de agentes de cada categoría h sobre un total de H categorías. Las H categorías se diferencian únicamente por la dotación de que dispone el agente que pertenece a ellas. En este contexto, si N tiende a infinito, todas las asignaciones del núcleo son equilibrios generales walrasianos. Esto sucede porque a medida que aumenta N, el tamaño del núcleo se reduce. En el límite, el núcleo se reduce tanto que sólo los equilibrios walrasianos forman parte de él.
+
+La introducción de \textbf{tiempo e incertidumbre} es otra generalización de especial importancia del modelo walrasiano simple. La variante más habitual, formalizada por Arrow y Debreu es la siguiente. La incertidumbre se manifiesta en relación a cualquiera de las primitivas del modelo: preferencias de los agentes, dotaciones individuales, tecnología de producción, etc... Las realizaciones de estas variables dependen del estado de la naturaleza que efectivamente se produzca. Los agentes asignan probabilidades a cada estado de la naturaleza e intercambian bienes contigentes a precios conocidos y determinados antes de que se resuelva la incertidumbre. Un ejemplo habitual de este tipo de modelos representa la incertidumbre de las cosechas agrícolas. Supongamos dos bienes ``básicos'': las semillas de trigo y el trigo. Supongamos también que los agentes viven en dos periodos: mañana y pasado mañana. Existen dos estados de la naturaleza posibles: buena y mala cosecha. En este contexto, los agentes no sólo intercambiaran los bienes básicos sino que asociarán a ellos alguno de los dos estados temporales y alguno de los estados de la naturaleza. Por ejemplo, intercambiarán trigo mañana por trigo pasado mañana con mala cosecha. O semillas de trigo mañana por trigo pasado mañana con buena cosecha. Los llamados equilibrios de Arrow-Debreu consisten en vectores de precios y asignaciones para los que los agentes deciden optimizando sus preferencias de manera que se igualen oferta y demanda agregadas. Extensiones a este modelo incluyen negociación secuencial que hace posible los mercados de futuros en los que el precio se paga llegado el periodo de entrega y realizándose algún estado de la naturaleza alternativo. Los modelos de la familia Arrow-Debreu han servido para representar los mercados financieros en un contexto de equilibrio general alternativo al modelo de media-varianza adscrito al enfoque de equilibrio parcial. Además, el modelo de Arrow-Debreu sirve como benchmark de comparación respecto a las distorsiones y desviaciones de la eficiencia paretiana resultado de mercados incompletos.
+
+El papel del \textbf{dinero} en los modelos de equilibrio general ha dado lugar a una amplia literatura. En el modelo de equilibrio general de intercambio puro estudiado anteriormente el dinero es irrelevante, de manera que su existencia o ausencia puede asumirse sin efectos sobre los resultados. En estos modelos, el dinero no es más que una unidad de cuenta que sirve para medir cuantas unidades de un bien se intercambian por otro. No se demanda dinero como un bien más, de tal manera que por definición el exceso de demanda de dinero es siempre nulo. En este contexto, aparece la llamada dicotomía clásica según la cual los precios relativos y absolutos se determinan por separado de forma tal que los precios absolutos son indeterminados y pueden multiplicarse por cualquier escalar de forma agregada en tanto que los precios relativos se mantengan constantes. Sin embargo, es un hecho empírico que los agentes demandan dinero por sí mismo, de forma que aparecen excesos de demanda de dinero y paralelos excesos de oferta del resto de bienes. Para incorporar el dinero en la teoría del equilibrio general han aparecido varias familias de modelos que consideran las razones de liquidez, precaución, especulación o dinero en la función de utilidad. La teoría cuantitativa del dinero o su versión de Cambridge puede utilizarse para representar la demanda de dinero por razones de liquidez. Cuando se representa la demanda de dinero por razones especulativas, es necesario incorporar mercados de activos que permitan representar la dimensión temporal del ahorro y la variación de precio de los activos. Los modelos ``\textit{money-in-the-utility-function}'' se caracterizan por introducir el dinero en la función de utilidad como un bien más a modo de proxy respecto de varias razones por las que un agente puede demandar dinero. Una de las conclusiones fundamentales de estos modelos en los que el dinero no es una mera unidad de cuenta es que el precio del dinero en términos de los demás bienes afecta a las decisiones de los agentes. Patinkin (1956) fue una obra pionera por su estudio del sector monetario a nivel agregado, sirviendo de puente entre el análisis macro y microeconómico del equilibrio general. Su obra arrojó importantes resultados relativos a la interacción entre economía monetaria y real, además de permitir establecer una relación explícita entre el modelo de equilibrio general de Walras y el modelo keynesiano de la macroeconomía.
+
+A lo largo de la exposición hemos examinado el modelo de equilibrio general en intercambio puro como herramienta para presentar los resultados inherentes a la teoría del equilibrio general. A continuación, se han presentado las variantes principales del modelo, en la medida en que han tenido más impacto tanto a nivel teórico como empírico. Se ha adoptado un enfoque fundamentalmente microeconómico. Sin embargo, la teoría del equilibrio general ha conocido en las últimas décadas un auge en su aplicación a la macroeconomía. Si las tablas input/output de Leontieff en los años 20 fueron un precursor aún muy presente en la investigación económica, ha sido la Teoría del Ciclo Real, los modelos DSGE y CGE los que han alcanzado la práctica hegemonía en la modelización y simulación de políticas económicas a nivel teórico. Asimismo, el modelo keynesiano de la economía ha sido entendido como una aplicación del modelo de equilibrio general expuesto anteriormente, aunque no sin cierta controversia. Por todo ello, la teoría del equilibrio general es hoy una pieza altamente abstracta y estilizada de la ciencia económica que ocupa un lugar preeminente en el conjunto de herramientas que todo economista debe conocer.
+
+\begin{itemize}
+	\item ¿Qué es el equilibrio general?
+	\item ¿Cómo se modeliza?
+	\item ¿Qué caracteriza al equilibrio general walrasiano?
+	\item ¿Qué condiciones son necesarias para que exista?
+	\item ¿Qué condiciones son necesarias para que sea único?
+	\item ¿Qué condiciones son necesarias para que sea estable?
+	\item ¿Cómo cambia el equilibrio cuando cambian las variables exógenas?
+	\item ¿Cómo se modeliza la producción de bienes de consumo?
+	\item ¿Qué es el enfoque del núcleo?
+	\item ¿Qué otros tipos de equilibrio general son posibles?
+	\item ¿Qué aplicaciones tiene?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Definición de economía de Robbins y Samuelson
+			\3 Interacción entre agentes
+			\3 Equilibrio general y equilibrio parcial
+		\2 Objeto
+			\3 ¿Qué es el equilibrio general walrasiano?
+			\3 ¿Qué propiedades positivas tienen los EGW?
+			\3 ¿Qué propiedades normativas tienen?
+			\3 ¿Cómo puede extenderse el modelo de EGW?
+		\2 Estructura
+			\3 Equilibrio general de intercambio puro
+			\3 Extensiones
+	\1 \marcar{Modelo de equilibrio general de intercambio puro}
+		\2 Idea clave
+			\3 Evolución
+			\3 Concepto
+			\3 Objeto del modelo
+			\3 Resultado
+		\2 Formulación
+			\3 Agentes
+			\3 Bienes
+			\3 Dotaciones
+			\3 Preferencias
+			\3 Precios
+			\3 Problema de maximización del consumidor n
+			\3 Demanda de bien i por consumidor n
+			\3 Exceso de demanda individual
+			\3 Exceso de demanda agregada
+			\3 Ley de Walras
+			\3 Equilibrio general competitivo
+		\2 Propiedades positivas del equilibrio general
+			\3 Existencia
+			\3 Unicidad
+			\3 Estabilidad
+			\3 Estática comparativa
+			\3 Computabilidad
+		\2 Propiedades normativas del equilibrio walrasiano
+			\3 Primer Teorema Fundamental del Bienestar
+			\3 Segundo Teorema Fundamental del Bienestar
+	\1 \marcar{Extensiones}
+		\2 Producción
+			\3 Idea clave
+			\3 Variantes
+			\3 Propiedades positivas
+			\3 Propiedades normativas
+		\2 Enfoque del núcleo
+			\3 Idea clave
+			\3 Mejora por coalición
+			\3 Núcleo
+			\3 Teorema de la equivalencia del núcleo
+		\2 Tiempo e incertidumbre
+			\3 Idea clave
+			\3 Equilibrio de Arrow-Debreu
+			\3 Negociación secuencial
+			\3 Aplicaciones
+		\2 Dinero
+			\3 Dinero como ``tokens''
+			\3 Dinero como bien demandado
+			\3 Patinkin
+			\3 Competencia imperfecta
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Equilibrio general de intercambio puro
+			\3 Extensiones o variantes
+		\2 Idea final
+			\3 Microeconomía y macroeconomía
+			\3 Ejemplos de aplicación
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Definición de economía de Robbins y Samuelson
+				\4 Economía estudio de comportamiento humano
+				\4[] Gestionando recursos escasos con usos alternativos
+				\4[] Para satisfacer una serie de necesidades
+				\4[] $\then$ Economía es ciencia de decisiones económicas
+			\3 Interacción entre agentes
+				\4 Decisiones individuales afectan a otros agentes
+				\4[$\to$] ¿Cómo les afectan?
+				\4[$\to$] ¿Cómo reaccionan a las decisiones de otros?
+				\4 Concepto de equilibrio
+				\4[] Omnipresente en la ciencia económica
+				\4[] Múltiples definiciones
+				\4[] En general:
+				\4[] $\to$ Estado de un sistema en reposo
+				\4[] En términos económicos:
+				\4[] Estado de un sistema en que:
+				\4[] $\to$ Decisiones son compatibles unas con otras
+				\4[] $\to$ Agentes no desean cambiar su decisión
+			\3 Equilibrio general y equilibrio parcial
+				\4 Equilibrio parcial:
+				\4[] Análisis de interacción económica
+				\4[] $\to$ Asumiendo otras interacciones no tienen lugar
+				\4[] Variables endógenas
+				\4[] $\to$ se asumen exógenas
+				\4[] $\then$ ``ceteris paribus''
+				\4 Equilibrio general:
+				\4[] Análisis de:
+				\4[] $\to$ Todas las interacciones económicas relevantes
+				\4[] Variables exógenas se asumen:
+				\4[] $\to$ Ajenas al análisis económico
+				\4 Ejemplo:
+				\4[] Introducción de un impuesto sobre gasolina
+				\4[] Equilibrio parcial:
+				\4[] $\to$ Asume constante diesel, eléctrico, plásticos...
+				\4[] $\to$ ¿Qué equilibrio se alcanza en mercado de gasolina?
+				\4[] Equilibrio general:
+				\4[] $\to$ Sustitución a diesel y eléctrico es relevante
+				\4[] $\to$ Otros mercados afectan a gasolina y vv.
+				\4[] $\then$ ¿Qué equilibrio en cada mercado relevante?
+				\4 Equilibrio general walrasiano
+				\4[] Primera formalización matemática de eq. general
+				\4[] Expresión formal de mano invisible de Adam Smith
+				\4[] Punto de partida de modelos específicos
+				\4[] $\to$ Benchmark de eficiencia ante fallos de mercado
+				\4[] $\to$ Modelos macroeconómicos microfundamentados
+		\2 Objeto
+			\3 ¿Qué es el equilibrio general walrasiano?
+				\4 ¿Cuál ha sido su desarrollo?
+				\4 ¿En qué consiste?
+				\4 ¿Para qué sirve?
+			\3 ¿Qué propiedades positivas tienen los EGW?
+				\4 ¿Existen?
+				\4 ¿Son únicos?
+				\4 ¿Son estables?
+				\4 ¿Cómo cambian cuando cambian las variables exógenas?
+			\3 ¿Qué propiedades normativas tienen?
+				\4 ¿Són óptimos de Pareto?
+				\4 ¿Cualquier óptimo de Pareto puede alcanzarse variando dotaciones iniciales?
+			\3 ¿Cómo puede extenderse el modelo de EGW?
+				\4 ¿Qué sucede cuando la producción de bienes es relevante?
+				\4 ¿Cómo se modeliza la presencia de dinero?
+				\4 ¿En qué consiste el enfoque del nucleo?
+		\2 Estructura
+			\3 Equilibrio general de intercambio puro
+			\3 Extensiones
+	\1 \marcar{Modelo de equilibrio general de intercambio puro}
+		\2 Idea clave
+			\3 Evolución
+				\4 Gossen, Dupuit
+				\4[] Concepto de función de demanda
+				\4 Cournot (1838)
+				\4[] Análisis de flujos monetarios internacionales
+				\4 Mill (1848)
+				\4[] Análisis del comercio internacional
+				\4 Jevons, Menger, Walras
+				\4[] Análisis marginal de la demanda y la utilidad
+				\4 Walras
+				\4[] Éléments d'économie politique pure (1871)
+				\4[] primera formulación matemática completa
+				\4[] Modeliza equilibrio general con producción
+				\4[] $\Rightarrow$ Representación abstracta de economía completa
+				\4[] Caracterización errónea de la existencia
+				\4 Wald (1933-1934)
+				\4[] Primera demostración de existencia de eq.
+				\4[] Basada en problema de Karl Menger (hijo de Carl)
+				\4[] Utilización de teoremas de punto fijo
+				\4 Arrow (1951)
+				\4[] Prueba del PTFB
+				\4 McEnzie (1954), Arrow y Debreu (1954)
+				\4[] Demostración general de existencia de eq.
+				\4[] Utilización de teoremas de punto fijo
+			\3 Concepto
+				\4 Modelo de interacción entre agentes que:
+				\4[] Deciden cuánto demandar y ofertar
+				\4[] $\to$ De un conjunto de bienes disponibles
+				\4[] Dados:
+				\4[] $\to$ Unas dotaciones iniciales de bienes
+				\4[] $\to$ Un vector de precios relativos
+				\4 Intercambio puro
+				\4[] Los agentes intercambian dotaciones iniciales
+				\4[] $\to$ No hay transformación posible
+			\3 Objeto del modelo
+				\4 Presentar propiedades básicas de EGC
+				\4[] $\to$ En marco lo más simple posible
+				\4 Intercambio puro
+				\4[] No hay bienes producidos
+				\4[] Cantidades totales fijas de bienes
+				\4[] Todos los bienes son de consumo y deseables
+			\3 Resultado
+				\4 Equilibrio general
+				\4[] Agentes maximizan su utilidad individual
+				\4[] Oferta iguala demanda
+				\4 Implicaciones positivas
+				\4 Implicaciones normativas
+		\2 Formulación
+			\3 Agentes
+				\4 $N$ consumidores
+			\3 Bienes
+				\4 $I$ bienes
+			\3 Dotaciones
+				\4 Cantidades de las que disponen consumidores
+				\4[] Antes de intercambiar
+				\4[] Pueden intercambiar por otros bienes
+				\4 Vectores $\vec{e}_n$ por cada consumidor $n$
+				\4[] Cantidades no negativas de cada bien
+				\4[] $(e_{n,0}, e_{n,1}, ..., e_{n,I})$
+			\3 Preferencias
+				\4 Cada agente sobre asignación de su consumo
+				\4 Representables mediante función de utilidad
+				\4[] $\then$ Completas, transitivas, continuas
+				\4 No saturadas
+				\4 Estrictamente convexas
+				\4[] Para que demanda sea función
+				\4[] $\to$ No correspondencia
+				\4 Estrictamente monótona
+				\4[] Para que haya demanda de todos los bienes
+				\4[] $\then$ Precios estrictamente positivos
+			\3 Precios
+				\4 Relativos referenciados a un numerario I
+				\4 Vector de precios relativos
+				\4[] $(p_0, p_1, ..., p_{I-1})$
+				\4[] Cantidad de numerario necesaria
+				\4[] $\to$ Para obtener unidad de bien $i$
+			\3 Problema de maximización del consumidor n
+				\4[] $\underset{\vec{x}_n}{\max} \quad u_n(\vec{x}_n)$
+				\4[] $\text{s.a:} \quad \vec{p} \cdot \vec{x}_n \leq \vec{p} \cdot \vec{e}_n $
+				\4[] $\text{CPO:} \quad \frac{p_x}{p_y} = |\text{RMS}_{xy}^n|$ \quad $\forall \, n$
+			\3 Demanda de bien i por consumidor n
+				\4 A partir de CPO de prob. de máx.
+				\4[] $x_{n,i} = x_{n,i}(\vec{p}, \vec{e}_n)$
+			\3 Exceso de demanda individual
+				\4 Oferta individual de bien $i$:
+				\4[] $s_{n,i} = e_{n,i}$
+				\4 Exceso de demanda de consumidor $i$ y bien $n$:
+				\4[] $z_{n,i} (\vec{p}) = x_{n,i}(\vec{p}) - e_{n,i}$
+			\3 Exceso de demanda agregada
+				\4 Demanda agregada de bien $i$:
+				\4[] $X_i(\vec{p}) = \sum_n x_{n,i}$
+				\4 Oferta agregada de bien $i$:
+				\4[] $S_i = \sum_n s_{n,i} = \sum_n e_{n,i}$
+				\4 Exceso de demanda agregada de bien $i$:\footnote{Asumiendo que las demandas pueden agregarse en una demanda representativa, de tal manera que el exceso de demanda no depende de la distribución de dotaciones individuales y sólo depende del total, que pasa a ser un parámetro igual a la suma de las dotaciones $S_i$.}
+				\4[] $Z_i(\vec{p}) = X_i(\vec{p}) - S_i$
+				\4 Exceso de demanda total
+				\4[] Función vectorial
+				\4[] $\vec{Z} (\vec{p}) = \vec{X}(\vec{p}) - \vec{S}  $
+				\4 Propiedades de $Z(\vec{p})$\footnote{Función vectorial de las funciones de demanda agregada de cada bien.}
+				\4[] (Dados supuestos anteriores sobre preferencias)
+				\4[] i) $Z(\vec{p})$ es homogénea de grado 0
+				\4[] $\to$ Unidad monetaria irrelevante
+				\4[] ii) $Z(\vec{p})$ es continua
+				\4[] iii) Ley de Walras: $\vec{p} \cdot Z(\vec{p}) = 0$
+				\4[] $\to$ Valor de excesos de demanda suman cero
+			\3 Ley de Walras
+				\4 Para cada consumidor $n$ se cumple que:
+				\4[] $\vec{p} \cdot \vec{x}_n(p) = \vec{p} \cdot \vec{e}_n$
+				\4[] $\then \vec{p} \cdot (\vec{x}_n(p) - \vec{e}) = 0$
+				\4[] $\then \vec{p} \cdot \vec{z}_n(\vec{p}) = 0 $
+				\4[] $\then$ Valor de suma de EDemanda se anula
+				\4 Agregando r.pres. de N consumidores:
+				\4[] $\sum_n \vec{p} \cdot \vec{x}_n(p) = \sum_n \vec{p} \cdot \vec{e}_n$
+				\4[] $\then$ \fbox{$\vec{p} \cdot \vec{Z} (\vec{p}) = 0$}
+				\4[] $\then$ Si ED indiv. se anulan, agregados también se anulan
+				\4 Equilibrio en $I-1$ mercados:
+				\4[] Asumiendo que se cumple la Ley de Walras:
+				\4[] $\vec{p} \cdot Z(\vec{p}) = 0$
+				\4[] Si $I-1$ mercados están en equilibrio
+				\4[] $\to$ Mercado $I$ también lo estará.
+				\4[] Demostración:
+				\4[] Sabemos que $\vec{p}\cdot \vec{Z} = 0$
+				\4[] Tenemos que $I-1$ están en equilibrio:
+				\4[] $\sum^{I-1}_0 p_i \cdot z_i(\vec{p}) = 0$
+				\4[] $\to$ Sustrayendo en Ley de Walras tenemos que:
+				\4[] $\then$ $p_I \cdot x_I (\vec{p}) = 0$
+				\4[] Sólo si existen bienes gratuitos ($p_I = 0$)
+				\4[] $\to$ Posible $I-1$ en equilibrio e $I$ no
+			\3 Equilibrio general competitivo
+				\4 Concepto
+				\4[] Precios $\vec{p}^*$ y asignaciones $(\vec{x}_1^*,...,\vec{x}_N)$
+				\4[] $\to$ Que inducen equilibrio individual y agregado
+				\4[] $\to$ Que anula $Z(\vec{p})$ en todos los mercados
+				\4 Equilibrio individual
+				\4[] Demandas individuales maximizan utilidad
+				\4[] $\to$ Cumpliendo restricción presupuestaria
+				\4[] Asumiendo utilidad estrictamente creciente
+				\4[] $\then$ Cumplen restricción con igualdad
+				\4 Equilibrio agregado
+				\4[] Demanda agregada iguala oferta agregada\footnote{Como en este modelo no hay producción, la oferta no depende de los precios, a diferencia del habitual $S(p) = D(p)$}
+				\4[] $X_i(\vec{p}) = E_i$ $\forall \, i$
+				\4[] $\then$ No hay exceso de demanda en ningún mercado
+				\4 NO se está describiendo:
+				\4[] $\to$ El proceso para encontrar el vector
+				\4[] $\to$ La existencia del vector
+				\4[] $\then$ Sólo sus características
+				\4[] $\then$ Puede no existir
+				\4[] $\then$ Que exista, no quiere decir que el mercado lo alcance
+				\4[] $\then$ Si lo alcanza, no tiene por qué ser el único
+				\4 Representación gráfica
+				\4[] Caja de Edgeworth
+				\4[] $\to$ Todas los puntos son asignaciones factibles
+				\4[] Asignación de precios no de equilibrio
+				\4[] Equilibrio implica tangencia de CI.
+				\4[] \grafica{egcip}
+		\2 Propiedades positivas del equilibrio general
+			\3 Existencia
+				\4 Equilibrio no tiene por qué existir
+				\4[] $\to$ No necesariamente $\exists \vec{p}$ que $\to$ tangencia
+				\4[] $\then$ No necesariamente existe solución interior
+				\4[] $\to$ No necesariamente $\exists \vec{p}$ que $\to$ $Z(\vec{p}) = 0$
+				\4 Representación gráfica con dos bienes
+				\4[] \grafica{existenciadosbienes}
+				\4 ¿Qué condiciones $\then$ existencia?
+				\4 Demostración con precios estrictamente positivos
+				\4[] \textit{Proposición}:
+				\4[] Si $Z(\vec{p})$ cumple propiedades\footnote{V. supra: \textit{exceso de demanda agregada}.}:
+				\4[] i) Continua en $\vec{p}$
+				\4[] ii) Homogénea de grado 0
+				\4[] iii) Cumple ley de Walras
+				\4[] $\then$ Existe $\vec{p}^*$ tal que $Z(\vec{p^*}) = 0$
+				\4[] \textit{Demostración}:
+				\4[] Teorema del punto fijo de Brouwer:
+				\4[] \quad Sea A conjunto no vacío, compacto y convexo.
+				\4[] \quad Sea $f: \, A \to A$ continua
+				\4[] \quad $\then$ $\exists$ punto fijo $x \in A$ tal que $f(x) = x$
+				\4[] Precios pueden normalizarse en un símplex $\Delta$
+				\4[] $\to$ Suma de todos los precios es 1
+				\4[] $\then$ Conjunto no vacío, compacto y convexo
+				\4[] Construir función $\Delta \to \Delta$
+				\4[] \quad cuyo punto fijo $\vec{p}^*$ $\then$ $Z(\vec{p}^*) = 0$
+				\4[] Intuición:
+				\4[] \quad Función que ajusta precios según $z(\cdot)$
+				\4[] \quad Si $Z(\vec{p}) > 0$ $\to$ $\uparrow$ precio y viceversa
+				\4[] \quad Por TPFBrouwer, existirá punto fijo
+				\4[] \quad $\then$ Vector tal que no habrá excesos de dda.
+				\4[] \quad $\then$ Vector tal que no hará falta variar precios
+				\4 Demostración con precios no positivos
+				\4[] Necesario T. de Punto Fijo de Kakutani
+				\4[] Misma intuición
+				\4[] Necesarias técnicas más avanzadas
+				\4[] $\to$ Topología diferencial
+			\3 Unicidad
+				\4 Existencia no implica unicidad
+				\4[] Pueden existir múltiples $\vec{p}$ que anulen $Z(\vec{p})$
+				\4[] Representación gráfica con dos bienes
+				\4[] \grafica{multiplesequilibriosunicoslocales}
+				\4 Deseabilidad de la unicidad
+				\4[] Implica determinismo
+				\4[] Dadas preferencias, dotaciones, tecnología...
+				\4[] $\to$ Sólo hay un equilibrio posible
+				\4[] Si hay varios, realización de un equilibrio concreto
+				\4[] $\to$ Depende de fenómenos ajenos al modelo
+				\4[] $\to$ ¿Historia? ¿Aleatoriedad?
+				\4 Condiciones suficientes\footnote{Ver Iritani (1981) \textit{On Uniqueness of General Equilibrium}.}
+				\4[] $\exists$ varios teoremas que muestran cond. suficientes
+				\4[] En general, necesarias matemáticas complejas
+				\4[] $\to$ Presentar algunos brevemente
+				\4 Sustitutivos brutos
+				\4[] Si todos los bienes son sustitutivos brutos
+				\4[] $\to$ Para todos los precios
+				\4[] $\Rightarrow$ El equilibrio que existe es único
+				\4 Teorema del índice
+				\4[] Si la matriz jacobiana\footnote{Esto es, una matriz tal que cada fila $i$ contiene las derivadas parciales de $Z_i$ respecto cada uno de los precios $p_j$ de los bienes considerados.} de Z $D\vec{Z}(\vec{p})$
+				\4[] $\to$ tiene determinante $\neq 0$
+				\4[] $\Rightarrow$ Hay un sólo equilibrio
+				\4[] Intuición:
+				\4[] $\to$ Si pendiente de $z_i(\vec{p})$ es siempre negativa
+				\4[] $\Rightarrow$ $z_i(\vec{p})$ sólo decrece con aumento de precio
+				\4[] $\Rightarrow$ Sólo habrá un equilibrio
+				\4 Unicidad local
+				\4[] Si hay múltiples equilibrios
+				\4[] $\to$ Deseable que al menos sean únicos localmente
+				\4[] \grafica{multiplesequilibriossinunicoslocales}
+			\3 Estabilidad
+				\4 Existencia y unicidad no quieren decir
+				\4[] Que equilibrio se alcance efectivamente
+				\4 A partir de una dotación y precios iniciales dados
+				\4[] ¿Qué mecanismos para anular excesos de demanda?
+				\4[] $\to$ ¿Fuerzas de mercado inducen equilibrio?
+				\4 Si una perturbación modifica precios de equilibrio
+				\4[] ¿Se restablece el equilibrio?
+				\4[$\Rightarrow$] ¿Equilibrio en cuestión es estable?
+				\4 Estabilidad local
+				\4[] $\to$ Estable en un entorno del equilibrio
+				\4[] $\then$ Eq. se restablece tras perturbación ``pequeña''
+				\4 Estabilidad global
+				\4[] $\to$ Estable en todo el conjunto de precios posibles
+				\4[] $\then$ Eq. se restablece tras cualquier perturbación
+				\4 Tâtonnement de precios
+				\4[] Propuesto por Walras (1874)
+				\4[] Precios inducen equilibrio individual
+				\4[] $\to$ Maximización de utilidad (y beneficios)
+				\4[] Pero no tienen por qué igualar demanda y oferta
+				\4[] \textit{Mecanismo de tâtonnement}
+				\4[] Si exceso de demanda en un mercado
+				\4[] $\to$ Aumenta el precio del bien
+				\4[] Si exceso de oferta en un mercado
+				\4[] $\to$ Baja el precio del bien
+				\4[] $\Rightarrow$ $\frac{d \, p_l(t)}{d \, t} = c_l z_l (p) \, \forall \, l$, $c_l >0$
+				\4[] ¿Produce equlibrios estables?
+				\4[] $\to$ Si $\uparrow p_l$ $\to$ $\downarrow z_l(p)$ $\Rightarrow$ Sí
+				\4[] $\to$ Si $\uparrow p_l$ $\to$ $\uparrow z_l(p)$ $\Rightarrow$ No
+				\4[] Representación gráfica de eq. inestable y estable
+				\4[] \grafica{tatprecios}
+				\4 Tâtonnement de cantidades
+				\4[] Asociado a Marshall
+				\4[] Requiere variación de las dotaciones/producción
+				\4[] $\to$ No aplicable a intercambio puro
+				\4[] Ejemplo anterior: precios en desequilibrio
+				\4[] $\to$ Cantidades no igualan oferta y demanda
+				\4[] \textit{Mecanismo de tâtonnement}
+				\4[] Precios se ajustan automáticamente
+				\4[] $\to$ Para cuadrar oferta y demanda
+				\4[] Son cantidades las que varían
+				\4[] $\to$ Para alcanzar un óptimo determinado
+				\4[] $\to$ Modelo de Marshall de periodos de mercado
+				\4[] \grafica{periodosdemercado}
+				\4[] También interpretable en términos diferenciales
+				\4[] $\frac{d \, y(t)}{d \, t} = \alpha \left[ p(q^D) - p(q^S) \right]$
+				\4[] \grafica{ajustemarshalliano}
+				\4 Sonnenschein, Mantel y Debreu (1974)\footnote{Ver \href{http://www.ebour.com.ar/ensayos_meyde/Los\%20resultados\%20de\%20Sonnenschein,\%20Mantel\%20y\%20Debreu\%20en\%20Teoria\%20del\%20Equilibrio\%20General.pdf}{Enrique Bour sobre teorema S-M-D}}
+			\3 Estática comparativa
+				\4 Hemos caracterizado economías por $\vec{Z}(\vec{p})$
+				\4[] Implícitamente asume parámetros fijos
+				\4[] $\to$ Preferencias
+				\4[] $\to$ Dotaciones
+				\4[] ...
+				\4[] $\Rightarrow$ Resumibles en vector $q$
+				\4 Economías caracterizables en general como $Z(\vec{p}, q)$
+				\4 ¿Cómo cambia equilibrio si cambian parámetros?
+				\4 Depende de forma concreta de excesos de demanda
+				\4[] Algunas situaciones son deseables:
+				\4[] $\to$ $\Delta$ parámetros induzcan eqs. localmente únicos
+				\4[] $\to$ $\Delta$ parámetros induzcan eqs. únicos
+				\4[] \grafica{estaticacomparativaindeseable}
+			\3 Computabilidad
+				\4 Frontera de investigación
+				\4[] Ciencia de la computación aplicado a economía
+				\4 ¿Es posible computar el equilibrio general?
+				\4 ¿Qué requisitos computacionales son necesarios?
+				\4[$\Rightarrow$] Trivial con pocos bienes y agentes
+				\4[$\Rightarrow$] Problema relevante con números elevados
+		\2 Propiedades normativas del equilibrio walrasiano
+			\3 Primer Teorema Fundamental del Bienestar
+				\4 Objetivo
+				\4[] Establecer condiciones para que:
+				\4[] $\to$ Cualquier EGC pueda ser un óptimo
+				\4 Si se cumple que:
+				\4[] Preferencias no saturadas localmente\footnote{V. pág. 550 de MWG para explicación de relevancia de supuesto de no saturación.}
+				\4[] No hay externalidades ni bienes públicos
+				\4[] Hay mercado $\Rightarrow$ precio para todos los bienes
+				\4[$\Rightarrow$] Cualquier eq. walrasiano es óptimo
+			\3 Segundo Teorema Fundamental del Bienestar
+				\4 Objetivo
+				\4[] Establecer condiciones para que:
+				\4[] $\to$ Cualquier óptimo de Pareto pueda ser un EGC
+				\4 Dado cualquier óptimo de Pareto:
+				\4[] ¿$\exists$ dotación inicial que lo induce como EGC?
+				\4 Justificación de mercados competitivos
+				\4[] Para abordar problemas redistributivos
+				\4[] Problema en la práctica:
+				\4[] $\to$ Necesario garantizar precios de equilibrio
+				\4[] $\to$ Necesaria información sobre preferencias indiv.
+				\4[] $\to$ Necesario impuesto de suma fija
+				\4[] $\Rightarrow$ Surgen trade-offs distribución vs. Pareto-optimalidad
+				\4 Si se cumple que:
+				\4[] Preferencias no saturadas localmente
+				\4[] Preferencias convexas
+				\4[] Si producción
+				\4[] $\to$ Conjunto de producción convexo
+				\4[$\Rightarrow$] $\forall$ OPareto $\exists \vec{p}, \vec{\tau}$ que es EGC
+	\1 \marcar{Extensiones}
+		\2 Producción
+			\3 Idea clave
+				\4 Modelo anterior de intercambio puro
+				\4[] Caracteriza peculiaridades esenciales de EGeneral
+				\4 Incorporación de sector productivo
+				\4[] No altera resultados esenciales
+				\4[] Dotaciones dependen de decisiones de producción
+				\4 Existen también modelos de EGeneral sólo con producción
+				\4[] Ej.: modelo 2x2 de comercio internacional
+				\4[] $\to$ Modelo H-O
+				\4[] $\to$ Modelo clásico de VC
+			\3 Variantes
+				\4 2x2x2x2
+				\4[] (ver tema 3A-23 sobre optimalidad de la competencia perfecta)
+				\4[] 2 consumidores
+				\4[] 2 empresas
+				\4[] 2 bienes de consumo
+				\4[] 2 factores de producción
+				\4[] $\to$ ff.pp. no entran en f. de utilidad
+				\4[] $\to$ Consumidores son propietarios de empresas
+				\4[] Equilibrio caracterizado por:
+				\4[] $\left| \text{RMT}_{xy} \right| = \left| \text{RMS}_{xy}^A \right| = \left| \text{RMS}_{xy}^B \right| $
+				\4 Consumo y ocio-trabajo
+				\4[] Trabajo es factor de producción
+				\4[] Ocio depende de trabajo ofertado
+				\4[] $\to$ Trabajo influye indirectamente en utilidad
+				\4[] Base de modelos del ciclo real
+				\4 2x2 de producción pura
+				\4[] Dos empresas
+				\4[] Dos factores de producción
+				\4[] Dos precios del output dados exógenamente
+				\4[] ¿Qué precio de los inputs induce...
+				\4[] $\to$ Maximización del beneficio de las 2 empresas
+				\4[] $\to$ Igualdad de oferta y demanda de los inputs
+			\3 Propiedades positivas
+				\4 Existencia
+				\4[] Si conjuntos de producción son:
+				\4[] i) Cerrados
+				\4[] ii) Estrictamente convexos
+				\4[] iii) Acotados por arriba
+				\4[] $\Rightarrow$ Misma demostración que EGIP
+				\4 Unicidad
+				\4[] Similares a EGIP
+				\4[] F. de EDemanda cumplen condiciones adicionales
+				\4 Estabilidad
+				\4[] Similares condiciones
+				\4[] EDemanda dependen también de producción
+			\3 Propiedades normativas
+				\4 Primer teorema
+				\4[] Mismas condiciones que en EGIP
+				\4 Segundo teorema
+				\4[] Requisitos de EGIP
+				\4[] + Conjuntos de producción deben ser convexos
+		\2 Enfoque del núcleo
+			\3 Idea clave
+				\4 Edgeworth (1891), Debreu y Scarf (1963), Vind (1964)...
+				\4 Teoría de juegos cooperativos
+				\4 Generalizar concepto de eq. general
+				\4[] Sin asumir mecanismos de mercado concretos
+				\4[] $\to$ Sólo preferencias y coaliciones
+				\4[] $\to$ Sin mercado, precios, ley de único precio...
+				\4[$\then$] EG resultado de coaliciones e intercambios directos
+				\4[$\then$] Sin subastador hipotético ni similares
+			\3 Mejora por coalición
+				\4 Conjunto de agentes respecto de total de agentes
+				\4[] \textit{Mejora o bloquea} una asignación $\vec{x}$ si:
+				\4 Es posible hallar otra asignación $\vec{x}$
+				\4[] $\to$ Resultado de reasignar las asignaciones de los miembros
+				\4[] $\to$ Que todos los miembros prefieren o son indiferentes
+			\3 Núcleo
+				\4 Asignación $\vec{x}$ pertenece al núcleo si:
+				\4[] Dada un vector de dotaciones iniciales
+				\4[] $\to$ $\nexists$ coalición de cons. que redistribuyan dotaciones
+				\4[] $\then$ Que puedan Pareto-mejorar la dotación inicial
+				\4[$\then$] Todos los EGWalrasianos pertenecen al núcleo
+				\4[$\then$] No necesariamente todo el núcleo es EGWalrasianos
+				\4 Representación gráfica del núcleo con dos agentes
+				\4[] \grafica{nucleoedgeworthdosagentes}
+			\3 Teorema de la equivalencia del núcleo
+				\4 Objetivo:
+				\4[] Caracterizar condiciones para que:
+				\4[] $\to$ todas asignaciones de núcleo sean EGW
+				\4 Supuestos:
+				\4[] Existen N agentes de H tipos
+				\4[] $\to$ economía se denomina ``\textit{N-réplica}''
+				\4 Condiciones:
+				\4[] $\to$ Todos los N agentes de tipo h reciben = asignación
+				\4[] $\to$ Número de réplicas tiende a infinito
+				\4[] $\Rightarrow$ Todo lo que pertenece al núcleo es EGWalrasiano
+				\4 Tamaño del núcleo se reduce con aumento de N
+				\4[] $\to$ Hasta que todo núcleo es EGWalrasiano
+		\2 Tiempo e incertidumbre
+			\3 Idea clave
+				\4 Generalización del equilibrio general walrasiano
+				\4 Incertidumbre respecto:
+				\4[] Preferencias
+				\4[] Dotaciones
+				\4[] Tecnología
+				\4[] $\to$ Dependen del estado de la naturaleza
+				\4[] $\to$ Agentes asignan probabilidades a cada estado
+				\4 Precio de bienes contigentes:
+				\4[] $\to$ Pagado antes de resolver incertidumbre
+				\4 Ejemplo:
+				\4[] Bienes:
+				\4[] $\to$ Semillas de trigo y trigo
+				\4[] Periodos:
+				\4[] $\to$ Mañana y pasado mañana
+				\4[] Estados de la naturaleza
+				\4[] $\to$ Buena y mala cosecha
+			\3 Equilibrio de Arrow-Debreu
+				\4 Si mismas condiciones de existencia de EGWalras
+				\4[] y $\exists$ mercados para todo bien contigente
+				\4[$\Rightarrow$] Existe equilibrio de Arrow-Debreu tal que:
+				\4[] Empresas maximizan beneficios
+				\4[] Preferencias se maximizan
+				\4[] Demanda iguala a oferta
+			\3 Negociación secuencial
+				\4 Introduce mercados de futuros
+				\4 Precio de bienes contingentes
+				\4[] Se paga llegado el periodo de entrega
+			\3 Aplicaciones
+				\4 Formalización de mercados financieros
+				\4 Estudio de mercados incompletos
+		\2 Dinero
+			\3 Dinero como ``tokens''
+				\4 En modelos anteriores dinero es irrelevante
+				\4[] Puede asumirse o no su existencia
+				\4[] Implícitamente:
+				\4[] $\to$ Se asume que $Z_\text{dinero}(p) = 0$
+				\4[] $\Rightarrow$ Dinero sólo es referencia
+				\4[] $\Rightarrow$ Nadie demanda dinero
+				\4[] $\Rightarrow$ Sólo sirve como intermediario
+				\4 Dicotomía clásica
+				\4[] Precios relativos y absolutos
+				\4[] $\to$ Determinados por separado
+				\4[] $\to$ Precios absolutos: indeterminado
+			\3 Dinero como bien demandado
+				\4 Diferentes justificaciones de la dda. de dinero
+				\4[] Liquidez
+				\4[] $\to$ Teoría cuantitativa del dinero
+				\4[] Precaución
+				\4[] Especulación
+				\4[] $\to$ Necesario mercado de activos
+				\4[] Money-in-the-utility function
+				\4[$\Rightarrow$] Precio del dinero es relevante
+			\3 Patinkin
+				\4 ¿Realmente dinero es neutral?
+				\4 ¿Funciones de dda. son h.d.g. 0 en renta y precios?
+				\4 ¿Qué efecto tiene cambios de valor en balances monetarios?
+				\4[] $\to$ Efecto de saldos reales (real balances)
+				\4 \textit{Money, Interest and Prices} (1956)
+				\4 Puente entre microeconomía y macroeconomía
+				\4[] Macro a través de teoría del equilibrio general
+				\4[$\Rightarrow$] Economía monetaria y real interaccionan
+			\3 Competencia imperfecta
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Equilibrio general de intercambio puro
+				\4 Formulación básica
+				\4 Propiedades positivas
+				\4 Propiedades normativas
+			\3 Extensiones o variantes
+				\4 Producción
+				\4 Enfoque del núcleo
+				\4 Tiempo e incertidumbre
+		\2 Idea final
+			\3 Microeconomía y macroeconomía
+				\4 Expuesto enfoque microeconómico
+				\4 Últimas décadas: traslación a macroeconomía
+				\4[] Macroeconomías como sistemas de eq. general
+				\4[] Mecanismos microeconómicos para analizar macroeconomía
+			\3 Ejemplos de aplicación
+				\4 Tablas input/output
+				\4 RBC
+				\4 DGSE
+				\4 CGE
+\end{esquemal}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\graficas
+
+\begin{dibujo}{4}{Representación gráfica de un equilibrio general de intercambio puro en una caja de Edgeworth y de una asignación que no induce el equilibrio walrasiano.}{x}{y}{egcip}
+	% ejes que forman un cuadrado
+	
+	% eje al derecho, del agente A
+	\draw[-{Latex}] (0,0) -- (0,4);
+	\draw[-{Latex}] (0,0) -- (6,0);
+	
+	\node[below] at (6,-0.1){$X_A$};
+	\node[left] at (0,3.9){$Y_A$};
+	
+	\node[left] at (0,-0.3){$O_A$};
+	
+	% eje al revés, del agente B
+	\draw[-{Latex}] (6,4) -- (0,4);
+	\draw[-{Latex}] (6,4) -- (6,0);	
+	
+	\node[above] at (0.1,4.1){$X_B$};
+	\node[right] at (6,0){$Y_B$};
+	
+	\node[right] at (6,4.3){$O_B$};
+	
+	% dotación inicial
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (4.2,1.2) {}; 
+	\node[above] at (4.2,1.2){ \tiny $\bar{e}$};
+	
+	% recta presupuestaria
+	\draw[-] (0,3.5) -- (6,0.2);
+	
+	% curva de indiferencia al derecho
+	\draw[-] (1.56,3.3) to [out=280, in=175](3.46,1.9);
+	
+	% curva de indiferencia al revés
+	\draw[-] (1.23,2.53) to [out=355, in=100](3.13,1.13);
+	
+	% recta presupuestaria de no equilibrio
+	\draw[-, color=red] (0,2.62) -- (6,0.6);
+	
+	% curva de indiferencia al derecho de no equilibrio
+	\draw[-, color=red] (1.3,3.04) to [out=280, in=175](3.2,1.64);
+	
+	% curva de indiferencia al revés de no equilibrio
+	\draw[-, color=red] (0.91,2.21) to [out=355, in=100](2.81,0.81);
+	
+	% equilibrio
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (2.3,2.25) {}; 
+	\node[above] at (2.3,2.25){ \tiny $\bar{x}^*$};
+	
+	% tangencia del revés con recta presupuestaria de no equilibrio
+	\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (1.7,2.05) {}; 
+	%\node[above] at (2,2.3){ \tiny $\bar{e}$};
+
+	% tangencia del revés con recta presupuestaria de no equilibrio
+	\node[circle, fill=red, inner sep=0pt, minimum size=3pt] (a) at (2.5,1.75) {}; 
+	%\node[above] at (2,2.3){ \tiny $\bar{e}$};
+
+\end{dibujo}
+
+\begin{axis}{4}{Representación gráfica de la existencia de un equilibrio general en un contexto de dos mercados y el precio de un bien normalizado a la unidad.}{}{$z_1$}{existenciadosbienes}
+
+	% extensión del eje de ordenadas
+	\draw[-] (0,0) -- (0,-2);
+	
+	% extensión del eje de abscisas
+	\draw[-] (4,0) -- (6,0);
+	\node[below] at (6,-0.05){$p_1$};
+
+	% exceso de demanda
+	\draw[-] (0.3,3.9) to [out=272, in=180](1.5,1) to [out=0, in=180](2.5,2) to [out=0, in=180](6,-1);
+	\node[right] at (6,-1){$z_1(p_1,1)$};
+	
+\end{axis}
+
+\begin{axis}{4}{Representación gráfica de la existencia de equilibrios múltiples localmente únicos.}{}{$z_1$}{multiplesequilibriosunicoslocales}
+	
+	% extensión del eje de ordenadas
+	\draw[-] (0,0) -- (0,-2);
+	
+	% extensión del eje de abscisas
+	\draw[-] (4,0) -- (6,0);
+	\node[below] at (6,-0.05){$p_1$};
+	
+	% exceso de demanda
+	\draw[-] (0.3,3.6) to [out=290, in=180](1.7,-1.2) to [out=0, in=180](3.2,2) to [out=0, in=180](6,-2);
+	\node[right] at (6,-2){$z_1(p_1,1)$};
+	
+\end{axis}
+
+\begin{axis}{4}{Representación gráfica de la existencia de equilibrios múltiples que no son únicos locales.}{}{$z_1$}{multiplesequilibriossinunicoslocales}
+	
+	% extensión del eje de ordenadas
+	\draw[-] (0,0) -- (0,-2);
+	
+	% extensión del eje de abscisas
+	\draw[-] (4,0) -- (6,0);
+	\node[below] at (6,-0.05){$p_1$};
+	
+	% exceso de demanda
+	\draw[thick, color=blue] (0.3,3.5) to [out=0, in=120](2.4,0) -- (3.5,0) to [out=-80, in=120](6,-2);
+	\node[right] at (6,-1){$z_1(p_1,1)$};
+\end{axis}
+
+
+\begin{axis}{4}{Equilibrios estables e inestables en un cocntexto de tâtonnement en precios.}{}{$z_1$}{tatprecios}
+	% extensión del eje de ordenadas
+	\draw[-] (0,0) -- (0,-2);
+	
+	% extensión del eje de abscisas
+	\draw[-] (4,0) -- (6,0);
+	\node[below] at (6,-0.05){$p_1$};
+	
+	% exceso de demanda
+	\draw[-] (0.3,3) to [out=290, in=180](2.2,-1.2) to [out=0, in=180](4.3,1.5) to [out=0, in=180](6,-2);
+	\node[right] at (6,-2){$z_1(p_1,1)$};
+	
+	% equilibrios
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (0.86,0) {}; 
+	\node[left] at (0.9,-0.3){A};
+	
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (3.2,0) {};
+	\node[right] at (3.2,-0.3){B};
+	
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (5.15,0) {};
+	\node[left] at (5.1, -0.3){C};
+	
+	% variación del precio en función de signo de exceso de demanda
+	% primero, hacia la derecha
+	\draw[-{Latex}] (0,0) -- (0.4,0);
+	\draw[-{Latex}] (0.4,0) -- (0.86,0);
+	% segundo, hacia la izquierda
+	\draw[-{Latex}] (3.2,0) -- (2.7,0);
+	\draw[-{Latex}] (2.7,0) -- (2.1,0);
+	\draw[-{Latex}] (2.1,0) -- (1.4,0);
+	\draw[-{Latex}] (1.4,0) -- (0.86,0);
+	% tercero, hacia la izquierda
+	\draw[-{Latex}] (3.2,0) -- (3.8,0);
+	\draw[-{Latex}] (3.8,0) -- (4.5,0);
+	\draw[-{Latex}] (4.5,0) -- (5.15,0);
+	% cuarto, hacia la derecha
+	\draw[-{Latex}] (5.15,0) -- (5.3,0);
+	\draw[-{Latex}] (5.3,0) -- (6,0);
+\end{axis}
+
+La gráfica muestra tres equilibrios, de los cuales sólo el equilibrio A es estable.
+
+\begin{axis}{4}{Ajuste de cantidades hacia el equilibrio en términos del modelo de periodos de mercado de Marshall.}{Q}{P}{periodosdemercado}
+	% Curva de demanda
+	\draw[-] (0.2, 4) -- (4,0.5);
+	\node[right] at (4,0.5){D};
+	
+	% Curva de oferta del periodo
+	\draw[-] (1,4) -- (1,0);
+	\node[above] at (1,4){Periodo};
+	
+	% equilibrio del periodo
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (1,3.25) {};
+	\node[right] at (1.02,3.25){\tiny 1};
+	
+	% Curva de oferta de corto plazo
+	\draw[-] (0.2,1.5) -- (3,4);
+	\node[above] at (3,4){$\text{S}_{CP}$};
+	% equilibrio de corto plazo
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (1.57,2.73) {};
+	\node[right] at (1.59,2.73){\tiny 2};
+	
+	% Curva de oferta de largo plazo
+	\draw[-] (0.2,0.5) -- (4,4);
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (2.1,2.25) {};
+	\node[right] at (2.12,2.25){\tiny 3};
+	\node[above] at (4,4){$\text{S}_{LP}$};
+\end{axis}
+
+\begin{axis}{4}{Ajuste de cantidades hacia el equilibrio en términos diferenciales.}{Q}{P}{ajustemarshalliano}
+	% Curva de demanda
+	\draw[-] (0.2, 4) -- (4,0.5);
+	\node[right] at (4,0.5){D};
+	
+	% Curva de oferta de largo plazo
+	\draw[-] (0.2,0.5) -- (4,4);
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (2.1,2.25) {};
+	\node[right] at (4,4){S};
+	
+	% cantidad fija inicial
+	\draw[dashed] (1,4) -- (1,0);
+	
+	% precio de demanda
+	\draw[dashed] (1,3.25) -- (0,3.25);
+	\node[left] at (0,3.25){$p^D$};
+	
+	% precio de oferta
+	\draw[dashed] (1,1.23) -- (0,1.23);
+	\node[left] at (0,1.23){$p^S$};
+	
+	\draw[decoration={brace,mirror,raise=5pt},decorate]
+	(-0.5,3.25) -- node[left=9pt] {$\frac{d \, q(t)}{d \, t} = \alpha \left( p^D - p^S > 0 \right) $} (-0.5,1.23);
+\end{axis}
+
+\begin{axis}{4}{Representación gráfica de un análisis de estática comparativa en el que una variación en los parámetros induce múltiples equilibrios locales.}{}{$z_1$}{estaticacomparativaindeseable}
+	
+	% extensión del eje de ordenadas
+	\draw[-] (0,0) -- (0,-2);
+	
+	% extensión del eje de abscisas
+	\draw[-] (4,0) -- (6,0);
+	\node[below] at (6,-0.05){$p_1$};
+	
+	% exceso de demanda con equilibrio único
+	\draw[thick] (0.3,3.5) to [out=-30, in=120](1.9,1.5) -- (2.9,1.5) to [out=-70, in=180](6,-1.6);
+	\node[right] at (6,-1.6){$z_1(p_1,1)$};
+	
+	% exceso de demanda con equilibrio múltiple
+	\draw[thick,dashed] (0.3,2) to [out=-30, in=120](1.9,0) -- (2.9,0) to [out=-70, in=180](6,-3.1);
+	\node[right] at (6,-3.1){$z_1(p_1,2)$};
+\end{axis}
+
+\begin{dibujo}{4}{Representación gráfica del núcleo en una caja de Edgeworth con dos agentes e intercambio puro.}{}{y}{nucleoedgeworthdosagentes}
+	% ejes que forman un cuadrado
+	
+	% eje al derecho, del agente A
+	\draw[-{Latex}] (0,0) -- (0,4);
+	\draw[-{Latex}] (0,0) -- (6,0);
+	
+	\node[below] at (6,-0.1){$x_A$};
+	\node[left] at (0,3.9){$y_a$};
+	
+	\node[left] at (0,-0.3){$O_A$};
+	
+	% eje al revés, del agente B
+	\draw[-{Latex}] (6,4) -- (0,4);
+	\draw[-{Latex}] (6,4) -- (6,0);	
+	
+	\node[above] at (0.1,4.1){$x_B$};
+	\node[right] at (6,0){$y_B$};
+	
+	\node[right] at (6,4.3){$O_B$};
+	
+	% dotación inicial
+	
+	\node[circle, fill=black, inner sep=0pt, minimum size=3pt] (a) at (1.7,3.5) {}; 
+	
+	\node[left] at (1.63,3.53){ \tiny $\bar{e}$};
+	
+	% Curva de indiferencia de agente A que pasa por dotación inicial
+	
+	\draw[dashed] (1.7,3.5) to [out=280, in=170](4.6,1.2);
+	
+	% Curva de indiferencia de agente B que pasa por dotación inicial
+	
+	\draw[dashed] (1.7,3.5) to [out=350, in=100](4.6,1.2);
+	
+	% Curvas de indiferencia de óptimo
+	%
+	% Curva de A que pasa por EGW
+	\draw[-] (2.2,4) to [out=280, in=170](5.1,1.7);
+	\node[right] at (4.95,1.55){\tiny $u^*_A$};
+	%
+	% Curva de B que pasa por EGW
+	\draw[-] (1.32,3.12) to [out=350, in=100](4.22,0.82);
+	\node[right] at (4.02,0.62){\tiny $u^*_B$};
+	
+	% Recta presupuestaria dados precios de equilibrio
+	\draw[-] (1.65,3.55) -- (5.15,1);
+	
+	% Óptimo - punto de tangencia entre curvas de indiferencia
+	\node[circle, fill=red, inner sep=0pt, minimum size=4pt] (a) at (3.2,2.4) {}; 
+	%	\node[above] at (3.03,2.21){\tiny $x^*$};
+	
+	% Óptimos de Pareto / curva de contrato
+	\draw[-] (0.5,0.7) to [out=70,in=190](3.2,2.4); 
+	\draw[-] (3.2,2.4) to [out=10, in=260](5.6,3.6);
+	\node[right] at (4.05,3.4){\tiny Curva de contrato};
+	
+	% Núcleo
+	\draw[line width=1.5pt] (2.37,2.22) to [out=15, in=186](3.93,2.51);
+	\draw[-{Latex}] (2.7,2.25) -- (1.9,1);
+	\node[below] at (1.9,1){\tiny Núcleo};
+\end{dibujo}
+
+La línea gruesa representa las asignaciones que no pueden ser bloqueadas por ninguna coalición de los dos agentes A y B, es decir, el núcleo. Se aprecia como el equilibrio general walrasiano representado por el punto rojo forma parte del núcleo. Sin embargo, no todo el núcleo es un equilibrio general walrasiano. Asumiendo la condición de no discriminación entre agentes de un mismo tipo, a medida que replicamos la economía introduciendo agentes adicionales de cada tipo, las cantidad de posibles asignaciones del núcleo que no son equilibrios generales walrasianos será cada vez menor. En el límite, el núcleo dada una dotación inicial se reduce a las asignaciones de equilibrio general walrasiano. 
+
+\conceptos 
+
+\concepto{Bienes gratuitos y condición de equilibrio}
+
+Los bienes gratuitos son aquellos cuyo precio es 0. Cuando se consideran bienes de este tipo, la condición de equilibrio en términos de exceso de demanda es $Z(\vec{p}) \leq 0$. Nótese que la igualdad no es estricta como para el caso en el que no se admite precios no negativos.
+
+\preguntas
+
+\seccion{Test 2018}
+\textbf{11.} En una economía de intercambio puro entre dos agentes A y B con dos bienes $x$ e $y$, tenemos las siguientes dotaciones iniciales: $x_A = 90$, $y_A = 30$; $x_B = 10$, $y_B = 70$. Los dos agentes (consumidores) tienen la misma función de utilidad $U=xy$. Si los consumidores tratan de llegar al equilibrio, la cantidad del bien $y$ consumida por el agente $B$ en el equilibrio es:
+
+\begin{itemize}
+	\item[a] $y=60$
+	\item[b] $y=50$
+	\item[c] $y=40$
+	\item[d] $y=30$
+\end{itemize}
+
+
+\seccion{Test 2017}
+
+\textbf{9.} Considere el caso de una economía sin producción, en la que hay $n$ individuos y $k$ bienes, y cada individuo tiene un vector de dotaciones iniciales $\textbf{$\omega_i$} = (\omega_{i,l}, \omega_{i,2}, ... , \omega_{i,k})$. Si se abren mercados para todos los bienes, la Ley de Walras nos indica que $\textbf{p} \cdot \textbf{Z} (\textbf{p} ) = 0$, siendo $\textbf{p}$ un vector cualquiera de precios $\textbf{p} = (p_1, ..., p_k)$ y $\textbf{Z} (\textbf{p})$ el vector de funciones de exceso de demanda, cuyos $k$ componentes se definen a partir de las demandas ($x_i$) y las dotaciones de los individuos ($\omega_i$) como:
+
+\begin{equation*}
+	Z_j (\textbf{p}) = \sum_{i=1}^n x_{i,j} - \sum_{i=1}^n \omega_{i,j}, \quad \text{para } \, j= 1, ...,k
+\end{equation*}
+
+Si los mercados de todos los bienes salvo 1 y 2 se hallan en equilibrio, es decir, $Z_j(\textbf{p}) = 0, j=3, 4, ...., k$, ¿cuál de las siguientes situaciones en los mercados de los bienes 1 y 2 \underline{no podría nunca observarse} ?
+
+\begin{itemize}
+	\item[a] Exceso de demanda del bien 1, $Z_1(\textbf{p}) >0$, y exceso de oferta del bien 2, $Z_2(\textbf{p}) < 0$. 
+	\item[b] Exceso de oferta del bien 1, $Z_1(\textbf{p}) < 0$, y exceso de demanda del bien 2, $Z_2(\textbf{p}) > 0$.
+	\item[c] Exceso de demanda en los dos mercados, $Z_1(\textbf{p}) >0, Z_2 (\textbf{p}) > 0$.
+	\item[d] Ninguna de las anteriores.
+\end{itemize}
+
+\seccion{Test 2014}
+
+\textbf{13.} Para un consumidor individual, una solución de esquina puede ser óptima a pesar de que la RMST y la RMT no sean iguales:
+
+\begin{itemize}
+	\item[a] Pero esto no es posible en una caja de Edgeworth debido a la transitividad de las preferencias.
+	\item[b] Pero esto no es posible en una caja de Edgeworth debido a que los precios relativos tienen que ser positivos.
+	\item[c] Y puede ocurrir en una caja de Edgeworth.
+	\item[d] Y puede ocurrir en una caja de Edgeworth en el caso de complementos perfectos.
+\end{itemize}
+
+\seccion{Test 2009}
+\textbf{10.} En una economía sin producción, considere que existen sólo dos bienes $x$, $y$ de los cuales hay cantidades fijas $X$ e $Y$, respectivamente, y dos individuos con dotaciones iniciales $\omega_1 = (x_1, y_1)$, y $\omega_2 = (x_2, y_2)$, de forma que $x_1 + x_2 = X$, $y_1 + y_2=Y$. Si las preferencias de los individuos 1 y 2 por los bienes vienen dadas respectivamente por las funciones de utilidad $U_1 = \ln x_1 + \ln y_1$ y $U_2 = \ln x_2 + \ln y_2$ entonces:
+\begin{itemize}
+	\item[a] No existe ninguna asignación Pareto eficiente en esta economía.
+	\item[b] Dado cualquier valor $\alpha$ tal que $0 \leq \alpha \leq X$, las cestas de consumo $(\alpha, (Y/X)\alpha)$ para 1 y $(X-\alpha, Y-(Y/X)\alpha)$ para 2 son Pareto eficientes.
+	\item[c] Las asignaciones Pareto-eficientes de esta economía se limitan al punto de dotaciones iniciales, y a la solución de esquina $(0, Y)$ para el individuo 1, y $(X,0)$ para el individuo 2.
+	\item[d] Dado cualquier valor $\alpha$, tal que $0 \leq \alpha \leq X$, las cestas de consumo $( \alpha, 2 \alpha )$ para 1 y $(X - \alpha, Y - 2 \alpha)$ para 2 son Pareto eficientes.
+\end{itemize}
+
+\textbf{11.} En un contexto de equilibrio general para una economía sin producción, en la que hay $n$ individuos y $k$ mercados, la Ley de Walras afirma que $\vec{p} \cdot Z(\vec{p}) = 0$, siendo $\vec{p}$ un vector cualquiera de precios $\vec{p}=(p_1,...,p_k)$ y $Z(\vec{p})$ el vector de funciones de exceso de demanda, cuyos $k$ componentes se definen a partir de las demandas $(x_i)$ y las dotaciones de los individuos ($\omega_i$) como:
+
+\begin{equation*}
+Z_j (\vec{p}) = \sum_{i=1}^n x_{i,j} - \sum_{i=1}^n \omega_{i,j} \quad \text{para} j=1,\ldots k
+\end{equation*}
+
+A partir de la Ley de Walras podemos afirmar que:
+
+\begin{itemize}
+	\item[a] Si todos los mercados salvo el del bien 1 se hallan en desequilibrio, con $z_2 \neq 0, \ldots, z_k \neq 0$, entonces necesariamente el mercado del bien 1 también estará en desequilibrio.
+	\item[b] Si dado un vector de precios $\vec{p}$ que tiene todos sus componentes positivos, encontramos que todos los mercados salvo los de bienes $i$ y $j$ están en equilibrio, si en el mercado del bien $i$ hay exceso de demanda, $z_i(\vec{p}) >0$, también lo habrá en el mercado del bien $j$, $z_j(\vec{p}) > 0$.
+	\item[c] Si $\vec{p}^*$ es un vector de precios con el que se alcanza el equilibrio general, y en algún mercado $j$ se encuentra que hay exceso de oferta, $z_j (\vec{p}^*) < 0$, necesariamente debe tratarse de un bien gratuito, es decir, debe ser $p_j^*= 0$.
+	\item[d] Ninguna de las anteriores.
+\end{itemize}
+
+\seccion{Test 2008}
+\textbf{2.} Respecto a la teoría Walrasiana del equilibrio general, es \textbf{falso} que:
+\begin{itemize}
+	\item[a] Según la Ley de Walras, el valor agregado de los excesos de demanda es siempre nulo.
+	\item[b] Si se cumple la ley de Walras, una de las ecuaciones se satisface automáticamente si las demás se cumplen.
+	\item[c] Los bienes gratuitos deben necesariamente excluirse del sistema walrasiano de determinación del equilibrio general.
+	\item[d] El mercado determina qué bienes deben ser gratuitos.
+\end{itemize}
+
+\textbf{10.} En una economía con producción e intercambio, para el caso de que opere un único consumidor, si existen dos empresas que producen los bienes $x$ e $y$ con dos factores productivos ($L$ y $K$), es \textbf{falso} que la asignación correspondiente al equilibrio general competitivo debe verificar que:
+\begin{itemize}
+	\item[a] Los consumidores maximizan su utilidad sobre los bienes $x$ e $y$, dada una renta real definida por su dotación de los bienes y factores productivos y los precios de los bienes y factores productivos.
+	\item[b] Los productores maximizan beneficios dados unos precios de los bienes y de los factores.
+	\item[c] Los agentes eligen las cantidades y los precios que mejor se adecuan a sus objetivos.
+	\item[d] Las demandas de los bienes y factores deben poder cubrirse con las ofertas de los bienes y factores.
+\end{itemize}
+
+\seccion{Test 2007}
+
+\textbf{5.} En una economía con producción e intercambio, para el caso de que opere un único consumidor (o bien exista una función de bienestar social que represente las preferencias de todos los individuos), si existen dos empresas (que producen los bienes $x$ e $y$) y dos factores productivos ($L$ y $K$), es \textbf{FALSO} que la asignación correspondiente al equilibrio general competitivo debe verificar que:
+\begin{itemize}
+	\item[a] Las decisiones sean viables, donde los mercados de bienes y factores se vacíen de modo que la oferta iguala a la demanda.
+	\item[b] La producción de la economía está en un punto sobre la frontera de posibilidades de producción (FPP).
+	\item[c] Las empresas reducen su beneficio para que aumente la producción de la economía hasta alcanzar el óptimo.
+	\item[d] El consumidor maximiza su utilidad tomando como dados los precios de los bienes que compra en el mercado.
+\end{itemize}
+
+\seccion{Test 2006}
+\textbf{13.} Suponga una economía con producción y dos consumidores A y B (con preferencias y tecnología estrictamente convexas, siendo la relación marginal de transformación $\left| \text{RMT}_{y,x} \right| = \left. - \frac{d Y}{d X}\right|_{FPP}$ y la relación marignal de sustitución de cada individuo ($i=A,B$) igual a $\left| \text{RMS}^i_{y,x} \right| = \left. -\frac{d Y}{d X} \right|_{U_i} $ ). En ausencia de externalidades y bienes públicos, indique la respuesta \textbf{falsa}:
+\begin{itemize}
+	\item[a] Debe verificarse que $\left| \text{RMS}_{y,x}^A \right| = \left| \text{RMS}_{y,x}^B \right| = \left| \text{RMT}_{y,x} \right|$ para que la economía encuentre tanto en un óptimo de Pareto, como en un equilibrio General Competitivo. 
+	\item[b] Si $\left| \text{RMS}_{y,x}^A \right| = \left| \text{RMS}_{y,x}^B \right| > \left| \text{RMT}_{y,x} \right|$, los dos consumidores podrían mejorar mediante un aumento en la cantidad producida de bien X y una reducción en la cantidad producida de Y.
+	\item[c] Si la economía se encuentra en una situación de Equilibrio General Competitivo, necesariamente los consumidores están situados sobre su curva de contrato.
+	\item[d] Si las preferencias de ambos consumidores son iguales, cualquier punto de la Frontera de Posibilidades de Producción es Óptimo de Pareto.
+\end{itemize}
+
+\seccion{Test 2005}
+\textbf{11.} Suponga una economía con producción y dos consumidores A y B (con preferencias y tecnología estrictamente convexas, siendo la relación marginal de transformación $\left| \text{RMT}_{y,x} \right| = - \left. \frac{d Y}{d X} \right|_{FPP}$) y la relación marginal de sustitución de cada individuo ($i=A,B$) igual a $\left| \text{RMS}_{y,x}^i \right| = - \left. \frac{d Y}{d X} \right|_{U_i}$ ). En ausencia de externalidades y bienes públicos, se tiene que:
+
+\begin{itemize}
+	\item[a] Si $\left| \text{RMS}_{y,x}^A \right| = \left| \text{RMS}^B_{y,x} \right| \neq \left| \text{RMT}_{y,x} \right|$, la economía se encuentra en un Óptimo de Pareto, pero no en un Equilibrio General Competitivo.
+	\item[b] Si $\left| \text{RMS}_{y,x}^A \right| = \left| \text{RMS}_{y,x}^B \right| > \left| \text{RMT}_{y,x} \right|$, los dos consumidores podrían mejorar mediante un aumento en la cantidad producida de bien X y una reducción en la cantidad producida de Y.
+	\item[c] Si los consumidores están situados sobre su curva de contrato, necesariamente se encuentran en una situación de Equilibrio General Competitivo.
+	\item[d] Si las preferencias de ambos consumidores son iguales, cualquier punto de la Frontera de Posibilidades de Producción es Óptimo de Pareto.
+\end{itemize}
+
+\seccion{Test 2004}
+\textbf{9.} Considere una economía de intercambio puro, con 2 consumidores y 3 bienes, que denominamos 1, 2, y 3. Suponga que los precios de los tres bienes son positivos, y que hay exceso de demanda en el mercado de los bienes 1 y 2. Si se cumple la Ley de Walras, señale cuál de las siguientes afirmaciones es la \textbf{CORRECTA}:
+
+\begin{itemize}
+	\item[a] Podemos asegurar que también hay exceso de demanda en el mercado del bien 3.
+	\item[b] Podemos asegurar que hay exceso de oferta en el mercado del bien 3.
+	\item[c] El mercado del bien 3 puede estar en el equilibrio.
+	\item[d] Puesto que la Ley de Walras sólo se cumple para los precios de equilibrio, con la información disponible no podemos saber si hay exceso de demanda, exceso de oferta o equilibrio en el mercado del bien 3.
+\end{itemize}
+
+\textbf{10.} Considere una economía de intercambio puro con dos bienes, $x$ e $y$, y dos consumidores, $A$ y $B$ que tienen preferencias de tipo Cobb-Douglas, representadas por funciones de utilidad: $u_A (x_A, y_A) = x_A y_A$, $u_B(x_B, y_B) = x_B y_B$. Hay 10 unidades de cada uno de los bienes. Considere las siguientes asignaciones, y determine cuál(es) de ellas (son) ÓPTIMAS EN SENTIDO DE PARETO:
+
+\begin{itemize}
+	\item[(i)] $(x_A, y_A)  = (10,10), (x_B, y_B) = (0,0)$
+	\item[(ii)] $(x_A, y_A) = (0,0), (x_B, y_B) = (10,10)$
+	\item[(iii)] $(x_A, y_A) = (5,5), (x_B, y_B) = (5,5)$
+\end{itemize}
+
+\begin{itemize}
+	\item[a] Todas.
+	\item[b] Ninguna. 
+	\item[c] Sólo la (iii).
+	\item[d] Sólo la (i) y la (ii).
+\end{itemize}
+
+\notas
+
+\textbf{2018}. \textbf{11.} C
+
+\textbf{2017}. \textbf{9.} C
+
+\textbf{2014}. \textbf{13}. C
+
+\textbf{2009}. \textbf{10}. B \textbf{11.} C
+
+\textbf{2008}. \textbf{2}. C \textbf{10}. C
+
+\textbf{2007}. \textbf{5}. C
+
+\textbf{2006}. \textbf{13}. D
+
+\textbf{2005}. \textbf{11}. B
+
+\textbf{2004}. \textbf{9}. B \textbf{10}. A
+
+Leer capítulo en Mark Blaug, Economic Theory in Retrospect sobre equilibrio general.
+
+Buscar info sobre equilibrio general con un sólo consumidor o una sola empresa.
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+	\item Arrow-Debreu model of general equilibrium
+	\item existence of general equilibrium
+	\item fixed point theorems
+	\item general equilibrium
+	\item general equilibrium (new developments)
+	\item gross substitutes
+	\item intertemporal equilibrium and efficiency
+	\item money and general equilibrium
+	\item money and general equilibrium theory
+	\item overlapping generations model of general equilibrium
+	\item temporary equilibrium
+	\item uncertainty and general equilibrium
+	\item Walras' law
+\end{itemize}
+
+Blaug, M. \textit{Fundamental Theorems of Modern Welfare Economics, Historically Contemplated} (2007) -- En carpeta del tema
+
+MWG. Ch. 15, 16, 17, 18, 19
+
+Jehle; Reny. \textit{Advanced Microeconomic Theory} Ch. 5
+
+Kreps, D. 
+
+Rozborilová, D. \textit{Don Israel Patinkin} BIATEC (2003) Profiles of World Economists -- En carpeta del tema
+
+Varian, H. \textit{Microeconomic Analysis} (1996) Ch. 17 y 18
+
+\end{document}

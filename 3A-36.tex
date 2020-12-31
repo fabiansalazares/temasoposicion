@@ -1,0 +1,976 @@
+\documentclass{nuevotema}
+
+\tema{3A-36}
+\titulo{La política monetaria (II): los mecanismos de transmisión de la política monetaria. Los efectos de la política monetaria.}
+
+\begin{document}
+
+\ideaclave
+
+Leer Pfister y Sahuc (2020) para efectos de políticas monetarias no convencionales.
+
+\seccion{Preguntas clave}
+
+\begin{itemize}
+	\item ¿Cómo afectan las decisiones de política monetaria a variables nominales y reales?
+	\item ¿Cómo se transmiten las decisiones de política monetaria?
+	\item ¿Qué canales de transmisión son más relevantes?
+	\item ¿Qué efectos tienen las decisiones de política monetaria?
+	\item ¿Qué predicen los distintos modelos?
+	\item ¿Qué evidencia empírica existe al respecto?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Política monetaria
+			\3 Evolución de la política monetaria
+			\3 Mecanismos y efectos
+		\2 Objeto
+			\3 ¿Qué efectos tiene la política monetaria?
+			\3 ¿Qué variables se ven afectadas?
+			\3 ¿Qué modelos teóricos modelizan los efectos de la PM?
+			\3 ¿Qué evidencia empírica existe al respecto?
+			\3 ¿Cómo se transmiten las decisiones de PM a otras variables?
+			\3 ¿Qué canales de transmisión existen?
+		\2 Estructura
+			\3 Mecanismos de transmisión de la PM
+			\3 Efectos de la PM
+	\1 \marcar{Efectos de la política monetaria}
+		\2 Idea clave
+			\3 Regularidades empíricas
+			\3 Neutralidad del dinero
+			\3 Activación de la demanda
+			\3 Papel de las expectativas
+		\2 Modelos teóricos
+			\3 Preclásicos
+			\3 Teoría monetaria clásica
+			\3 Keynes
+			\3 Síntesis neoclásica
+			\3 Monetarismo
+			\3 Nueva Macroeconomía Clásica
+			\3 Nueva Economía Keynesiana
+		\2 Evidencia empírica
+			\3 Idea clave
+			\3 Estimación de hechos empíricos
+			\3 Largo plazo
+			\3 Corto plazo
+			\3 Políticas no convencionales
+	\1 \marcar{Mecanismos de transmisión de la política monetaria}
+		\2 Idea clave
+			\3 Balance del banco central
+			\3 Papel del Banco Central
+			\3 Instrumentos de política monetaria
+			\3 Efectos de diferentes instrumentos
+		\2 Interés keynesiano o efecto indirecto
+			\3 Esquema
+			\3 Explicación
+		\2 Monetarista o efecto directo
+			\3 Esquema
+			\3 Explicación
+		\2 Activos financieros: q de Tobin
+			\3 Esquema
+			\3 Explicación
+		\2 Activos financieros: renta permanente
+			\3 Esquema
+			\3 Explicación
+		\2 Activos financieros: expectativa de crisis
+			\3 Esquema
+			\3 Explicación
+		\2 Activos inmobiliarios: consumo e inversión
+			\3 Esquema
+			\3 Explicación
+		\2 Crédito bancario
+			\3 Esquema
+			\3 Explicación
+		\2 Balances: información asimétrica
+			\3 Esquema
+			\3 Explicación
+		\2 Balances: flujo de caja
+			\3 Esquema
+			\3 Explicación
+		\2 Expectativas
+			\3 Idea clave
+			\3 Modelos DSGE de NEK
+		\2 Tipo de cambio
+			\3 Esquema
+			\3 Explicación
+		\2 Efectos redistributivos
+			\3 Idea clave
+		\2 Efectos de segunda ronda
+			\3 Idea clave
+			\3 Ejemplos
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Efectos de la PM
+			\3 Mecanismos de transmisión de la PM
+		\2 Idea final
+			\3 Diseño e implementación de la PM
+			\3 Spillovers internacionales de la PM
+			\3 Incertidumbre y falta de información
+
+\end{esquema}
+
+\esquemalargo
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Política monetaria
+				\4 Decisiones tomadas por BCentral o AMonetaria
+				\4[] Respecto a:
+				\4[] $\to$ Cantidad de dinero en circulación
+				\4[] $\to$ Condiciones de financiación
+				\4 Para alcanzar determinados objetivos macro
+				\4[] $\to$ Crecimiento sostenido de producto real
+				\4[] $\to$ Tasa de paro
+				\4[] $\to$ Estabilidad de precios
+			\3 Evolución de la política monetaria
+				\4 Ligada a evolución de tres factores:
+				\4[] $\to$ Avances tecnológicos
+				\4[] $\to$ Entorno macroeconómico
+				\4[] $\to$ Contexto político
+				\4 Primera manifestación de PMonetaria
+				\4[] Descuento de deuda pública y privada
+				\4[] $\to$ Banco de Inglaterra
+				\4[] Fomentar mercado de deuda pública
+				\4[] Prestamista de prestamistas
+				\4 Segunda fase de política monetaria
+				\4[] Suavizar fluctuaciones de tipos
+				\4[] $\to$ Estacionales y cíclicas
+				\4[] Mantener precio y reservas de oro
+				\4 Política monetaria moderna
+				\4[] Tres instrumentos convencionales
+				\4[] $\to$ Tipo de descuento
+				\4[] $\to$ Operaciones de mercado abierto
+				\4[] $\to$ Requisitos de reservas bancarias
+				\4[] Instrumentos no convencionales
+				\4[] $\to$ Forward guidance
+				\4[] $\to$ Quantitative Easing
+			\3 Mecanismos y efectos
+				\4 Para diseñar PM óptima dados objetivos
+				\4[] Necesario comprender procesos subyacentes
+				\4 Necesario conocer mecanismos de transmisión
+				\4[] $\to$ Vías por las que afecta a vars. reales
+				\4 Necesario conocer efectos
+				\4[] $\to$ Descripción cuantitativa y cualitativa
+				\4[] $\to$ Modelos teóricos y evidencia empírica
+		\2 Objeto
+			\3 ¿Qué efectos tiene la política monetaria?
+			\3 ¿Qué variables se ven afectadas?
+			\3 ¿Qué modelos teóricos modelizan los efectos de la PM?
+			\3 ¿Qué evidencia empírica existe al respecto?
+			\3 ¿Cómo se transmiten las decisiones de PM a otras variables?
+			\3 ¿Qué canales de transmisión existen?
+		\2 Estructura
+			\3 Mecanismos de transmisión de la PM
+			\3 Efectos de la PM
+	\1 \marcar{Efectos de la política monetaria}
+		\2 Idea clave
+			\3 Regularidades empíricas
+				\4 Desde primeros análisis macroeconómicos
+				\4 Corto plazo
+				\4[] PM afecta output real
+				\4 Largo plazo
+				\4[] PM afecta sólo variables nominales
+			\3 Neutralidad del dinero
+				\4 Objeto de controversia
+				\4 Hasta Keynes, cierto consenso
+				\4[] Dinero neutral en el l/p
+				\4 Keynes
+				\4[] L/p no es periodo de análisis relevante
+				\4[] L/p son muchos c/p sucesivos
+			\3 Activación de la demanda
+				\4 Si no hay mecanismos de estabilidad
+				\4[] Economía puede mantenerse en eqs. subóptimos
+			\3 Papel de las expectativas
+				\4 Introducción en modelos formales
+				\4[] $\to$ Monetarismo
+				\4 NMC
+				\4[] $\to$ Expectativas son racionales
+				\4[] $\to$ Ya no son fenómeno ad-hoc
+		\2 Modelos teóricos
+			\3 Preclásicos
+				\4 Martín de Azpilcueta, Copérnico
+				\4[] Dinero no tiene efectos reales
+				\4[] Precios se ajustan a cantidad de dinero
+				\4[] $\to$ Teoría Cuantitativa del Dinero
+				\4 Hume (1752)
+				\4[] On Money and Interest
+				\4[] Origen de teoría monetaria
+				\4[] Dinero no tiene efectos reales en l/p
+				\4[] $\to$ Sí admite efectos en c/p hasta ajuste
+			\3 Teoría monetaria clásica
+				\4 Dinero no tiene efectos reales a l/p
+				\4 En general, ``dicotomía clásica'' consolidado
+				\4[] Variables nominales y reales
+				\4[] $\to$ Se determinan por separado
+				\4 Aparece debate currency vs banking schools
+				\4[] Currency school
+				\4[] $\to$ M puede controlarse
+				\4[] $\to$ Crecimiento rápido de M causa inflación
+				\4[] $\then$ Política monetaria es importante
+				\4[] Banking school
+				\4[] $\to$ M se ajusta endógenamente a economía
+				\4[] $\to$ Descuento de letras reales no causa inflación
+				\4[] $\to$ M se ajusta a necesidades del comercio
+				\4[] $\then$ Política monetaria no es importante
+			\3 Keynes
+				\4 Política monetaria tiene efectos reales
+				\4[] $\to$ Porque salarios y precios son $+/-$ rígidos
+				\4[] $\to$ Porque interés se determina en MMonetario
+				\4 Expansión monetaria
+				\4[] Reduce tipos de interés
+				\4[] Causa débil de inflación
+				\4 Reducción de tipos de interés
+				\4[] Aumenta demanda de inversión
+				\4[] $\to$ Canal keynesiano
+				\4[] Reduce coste de déficit público
+				\4 Aumento de precios
+				\4[] Reduce salario real
+				\4[] $\to$ Aumenta demanda de trabajo
+				\4[] $\then$ Reduce desempleo
+				\4[] Debilita demanda agregada
+				\4[] $\to$ Necesario estímulo fiscal
+				\4 Trampa de liquidez
+				\4[] Política monetaria puede no tener efectos
+				\4[] Motivos para demandar dinero
+				\4[] $\to$ Precaución y transacción
+				\4[] $\to$ Especulación
+				\4[] Si tipo de interés nominal muy bajo
+				\4[] $\to$ Tipo de interés sólo puede subir
+				\4[] $\to$ Especulación es motivo muy fuerte
+				\4[] $\to$ Demanda de dinero absorbe toda oferta
+				\4[] $\then$ Tipos de interés no varían
+				\4[] $\then$ Política monetaria inefectiva
+				\4[$\then$] PM tiene efectos reales
+				\4[$\then$] Pero sujeta a alteraciones no previsibles
+				\4[$\then$] Necesario complementar con política fiscal
+				\4[$\then$] Efectividad limitada
+			\3 Síntesis neoclásica
+				\4 Dicotomía corto y largo plazo
+				\4[] Efectos keynesianos a c/p
+				\4[] Modelo clásico en l/p
+				\4 Corto plazo
+				\4[] Política monetaria tiene efectos reales
+				\4[] Efectos keynesianos
+				\4[] Representado en marco IS-LM
+				\4[] \grafica{islmkeynesianopoliticamonetaria}
+				\4 Largo plazo
+				\4[] Política monetaria no tiene efectos reales
+				\4[] $\to$ PIB real resultado de factores reales
+				\4[] $\then$ PM afecta a precios e interés nominal
+				\4[] Basado en modelo neoclásico
+				\4[] \grafica{islmneoclasicopoliticamonetaria}
+			\3 Monetarismo
+				\4 Política monetaria tiene efectos reales
+				\4[] Y son los más importantes
+				\4 Corto plazo
+				\4[] Posible activar demanda vía PM
+				\4[] Pero activación sujeta a:
+				\4[] $\to$ Lags o efectos retardados de duración imprevisible
+				\4[] $\to$ Difícil conocer distribución entre efectos reales y nominales
+				\4[] $\to$ Cada vez mayores necesidades de activación
+				\4 Largo plazo
+				\4[] Inflación es fenómeno puramente monetario
+			\3 Nueva Macroeconomía Clásica
+				\4 Tres programas de investigación
+				\4[] i. Información imperfecta
+				\4[] ii. Consistencia de la política monetaria
+				\4[] iii. Modelo del Ciclo Real
+				\4 i. Información imperfecta
+				\4[] Lucas (1972) y siguientes
+				\4[] PM sí tiene efectos reales
+				\4[] $\to$ Sólo shocks imprevistos
+				\4[] $\to$ Consecuencia de información imperfecta
+				\4[] Estímulo monetario aumenta output
+				\4[] Agentes tienen información imperfecta sobre precios
+				\4[] $\to$ No conocen nivel de precios
+				\4[] $\to$ No conocen valor real de oferta de trabajo
+				\4[] Posible hacer creer que salario real $\uparrow$
+				\4[] $\to$ Realmente, $\uparrow$ M y $\uparrow$ P
+				\4[] Conocen modelo completo
+				\4[] $\then$ PM no tiene efectos sistemáticos
+				\4[] $\then$ PM sistemática pierde efectividad
+				\4 ii. Consistencia de la política monetaria
+				\4[] Kydland y Prescott (1977)
+				\4[] Barro y Gordon (1983)
+				\4[] PM óptimas pueden ser inconsistentes
+				\4[] Senda de PM óptima desde hoy
+				\4[] $\to$ Deja de serlo mañana
+				\4[] $\then$ Cuando el pasado esté dado
+				\4[] Agentes comprenden los incentivos de AMonetaria
+				\4[] $\to$ Saben que tiene incentivos a intentar ``sorprender''
+				\4[] $\then$ No se sorprenden
+				\4[] Esperan inflación más alta en el futuro
+				\4[] $\to$ Prevén que la sorpresa tendrá lugar
+				\4[] $\then$ Sorpresa ya no tiene efecto
+				\4[] $\then$ PM sin efectos relevantes
+				\4 iii. Modelo del Ciclo Real
+				\4[] Kydland y Prescott (1982)
+				\4[] Long y Plosser (1983)
+				\4[] Política monetaria es perfectamente irrelevante
+				\4[] Sólo shocks reales tienen efectos reales
+				\4[] $\to$ Shocks monetarios no afectan output
+				\4[] $\then$ PM afecta precios e interés nominal
+			\3 Nueva Economía Keynesiana
+				\4 PM es instrumento básico de PEconómica
+				\4[] Tiene efectos determinantes sobre economía
+				\4 Modelo básico con cuatro ecuaciones
+				\4[DIS] IS dinámica
+				\4[] \fbox{$\tilde{y}_t = \textrm{E}_t \left\lbrace \tilde{y}_{t+1} \right\rbrace - \frac{1}{\sigma} \left( \underbrace{i_t - \textrm{E}_t \left\lbrace \pi_{t+1} \right\rbrace}_{r_t} - r^n_t \right) $}
+				\4[NKPC] Curva de Phillips Neo-Keynesiana
+				\4[] \fbox{$\pi_t = \text{E}_t \left\lbrace \pi_{t+1} \right\rbrace + \textsc{k} \tilde{y}_t $}
+				\4[TR] Regla de Taylor simple
+				\4[] \fbox{$i_t = \rho + \phi_\pi \pi_t + \phi_y \tilde{y}_t + v_t $}
+				\4[MP] Mercado de dinero
+				\4[] \fbox{$m_t - p_t = y_t - \eta i_t$}
+				\4 Rigidez nominal y real
+				\4[] Diferentes justificaciones microeconómicas
+				\4[] Precios à la Calvo
+				\4[] Salarios de eficiencia
+				\4[] ...
+				\4 Mark-ups y fijación de precios
+				\4[] Precios no son flexibles
+				\4[] $\to$ Empresas no pueden fijar mark-up deseado
+				\4[] $\then$ Empresas ajustan en cantidades
+				\4 Efectos reales de PM
+				\4[] Dos vías
+				\4[] i. Reglas de política monetaria
+				\4[] $\to$ Expresión sistemática de política de BCentral
+				\4[] ii. Shocks de política monetaria
+				\4[] $\to$ Acciones inesperadas
+				\4[] $\to$ Fallos en transmisión de decisión
+				\4 Shock monetario con regla de interés
+				\4[] (modelo NEK básico sin rigidez real)
+				\4[] Aumento exógeno de tipo de interés
+				\4[] $\to$ Output natural: CONSTANTE
+				\4[] $\to$ Output gap: CAE
+				\4[] $\to$ Output: CAE
+				\4[] $\to$ Inflación: CAE
+				\4[] $\to$ Empleo: CAE
+				\4[] $\to$ Salario real: CAE
+				\4[] $\to$ Nivel de precios: CAE y se mantiene bajo
+				\4[] $\to$ Interés nominal: SUBE
+				\4[] $\to$ Interés real: SUBE más que interés nominal
+				\4[] $\to$ Oferta de dinero: CAE
+				\4 Shock monetario con regla de oferta monetaria
+				\4[] (modelo NEK básico de tipo de interés)
+				\4[] Aumento exógeno de oferta monetaria
+				\4[] Resumen de efectos
+				\4[] $\to$ Output natural: CONSTANTE
+				\4[] $\to$ Output gap: SUBE
+				\4[] $\to$ Output: SUBE
+				\4[] $\to$ Inflación: SUBE
+				\4[] $\to$ Empleo: SUBE
+				\4[] $\to$ Salario real: SUBE
+				\4[] $\to$ Nivel de precios: SUBE
+				\4[] $\to$ Interés nominal: SUBE
+				\4[] $\to$ Interés real: CAE\footnote{Como hay rigidez nominal de los precios, el efecto liquidez predomina sobre el efecto Fisher a priori.}
+				\4[] $\to$ Oferta de dinero: SUBE
+				\4 Efectos normativos de PM
+				\4[] Depende del modelo concreto
+				\4[] Sin rigidez real:
+				\4[] $\to$ Gap constante entre $y$ natural y eficiente
+				\4[] $\to$ Optimalidad si mínima inflación
+				\4[] $\then$ Divina coincidencia
+				\4[] Con rigidez real:
+				\4[] $\to$ Gap variable entre $y$ natural y eficiente
+				\4[] $\to$ Mínima inflación no es óptima
+				\4[] $\then$ Sin divina coincidencia
+		\2 Evidencia empírica
+			\3 Idea clave
+				\4 Objetivo
+				\4[] Describir relaciones entre:
+				\4[] $\to$ Precios
+				\4[] $\to$ Agregados monetarios
+				\4[] $\to$ Interés nominal y real
+				\4[] $\to$ Output y empleo
+				\4[] Predecir reacciones futuras
+				\4[$\to$] Contrastar veracidad de modelos teóricos
+				\4 Múltiples herramientas empíricas
+				\4[] Regresiones sección cruzada
+				\4[] Datos de panel
+				\4[] Análisis de series temporales
+				\4[] Simulaciones de modelos DSGE
+				\4[] Análisis narrativo de comunicados de BCentrales
+			\3 Estimación de hechos empíricos
+				\4 Métodos VAR
+				\4 Métodos narrativos
+				\4 Cuasi-experimentos
+			\3 Largo plazo
+				\4 Dos resultados fundamentales
+				\4[I] Correlación ~1 entre precios y $\frac{\dot{M}}{M}$
+				\4[] MacCandless y Weber (1995)
+				\4[] $\to$ 30 años y 110 países
+				\4[] Berentsen, Menzio, Wright (2011)
+				\4[] $\to$ Correlación fuerte tras filtrar $\uparrow$ $\downarrow$ de c/p
+				\4[] Correlación \underline{no} implica causalidad:
+				\4[] $\to$ Si $M$ y $\pi$ son vars. endógenas a output
+				\4[] $\to$ Si $Y$ y $M$/$\pi$ reciben perturbaciones comunes
+				\4[] Relación compleja tras desagregar
+				\4[] $\to$ No es tan simple como a priori
+				\4[] Países con inflación baja
+				\4[] $\to$ Correlación mucho más débil
+				\4[] $\to$ Conclusión no muy robusta a subconjuntos
+				\4[] Períodos históricos más pequeños
+				\4[] $\to$ Cambian conclusiones
+				\4[] Gran Moderación: 1985--2007
+				\4[] $\to$ Relación $\pi$--M muy débil o negativa
+				\4[] Interés nominal y $\pi$/M
+				\4[] $\to$ Correlación clara en largo plazo
+				\4[] $\to$ Bastante robusta a periodos y subsets
+				\4[] Interés nominal en Gran Moderación
+				\4[] $\to$ Interés reacciona más que inflación
+				\4[] $\to$ Política de respuesta de Bancos Centrales
+				\4[] $\then$ Difícil establecer causalidad
+				\4[] $\then$ ¿Interés nominal causa $\pi$/M o al revés?
+				\4[] $\then$ Caracterizar regla de PM es objetivo empírico
+				\4[II] Sin correlación entre $\pi$/$\Delta M$ y $\Delta Y$
+				\4[] Datos muestran todo tipo de casos
+				\4[] $\to$ Baja y alto $\pi$ con alto y bajo $\Delta Y$
+				\4[] Subsets muestran alguna correlación entre $\Delta M$--Y
+				\4[] $\to$ Pero pequeña y no robustas a subsets
+				\4[] Shocks permanentes de inflación
+				\4[] $\to$ Sin efectos de largo plazo
+				\4[] Oferta monetaria y desempleo
+				\4[] $\to$ Muy claramente, ausencia de correlación l/p
+			\3 Corto plazo
+				\4 Objeto principal de análisis empírico de PM
+				\4[] $\to$ ¿Fluctuaciones de $M$ afectan vars. reales a c/p?
+				\4 Friedman y Schwartz (1963)
+				\4[] Primer gran estudio empírico
+				\4[] Fija debate y herramientas posteriores
+				\4[] Cambios en $M$ preceden $\Delta Y$
+				\4[] $\to$ Relación temporal muy robusta hasta 60s
+				\4[] $\to$ Interpretan causalmente
+				\4 Críticas a interpretación causal de $\Delta M$--$\Delta Y$
+				\4[] Cambios en M no son exógenos
+				\4[] $\to$ M es de hecho variable pasiva
+				\4[] Correlación temporal no es causalidad
+				\4[] $\to$ Tendencia subyacente previa
+				\4[] M (cualquier agregado) puede no ser var. operativa
+				\4[] $\uparrow$ Y puede inducir $\uparrow$ M
+				\4[] $\to$ Sin cambio en política monetaria
+				\4 Causalidad inversa
+				\4[] Tobin (1970), King y Plosser (1984)
+				\4[] Aportan evidencia de que:
+				\4[] $\to$ M1 y M2 reaccionan a cambios en Y
+				\4[] $\to$ M0 sí es exógena
+				\4 Problema de endogeneidad
+				\4[] Interés es instrumento operativo
+				\4[] $\to$ Agrava el problema
+				\4 Ecuaciones de Saint Louis
+				\4[] Regresiones econométricas
+				\4[] Var. dependiente
+				\4[] $\to$ Output o renta
+				\4[] Vars. independientes
+				\4[] $\to$ Gasto autónomo (PF)
+				\4[] $\to$ Oferta monetaria (PM)
+				\4[] $\to$ Otros factores
+				\4[] $\to$ Con lags
+				\4[] Muestran relación entre Y, $\Delta$ M
+				\4[] $\to$ Sujeto a lags
+				\4[] Apoyo a conclusiones monetaristas
+				\4[] No desagregan efecto sobre Y y $\pi$
+				\4 Agregados monetarios y relevancia
+				\4[] ¿Qué agregado monetario es relevante?
+				\4[] $\to$ ¿Cuál induce efectos reales?
+				\4[] Innovaciones financieras
+				\4[] $\to$ Volatilizan definiciones de M
+				\4[] $\to$ Afectan a demanda de dinero
+				\4[] Construcción de índices Divisia
+				\4[] $\to$ Ponderando por ``moneyness''
+				\4[] Belongia y Ireland (2016)
+				\4[] $\to$ Series actualizadas
+				\4[] $\to$ Resultados similares a Friedman y Schwartz
+				\4 Causalidad de Granger
+				\4[] Herramienta econométrica
+				\4[] $\to$ Establecer causalidad temporal
+				\4[] X granger-causa Y si:
+				\4[] $X_{-t}$ predice Y presente
+				\4[] Intento de utilizar para problema $\Delta M$-Y
+				\4[] Resultados poco robustos
+				\4[] $\to$ A introducción de otras variables
+				\4[] $\to$ Sobre todo, interés
+				\4 Regresiones PIB real frente a M
+				\4[] Caracterizar efecto de shocks imprevistos
+				\4[] Lucas (1972) y (1973) inician técnica
+				\4[] $\to$ Efecto de $\sigma M$ sobre $\sigma Y$
+				\4[] $\then$ ¿Más volatilidad de sorpresas reduce efectos?
+				\4[] Barro, Mishkin encuentran shocks imprevistos de M
+				\4[] $\to$ Afectan Y
+				\4[] $\to$ Efectos asimétricos si contracción/expansión
+				\4 Análisis VAR
+				\4[] Vector Auto-Regression
+				\4[] Regresiones de series temporales respecto:
+				\4[] $\to$ Valores retardados de sí mismas
+				\4[] $\to$ Valores retardados de otras endógenas
+				\4[] $\to$ Shocks exógenos
+				\4[] Sims (1992) y muchos otros
+				\4[] Conclusiones habituales
+				\4[] $\to$ Output reacciona a cambios en interés
+				\4[] $\to$ Aumento gradual y desaparición posterior
+				\4[] Problemas de identificación
+				\4[] $\to$ Procedimientos operativos importan
+				\4[] $\to$ Decisiones de PM son endógenas también
+				\4[] $\to$ Perturbaciones comunes a PM y output
+			\3 Políticas no convencionales\footnote{Mejorable con Kuttner (2018).}
+				\4 Análisis de comunicados de bancos centrales
+				\4[] Cuantificación de discursos
+				\4[] $\to$ Construcción de índices
+				\4[] $\to$ Más dove o más hawk
+				\4[] Valoración de forward-guidance
+				\4[] $\to$ Efecto sobre precios de activos
+				\4 Effective Lower Bound vs Zero-Lower Bound
+				\4[] Hechos empíricos han desmentido ZLB
+				\4[] $\to$ BCentrales han bajado por debajo de 0
+				\4[] $\then$ 0 no es el límite inferior
+				\4[] $\then$ Pero sigue existiendo límite $\to$ ELB
+				\4 Tipos de interés constantes durante años post-crisis
+				\4[] Necesario otros indicador de PM
+				\4[] Habitual construir ``shadow states''
+				\4[] $\to$ Representan posición de PM
+				\4 Quantitative Easing
+				\4[] Dos preguntas relevantes
+				\4[] i. ¿Afecta a precios de activos y tipos l/p?
+				\4[] ii. ¿Afecta a variables macroeconómicas?
+				\4[] Efectos sobre interés de l/p
+				\4[] $\to$ Claramente sí afecta en activos comprados
+				\4[] $\to$ Menos claro sobre no comprados
+				\4[] $\to$ Evidencia de fragmentación de mercado
+				\4[] Efecto sobre deuda privada
+				\4[] $\to$ Reducción de PRiesgo en sector privado
+				\4[] $\to$ Poca reducción en sector financiero
+				\4[] Efectos de QE sobre macroeconomía
+				\4[] Wu y Xia (2016)
+				\4[] $\to$ Muy difícil construcción de contrafactuales
+				\4[] $\to$ Difícil postular no-linealidades
+				\4[] $\to$ Simulaciones con modelos DSGE
+				\4[] $\to$ Modelos apuntan efectos positivos moderados
+				\4[] $\to$ Programas QE muy grande son necesarios
+				\4[] Variabilidad de efectos
+				\4[] $\to$ No todos los programas han afectado igual
+				\4[] $\to$ Primeros QE tuvieron mayor efecto
+				\4 Efectos no deseados de políticas no convencionales
+				\4[] Inflación
+				\4[] $\to$ Temores sobre posible aparición
+				\4[] $\to$ No ha sucedido (de momento?)
+				\4[] Aumento de la asunción de riesgos
+				\4[] $\to$ Alguna evidencia a favor
+				\4[] $\to$ Hasta ahora, efectos no parecen negativos
+	\1 \marcar{Mecanismos de transmisión de la política monetaria}
+		\2 Idea clave\footnote{De \textit{``monetary transmission mechanism''} en Palgrave. Basado indirectamente en Mishkin (1995).}
+			\3 Balance del banco central
+				\4 Pilar central de la política monetaria
+				\4 Activo
+				\4[] Activos netos frente a exterior
+				\4[] Activos frente a sector público
+				\4[] Activos frente a sector privado
+				\4 Pasivo
+				\4[] Base monetaria
+				\4[] $\to$ Efectivo en manos del público
+				\4[] $\to$ Reservas de entidades financieras
+				\4[] Patrimonio neto del banco
+			\3 Papel del Banco Central
+				\4 Afectar variables operativas
+				\4[] Sobre las que puede ejercer un control efectivo
+				\4[] $\to$ Grados variables de control
+				\4 Base monetaria
+				\4[] Ampliando/reduciendo balance
+				\4[] Comprando y vendiendo activos financieros
+				\4 Oferta monetaria
+				\4[] Exigiendo reservas mínimas a bancos
+				\4 Interés nominal de corto plazo
+				\4[] Fijando tipos de depósito y préstamo c/p
+				\4[] Operaciones de mercado abierto
+				\4[] $\to$ Compraventa de deuda
+				\4[] $\to$ Subasta de liquidez
+			\3 Instrumentos de política monetaria
+				\4 Requisitos de reservas mínimas
+				\4[] Exigir reservas mínimas depositadas en BC
+				\4[] $\to$ En relación a depósitos
+				\4[] Afectar necesidades estructurales de liquidez
+				\4 Operaciones de mercado abierto
+				\4[] $\to$ Compra/venta de deuda pública
+				\4 Tipo oficial o de descuento
+				\4[] $\to$ Reservas depositadas en banco central
+				\4[] $\to$ Préstamo en ventanillas de descuento
+				\4[] $\to$ Descuento de activos de corto plazo
+			\3 Efectos de diferentes instrumentos
+				\4 Repercuten en variables reales
+				\4[] $\to$ Output
+				\4[] $\to$ Empleo
+				\4[] $\to$ Saldos reales
+				\4[] $\to$ Riqueza de las familias
+				\4[] ...
+				\4 Diferentes vías
+		\2 Interés keynesiano o efecto indirecto
+			\3 Esquema
+				\4[] $\downarrow$ M $\to$ $\uparrow$ i $\to$ $\downarrow$ I $\to$ $\downarrow$ Y
+			\3 Explicación
+				\4 $\uparrow$ interés nominal de c/p
+				\4[$\then$] $\uparrow$ interés nominal de l/p
+				\4[] Porque agentes prefieren liquidez
+				\4[] Arbitran cambio en precios de activos
+				\4[] $\to$ Venden l/p para comprar c/p
+				\4[] $\then$ $\Delta$ se transmite a lo largo de yield curve
+				\4 Inversores valoran interés de l/p
+				\4[] Para decidir invertir
+				\4[] Comparan tipo de interés (real) con EMK\footnote{Eficiencia marginal del capital (\textit{marginal efficiency of capital}). En terminología keynesiana, equivale a la TIR de la inversión. }
+				\4[] Si EMK > interés l/p
+				\4[] $\to$ Inversión se lleva a cabo
+				\4 Caída de la inversión
+				\4[] Porque menos proyectos cumplen regla
+				\4[] $\then$ Caída de la demanda agregada
+				\4 Animal spirits
+				\4[] Afectan exógenamente a EMK
+				\4[] $\to$ Flujos esperados de caja
+				\4[] Interaccionan con canal de interés
+		\2 Monetarista o efecto directo
+			\3 Esquema
+				\4[] $\uparrow$ $M_S$ $\to$ $\downarrow M_D - M_S$ $\to$ $\uparrow (B_D - B_S), \uparrow Y_D - Y_S$
+			\3 Explicación
+				\4 Efecto directo
+				\4[] Friedman entiende como efecto más importante
+				\4[] Partiendo de Ley de Walras
+				\4[] En contexto Keynesiano:
+				\4[] $M^D -  M^S + B^D - B^S = 0$
+				\4[] $\then$ $M^S > M^D$ se cubre con demanda de bonos
+				\4[] Friedman afirma que:
+				\4[] \fbox{$(M^D - M^S) + (B^D - B^S) + (Y^D - Y^S) = 0$}
+				\4[] $\then$ $M^S > M^D$ se pueden cubrir con demanda de bienes duraderos
+				\4[] $\then$ $\Delta M$ no tiene por qué reducir tipo de interés
+				\4[] Aumento de Y aumenta demanda de saldos reales
+				\4[] $\then$ Mercado de dinero se equilibra
+				\4[] $\then$ Aumento de M tiene efecto directo sobre Y
+		\2 Activos financieros: q de Tobin
+			\3 Esquema
+				\4[] $\downarrow$ M $\to$ $\downarrow$ $P_E$ $\to$ $\downarrow$ $q$ $\to$ $\downarrow$ $I$ $\to$ $\downarrow$ $Y$, $\downarrow$ L
+			\3 Explicación
+				\4 Caída de oferta monetaria
+				\4[] Reduce liquidez para comprar acciones
+				\4[] $\to$ Precio del equity cae
+				\4 Caída del precio del equity
+				\4[] $\to$ Reduce $q$ de Tobin $\left( \dfrac{P_E}{\text{Coste de reposición}} \right)$
+				\4 Caída de la $q$ de Tobin
+				\4[] Reduce inversión
+				\4[] $\to$ Caída del output y empleo
+		\2 Activos financieros: renta permanente
+			\3 Esquema
+				\4[] $\downarrow$ M $\to$ $\downarrow$ $P_\text{E}$ $\to$ $\downarrow$ $Y_P$ $\to$ $\downarrow$ C $\to$ $\downarrow$ $Y$, $\downarrow$ L
+			\3 Explicación
+				\4 Caída de la oferta monetaria
+				\4[] Reduce precios de activos financieros
+				\4 Caída de riqueza financiera
+				\4[] Reduce renta permanente de hogares
+				\4 Caída de renta permanente
+				\4[] Reduce demanda de consumo
+				\4[] $\to$ Caída de output y empleo
+		\2 Activos financieros: expectativa de crisis
+			\3 Esquema
+				\4[] $\downarrow$ M $\to$ $\downarrow$ $P_E$ $\to$ $\uparrow$ Prob. crisis $\to$ $\downarrow$ $C_\text{durad.}$, $\downarrow$ I $\to$ $\downarrow$ Y, $\downarrow$ L
+			\3 Explicación
+				\4 Caída de precios de activos financieros
+				\4[] Aumenta expectativas de crisis
+				\4 Expectativa de crisis
+				\4[] Reduce consumo bienes duraderos e inversión
+				\4[] $\to$ Caída de output y empleo
+		\2 Activos inmobiliarios: consumo e inversión
+			\3 Esquema
+				\4[] $\downarrow$ M $\to$ $\downarrow$ $P_\text{Im.}$ $\to$ $\downarrow$ $Y_P$ $\to$ $\downarrow$ C $\to$ $\downarrow$ $Y$, $\downarrow$ L
+			\3 Explicación
+				\4 Proceso similar a anteriores
+				\4 Destacado por monetaristas
+				\4[] Especialmente Meltzer
+		\2 Crédito bancario
+			\3 Esquema
+				\4[] $\downarrow$ M $\to$ $\downarrow$ Depósitos $\to$ $\downarrow$ Crédito $\to$ $\downarrow$ I, C $\to$ $\downarrow$ Y, $\downarrow$ L
+			\3 Explicación
+				\4 Bancos tienen papel central en asignación
+				\4[] Amortiguan asimetrías de información
+				\4[] Canalizan crédito a agentes pequeños
+				\4[] $\to$ Sin acceso directo a mercados de capital
+				\4 Reducción de oferta monetaria
+				\4[] Reduce oferta de reservas
+				\4 Escasez de reservas bancarias
+				\4[] Reduce créditos ofertados
+				\4[] $\to$ Caída del crédito
+				\4 Escasez de crédito
+				\4[] Reduce inversión y consumo
+				\4[] $\to$ Caída de empleo y output
+		\2 Balances: información asimétrica
+			\3 Esquema
+				\4[] $\downarrow$ M $\to$ $\downarrow$ $P_E$ $\to$ $\uparrow$ SA, RM $\to$ $\downarrow$ Crédito $\to$ $\downarrow$ I $\to$ $\downarrow$ Y, $\downarrow$ L
+			\3 Explicación
+				\4 Caída en precio de equity
+				\4[] Reduce valor del colateral
+				\4[] Agudiza problemas de información
+				\4 Selección adversa
+				\4[] Inversores con garantías salen de mercado
+				\4[] $\to$ Aumento del riesgo de las inversiones
+				\4[] $\then$ Reducción del crédito
+				\4 Riesgo moral
+				\4[] Caída del precio del equity
+				\4[] $\to$ Accionistas tienen menos que perder
+				\4[] $\to$ Aumenta riesgo de proyectos
+				\4[] $\then$ Reducción del crédito
+		\2 Balances: flujo de caja
+			\3 Esquema
+				\4[] $\downarrow$ M $\to$ $\uparrow$ i $\to$ $\downarrow$ $\text{FCF}_\text{EQUITY}$ $\to$ $\uparrow$ SA y RM $\to$ $\downarrow$ Crédito $\to$ $\downarrow$ I $\to$ $\downarrow$ Y, $\downarrow$ L
+			\3 Explicación
+				\4 Aumento del interés de deuda
+				\4[] Aumenta salida de flujos a deuda
+				\4[] Reduce FCF al equity
+				\4 Reducción de FCF a equity
+				\4[] Aparecen problemas de agencia
+				\4[] $\to$ Crédito se contrae
+				\4[] $\then$ Reducción de la inversión
+		\2 Expectativas
+			\3 Idea clave
+				\4 Modelos con HER
+				\4 Agentes estiman variables nominales futuras
+				\4[] Inflación
+				\4[] Interés nominal
+				\4[] $\to$ Deciden en base a estimación
+				\4 Información sobre políticas futuras
+				\4[] Afecta expectativas de agentes
+				\4[] $\to$ Altera comportamiento racional
+				\4[] $\then$ Afecta variables distintas de operativas
+			\3 Modelos DSGE de NEK
+				\4 IS dinámica
+				\4[] $\tilde{y}_t = \textrm{E}_t \left\lbrace \tilde{y}_{t+1} \right\rbrace - \frac{1}{\sigma} \left( \underbrace{i_t - \textrm{E}_t \left\lbrace \pi_{t+1} \right\rbrace}_{r_t} - r^n_t \right) $
+				\4 Fijando expectativas de agentes sobre:
+				\4[] Output gap esperado futuro $E_t(\tilde{y}_{t+1})$
+				\4[] $\to$ Vía interés nominal futuro
+				\4[] Inflación futura $E_t{\pi_{t+1}}$
+				\4[$\then$] Posible afectar output gap presente $\tilde{y}_t$
+		\2 Tipo de cambio
+			\3 Esquema
+				\4[] $\downarrow$ M $\to$ $\downarrow$ E $\to$ $\downarrow$ NX $\to$ $\downarrow$ Y, $\downarrow$ L
+			\3 Explicación
+				\4 $\Delta$ tipo nominal doméstica
+				\4[] Entrada de capitales
+				\4[] $\to$ Apreciación de moneda
+				\4 Pérdida de competitividad exterior
+				\4[] Caída de exportaciones netas
+				\4[] $\to$ Caída de output y empleo
+		\2 Efectos redistributivos
+			\3 Idea clave
+				\4 PM afecta distribución de renta
+				\4 Ejemplo: caída del tipo de interés
+				\4[] Cae rendimiento de deuda
+				\4[] Cae riqueza de acreedores
+				\4[] Aumenta riqueza de familias endeudadas
+				\4[] $\then$ Redistribución de acreedores a deudores
+		\2 Efectos de segunda ronda
+			\3 Idea clave
+				\4 Variables afectadas afectan a otras variables
+				\4[] Incluida la política monetaria
+				\4[] $\to$ Que puede tener componente endógeno
+				\4[] $\then$ Que a su vez afectan vars. afectadas inicialmente
+			\3 Ejemplos
+				\4 PM expansiva aumenta PIB
+				\4 Demanda agregada aumenta
+				\4[] Efectos multiplicador
+				\4 Economía alcanza capacidad
+				\4[] $\then$ Aumento de la inflación
+				\4[] $\then$ Caída del tipo real
+				\4[] $\then$ Reacción de PM y aumento de tipos
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Efectos de la PM
+			\3 Mecanismos de transmisión de la PM
+		\2 Idea final
+			\3 Diseño e implementación de la PM
+				\4 No analizada en este tema
+				\4 Objetivo último de análisis de efectos
+				\4 Necesario definir objetivos
+				\4[] Modelos con agentes optimizadores
+				\4[] $\to$ Derivar resultados normativos
+			\3 Spillovers internacionales de la PM
+				\4 PM tienen efectos más allá de fronteras
+				\4 Coordinación de política monetaria
+				\4[] Importante factor no analizado
+			\3 Incertidumbre y falta de información
+				\4 Constante en política monetaria
+				\4 Sistema financiero enorme complejidad
+				\4 Difícil caracterizar todos efectos
+				\4 No linealidades
+				\4[$\to$] Blinder: PM es arte y ciencia
+\end{esquemal}
+
+\graficas
+
+\begin{axis}{4}{Efectos de política monetaria expansiva en un modelo IS-LM con supuestos keynesianos.}{Y}{r}{islmkeynesianopoliticamonetaria}
+	% LM
+	\draw[-] (0.3, 0.5) -- (1,0.5) to [out=0, in=260](4,4);
+	\node[left] at (4,4){$\text{LM}_0$};
+	
+	\draw[-] (1,0.5) -- (1.7,0.5) to [out=0, in=260](4.7,4);
+	\node[right] at (4.7,4){$\text{LM}_1$};
+	
+	\draw[-{Latex}] (4.05,3.7) -- (4.6,3.7);
+	\draw[-{Latex}] (3.8,3) -- (4.4,3);
+	
+	% IS
+	\draw[-] (0.2,4) -- (3,0.2);
+	\node[right] at (3,0.2){IS};
+	
+	% Equilibrios
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] (a) at (2.44,0.98) {};
+	\node[above] at (2.44, 0.98){\tiny 0};
+	
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] (a) at (2.64,0.71) {};
+	\node[below] at (2.64,0.67){\tiny 1};
+\end{axis}
+
+\begin{axis}{4}{Efectos de una expansión de la oferta monetaria en un modelo IS-LM con supuestos neoclásicos}{Y}{r}{islmneoclasicopoliticamonetaria}
+	% IS
+	\draw[-] (0.2,4) -- (4,0.2);
+	\node[right] at (4,0.2){IS};
+	
+	% LM
+	\draw[-] (0.2,0) -- (4,4);
+	\node[right] at (4,4){$\text{LM}_0$, $\text{LM}_1$};
+	
+	\draw[-] (1.5,0) -- (4,2.6325);
+	\node[right] at (4,2.6235){LM'};
+	
+	\draw[-{Latex}] (1,0.6) -- (1.5,0.2);
+	\draw[{Latex}-] (2.7,2.3) -- (3.2,1.9);
+	
+	% Y fijo
+	\draw[dotted] (2.15,0) -- (2.15,4);
+	\node[below] at (2.15,0){$\bar{Y}$};
+	
+	% Y tras expansión monetaria
+	\draw[dashed] (2.81,0) -- (2.81,1.35);
+	\node[below] at (2.81,0){$Y'$};
+	
+	% Equilibrios
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] (a) at (2.16,2.08) {};
+	\node[left] at (2.10,2.08){\tiny 0, 1};
+	
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] (a) at (2.8,1.4) {};
+	\node[left] at (2.8,1.4){\tiny 0'};
+\end{axis}
+
+\preguntas
+\seccion{13 de marzo de 2017}
+\begin{itemize}
+    \item Comente los “lags” internos y externos de la política monetaria.
+    \item En economías abiertas, el tipo de cambio es una variable fundamental. Comente su papel como canal de transmisión de política monetaria.
+    \item ¿Cuáles son las limitaciones de la efectividad de la política monetaria más allá de los retardos?
+    Ha dicho usted que con la aparición de la Teoría General de 1936, Keynes es pionero en reconocer la efectividad de la política monetaria a la hora de generar efectos reales. Pero también ha explicado usted la trampa de liquidez. ¿Cómo compatibilizar estos dos aspectos?
+\end{itemize}
+
+\seccion{22 de marzo de 2017}
+\begin{itemize}
+    \item Le ha dado poca importancia a la NEK. ¿Podría aportar algo más sobre sus aportaciones en PM?
+    \item Según la Tª Cuantitativa del dinero, todos los aumentos en la masa monetaria se trasladan a precios. ¿Cómo explica que la masa monetaria en EEUU se haya multiplicado por 4 y no los precios?
+    \item Ha dicho que la PM es más rápida y discrecional que la PF. ¿Por qué?
+    \item Imagine un país con exceso de liquidez. ¿Qué instrumentos de PM y PF utilizaría?
+\end{itemize}
+
+\seccion{Test 2006}
+
+\textbf{22.} Indique cuál de estas afirmaciones es FALSA:
+
+\begin{itemize}
+	\item[a] La Reserva Federal de EEUU instrumenta su política monetaria mediante operaciones de mercado abierto (``open market'').
+	\item[b] La Reserva Federal tiene objetivos explícitos no cuantificados de estabilidad de precios y de pleno empleo.
+	\item[c] El Banco Central Europeo instrumenta su política monetaria a través de operaciones de mercado abierto (``open market'').
+	\item[d] El Banco Central Europeo tiene un objetivo explícito cuantificado de estabilidad de precios y no tiene objetivo explícito de pleno empleo.
+\end{itemize}
+
+
+\notas
+
+\textbf{2006} \textbf{22.} ANULADA
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+	\item capital, credit and money markets *
+	\item central banking *
+	\item central bank independence
+	\item financial intermediaries *
+	\item financial intermediation *
+	\item high-powered money and the monetary base *
+	\item inflation
+	\item inflation dynamics
+	\item inflation targeting
+	\item international monetary policy
+	\item \textbf{liquidity trap} *
+	\item monetary aggregation
+	\item monetary and fiscal policy overview
+	\item monetary business cycle models (sticky prices and wages)
+	\item monetary business cycle (imperfect information)
+	\item monetary economics, history of *
+	\item monetary equilibrium
+	\item monetary overhang
+	\item \textbf{monetary policy} *
+	\item \textbf{monetary policy, history of} *
+	\item \textbf{monetary transmission mechanism} *
+	\item money
+	\item money and general equilibrium
+	\item money illusion
+	\item money in economic activity
+	\item money supply
+	\item money, classical theory of
+	\item neutrality of money
+	\item optimum quantity of money
+	\item Phillips curve (new views)
+	\item \textbf{quantitative easing by the major western central banks during the global financial crisis}
+	\item quantity equations: early history
+	\item quantity theory of money
+	\item regulatory responses to the financial crisis: an interim assessment
+	\item search-and-matching models of monetary exchange
+	\item sound money
+	\item Taylor rules
+	\item term structure of interest rates
+	\item tight money
+	\item Tobin's q
+\end{itemize}
+
+Arrow, K. et al \textit{Handbook of Monetary Economics} Ch. 24 Implementation of Monetary Policy:How Do Central Banks Set Interest Rates? -- En carpeta de macroeconomía
+
+Ball, L.; Mankiw, G.  \textit{The NAIRU in theory and practice.} (2002) Journal of Economic Perspectives
+
+Bernanke, B. S.; Gertler, M. \textit{Inside the Black Box: The Credit Channel of Monetary Policy Transmission} (1995) Journal of Economic Perspectives: fall 1995 -- En carpeta del tema
+
+Boivin, J.; Kiley, M. T.; Mishkin, F. S. \textit{How Has the Monetary Transmission Mechanism Evolved Over Time?} Ch. 8 Handbook of Monetary Economics
+
+Cecchetti, S.; Schoenholtz, K. \textit{Money, Banking, and Financial Markets} (2014) Fourth Edition -- En carpeta Finanzas
+
+De Grauwe, P.; Polan, M. \textit{Is Inflation Always and Everywhere a Monetary Phenomenon?} (2005) Scandinavian Journal of Economics -- En carpeta del tema
+
+Dell'Ariccia, G.; Rabanal, P.; Sandri, D. \textit{Unconventional Monetary Policies in the Euro Area, Japan, and the United Kingdom} (2018) Journal of Economic Perspectives, Fall -- En carpeta del tema
+
+Metzler, A. H. \textit{Monetary, Credit and (Other) Transmission Processes: A Monetarist Perspective} (1995) Journal of Economic Perspectives: fall 1995 -- En carpeta del tema
+
+MacCandless, G. T.; Weber, W. \textit{Some Monetary Facts} (1995) Federal Reserve of Minneapolis Quarterly Review -- En carpeta del tema
+
+Mishkin, F. S. \textit{Symposium on the Monetary Transmission Mechanism} (1995) Journal of Economic Perspectives -- En carpeta del tema
+
+Obstfeld, M.; Rogoff, M. \textit{The Mirage of Fixed Exchange Rates} (1995) Journal of Economic Perspectives: fall 1995 -- En carpeta del tema
+
+Pfister, C.; Sahuc, J-G. (2020) \textit{ Unconventional Monetary Policies: A Stock-Taking Exercise} Banque de France. Working Paper. \href{https://publications.banque-france.fr/sites/default/files/medias/documents/wp761.pdf}{Disponible aquí} -- En carpeta del tema.
+
+Poole, W. \textit{Optimal Choice of Monetary Policy Instruments in a Simple Stochastic Macro Model} (1970) The Quarterly Journal of Economics -- En carpeta del tema
+
+Ramey, V. A. \textit{Macroeconomic shocks and their propagation} (2016) NBER Working Paper Series -- En carpeta del tema
+
+Taylor, J. B. \textit{The Monetary Transmission Mechanism: An Empirical Framework} (1995) Journal of Economic Perspectives: fall 1995 -- En carpeta del tema
+
+Varios Autores. \textit{Symposium: the Monetary Transmission Mechanism} (1995) Journal of Economic Perspectives: Fall 1995 -- \url{https://www.aeaweb.org/issues/224}
+
+Veronesi, P. \textit{Handbook of Fixed Income Securities} (2016) Ch. 5 Bond Markets and Monetary Policy. Ch. 6 Bond Markets and Unconventional Monetary Policy
+
+Walsh, C. E. \textit{Monetary Theory and Policy} 3rd edition. Ch. 11 Monetary Policy Operating Procedures.
+
+\end{document}

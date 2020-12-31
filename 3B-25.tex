@@ -1,0 +1,1197 @@
+\documentclass{nuevotema}
+
+\tema{3B-25}
+\titulo{Análisis de los instrumentos financieros de renta variable. Análisis fundamental. Teoría de la elección de cartera. El modelo de valoración de activos de capital (CAPM). La teoría de valoración de activos por arbitraje (APT). Análisis técnico.}
+
+\begin{document}
+
+\ideaclave
+
+De forma general, un activo financiero es un derecho ligado a un contrato jurídico que da lugar a la percepción de una serie de flujos de caja en el futuro. Dentro de la inmensa variedad de activos financieros que un inversor puede comprar, es especialmente relevante la distinción entre activos de renta fija y renta variable. Esta distinción se basa en dos factores, con importancia relativa variable y gradual en función de los activos concretos: la relación entre la cuantía de los flujos recibidos y los resultados de la empresa, y los derechos de carácter político relativos a la gestión de la empresa que confiere la tenencia del título. En la medida en que los flujos de caja derivados no estén ligados al funcionamiento de la empresa y el título no suponga una atribución de derechos políticos en favor de su tenedor, estaremos ante un activo de renta fija. En caso contrario, cuando los flujos dependen de la discrecionalidad de la junta de accionistas y el título confiere derecho a participar en éstas como accionista, estamos ante un activo de renta variable. Las innovaciones financieras han creado innumerables instrumentos que combinan características de ambos tipos de activos, pero de aquí en adelante hablaremos de acciones para referirnos de forma general a activos de renta variable. Las acciones confieren así derecho a participar en las juntas de accionistas pero a efectos de la exposición su rasgo característico es el hecho de que dan lugar a una corriente de flujos de caja de cuantía indeterminada compuesta por los dividendos repartidos y el precio de venta de la acción en un periodo futuro. Esta indeterminación da lugar a varios interrogantes que son el \textbf{objeto} de la exposición: ¿de qué dependen los precios futuros de las acciones? ¿cuáles son los modelos relevantes de formación de precios que sirven para estimar esos mismos precios futuros? ¿qué modelos caracterizan la decisión de inversión en renta variable?
+
+El punto de partida de la teoría predominante que la ciencia económica ha formulado respecto al problema de la estimación del precio de los activos es la \marcar{hipótesis de los mercados eficientes}. La idea central de la hipótesis y su resultado es el hecho de que los mercados eliminen todas las oportunidades de obtener un rendimiento superior al de otros activos de similares características, entre las cuales tiene especial relevancia el riesgo o la volatilidad de los retornos generados. Cuando esto sucede, los precios de los activos reflejan de forma completa el conjunto de información dado que incluye todos los datos relevantes a efectos de estimar los flujos de caja que generará el activo --en este caso, dividendos y precio de venta. El rigor de la hipótesis de los mercados eficientes puede modularse variando el \textbf{conjunto de información}. Cuando éste comprende toda la información obtenible por cualquier medio hablamos de versión fuerte de la hipótesis de mercados eficientes. Cuando el conjunto de información se reduce a la información pública a disposición de cualquier inversor interesado, estamos ante la hipótesis semifuerte. Por último, cuando el conjunto de información que determina la formación de precios incluye sólo los precios pasados estamos ante la hipótesis débil de eficiencia de los mercados financieros. En éste último caso, es imposible obtener sistemáticamente un retorno superior al de activos con similar nivel de riesgo a partir del análisis de los precios pasados del activo en cuestión y la extracción de tendencias a partir de éstos.
+
+El llamado \marcar{análisis técnico} es, valga la redundancia, una técnica de estimación del precio futuro de un activo cuyo supuesto central es el incumplimiento de la versión débil de la hipótesis de mercados eficientes. Cuando los precios actuales no reflejan totalmente la información contenida en precios pasados existe la posibilidad de extraer tendencias y patrones que relacionan el pasado con el futuro para tratar de predecir los activos sobrevalorados o infravalorados y con ello obtener un rendimiento superior al que aportan activos similares. Las técnicas utilizadas son prácticamente innumerables. Algunos ejemplos son el uso de ``techos'', ``resistencias'', medias móviles, ratios, indicadores de ``fuerza relativa''... La \textbf{capacidad predictiva} del análisis técnico ha sido un sujeto de fuertes controversias que ha dado lugar a poderosos argumentos en contra pero también ha creado las condiciones para el desarrollo de nuevos programas de investigación. Entre los argumentos en contra destacan el \underline{data mining} y el \underline{cherry picking}. El primero hace referencia a la posibilidad de explicar tendencias de forma \textit{ex-post}, creando una ficción de capacidad predictiva que desaparece cuando se aplica esa explicación a datos de precios futuros. El segundo argumento en contra, el llamado {cherry picking}, o el sesgo en la valoración de los resultados que determinan la capacidad predictiva de una técnica en favor de aquellos que son favorables al análisis técnico. Así, este argumento afirma que es habitual defender el análisis técnico a partir de aciertos circunstanciales y obviar los errores, creando también una ficción de capacidad predictiva que desaparece cuando se tienen en cuenta todas las situaciones y se incluyen los fracasos a la hora de predecir. A pesar de estas críticas, a la consideración del análisis técnico como técnica de predicción subyace la postulación de límites a la racionalidad de los agentes económicos. Este hecho conecta el análisis técnico con el llamado \underline{behavioral finance}, que trata analizar y documentar las desviaciones sistemáticas del comportamiento racional y los fenómenos a nivel agregado a las que ésta da lugar, a partir de diferentes mecanismos psicológicos de los inversores .
+
+Cuando el análisis técnico se estima incapaz de predecir precios futuros, o cuando se adopta un enfoque de medio o largo plazo en el que el precio de los activos tiende a aproximarse a su valor fundamental --es decir, la suma descontada de los flujos de caja que genera-, entramos en el campo del \marcar{análisis fundamental}. El análisis fundamental engloba las técnicas de estimación de esos flujos de caja a partir de información públicamente disponible tal como datos macroeconómicos, estados contables de la empresa, estadísticas de cuotas de mercado y ventas, ratios contables, etc... En ocasiones se distingue entre \underline{métodos estáticos}, que tratan de estimar el valor de la empresa en cuestión a partir de información sin dimensión temporal, y \underline{métodos dinámicos}. Los primeros pueden servir como primera aproximación en determinados contextos y utilizan variables como el valor contable, el valor de liquidación o el valor de reposición para estimar el precio de medio/largo plazo de la acción. Los métodos dinámicos se basan es descontar dividendos o flujos de caja estimados a una tasa de descuento consistente con el riesgo del activo. Son también habituales en este tipo de análisis los ratios derivados de los estados financieros tales como el PER, el PER con beneficios futuros esperados, el EBITDA por acción, ratios de liquidez, de apalancamiento, etc... La capacidad predictiva de los métodos de análisis fundamental adolece en todo caso del problema de los datos: si bien existe numerosa información pública relativa a la mayor parte de acciones cotizadas, resulta muy difícil obtener datos con total garantía de fiabilidad y aún más cuando se trata de empresas en problemas o empresas no cotizadas. Además, la información no es siempre comparable entre activos.  Para reducir el efecto de estos problemas es habitual tratar de centrar las predicciones en la información considerada más fiable y posteriormente tratar de plantear escenarios a partir de la información menos fiable.
+
+La enorme gama de activos financieros en la que invertir y la tendencia de los seres humanos a preferir menor a mayor riesgo plantea el problema de la \marcar{elección de cartera}. Dado un capital disponible, ¿cómo debe un inversor racional distribuirlo entre diferentes activos? ¿qué implicaciones tiene su elección? La teoría de la elección de cartera por la que Markowitz recibió el Premio Nobel de Economía en 1990 ha sido el modelo seminal del programa de investigación principal en el ámbito de la valoración de activos. Partiendo del supuesto de aversión al riesgo y del hecho empírico de que los flujos de caja de los activos no se conocen con certeza, el comportamiento de un agente racional puede aproximarse como un problema de decisión entre dos variables, retorno esperado y desviación estándar del retorno esperado. Dado que el retorno esperado aumenta la utilidad del agente y la desviación estándar la reduce, el agente tratará de elegir una cartera de activos que se sitúe lo más al noroeste posible en el espacio media-varianza. Partiendo de este principio y de las derivaciones del retorno esperado y la varianza de activos compuestos, es posible plantear una serie de problemas de maximización (o de problemas equivalentes de minimización) que definen la llamada \underline{frontera eficiente} o conjunto de combinaciones media-varianza que maximizarían la utilidad de un agente racional. Además, cuando se introduce la presencia de un activo libre de riesgo, se puede derivar un conjunto de combinaciones media-varianza que forman una línea tangente a la frontera eficiente, denominada  \underline{Capital Allocation Line} (CAL). La introducción de este activo libre de riesgo permite además derivar el Teorema de la Separación de Tobin, según el cual el problema de la inversión puede descomponerse en dos problemas separados: primero, hallar la frontera eficiente; segundo, hallar el punto sobre la CAL que maximiza la utilidad del agente en función de su aversión al riesgo mediante la combinación de activo compuesto arriesgado y activo libre de riesgo. El modelo planteado por Markowitz permite aproximar el problema de decisión no sólo desde de el punto de vista normativo sino también positivo. Sin embargo, su aplicación se ve dificultada en la práctica por las exigencias computacionales derivadas del cálculo de un número muy elevado de covarianzas y unas necesidades de datos a menudo insuperables en la práctica. Los \textbf{modelos de factores} permiten superar estos problemas imponiendo un supuesto adicional: los rendimientos de los activos están correlacionados con una serie de factores comunes de tal manera que sean esas correlaciones con los factores comunes --y no la matriz de covarianzas- el conjunto de información utilizado para derivar la frontera eficiente.
+
+El \marcar{Capital Asset Pricing Model} (CAPM) desarrollado por Sharpe y Lintner en los años 60 es el resultado de aplicar una serie de supuestos adicionales en el marco del modelo de elección de cartera de Markowitz. En este modelo, todos los agentes tienen acceso a la misma información, a un activo libre de riesgo, y los mercados se encuentran en equilibrio. En este contexto, todos los agentes comprarán una misma cartera de activos arriesgados, denominada cartera de mercado. Las ponderaciones respectivas de cada activo en la cartera de mercado resultan de igualar las relaciones marginales de sustitución entre rentabilidad y riesgo de todos los activos entre ellos y respecto al mismo cociente rentabilidad-riesgo de la cartera de mercado. De esta igualdad se extrae la conocida fórmula que a menudo personifica el CAPM en la práctica habitual de la valoración de activos, y que relaciona linealmente el retorno esperado de un activo arriesgado por encima de la rentabilidad libre de riesgo con un parámetro $\beta$ y el exceso de retorno de la cartera de mercado. Esta relación se denomina \underline{Securites Market Line} cuando se representa en el plano con la $\beta$ en el eje de abscisas y el exceso de rentabilidad en el eje de ordenadas. Además de constituir en definitiva una racionalización de un modelo unifactorial del rendimiento esperado en función del riesgo sistemático y el tipo de interés libre de riesgo, una de las grandes implicaciones del modelo CAPM es que el mercado en equilibrio remunera el riesgo sistemático o riesgo relacionado con el conjunto del mercado y no el riesgo idiosincrático o riesgo único a la empresa. En la práctica, el CAPM se ha convertido en la herramienta de referencia de los \textit{practitioners} por su facilidad de uso a partir de la estimación de la cartera de mercado utilizando los valores de índices como el S\&P 500 u otros índices bursátiles generales. Además, su impacto en la literatura científica ha sido notable con la aparición de varias extensiones tales como el \textit{Consumption CAPM}, el \textit{Intertemporal CAPM} o el \textit{zero-beta CAPM} o CAPM de Black.
+
+Apenas una década después, Stephen Ross publicó dos artículos que introducirían el modelo \marcar{Arbitrage Pricing Theory} (APT). Una de las grandes carencias del CAPM es el hecho de que los residuos del modelo unifactorial que define se suponen incorrelados entre sí y con otros factores, de tal manera que el riesgo sistemático es el único factor de riesgo relevante. El modelo APT solventa este problema racionalizando un modelo multifactorial por medio del arbitraje. La idea central es que si dos activos reaccionan de igual forma a una serie de factores, deberán aportar el mismo rendimiento a sus tenedores. Si esto no sucediese y el rendimiento esperado de un activo fuese superior al de otro con igual sensibilidad a un vector de factores dado, sería posible para un arbitrajista obtener un beneficio ilimitado sin riesgo vendiendo en corto el activo con menor rendimiento esperado y comprando el activo con mayor rendimiento esperado. Es precisamente esta posibilidad de arbitrar precios lo que acaba por igualar los rendimientos esperados de los activos. La sensibilidad del rendimiento esperado a los factores puede estimarse mediante técnicas económetricas, pero el modelo no genera ningún resultado en relación a los factores relevantes. Por ello, el modelo APT no ha logrado desbancar al CAPM como referencia para los \textit{practitioners}, aunque a nivel académico ha tenido especial relevancia el \textbf{modelo de Fama-French}, cuyos factores son la diferencia de retorno de dos carteras con empresas grandes y empresas pequeñas, y la diferencia de retorno entre dos carteras con valores altos y bajos del ratio book-to-market. Si bien este modelo fue formulado inicialmente en términos del ICAPM y no el modelo APT, su estructura de tres factores se aproxima a la habitual en contextos APT.
+
+A lo largo de la exposición se han analizado las técnicas más habituales de valoración de activos de renta variable y los conceptos teóricos que las informan tales como la hipótesis de mercados eficientes o la teoría de la elección de cartera. El mercado de renta variable tiene menor volumen que los mercados de divisas o bonos, pero es cualquier caso una pieza fundamental de los mercados financieros de todo el mundo. Determina el coste de los fondos propios, afectando a las decisiones a nivel microeconómico y provocando efectos riqueza con consecuencias macroeconómicas. A pesar del atractivo de los modelos presentados por su simplicidad y su capacidad para generar recomendaciones de inversión, es preciso tener en mente la fragilidad práctica de sus estimaciones. Ríos de tinta han sido vertidos y son vertidos aún para tratar de encontrar modelos que predigan mejor el rendimiento futuro, y son numerosos tanto los nuevos modelos que aparecen constantemente como las controversias que surgen en torno a los modelos presentados que son ya ``tradicionales''.
+
+
+%Los activos financieros se caracterizan por generar una serie de pagos futuros a sus tenedores. Los activos financieros de renta fija se definen como aquellos cuyos pagos futuros están definidos de antemano, tanto en relación a su cuantía como al momento en el que se producen y ya sea mediante la fijación de la cantidad a percibir, o mediante el establecimiento de una fórmula que permita calcular ese pago. Por tanto, se trata de pagos de carácter determinístico. Los activos de renta variable, sin embargo, generan una corriente de pagos futuros cuyas cuantías son realizaciones de variables aleatorias. Es decir, en activos de renta fija, los pagos tienen carácter estocástico en sí mismo. Las acciones de empresas o las participaciones en fondos de inversión son los principales ejemplos de activos de renta fija.
+
+%Como todo bien económico intercambiable, los activos de renta fija son transferidos a cambio de un precio. El precio futuro constituye una de esas rentas que percibe el inversor, por lo que es importante conocer su valor, o más bien, conocer la distribución de probabilidad que lo genera. Así, el objeto de esta exposición alude en gran medida a esa estimación y determinación de los precios. ¿Cómo se determina el precio actual? ¿Cuál será el precio futuro? ¿Qué modelos teóricos explican la formación de los precios presente y futuro? Por otro lado, en los mercados financieros actuales existe una enorme variedad de activos de renta fija en los que invertir, por los que los inversores deben decidir entre ellos, y decidir también qué combinaciones de estos activos les interesa poseer para maximizar su utilidad. Así, cabe preguntarse: ¿qué combinaciones o carteras de activos compran los inversores? Ésta es otra de las preguntas cuya respuesta examinaremos en la exposición.
+
+%Para responder a estas preguntas que constituyen el objeto del tema, partiré de la llamada hipótesis del mercado eficiente, el eje central de la determinación del precio de los activos financieros. Esta hipótesis se cumple en distintos grados, y en relación a ése grado de cumplimiento trataremos a continuación el análisis técnico como resultado del incumplimiento absoluto de la hipótesis, y posteriormente el análisis fundamental, que permite la estimación de precios futuros para un grado mínimo de cumplimiento de la hipótesis. A continuación trataré la teoría de la elección de carteras. Por último, examinaremos los modelos CAPM y APM como explicaciones de la aparición de precios de equilibrio en los mercados financieros y como referencias para la calificación de un precio como sobre o infravalorado.
+
+\seccion{Preguntas clave}
+\begin{itemize}
+    \item ¿Qué caracteriza a los activos de renta fija?
+    \item ¿Qué relación entre riesgo y rentabilidad de los activos de renta fija?
+    \item ¿Qué determina el precio actual de los activos de renta variable?
+    \item ¿Qué modelos existen para estimar esos precios?
+    \item ¿Cómo optimizan los agentes sus tenencias de activos de renta variable?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Activos financieros
+			\3 Renta fija y renta variable
+			\3 Valoración de activos de renta variable
+		\2 Objeto
+			\3 Formación de precios en el mercado de renta variable
+			\3 Estimación de precios de activos de renta variable
+			\3 Decisiones de inversión en renta variable
+		\2 Estructura
+			\3 Hipótesis de mercados eficientes
+			\3 Análisis técnico
+			\3 Análisis fundamental
+			\3 Elección de carteras
+			\3 CAPM
+			\3 APT
+	\1 \marcar{Hipótesis de mercados eficientes}
+		\2 Definición de eficiencia
+			\3 Idea clave
+			\3 Formulación
+		\2 Cumplimiento de la hipótesis
+			\3 Implicaciones del no cumplimiento
+			\3 Razones del incumplimiento
+		\2 Versiones de la HME
+			\3 Conjuntos de información
+			\3 Débil
+			\3 Semifuerte
+			\3 Fuerte
+		\2 Elementos determinantes de la eficiencia
+			\3 Amplitud
+			\3 Profundidad
+			\3 Libertad
+			\3 Transparencia
+			\3 Liquidez
+			\3[$\then$] Implican que el mercado se acerca a eficiencia
+	\1 \marcar{Análisis técnico}
+		\2 Idea clave
+			\3 Contexto
+			\3 Conjunto de información
+		\2 Herramientas
+			\3 Medias móviles
+			\3 Resistencias y techos
+			\3 Indicadores de sentimiento
+			\3 Volumen
+		\2 Capacidad predictiva
+			\3 Inspira behavioral finance
+			\3 Data mining
+			\3 Cherry picking
+	\1 \marcar{Análisis fundamental}
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivo
+			\3 Resultado
+		\2 Herramientas
+			\3 Entorno de la empresa
+			\3 Métodos estáticos
+			\3 Métodos dinámicos
+			\3 Análisis Du-Pont
+			\3 Análisis de ratios y estados financieros
+			\3 Métodos basados en el goodwill
+		\2 Capacidad predictiva
+			\3 Problema de los datos
+			\3 Descomposición de fuentes
+	\1 \marcar{Elección de carteras}
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivos
+			\3 Resultados
+		\2 Riesgo y rentabilidad de carteras
+			\3 Rentabilidad de una cartera
+			\3 Riesgo de una cartera
+		\2 Problema de Markowitz
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+		\2 Modelos de factores
+			\3 Idea clave
+			\3 Formulación
+			\3 Implicaciones
+			\3 Valoración
+	\1 \marcar{Capital Asset Pricing Model (CAPM)}
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivo
+			\3 Resultados
+		\2 Formulación
+			\3 Contribución al retorno de cartera de mercado:
+			\3 Equilibrio
+			\3 Expresión del modelo:
+		\2 Implicaciones
+			\3 Capital Market Line
+			\3 Securities Market Line
+		\2 Valoración
+			\3 Determinantes de la prima de riesgo
+			\3 Dificultades de estimación
+			\3 Periodo único e igual duración
+			\3 Practitioners
+		\2 Extensiones
+			\3 Consumption CAPM
+			\3 Intertemporal CAPM
+			\3 Black CAPM / Zero-Beta CAPM
+	\1 \marcar{Arbitrage Pricing Theory (APT)}
+		\2 Idea clave
+			\3 Contexto
+			\3 Problemas CAPM
+			\3 Arbitrajistas igualan precio del riesgo
+			\3 Correlación de residuos
+			\3 Sin cartera de mercado ni agentes optimizadores
+		\2 Formulación
+			\3 Modelo de factores
+			\3 Dos carteras $a$ y $b$
+			\3 Suponemos $e_i=0$
+			\3 Arbitraje
+			\3 Estimación de parámetros
+		\2 Valoración
+			\3 Supuestos menos restrictivos que CAPM
+			\3 Sin base teórica para elegir factores
+		\2 Modelo de Fama-French
+			\3 Idea clave
+			\3 Formulación
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Hipótesis de mercados eficientes
+			\3 Análisis técnico
+			\3 Análisis fundamental
+			\3 Teoría de elección de carteras
+			\3 CAPM
+			\3 APT
+		\2 Idea final
+			\3 Mercado de renta variable
+			\3 Estimación de retornos esperados
+
+\end{esquema}
+
+\esquemalargo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Activos financieros
+				\4 Derecho a recibir flujos de caja
+				\4 Permiten financiarse
+				\4 Permiten obtener rendimiento del ahorro
+			\3 Renta fija y renta variable
+				\4 Clasificación de activos en función de
+				\4[] $\to$ Flujos de caja dependen o no de situación de la compañía
+				\4[] $\to$ Derechos de propiedad y gestión respecto de la compañía
+				\4 Frontera en ocasiones difusa
+				\4[] $\to$ Activos híbridos
+				\4[] $\to$ Acciones preferentes
+				\4[] $\to$ Deuda subordinada
+				\4[] $\to$ ...
+			\3 Valoración de activos de renta variable
+				\4 Necesario estimar flujos de caja
+				\4 Necesario descontar a una tasa de retorno exigido
+				\4[] $\to$ Problemas centrales del análisis de renta variable
+		\2 Objeto
+			\3 Formación de precios en el mercado de renta variable
+			\3 Estimación de precios de activos de renta variable
+			\3 Decisiones de inversión en renta variable
+		\2 Estructura
+			\3 Hipótesis de mercados eficientes
+			\3 Análisis técnico
+			\3 Análisis fundamental
+			\3 Elección de carteras
+				\4 Diversificación
+				\4 Optimización riesgo-rentabilidad
+			\3 CAPM
+			\3 APT
+	\1 \marcar{Hipótesis de mercados eficientes}
+		\2 Definición de eficiencia
+			\3 Idea clave
+				\4 Diferente de eficiencia en sentido de Pareto
+				\4 Precios reflejan toda la información disponible
+				\4[] Para eliminar rendimientos extraordinarios
+				\4[] $\to$ Por encima de activos de características análogas
+				\4 Oportunidades de inversión con rdtos. extraord.
+				\4[] $\to$ No son posibles de forma sistemática
+				\4[] $\to$ Precios se ajustan para eliminar oportunidades
+			\3 Formulación
+				\4 $P_t = \frac{1}{1 + r_t} \cdot E \left( P_{t+1} | I_t \right)$
+		\2 Cumplimiento de la hipótesis
+			\3 Implicaciones del no cumplimiento
+				\4 Posible obtener rdtos. sistemáticamente elevados
+				\4 ¿Por qué nadie aprovecha oportunidades...
+				\4[] ...y obtiene esos rendimientos extraordinarios?
+			\3 Razones del incumplimiento
+				\4 Agentes
+				\4[] no tienen suficiente información
+				\4[] $\to$ Información disponible estima mal $P_{t+1}$
+				\4[] no son racionales
+				\4[] $\to$ Tienen información pero no la aprovechan
+		\2 Versiones de la HME
+			\3 Conjuntos de información
+				\4 Determinan grado de cumplimiento
+				\4 Caracterizan versiones de la HME
+				\4[] $\to$ Determinan método de valoración eficaz
+			\3 Débil
+				\4 Agentes utilizan información contenida en precios pasados
+				\4[] $\to$ No es posible predecir futuro a partir de pasado
+				\4[] $\Rightarrow$ Ops. de inversión eliminadas
+			\3 Semifuerte
+				\4 Agentes utilizan toda la información pública disponible
+				\4[] Precios pasados +
+				\4[] + Estados contables de empresas, auditorías,
+				\4[] + anuncios de la empresa, datos del mercado, etc...
+			\3 Fuerte
+				\4 Agentes utilizan toda la información existente
+				\4[] Incluyendo información privada
+		\2 Elementos determinantes de la eficiencia
+			\3 Amplitud
+				\4 Mayor gama de valores negociados
+				\4[] $\to$ Mayor posibilidad de cubrir estados de naturaleza
+			\3 Profundidad
+				\4 Depende de volumen de negociación
+				\4 Capacidad de absorción de órdenes de compra/venta
+				\4[] Volumen que puede ser ejecutado
+				\4[] $\to$ Sin afectar significativamente al precio
+			\3 Libertad
+				\4 Entrada y salida libre
+				\4 Coste reducido de transacción
+
+			\3 Transparencia
+				\4 Obtención de información no es costosa
+				\4 Agentes conocen precios de oferta y demanda
+				\4 Intermediarios tienen poca información privada que aprovechar
+			\3 Liquidez
+				\4 Emparejamiento de comprador y vendedor poco costosa
+				\4 Fácil encontrar contrapartida de operaciones
+				\4
+			\3[$\then$] Implican que el mercado se acerca a eficiencia
+	\1 \marcar{Análisis técnico}
+		\2 Idea clave
+			\3 Contexto
+				\4 Análisis de corto plazo
+				\4 Precio futuro es variable relevante
+				\4 Tasa de descuento poco relevante
+			\3 Conjunto de información
+				\4 Variables históricas (precios, volúmenes, interés abierto\footnote{Referido al número de contratos en posición larga (iguales en teoría al número de contratos cortos).}).
+				\4 Tendencias derivadas de las variables históricas
+				\4 Modelo de selección\footnote{Mecanismo que \comillas{elige} una tendencia en función de la serie de precios pasados o indicadores relacionados}.
+				\4 Objetivo
+				\4 Predecir precio futuro a partir de precio pasado\footnote{``\textit{Technical analysis attempts to exploit recurring and predictable patterns in stock prices to
+                generate superior investment performance''.}}
+				\4 Resultados
+				\4 Precio del activo en periodos anteriores
+				\4[] $\to$ Contiene información
+				\4[] $\to$ Relacionada con precio futuro
+				\4[] $\then$ Precio de activos sigue tendencias sistemáticas
+				\4 Posible extraer rendimientos extraordinarios
+				\4[] En la medida en que haya agentes
+				\4[] $\to$ Que no aprovechen información de precios pasados
+				\4[] $\then$ Precio presente no refleje información disponible
+		\2 Herramientas
+			\3 Medias móviles
+				\4 Simples
+				\4 Ponderadas
+				\4 Cruces con medias móviles
+				\4[] Implican posible cambio de dirección del precio
+			\3 Resistencias y techos
+				\4 \comillas{Resistencia} del precio
+				\4[] En el pasado, precio no baja de determinado límite
+				\4[] $\to$ ``Resistencia''
+				\4[] $\to$ Precio no bajará de resistencia
+				\4 \comillas{Techos} del precio
+				\4[] $\to$ Precio no subirá de techo
+			\3 Indicadores de sentimiento
+				\4 Índice de confianza
+				\4[] Retorno medio de bonos seguros entre retorno medio de bonos intermedios.
+				\4 Ratio put/call
+				\4[] Relación entre opciones put y call vendidas
+				\4[] Más opciones put vendidas
+				\4[] $\to$ Agentes esperan corrección del precio
+				\4 RSI -- Índice de fuerza relativa
+				\4[] Ratio entre cierres altos y bajos
+				\4[] Ponderación de cierres según distancia u otros
+				\4[] >70\% o < 30 \%
+				\4[] $\to$ Indica posible reversión
+			\3 Volumen
+				\4 Ponderación de subidas/bajadas por volumen
+				\4[] Indican ``momentum'' de tendencia
+				\4 Sujeto a problemas de información
+				\4[] Volúmenes negociados no siempre transparentes
+				\4[] $\to$ Operaciones al margen de mercado oficial
+		\2 Capacidad predictiva
+			\3 Inspira behavioral finance
+				\4 Concepto
+				\4[] Tendencias sistemáticas de comportamiento humano
+				\4[] $\to$ Generan patrones de comportamiento inversor
+				\4 Inversores irracionales
+				\4[] $\to$ Comportamiento sesgado
+				\4[] $\to$ Tratar de comprender sesgos y tendencias
+				\4 Inversores racionales insuficientes
+				\4[] $\to$ Precio no tiende a valor racional
+			\3 Data mining
+				\4 Cualquier serie puede ser explicada ex-post
+			\3 Cherry picking
+				\4 Éxitos sobrevalorados
+				\4 Tendencia a recordar éxitos e ignorar fracaso
+	\1 \marcar{Análisis fundamental}
+		\2 Idea clave
+			\3 Contexto
+				\4 Graham y Dodd años 30
+				\4[] $\to$ The Intelligent Investor
+				\4[] $\to$ Security Analysis
+				\4 Valor intrínseco de un activo financiero
+				\4[] Suma de flujos de caja descontados
+				\4[] $\to$ Rentabilidad exigida a activos de igual riesgo
+				\4 Precio inferior a valor intrínseco
+				\4[] $\then$ Activo infravalorado
+				\4[] $\then$ Inversión en activo tiene VAN>0
+				\4 Precio superior a valor intrínseco
+				\4[] $\then$ Inversión en activo destruye valor para inversor
+				\4 Mercados tienden a igualar a valor intrínseco
+				\4[] Desviaciones son temporales
+				\4 Búsqueda de precios diferentes a valor intrínseco
+				\4[] Permite obtener rentabilidad
+			\3 Objetivo
+				\4 Hallar desviaciones de valor fundamental
+				\4[] Mediante información pública
+				\4 Formular indicadores a partir de información pública
+				\4[] Cálculo sencillo
+				\4[] Maximicen capacidad predictiva
+			\3 Resultado
+				\4 Herramientas diversas
+				\4 Estimación más o menos directa de flujos futuros
+		\2 Herramientas
+			\3 Entorno de la empresa
+				\4 Primer paso antes de utilizar análisis fundamental
+				\4 Comprender:
+				\4[] Entorno macroeconómico
+				\4[] Entorno de la industria
+			\3 Métodos estáticos
+				\4 Primera aproximación
+				\4 Valor contable
+				\4[] Valor en libros del activo y la deuda
+				\4 Valor de liquidación
+				\4[] Por cuánto podrían venderse los activos
+				\4 Valor de reposición o sustancial
+				\4[] Cuánto costaría reponer el activo de la empresa
+			\3 Métodos dinámicos\footnote{Atención al problema de los \textit{stock buybacks}. Dada la tendencia reciente hacia esta forma de remuneración al accionista, es necesario en ocasiones ajustar los valores utilizados en el método de descuento de dividendos.}
+				\4 Descuento de dividendos:
+				\4[] \fbox{$V_0 =\sum_{t=1}^{\infty} \frac{D_t}{(1+k_e)^f}$}
+				\4 Descuento de div. con crec. constante:
+				\4[] $V_0 = \frac{D_0}{k_e-g}$
+				\4 Descuento de div. con varias etapas de crecimiento
+				\4[] $V_0 = \sum_{t=1}^{n} \frac{D_i}{(1+k_e)^f} + \frac{D_{n+1}}{k_e -g} \cdot \frac{1}{(1+k_e)^{n+1}}$
+				\4 Descuento de de flujos de caja libres
+				\4[] Utilizable para empresas que no pagan dividendo
+			\3 Análisis Du-Pont
+				\4 Contexto
+				\4[] RoE
+				\4[] $\to$ Rentabilidad del equity
+				\4[] \% Beneficio neto por valor del patrimonio neto
+				\4 Objetivo
+				\4[] Desagregar componentes de RoE
+				\4[] $\to$ Margen neto
+				\4[] $\to$ Rotación del activo
+				\4[] $\to$ Apalancamiento financiero
+				\4 Formulación
+				\4[] $\text{RoE} = \frac{\text{BN}}{\text{PN}} = \frac{\text{BN}}{\text{PN}} \cdot \frac{\text{Ventas}}{\text{Ventas}} \cdot \frac{\text{AT}}{\text{AT}} = \text{Mar.neto} \cdot \text{Rotación} \cdot \frac{\text{AT}}{\text{PN}} $
+				\4[] Margen neto: $\frac{\text{BN}}{\text{Ventas}}$
+				\4[] Rotación: $\frac{\text{Ventas}}{\text{Activos}}$
+				\4[] Multiplicador del patrimonio neto: $\frac{\text{AT}}{\text{PN}}$
+			\3 Análisis de ratios y estados financieros
+				\4 P/E ratio -- Price to Earnings Ratio (PER)
+				\4[] $\textrm{P/E}=\frac{P}{\textrm{BN /Accción}} = \frac{V_E}{\text{BN}}$
+				\4[] PER con beneficios futuros esperados.
+				\4 P/B ratio -- Price to Book value ratio
+				\4[] $\frac{\text{Precio de acción}}{\text{Valor en libros de equity}}$
+				\4[] Cálculo de valor en libros de equity:
+				\4[] Valor contable de activos menos depreciación acumulada
+				\4[] -- Valor de deudas
+				\4[] -- (opcionalmente) Valor de activos intangibles
+				\4 Ratios de liquidez
+				\4[] Ratio de tesorería
+				\4[] $\frac{\text{Efectivo y equivalentes}}{\text{Pasivo corriente}}$
+				\4[] Ratio acid-test
+				\4[] $\frac{\text{Activo corriente}-\text{Existencias y anticipos a proveedores} }{\text{Pasivo corriente}}$
+				\4 Ratios de actividad
+				\4[] Ventas
+				\4[] Páginas web vistas
+				\4[] Suscriptores
+				\4[] ...
+				\4 Ratios de apalancamiento:
+				\4[] $\textrm{Recursos ajenos} / \textrm{Recursos propios}$
+			\3 Métodos basados en el goodwill
+				\4 Reglas arbitrarias
+				\4[] Aplicadas sobre:
+				\4[] $\to$ Valor en libros
+				\4[] $\to$ Beneficios neto
+				\4 Enorme variedad
+				\4[] Fruto de la arbitrariedad
+				\4[] Utilizadas por su inmediated
+				\4[] $\to$ Necesaria prudencia
+				\4 Método clásico
+				\4[] Valor en libros + coeficiente aplicado a ben. neto
+				\4[] $V = A + (n\cdot B)$
+				\4[] $A$: activo contable
+				\4[] $B$: beneficio neto
+				\4 Método indirecto o alemán
+				\4[] Similar a clásico
+				\4[] Capitalizar BN como si perpetuidad
+				\4[] Suma ponderada al 50\% con valor en libros
+				\4[] $V = \frac{A}{2} + \frac{B/i}{2}$
+				\4 Método directo o anglosajón
+				\4[] Valor en libros + ``superbeneficio''
+				\4[] Superbeneficio es diferencia entre:
+				\4[] $\to$ Beneficio de la empresa
+				\4[] $\to$ Rendimiento obtenido si se invertiese a tasa $i$
+				\4[] \quad capitalizado a interés de deuda + coeficiente
+				\4[] $V = A + \frac{B-iA}{t_m}$
+				\4[] $t_m$: tipo de deuda multiplicado por coef.
+		\2 Capacidad predictiva
+			\3 Problema de los datos
+				\4 Métodos relativamente fáciles
+				\4 Obtención de datos fiables muy difícil
+				\4 Comparabilidad de datos
+			\3 Descomposición de fuentes\footnote{Se trata de calcular primero el valor de la acción en base a las fuentes generadoras de flujos de caja más estable, tales como inversiones inmobiliarias, patentes, etc... y posteriormente ir descendiendo a las fuentes más inciertas, tales como proyectos de investigación, nuevos productos, etc...)}
+				\4 Descomponer cálculo del valor
+				\4 De menor a mayor incertidumbre
+	\1 \marcar{Elección de carteras}
+		\2 Idea clave
+			\3 Contexto
+				\4 Espacio de activos de inversión
+				\4[] Muy amplio, Enorme variedad
+				\4[] Innovación financiera y globalización
+				\4[] $\to$ Aumento aún mayor de la variedad de la variedad
+				\4 Supuesto de aversión al riesgo
+				\4[] Los agentes prefieren flujos ciertos
+				\4[] Si flujos son inciertos
+				\4[] $\to$ Agentes pagarán menos por recibir flujos
+				\4[] $\to$ Demandan más rentabilidad
+				\4[] Supuestos técnicos necesarios alternativamente:
+				\4[] $\to$ Utilidad acotada por arriba
+				\4[] $\to$ Distribución normal de los rendimientos
+			\3 Objetivos
+				\4 ¿Qué efectos tiene la diversificación de activos?
+				\4 ¿Es deseable?
+				\4[] ¿Es posible reducir riesgo manteniendo rentabilidad
+				\4[] $\to$ ...por medio de la diversificación?
+				\4 ¿Cómo diversificar entre activos de inversión?
+				\4 ¿Qué efecto tiene la existencia de un activo sin riesgo?
+			\3 Resultados
+				\4 Análisis media-varianza
+				\4[] Marco más frecuente de finanzas neoclásicas
+				\4[] Asumiendo:
+				\4[] $\to$ Aversión al riesgo
+				\4[] $\to$ F. de u. cuadrática/retornos con dist. normal
+				\4[] Posible decidir atendiendo a:
+				\4[] $\to$ Retorno esperado/media
+				\4[] $\to$ Varianza del retorno
+				\4 Trade-off rentabilidad y desviación estándar
+				\4[] Representable en plano $\mu$ -- $\sigma$
+				\4[] Curvas de indiferencia: $\uparrow$ hacia norte-oeste
+				\4 Análisis de formación de carteras
+				\4[] Markowitz y otros
+				\4[] Cómo maximizar rendimiento minimizando riesgo
+				\4 Modelos de factores
+				\4[] Simplificación de computación de carteras óptimas
+				\4[] Correlación de rendimiento con factores comunes
+				\4[] $\to$ Evitar matrices de covarianzas demasiado grandes
+				\4 Behavioral finance
+				\4[] Análisis de desviaciones de racionalidad
+				\4[] Reglas heurísticas de decisión
+		\2 Riesgo y rentabilidad de carteras
+			\3 Rentabilidad de una cartera
+				\4 $E(R_p) = \sum_i w_i \cdot E(R_i)$
+			\3 Riesgo de una cartera
+				\4 Medida de la dispersión del beneficio
+				\4 $\sigma_p^2 = \sum_i w_i^2 \cdot \sigma_i^2 + \sum_i \sum_{j\neq i} w_i \cdot w_j \cdot \textrm{cov}(i,j) =$
+				\4[] \quad \, \, $=\sum_i w_i^2 \cdot \sigma_i^2 + \sum_i \sum_{j\neq i} w_i \cdot w_j \cdot \underbrace{\sigma_i \cdot \sigma_j \cdot \rho_{ij}}_{\text{cov(i,j)}}$
+				%\4[] $\text{cov}(i,j) = \sigma_i \cdot \sigma_j \cdot \rho_{ij}$
+				\4[] $\rho_{ij}$: coeficiente de correlación entre $i$ y $j$\footnote{Toma valores entre -1 y 1. Si -1, i y j son perfectamente proporcionales pero de signo opuesto. Si 1, son perfectamente proporcionales. Correlación con uno mismo siempre es igual a 1. Si 0, no hay proporcionalidad alguna entre los valores de uno y otro.}
+				\4[] $\then$ A mayor correlación, mayor riesgo
+				\4[] $\then$ Menos riesgo con activos menos correlacionados
+				\4[] $\then$ Más valores en cartera, menos riesgo
+				\4 Efecto de la covarianza/correlación sobre riesgo
+				\4[] Con correlación $\rho_{ij} =1$
+				\4[] $\to$ No hay reducción del riesgo
+				\4[] $\then$ Simple ponderación entre riesgo de activos
+				\4[] $\then$ Línea recta entre A y B en $\sigma$--$\mu$
+				\4[] Con correlación $\rho_{ij} = -1$
+				\4[] $\to$ Máxima reducción del riesgo
+				\4[] $\to$ Posible cartera sin riesgo
+				\4[] $\then$ Líneas rectas con vértice en $\sigma = 0$
+				\4[] Con correlación $\rho_{ij} = 0$
+				\4[] $\to$ Sí hay reducción del riesgo
+				\4[] $\to$ Curvatura intermedia entre casos extremos
+				\4[] Representación gráfica en plano $\sigma$--$\mu$
+				\4[] \grafica{curvarentabilidadriesgo}
+		\2 Problema de Markowitz
+			\3 Idea clave
+				\4 Contexto
+				\4[] Supuesto de divisibilidad
+				\4[] Activos divisibles en infinitas fracciones
+				\4 Objetivo
+				\4[] Distribuir inversión
+				\4[] $\to$ Maximizando utilidad del inversor
+				\4[] $\then$ Maximizando rendimiento dado riesgo
+				\4[] $\then$ Minimizando riesgo dado rendimiento
+				\4[] Ponderar riesgo y rentabilidad
+				\4[] $\to$ Para alcanzar mayor curva de indiferencia
+				\4 Resultados
+				\4[] Problema de maximización/minimización
+				\4[] $\to$ Máxima rentabilidad dado riesgo
+				\4[] $\to$ Mínimo riesgo dada rentabilidad
+				\4[] $\then$ Frontera eficiente
+				\4[] Posibilidad de invertir en activo libre de riesgo
+				\4[] $\to$ Capital Allocation Line
+			\3 Formulación
+				\4 Hallar conjunto de óptimos rentabilidad-riesgo
+				\4 Primal
+				\4[] Maximizar rentabilidad para nivel de riesgo
+				\4[] Resolver $\forall$ $\sigma_p \, \in \left[0, \bar{\sigma} \right]$
+				\4[] $\underset{\vec{w}}{\max} \quad E_P = \sum_{i=1}^n w_i \cdot R_i$
+				\4[] $\text{s.a}: \quad \sigma_P^2 = \sum_i \sum_j w_i \cdot w_j \cdot \sigma_i \cdot \sigma_j \cdot \rho_{ij} \quad \forall \sigma_p^2 \in [0,\infty)$
+				\4[] $\quad \quad \quad \sum_{i=1}^n w_i = 1$
+				\4[] $\quad \quad \quad w_i \geq 0 \quad \forall w_i \in \vec{x}$
+				\4 Dual
+				\4[] Equivalente
+				\4[] Minimizar riesgo para nivel de rentabilidad
+				\4[] Resolver $\forall$ $E(p) \, \in \left[0, E(\bar{p}) \right]$
+				\4 Presencia de activo libre de riesgo
+				\4[] Rentabilidad dada $r_f$
+				\4[] Riesgo nulo $\sigma_f$
+				\4[] Permite mejorar frontera eficiente combinando:
+				\4[] $\to$ Activo libre de riesgo
+				\4[] $\to$ Cartera tangente sobre frontera eficiente
+				\4[] $\then$ Forma fronteras eficientes rectas
+				\4[] $\then$ Recta desde $(0,r_f)$ hasta $(E(R_i), \sigma_i)$
+				\4[] Rendimiento de activo compuesto
+				\4[] $\to$ Activo libre de riesgo
+				\4[] $\to$ Cartera tangente sobre frontera eficiente $M$
+				\4[] \fbox{$E \left( R_p \right) = r_f + \underbrace{\frac{E(R_m) - r_f}{\sigma_m}}_{\text{R. de Sharpe}} \cdot \sigma_P$}
+				\4[] Riesgo de activo compuesto $\sigma_P$
+				\4[] \fbox{$\sigma_P = \sqrt{w_M^2 \sigma_M^2} = w_M \sigma_M$}
+			\3 Implicaciones
+				\4 Ratio de Sharpe
+				\4[] $\text{RS} = \frac{E(R_i) - r_f}{\sigma_m}$
+				\4[] pendiente de línea que une:
+				\4[] $\to$ Activo libre de riesgo
+				\4[] $\to$ Activo arriesgado
+				\4[] CAL es línea con ratio de Sharpe más alto
+				\4 Capital Allocation Line
+				\4[] Línea que une en espacio $\mu$-$\sigma$
+				\4[] $\to$ Activo libre de riesgo
+				\4[] $\to$ Punto de tangencia con frontera eficiente
+				\4[] Decisión de inversor racional
+				\4[] $\to$ Deberá estar en algún punto de la CAL
+				\4[] $\then$ Varía en función de su preferencia por riesgo
+				\4[] \grafica{cal}
+		\2 Modelos de factores
+			\3 Idea clave
+				\4 Contexto
+				\4[] Problema de Markowitz
+				\4[] $\to$ Requiere cálculo de covarianzas
+				\4[] $\to$ Número de covarianzas crece enormemente
+				\4[] $\then$ Problemas computacionales
+				\4[] Covarianzas estimadas nunca son reales
+				\4[] $\to$ Sujetas a errores de medición
+				\4[] $\to$ Resultados pasados no determinan futuros
+				\4[] $\then$ Introducción de ruido y errores
+				\4 Objetivos
+				\4[] Simplificar cálculo de frontera eficiente
+				\4[] Identificar factores que afectan rendimiento esperado
+				\4[] $\to$ Extraer factores comunes que afectan a todos activos
+				\4[] Reducir intensidad computacional de cálculo cartera óptima
+				\4[] Reducir ruido y error estadístico
+				\4 Resultados
+				\4[] Modelos de factores de Sharpe (1963)
+				\4[] Marco teórico de estimación de rendimiento
+				\4[] Base teórica de CAPM y APT
+				\4[] Referencia para estimación econométrica
+				\4[] Estimación econométrica del retorno esperado
+				\4[] Asumiendo que rdto. esperado depende de:
+				\4[] $\to$ Vector de factores exógenos comunes
+				\4[] $\then$ Permite aproximar frontera eficiente
+			\3 Formulación
+				\4 Descomposición de rendimiento esperado
+				\4[] Respecto a factores comunes
+				\4[] $\to$ Que afectan a conjunto de activos invertibles
+				\4[] Generalmente como mínimo
+				\4[] $\to$ Rendimiento de cartera representativa del mercado
+				\4 $R_i = \alpha + \vec{\beta} \vec{F} + e_i$
+				\4[$\then$] $E(R_i) = \alpha + \vec{\beta} E(\vec{F})$
+				\4[] $\alpha$: rentabilidad ortogonal a factores considerados
+				\4[] $\vec{\beta}$: sensibilidad a factores $\vec{F}$
+				\4[] $\vec{F}$: valores de factores F
+				\4[] $e_i$: factor específico al activo
+				\4[] $\then$ con $\text{cov}(i,j)=0$ $\forall$ j
+				\4 Sensibilidad a mercado
+				\4[] Modelo de factores básico
+				\4[] Rendimiento esperado resulta de:
+				\4[] $\to$ Riesgo sistemático: sensibilidad a mercado $\beta_i R_M$
+				\4[] $\to$ Riesgo de otros factores no específicos $\alpha_i$
+				\4[] $\to$ Riesgo específico $\epsilon_i$
+				\4[] $R_i = \alpha_i + \beta_i R_M + \epsilon_i$
+				\4 Composición de carteras
+				\4[] $R_P = \sum_{i=1}^n w_i R_i$
+				\4 Diversificación del riesgo específico
+				\4[] Asumiendo $n$ valores con igual ponderación
+				\4[] $\to$ $R_P = \frac{1}{n} \sum_{i=1}{n} R_i =$
+				\4[] $\to$ $R_P =  \sum_{i=1}^n \frac{1}{n} \alpha_i+ \sum_{i=1}^{n} \frac{\beta_i R_M }{n} +  \sum_{i=1}^{n} \frac{  \epsilon_i}{n}$
+				\4[] Con $n\to \infty$ y $E(\epsilon_i) = 0$:
+				\4[] $\to$ $R_P = \bar{a} + \bar{\beta} R_M $
+				\4[] $\then$ Riesgo específico eliminado cuando $n\to \infty$
+				\4[] Representación gráfica
+				\4[] \grafica{diversificacionriesgoespecifico}
+			\3 Implicaciones
+				\4 Riesgo industrial
+				\4[] En modelo simple con un factor de mercado
+				\4[] $\to$ No tenido en cuenta
+				\4 Interpretación de alfa
+				\4[] Rendimiento no específico al activo
+				\4[] $\to$ Que no ha sido tenido en cuenta por factores
+				\4[] Ejemplo:
+				\4[] $\to$ Tomando riesgo de mercado como único factor
+				\4[] $\then$ Riesgo al que está sometida industria del activo
+				\4[] $\then$ No es específico a activo en cuestión
+				\4[] $\then$ Pero no es exclusivo del mercado
+				\4 Riesgo sistemático e idiosincrático
+				\4 Estimación de cartera óptima
+				\4 Elección de factores
+				\4 R-cuadrado versus
+			\3 Valoración
+
+				\4 Generalización de resultados de APT y CAPM
+				\4 Ventajas e inconvenientes
+	\1 \marcar{Capital Asset Pricing Model (CAPM)}
+		\2 Idea clave
+			\3 Contexto
+				\4 Sharpe (1964), Lintner (1965)
+				\4 Ampliamente utilizado por practitioners
+				\4 Objeto de múltiples críticas y extensiones
+			\3 Objetivo
+				\4 Modelo de equilibrio de determinación de rendimiento
+				\4 Valorar activos asumiendo:
+				\4[] Todos los agentes disponen de la misma información
+				\4[] $\to$ Diversifican todo el riesgo idiosincrático
+				\4[] Mercados de activos en equilibrio
+			\3 Resultados
+				\4 Cartera de mercado
+				\4[] Comprende todos los activos relevantes en economía
+				\4[] Dados supuestos, será optima para todos los agentes
+				\4[] $\to$ Tangente a línea desde activo libre de riesgo
+				\4[] $\then$ Todos la compran y combinan con libre de riesgo
+				\4[] $\then$ Todos construyen carteras con mismas ponderaciones
+				\4 Rdto. exigido a un activo depende de:
+				\4[] Sensibilidad respecto a cartera de mercado
+				\4[] $\to$ Capturado en parámetro $\beta$ de cada activo
+				\4[] Riesgo idiosincrático no se remunera
+				\4[] $\to$ Porque puede diversificarse totalmente
+		\2 Formulación\footnote{Una formulación alternativa y/o complementaria muy elegante se encuentra en \comillas{finance} (Palgrave), apartado \comillas{Risk and return}.}
+			\3 Contribución al retorno de cartera de mercado:
+				\4 $w_i \cdot E(R_i)$
+			\3 Equilibrio
+				\4 Todos los activos contribuyen = rdto. dado riesgo
+				\4[] $\then$ Mismo cociente rentabilidad / riesgo
+				\4 $\frac{E(R_i)}{\text{cov}(R_i, R_M)} = \frac{E(R_j)}{\text{cov}(R_j, R_M)} = \frac{E(R_M)}{\sigma_M^2}$
+			\3 Expresión del modelo:
+				\4 Reordenar condición eq. + activo libre de riesgo
+		        %\4 \fbox{$ \underbrace{E(r_i)}_{E(R_i) - r_f} = \underbrace{\frac{\text{cov}(R_i, R_M)}{\sigma_M^2}}_{\beta_i} r_M$}
+				\4[] \fbox{$\frac{E(R_i)-r_f}{\text{cov}(R_i, R_M)} = \frac{E(R_j)-r_f}{\text{cov}(R_j, R_M)} = \frac{E(R_M)-r_f}{\sigma_M^2}$}
+		\2 Implicaciones
+			\3 Capital Market Line
+				\4 Línea que une ALibreRiesgo y cartera de mercado
+				\4[] $\to$ CAL que resulta de supuestos de CAPM
+			\3 Securities Market Line
+				\4 Caracterizar rentabilidad exigida de $i$ dado $\beta$
+				\4[] Según contribución a riesgo de cartera de mercado
+				\4[] Rentabilidad exigida proporcional a riesgo aportado:
+				\4[] \fbox{$E(R_i) - r_f = \beta_i \left( E(R_M) - r_f \right)$}
+				\4[] Donde $\beta_i = \frac{\text{cov}(R_i, R_M)}{\sigma_M^2} $
+				\4[] $\to$ Caracteriza sensibilidad a cartera de mercado
+				\4[] $\to$ Ej.: $\beta_i=2 \then$ Rdto. es el doble que mercado
+				\4[] $\to$ Ej.: $\beta_i=0 \then$ Rdto. es igual a libre de riesgo
+				\4[] \grafica{SML}
+		\2 Valoración
+			\3 Determinantes de la prima de riesgo
+				\4 Sólo la sensibilidad al mercado
+				\4 No hay prima de riesgo por riesgo idiosincrático
+				\4[] $\then$ Sólo hay prima de riesgo por sistemático
+				\4 Varianza absoluta no es relevante
+			\3 Dificultades de estimación
+				\4 Betas y alfas no observables ex-ante
+				\4 Cartera de mercado no observable
+			\3 Periodo único e igual duración
+				\4 En la práctica inversiones con distintos periodos
+			\3 Practitioners
+				\4 Herramienta básica de referencia
+				\4 Índices como proxies de cartera de mercado
+				\4 Uso generalizado: beta books
+		\2 Extensiones
+			\3 Consumption CAPM
+				\4 Aplicación del CAPM a decisiones de consumo
+				\4 Correlación con patrón de consumo deseado
+				\4[] Determina rendimientos esperados
+				\4[$\Rightarrow$] Rdtos. exigidos más altos si corr. con consumo
+				\4[] Ej.:
+				\4[] empleado metalúrgico exige más retorno
+				\4[] $\to$ acciones del sector metalúrgico
+			\3 Intertemporal CAPM
+				\4 Merton (1973)
+				\4 Formalmente similar a APT
+			\3 Black CAPM / Zero-Beta CAPM
+				\4 Fischer Black
+				\4 CAPM sin asumir activo libre de riesgo
+	\1 \marcar{Arbitrage Pricing Theory (APT)}
+		\2 Idea clave
+			\3 Contexto
+				\4 Ross (1976), Fama, French
+			\3 Problemas CAPM
+				\4 Residuos correlacionados\footnote{Un supuesto del modelo CAPM es que sólo se remunera el riesgo sistemático, porque el riesgo idiosincrático puede ser totalmente diversificado. Para que esta eliminación del riesgo idiosincrático se produzca, los residuos de los retornos realizados no pueden estar correlacionados. Pero si hay correlación, y de hecho la hay, hay riesgo no diversificado además del riesgo sistemático.}
+				\4 Cartera de mercado no observable\footnote{Existen muchos activos que no se intercambian y por tanto no tienen precio. Por ejemplo, la inversión en capital humano. }
+			\3 Arbitrajistas igualan precio del riesgo
+				\4 Activos iguales deberían tener mismo precio
+				\4 Activos con misma sensibilidad a factores
+				\4[] $\Rightarrow$ Mismo precio
+				\4[] Si distinta rentabilidad esperada para misma sensibilidad
+				\4[] $\Rightarrow$ Oportunidad de arbitraje
+			\3 Correlación de residuos
+				\4 Correlaciones tenidas en cuenta explícitamente
+				\4[] CAPM asumía correlación nula
+				\4 APT tiene en cuenta residuos
+			\3 Sin cartera de mercado ni agentes optimizadores\footnote{Basta con que un número reducido de agentes arbitren entre dos activos con misma sensibilidad al factor pero distinta rentabilidad esperada para que se iguale la rentabilidad de los activos.}
+		\2 Formulación
+			\3 Modelo de factores
+				\4 $R_i = \alpha_i + \beta_i \vec{F} + e_i$
+				\4[$\Rightarrow$] $E(R_i) = \alpha_i + \beta_i E(F)$
+				\4[] $\alpha_i$: rentabilidad independiente de factores\footnote{Es decir, la rentabilidad obtenible sin riesgo.}
+				\4[] $\beta_i$: sensibilidad al factor F
+				\4[] $\vec{F}$: valor del factor F
+				\4[] $e_i$: factor específico con $\text{cov}(i,j)=0$ $\forall$ j
+			\3 Dos carteras $a$ y $b$
+				\4 $\beta_a = \beta_b$
+				\4 $E(R_a) > E(R_b)$
+			\3 Suponemos $e_i=0$
+				\4 Por diversificación
+				\4 Residuos no correlacionados
+			\3 Arbitraje
+				\4 Posición corta en B
+				\4 Posición larga misma cuantía en A
+				\4 Rendimiento sin riesgo: $E(R_A) - E(R_B)$
+			\3 Estimación de parámetros
+				\4 Regresiones econométricas
+				\4 Necesario menos factores que activos
+		\2 Valoración
+			\3 Supuestos menos restrictivos que CAPM
+				\4 No exige observar cartera de mercado
+				\4 No exige todos agentes maximicen
+			\3 Sin base teórica para elegir factores
+				\4 Deben determinarse empíricamente
+				\4[] No hay razones
+		\2 Modelo de Fama-French
+			\3 Idea clave
+				\4 Modelo de Factores común en literatura
+			\3 Formulación
+				\4 $E(R_i) = r_f + B_1 \text{SMB} + B_2 \text{HML} + \beta_i E(R_M)$
+				\4 SMB:
+				\4[] Small Minus Big
+				\4[] Diferencia de retorno de carteras
+				\4[] $\to$ empresas pequeñas
+				\4[] $\to$ empresas grandes
+				\4 HML:
+				\4[] high minus low
+				\4[] Diferencia de retorno de carteras
+				\4[] $\to$ empresas con book-to-market alto
+				\4[] $\to$ empresas con book-to-market bajo\footnote{SMB: small minus big. El factor es la diferencia entre el retorno de una cartera de empresas pequeñas y una cartera de empresas grandes. HML: high minus low. Diferencia de retornos entre una cartera con empresas con alto (high) ratio book-to-market y una cartera con bajo book-to-market.}
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Hipótesis de mercados eficientes
+			\3 Análisis técnico
+			\3 Análisis fundamental
+			\3 Teoría de elección de carteras
+			\3 CAPM
+			\3 APT
+		\2 Idea final
+			\3 Mercado de renta variable
+				\4 Enorme importancia
+				\4 Menor volumen que mercados de divisas o bonos
+				\4 Decisiones empresariales
+				\4 Influencia coste del capital
+				\4 Efectos riqueza
+			\3 Estimación de retornos esperados
+				\4 Objetivo de enorme complejidad
+				\4 En cierta medida, un arte
+				\4 Modelos teóricos útiles como guía en la práctica
+				\4 Nuevas teorías en desarrollo
+				\4 Controversias crecientes en torno a CAPM
+\end{esquemal}
+
+
+
+
+
+\graficas 
+
+\begin{axis}{4}{Relación entre rentabilidad y riesgo.}{$\sigma$}{$\mu$}{curvarentabilidadriesgo}
+	\draw[-] (1,1.25) -- (3.5,3.5);
+	\draw[dashed] (1,1.25) to [out=120,in=200](3.5,3.5);
+	\draw[dotted] (1,1.25) -- (0,2.5) -- (3.5,3.5);
+	
+	\node[below] at (1,1.23){A};
+	\node[right] at (3.52,3.5){B};
+\end{axis}
+
+Dados dos activos A y B con sus respectivas combinaciones de rentabilidad y riesgo, la rentabilidad de la cartera compuesta $E(R_p) = w_A \cdot E(R_A) + w_B \cdot E(R_B)$ y la varianza de la cartera compuesta $\sigma_p^2 = w_A^2 \sigma_A^2 + w_B^2 \sigma_B^2 + 2 \rho_{AB} \sigma_A \sigma_B w_A w_B$, la línea continua muestra la rentabilidad y el riesgo de las carteras compuestas cuando el coeficiente de correlación es igual a 1. La línea de puntos muestra la rentabilidad y el riesgo de las carteras compuestas para un coeficiente de correlación igual a $-1$. La línea discontinua muestra la rentabilidad y el riesgo para un valor intermedio del coeficiente de correlación.
+
+
+\begin{axis}{4}{Frontera eficiente cuando hay un activo libre de riesgo: la Capital Allocation Line.}{$\sigma$}{$\mu$}{cal}
+	
+	\draw[dashed] (1,1.25) to [out=120,in=200](3.5,3.5);
+	
+	\draw[-] (0,1) -- (2.58,4);
+	
+	\node[circle, fill=black, inner sep=0pt, minimum size=4pt] (a) at (1.13,2.32) {};
+	
+\end{axis}
+
+\begin{axis}{4}{Riesgo total de una cartera en un modelo unifactorial: convergencia hacia riesgo sistemático cuando el número de activos tiende a infinito.}{$n$}{$\sigma_P^2$}{diversificacionriesgoespecifico}
+	% Riesgo total
+	\draw[-] (0.5,4) to [out=290, in=175](4,1.55);
+	\node[above] at (2.5,2.1){$\sigma_\text{total}$};
+
+	% Riesgo sistemático
+	\draw[dashed] (0,1.5) -- (4,1.5);
+	\node[right] at (4,1.5){$\sigma_\text{sistematico}$};
+
+	% Riesgo específico
+	\draw[{Latex}-{Latex}] (0.9,1.6) -- (0.9,3);
+	\node[left] at (0.85, 2.3){$\sigma_\text{especifico}$};
+\end{axis}
+
+\begin{axis}{4}{Securities Market Line.}{$\beta$}{$E(R)$}{SML}
+	\draw[-] (0,1.5) -- (4,2.5);
+	
+	
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (0.5,1.5) {};
+	
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (1,1.3) {};
+	
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (2,2.4) {};
+	
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (3,2.8) {};
+	
+	\draw[dashed] (3,2.8) -- (0,2.8);
+	\draw[dashed] (3,2.25) -- (0,2.25);
+	\draw[dashed] (3,1.5) -- (0,1.5);
+	\draw[dotted] (3,0) -- (3,2.8);
+	
+	\draw[decorate,decoration={brace,amplitude=3pt},xshift=-2pt,yshift=0pt] (0,2.25) -- (0,2.8) node[black,midway,xshift=-0.6cm] {\footnotesize $\alpha_i$};
+	
+	\draw[decorate,decoration={brace,amplitude=3pt},xshift=-2pt,yshift=0pt] (0,1.5) -- (0,2.25) node[black,midway,xshift=-1.2cm] {\footnotesize $\beta_i \cdot \left( E(R_M)-r_f \right) $};
+	
+	\draw[decorate,decoration={brace,amplitude=3pt},xshift=-2pt,yshift=0pt] (0,0) -- (0,1.5) node[black,midway,xshift=-0.8cm] {\footnotesize $r_f$};
+	
+	
+	\node[circle, fill=black, inner sep=0pt, minimum size=5pt] (a) at (3.63,2) {};
+
+\end{axis}
+
+Asumiendo el CAPM como modelo de equilibrio, el rendimiento esperado de un activo $i$ vendría dado por el valor de $\beta_i$ y el retorno libre de riesgo $r_f$. en la medida en que el mercado no se encuentre en equilibrio, el rendimiento esperado se verá aumentado o disminuido por un valor $\alpha_i$. La labor de los practitioners que utilizan el CAPM es encontrar activos con un $\alpha_i$ distinto de 0 que permita recoger beneficios cuando el mercado se equilibre y $\alpha_i$ se anule.
+
+\conceptos
+
+\concepto{Eficiencia de un mercado financiero:} un mercado financiero (definido por un activo intercambiado) eficiente es aquel en el que el retorno esperado del activo en cuestión es igual al coste de oportunidad que enfrentan los inversores en ese activo. Definamos $r_t$ como el coste de oportunidad de esa inversión. $r_t$ puede fijarse en relación a la rentabilidad de un activo de características similares. Definamos $E(R_t)$ como el valor esperado de la rentabilidad del activo en cuestión. Si invirtiendo en el activo en cuestión es posible obtener una rentabilidad superior al coste de los fondos/coste de oportunidad $r_t$, entonces será deseable para cualquier inversor invertir en ese activo. Dado que la rentabilidad esperada $E(R_t)$ no es sino $\frac{E(P_{t+1})}{P_t}$, aumentará el precio actual $P_t$ de tal manera que disminuirá la rentabilidad esperada $E(R_t)$ hasta igualar el coste del capital. Cuando este fenómeno ocurre, de tal manera que efectivamente sucede que $E(R_t) = 1 + r_t$, hablamos de un mercado eficiente. Así, realizaciones de la rentabilidad diferentes al coste del capital serán aleatorias, y en el largo plazo será imposible para cualquier inversor obtener un rendimiento superior al coste del capital. Esas variaciones imprevistas habrán de ser el resultado de información no conocida hasta ese momento. O dicho de otra manera, de sucesos imprevistos.
+
+Así, cabe preguntarse: ¿cuáles son esos sucesos imprevistos no conocidos por los inversores? O equivalentemente: ¿qué información incorporan los precios actuales para igualar rentabilidad esperada con coste del capital? El conjunto de información en base al cual se ajusta la rentabilidad esperada define el tipo de eficiencia. Distinguimos así entre eficiencia débil, eficiencia semifuerte y eficiencia fuerte. En presencia de \textit{eficiencia fuerte}, el precio actual del activo se ajusta de tal modo que un inversor que disponga de toda la información pública y privada disponible para determinar el precio futuro del activo, no obtendrá (en términos de valor esperado) un rendimiento mayor al que el mercado asigna para activos con el mismo nivel de riesgo. En presencia de \textit{eficiencia semifuerte}, un inversor que disponga de toda la información pública relevante para la determinación del precio futuro, no podrá obtener rendimientos superiores a los que obtendría un activo con un nivel de riesgo similar. Por último, en presencia de la \clave{eficiencia débil}, un inversor que disponga de todos los precios anteriores no podrá obtener un rendimiento superior a los que obtendría un activo con un nivel de riesgo similar.
+
+En resumen:
+\begin{equation}
+    E(R_t | I_t ) = \frac{E(P_{t+1} | I_t)}{P_t}= 1 + r_t
+\end{equation}
+
+Donde $I_t$ representa el llamado \comillas{conjunto de información}, y $1+r_t$ el retorno de un activo con el mismo nivel de riesgo que el activo en cuestión. $E(R_t | I_t)$ representa el valor esperado de una estrategia de inversión que utilice la información $I_t$. ¿Cuándo no se cumple la hipótesis de eficiencia? Cuando no se cumpla la ecuación anterior. Por ejemplo, imaginemos un inversor que dispone de todos los precios pasados, y de toda la información públicamente disponible respecto a los factores que determinan el precio futuro del activo. Si el inversor sabe dado $P_t$, el valor esperado de la rentabilidad será superior al del coste de oportunidad, invertirá en el activo y obtendrá, en valor esperado, un exceso de rentabilidad respecto a lo que reciben los inversores en activos con un riesgo similar. En una situación así, no se cumpliría la hipótesis de mercados eficientes dado ese conjunto informativo. De lo anterior se deduce que el grado de eficiencia es acumulativo, de tal manera que si existe eficiencia fuerte, habrán de cumplirse también las hipótesis de eficiencia semifuerte y débil. Sin embargo, no es posible la eficiencia fuerte sin la eficiencia semifuerte.
+
+Alternativamente se puede definir la eficiencia de un mercado financiero como el hecho de que el precio actual del activo en cuestión sea igual al precio futuro esperado dado un conjunto informacional, descontado al coste de oportunidad de activos con riesgo similar. Simbólicamente:
+
+\begin{equation}
+    P_t = \frac{1}{1+r_t} \cdot E \left( P_{t+1} | I_t \right)
+\end{equation}
+
+Supongamos por ejemplo que $I_t$ representa todos los precios pasados del activo, y todas las regularidades, reglas o patrones que siguen los precios futuros dados unos precios pasados. En este caso, si la expresión anterior es cierta, el precio actual se ajustará de tal manera que el retorno esperado será igual al coste de oportunidad. Por supuesto, el retorno efectivamente realizado sigue siendo el resultado de una variable aleatoria, y muy probablemente será diferente (es decir, $P_{t+1} \neq E(P_{t+1}|I_t)$). A largo plazo, el retorno no tendrá tampoco por qué converger hacia $E (P_{t+1}|I_t)$, sino que dependerá de la \textit{verdadera} distribución de probabilidad del precio futuro. En definitiva, cuando se cumple la hipótesis de mercados eficientes para un conjunto de información dado, los retornos obtenidos a ojos del inversor que utilice ese conjunto serán \textit{aleatorios}. Para obtener rendimientos esperados en exceso del coste de oportunidad, el inversor deberá utilizar información acerca del precio futuro que no haya sido aún incorporada en el precio actual.
+
+Una explicación alternativa adicional es la siguiente. Partamos de la ecuación anterior. Cuando se cumple tal ecuación, decimos que el mercado es eficiente para ese conjunto informacional $I_t$. Esto implica que si el precio futuro $P_{t+1}$ siguiese la distribución de probabilidad inducida por ese conjunto informacional, el rendimiento esperado sería igual al coste del capital, y por tanto no sería posible extraer rendimientos \textit{en exceso} de ese coste del capital o coste de oportunidad. Sólo sería posible extraer el rendimiento de un activo con el mismo riesgo. Supongamos que ese conjunto informacional refleja toda la información disponible sobre los precios pasados y los precios futuros en función de esos precios pasados. Pero que ignora la información pública referida al activo que permitiría, por ejemplo, realizar el llamado \comillas{análisis fundamental}. Aunque no esté incluida dentro del conjunto informacional, esa información pública sí define ahora la verdadera distribución de probabilidad de los precios futuros. ¿Cuál será el rendimiento \textit{ex-post}? Vendrá dado por esa distribución \comillas{verdadera}, que depende de la información pública. Sin embargo, el precio $P_t$ se ajustó en relación a otra distribución de probabilidad. Asumiendo que ambas distribuciones son totalmente independientes e incorreladas (la distribución que inducen los precios pasados, y la que inducen los precios pasados más la información pública), el resultado será una realización de precios futuros aparentemente aleatoria, dado el ajuste de $P_t$ que no tiene en cuenta esa información pública. Podemos extender el ejemplo para información privada, en cuyo caso estaríamos ante eficiencia fuerte.
+
+El hecho de tener en cuenta todo los precios pasados y toda la información disponible sobre el activo -pública y privada- no implica información completa. Información completa implica \clave{certidumbre}, inexistencia de riesgo, total certeza respecto a lo que va a suceder. O equivalentemente, loterías degeneradas (con 100\% de probabilidad) y procesos determinísticos, no estocásticos como hasta ahora, y como sucede en todo mercado financiero en la práctica.
+
+
+\concepto{Definición de eficiencia de Timmermans-Jensen, definición de eficiencia} \comillas{A market is efficient with respect to the information set, $\Omega_t$, search technologies $S_t$ and forecasting models $M_t$, if it impossible to make economic profits by trading on the basis of signals produced from a forecasting model in $M_t$ defined over predictor variables in the information set $\Omega_t$ and selected using a search technology in $S_t$}.
+
+\concepto{Definición de Gandolfo/Fama (1970, 1976)} 
+
+\comillas{According to the generally accepted definition of FAma (1970, 1976), a market is efficient when it fully uses all available information or, equivalently, when current prices fully reflect all available information and so there are no unexploited profit opportunities (there are various degrees of efficiency, but they need not concern us here). Then by definition, in an efficient foreign market both covered and uncovered interest parity must hold.}
+
+\concepto{Kurtosis} 
+
+Medida del grado de probabilidad de eventos extremos, en comparación con una distribución normal. O visto de otro modo, grosor de las \textit{fat-tails}. Cuanto más alto sea el valor de la kurtosis, más probabilidad se sitúa en las colas de la función de densidad. Página 139 de BKM.
+
+\concepto{Diferencia entre renta variable y renta fija}
+<<Although the distinction between debt and equity is often made in terms of bonds and stocks, its roots lie in the nature of the cash flow claims of each type of financing. The first distinction is that a debt claim entitles the holder to a contractual set of cash flows (usually interest and principal payments), whereas an equity claim entitles the holder to any residual cash flows after meeting all other promised claims. This remains the fundamental difference, but other distinctions have arisen, partly as a result of the tax code and partly as a consequence of legal developments. 
+    [...]
+    
+To summarize, debt is defined as any financing vehicle that is a contractual claim on the firm (and
+not a function of its operating performance), creates tax-deductible payments, has a fixed life, and has
+a priority claim on cash flows in both operating periods and bankruptcy. Conversely, equity is defined
+as any financing vehicle that is a residual claim on the firm, does not create a tax advantage from its
+payments, has an infinite life, does not have priority in bankruptcy, and provides management control
+to the owner. Any security that shares characteristics with both is a hybrid security.
+>> (Damodaran, ch. 7)
+
+\concepto{Value at risk / VaR:} pérdida que corresponde a un percentil muy bajo, generalmente 5\% o incluso 1\%. O de otro modo, menor pérdida de un intervalo de la cola de pérdidas de la distribución de retornos.
+
+\concepto{Ratio put/call:} cociente entre opciones put contratadas dividido por número de opciones call contratadas. Oscila históricamente en torno a una cifra cercana al 65\% (que es necesario ajustar en función del periodo histórico y el mercado concreto). Si se interpreta como una señal de venta, se asume implícitamente que el ratio aumenta por un mayor interés de los inversores por \comillas{descargar} valores en los que tenían posiciones largas. De forma contraria, si se interpreta como una señal de compra es porque se asume que el mercado está cerca del fondo o lo ha tocado, y es esperable que recupere posiciones.
+
+\concepto{Diferencia entre APT y CAPM}
+El modelo CAPM es un modelo de \comillas{demanda}. El equilibrio aparece como resultado de la optimización media-varianza por todos los agentes, en base a las mismas estimaciones de rentabilidades y varianzas de los activos. Dado esta simetría entre agentes, la cartera eficiente será la misma para todos los agentes. A partir de esta cartera de mercado, podemos calcular la contribución al riesgo de una cartera de un activo G determinado simplemente sumando $\sum_{i=1}^{n-1} w_G\cdot w_i \cdot \text{cov}(R_G, R_i)$. Aplicando una serie de transformaciones, obtenemos que la contribución al riesgo de un activo G a la cartera eficiente es igual a la covarianza de la rentabilidad del activo con la rentabilidad del mercado. En este modelo, todos los activos deben tener la misma relación entre rentabilidad esperada y covarianza con el mercado, y de igual manera entre ellos:
+\begin{equation}
+    \frac{E(R_i)}{cov(R_i, R_m)} = \frac{E(R_M)}{\sigma_M^2} 
+\end{equation}
+
+
+
+\preguntas
+
+\seccion{Test 2018}
+
+\textbf{33.} Un individuo interesado en invertir en el sector de las telecomunicaciones utiliza como único criterio de selección de acciones para construir su cartera el PER (Price-earning ratio). En ese caso:
+
+\begin{itemize}
+	\item[a] Comprará aquellas acciones que tengan un mayor PER.
+	\item[b] Comprará aquellas acciones que tengan un menor PER.
+	\item[c] Comprará aquellas acciones cuyo PER sea superior al tipo de interés sin riesgo.
+	\item[d] Comprará aquellas acciones cuyo PER sea superior a su coste de endeudamiento.
+\end{itemize}
+
+\seccion{Test 2017}
+
+\textbf{25.} Un analista de mercado prevé que los dividendos de la empresa Badulaque continúen creciendo a una tasa constante $g$ en el futuro. La tasa de descuento exigida en el mercado para empresas de este tipo es $k$. Para estimar el valor intrínseco de las acciones de Badulaque, el analista podría utilizar el modelo de Gordon (modelo de dividendos crecientes a tasa constantes) si:
+
+\begin{itemize}
+	\item[a] $g < k$
+	\item[b] $g > k$
+	\item[c] $g = k$
+	\item[d] $g \neq k$
+\end{itemize}
+
+\seccion{Test 2016}
+\textbf{37.} En el modelo CAPM es condición suficiente para que la prima de riesgo de un activo $z$ sea nula que:
+\begin{enumerate}
+	\item[a] La varianza de la tasa de retorno $z$ sea nula.
+	\item[b] La covarianza entre la tasa de retorno de $z$ y la tasa de retorno de la cartera de mercado sea nula.
+	\item[c] Cualquiera de las anteriores es correcta.
+	\item[d] Ninguna de las anteriores es correcta. 
+\end{enumerate}
+
+\seccion{Test 2015}
+\textbf{36.} La siguiente tabla muestra los datos de las inversiones realizadas por dos gestores de cartera X e Y:
+
+\medskip
+
+\begin{tabular}{| c | c | c | c |}
+	\hline
+	\textbf{Gestor} & \textbf{Rendimiento} & \textbf{Riesgo} & \textbf{$\beta$ de la cartera} \\ \hline
+	X & 15\% & 25\% & 1,0 \\ \hline
+	Y & 12\% & 20\% & 0,8 \\ \hline \hline
+	\multicolumn{4}{c}{Pro memoria: rendimiento del activo libre de riesgo: 5\%} \\ \hline
+\end{tabular}
+
+\medskip
+
+Señale la respuesta correcta sobre qué gestor ha obtenido los mejores resultados empleando el criterio de la ratio de Sharpe (RS):
+
+\begin{enumerate}
+	\item[a] $\text{RS}_{\text{gestorX}} = 0,4; \text{RS}_{\text{gestorY}} = 0,35$. El gestor X ha obtenido un mejor resultado.
+	\item[b] $\text{RS}_{\text{gestorX}} = 0,4; \text{RS}_{\text{gestorY}} = 0,35$. El gestor Y ha obtenido un mejor resultado.
+	\item[c] $\text{RS}_{\text{gestorX}} = 0,1; \text{RS}_{\text{gestorY}} = 0,56$. El gestor X ha obtenido un mejor resultado.
+	\item[d] No se dispone de suficientes datos.
+\end{enumerate}
+
+\textbf{37.} Señale la respuesta \textbf{incorrecta} referida a la teoría de los mercados de capitales suponiendo una frontera de carteras eficientes no lineal y convexa.
+\begin{enumerate}
+	\item[a] El riesgo de una cartera puede descomponerse en riesgo sistémico (de mercado), que puede ser eliminado, y riesgo específico, que puede ser minimizado con una adecuada estrategia de diversificación.
+	\item[b] El parámetro $\beta$ de una cartera es la suma ponderada de los parámetros $\beta$ de los activos que la componen.
+	\item[c] La ecuación de la línea característica de un activo propuesta por Sharpe permite reducir el número de cálculos necesarios para construir la frontera de carteras eficientes.
+	\item[d] La creación de una cartera mixta a partir de la combinación de una activo libre de riesgo y la cartera eficiente seleccionada en función de las preferencias del inversor permite alcanzar combinaciones de rentabilidad y riesgo superiores a las contenidas en la frontera de carteras eficientes.
+\end{enumerate}
+
+\seccion{Test 2014}
+\textbf{34.} En un mercado de valores que funcione eficientemente y donde no existan oportunidades de arbitraje, las combinaciones de rentabilidad-riesgo de todos los activos financieros:
+\begin{enumerate}
+	\item[a] Se situarán sobre la denominada \comillas{línea del mercado de valores} o SML (Securities Market Line) como expresión fundamental del CAPM (Capital Asset Pricing Model).
+	\item[b] Se situarán sobre la denominada \comillas{línea del mercado de capitales} o CML (Capital Market Line), representativa del conjunto de inversiones eficientes en un mercado en el que se puede prestar y recibir prestado al tipo de interés libre de riesgo.
+	\item[c] Se situarán sobre la frontera eficiente de Markowitz.
+	\item[d] En este tipo de mercados financieros la relación entre la rentabilidad y el riesgo de las inversiones es totalmente espuria y arbitraria.
+\end{enumerate}
+
+\textbf{35.} En un mercado eficiente en el que se puede prestar y recibir prestado ilimitadamente al tipo de interés libre de riesgo, la forma gráfica de la frontera eficiente, representando en el eje de abscisas el riesgo de las inversiones medido por su desviación típica y en el eje de ordenadas su rentabilidad esperada, es:
+\begin{enumerate}
+	\item[a] Una curva creciente, convexa con respecto al eje de ordenadas.
+	\item[b] Una curva creciente, cóncava con respecto al eje de ordenadas.
+	\item[c] Una línea recta creciente.
+	\item[d] Una línea recta decreciente.
+\end{enumerate}
+
+\textbf{36.} ¿Cuál de las siguientes propuestas teóricas constituye un modelo multifactorial de valoracioń de activos financieros?
+\begin{enumerate}
+	\item[a] El CAPM (Capital Asset Pricing Model)
+	\item[b] El APT (Arbitrage Pricing Theory)
+	\item[c] La CML (Capital Market Line)
+	\item[d] El modelo de diversificación de Markowitz.
+\end{enumerate}
+
+\seccion{Test 2013}
+\textbf{23.} En el marco del enfoque media-varianza de Markowitz, considérese una cartera de dos activos, equipodenderada y en la que uno de dichos activos carece de riesgo. Indíquese cuál de las siguientes opciones es correcta:
+\begin{enumerate}
+	\item[a] El riesgo de esta cartera se puede expresar como una suma ponderada de los riesgos individuales.
+	\item[b] El riesgo de esta cartera es directamente proporcional al riesgo del único activo con riesgo.
+	\item[c] El riesgo de esta cartera no es nulo a pesar de incluir un activo sin riesgo en la misma.
+	\item[d] Cualquiera de las anteriores es correcta.
+\end{enumerate}
+
+\textbf{24.} Evalúense, en el marco del modelo CAPM tradicional, las siguientes afirmaciones.
+\begin{enumerate}
+	\item[a] Si un activo presenta un riesgo-varianza nulo, también presentará un riesgo-beta nulo.
+	\item[b] Si el riesgo-beta de un activo es nulo, su riesgo varianza también será nulo.
+	\item[c] El riesgo-beta de un activo puede ser mayor o igual que cero, pero nunca negativo.
+	\item[d] Cualquiera de las afirmaciones anteriores es correcta. 
+\end{enumerate}
+
+\seccion{Test 2011}
+\textbf{21.} Suponga dos activos financieros, A y B, con la misma correlación respecto al mercado y donde al activo A presenta una varianza en sus rendimientos el doble que la del activo B. Cuál de las siguientes afirmaciones es la correcta:
+\begin{enumerate}
+	\item[a] Aunque la varianza de sus rendimientos sea diferente, ambos activos presentan el mismo riesgo beta.
+	\item[b] El riesgo beta del activo A es mayor que el del activo B, dado que presenta una mayor varianza en sus rendimientos.
+	\item[c] El riesgo beta del activo A es menor que el del activo B, dado que presenta una mayor varianza en sus rendimientos. 
+	\item[d] El riesgo no diversificable del activo A es superior al del activo B.
+\end{enumerate}
+
+\textbf{22.} Según la Teoría de Valoración de Activos por Arbitraje (APT), cuál de las siguientes afirmaciones es correcta:
+\begin{enumerate}
+	\item[a] Al igual que el modelo CAPM, los rendimientos de un activo únicamente está relacionado con el rendimiento de la cartera de mercado.
+	\item[b] El riesgo sistemático es medido a través del beta.
+	\item[c] Cada activo financiero se valora de forma independiente, en función de su riesgo específico.
+	\item[d] Al igual que el modelo CAPM, la rentabilidad esperada de un activo con riesgo será igual a la rentabilidad del activo libre de riesgo más una prima por el riesgo no diversificable. 
+\end{enumerate}
+
+\seccion{Test 2008}
+\textbf{34.} En relación al modelo CAPM, señale cual de los supuestos de partida es \textbf{falso}:
+\begin{enumerate}
+	\item[a] Todos los inversores son diversificadores eficientes.
+	\item[b] Se puede prestar o pedir prestado una cantidad infinita de dinero a un tipo de interés libre de riesgo.
+	\item[c] Mercado perfectamente competitivo y sin costes de transacción.
+	\item[d] El riesgo sistemático se explica a través de una serie de factores aditivos.
+\end{enumerate}
+
+\seccion{Test 2005}
+\textbf{35.} Con respecto a los modelos APT (Arbitrage Pricing Theory) y CAPM (Capital Asset Pricing Model) de valoración de las acciones de una empresa, señale la respuesta \textbf{FALSA}:
+\begin{enumerate}
+	\item[a] Según el modelo APT las carteras de valores que muestran gran sensibilidad ante los cambios inesperados en las fuerzas económicas importantes dan grandes rendimientos.
+	\item[b] El objetivo de ambos modelos es el mismo: estimar la prima por riesgo que hay que añadir al rendimiento sin riesgo que hay en el mercado para obtener la tasa de rendimiento exigidas por el inversor.
+	\item[c] A diferencia del modelo CAPM, en el modelo APT se habla no sólo del riesgo sistemático, sino también del riesgo único propio de cada acción.
+	\item[d] El modelo APT, a diferencia del modelo CAPM, considera que el riesgo de un título, no puede quedar recogido únicamente por la sensibilidad ante las variaciones del mercado, sino que habrá de tenerse en cuenta otras fuerzas económicas cuyas variaciones inesperadas pueden influir en los rendimientos de un título determinado.
+\end{enumerate}
+
+\seccion{16 de marzo de 2017}
+\begin{itemize}
+    \item ¿Ha visto la película Margin Call? ¿Cómo entiende usted la volatilidad de todos estos instrumentos o productos financieros?
+    \item Keynes habla sobre la bolsa y los concursos de belleza en el capítulo 12 de su Teoría General. ¿Cómo hace dinero Warren Buffet?
+    \item En la fórmula de los flujos de caja libre: ¿qué quiere decir con valor?
+    \item ¿Y en la formula de valoración de un activo según la CAPM? 
+    \item Ha mencionado en la introducción los instrumentos de renta fija. En éstos, ¿la rentabilidad es realmente fija?
+\end{itemize}
+
+\seccion{28 de marzo de 2017}
+\begin{itemize}
+    \item Si tuviese que invertir, ¿qué modelo de valoración de activos utilizaría?
+\end{itemize}
+
+\seccion{Otras}
+\begin{itemize}
+    \item ¿Qué modelo utilizaría si tuviese que realizar una inversión?
+    \item ¿Valorar empresas es un arte o una técnica?
+\end{itemize}
+
+\notas
+
+\textbf{2018}: \textbf{33}. B
+ 
+\textbf{2017}: \textbf{25}. A
+
+\textbf{2016}: \textbf{37}. C
+
+\textbf{2015}: \textbf{36}. A \textbf{37}. A
+
+\textbf{2014}: \textbf{34}. A \textbf{35}. C \textbf{36}. B
+
+\textbf{2013}: \textbf{23}. D \textbf{24}. A
+
+\textbf{2011}: \textbf{21}. A \textbf{22}. D
+
+\textbf{2008}: \textbf{34}. D
+
+\textbf{2005}: \textbf{35}. C
+
+Este tema hay que reformarlo haciendo más hincapié en la dicotomía riesgo-rentabilidad, y rehaciendo la explicación de la hipótesis del mercado eficiente.
+
+Según la Lettre Vernimmen, el modelo de Fama-French es el más frecuente en el mundo académico. Necesario mencionarlo.
+
+
+\bibliografia
+
+Mirar en Palgrave:
+\begin{itemize}
+	\item arbitrage
+	\item arbitrage pricing theory
+    \item capital asset pricing model
+    \item \textbf{finance}: la explicación más elegante y concisa de los CAPM y APT. Pero hay que tener una base previa.
+    \item efficient markets hypothesis
+    \item factor models
+    \item forecasting
+    \item noise traders
+\end{itemize}
+
+Investments - Bodie, Kane and Marcus
+
+Monografías de Mascareña - Eficiencia y equilibrio en mercados de capitales
+
+Paper de Timmermans en carpeta del tema.
+
+Mirar artículos de Karl Sigman (Columbia) en carpeta del tema, sobre CAPM, interés, teoremas de single-fund y two-funds...
+
+Fama, E. F. \textit{Two Pillars of Asset Pricing} (2013) Nobel Prize Lecture -- En carpeta del tema
+
+Markowitz, H. M. \textit{Foundations of Portfolio Theory} (1990) Nobel Prize Lecture -- En carpeta del tema
+
+Sharpe, W. F. \textit{Capital Asset Prices With and Without Negative Holdings} (1990) Nobel Prize Lecture -- En carpeta del tema.
+
+\end{document}

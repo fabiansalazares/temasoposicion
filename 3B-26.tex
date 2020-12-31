@@ -1,0 +1,1034 @@
+\documentclass{nuevotema}
+
+\tema{3B-26}
+\titulo{Análisis de los instrumentos financieros de renta fija. Determinación del precio y rendimiento de los bonos. La estructura temporal de los tipos de interés. Valoración del riesgo y del rendimiento de los bonos: duración y convexidad.}
+
+\begin{document}
+
+\ideaclave
+
+De forma general, un activo financiero es un derecho ligado a un contrato jurídico que da lugar a la percepción de una serie de flujos de caja en el futuro. Dentro de la inmensa variedad de activos financieros que un inversor puede comprar, es especialmente relevante la distinción entre activos de renta fija y renta variable. Esta distinción se basa en dos factores: la relación entre la cuantía de los flujos recibidos y los resultados de la empresa, y los derechos de carácter político relativos a la gestión de la empresa a los que el título de acceso. En la medida en que los flujos de caja derivados no estén ligados al funcionamiento de la empresa y el título no suponga una atribución de derechos políticos en favor de su tenedor, estaremos ante un activo de renta fija. En caso contrario, cuando los flujos dependen de la discrecionalidad de la junta de accionistas y el título confiere derecho a participar en éstas como accionista, estamos ante un activo de renta variable. Las innovaciones financieras han creado innumerables instrumentos que combinan características de ambos tipos de activos, pero de aquí en adelante hablaremos de bonos para referirnos a activos que generan una corriente de pagos determinada de antemano de acuerdo con una secuencia definida o mediante una regla fija y que no confieren derechos de gestión a su tenedor sobre la sociedad emisora del bono. El \textbf{objeto} de la exposición es presentar los rasgos fundamentales de los activos de renta fija, como se lleva a cabo su valoración, en qué consiste y cómo se explica la estructura temporal de los tipos de interés, y la gestión del riesgo de los activos de renta fija.
+
+Comencemos presentando los \marcar{conceptos básicos relativos a los activos de renta fija}. Los rasgos más elementales de un activo de renta fija han sido definidos anteriormente: flujos de caja determinados o determinables mediante una regla conocida de antemano y ausencia de derecho a gestionar la empresa emisora en condiciones normales. Los \textbf{elementos que definen a un bono concreto} son fundamentalmente seis: el valor nominal o flujo final que genera el bono en cuestión, el tipo de interés nominal o cupón como cuantía de los flujos periódicos generados en relación a nominal, vencimiento o fecha en que se devuelve el principal, precio o cantidad a la que se intercambia el bono en el mercado, base o criterio en base al cual se reparte el cupón devengado entre fechas de reparto de cupón y divisa en que se pagan los flujos. 
+
+El enorme tamaño del mercado de bonos y la variedad en las necesidades de inversores y emisores ha dado lugar a una amplia gama de activos. En función del cupón hablamos de bonos con cupón fijo, bonos con cupón variable, bonos cupón cero cuando el cupón abonado es inexistente y bonos con interés acumulado cuando los cupones se pagan en su totalidad junto con el principal. Los bonos que incluyen opciones call a favor del emisor o put a favor del tenedor se denominan \underline{callable bonds} y \underline{putable bonds}, respectivamente, y los bonos que ligan un suceso externo a la conversión del bono en acción se denominan \underline{CoCo} (Convertible Contingent bonds). Cuando el tenedor de un bono tiene recurso frente al emisor pero también frente a una cartera de activos denominada colateral, hablamos de \underline{covered bonds}. Cuando los pagos del bono los genera una cartera de activos y el tenedor no tiene recurso frente al ``empaquetador'' de la cartera de activos hablamos de \underline{asset backed securities}. Si el principal aumenta con la inflación, hablamos de \underline{TIPS o bonos protegidos frente a la inflación}. Se denominan \underline{STRIPS} aquellos bonos cupón-cero obtenidos como resultado de vender por separado los flujos de caja que genera un bono dado. Las \underline{acciones preferentes} son activos financieros en la frontera entre renta fija y renta variable. Confieren cuota en el capital social pero no derechos de voto y reciben dividendos de forma prioritaria, sus condiciones son ad-hoc y sus flujos de caja están subordinados al pago de los cupones y el principal de la deuda de la empresa. Cuando un bono se emite en una moneda diferente al del país de emisión es habitual hablar de eurobonos, y cuando un bono es emitido en moneda local del país de emisión por un emisor no residente hablamos de de bonos extranjeros. Los procesos de emisión de los bonos son relativamente diversos pero en general se puede hablar de emisión por subasta y emisión por vía de sindicación bancaria.
+
+El \marcar{valor} presente de un bono no es sino la suma del valor presente de sus tres fuentes de rentabilidad: cupones, ganancia de capital e ingresos derivados de la reinversión de los cupones. Dado que es necesario pagar un precio por poseer un bono y tener derecho a los flujos de caja que genera, es necesario cuantificar la relación entre el precio pagado y las cuantías recibidas para comparar el beneficio que implica la compra de un activo frente a otro y relacionarlo con otras características tales como el riesgo o el perfil temporal. Algunas de las medidas más relevantes son el rendimiento nominal, el \underline{yield-to-maturity} (YTM) o TIR del bono y el \underline{yield-to-call} o rendimiento hasta redención. El \underline{rendimiento nominal} sólo tiene en cuenta la relación entre el cupón y el precio del bono. El YTM es la medida habitual de rentabilidad en bonos no amortizables y no es sino la tasa de descuento constante que iguala el precio con el valor presente de los flujos de caja. El yield-to-call valora la rentabilidad del bono en el momento de la amortización anticipada, si se produce, y no tiene en cuenta el riesgo de la reinversión. En la jerga de la negociación de bonos es habitual relacionar el precio con el valor nominal o par y relacionarlo con el interés nominal: cuando cotiza sobre la par, el rendimento nominal es menor que el YTM; cuando lo hace bajo par, el rendimiento nominal es mayor que el YTM. De las medidas de valoración pueden deducirse cinco \textbf{teoremas de la valoración} que describen la relación inversa entre precio y rendimiento, la convergencia de la prima o el descuento a 0, el carácter decreciente de la tasa de convergencia con el tiempo, la variación asimétrica del precio ante variaciones del interés y la relación negativa entre el tamaño del cupón y la duración del bono.
+
+El \marcar{concepto de estructura temporal de los tipos de interés} define la relación entre interés exigido a un bono cupón-cero y tiempo que trascurre hasta que se recibe el pago del bono. En primer lugar es necesario definir algunos términos. El tipo al contado es el tipo de interés desde el momento presente hasta un momento futuro y el tipo forward es el interés entre dos momentos futuros determinado en el presente. Es razonable suponer que las fuerzas del mercado eliminarán las posibilidades de arbitraje temporal e inducirán una relación de equivalencia del tipo contado y forward. La relación será tal que en un momento temporal determinado el tipo al contado deberá corresponderse con la media geométrica de los tipos forward correspondientes. Partiendo de estos conceptos es posible examinar las \textbf{principales teorías de la estructura de los tipos de interés} o de forma equivalente, de la forma de la curva de tipos. La \underline{teoría de las expectativas puras} explica la ETTI como resultado exclusivo de las expectativas de los agentes en relación a los tipos de interés al contado que predominarán en el futuro. En la medida en que se esperen un tipos futuros más elevados, prestar a largo plazo será menos deseable en el presente que en el futuro. Por el contrario, para los emisores de bonos tomar prestado a largo plazo en el presente será preferible a tomar prestado varias veces de forma sucesiva con vencimientos más cortos. Esta situación generará un exceso de oferta que reducirá el precio de los bonos a largo plazo y aumentará el interés, dando lugar a una curva creciente. De forma análoga pero en sentido contrario sucederá ante una disminución esperada del tipo de interés. La \underline{teoría de la preferencia por la liquidez} atribuida a Keynes y Hicks asume la teoría de las expectativas pero añade un supuesto: los inversores tienen una preferencia natural por la inversión a corto plazo por la mayor liquidez que aporta. Ello resulta en una prima de liquidez exigida a las inversiones de largo plazo y tiende a generar curvas de tipos crecientes, salvo en el caso de que se espere una bajada muy fuerte de tipos en el futuro. La \underline{teoría del hábitat preferido} generaliza la teoría de la preferencia de la liquidez afirmando que existen varios tipos de agentes en función de su preferencia por el corto o el largo plazo. Además, los agentes estarán dispuestos a cambiar de ``hábitat'' si se les ofrece una prima de rentabilidad suficiente. En la medida en que predominen unos u otros en el corto y en el largo plazo, se producirán unos excesos de demanda y oferta que configurarán curvas crecientes, decrecientes o planas. Un caso extremo de este modelo es aquel en el que los agentes no están dispuestos a cambiar de ``hábitat'' bajo ninguna circunstancia y los diferentes periodos de mercado se encuentran perfectamente segmentados. En esta situación, cada segmento temporal determina el interés de forma independiente.
+
+El \marcar{riesgo de los activos de renta fija} es diferente y grosso modo menor al de la renta variable pero no es inexistente. Los activos de renta fija están sujetos a riesgo de interés, de reinversión, de pago anticipado, de crédito, de liquidez, de tipo de cambio, de volatilidad, de riesgo político... El \textbf{riesgo de interés} resume y se solapa con muchos de ellos y ello le otorga una especial relevancia. Por un lado, la variación del interés predominante en un mercado implica un cambio del precio de venta si el activo no se pretende mantener hasta vencimiento, e independientemente de si se mantiene o no, una variación de la rentabilidad de los cupones reinvertidos. La valoración del riesgo de interés parte del enfoque \textbf{full-valuation}, en el que se examinan todos los escenarios de interés y se relacionan con el precio. Este enfoque de valoración del riesgo es difícil de llevar a cabo por limitaciones de información y excesiva complejidad de algunos productos. Los conceptos de duración y convexidad tratan de suplir esta limitación. La \textbf{duración} se define de forma genérica como la variación porcentual del precio dada una variación de interés. Es interpretable gráficamente como la pendiente de la recta tangente a la función que relaciona precio con interés. Si se asume que la relación entre precio e interés es efectivamente la suma de los flujos de caja descontados al interés en cuestión, y que las variaciones del interés desplazan paralelamente la curva de tipos de interés, es posible realizar una aproximación mediante series de Taylor del efecto de un aumento en el interés sobre el precio. Esto da lugar a la \underline{duración de Macaulay} y la \underline{duración modificada}, ambas muy habituales en la práctica de los mercados de renta fija. La primera equivale a la suma ponderada del vencimiento de los flujos en función de la fracción que representan sobre el precio total. La duración modificada es la pendiente de la función del precio sobre el interés cuando los flujos de caja son constantes y se reinvierten a tasa fija. Se puede estimar de forma simple a partir de la duración de Macaulay, lo que convierte a ambas en medidas efectivas y simples de computar. La \textbf{convexidad} es la medida de la variación de la duración a medida que aumenta el interés, y captura la variación de segundo orden del precio dada una variación del interés. Además de la duración y la convexidad, la \textbf{volatilidad del interés} es un factor a tener en cuenta a la hora de valorar una inversión en renta fija. En la práctica habitual de la gestión de activos financieros, la duración es un instrumento clave para \textbf{reducir el riesgo de interés} para inversores que deben hacer frente a una serie de obligaciones futuras conocidas. Una forma de asegurar el cumplimiento de esas obligaciones futuras es invertir en renta fija que genere exactamente los mismos flujos de caja que será necesario pagar, en los mismos periodos futuros. Esta estrategia se denomina \underline{cash-flow matching} o casación de flujos de caja. Aunque este tipo de estrategias permite en teoría eliminar totalmente el riesgo de interés, resulta muy costosa y no siempre es posible llevarla a cabo cuando las obligaciones son demasiado grandes o diversas. Las llamadas estrategias de \underline{inmunización} plantean una solución alternativa: formar carteras de activos con la misma duración que los pasivos, de tal manera que variaciones del interés afecten por igual a ambos y la duración del conjunto global de activos y pasivos se iguale a cero (o al menos se aproxime). 
+
+La exposición ha presentado los conceptos básicos de la renta fija, los métodos básicos de valoración y medición de la rentabilidad, el concepto y las teorías que explican la estructura temporal de tipos de interés, y la valoración y la gestión del riesgo en la renta fija. Los bonos y activos similares permiten emparejar ahorro e inversión de forma descentralizada y constituyen uno de los mayores mercados financieros globales junto con la renta variable y las divisas. Por ello, la necesidad de gestionar de forma adecuada los riesgos en este mercado se ha acrecentado en las últimas décadas y especialmente tras la crisis financiera de finales de los años 2000. 
+
+%Los activos financieros permiten a los agentes económicos trasladar rentas entre periodos temporales. Los agentes con excedentes de renta en determinados momentos pueden invertir en activos financieros y trasladar aquellas rentas a periodos futuros a cambio de un rendimiento. De igual forma, aquellos agentes con necesidad de financación en el presente pueden trasladar rentas del futuro al presente gracias a la venta de este tipo de activos. Los activos financieros de renta fija se caracterizan por generar una corriente de flujos de caja a intervalos predeterminados, en cuantías definidas de forma explícita en relación a una variable determinística o estocástica (por ejemplo, en el caso de los bonos de cupón variable o \textit{floats}). Dada esta predicibilidad de los flujos de caja en relación a los activos de renta variable, la valoración de éstos es relativamente sencilla, y es más sencillo relacionar su valor con variables como tipo de interés o tiempo. 
+
+\seccion{Preguntas}
+\begin{itemize}
+    \item ¿Qué caracteriza a los activos de renta fija?
+    \item ¿Cómo se valoran?
+    \item ¿Qué relación existe entre el interés y el tiempo?
+    \item ¿A qué riesgos están expuestos los activos de renta fija?
+    \item ¿Qué relación existe entre precio de un bono e interés?
+\end{itemize}
+
+\esquemacorto
+
+\begin{esquema}[enumerate]
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Activos financieros
+			\3 Renta fija y renta variable
+			\3 Renta fija
+		\2 Objeto
+			\3 Cómo funciona el mercado de renta fija
+			\3 Cómo se valoran los bonos
+			\3 Relación entre el tiempo y el coste del endeudamiento
+			\3 Riesgo de la renta fija
+		\2 Estructura
+			\3 Introducción a la renta fija
+			\3 Valoración y rendimiento
+			\3 Estructura temporal de los tipos de interés
+			\3 Valoración y gestión del riesgo
+	\1 \marcar{Conceptos básicos de la renta fija}
+		\2 Características de los bonos
+			\3 Título-valor que representa deuda
+			\3 Flujos de caja determinados o determinables
+		\2 Elementos de un bono
+			\3 Valor nominal
+			\3 Tipo de interés nominal o cupón
+			\3 Vencimiento
+			\3 Precio
+			\3 Base
+			\3 Divisa
+		\2 Tipos de bonos
+			\3 Según cupón
+			\3 Con opciones incluidas
+			\3 Covered bonds
+			\3 Asset-backed securities
+			\3 TIPS / Bonos indexados a la inflación
+			\3 STRIPS
+			\3 Acciones preferentes
+			\3 Eurobonos
+			\3 Bonos extranjeros
+		\2 Emisión
+			\3 Subasta
+			\3 Sindicación
+			\3 Emisiones ad-hoc
+		\2 Segmentos del mercado
+			\3 Idea clave
+			\3 Inversión
+			\3 Especulativo/leverage/high yield
+			\3 Segmento sin calificar
+			\3 Otras
+			\3 Valoración
+	\1 \marcar{Valoración y rendimiento}
+		\2 Valoración
+			\3 Suma valor presente fuentes de rentabilidad
+			\3 Descuento de flujos
+			\3 Cartera de bonos
+		\2 Rendimiento
+			\3 Idea clave
+			\3 Rendimiento nominal / current yield
+			\3 Rendimiento a vencimiento / yield-to-maturity / TIR
+			\3 Rendimiento hasta amortización / Yield-to-call
+			\3 Relación precio rendimiento
+		\2 Teoremas de la valoración
+			\3 Relación inversa precio-rendimiento
+			\3 Convergencia de prima/descuento a 0
+			\3 Prima/descuento convergen a tasas decrecientes
+			\3 Variación asimétrica del precio ante $\Delta y$
+			\3 Relación entre cupón y duración
+	\1 \marcar{Estructura temporal de los tipos de interés}
+		\2 Idea clave
+			\3 Contexto
+			\3 Objetivos
+			\3 Resultados
+		\2 Curva de tipos de interés
+			\3 Tipo al contado
+			\3 Tipo a plazo/forward
+			\3 Equivalencia contado-forward
+			\3 Curva de tipos (yield curve)
+			\3 Forma de la curva
+			\3 Recesión
+		\2 Teorías de la ETTI
+			\3 Expectativas puras
+			\3 Preferencia por la liquidez
+			\3 Hábitat preferido
+			\3 Segmentación del mercado
+	\1 \marcar{Gestión riesgo de la renta fija}
+		\2 Riesgos de la renta fija
+			\3 Riesgo de interés
+			\3 Riesgo de pago anticipado
+			\3 Riesgo de crédito
+			\3 Riesgo de inflación
+			\3 Riesgo de liquidez
+			\3 Riesgo de tipo de cambio
+			\3 Riesgo de volatilidad
+			\3 Riesgo político
+			\3 Riesgo de eventos inesperados
+		\2 Enfoque full-valuation
+			\3 Valoración del bono por cada escenario
+			\3 Valoración de carteras
+			\3 Problemas
+		\2 Duración
+			\3 Idea clave
+			\3 Formulación general
+			\3 Duración de Macaulay
+			\3 Duración modificada
+		\2 Convexidad
+			\3 Idea clave
+			\3 Interpretación expansión de Taylor
+		\2 Volatilidad del interés
+			\3 Menos interés $\Rightarrow$ mayor duración
+			\3 Ejemplo bonos suizos vs americanos
+		\2 Eliminación del riesgo de interés
+			\3 Idea clave
+			\3 Cash flow matching y dedicación
+			\3 Inmunización
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Conceptos básicos de la renta fija
+			\3 Valoración y rendimiento
+			\3 Estructura temporal de los tipos de interés
+			\3 Valoración y gestión del riesgo
+		\2 Idea final
+			\3 Componente fundamental de carteras de inversión
+			\3 Herramienta de financiación
+			\3 Necesaria gestión del riesgo
+
+\end{esquema}
+
+\esquemalargo
+
+\begin{esquemal}
+	\1[] \marcar{Introducción}
+		\2 Contextualización
+			\3 Activos financieros
+				\4 Derecho a recibir flujos de caja
+				\4 Permiten financiarse
+				\4 Permiten obtener rendimiento del ahorro
+			\3 Renta fija y renta variable
+				\4 Clasificación de activos en función de
+				\4[] $\to$ Flujos de caja dependen o no de situación
+				\4[] $\to$ Derechos de propiedad y gestión
+				\4 Frontera en ocasiones difusa
+				\4[] $\to$ Activos híbridos
+				\4[] $\to$ Acciones preferentes
+				\4[] $\to$ Deuda subordinada
+				\4[] $\to$ ...
+			\3 Renta fija
+				\4 Corriente de pagos nominales conocida
+				\4 Independiente de marcha de la empresa
+				\4 Sin derechos políticos
+				\4 Bonos
+				\4 Letras
+				\4 Obligaciones
+				\4 Bonos en sentido amplio
+		\2 Objeto
+			\3 Cómo funciona el mercado de renta fija
+			\3 Cómo se valoran los bonos
+			\3 Relación entre el tiempo y el coste del endeudamiento
+			\3 Riesgo de la renta fija
+				\4 Cuantificación: duración y convexidad
+		\2 Estructura
+			\3 Introducción a la renta fija
+			\3 Valoración y rendimiento
+			\3 Estructura temporal de los tipos de interés
+			\3 Valoración y gestión del riesgo
+	\1 \marcar{Conceptos básicos de la renta fija}
+		\2 Características de los bonos
+			\3 Título-valor que representa deuda
+				\4 Transferible
+			\3 Flujos de caja determinados o determinables
+				\4 Determinables al margen de resultados de empresa
+				\4[] $\to$ Esquema fijo de pagos
+				\4[] $\to$ Determinables mediante regla respecto a índice
+		\2 Elementos de un bono
+			\3 Valor nominal
+				\4 Cantidad final a devolver
+			\3 Tipo de interés nominal o cupón
+				\4 Flujos de caja periódicos
+				\4[] En relación a nominal
+			\3 Vencimiento
+				\4 Fecha en la que se devuelve el principal
+			\3 Precio
+				\4 Al que se intercambia en el mercado
+			\3 Base
+				\4 Convención pactada
+				\4 Calcular número de días devengados
+				\4[] Para el pago del interés
+				\4[] $\to$ Cuando no se ha pagado aún
+				\4 Mercado monetario: Actual/360
+				\4[] Meses computados por días reales
+				\4[] Años como si tuvieran 360 días
+			\3 Divisa
+				\4 En la que se pagan los flujos
+		\2 Tipos de bonos
+			\3 Según cupón
+				\4 Bono con cupón fijo
+				\4 Bono con cupón variable
+				\4 Bonos cupón zero
+				\4 Accrual bonds
+			\3 Con opciones incluidas
+				\4 Callable bonds
+				\4[] Opción de compra a favor de emisor
+				\4 Putable bonds
+				\4[] Opción de venta a favor de tenedor
+				\4 Bonos convertibles en acciones
+				\4[] Opción de venta a favor de emisor
+				\4[] CoCo: Contingent Convertible bonds
+			\3 Covered bonds
+				\4 Tenedor tiene recurso frente a:
+				\4[] $\to$ Emisor
+				\4[] $\to$ Colateral
+			\3 Asset-backed securities
+				\4 Pagos generados por grupo de activos
+				\4 Emisor es más bien ``empaquetador''
+				\4 Volúmenes elevados pre-2008
+			\3 TIPS / Bonos indexados a la inflación
+				\4 \textit{Treasury Inflation Protected Securites}
+			\3 STRIPS
+				\4 \textit{Separate Trading of Registered Interest and Principal of Securities}
+				\4 Flujos de caja separados de obligación principal
+				\4[] convertidos en activo diferenciado
+			\3 Acciones preferentes
+				\4 Frontera entre renta fija y variable
+				\4 Subordinadas a bonos
+				\4 Dividendos prioritarios
+				\4 Condiciones ad-hoc
+			\3 Eurobonos
+				\4 En moneda diferente al país de emisión
+				\4 Ej.:
+				\4[] Empresa española
+				\4[] Bono denominado en dólares
+				\4[] Emitido en España
+			\3 Bonos extranjeros
+				\4 Emisor no residente en país de emisión
+				\4 Moneda del país de emisión
+				\4 Yankee, samurai, bulldogs, matador...
+		\2 Emisión
+			\3 Subasta
+				\4 Compradores hacen oferta
+				\4 Bonos se reparten según precios ofrecidos
+				\4 Precios más altos reciben bonos primero
+				\4 [] hasta agotar ofertas
+			\3 Sindicación
+				\4 Grupo de bancos busca compradores
+				\4 Si no se cubre la demanda
+				\4[] grupo de bancos asegura emisión
+			\3 Emisiones ad-hoc
+				\4 Condiciones de emisión particulares
+		\2 Segmentos del mercado\footnote{Ver \href{https://www.vernimmen.net/Lire/Lettre_Vernimmen/Lettre_178.html}{Lettre Vernimmen 178}.}
+			\3 Idea clave
+				\4 Calificación crediticia
+				\4[] Medida de posibilidad de impago
+				\4 Continuo de calificaciones
+				\4[] Desde AAA hasta C
+				\4[] $\to$ Variaciones de nombres según agencia
+				\4 Realmente, salto entre denominaciones
+				\4[] Dos segmentos diferenciados
+				\4[] $\to$ Especulativo
+				\4[] $\to$ Inversión
+				\4[] $\then$ Distinción más relevante
+				\4[] $\then$ Diferencias de inversores
+				\4[] Frontera teórica
+				\4[] $\to$ Entre BBB- y BB+
+				\4 División del trabajo para segmentos
+				\4[] Diferentes equipos de análisis
+				\4[] Diferentes inversores objetivo
+			\3 Inversión
+				\4 Entre AAA y BBB-
+				\4[] Frontera variable
+				\4[] En pre-crisis
+				\4[] $\to$ Frontera ligeramente por debajo
+				\4[] $\to$ Más hacia BB
+				\4[] Tras crisis
+				\4[] $\to$ Frontera sube a BBB
+				\4 Documentación obligatoria
+				\4[] Mucho más simple
+				\4[] Estandarizada
+				\4[] Proceso administrativo corto
+				\4 Protección de inversores
+				\4[] Default de otra emisión de la empresa
+				\4[] $\to$ Implica default de esta emisión
+				\4[] $\then$ Cross-default
+				\4[] Mismo rango de seniority
+				\4[] $\to$ Igual trato por emisor
+				\4[] $\then$ Pari-passu
+				\4[] Cambio de control
+				\4[] $\to$ Inversores pueden exigir reembolso
+				\4[] $\then$ En caso de cambio de control de empresa
+				\4[] $\then$ Posible solo si cambio de calificación asociada
+				\4 Programas EMTN
+				\4[] Documentación actualizada anualmente
+				\4[] Habitual en investment grade
+			\3 Especulativo/leverage/high yield
+				\4 De BB+ hacia abajo
+				\4 Documentación obligatoria compleja
+				\4[] Descripción detallada de empresa
+				\4[] $\to$ Estrategia
+				\4[] $\to$ Mercado
+				\4[] $\to$ Información financiera
+				\4 Roadshows
+				\4[] Presentación a inversores
+				\4 Inversores más sofisticados
+				\4[] Verdaderos análisis de la situación
+				\4[] Conocimiento del mercado
+				\4[] $\to$ Análisis similar a introducción en bolsa
+				\4 Protección de inversores
+				\4[] Ratios financieros a cumplir
+				\4[] $\to$ Deuda, solvencia, etc...
+				\4[] Limitación de cesión de activos
+				\4[] Limitación de adquisiciones y fusiones
+				\4[] Limitación de ciertos pagos
+				\4[] $\to$ Dividendos, buybacks, etc...
+				\4[] Dedicación de dividendos de filiales
+				\4[] $\to$ A repago de bonos
+				\4[] ...
+				\4 Garantías
+				\4[] SSN -- Senior Secured Notes
+				\4[] $\to$ Emisiones con garantías
+				\4[] $\to$ Garantías no compartidas con otras emisiones
+				\4[] $\to$ Habitualmente títulos de filiales
+				\4[] SUN -- Senior Unsecured Notes
+				\4[] $\to$ Emisiones sin garantías
+				\4 Fuera de programas EMTN
+				\4[] Emisiones individuales
+				\4[] $\to$ Integran toda la documentación
+			\3 Segmento sin calificar
+				\4 Algunas empresas con características especiales
+				\4[] Prefieren no pagar por calificación crediticia
+				\4[] Mercado conoce bien sus características
+				\4 Inversores atribuyen nota implícita
+				\4 Interés ligeramente superior a calificadas
+				\4 Vencimientos generalmente inferiores a 8 años
+			\3 Otras
+				\4 Cov-light
+				\4[] Para leverage con buena calificación
+				\4[] $\to$ Covenants reducidos
+				\4 Fallen angels
+				\4[] Investment grade que ha perdido calificación
+				\4[] $\to$ Debe ahora emitir en segmento leverage
+				\4[] $\then$ Posible sólo provisionalmente
+			\3 Valoración
+				\4 Fronteras relativamente fluidas entre segmentos
+				\4[] Especialmente en momentos de crisis
+				\4 Acceso a mercado cerrado en situaciones críticas
+				\4[] Especialmente para high-yield
+				\4 Investment grade en crisis covid
+				\4[] Aumento enorme de emisión de bonos
+				\4[] $\to$ Asegurarse liquidez
+	\1 \marcar{Valoración y rendimiento}
+		\2 Valoración
+			\3 Suma valor presente fuentes de rentabilidad
+				\4 Cupones
+				\4 Ganancia de capital
+				\4 Reinversión de los cupones
+			\3 Descuento de flujos
+				\4 $\sum \text{Cupones} = C \cdot \frac{1}{i} \cdot \left( 1 - \frac{1}{(1+i)^n} \right)$
+				\4 $\text{Nominal} = \frac{M}{(1+i)^n}$
+			\3 Cartera de bonos
+				\4 Suma de flujos de caja individuales
+		\2 Rendimiento
+			\3 Idea clave
+				\4 Medida del beneficio obtenido por invertir
+			\3 Rendimiento nominal / current yield
+				\4 $\text{Current yield} = \frac{\text{Cupón}}{\text{Precio}}$
+				\4 No tiene en cuenta:
+				\4[] $\to$ reinversión
+				\4[] $\to$ ganancia de capital
+			\3 Rendimiento a vencimiento / yield-to-maturity / TIR
+				\4 Medida habitual bonos no amortizables
+				\4 Tipo de interés que iguala precio con VA de FC
+				\4 Tiene en cuenta tres fuentes de rentabilidad
+				\4 Asume posibilidad reinversión a tasa constante
+				\4 Asume mantenimiento hasta vencimiento
+			\3 Rendimiento hasta amortización / Yield-to-call
+				\4 Valora rentabilidad en momento de amortización
+				\4 Yield-to-worst: $\text{min} \left( \text{YTM}, \text{YTC} \right) $
+				\4 No tiene en cuenta riesgo de reinversión
+			\3 Relación precio rendimiento
+				\4 Precio igual a par $\then$ YTM igual a interés nominal
+				\4 Precio sobre par $\then$ YTM menor interés nominal
+				\4 Precio bajo par $\then$ YTM mayor interés nominal
+		\2 Teoremas de la valoración
+			\3 Relación inversa precio-rendimiento
+				\4 Si el precio baja, aumenta el rendimiento
+			\3 Convergencia de prima/descuento a 0
+				\4 Menor tiempo hasta vencimiento
+				\4[] $\to$ menores flujos que recibir
+				\4[] $\to$ menor coste de oportunidad de la inversión
+				\4[] $\then$ precio se acerca al principal
+			\3 Prima/descuento convergen a tasas decrecientes
+				\4 Menor tiempo hasta vencimiento
+				\4[] $\to$ Menor velocidad de convergencia hacia 0
+			\3 Variación asimétrica del precio ante $\Delta y$
+				\4 $\Delta P$ es mayor cuando rdto. baja que si sube
+				\4[] Por convexidad de la curva precio-rendimiento
+			\3 Relación entre cupón y duración
+				\4 Cuanto mayor sea el cupón
+				\4[] $\to$ menor será la duración\footnote{Duración como semielasticidad del precio del bono respecto al descuento.}
+	\1 \marcar{Estructura temporal de los tipos de interés}
+		\2 Idea clave
+			\3 Contexto
+				\4
+			\3 Objetivos
+				\4 Explicar relación interés spot y vencimiento
+			\3 Resultados
+				\4 Relación interés spot-vencimiento
+				\4 Relación crítica en todos los sectores
+				\4 Inmobiliario:
+				\4[] ¿Tipo fijo o variable?
+				\4 Financiación
+				\4[] ¿Deuda a corto plazo o largo plazo?
+				\4 Política monetaria
+				\4[] ¿Efectos de PM sobre intereses?
+		\2 Curva de tipos de interés
+			\3 Tipo al contado
+				\4 Interés en bonos desde hoy hasta $T$: $r_0^T$
+			\3 Tipo a plazo/forward
+				\4 Interés desde periodo futuro $t$ hasta $T$: $r_t^T$
+			\3 Equivalencia contado-forward
+				\4 Contado es media geométrica tipos forward
+				\4[] $1+r_0^T = \sqrt[T]{(1+r_0^1) \cdot (1+r_1^2) \cdot ... (1 + r^T_{T-1}) }$
+			\3 Curva de tipos (yield curve)
+				\4 Relación entre:
+				\4[] Tipos al contado para vencimiento T
+				\4[] Vencimiento T
+				\4 representación gráfica y-T
+				\4 ¿Interés para bono cupón-cero con vencimiento $n$?
+			\3 Forma de la curva
+				\4 Normal
+				\4[] Creciente
+				\4 Invertida
+				\4[] Decreciente
+				\4 Curvada
+				\4 Plana
+			\3 Recesión
+				\4 Inversión de curva
+				\4[] Paso de normal a invertida
+				\4[] $\to$ De creciente a decreciente
+				\4 Inversión como predictor de recesión
+				\4[] Fenómeno empírico
+				\4[] $\to$ De forma previa a recesión
+				\4[] $\then$ Tipos a corto > tipos a largo
+
+		\2 Teorías de la ETTI
+			\3 Expectativas puras
+				\4 Tipos esperados a c/p en el futuro
+				\4[] definen tipos de largo plazo
+				\4 Ejemplo:
+				\4[] Se esperan tipos altos entre periodos 1 y 2
+				\4[] Tipo de 0 a 2 más bajo que $\left( 1+r^0_1 \right) \left( 1+E \left( r^1_2\right) \right)$
+				\4[] Compradores prefieren bonos de 1 periodo
+				\4[] $\to$ Para aprovechar subida esperada de interés
+				\4[] Vendedores prefieren bonos de 2 periodos
+				\4[] $\to$ Para pagar menos interés
+				\4[] Exceso de demanda bonos 1 periodo de t=1 a t=2
+				\4[] Exceso de oferta bonos 2 periodos
+				\4[] $\to$ Baja interés de bono 1 periodo
+				\4[] $\to$ Sube interés de bono 2 periodo
+				\4[] $\then$ Forma de la curva acorde con expectativas
+			\3 Preferencia por la liquidez
+				\4 Keynes (1930), Hicks (1935)
+				\4 Basada en teoría de las expectativas
+				\4 Supuesto adicional:
+				\4[] $\to$ Los compradores prefieren invertir a corto plazo
+				\4[] $\to$ Los vendedores prefieren vender bonos de largo plazo
+				\4 Implicaciones
+				\4[] $\then$ Compradores l/p exigen prima de liquidez
+				\4[] $\then$ Vendedores de l/p pagan prima de liquidez
+				\4[] $\then$ ETTI creciente aunque se espere tipo constante
+				\4[] $\then$ ETTI decrec. si esperado aumento muy fuerte
+			\3 Hábitat preferido
+				\4 Generaliza supuesto preferencia de la liquidez
+				\4[] $\to$ Compradores no necesariamente prefieren c/p
+				\4[] $\to$ Vendedores no necesariamente prefieren l/p
+				\4 Exceso de oferta y demanda en segmentos
+				\4[] $\to$ Depende de quién predomine en cada ``hábitat''
+				\4 Agentes dispuestos a cambiar de ``hábitat''
+				\4[] A cambio de prima
+				\4[$\Rightarrow$] Curva creciente:
+				\4[] Si en c/p predominan compradores y en l/p vendedores
+				\4[$\Rightarrow$] Curva decreciente:
+				\4[] Si en c/p predominan vendedores y en l/p compradores
+			\3 Segmentación del mercado
+				\4 Caso extremo de hábitat preferido
+				\4[] Los agentes tienen un segmento preferido
+				\4[] y ninguna prima les hace preferir otro segmento
+				\4[$\Rightarrow$] Segmentos determinan interés por separado
+	\1 \marcar{Gestión riesgo de la renta fija}
+		\2 Riesgos de la renta fija
+			\3 Riesgo de interés
+				\4 Variación de los cupones pagados
+				\4[] Bonos con cupón variable
+				\4[] $\to$ P.ej: ligados a EURIBOR
+				\4[] $\then$ Afecta valor actual del bono
+				\4 Variación del precio de venta
+				\4[] Afecta valor actual
+				\4[] $\to$ Si no se mantiene a vencimiento
+				\4 Variación de rentabilidad de cupones reinvertidos
+			\3 Riesgo de pago anticipado
+				\4 Si emisor posee call sobre bono
+				\4[] $\to$ utilizará si tipos suben por encima de cupón
+				\4[] $\then$ Strike (recompra) será menor a subyacente
+			\3 Riesgo de crédito
+				\4 ¿El emisor será capaz de hacer frente a los pagos?
+			\3 Riesgo de inflación
+				\4 ¿El valor real de los flujos disminuirá?
+			\3 Riesgo de liquidez
+				\4 ¿Será posible vender bono antes del vencimiento?
+			\3 Riesgo de tipo de cambio
+				\4 ¿El tipo de cambio reducirá el valor del bono?
+			\3 Riesgo de volatilidad
+				\4 Relevante en bonos con call a favor de emisor
+				\4 Cuanta más volatilidad, mayor valor de call
+				\4[] $\to$ menor valor para tenedor del bono
+			\3 Riesgo político
+				\4 Decisiones políticas que pueden $\downarrow$ el precio del bono
+				\4[] Declaraciones de repudio
+				\4[] Sendas de déficit insostenibles
+				\4[] ...
+			\3 Riesgo de eventos inesperados
+				\4 Catástrofes naturales, guerras, fallos técnicos
+		\2 Enfoque full-valuation
+			\3 Valoración del bono por cada escenario
+				\4 Escenarios caracterizados por:
+				\4[] Interés
+				\4[] Entorno de mercado de emisor
+				\4[] Vars. macroeconómicas
+				\4[] Probabilidad de default
+				\4[] Probabilidad de redención anticipada\footnote{Por ejemplo, en un bono \textit{callable}.}
+			\3 Valoración de carteras
+				\4 Descomposición de los flujos de caja
+				\4 Descuento independiente
+				\4 Agregación
+			\3 Problemas
+				\4 Necesario modelo de valoración preciso
+				\4[] $\to$ ¿Existe realmente?
+				\4 ¿Qué escenarios estimar?
+				\4[] $\to$ ¿Se redime bono?
+				\4[] $\to$ ¿Hay default de algún flujo?
+				\4[] $\to$ ¿Cómo afectan otras contigencias?
+				\4 Computacionalmente intensivo:
+				\4[] portfolios con muchos bonos
+				\4[] productos complejos
+		\2 Duración
+			\3 Idea clave
+				\4 Variación \% de precio ante variación de interés
+				\4 Relación típica bonos con cupón:
+				\4[] \grafica{duracionbonoconcupon}
+			\3 Formulación general
+				\4 Expresión formal:
+				\4[] \fbox{$D = \frac{\frac{V_+ - V_-}{2 \cdot \varDelta y}}{V_0}$}
+				\4 Interpretación gráfica:
+				\4[] Recta tangente
+				\4[] \grafica{duracioncomorectatangente}
+				\4 Necesario modelo estimación $V_+$, $V_-$
+			\3 Duración de Macaulay
+				\4 Media ponderada de maturities de flujos de caja
+				\4[] $\text{D}_\text{Macaulay} = \frac{\sum_k^T k \cdot \frac{\text{FC}_k}{(1+r)^k}}{\text{Precio}} = \sum_k^T k \cdot \frac{\text{FC}_k \cdot (1+r)^{-k}}{\text{Precio}} $
+				\4 Medida en años
+				\4[] Equivalencia con cupón-cero
+				\4[] $\to$ Maturity de cupón-cero con = sensibilidad a $\Delta y$
+				\4 Aproximación derivada de series de Taylor
+				\4[] $\frac{\Delta P}{P} = \frac{P'}{P} \cdot \Delta y + \frac{1}{2} \frac{P''}{P} (\Delta y)^2 + \ldots$
+				\4[] $\to$ $\frac{P'}{P} = - \frac{D_\text{MACAULAY}}{(1+y)}$
+				\4[] $\to$ $D_\text{MACAULAY}$ aproxima primer miembro de serie
+			\3 Duración modificada
+				\4 Pendiente de interés dado precio con:
+				\4[] Flujos de caja constantes
+				\4[] Reinvertidos a tasa fija
+				\4 Calculable a partir de duración de Macaulay
+				\4 $D^* = \frac{1}{1+y} \cdot \text{D}_\text{Macaulay}$
+		\2 Convexidad
+			\3 Idea clave
+				\4 Medida de la curvatura de la función precio-interés
+				\4 Interpretación gráfica
+				\4[] Espacio entre recta tangente definida por duración
+				\4[] Y curva precio-interés
+				\4[] \grafica{convexidad}
+				\4 Medida aproximada:
+				\4[] $\textrm{Convexidad} = \frac{V_+ V_- - 2V_0}{2(\varDelta y)^2 V_0}$
+			\3 Interpretación expansión de Taylor
+				\4 $T(f(x), a, n, x) =  f(a) + \sum_{i=1}^n \dfrac{f^{(i)} (a)}{i!} \cdot (x-a)^i$
+				\4 $T(x) = f(a) + f'(a) (x-a) + \dfrac{f''(a)}{2} (x-a)^2$
+				\4 Convexidad es múltiplo de $(x-a)^2$.
+
+		\2 Volatilidad del interés
+			\3 Menos interés $\Rightarrow$ mayor duración
+				\4 ¿Mayor riesgo?
+				\4 No necesariamente
+				\4 Hay tener en cuenta volatilidad del interés
+			\3 Ejemplo bonos suizos vs americanos
+				\4 Suizos mayor duración
+				\4 Menos volatilidad de interés
+				\4 Menos riesgo
+		\2 Eliminación del riesgo de interés
+			\3 Idea clave
+				\4 Necesario hacer frente a pasivos en el futuro
+				\4[] $\to$ necesario financiar obligaciones futuras
+				\4 ¿cómo garantizar hacer frente a pagos futuros?
+				\4[] $\to$ ¿cómo eliminar riesgo de interés?
+				\4 Ejemplo:
+				\4[] Pago de 1000 € en 5 años
+				\4[] Posible comprar bonos a 1 año
+				\4[] $\to$ Con cupón 10\% anual
+				\4[] $\to$ Reinvertibles a tipo que prevalezca
+				\4[] Necesario comprar cantidad de bono
+				\4[] $\to$ genere 1000 € dentro de 5 años
+				\4[] Si varía el interés
+				\4[] $\to$ sube precio de venta del bono comprado
+				\4[] $\to$ disminuye retorno de cupones reinvertidos
+				\4[] $\Rightarrow$ Dentro de 5 años, genera cantidad $\neq$ 1000 €
+				\4 Objetivo:
+				\4[] $\to$ construir cartera de activos
+				\4[] $\to$ con misma variación que cartera de pasivos
+				\4[] $\then$ Cash-flow matching
+				\4[] $\then$ Inmunización
+			\3 Cash flow matching y dedicación
+				\4 Formar carteras con flujos idénticos a obligaciones
+				\4 Ejemplo:
+				\4[] Pago de 500 € en 1 año y 1300 € en 3 años
+				\4[] Comprar:
+				\4[] $\to$ cupón-cero de 500 € a 1 año
+				\4[] $\to$ cupón-cero de 1300 € en 3 años
+				\4 Problema:
+				\4[] Eliminación perfecta del riesgo de interés
+				\4[] Pero difícil encontrar activos a medida
+			\3 Inmunización
+				\4 Activos y pasivos:
+				\4[] Misma sensibilidad a cambios en el interés
+				\4[] $\Rightarrow$ Misma duración
+				\4 Problema:
+				\4[] Duración sólo aproxima
+				\4[] Función precio-rendimiento es convexa
+				\4[] Necesario reajustar carteras tras $\Delta y$
+				\4[] $\to$ Para volver a igualar duración activos-pasivos
+	\1[] \marcar{Conclusión}
+		\2 Recapitulación
+			\3 Conceptos básicos de la renta fija
+			\3 Valoración y rendimiento
+			\3 Estructura temporal de los tipos de interés
+			\3 Valoración y gestión del riesgo
+		\2 Idea final
+			\3 Componente fundamental de carteras de inversión
+				\4 Flujos de caja predecibles
+				\4 Reducción del riesgo
+			\3 Herramienta de financiación
+				\4 Financiación del déficit en economías desarrolladas
+				\4 Financiación del sector privado
+				\4[] Sistemas financieros muy desarrollados
+			\3 Necesaria gestión del riesgo
+				\4 Prevención de crisis
+				\4 Valoración lo más precisa posible de riesgos
+				\4 Innovaciones financieras
+				\4[] $\to$ grandes oportunidades
+				\4[] $\to$ más difíciles de entender
+				\4[] $\to$ riesgo a priori más dificil de gestionar
+\end{esquemal}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\graficas
+
+\begin{axis}{4}{Relación típica entre precio y rendimiento para un bono que paga cupón}{$y$}{$P$}{duracionbonoconcupon}
+	\draw[-] (4,0) -- (7,0);
+	\draw[-] (0,3.9) to [out=280, in=177](7,0.1);
+	
+\end{axis}
+
+\begin{axis}{4}{Duración como pendiente de la recta tangente}{$y$}{$P$}{duracioncomorectatangente}
+	\draw[-] (4,0) -- (7,0);
+	\draw[-] (0,3.9) to [out=280, in=177](7,0.1);
+	
+	\draw[-] (0.1,2.55) -- (3.2,0.2);	
+\end{axis}
+
+\begin{axis}{4}{Interpretación gráfica de la convexidad de un bono}{$y$}{$P$}{convexidad}
+	\draw[-] (4,0) -- (7,0);
+	\draw[-] (0,3.9) to [out=280, in=177](7,0.1);
+	
+	\draw[-] (0.1,2.55) -- (3.2,0.2);
+	
+	\draw[dashed] (2.9,0.77) -- (0,0.77);
+	\draw[dashed] (2.9,0.43) -- (0,0.43);
+	\draw[decorate,decoration={brace,amplitude=3pt},xshift=-1pt,yshift=0pt] (0,0.43) -- (0,0.77) node[black,midway,xshift=-0.9cm] {\footnotesize Convexidad};
+\end{axis}
+
+\conceptos
+
+\concepto{Convexidad}
+La duración es una aproximación lineal de la sensibilidad del precio ante cambios en el tipo de interés. Sin embargo, dado el carácter convexo de la relación entre precio e interés, la estimación del precio que resulta de una variación del interés se desvía cada vez más del valor real cuanto mayor sea la variación del interés considerada. 
+
+La desviación en la estimación depende de la convexidad de la curva precio-interés. Así, la \textit{convexidad de un bono} captura el grado de curvatura convexa de la curva. Aunque existen ligeras diferencias en el cálculo de la convexidad, en general se obtiene a partir de:
+
+\begin{equation}
+\text{Convexidad} = \frac{V_+ + V_- - 2V_0}{2V_0 (\varDelta y)^2 }
+\end{equation}
+
+La convexidad en un punto permite aproximar de forma más precisa la variación del precio ante variaciones en la rentabilidad:
+
+\begin{equation}
+\text{Ajuste por convexidad}= \text{Convexidad} \cdot (\varDelta y)^2 \cdot 100
+\end{equation}
+
+Aplicando este ajuste, tendremos que la variación porcentual en el precio dada una variación $\varDelta y$ en la rentabilidad será igual a la suma de la variación estimada mediante la duración, y el ajuste por convexidad.
+
+Para bonos sin opciones asociadas, la convexidad será en todo momento positiva, lo que permitirá corregir la infravaloración del precio estimado exclusivamente mediante la duración. Cuando estimábamos el nuevo precio a partir de una variación positiva o negativa del interés, estimábamos un precio más bajo del que realmente toma el valor. El ajuste por convexidad permite aproximar ulteriormente.
+
+La convexidad puede entenderse como el miembro de segundo grado de una aproximación de Taylor de la curva precio-interés.
+
+\concepto{Current yield}
+Rentabilidad nominal
+
+\concepto{Derivación de la duración modificada y de Macaulay, y de la convexidad a partir de una expansión de Taylor}
+Asumiendo la posibilidad de reinvertir los flujos de caja a una tasa constante, el precio actual de un bono en función del rendimiento en un mercado en equilibrio será igual a la suma descontada de sus flujos de caja, descontados a la tasa que corresponde a activos de similar riesgo:
+
+\begin{equation}
+P(y) = \sum_{t=1}^T \frac{\text{FC}_t}{(1+y)^t}
+\end{equation}
+
+Esta formula puede aproximarse mediante una expansión de Taylor:
+
+\begin{align}
+T(y) = P(y_0) +  \frac{P'(y_0)}{1!} \cdot \Delta y + \frac{P''(y)}{2} (\Delta y)^2  + \ldots \\
+\Delta P = P' \cdot \Delta y + \frac{1}{2} P'' (\Delta y)^2  + \ldots \\
+\frac{\Delta P}{P} = \frac{P'}{P} \cdot \Delta y + \frac{1}{2} \frac{P''}{P} (\Delta y)^2 + \ldots
+\end{align}
+
+Definimos la \textit{duración de Macaulay} como la suma de los vencimientos de los sucesivos flujos de caja ponderados por la fracción que representan sobre el precio:
+
+\begin{equation}
+\text{Duración de Macaulay} =\frac{\sum_t \cdot t {FC}_{t}/(1+y)^{t}}{ \sum_t \text{FC}_{t}/(1+y)^t } 
+\end{equation}
+
+La primera derivada de $P(y)$ tal y como se definió en (3) es igual a:
+
+\begin{equation}
+P'(y) = \frac{-1}{(1+y)} \cdot \sum_t t \cdot \frac{\text{FC}_t}{(1+y)^t}
+\end{equation}
+
+A partir de (8) y (7) podemos derivar la siguiente relación entre la duración de Macaulay, la duración modificada y la primera derivada de la función: 
+
+\begin{equation}
+\frac{P'}{P} = - \frac{\text{D}_\text{MACAULAY}}{1+y} = \text{D}_\text{MODIFICADA}
+\end{equation}
+
+Si sustituimos (9) en (6), tenemos que la variación porcentual del precio ante una variación $\Delta y$ del interés se puede aproximar mediante la duración modificada o la duración de Macaulay, que no son sino el primer miembro de la serie de Taylor. La convexidad puede aproximarse mediante el segundo miembro de la serie de Taylor. Es preciso tener presente en todo momento que tanto la duración modificada como la duración de Macaulay no son sino aproximaciones en la medida en que (3) no describa perfectamente la relación entre el precio y el interés.
+
+\concepto{Duración}
+Medida de la sensibilidad porcentual del precio respecto a variaciones de la rentabilidad exigida. Es decir, variación porcentual del precio del activo ante una variación en el interés al que se descuentan los flujos de caja. Formalmente:
+
+\begin{equation}
+D = \frac{V_- - V_+}{2 \cdot \varDelta y \cdot V_0} = \frac{\frac{V_- - V_+}{2 \cdot \varDelta y}}{V_0}
+\end{equation}
+
+Para estimar el valor de la duración es preciso disponer de un modelo fiable de valoración del bono. Es decir, un modelo que permita estimar sin sesgo los valores de $V_+$ y $V_-$. La duración calculada de esta forma es la variación \comillas{verdadera}, en la medida en que $V_-$ y $V_+$ sean el precio que efectivamente tomará el activo ante una variación de $\varDelta y$ del rendimiento. Esta duración verdadera debería así tener en cuenta las posibles variaciones de los flujos de caja que se producirían como resultado de cambios en el rendimiento. También denominada \comillas{duración efectiva}, o duración en sentido genérico.
+
+Si fuese posible obtener una expresión en forma cerrada de la función que relaciona precio con rendimiento, la duración podría obtenerse hallando la primera derivada de la función. Desde el punto de vista geométrico, la duración es la pendiente de la recta tangente a la curva precio-rentabilidad. Dada la convexidad de la curva en un bono sin opciones, la estimación de variaciones en el precio tiende a ser menos exacta a medida que se aumenta la cuantía de la variación del interés.
+
+% axis args: [*: show grid]{SIZE: (n)} {Caption} {X-axis caption} {Y-axis caption} [xscale]
+\begin{axis}{4}{Duración de un bono (pendiente de la línea recta)}{$r$}{$P$}{duracion}
+    \draw[thick] (0,3.5) to [out=290, in=180](4,1);
+    \draw[-] (0,2.1) -- (4,0.64);
+\end{axis}
+
+\concepto{Duración de Macaulay}
+Expresa el tiempo hasta vencimiento que tendría un bono cupón-cero con la misma sensibilidad del precio frente a variaciones del rendimiento.  Un bono cupón-cero es más sensible a variaciones en el rendimiento cuanto más lejano en el tiempo se encuentre su vencimiento. Así, la unidad de la duración de Macaulay es la unidad de tiempo del periodo de capitalización. 
+
+El valor numérico de la duración de Macaulay es la suma de los vencimientos de cada flujo de caja, descontados ponderados en relación al precio del bono (que es a su vez la suma de los flujos de caja descontados):
+
+\begin{equation}
+\text{Duración de Macaulay} =\frac{\sum_k^T \cdot t_k\frac{ {FC}_{t_k}}{(1+y)^{t_k}}}{\text{Precio}} 
+\end{equation}
+
+En un bono cupón-cero, la duración de Macaulay es igual al vencimiento del bono, ya que el único y último flujo de caja se pondera con peso 1, dado que su valor descontado es exactamente igual al precio.
+
+\concepto{Duración modificada}
+Si la duración es una medida de la variación en el precio ante variaciones de la rentabilidad, la duración modificada es una medida de la variación porcentual del precio ante variaciones del rendimiento \textit{asumiendo que los flujos de caja no sufren cambios como consecuencia de esas variaciones en el rendimiento}. Si se cumple tal supuesto, la duración modificada será igual a la duración efectiva. En el caso de bonos con opciones embebidas, tales como bonos redimibles antes de vencimiento (\textit{callable bonds}) o \textit{putable bonds}, el supuesto no se cumple y por tanto la duración modificada un indicador sesgado de la semielasticidad precio-rendimiento.
+
+La duración modificada es fácilmente calculable a partir de la duración de Macaulay, por lo que habitualmente se calcula en relación a ésta:
+
+\begin{equation}
+D^* = \frac{1}{1+y} \cdot \text{Duración de Macaulay} = \frac{1}{1+y} \cdot \frac{\sum_k^T k \cdot \frac{ \text{FC}_k}{(1+y)^k}}{P}
+\end{equation}
+
+
+
+\concepto{Fuentes de rentabilidad}
+El valor de un bono se deriva de tres fuentes de rentabilidad:
+\begin{itemize}
+	\item Pago de cupón
+	\item Ganancias de capital: diferencia entre precio de compra y precio de venta o redención.
+	\item Interés obtenido por reinversión del cupón.
+\end{itemize}
+
+\concepto{On-the-run y off-the-run (emisiones de bonos)}
+
+En la jerga del mercado de renta fija, la emisión o las emisiones más recientes de bonos se adjetivan como \textit{on-the-run}, mientras que emisiones pasadas son conocidas como \textit{off-the-run}. Las emisiones off-the-run pagan generalmente una prima por su menor liquidez conocida como \textit{G-spread}.
+
+\concepto{Yield-to-call}
+Rendimiento al rescate, rendimiento hasta amortización.
+
+\concepto{Yield-to-maturity}
+Rentabilidad al vencimiento. Equivalente a la tasa interna de rentabilidad de los flujos de caja que componen un bono. El YTM asume que todos los pagos de cupón puede reinvertirse a la misma tasa, por lo que captura la rentabilidad efectiva si la curva de tipos de interés es plana (porque todos los tipos de interés serán iguales independientemente del vencimiento). 
+
+Cuando el tipo de interés del bono (es decir, la tasa que determina el cupón) es igual al YTM, el bono cotiza a la par. Es decir, en esta situación, el precio del bono será igual a su par. Por ejemplo, un bono con un cupón del 5\%, un valor nominal de 1000 € y un precio en el mercado de 1000€ induce un YTM de 5\%. Si el tipo de interés del bono es superior al YTM, el precio del bono habrá de ser superior a la par y viceversa, si el tipo de interés del bono es inferior al YTM, el bono cotizará bajo par.
+
+\preguntas
+
+\seccion{Test 2018}
+
+\textbf{34.} ¿Cuál de las siguientes afirmaciones sobre la duración de Macaulay es \textbf{\underline{INCORRECTA}}?
+
+\begin{itemize}
+	\item[a] La duración de un bono depende negativamente de su TIR.
+	\item[b] La duración de un bono depende negativamente de sus cupones.
+	\item[c] La duración de un bono depende negativamente del plazo hasta su vencimiento.
+	\item[d] La duración de un bono cupón cero es igual al tiempo que queda hasta su vencimiento.
+\end{itemize}
+
+
+\seccion{Test 2017}
+\textbf{34.} Según la teoría (o hipótesis) de la preferencia por la liquidez, ¿cuál de las siguientes afirmaciones es \underline{\textbf{FALSA}}?
+
+\begin{itemize}
+	\item[a] Si la estructura temporal de tipos de interés es decreciente, entonces las expectativas sobre los tipos a corto plazo es que estos disminuirán a corto plazo.
+	\item[b] Si la estructura temporal de tipos de interés es creciente, entonces las expectativas sobre los tipos a corto plazo es que estos aumentarán en el futuro.
+	\item[c] El tipo de interés a largo plazo es mayor que la media geométrica de los tipos a corto plazo esperados en el futuro. 
+	\item[d] El tipo forward es mayor que el tipo a corto esperado en el futuro.
+\end{itemize}
+
+\seccion{Test 2016}
+\textbf{35.} En relación con los instrumentos de reta fija, señale la respuesta correcta:
+\begin{enumerate}
+	\item[a] Los bonos A y B son idénticos y con el mismo precio, salvo porque el bono B tiene incorporada una put option. Un inversor racional preferiría, en tal situación, el bono B.
+	\item[b] Los instrumentos de renta fija suelen tener una menor rentabilidad que los de renta variable porque al devengar una renta fija no tienen riesgo alguno.
+	\item[c] Los instrumentos de renta fija tienen riesgo de tipo de interés, de forma que al subir los tipos de interés sube el precio del bono.
+	\item[d] Existen dos únicas fuentes de rentabilidad de un bono: el cobro de los cupones y la venta del principal.
+\end{enumerate}
+
+\seccion{Test 2015}
+\textbf{38.}  Señale la respuesta \textbf{incorrecta} referida a un bono que no tiene asociado opciones de compra o venta:
+\begin{enumerate}
+	\item[a] Si la duración modificada del bono es igual a 4 significa que el valor de dicho bono cambiará aproximadamente un 4\% ante una variación de 100 puntos básicos del tipo de intéres.
+	\item[b] Para variaciones relativamente grandes del tipo de interés, emplear la duración para estimar la variación del precio del bono puede conducir a sobreestimar o infraestimar apreciablemente el movimiento de dicho precio.
+	\item[c] Para una misma variación relativamente grande en el tipo de interés del bono, el incremento porcentual del precio del bono (si el tipo de interés baja) será mayor que la caída porcentual del precio del bono si el tipo de interés sube.
+	\item[d] Si dos bonos difieren únicamente en el cupón, para una determinada variación del tipo de interés, el bono de menor cupón experimentará un mayor cambio de valor.
+\end{enumerate}
+
+\seccion{Test 2014}
+\textbf{25.} El \comillas{rating} como indicador de referencia expresivo de la mayor o menor probabilidad de pago en el tiempo estipulado, tanto de los intereses como de la devolución del principal hace referencia, fundamentalmente, a:
+\begin{enumerate}
+	\item[a] El riesgo de crédito.
+	\item[b] El riesgo de liquidez.
+	\item[c] El riesgo de reinversión.
+	\item[d] El riesgo de cambio.
+\end{enumerate}
+
+\seccion{Test 2011}
+\textbf{24.} Indique cuál de las siguientes afirmaciones es cierta respecto a la estructura temporal de los tipos de interés:
+\begin{enumerate}
+	\item[a] Está compuesta por activos que tienen el mismo riesgo pero diferente liquidez.
+	\item[b] Sólo se puede construir a partir de activos con cupón cero.
+	\item[c] Siempre presenta una pendiente positiva, ya que conforme el vencimiento de un activo tenga un mayor plazo, más elevado es su tipo de interés.
+	\item[d] La estructura temporal de los tipos de interés nunca puede ser horizontal, ya que no es posible que activos con diferentes vencimientos tengan el mismo tipo de interés.
+\end{enumerate}
+
+\seccion{Test 2009}
+\textbf{33.} La estructura temporal de los tipos de interés nos ofrece información sobre:
+\begin{enumerate}
+	\item[a] La prima de riesgo asociada a la diferencia entre el precio de las acciones y de los bonos.
+	\item[b] El posible riesgo de impago de la deuda pública de distintos países.
+	\item[c] La prima por plazo asociada a la diferencia de precio entre futuros y opciones.
+	\item[d] Las expectativas de los agentes acerca de la evolución futura de la economía.
+\end{enumerate}
+
+\textbf{34.} Entre las siguientes afirmaciones indique cuál es \textbf{FALSA}:
+\begin{enumerate}
+	\item[a] El valor esperado de un bono a 2 años en el siguiente año coincide exactamente con el cupón a 2 años descontado al tipo 1 esperado en el siguiente periodo.
+	\item[b] Una cartera de bonos que pagan cierta cantidad contingente al estado de la naturaleza a 1 año ha de tener el mismo precio que un bono que paga con certeza esa misma cantidad a un año.
+	\item[c] Para garantizar en $t=1$ el pago de cierta cantidad en $t=3$ es equivalente comprar un bono a largo plazo (a 2 periodos) que pague dicha cantidad o comprar una cierta cantidad de bonos a corto plazo (a 1 periodo) que nos permita hacer frente en $t=2$ a un contrato de futuros por dicha cantidad.
+	\item[d] El precio de un contrato de futuros en $t=2$ debería ser un buen predictor del precio de los bonos a corto en $t=2$.
+\end{enumerate}
+
+\textbf{35.} Cuál de las siguientes afirmaciones respecto a los bonos es \textbf{FALSA}:
+\begin{enumerate}
+	\item[a] La rentabilidad obtenida de un bono cupón cero, mantenido hasta vencimiento, es igual a su TIR.
+	\item[b] Si la TIR de un bono es mayor a su cupón es que cotiza con descuento.
+	\item[c] La duración de un bono puede definirse como el vencimiento promedio de la corriente de pagos de un bono y se calcula como una media ponderada de los vencimientos de cada pago que genera el bono, donde las ponderaciones son los valores presentes de los flujos de caja divididos por el precio del bono.
+	\item[d] La variación que produce en el precio de un bono una modificación de los tipos de interés viene medida por la duración, de manera que a mayor duración, menor volatilidad del bono.
+\end{enumerate}
+
+\seccion{Test 2007}
+\textbf{35.} Indique cuál de las siguientes afirmaciones es \textbf{CORRECTA}:
+\begin{enumerate}
+	\item[a] Si tenemos dos bonos con el mismo vencimiento, uno que paga un cupón del 6\% anual y otro que paga un 6\% anual a través de dos cupones semestrales del 3\%; ambos tendrán la misma duración.
+	\item[b] Si dos bonos tienen la misma duración, el precio del bono de menor convexidad cae menos ante subidas de tipos de interés.
+	\item[c] Si un bono con cupón del 6\% se emitió sobre la par su rentabilidad en el momento de la emisión ha de ser superior a 6\%.
+	\item[d] Si tenemos dos bonos de idénticas características salvo la calidad crediticia del emisor: uno de los emisores es AAA y el otro BBB entonces el segundo debería tener un menor precio.
+\end{enumerate}
+
+\seccion{Test 2006}
+\textbf{34.} Indique cuál de estas afirmaciones es CORRECTA:
+\begin{enumerate}
+	\item[a] A mayor cupón, mayor es la duración de un bono, ceteris paribus.
+	\item[b] Los tipos de la curva de rendimientos de los bonos del gobierno son siempre inferiores a los tipos de la curva swap.
+	\item[c] La convexidad es una variable deseable en un bono. Si dos bonos se diferencian solo por su convexidad, el más convexo dará rendimientos superiores tanto si los tipos suben como si bajan.
+	\item[d] Incrementos en los tipos de interés aumentan la duración de un bono.
+\end{enumerate}
+
+\seccion{Test 2005}
+\textbf{34.} En ausencia de incertidumbre, suponga un bono de cupón cero a 1 año y nominal igual a 1000€, cuyo precio actual de mercado es igual a 952,38\%. Suponga otro bono con cupón a 20 años, con nominal igual a 1000€ e interés del 8\%, cuyo precio actual de mercado es 1000€. ¿Cuál será el precio del bono con cupón a 20 años dentro de 1 año?
+\begin{enumerate}
+	\item[a] 900 €
+	\item[b] 1000 €
+	\item[c] 970 €
+	\item[d] 950 €
+\end{enumerate}
+
+\seccion{Test 2004}
+\textbf{15.} La estructura temporal de los tipos de interés nos ofrece información sobre:
+\begin{enumerate}
+	\item[a] La prima de riesgo asociada a la diferencia entre el precio de las acciones y de los bonos.
+	\item[b] El posible riesgo de impago de la deuda pública de distintos países.
+	\item[c] Las expectativas de los agentes acerca de la evolución futura de la economía.
+	\item[d] La prima por plazo asociada a la diferencia de precio entre futuros y opciones.
+\end{enumerate}
+
+
+\seccion{4 de abril de 2017}
+\begin{itemize}
+    \item ¿El rendimiento de un activo de renta fija es constante hasta su vencimiento, está segura?
+    \item ¿Euribor +1 es renta fija?
+    \item ¿Cual es el único bono de renta fija que tiene rentabilidad fija? \textit{Preguntar a Ángel}.
+    \item ¿Cuál es la ecuación de la convexidad? ¿Qué propiedades tiene? ¿De qué depende? ¿Es bueno o malo que tenga mucha convexidad?
+    \item ¿Cuáles son las tres fuentes de rentabilidad?
+    \item ¿Por qué hay empresas que emiten bonos fuera del mercado nacional?
+\end{itemize}
+
+\notas
+
+\textbf{2018}: \textbf{34.} C
+
+\textbf{2017}: \textbf{34.} B
+
+\textbf{2016}: \textbf{35}. A 
+
+\textbf{2015}: \textbf{38}. ANULADA. Las cuatro parecen ciertas
+
+\textbf{2014}: \textbf{25}. A
+
+\textbf{2011}: \textbf{24}. B
+
+\textbf{2009}: \textbf{33}. D \textbf{34}. A. Por la paridad spot-forward. \textbf{35}. D
+
+\textbf{2007}: \textbf{35}. D
+
+\textbf{2006}: \textbf{34}. C
+
+\textbf{2005}: \textbf{34}. C
+
+\textbf{2004}:  \textbf{15}. C
+
+El Handbook of Fixed Income Securities es la fuente de referencia para este tema. Utilizar en la medida de lo posible el Palgrave para extraer explicaciones elegantes y resumidas, especialmente de \textit{term structure of interest rates}.
+
+El tema de Juan contiene muchas inexactitudes, pero es necesario leerlo para tener presente el contenido que puede esperar el tribunal. Por ejemplo, en relación a estrategias de inmunización.
+
+\bibliografia
+
+Bodie, Z.; Marcus, A.; Kane. A. \textit{Investments}. 10th edition. Capítulos 14, 15, 16
+
+Financial Times. \textit{Asset Backed Securities. Back From Disgrace} (30 de septiembre de 2014) -- En carpeta del tema
+
+Financial Times. \textit{Eurozone bond syndication, for and against}. (19 de enero de 2011) -- En carpeta del tema
+
+Fabozzi, F. J. \textit{Handbook of Fixed Income Securities}.  Ch. 5 (Macro-Economic dynamics and the corporate bond market), Ch. 6 (Bond pricing, yield measures and total return), Ch. 7 (measuring interest-rate risk), Ch. 8 (the structure of interest rates).
+
+Tuckman, B. \textit{Fixed Income Securities}. (2002) Second Edition -- En carpeta Finanzas
+
+Veronesi, P. \textit{Handbook of Fixed Income Securities} (2016) Ch. 1 Fixed Income Markets. An Introduction. Ch. 7 Interest Rate Risk Management and Asset Liability Management.
+
+\end{document}
