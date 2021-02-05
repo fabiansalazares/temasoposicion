@@ -98,7 +98,6 @@ Figura
 
 
 
-\author{\plexsans Miguel Fabián Salazar}
 
 % PARTES TEMAS
 \def\gnewcommand{\g@star@or@long\new@command}
@@ -181,6 +180,8 @@ Figura
 
 	\date{{\tiny \plexsans \today}}
 
+\author{\plexsans Miguel Fabián Salazar}
+
 % pdf metadata
 
 \hypersetup{
@@ -188,15 +189,13 @@ Figura
 	pdftitle={\textotema  --  \textotitulo},
 	pdfsubject={\textotitulo},
 	pdfkeywords={\textotitulo},
-	pdfproducer={Vim 8 + TeXLive \@ Debian Buster},
+	pdfproducer={Vim 8 + TeXLive \@ Linux/Debian Buster},
 	pdfcreator={pdflatex},
 	citecolor=black,
 	filecolor=black,
 	linkcolor=black,
 	urlcolor=blue
 }
-
-
 
 
 \AtBeginDocument{
