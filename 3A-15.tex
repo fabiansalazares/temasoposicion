@@ -1261,6 +1261,71 @@ Reordenando y despejando tenemos que $\bar{x} < \frac{f}{2 \sqrt{f}}$
 
 \preguntas
 
+\seccion{Test 2019}
+
+\textbf{9.} Considere un monopolista maximizador de beneficios con costes marginales constantes ``c'' que puede realizar discriminación de precios autoselectiva (2º grado) con dos grupos de consumidores (1,2) caracterizados por un parámetro $\theta_1, \theta_2$ que afecta a la utilidad que los consumidores obtienen del consumo ($c < \theta_1, < \theta_2$). Una proporción ``$\alpha$'' de consumidores pertenecen al grupo 1, y por tanto ``$(1-\alpha)$'' consumidores pertenecen al grupo 2. El monopolista ofrece un menú de tarifas en dos partes $T_i = A_i + p_i q_i$ a los consumidores de cada grupo. La función de utilidad de cada individuo es $u_i = \theta_i v (q_i) - T_i$, si consume $q_i$ uds y paga $T_i$ €, donde $v'(q) = (1-q)$ para ambos tipos de consumidores y por tanto las funciones inversas de demanda son: $p_i^D(q_i) = \theta_i (1-q_i) \quad (i = 1,2)$ y están representadas en el gráfico adjunto. Los valores de los parámetros son $c = 0.5, \, \theta_1 = 1, \, \theta_2 = 2, \, \alpha = 0.75$; y en el menú de tarifas que maximiza los beneficios del monopolista ambos tipos de consumidores adquieren el producto. Observe el gráfico y señale la afirmación correcta:
+
+\begin{axis}{4}{}{$q$}{$p$}{test2019p9}
+	% línea roja con mayor pendiente p2(q)
+	\draw[-, color=red] (0,3.6) -- (3.6,0);
+	\node[left] at (0,3.6){\tiny $\theta_2 = 2$};
+	\node[above] at (1,3){\tiny $p_2^D (q)$};
+	
+	% línea azul con menor pendiente p1(q)
+	\draw[-, color=blue] (0,1.8) -- (3.6,0);
+	\node[left] at (0,1.8){\tiny $\theta_1 = 1$};
+	\node[above] at (0.8,1.5){\tiny $p_1^D(q)$};
+
+	% línea discontinua de arriba 
+	\draw[dashed] (0,1.2) -- (4,1.2);
+
+	% línea discontinua de abajo con c=0.5
+	\draw[dashed] (0,0.8) -- (4,0.8);
+	\node[left] at (0,0.8){\tiny $c=0.5$};
+
+	% línea vertical continua de la izquierda
+	\draw[-] (1.25,0) -- (1.25, 2.35);
+	
+	% línea vertical continua del centro
+	\draw[-] (2,0) -- (2,1.6);
+	
+	% línea vertical continua de la derecha
+	\draw[-] (2.8,0) -- (2.8,0.8);
+
+	% Puntos ABCDEF
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] at (0,0.8) {};
+	\node[right] at (0.05,0.9){\tiny A};
+
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] at (0,1.8) {};
+	\node[right] at (0.05,1.8){\tiny B};
+
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] at (0,3.6) {};
+	\node[right] at (0,3.6){\tiny C};
+
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] at (2,1.6) {};
+	\node[right] at (2,1.6){\tiny E};
+
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] at (2,0.85) {};
+	\node[right] at (2,0.9){\tiny D};
+
+	\node[circle,fill=black,inner sep=0pt,minimum size=4pt] at (2.8,0.8) {};
+	\node[right] at (2.8,0.9){\tiny F};
+
+	% puntos q* y q** en el eje de abscisas
+	\node[below] at (2,0){\tiny $q^{*}$};
+	\node[below] at (2.8,0){\tiny $q^{**}$};
+	
+\end{axis}
+
+
+\begin{itemize}
+	\item[a] En la tarifa óptima dirigida a los consumidores del grupo 1, el precio de la parte variable es $p=0.5$, adquieren $q^*$ y la parte fija de la tarifa A1 es el área delimitada por los puntos ABD.
+	\item[b] En la tarifa óptima dirigida a los consumidores del grupo 2, el precio de la parte variable es $p=0.5$, adquieren $q^{**}$ y la parte fija de la tarifa A2 es el área delimitada por los puntos ACF.
+	\item[c] En la tarifa óptima dirigida a los consumidores del grupo 2, el precio de la parte variable es $p>0.5$, adquieren $q^{**}$ y la parte fija de la tarifa A2 es el área delimitada por los puntos $ABD + EDF$.
+	\item[d] Ninguna de las respuestas anteriores es correcta.
+\end{itemize}
+
+
 \seccion{Test 2018}
 \textbf{8.} Un monopolista se enfrenta a una función de demanda $p=120-3x$. Su función de costes es $\text{CT}=x^2 + 8x + 300$. Suponga que se produce una regulación consistente en imponerle un impuesto fijo de 100 unidades monetarias. El beneficio que obtendrá el monopolista tras la regulación será:
 
@@ -1420,6 +1485,8 @@ Reordenando y despejando tenemos que $\bar{x} < \frac{f}{2 \sqrt{f}}$
 \end{enumerate}
 
 \notas
+
+\textbf{2019}: \textbf{9.} D
 
 \textbf{2018}: \textbf{8.} B
 

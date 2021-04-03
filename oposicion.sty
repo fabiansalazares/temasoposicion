@@ -86,6 +86,17 @@
     \end{center}
     }
 
+% axis without Figura: text -- unnumbered axis
+\NewDocumentEnvironment{axis*}{}
+    {
+    \begin{tikzpicture}
+        \draw[-] (0,4) -- (0,0) -- (4,0);
+    }
+    {
+    \end{tikzpicture}\\
+
+    }
+
 % axis args: [*: show grid]{SIZE: (n)} {Caption} {X-axis caption} {Y-axis caption} {labelref} [xscale] [xsize]
 \NewDocumentEnvironment{axis}{s m m m m m O{1} O{4} }
     {
